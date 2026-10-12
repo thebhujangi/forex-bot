@@ -14,6 +14,7 @@ concurrency:
 
 permissions:
   contents: write               # to save the bot's memory (state/) after each shift
+  actions: write                # to start the next shift
 
 jobs:
   shift:
@@ -49,3 +50,11 @@ jobs:
           if git diff --cached --quiet; then exit 0; fi
           git commit -q -m "bot memory $(date -u +%Y-%m-%dT%H:%MZ)"
           git push -q || (git pull -q --rebase && git push -q)
+
+      # Scheduled runs can start late (or not at all for a while on new repos), so each
+      # successful shift starts the next one. The schedule above restarts the chain if it breaks.
+      - name: Start the next shift
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run bot.yml --ref main --repo ${{ github.repository }}
