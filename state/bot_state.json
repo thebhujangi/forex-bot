@@ -259,13 +259,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T23:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T23:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T23:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T23:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T23:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T23:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T23:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T23:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T23:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T23:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T23:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T23:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T23:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T23:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -388,13 +388,15 @@
   "https://www.fxstreet.com/news/chinese-yuan-building-upside-momentum-toward-66800-against-us-dollar-uob-202610121945": "2026-10-12T20:17:32.858897+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-lee-predicts-largest-ever-crypto-bull-market-as-bitmine-nears-5-supply-goal-202610122028": "2026-10-12T20:38:07.439741+00:00",
   "https://www.fxstreet.com/news/feds-hammack-sees-thriving-economy-backs-further-rate-hikes-202610122150": "2026-10-12T22:21:10.693751+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-shows-bottoming-signs-despite-recent-macro-pressures-202610122233": "2026-10-12T23:02:57.457935+00:00"
+  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-shows-bottoming-signs-despite-recent-macro-pressures-202610122233": "2026-10-12T23:02:57.457935+00:00",
+  "https://www.fxstreet.com/news/the-british-pound-drifts-back-to-its-floor-as-crude-oil-lifts-the-dollar-202610122218": "2026-10-12T23:23:01.240159+00:00",
+  "https://www.fxstreet.com/news/euro-collapses-below-112-as-fed-hawkish-rhetoric-lifts-the-us-dollar-202610122222": "2026-10-12T23:23:01.240182+00:00"
  },
  "timers": {
   "crowd": 1791845069.2787457,
-  "headlines": 1791846176.7039661,
-  "scan": 1791846575.594014,
-  "follow": 1791846391.7981513
+  "headlines": 1791847380.7303195,
+  "scan": 1791847381.2402482,
+  "follow": 1791847350.260812
  },
  "pushed_times": [],
  "last_checked": {
@@ -402,7 +404,7 @@
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
   "d82f6843": 1791846084.8315868,
-  "4960644a": 1791846391.7989383,
-  "05c04ab6": 1791846391.7992978
+  "4960644a": 1791847350.2617586,
+  "05c04ab6": 1791847350.2622705
  }
 }
