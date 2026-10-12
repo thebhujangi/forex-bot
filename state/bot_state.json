@@ -1,6 +1,6 @@
 {
  "sent": {},
- "offset": 508857054,
+ "offset": 508857055,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -61,7 +61,7 @@
    "trail_distance": null,
    "tp1": 82371.97,
    "created": "2026-10-12T17:30:00+00:00",
-   "status": "new",
+   "status": "skipped",
    "best": 82711.45,
    "notified_sl": 83050.93,
    "warned_loss": false,
@@ -100,13 +100,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-11T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T17:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T17:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T17:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T17:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T17:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T17:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T17:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T17:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T17:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T17:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T17:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T17:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T17:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T17:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -223,13 +223,14 @@
   "https://www.fxstreet.com/news/feds-hammack-calls-for-higher-rates-as-inflation-pressures-broaden-202610121702": "2026-10-12T17:22:32.691583+00:00"
  },
  "timers": {
-  "crowd": 1791823272.387288,
-  "headlines": 1791826355.1831095,
-  "scan": 1791826385.8539746,
-  "follow": 1791826148.185161
+  "crowd": 1791826902.0052187,
+  "headlines": 1791826963.6029847,
+  "scan": 1791827227.222323,
+  "follow": 1791827165.8868554
  },
  "pushed_times": [],
  "last_checked": {
-  "99eade23": 1791826148.4602935
+  "99eade23": 1791827165.8874037,
+  "06f875d3": 1791827165.8879173
  }
 }
