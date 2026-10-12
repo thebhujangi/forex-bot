@@ -23,6 +23,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # A queued shift may have been created before the previous one saved its memory.
+      - name: Get the latest memory
+        run: git fetch -q origin main && git reset -q --hard origin/main
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -43,13 +47,23 @@ jobs:
 
       - name: Save the bot's memory
         if: always()
+        # Shifts never overlap, so this shift's memory is the newest: put it on top of
+        # whatever is on GitHub now (code changes included) and push.
         run: |
           git config user.name "forex-bot"
           git config user.email "forex-bot@users.noreply.github.com"
-          git add state
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -q -m "bot memory $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push -q || (git pull -q --rebase && git push -q)
+          cp -r state "$RUNNER_TEMP/state"
+          for attempt in 1 2 3; do
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            cp -r "$RUNNER_TEMP/state/." state/
+            git add state
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -q -m "bot memory $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1
 
       # Scheduled runs can start late (or not at all for a while on new repos), so each
       # successful shift starts the next one. The schedule above restarts the chain if it breaks.
