@@ -91,6 +91,49 @@
    "seen_exits": 0,
    "fill_notified": false,
    "outcome": null
+  },
+  {
+   "id": "77426ec4",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "ETHUSD",
+   "side": "sell",
+   "entry": 2517.36,
+   "sl": 2527.3,
+   "cur_sl": 2527.3,
+   "trail_distance": null,
+   "tp1": 2507.43,
+   "created": "2026-10-12T19:15:00+00:00",
+   "status": "new",
+   "best": 2517.36,
+   "notified_sl": 2527.3,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "ETHUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-12T19:15:00+00:00",
+    "entry": 2517.36,
+    "sl": 2527.3,
+    "tp1": 2507.43,
+    "tp2": 2492.52,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-12T21:15:00+00:00",
+    "close_by": "2026-10-13T03:15:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.5x ATR from EMA20; sell the pullback at 2517.36."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null
   }
  ],
  "last_signal_bar": {
@@ -100,13 +143,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-11T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T19:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T19:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T19:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T19:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T19:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T19:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T19:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T19:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T19:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T19:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T19:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T19:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T19:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T19:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -226,13 +269,14 @@
  },
  "timers": {
   "crowd": 1791830553.701971,
-  "headlines": 1791831868.9478993,
-  "scan": 1791832053.9195302,
-  "follow": 1791831869.2400172
+  "headlines": 1791832497.2465873,
+  "scan": 1791832858.84155,
+  "follow": 1791832798.0331047
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
-  "06f875d3": 1791831869.241333
+  "06f875d3": 1791832798.0338595,
+  "77426ec4": 1791832798.034194
  }
 }
