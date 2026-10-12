@@ -1,0 +1,51 @@
+# Runs the Telegram signal bot in the cloud, 24/7, in 15-minute shifts.
+# Secrets (Telegram token, chat id, Twelve Data key, Myfxbook login) live in
+# GitHub -> Settings -> Secrets and variables -> Actions. They are never in the code.
+name: Forex Bot (cloud)
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"     # GitHub may start these a few minutes late at busy times
+  workflow_dispatch:            # "Run workflow" button for a manual start
+
+concurrency:
+  group: forex-bot              # never two shifts at once
+  cancel-in-progress: false
+
+permissions:
+  contents: write               # to save the bot's memory (state/) after each shift
+
+jobs:
+  shift:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Run a 13-minute shift
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+          MYFXBOOK_EMAIL: ${{ secrets.MYFXBOOK_EMAIL }}
+          MYFXBOOK_PASSWORD: ${{ secrets.MYFXBOOK_PASSWORD }}
+        run: python scripts/run_bot.py --cloud --minutes 13
+
+      - name: Save the bot's memory
+        if: always()
+        run: |
+          git config user.name "forex-bot"
+          git config user.email "forex-bot@users.noreply.github.com"
+          git add state
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "bot memory $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q || (git pull -q --rebase && git push -q)

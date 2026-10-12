@@ -1,0 +1,277 @@
+# Forex Bot configuration
+# Prices are in the symbol's own units (gold: USD per ounce, EURUSD: USD per EUR, USDJPY: JPY per USD).
+
+account:
+  starting_balance: 10000      # USD — matches a $10k prop challenge
+  currency: USD
+
+risk:
+  risk_per_trade_pct: 1.0      # % of balance lost if the stop loss is hit
+  max_open_trades: 3
+  max_trades_per_symbol: 1
+  # Block a new trade if (today's realised loss + risk of all open trades + this trade)
+  # could exceed this % of the day's starting balance. Prop firm limit is usually 5%.
+  daily_loss_limit_pct: 4.0
+
+broker:
+  name: Elev8
+  # How MT5 server times map to real time:
+  #   auto       — detect from MT5 while the market is open
+  #   ny_plus_7  — GMT+2 in winter / GMT+3 in summer (most brokers)
+  #   2, 3, ...  — fixed offset from UTC in hours
+  server_time: ny_plus_7       # confirmed 2026-10-07: Elev8-Demo2 = UTC+3 in summer
+
+mt5:
+  # The bot opens MT5 itself from here if it isn't running (e.g. after a restart).
+  terminal_path: C:\Program Files\MetaTrader 5\terminal64.exe
+
+symbols: [XAUUSD, EURUSD, GBPUSD, USDJPY]
+
+# Telegram trading assistant (scripts/run_bot.py). Reads MT5, never places trades.
+bot:
+  timezone: Asia/Kuala_Lumpur  # times in messages
+  watch_symbols: [XAUUSD, EURUSD, GBPUSD]
+  news_impacts: [High]         # Forex Factory impact levels to warn about
+  news_warning_minutes: 30
+  breakeven_at_r: 1.0          # suggest stop to breakeven after price moves 1x your risk
+  spike_multiple: 3.0          # 5-min candle this many times normal = alert
+  daily_warn_pct: 3.0          # warn at -3% for the day; stop message at risk.daily_loss_limit_pct
+  morning_brief: "08:00"       # local time, every weekday
+  weekly_report: "20:00"       # local time, every Sunday
+  headline_max_per_hour: 4     # pushed "big news" headlines (free RSS feeds)
+  headline_quiet_start: "00:30"  # no headline pings overnight (official Fed releases excepted)
+  headline_quiet_end: "07:00"
+  check_seconds: 30
+
+# Signal feeds the bot sends. Only strategies that survived testing belong here.
+# (No INTRADAY feed yet: every intraday setup tested so far loses after costs.)
+signals:
+  - name: crypto_trend
+    strategy: daily_trend
+    symbols: [BTCUSD, ETHUSD, XRPUSD]
+    horizon: LONG-TERM
+    tier: "Promising: passed the unseen 2024-26 test on BTC/ETH/XRP (5 other coins failed it)"
+    stats: "Tested 2019-2026: wins about 1 trade in 3, but winners average several times the losers. Unseen 2024-26: +0.26x risk per trade on these 3 coins. Forward results will tell."
+    # 2026-10-08: SOL/BNB/LTC/DOGE/ADA with the same settings: +0.48R in-sample 2018-23 but
+    # -0.13R (PF 0.80, 48 trades) on unseen 2024-26 -> NOT added (failed the pre-set group rule).
+    # Across all 8 coins, 2024-26 was only ~+0.04R, so the BTC/ETH/XRP edge is fragile.
+  - name: fx_gold_trend
+    strategy: daily_trend
+    symbols: [XAUUSD, EURUSD, GBPUSD]
+    horizon: LONG-TERM
+    tier: "Experimental: small edge only"
+    stats: "20-year test: about +0.1x risk per trade (roughly 1-2% a year). Treat as practice."
+
+  # ---- ⚗️ EXPERIMENTAL intraday feeds (user asked for several signals a day, on demo) ----
+  # None of these passed testing. They're the least-bad intraday setups from the backtests and
+  # are here to be forward-tested on demo; the weekly report scores them separately.
+  - name: x_crypto_breakout
+    strategy: london_breakout
+    symbols: [BTCUSD, ETHUSD]
+    horizon: INTRADAY
+    tier: "⚗️ EXPERIMENTAL, unproven (2019-23 test: about -0.04x risk per trade)"
+    stats: "Breakout of the quiet overnight range when London opens. Demo only. Testing says this slightly loses on average."
+  - name: x_crypto_pullback
+    strategy: trend_pullback
+    symbols: [BTCUSD, ETHUSD]
+    horizon: INTRADAY
+    tier: "⚗️ EXPERIMENTAL, unproven (2019-23 test: about -0.13x risk per trade)"
+    stats: "Buy the dip in an uptrend / sell the bounce in a downtrend on the 15-minute chart. Demo only. Testing says this loses on average."
+    params: {timeframe: M15, max_hold_bars: 32, expiry_bars: 8, cooldown_bars: 8}
+  - name: x_fx_ny_range
+    strategy: london_breakout
+    symbols: [XAUUSD, EURUSD, GBPUSD]
+    horizon: INTRADAY
+    tier: "⚗️ EXPERIMENTAL, unproven (2019-23 test: about -0.16x risk per trade)"
+    stats: "Breakout of the 8:00-9:30am New York range (8pm-9:30pm Malaysia), around US data time. Demo only. Testing says this loses on average."
+    params: {timeframe: M15, session_tz: America/New_York, range_start: "08:00", range_end: "09:30",
+             entry_deadline: "12:00", close_time: "15:30", min_range_atr: 0.1, max_range_atr: 0.8}
+
+# If auto-detection picks the wrong broker symbol, map it here, e.g. XAUUSD: XAUUSD.std
+symbol_map: {}
+
+# Trading costs used by the backtest. Spreads measured live on Elev8-Demo2 (2026-10-07,
+# London/NY overlap). scripts/check_mt5.py prints the current spread for each symbol.
+costs:
+  XAUUSD: {spread: 0.30,    slippage: 0.10,    commission_per_lot: 0}
+  EURUSD: {spread: 0.00013, slippage: 0.00003, commission_per_lot: 0}
+  GBPUSD: {spread: 0.00017, slippage: 0.00003, commission_per_lot: 0}
+  USDJPY: {spread: 0.022,   slippage: 0.003,   commission_per_lot: 0}
+  AUDUSD: {spread: 0.00017, slippage: 0.00003, commission_per_lot: 0}
+  NZDUSD: {spread: 0.00020, slippage: 0.00003, commission_per_lot: 0}
+  USDCAD: {spread: 0.00022, slippage: 0.00003, commission_per_lot: 0}
+  USDCHF: {spread: 0.00017, slippage: 0.00003, commission_per_lot: 0}
+  # Crypto: % of price, measured live on Elev8-Demo2 2026-10-08 (slippage assumed 1/3 of spread)
+  BTCUSD: {spread_pct: 0.034, slippage_pct: 0.01, commission_per_lot: 0}
+  ETHUSD: {spread_pct: 0.082, slippage_pct: 0.03, commission_per_lot: 0}
+  SOLUSD: {spread_pct: 0.45,  slippage_pct: 0.15, commission_per_lot: 0}
+  XRPUSD: {spread_pct: 0.26,  slippage_pct: 0.09, commission_per_lot: 0}
+  BNBUSD: {spread_pct: 0.26,  slippage_pct: 0.09, commission_per_lot: 0}
+  LTCUSD: {spread_pct: 0.59,  slippage_pct: 0.20, commission_per_lot: 0}
+  DOGEUSD: {spread_pct: 0.78, slippage_pct: 0.26, commission_per_lot: 0}
+  ADAUSD: {spread_pct: 1.63,  slippage_pct: 0.54, commission_per_lot: 0}
+
+data:
+  start: 2019-01-01
+  timeframes: [M5, M15, H1, H4, D1]
+
+backtest:
+  # Everything after this date is held back as the untouched out-of-sample test.
+  # Only run with --oos once a strategy is final.
+  in_sample_end: 2023-12-31
+  # Trades are replayed on these finer candles to tell whether SL or TP came first.
+  execution_timeframe: M5
+
+prop:
+  profit_target_pct: 8
+  max_daily_loss_pct: 5
+  max_total_loss_pct: 10
+
+# A strategy must meet all of these (in-sample AND out-of-sample) to move to demo signals.
+verdict:
+  min_trades: 150
+  min_profit_factor: 1.3
+  min_expectancy_r: 0.10
+  max_drawdown_pct: 15
+
+strategies:
+  london_breakout:
+    timeframe: M15
+    symbols: [XAUUSD, GBPUSD, EURUSD]
+    session_tz: Europe/London
+    range_start: "00:00"       # Asian range measured in London time
+    range_end: "07:00"         # orders sent when the range closes
+    entry_deadline: "11:00"    # unfilled orders cancelled
+    close_time: "20:00"        # any open trade closed at market
+    sl_mode: mid               # mid = middle of the range, opposite = other side of the range
+    buffer_atr: 0.03           # entry placed this fraction of daily ATR beyond the range
+    min_range_atr: 0.15        # skip days where the range is tiny...
+    max_range_atr: 0.80        # ...or already huge, relative to daily ATR
+    atr_period: 14
+    trend_ema: 0               # >0: only trade in the direction of the daily trend (EMA of N days)
+    tp1_r: 1.0
+    tp1_close_pct: 50          # close half at TP1, move SL to breakeven
+    tp2_r: 2.0
+    skip_weekdays: []          # 0=Mon ... 4=Fri
+    # RESULT 2026-10-07: FAILED in-sample. Defaults -0.27R (-0.17R with M5 execution);
+    # best of 24 variants -0.02R. Rejected.
+
+  trend_pullback:
+    timeframe: H1
+    symbols: [XAUUSD, EURUSD, GBPUSD, USDJPY]
+    fast_ema: 20
+    slow_ema: 100
+    slope_bars: 20             # slow EMA must be rising/falling vs this many candles ago
+    atr_period: 14
+    stretch_atr: 1.5           # price this far from the fast EMA before we place the limit
+    sl_atr: 1.5
+    tp1_r: 1.0
+    tp1_close_pct: 50
+    tp2_r: 2.5
+    expiry_bars: 12            # limit order cancelled after 12 hours unfilled
+    max_hold_bars: 72          # trade closed after 3 days
+    cooldown_bars: 12
+    # RESULT 2026-10-08: FAILED in-sample (M5 execution). Defaults -0.20R; best of 12 variants
+    # +0.04R / PF 1.08 (H4, stretch 2, sl 3) with no plateau and mixed symbols. Rejected.
+
+  sweep_reversal:
+    timeframe: M15
+    symbols: [XAUUSD, EURUSD, GBPUSD, USDJPY]
+    session_tz: Europe/London
+    window_start: "07:00"      # look for sweeps from the London open...
+    window_end: "17:00"        # ...to the middle of the New York session
+    close_time: "21:00"
+    entry_mode: retest         # retest = limit back at the swept level, market = enter now
+    min_sweep_atr: 0.02        # how far beyond the level price must poke
+    max_sweep_atr: 0.30        # beyond this it's a real breakout, not a sweep
+    sl_buffer_atr: 0.05
+    atr_period: 14
+    tp1_r: 1.0
+    tp1_close_pct: 50
+    tp2_r: 2.5
+    expiry_bars: 8             # limit cancelled after 2 hours unfilled
+    # RESULT 2026-10-08: FAILED in-sample (M5 execution). Defaults -0.28R; best of 12 variants
+    # -0.06R. Rejected.
+
+  # ---- Intraday scalping candidates (user wants 2-5 setups/day; Standard account costs) ----
+  # RESULT 2026-10-08, in-sample 2019-2023, XAUUSD+EURUSD+GBPUSD, M5 execution:
+  #   NY open breakout 09:30-09:45   -0.46R (before costs -0.13R)
+  #   NY pre-open range breakout     -0.16R (before costs -0.03R)
+  #   London fake-out fade           -0.22R (before costs +0.00R)
+  #   Gap retrace (FVG) M5 / M15     -0.28R / -0.19R (before costs +0.00R / -0.04R)
+  #   Pullback M15 / M5              -0.24R / -0.67R (before costs -0.02R / -0.04R)
+  # All ~zero before costs, all clearly negative after. All rejected.
+  range_fade:
+    timeframe: M15
+    symbols: [XAUUSD, EURUSD, GBPUSD]
+    session_tz: Europe/London
+    range_start: "00:00"
+    range_end: "07:00"
+    watch_until: "11:00"
+    close_time: "16:00"
+    min_range_atr: 0.15
+    max_range_atr: 0.80
+    sl_buffer_atr: 0.05
+    min_reward_r: 0.7          # skip if the middle of the box is closer than 0.7x the risk
+    atr_period: 14
+    tp1_close_pct: 50
+
+  fvg_retest:
+    timeframe: M5
+    symbols: [XAUUSD, EURUSD, GBPUSD]
+    session_tz: Europe/London
+    window_start: "07:00"      # London open (3pm/4pm Malaysia)...
+    window_end: "17:00"        # ...to mid New York session
+    close_time: "20:00"
+    atr_period: 14
+    displacement_atr: 2.0      # the strong candle's body must be 2x a normal candle
+    min_gap_atr: 0.5
+    trend_ema: 50              # only trade gaps in the direction of the 50-candle average
+    sl_buffer_atr: 0.2
+    tp1_r: 1.0
+    tp1_close_pct: 50
+    tp2_r: 2.0
+    expiry_bars: 12            # order cancelled after 1 hour unfilled
+    cooldown_bars: 6
+
+  news_candle:
+    timeframe: M5
+    symbols: [XAUUSD, EURUSD, GBPUSD]
+    event_times: ["08:30"]     # New York time; most big US releases (also try "10:00")
+    atr_period: 24             # "normal" = average of the 2 hours of candles before the news
+    big_atr: 3.0               # event candle body must be 3x a normal candle
+    mode: follow               # follow = ride the move, fade = bet against it
+    sl_frac: 0.5               # stop half the news candle's range away from entry
+    tp1_r: 1.0
+    tp1_close_pct: 50
+    tp2_r: 2.0
+    close_after_min: 90
+    # RESULT 2026-10-08 in-sample: "follow" +0.01 to +0.09R before costs in all 6 variants, "fade"
+    # negative in all 6 -> a real but tiny post-news drift. After normal costs best +0.01R; with
+    # realistic news-time spreads (3x) all -0.11R or worse. Not tradeable. Rejected.
+
+  daily_trend:
+    timeframe: D1
+    execution_timeframe: H1    # wide daily stops: hourly candles are precise enough
+    warmup_days: 300
+    symbols: [XAUUSD, EURUSD, GBPUSD, USDJPY, AUDUSD, NZDUSD, USDCAD, USDCHF]
+    entry_days: 55             # close beyond the 55-day high/low
+    trend_ema: 0               # >0: also require close above/below this EMA
+    atr_period: 20
+    sl_atr: 3.0
+    trail_atr: 5.0
+    # SWEEP 2026-10-08 (4 symbols, in-sample): 10 of 12 variants positive. 55/3/5 best at
+    # +0.23R, PF 1.44, all 4 symbols positive, but only 59 trades.
+    # 8 SYMBOLS (in-sample): -0.03R to -0.06R with max 8 open; AUD/NZD/CHF/EUR negative.
+    # Edge NOT robust across markets. Only ~60-190 trades in 5 years: too little data to judge a
+    # daily system. NOT passed. Gold at 1% risk now often below min lot (3x daily ATR ~ $200).
+    # FRESH TEST 2026-10-08 on Dukascopy 2005-2018 (never used for choosing settings), 5 symbols:
+    # +0.106R, PF 1.19, 194 trades, maxDD 12.5%, 4 of 5 symbols positive, all 5 neighbouring
+    # settings positive (+0.09 to +0.16R). A REAL BUT SMALL edge: ~1.5R a year = ~1-2%/yr at 1%
+    # risk. Some years -6R. Below the PF 1.3 bar and far too small for income or a prop challenge.
+    # CRYPTO 2026-10-08 (Elev8 data, same 55/3/5 settings, not tuned for crypto):
+    #   in-sample 2019-2023 BTC/ETH/XRP: +0.41R, PF 2.06, 55 trades, maxDD 7.7%; all 6 neighbours
+    #   positive (+0.34 to +1.09R).
+    #   OUT-OF-SAMPLE 2024-01 -> 2026-10 (run once): +0.26R, PF 1.52, 35 trades, maxDD 6.2%;
+    #   BTC +0.22R, ETH +0.34R, XRP +0.22R; every year positive. FIRST VALIDATED STRATEGY.
+    #   Only fails the 150-trade count (daily system). Intraday crypto: all 9 setups negative.

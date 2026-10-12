@@ -1,0 +1,178 @@
+{
+  "XAUUSD": {
+    "symbol": "XAUUSD",
+    "broker_symbol": "XAUUSD",
+    "digits": 2,
+    "contract_size": 100.0,
+    "currency_base": "USD",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "EURUSD": {
+    "symbol": "EURUSD",
+    "broker_symbol": "EURUSD",
+    "digits": 5,
+    "contract_size": 100000.0,
+    "currency_base": "EUR",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "GBPUSD": {
+    "symbol": "GBPUSD",
+    "broker_symbol": "GBPUSD",
+    "digits": 5,
+    "contract_size": 100000.0,
+    "currency_base": "GBP",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "AUDUSD": {
+    "symbol": "AUDUSD",
+    "broker_symbol": "AUDUSD",
+    "digits": 5,
+    "contract_size": 100000.0,
+    "currency_base": "AUD",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "USDJPY": {
+    "symbol": "USDJPY",
+    "broker_symbol": "USDJPY",
+    "digits": 3,
+    "contract_size": 100000.0,
+    "currency_base": "USD",
+    "currency_profit": "JPY",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "NZDUSD": {
+    "symbol": "NZDUSD",
+    "broker_symbol": "NZDUSD",
+    "digits": 5,
+    "contract_size": 100000.0,
+    "currency_base": "NZD",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "USDCAD": {
+    "symbol": "USDCAD",
+    "broker_symbol": "USDCAD",
+    "digits": 5,
+    "contract_size": 100000.0,
+    "currency_base": "USD",
+    "currency_profit": "CAD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "USDCHF": {
+    "symbol": "USDCHF",
+    "broker_symbol": "USDCHF",
+    "digits": 5,
+    "contract_size": 100000.0,
+    "currency_base": "USD",
+    "currency_profit": "CHF",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "BTCUSD": {
+    "symbol": "BTCUSD",
+    "broker_symbol": "BTCUSD",
+    "digits": 2,
+    "contract_size": 1.0,
+    "currency_base": "USD",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "ETHUSD": {
+    "symbol": "ETHUSD",
+    "broker_symbol": "ETHUSD",
+    "digits": 2,
+    "contract_size": 10.0,
+    "currency_base": "USD",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "SOLUSD": {
+    "symbol": "SOLUSD",
+    "broker_symbol": "SOLUSD",
+    "digits": 2,
+    "contract_size": 100.0,
+    "currency_base": "USD",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "XRPUSD": {
+    "symbol": "XRPUSD",
+    "broker_symbol": "XRPUSD",
+    "digits": 5,
+    "contract_size": 50000.0,
+    "currency_base": "USD",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "BNBUSD": {
+    "symbol": "BNBUSD",
+    "broker_symbol": "BNBUSD",
+    "digits": 2,
+    "contract_size": 10.0,
+    "currency_base": "USD",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "LTCUSD": {
+    "symbol": "LTCUSD",
+    "broker_symbol": "LTCUSD",
+    "digits": 2,
+    "contract_size": 100.0,
+    "currency_base": "USD",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "DOGEUSD": {
+    "symbol": "DOGEUSD",
+    "broker_symbol": "DOGEUSD",
+    "digits": 5,
+    "contract_size": 100000.0,
+    "currency_base": "USD",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  },
+  "ADAUSD": {
+    "symbol": "ADAUSD",
+    "broker_symbol": "ADAUSD",
+    "digits": 4,
+    "contract_size": 10000.0,
+    "currency_base": "USD",
+    "currency_profit": "USD",
+    "volume_min": 0.01,
+    "volume_step": 0.01,
+    "volume_max": 500.0
+  }
+}
