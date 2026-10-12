@@ -48,6 +48,49 @@
    "seen_exits": 0,
    "fill_notified": false,
    "outcome": null
+  },
+  {
+   "id": "06f875d3",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "sell",
+   "entry": 82711.45,
+   "sl": 83050.93,
+   "cur_sl": 83050.93,
+   "trail_distance": null,
+   "tp1": 82371.97,
+   "created": "2026-10-12T17:30:00+00:00",
+   "status": "new",
+   "best": 82711.45,
+   "notified_sl": 83050.93,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-12T17:30:00+00:00",
+    "entry": 82711.45,
+    "sl": 83050.93,
+    "tp1": 82371.97,
+    "tp2": 81862.75,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-12T19:30:00+00:00",
+    "close_by": "2026-10-13T01:30:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.6x ATR from EMA20; sell the pullback at 82711.45."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null
   }
  ],
  "last_signal_bar": {
@@ -57,13 +100,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-11T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T17:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T17:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T17:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T17:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T17:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T17:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T17:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T17:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T17:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T17:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T17:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T17:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T17:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T17:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -175,16 +218,18 @@
   "https://www.coindesk.com/policy/2026/10/12/palantir-executive-warns-europe-is-missing-the-boat-on-ai-just-like-it-did-with-the-internet": "2026-10-12T16:41:13.800476+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-and-gold-outlook-btc-slides-as-etf-outflows-weigh-xau-gives-back-recent-gains-202610121621": "2026-10-12T16:41:13.800480+00:00",
   "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T16:41:13.800486+00:00",
-  "https://cointelegraph.com/news/bitcoin-miners-ai-financing-costs-debt-funding-gap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T17:01:49.418586+00:00"
+  "https://cointelegraph.com/news/bitcoin-miners-ai-financing-costs-debt-funding-gap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T17:01:49.418586+00:00",
+  "https://www.fxstreet.com/news/swedish-krona-riksbank-outlook-supports-sek-against-euro-rabobank-202610121649": "2026-10-12T17:22:32.691564+00:00",
+  "https://www.fxstreet.com/news/feds-hammack-calls-for-higher-rates-as-inflation-pressures-broaden-202610121702": "2026-10-12T17:22:32.691583+00:00"
  },
  "timers": {
   "crowd": 1791823272.387288,
-  "headlines": 1791825127.4499712,
-  "scan": 1791825575.7579432,
-  "follow": 1791825514.9794393
+  "headlines": 1791826355.1831095,
+  "scan": 1791826385.8539746,
+  "follow": 1791826148.185161
  },
  "pushed_times": [],
  "last_checked": {
-  "99eade23": 1791825514.980223
+  "99eade23": 1791826148.4602935
  }
 }
