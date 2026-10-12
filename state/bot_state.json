@@ -1,6 +1,6 @@
 {
  "sent": {},
- "offset": 508857051,
+ "offset": 508857053,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -10,16 +10,16 @@
   "crypto_trend:BTCUSD": "2026-10-11T21:00:00+00:00",
   "crypto_trend:ETHUSD": "2026-10-11T21:00:00+00:00",
   "crypto_trend:XRPUSD": "2026-10-11T21:00:00+00:00",
-  "fx_gold_trend:XAUUSD": "2026-10-09T21:00:00+00:00",
-  "fx_gold_trend:EURUSD": "2026-10-09T21:00:00+00:00",
-  "fx_gold_trend:GBPUSD": "2026-10-09T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T15:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T15:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T15:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T15:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T15:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T15:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T15:00:00+00:00"
+  "fx_gold_trend:XAUUSD": "2026-10-11T21:00:00+00:00",
+  "fx_gold_trend:EURUSD": "2026-10-11T21:00:00+00:00",
+  "fx_gold_trend:GBPUSD": "2026-10-11T21:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-12T15:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T15:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T15:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T15:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T15:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T15:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T15:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -126,10 +126,10 @@
   "https://www.fxstreet.com/news/india-rising-inflation-pressures-challenge-rbi-societe-generale-202610121454": "2026-10-12T15:09:43.522611+00:00"
  },
  "timers": {
-  "crowd": 1791815295.2169347,
-  "headlines": 1791817780.2152002,
-  "scan": 1791817906.7527642,
-  "follow": 1791817783.561833
+  "crowd": 1791818916.771852,
+  "headlines": 1791818395.3696134,
+  "scan": 1791818886.179045,
+  "follow": 1791818855.5626519
  },
  "pushed_times": [],
  "last_checked": {}
