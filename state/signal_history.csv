@@ -1,0 +1,2 @@
+id,source,horizon,symbol,side,entry,sl,created,closed_at,placed,result_r,outcome
+99eade23,x_crypto_pullback,INTRADAY,ETHUSD,sell,2529.34,2544.7,2026-10-12T17:00:00+00:00,2026-10-12T19:04:29.240020+00:00,False,0.0,expired
