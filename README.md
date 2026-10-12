@@ -78,6 +78,16 @@ Run the tests:
 .venv\Scripts\python -m pytest
 ```
 
+## Running 24/7 in the cloud (GitHub Actions)
+
+`.github/workflows/bot.yml` runs `scripts/run_bot.py --cloud --minutes 13` every 15 minutes on
+GitHub's servers, with prices from Coinbase (crypto) and Twelve Data (forex/gold), and saves the
+bot's memory (`state/`) back to the repo after each shift. Secrets go in the repo's
+**Settings → Secrets and variables → Actions**: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`,
+`TWELVEDATA_API_KEY`, `MYFXBOOK_EMAIL`, `MYFXBOOK_PASSWORD`. Once it's live, the PC runs only the
+MT5 trade monitor: `Start Bot.bat` → `run_bot.py --monitor-only`. Never run the full bot on the
+PC and in the cloud at the same time (both would read your Telegram commands).
+
 ## Telegram assistant
 
 Double-click **`Start Bot.bat`** (MT5 must be open and logged in). Keep the window open; close it
