@@ -13,13 +13,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-11T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T16:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T16:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T16:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T16:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T16:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T16:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T16:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T16:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T16:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T16:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T16:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T16:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T16:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T16:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -124,13 +124,19 @@
   "https://www.fxstreet.com/news/australian-dollar-retreats-as-fed-hawkish-stance-iran-tensions-boost-us-dollar-202610121409": "2026-10-12T15:09:43.522611+00:00",
   "https://www.fxstreet.com/news/usd-chf-price-forecast-daily-chart-favours-bulls-despite-mixed-momentum-signals-202610121426": "2026-10-12T15:09:43.522611+00:00",
   "https://www.fxstreet.com/news/india-rising-inflation-pressures-challenge-rbi-societe-generale-202610121454": "2026-10-12T15:09:43.522611+00:00",
-  "https://www.coindesk.com/business/2026/10/12/tom-lee-sees-usd2-trillion-wealth-transfer-fueling-crypto-demand-as-bitmine-buys-more-ether": "2026-10-12T15:56:55.005019+00:00"
+  "https://www.coindesk.com/business/2026/10/12/tom-lee-sees-usd2-trillion-wealth-transfer-fueling-crypto-demand-as-bitmine-buys-more-ether": "2026-10-12T15:56:55.005019+00:00",
+  "https://www.fxstreet.com/news/british-pound-loses-ground-as-oil-risks-cloud-boes-hawkish-outlook-202610121529": "2026-10-12T16:41:13.800444+00:00",
+  "https://www.fxstreet.com/news/dollar-index-hits-an-18-month-high-as-the-energy-ceasefire-fails-202610121554": "2026-10-12T16:41:13.800465+00:00",
+  "https://www.fxstreet.com/news/euro-hits-fresh-yearly-low-against-british-pound-as-french-fiscal-concerns-weigh-202610121604": "2026-10-12T16:41:13.800471+00:00",
+  "https://www.coindesk.com/policy/2026/10/12/palantir-executive-warns-europe-is-missing-the-boat-on-ai-just-like-it-did-with-the-internet": "2026-10-12T16:41:13.800476+00:00",
+  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-and-gold-outlook-btc-slides-as-etf-outflows-weigh-xau-gives-back-recent-gains-202610121621": "2026-10-12T16:41:13.800480+00:00",
+  "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T16:41:13.800486+00:00"
  },
  "timers": {
-  "crowd": 1791818916.771852,
-  "headlines": 1791821242.5713527,
-  "scan": 1791821334.5269258,
-  "follow": 1791821273.4479165
+  "crowd": 1791823272.387288,
+  "headlines": 1791823879.6111152,
+  "scan": 1791824004.8740485,
+  "follow": 1791823911.1481452
  },
  "pushed_times": [],
  "last_checked": {}
