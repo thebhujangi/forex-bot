@@ -343,13 +343,14 @@
   "https://www.fxstreet.com/news/gold-tumbles-as-oil-shock-fuels-us-dollar-rally-and-fed-hike-bets-202610121908": "2026-10-12T19:25:21.428974+00:00",
   "https://www.fxstreet.com/news/fx-today-us-dollar-hits-17-month-high-rba-minutes-and-fed-speaking-up-next-202610121934": "2026-10-12T20:17:32.858872+00:00",
   "https://www.fxstreet.com/news/chinese-yuan-building-upside-momentum-toward-66800-against-us-dollar-uob-202610121945": "2026-10-12T20:17:32.858897+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-lee-predicts-largest-ever-crypto-bull-market-as-bitmine-nears-5-supply-goal-202610122028": "2026-10-12T20:38:07.439741+00:00"
+  "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-lee-predicts-largest-ever-crypto-bull-market-as-bitmine-nears-5-supply-goal-202610122028": "2026-10-12T20:38:07.439741+00:00",
+  "https://www.fxstreet.com/news/feds-hammack-sees-thriving-economy-backs-further-rate-hikes-202610122150": "2026-10-12T22:21:10.693751+00:00"
  },
  "timers": {
   "crowd": 1791841435.6966953,
-  "headlines": 1791843061.0893621,
-  "scan": 1791843402.5096834,
-  "follow": 1791843275.997386
+  "headlines": 1791843670.3127866,
+  "scan": 1791844157.2903566,
+  "follow": 1791844187.6583438
  },
  "pushed_times": [],
  "last_checked": {
@@ -357,6 +358,6 @@
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
   "d82f6843": 1791842663.0780015,
-  "4960644a": 1791843275.9979837
+  "4960644a": 1791844187.9200487
  }
 }
