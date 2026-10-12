@@ -145,13 +145,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-11T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T20:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T20:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T20:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T20:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T20:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T20:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T20:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T20:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T20:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T20:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T20:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T20:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T20:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T20:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -275,15 +275,15 @@
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-lee-predicts-largest-ever-crypto-bull-market-as-bitmine-nears-5-supply-goal-202610122028": "2026-10-12T20:38:07.439741+00:00"
  },
  "timers": {
-  "crowd": 1791834176.0157585,
-  "headlines": 1791837486.5153868,
-  "scan": 1791837701.194326,
-  "follow": 1791837487.4398103
+  "crowd": 1791837812.7959263,
+  "headlines": 1791838110.713139,
+  "scan": 1791838506.2946386,
+  "follow": 1791838445.4763594
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
-  "77426ec4": 1791837487.4407063
+  "77426ec4": 1791838445.4771895
  }
 }
