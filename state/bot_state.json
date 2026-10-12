@@ -145,13 +145,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-11T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T19:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T19:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T19:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T19:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T19:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T19:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T19:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T20:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T20:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T20:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T20:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T20:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T20:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T20:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -273,14 +273,14 @@
  },
  "timers": {
   "crowd": 1791834176.0157585,
-  "headlines": 1791834386.491525,
-  "scan": 1791834479.8816745,
-  "follow": 1791834387.2322385
+  "headlines": 1791835010.258361,
+  "scan": 1791835330.439956,
+  "follow": 1791835313.8980794
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
-  "77426ec4": 1791834387.232997
+  "77426ec4": 1791835313.8989487
  }
 }
