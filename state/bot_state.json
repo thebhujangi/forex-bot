@@ -220,17 +220,19 @@
   "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T16:41:13.800486+00:00",
   "https://cointelegraph.com/news/bitcoin-miners-ai-financing-costs-debt-funding-gap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T17:01:49.418586+00:00",
   "https://www.fxstreet.com/news/swedish-krona-riksbank-outlook-supports-sek-against-euro-rabobank-202610121649": "2026-10-12T17:22:32.691564+00:00",
-  "https://www.fxstreet.com/news/feds-hammack-calls-for-higher-rates-as-inflation-pressures-broaden-202610121702": "2026-10-12T17:22:32.691583+00:00"
+  "https://www.fxstreet.com/news/feds-hammack-calls-for-higher-rates-as-inflation-pressures-broaden-202610121702": "2026-10-12T17:22:32.691583+00:00",
+  "https://www.fxstreet.com/news/singapore-dollar-range-bias-holds-near-12835-against-us-dollar-uob-202610121738": "2026-10-12T18:13:27.950046+00:00",
+  "https://www.fxstreet.com/news/feds-hammack-sees-higher-neutral-rate-urges-more-policy-restraint-202610121753": "2026-10-12T18:13:27.950067+00:00"
  },
  "timers": {
   "crowd": 1791826902.0052187,
-  "headlines": 1791827586.8318233,
-  "scan": 1791828047.186632,
-  "follow": 1791827801.8835988
+  "headlines": 1791828807.1497555,
+  "scan": 1791828869.1436226,
+  "follow": 1791828744.9561234
  },
  "pushed_times": [],
  "last_checked": {
-  "99eade23": 1791827802.300011,
-  "06f875d3": 1791827802.656039
+  "99eade23": 1791828745.5668368,
+  "06f875d3": 1791828745.9309537
  }
 }
