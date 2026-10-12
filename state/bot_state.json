@@ -61,13 +61,13 @@
    "trail_distance": null,
    "tp1": 82371.97,
    "created": "2026-10-12T17:30:00+00:00",
-   "status": "skipped",
+   "status": "closed",
    "best": 82711.45,
    "notified_sl": 83050.93,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-12T19:30:28.059186+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -90,7 +90,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null
+   "outcome": "expired"
   },
   {
    "id": "77426ec4",
@@ -143,13 +143,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-11T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T19:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T19:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T19:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T19:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T19:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T19:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T19:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T19:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T19:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T19:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T19:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T19:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T19:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T19:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -265,18 +265,20 @@
   "https://www.fxstreet.com/news/swedish-krona-riksbank-outlook-supports-sek-against-euro-rabobank-202610121649": "2026-10-12T17:22:32.691564+00:00",
   "https://www.fxstreet.com/news/feds-hammack-calls-for-higher-rates-as-inflation-pressures-broaden-202610121702": "2026-10-12T17:22:32.691583+00:00",
   "https://www.fxstreet.com/news/singapore-dollar-range-bias-holds-near-12835-against-us-dollar-uob-202610121738": "2026-10-12T18:13:27.950046+00:00",
-  "https://www.fxstreet.com/news/feds-hammack-sees-higher-neutral-rate-urges-more-policy-restraint-202610121753": "2026-10-12T18:13:27.950067+00:00"
+  "https://www.fxstreet.com/news/feds-hammack-sees-higher-neutral-rate-urges-more-policy-restraint-202610121753": "2026-10-12T18:13:27.950067+00:00",
+  "https://www.fxstreet.com/news/south-korean-won-uptrend-seen-resuming-against-us-dollar-societe-generale-202610121851": "2026-10-12T19:25:21.428957+00:00",
+  "https://www.fxstreet.com/news/gold-tumbles-as-oil-shock-fuels-us-dollar-rally-and-fed-hike-bets-202610121908": "2026-10-12T19:25:21.428974+00:00"
  },
  "timers": {
   "crowd": 1791830553.701971,
-  "headlines": 1791832497.2465873,
-  "scan": 1791832858.84155,
-  "follow": 1791832798.0331047
+  "headlines": 1791833120.4613855,
+  "scan": 1791833672.4894106,
+  "follow": 1791833428.059173
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
-  "06f875d3": 1791832798.0338595,
-  "77426ec4": 1791832798.034194
+  "06f875d3": 1791833428.4642572,
+  "77426ec4": 1791833428.932421
  }
 }
