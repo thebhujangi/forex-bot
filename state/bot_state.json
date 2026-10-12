@@ -207,6 +207,49 @@
    "seen_exits": 0,
    "fill_notified": false,
    "outcome": null
+  },
+  {
+   "id": "05c04ab6",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "sell",
+   "entry": 82592.67,
+   "sl": 82908.46,
+   "cur_sl": 82908.46,
+   "trail_distance": null,
+   "tp1": 82276.87,
+   "created": "2026-10-12T23:00:00+00:00",
+   "status": "new",
+   "best": 82592.67,
+   "notified_sl": 82908.46,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-12T23:00:00+00:00",
+    "entry": 82592.67,
+    "sl": 82908.46,
+    "tp1": 82276.87,
+    "tp2": 81803.17,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-13T01:00:00+00:00",
+    "close_by": "2026-10-13T07:00:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 2.6x ATR from EMA20; sell the pullback at 82592.67."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null
   }
  ],
  "last_signal_bar": {
@@ -216,13 +259,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T22:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T22:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T22:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T22:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T22:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T22:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T22:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T23:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T23:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T23:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T23:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T23:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T23:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T23:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -344,20 +387,22 @@
   "https://www.fxstreet.com/news/fx-today-us-dollar-hits-17-month-high-rba-minutes-and-fed-speaking-up-next-202610121934": "2026-10-12T20:17:32.858872+00:00",
   "https://www.fxstreet.com/news/chinese-yuan-building-upside-momentum-toward-66800-against-us-dollar-uob-202610121945": "2026-10-12T20:17:32.858897+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-lee-predicts-largest-ever-crypto-bull-market-as-bitmine-nears-5-supply-goal-202610122028": "2026-10-12T20:38:07.439741+00:00",
-  "https://www.fxstreet.com/news/feds-hammack-sees-thriving-economy-backs-further-rate-hikes-202610122150": "2026-10-12T22:21:10.693751+00:00"
+  "https://www.fxstreet.com/news/feds-hammack-sees-thriving-economy-backs-further-rate-hikes-202610122150": "2026-10-12T22:21:10.693751+00:00",
+  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-shows-bottoming-signs-despite-recent-macro-pressures-202610122233": "2026-10-12T23:02:57.457935+00:00"
  },
  "timers": {
   "crowd": 1791845069.2787457,
-  "headlines": 1791845556.4230316,
-  "scan": 1791845771.5778139,
-  "follow": 1791845771.5800548
+  "headlines": 1791846176.7039661,
+  "scan": 1791846575.594014,
+  "follow": 1791846391.7981513
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791842663.0780015,
-  "4960644a": 1791845771.5807745
+  "d82f6843": 1791846084.8315868,
+  "4960644a": 1791846391.7989383,
+  "05c04ab6": 1791846391.7992978
  }
 }
