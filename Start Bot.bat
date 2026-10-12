@@ -1,7 +1,10 @@
 @echo off
-rem Starts the Telegram trading assistant. Keep this window open; close it to stop the bot.
-rem MetaTrader 5 must be open and logged in.
+rem The signal bot itself runs 24/7 in the cloud (GitHub Actions).
+rem This PC copy only watches your MT5 trades (no stop loss, breakeven, news, daily loss)
+rem and sends warnings. Keep this window open; close it to stop. MT5 opens automatically.
+rem To run the FULL bot on this PC instead, first disable the cloud workflow on GitHub,
+rem then remove --monitor-only below.
 cd /d "%~dp0"
-title Forex Bot - Telegram assistant
-.venv\Scripts\python.exe scripts\run_bot.py
+title Forex Bot - MT5 trade monitor
+.venv\Scripts\python.exe scripts\run_bot.py --monitor-only
 pause
