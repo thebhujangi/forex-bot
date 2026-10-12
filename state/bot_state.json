@@ -1,11 +1,55 @@
 {
  "sent": {},
- "offset": 508857053,
+ "offset": 508857054,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
  "last_brief": "2026-10-12",
- "tracked": [],
+ "tracked": [
+  {
+   "id": "99eade23",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "ETHUSD",
+   "side": "sell",
+   "entry": 2529.34,
+   "sl": 2544.7,
+   "cur_sl": 2544.7,
+   "trail_distance": null,
+   "tp1": 2513.97,
+   "created": "2026-10-12T17:00:00+00:00",
+   "status": "skipped",
+   "best": 2529.34,
+   "notified_sl": 2544.7,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "ETHUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-12T17:00:00+00:00",
+    "entry": 2529.34,
+    "sl": 2544.7,
+    "tp1": 2513.97,
+    "tp2": 2490.93,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-12T19:00:00+00:00",
+    "close_by": "2026-10-13T01:00:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.8x ATR from EMA20; sell the pullback at 2529.34."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null
+  }
+ ],
  "last_signal_bar": {
   "crypto_trend:BTCUSD": "2026-10-11T21:00:00+00:00",
   "crypto_trend:ETHUSD": "2026-10-11T21:00:00+00:00",
@@ -13,13 +57,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-11T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T16:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T16:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T16:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T16:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T16:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T16:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T16:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T17:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T17:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T17:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T17:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T17:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T17:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T17:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -130,14 +174,17 @@
   "https://www.fxstreet.com/news/euro-hits-fresh-yearly-low-against-british-pound-as-french-fiscal-concerns-weigh-202610121604": "2026-10-12T16:41:13.800471+00:00",
   "https://www.coindesk.com/policy/2026/10/12/palantir-executive-warns-europe-is-missing-the-boat-on-ai-just-like-it-did-with-the-internet": "2026-10-12T16:41:13.800476+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-and-gold-outlook-btc-slides-as-etf-outflows-weigh-xau-gives-back-recent-gains-202610121621": "2026-10-12T16:41:13.800480+00:00",
-  "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T16:41:13.800486+00:00"
+  "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T16:41:13.800486+00:00",
+  "https://cointelegraph.com/news/bitcoin-miners-ai-financing-costs-debt-funding-gap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T17:01:49.418586+00:00"
  },
  "timers": {
   "crowd": 1791823272.387288,
-  "headlines": 1791823879.6111152,
-  "scan": 1791824004.8740485,
-  "follow": 1791823911.1481452
+  "headlines": 1791824508.56414,
+  "scan": 1791824814.6851661,
+  "follow": 1791824539.915575
  },
  "pushed_times": [],
- "last_checked": {}
+ "last_checked": {
+  "99eade23": 1791824539.9191382
+ }
 }
