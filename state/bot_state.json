@@ -100,13 +100,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-11T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T18:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T18:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T18:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T18:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T18:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T18:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T18:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T18:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T18:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T18:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T18:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T18:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T18:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T18:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -225,14 +225,14 @@
   "https://www.fxstreet.com/news/feds-hammack-sees-higher-neutral-rate-urges-more-policy-restraint-202610121753": "2026-10-12T18:13:27.950067+00:00"
  },
  "timers": {
-  "crowd": 1791826902.0052187,
-  "headlines": 1791830044.3084397,
-  "scan": 1791830440.5794976,
-  "follow": 1791830288.403777
+  "crowd": 1791830553.701971,
+  "headlines": 1791831258.282313,
+  "scan": 1791831259.1493971,
+  "follow": 1791831227.689884
  },
  "pushed_times": [],
  "last_checked": {
-  "99eade23": 1791830288.4047456,
-  "06f875d3": 1791830288.4051816
+  "99eade23": 1791831227.6907203,
+  "06f875d3": 1791831227.691137
  }
 }
