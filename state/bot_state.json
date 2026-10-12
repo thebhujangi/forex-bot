@@ -1,5 +1,7 @@
 {
- "sent": {},
+ "sent": {
+  "filled:77426ec4": "2026-10-12T19:46:28.008179+00:00"
+ },
  "offset": 508857055,
  "initial_sl": {},
  "day": "2026-10-12",
@@ -132,7 +134,7 @@
     "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.5x ATR from EMA20; sell the pullback at 2517.36."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null
   }
  ],
@@ -143,13 +145,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-11T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-11T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-12T19:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-12T19:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-12T19:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-12T19:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-12T19:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-12T19:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-12T19:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-12T19:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-12T19:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-12T19:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-12T19:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-12T19:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-12T19:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-12T19:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -270,15 +272,15 @@
   "https://www.fxstreet.com/news/gold-tumbles-as-oil-shock-fuels-us-dollar-rally-and-fed-hike-bets-202610121908": "2026-10-12T19:25:21.428974+00:00"
  },
  "timers": {
-  "crowd": 1791830553.701971,
-  "headlines": 1791833120.4613855,
-  "scan": 1791833672.4894106,
-  "follow": 1791833428.059173
+  "crowd": 1791834176.0157585,
+  "headlines": 1791834386.491525,
+  "scan": 1791834479.8816745,
+  "follow": 1791834387.2322385
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
-  "77426ec4": 1791833428.932421
+  "77426ec4": 1791834387.232997
  }
 }
