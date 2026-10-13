@@ -6,7 +6,7 @@
   "done:77426ec4": "2026-10-12T22:04:14.854969+00:00",
   "expired:4960644a": "2026-10-12T23:48:35.059267+00:00"
  },
- "offset": 508857062,
+ "offset": 508857063,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -264,14 +264,14 @@
    "trail_distance": null,
    "tp1": 83364.21,
    "created": "2026-10-13T05:45:00+00:00",
-   "status": "new",
+   "status": "placed",
    "best": 82987.75,
    "notified_sl": 82611.29,
    "warned_loss": false,
    "result_r": null,
    "closed_at": null,
    "recorded": false,
-   "placed": false,
+   "placed": true,
    "signal": {
     "strategy": "trend_pullback",
     "symbol": "BTCUSD",
@@ -303,16 +303,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T05:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T05:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T05:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T05:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T05:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T05:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T05:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T06:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T06:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T06:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T06:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T06:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T06:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T06:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/09/bitcoin-s-volatility-has-plunged-but-extreme-price-swings-are-more-frequent-than-in-2018": "2026-10-10T05:48:15.163909+00:00",
   "https://cointelegraph.com/news/sam-altman-backed-bitcoin-life-insurer-meanwhile-raises-more-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-10T07:21:24.586032+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
   "https://www.coindesk.com/markets/2026/10/10/bitcoin-s-usd19-billion-wake-up-call-one-year-later-has-crypto-learned-anything": "2026-10-11T02:55:03.748885+00:00",
@@ -441,13 +440,15 @@
   "https://www.fxstreet.com/news/new-zealand-dollar-rebounds-to-near-05600-amid-geopolitical-tensions-and-us-cpi-focus-202610130457": "2026-10-13T05:23:53.062459+00:00",
   "https://www.fxstreet.com/news/swiss-franc-strengthens-as-us-dollar-index-pulls-back-from-18-month-highs-202610130500": "2026-10-13T05:23:53.062469+00:00",
   "https://www.fxstreet.com/news/indian-rupee-gains-further-on-rbis-fresh-measures-to-lower-us-dollars-demand-202610130508": "2026-10-13T05:23:53.062476+00:00",
-  "https://www.coindesk.com/markets/2026/10/13/tokenized-sandisk-bets-saw-more-liquidations-than-xrp-as-asia-s-chip-rout-wipes-out-usd800-million": "2026-10-13T05:34:09.564331+00:00"
+  "https://www.coindesk.com/markets/2026/10/13/tokenized-sandisk-bets-saw-more-liquidations-than-xrp-as-asia-s-chip-rout-wipes-out-usd800-million": "2026-10-13T05:34:09.564331+00:00",
+  "https://www.fxstreet.com/news/british-pound-trades-subduedly-against-japanese-yen-boes-greene-supports-quick-rate-hikes-202610130529": "2026-10-13T05:55:01.994742+00:00",
+  "https://www.coindesk.com/markets/2026/10/13/bitcoin-whale-that-sat-through-the-march-2020-crash-moves-usd378-million": "2026-10-13T05:55:01.994767+00:00"
  },
  "timers": {
   "crowd": 1791870397.3471906,
-  "headlines": 1791870275.6904376,
-  "scan": 1791870826.9360545,
-  "follow": 1791870704.4603982
+  "headlines": 1791871514.5124483,
+  "scan": 1791871607.0259075,
+  "follow": 1791871637.5727859
  },
  "pushed_times": [],
  "last_checked": {
@@ -457,6 +458,6 @@
   "d82f6843": 1791870397.9397209,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
-  "a7be91e3": 1791870704.460847
+  "a7be91e3": 1791871637.5737104
  }
 }
