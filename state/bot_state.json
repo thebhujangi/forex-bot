@@ -662,13 +662,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T23:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T23:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T23:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T23:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T23:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T23:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T23:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T23:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T23:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T23:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T23:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T23:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T23:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T23:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -881,13 +881,14 @@
   "https://www.fxstreet.com/news/pound-gains-and-stays-inside-its-range-for-a-third-week-202610132134": "2026-10-13T22:25:31.265158+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-eth-holds-2-500-as-open-interest-drops-to-lowest-level-since-february-202610132216": "2026-10-13T22:25:31.265179+00:00",
   "https://www.fxstreet.com/news/mexican-peso-buckles-as-fed-inflation-fears-overshadow-dovish-williams-202610132217": "2026-10-13T22:25:31.265187+00:00",
-  "https://www.coindesk.com/markets/2026/10/13/strive-to-ipo-second-preferred-share-class-as-it-looks-to-further-build-bitcoin-treasury": "2026-10-13T23:27:40.506205+00:00"
+  "https://www.coindesk.com/markets/2026/10/13/strive-to-ipo-second-preferred-share-class-as-it-looks-to-further-build-bitcoin-treasury": "2026-10-13T23:27:40.506205+00:00",
+  "https://www.fxstreet.com/news/gold-declines-to-near-4-150-ahead-of-us-cpi-inflation-data-202610132321": "2026-10-13T23:38:04.921474+00:00"
  },
  "timers": {
-  "crowd": 1791931827.9405682,
-  "headlines": 1791934059.6484952,
-  "scan": 1791934574.196891,
-  "follow": 1791934482.8082383
+  "crowd": 1791935433.7952719,
+  "headlines": 1791935295.3269129,
+  "scan": 1791935387.5469642,
+  "follow": 1791935141.8601532
  },
  "pushed_times": [],
  "last_checked": {
@@ -905,6 +906,6 @@
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
   "ad5510bc": 1791899161.3684304,
-  "040ff01b": 1791934482.8120337
+  "040ff01b": 1791935141.860731
  }
 }
