@@ -251,6 +251,49 @@
    "seen_exits": 0,
    "fill_notified": false,
    "outcome": "expired"
+  },
+  {
+   "id": "a7be91e3",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "buy",
+   "entry": 82987.75,
+   "sl": 82611.29,
+   "cur_sl": 82611.29,
+   "trail_distance": null,
+   "tp1": 83364.21,
+   "created": "2026-10-13T05:45:00+00:00",
+   "status": "new",
+   "best": 82987.75,
+   "notified_sl": 82611.29,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "buy",
+    "order_type": "limit",
+    "created": "2026-10-13T05:45:00+00:00",
+    "entry": 82987.75,
+    "sl": 82611.29,
+    "tp1": 83364.21,
+    "tp2": 83928.91,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-13T07:45:00+00:00",
+    "close_by": "2026-10-13T13:45:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 2.0x ATR from EMA20; buy the pullback at 82987.75."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null
   }
  ],
  "last_signal_bar": {
@@ -260,13 +303,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T05:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T05:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T05:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T05:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T05:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T05:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T05:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T05:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T05:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T05:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T05:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T05:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T05:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T05:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/09/bitcoin-s-volatility-has-plunged-but-extreme-price-swings-are-more-frequent-than-in-2018": "2026-10-10T05:48:15.163909+00:00",
@@ -401,18 +444,19 @@
   "https://www.coindesk.com/markets/2026/10/13/tokenized-sandisk-bets-saw-more-liquidations-than-xrp-as-asia-s-chip-rout-wipes-out-usd800-million": "2026-10-13T05:34:09.564331+00:00"
  },
  "timers": {
-  "crowd": 1791866739.5724015,
-  "headlines": 1791869649.1736298,
-  "scan": 1791869983.7411408,
-  "follow": 1791869740.7166991
+  "crowd": 1791870397.3471906,
+  "headlines": 1791870275.6904376,
+  "scan": 1791870826.9360545,
+  "follow": 1791870704.4603982
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791866944.2451935,
+  "d82f6843": 1791870397.9397209,
   "4960644a": 1791848914.2305858,
-  "05c04ab6": 1791853316.8314655
+  "05c04ab6": 1791853316.8314655,
+  "a7be91e3": 1791870704.460847
  }
 }
