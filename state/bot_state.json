@@ -392,20 +392,21 @@
   "https://www.coindesk.com/tech/2026/10/10/xrp-ledger-patched-decade-old-bug-that-could-create-billions-of-dollars-in-xrp-from-nothing": "2026-10-13T04:43:07.578762+00:00",
   "https://www.fxstreet.com/news/gold-bounces-off-4-150-amid-modest-usd-pullback-but-stays-in-two-week-old-range-202610130353": "2026-10-13T04:43:07.578796+00:00",
   "https://www.fxstreet.com/news/eur-jpy-price-forecast-remains-below-17700-as-bearish-bias-prevails-202610130408": "2026-10-13T04:43:07.578805+00:00",
-  "https://www.fxstreet.com/news/gbp-usd-price-forecast-defends-13200-as-bears-await-two-week-old-range-breakdown-202610130412": "2026-10-13T04:43:07.578812+00:00"
+  "https://www.fxstreet.com/news/gbp-usd-price-forecast-defends-13200-as-bears-await-two-week-old-range-breakdown-202610130412": "2026-10-13T04:43:07.578812+00:00",
+  "https://www.coindesk.com/tech/2026/10/13/once-largest-ethereum-nft-marketplace-blur-is-shutting-down-after-volumes-collapse-99": "2026-10-13T04:53:10.616271+00:00"
  },
  "timers": {
   "crowd": 1791866739.5724015,
-  "headlines": 1791866587.0470428,
-  "scan": 1791866817.3859785,
-  "follow": 1791866617.9793222
+  "headlines": 1791867189.7824795,
+  "scan": 1791867589.467269,
+  "follow": 1791867558.705899
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791863476.2830627,
+  "d82f6843": 1791866944.2451935,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655
  }
