@@ -617,13 +617,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T18:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T18:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T18:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T18:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T18:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T18:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T18:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T19:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T19:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T19:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T19:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T19:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T19:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T19:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -825,9 +825,9 @@
  },
  "timers": {
   "crowd": 1791917371.3384464,
-  "headlines": 1791917248.551352,
-  "scan": 1791917619.0866718,
-  "follow": 1791917371.6385176
+  "headlines": 1791917875.6618295,
+  "scan": 1791918421.0464706,
+  "follow": 1791918360.305274
  },
  "pushed_times": [
   1791914790.1582656
@@ -842,7 +842,7 @@
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
   "2da3e87e": 1791901036.4844654,
-  "0bdc313c": 1791917371.6393018,
+  "0bdc313c": 1791918360.306263,
   "741a79fa": 1791900093.235664,
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
