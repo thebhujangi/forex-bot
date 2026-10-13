@@ -14,7 +14,9 @@
   "exit:741a79fa:sl": "2026-10-13T14:01:34.142413+00:00",
   "done:741a79fa": "2026-10-13T14:01:34.935160+00:00",
   "exit:922bd850:sl": "2026-10-13T14:01:35.836586+00:00",
-  "done:922bd850": "2026-10-13T14:01:36.746344+00:00"
+  "done:922bd850": "2026-10-13T14:01:36.746344+00:00",
+  "filled:0bdc313c": "2026-10-13T14:17:17.186311+00:00",
+  "oco:2da3e87e": "2026-10-13T14:17:17.892511+00:00"
  },
  "offset": 508857068,
  "initial_sl": {},
@@ -360,13 +362,13 @@
    "trail_distance": null,
    "tp1": 4205.88,
    "created": "2026-10-13T13:30:00+00:00",
-   "status": "placed",
+   "status": "closed",
    "best": 4193.54,
    "notified_sl": 4181.2,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-13T14:17:16.483421+00:00",
+   "recorded": true,
    "placed": true,
    "signal": {
     "strategy": "london_breakout",
@@ -389,7 +391,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null
+   "outcome": "oco"
   },
   {
    "id": "0bdc313c",
@@ -431,7 +433,7 @@
     "reason": "Asian range 4171.10-4191.29 (0.27x daily ATR 74.93). Break below the low at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null
   },
   {
@@ -614,13 +616,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T14:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T14:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T14:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T14:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T14:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T14:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T14:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T14:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T14:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T14:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T14:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T14:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T14:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T14:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -798,26 +800,29 @@
   "https://www.fxstreet.com/news/australian-dollar-rba-inflation-focus-shapes-outlook-commerzbank-202610131251": "2026-10-13T13:19:11.708835+00:00",
   "https://www.fxstreet.com/news/euro-lower-year-end-target-at-113-against-us-dollar-ing-202610131304": "2026-10-13T13:19:11.708843+00:00",
   "https://www.fxstreet.com/news/us-dollar-supported-but-capped-by-cpi-risks-ocbc-202610131316": "2026-10-13T13:39:37.978286+00:00",
-  "https://cointelegraph.com/magazine/is-bitcoin-kidding-itself-about-the-lightning-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T13:39:37.978308+00:00"
+  "https://cointelegraph.com/magazine/is-bitcoin-kidding-itself-about-the-lightning-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T13:39:37.978308+00:00",
+  "https://www.fxstreet.com/news/indian-rupee-rbi-defense-limits-losses-against-us-dollar-societe-generale-202610131331": "2026-10-13T14:20:52.416912+00:00",
+  "https://www.fxstreet.com/news/australian-dollar-edges-higher-as-softer-us-dollar-hawkish-rba-offer-support-202610131336": "2026-10-13T14:20:52.416952+00:00",
+  "https://www.fxstreet.com/news/australian-dollar-key-support-at-06935-in-focus-against-us-dollar-uob-202610131404": "2026-10-13T14:20:52.416956+00:00"
  },
  "timers": {
   "crowd": 1791899314.6411762,
-  "headlines": 1791900648.4139152,
-  "scan": 1791900617.7460582,
-  "follow": 1791900403.1228313
+  "headlines": 1791901251.4953902,
+  "scan": 1791901435.5773308,
+  "follow": 1791901343.9289637
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791897925.611626,
+  "d82f6843": 1791901344.0606027,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
-  "2da3e87e": 1791900403.1239452,
-  "0bdc313c": 1791900403.124553,
+  "2da3e87e": 1791901036.4844654,
+  "0bdc313c": 1791901344.0610182,
   "741a79fa": 1791900093.235664,
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
