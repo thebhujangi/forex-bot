@@ -348,13 +348,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T10:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T10:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T10:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T10:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T10:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T10:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T10:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T10:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T10:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T10:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T10:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T10:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T10:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T10:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -509,13 +509,14 @@
   "https://www.fxstreet.com/news/gold-price-forecast-xau-usd-retraces-losses-as-us-yields-and-oil-prices-ease-202610130928": "2026-10-13T10:23:39.253225+00:00",
   "https://www.fxstreet.com/news/euro-declines-as-boj-tightening-bets-eurozone-stagflation-risks-bolster-japanese-yen-202610130932": "2026-10-13T10:23:39.253244+00:00",
   "https://www.fxstreet.com/news/us-dollar-overbought-signals-but-no-clear-catalyst-ing-202610130943": "2026-10-13T10:23:39.253253+00:00",
-  "https://www.fxstreet.com/news/swiss-francs-recovery-stalls-despite-broad-based-us-dollar-weakness-202610131009": "2026-10-13T10:23:39.253259+00:00"
+  "https://www.fxstreet.com/news/swiss-francs-recovery-stalls-despite-broad-based-us-dollar-weakness-202610131009": "2026-10-13T10:23:39.253259+00:00",
+  "https://www.coindesk.com/markets/2026/10/13/bitcoin-diverges-from-south-korean-stocks-as-ai-concerns-deepen-the-kospi-selloff": "2026-10-13T10:44:11.659574+00:00"
  },
  "timers": {
-  "crowd": 1791884842.9839642,
-  "headlines": 1791887621.5064719,
-  "scan": 1791887713.0811176,
-  "follow": 1791887591.0633557
+  "crowd": 1791888457.5331962,
+  "headlines": 1791888251.3849049,
+  "scan": 1791888518.5073628,
+  "follow": 1791888549.109556
  },
  "pushed_times": [],
  "last_checked": {
