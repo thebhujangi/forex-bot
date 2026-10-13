@@ -617,13 +617,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T19:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T19:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T19:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T19:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T19:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T19:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T19:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T19:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T19:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T19:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T19:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T19:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T19:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T19:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -822,13 +822,17 @@
   "https://www.fxstreet.com/news/gold-slides-on-us-yields-surge-ahead-of-cpi-202610131742": "2026-10-13T18:16:55.496008+00:00",
   "https://www.fxstreet.com/news/forex-today-us-inflation-comes-to-the-fore-202610131757": "2026-10-13T18:16:55.496018+00:00",
   "https://www.fxstreet.com/news/eur-usd-price-forecast-rsi-signals-stretched-selling-pressure-202610131812": "2026-10-13T18:47:29.361720+00:00",
-  "https://www.fxstreet.com/news/feds-williams-sees-one-final-2026-rate-hike-none-in-2027-202610131821": "2026-10-13T19:08:51.606864+00:00"
+  "https://www.fxstreet.com/news/feds-williams-sees-one-final-2026-rate-hike-none-in-2027-202610131821": "2026-10-13T19:08:51.606864+00:00",
+  "https://www.fxstreet.com/news/feds-barkin-says-persistent-inflation-warrants-policy-action-202610131831": "2026-10-13T19:29:29.846216+00:00",
+  "https://www.fxstreet.com/news/euro-soft-undertone-but-fair-value-higher-against-us-dollar-scotiabank-202610131836": "2026-10-13T19:29:29.846237+00:00",
+  "https://www.fxstreet.com/news/swiss-franc-strengthens-on-dovish-feds-rhetoric-us-cpi-looms-202610131856": "2026-10-13T19:29:29.846246+00:00",
+  "https://www.fxstreet.com/news/us-dollar-fed-pricing-leg-looks-stretched-societe-generale-202610131857": "2026-10-13T19:29:29.846255+00:00"
  },
  "timers": {
   "crowd": 1791917371.3384464,
-  "headlines": 1791919157.214459,
-  "scan": 1791919249.5750375,
-  "follow": 1791919004.0705366
+  "headlines": 1791919768.7800286,
+  "scan": 1791920038.8707993,
+  "follow": 1791919947.408742
  },
  "pushed_times": [],
  "last_checked": {
@@ -841,7 +845,7 @@
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
   "2da3e87e": 1791901036.4844654,
-  "0bdc313c": 1791919004.0715764,
+  "0bdc313c": 1791919947.41008,
   "741a79fa": 1791900093.235664,
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
