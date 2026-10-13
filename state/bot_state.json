@@ -10,7 +10,11 @@
   "filled:741a79fa": "2026-10-13T13:45:58.794844+00:00",
   "oco:b5d85662": "2026-10-13T13:45:59.639789+00:00",
   "filled:922bd850": "2026-10-13T13:46:00.463950+00:00",
-  "oco:ad5510bc": "2026-10-13T13:46:01.367406+00:00"
+  "oco:ad5510bc": "2026-10-13T13:46:01.367406+00:00",
+  "exit:741a79fa:sl": "2026-10-13T14:01:34.142413+00:00",
+  "done:741a79fa": "2026-10-13T14:01:34.935160+00:00",
+  "exit:922bd850:sl": "2026-10-13T14:01:35.836586+00:00",
+  "done:922bd850": "2026-10-13T14:01:36.746344+00:00"
  },
  "offset": 508857068,
  "initial_sl": {},
@@ -442,13 +446,13 @@
    "trail_distance": null,
    "tp1": 1.12127,
    "created": "2026-10-13T13:30:00+00:00",
-   "status": "placed",
+   "status": "closed",
    "best": 1.12033,
    "notified_sl": 1.11938,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.063157894736788,
+   "closed_at": "2026-10-13T13:45:00+00:00",
+   "recorded": true,
    "placed": true,
    "signal": {
     "strategy": "london_breakout",
@@ -469,9 +473,9 @@
     "trail_distance": null,
     "reason": "Asian range 1.11863-1.12014 (0.24x daily ATR 0.00632). Break above the high at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
-   "outcome": null
+   "outcome": "sl"
   },
   {
    "id": "b5d85662",
@@ -528,13 +532,13 @@
    "trail_distance": null,
    "tp1": 1.3265,
    "created": "2026-10-13T13:30:00+00:00",
-   "status": "placed",
+   "status": "closed",
    "best": 1.32558,
    "notified_sl": 1.32466,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.0652173913042902,
+   "closed_at": "2026-10-13T13:45:00+00:00",
+   "recorded": true,
    "placed": true,
    "signal": {
     "strategy": "london_breakout",
@@ -555,9 +559,9 @@
     "trail_distance": null,
     "reason": "Asian range 1.32394-1.32539 (0.23x daily ATR 0.00644). Break above the high at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
-   "outcome": null
+   "outcome": "sl"
   },
   {
    "id": "ad5510bc",
@@ -610,13 +614,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T13:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T13:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T13:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T13:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T13:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T13:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T13:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T14:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T14:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T14:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T14:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T14:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T14:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T14:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -798,9 +802,9 @@
  },
  "timers": {
   "crowd": 1791899314.6411762,
-  "headlines": 1791899407.1115417,
-  "scan": 1791899806.2577467,
-  "follow": 1791899775.6114361
+  "headlines": 1791900648.4139152,
+  "scan": 1791900617.7460582,
+  "follow": 1791900403.1228313
  },
  "pushed_times": [],
  "last_checked": {
@@ -812,11 +816,11 @@
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
-  "2da3e87e": 1791899775.6125062,
-  "0bdc313c": 1791899775.6131322,
-  "741a79fa": 1791899775.61382,
+  "2da3e87e": 1791900403.1239452,
+  "0bdc313c": 1791900403.124553,
+  "741a79fa": 1791900093.235664,
   "b5d85662": 1791899159.6409187,
-  "922bd850": 1791899775.6144528,
+  "922bd850": 1791900094.936636,
   "ad5510bc": 1791899161.3684304
  }
 }
