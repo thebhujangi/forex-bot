@@ -617,13 +617,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T17:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T17:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T17:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T17:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T17:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T17:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T17:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T17:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T17:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T17:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T17:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T17:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T17:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T17:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -814,26 +814,27 @@
   "https://www.fxstreet.com/news/neither-a-breakout-nor-a-reversal-what-ocbc-commerzbank-and-ing-expect-from-the-us-dollar-202610131532": "2026-10-13T16:23:58.391667+00:00",
   "https://www.fxstreet.com/news/british-pound-finds-fresh-momentum-as-boe-hawks-set-stage-for-us-cpi-202610131539": "2026-10-13T16:23:58.391688+00:00",
   "https://www.fxstreet.com/news/dollar-index-slips-from-its-18-month-high-before-us-cpi-202610131604": "2026-10-13T16:23:58.391699+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-targets-84-000-as-strive-adds-3-311-btc-to-treasury-202610131606": "2026-10-13T16:23:58.391706+00:00"
+  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-targets-84-000-as-strive-adds-3-311-btc-to-treasury-202610131606": "2026-10-13T16:23:58.391706+00:00",
+  "https://www.fxstreet.com/news/canadian-dollar-recovers-as-softer-us-dollar-offers-relief-ahead-of-us-cpi-202610131708": "2026-10-13T17:15:04.465417+00:00"
  },
  "timers": {
   "crowd": 1791910165.037601,
-  "headlines": 1791911091.4025192,
-  "scan": 1791911153.2520328,
-  "follow": 1791911030.5032227
+  "headlines": 1791911703.574243,
+  "scan": 1791911972.5206084,
+  "follow": 1791911972.522077
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791908211.6134217,
+  "d82f6843": 1791911665.055051,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
   "2da3e87e": 1791901036.4844654,
-  "0bdc313c": 1791911030.5040283,
+  "0bdc313c": 1791911972.5229177,
   "741a79fa": 1791900093.235664,
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
