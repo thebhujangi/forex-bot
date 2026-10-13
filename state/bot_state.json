@@ -616,13 +616,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T15:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T15:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T15:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T15:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T15:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T15:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T15:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T15:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T15:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T15:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T15:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T15:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T15:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T15:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -803,13 +803,14 @@
   "https://cointelegraph.com/magazine/is-bitcoin-kidding-itself-about-the-lightning-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T13:39:37.978308+00:00",
   "https://www.fxstreet.com/news/indian-rupee-rbi-defense-limits-losses-against-us-dollar-societe-generale-202610131331": "2026-10-13T14:20:52.416912+00:00",
   "https://www.fxstreet.com/news/australian-dollar-edges-higher-as-softer-us-dollar-hawkish-rba-offer-support-202610131336": "2026-10-13T14:20:52.416952+00:00",
-  "https://www.fxstreet.com/news/australian-dollar-key-support-at-06935-in-focus-against-us-dollar-uob-202610131404": "2026-10-13T14:20:52.416956+00:00"
+  "https://www.fxstreet.com/news/australian-dollar-key-support-at-06935-in-focus-against-us-dollar-uob-202610131404": "2026-10-13T14:20:52.416956+00:00",
+  "https://www.fxstreet.com/news/canadian-dollar-modest-gains-against-us-dollar-scotiabank-202610131423": "2026-10-13T15:12:40.149796+00:00"
  },
  "timers": {
   "crowd": 1791902937.3884604,
-  "headlines": 1791903744.0921059,
-  "scan": 1791903835.7153854,
-  "follow": 1791903866.1107707
+  "headlines": 1791904354.224068,
+  "scan": 1791904664.3577137,
+  "follow": 1791904482.391902
  },
  "pushed_times": [],
  "last_checked": {
@@ -822,7 +823,7 @@
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
   "2da3e87e": 1791901036.4844654,
-  "0bdc313c": 1791903866.1120582,
+  "0bdc313c": 1791904483.1375763,
   "741a79fa": 1791900093.235664,
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
