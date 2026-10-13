@@ -260,13 +260,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T02:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T02:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T02:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T02:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T02:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T02:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T02:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T02:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T02:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T02:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T02:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T02:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T02:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T02:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -403,10 +403,10 @@
   "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-falls-to-near-6000-amid-higher-oil-prices-us-dollar-202610130206": "2026-10-13T02:18:34.333673+00:00"
  },
  "timers": {
-  "crowd": 1791855887.5005658,
-  "headlines": 1791858540.9149323,
-  "scan": 1791858684.6521852,
-  "follow": 1791858449.2295094
+  "crowd": 1791859504.0953107,
+  "headlines": 1791859168.4753563,
+  "scan": 1791859534.7114062,
+  "follow": 1791859412.8438208
  },
  "pushed_times": [],
  "last_checked": {
