@@ -6,7 +6,7 @@
   "done:77426ec4": "2026-10-12T22:04:14.854969+00:00",
   "expired:4960644a": "2026-10-12T23:48:35.059267+00:00"
  },
- "offset": 508857055,
+ "offset": 508857061,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -153,7 +153,7 @@
    "trail_distance": 0.028612499999999763,
    "tp1": null,
    "created": "2026-10-12T21:00:00+00:00",
-   "status": "new",
+   "status": "skipped",
    "best": 1.11534,
    "notified_sl": 1.13272,
    "warned_loss": false,
@@ -221,7 +221,7 @@
    "trail_distance": null,
    "tp1": 82276.87,
    "created": "2026-10-12T23:00:00+00:00",
-   "status": "new",
+   "status": "skipped",
    "best": 82592.67,
    "notified_sl": 82908.46,
    "warned_loss": false,
@@ -260,13 +260,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T00:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T00:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T00:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T00:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T00:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T00:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T00:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T00:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T00:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T00:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T00:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T00:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T00:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T00:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -397,9 +397,9 @@
  },
  "timers": {
   "crowd": 1791848672.221961,
-  "headlines": 1791850521.8753266,
-  "scan": 1791850606.4505413,
-  "follow": 1791850460.4820523
+  "headlines": 1791851144.5843766,
+  "scan": 1791851467.5978506,
+  "follow": 1791851389.7591307
  },
  "pushed_times": [],
  "last_checked": {
@@ -408,6 +408,6 @@
   "77426ec4": 1791842653.3892844,
   "d82f6843": 1791849542.43914,
   "4960644a": 1791848914.2305858,
-  "05c04ab6": 1791850460.902298
+  "05c04ab6": 1791851390.1948967
  }
 }
