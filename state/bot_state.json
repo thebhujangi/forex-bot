@@ -260,13 +260,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T04:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T04:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T04:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T04:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T04:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T04:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T04:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T04:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T04:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T04:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T04:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T04:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T04:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T04:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/09/bitcoin-s-volatility-has-plunged-but-extreme-price-swings-are-more-frequent-than-in-2018": "2026-10-10T05:48:15.163909+00:00",
@@ -388,13 +388,17 @@
   "https://www.fxstreet.com/news/australian-dollar-remains-steady-following-rba-september-meeting-minutes-202610130318": "2026-10-13T03:41:35.606017+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ripple-backed-evernorth-goes-live-on-nasdaq-with-473-million-xrp-treasury-202610130346": "2026-10-13T04:02:03.292479+00:00",
   "https://www.coindesk.com/markets/2026/10/13/bitcoin-rebounds-above-usd83-000-as-it-decouples-from-tumbling-korean-stocks-and-nasdaq-futures": "2026-10-13T04:22:33.898410+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/ripple-and-stellar-outlook-rebound-from-key-technical-supports-as-derivatives-turn-mildly-bullish-202610130421": "2026-10-13T04:32:43.335064+00:00"
+  "https://www.fxstreet.com/cryptocurrencies/news/ripple-and-stellar-outlook-rebound-from-key-technical-supports-as-derivatives-turn-mildly-bullish-202610130421": "2026-10-13T04:32:43.335064+00:00",
+  "https://www.coindesk.com/tech/2026/10/10/xrp-ledger-patched-decade-old-bug-that-could-create-billions-of-dollars-in-xrp-from-nothing": "2026-10-13T04:43:07.578762+00:00",
+  "https://www.fxstreet.com/news/gold-bounces-off-4-150-amid-modest-usd-pullback-but-stays-in-two-week-old-range-202610130353": "2026-10-13T04:43:07.578796+00:00",
+  "https://www.fxstreet.com/news/eur-jpy-price-forecast-remains-below-17700-as-bearish-bias-prevails-202610130408": "2026-10-13T04:43:07.578805+00:00",
+  "https://www.fxstreet.com/news/gbp-usd-price-forecast-defends-13200-as-bears-await-two-week-old-range-breakdown-202610130412": "2026-10-13T04:43:07.578812+00:00"
  },
  "timers": {
-  "crowd": 1791863109.5662572,
-  "headlines": 1791865962.5540683,
-  "scan": 1791865963.3351429,
-  "follow": 1791865993.9336224
+  "crowd": 1791866739.5724015,
+  "headlines": 1791866587.0470428,
+  "scan": 1791866817.3859785,
+  "follow": 1791866617.9793222
  },
  "pushed_times": [],
  "last_checked": {
