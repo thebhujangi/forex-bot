@@ -303,13 +303,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T06:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T06:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T06:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T06:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T06:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T06:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T06:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T06:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T06:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T06:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T06:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T06:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T06:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T06:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/sam-altman-backed-bitcoin-life-insurer-meanwhile-raises-more-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-10T07:21:24.586032+00:00",
@@ -442,13 +442,15 @@
   "https://www.fxstreet.com/news/indian-rupee-gains-further-on-rbis-fresh-measures-to-lower-us-dollars-demand-202610130508": "2026-10-13T05:23:53.062476+00:00",
   "https://www.coindesk.com/markets/2026/10/13/tokenized-sandisk-bets-saw-more-liquidations-than-xrp-as-asia-s-chip-rout-wipes-out-usd800-million": "2026-10-13T05:34:09.564331+00:00",
   "https://www.fxstreet.com/news/british-pound-trades-subduedly-against-japanese-yen-boes-greene-supports-quick-rate-hikes-202610130529": "2026-10-13T05:55:01.994742+00:00",
-  "https://www.coindesk.com/markets/2026/10/13/bitcoin-whale-that-sat-through-the-march-2020-crash-moves-usd378-million": "2026-10-13T05:55:01.994767+00:00"
+  "https://www.coindesk.com/markets/2026/10/13/bitcoin-whale-that-sat-through-the-march-2020-crash-moves-usd378-million": "2026-10-13T05:55:01.994767+00:00",
+  "https://www.fxstreet.com/news/eur-usd-price-forecast-holds-gains-above-11150-but-remains-technically-bearish-under-100-day-sma-202610130600": "2026-10-13T06:15:40.175061+00:00",
+  "https://www.fxstreet.com/news/us-dollar-index-price-forecast-likely-extend-advance-to-near-10300-202610130608": "2026-10-13T06:15:40.175086+00:00"
  },
  "timers": {
   "crowd": 1791870397.3471906,
-  "headlines": 1791871514.5124483,
-  "scan": 1791871607.0259075,
-  "follow": 1791871637.5727859
+  "headlines": 1791872139.2732522,
+  "scan": 1791872409.134613,
+  "follow": 1791872256.7345297
  },
  "pushed_times": [],
  "last_checked": {
@@ -458,6 +460,6 @@
   "d82f6843": 1791870397.9397209,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
-  "a7be91e3": 1791871637.5737104
+  "a7be91e3": 1791872256.7354817
  }
 }
