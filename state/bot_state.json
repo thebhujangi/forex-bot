@@ -5,7 +5,8 @@
   "exit:77426ec4:tp2": "2026-10-12T22:04:14.124376+00:00",
   "done:77426ec4": "2026-10-12T22:04:14.854969+00:00",
   "expired:4960644a": "2026-10-12T23:48:35.059267+00:00",
-  "expired:a7be91e3": "2026-10-13T07:46:00.441235+00:00"
+  "expired:a7be91e3": "2026-10-13T07:46:00.441235+00:00",
+  "expired:153688b1": "2026-10-13T08:48:38.458467+00:00"
  },
  "offset": 508857064,
  "initial_sl": {},
@@ -308,13 +309,13 @@
    "trail_distance": null,
    "tp1": 2520.74,
    "created": "2026-10-13T06:45:00+00:00",
-   "status": "placed",
+   "status": "closed",
    "best": 2507.79,
    "notified_sl": 2494.83,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-13T08:48:37.730065+00:00",
+   "recorded": true,
    "placed": true,
    "signal": {
     "strategy": "trend_pullback",
@@ -337,7 +338,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null
+   "outcome": "expired"
   }
  ],
  "last_signal_bar": {
@@ -347,13 +348,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T08:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T08:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T08:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T08:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T08:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T08:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T08:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T08:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T08:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T08:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T08:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T08:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T08:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T08:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -497,20 +498,20 @@
   "https://www.fxstreet.com/news/usd-cad-price-forecast-falls-to-near-14250-near-nine-day-ema-support-202610130802": "2026-10-13T08:19:37.511010+00:00"
  },
  "timers": {
-  "crowd": 1791877608.7570992,
-  "headlines": 1791880206.0511708,
-  "scan": 1791880476.634441,
-  "follow": 1791880384.8786695
+  "crowd": 1791881225.8677065,
+  "headlines": 1791880834.188556,
+  "scan": 1791881287.2859392,
+  "follow": 1791881317.7300513
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791877241.1317778,
+  "d82f6843": 1791880710.7791624,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
-  "153688b1": 1791880384.879597
+  "153688b1": 1791881317.7309003
  }
 }
