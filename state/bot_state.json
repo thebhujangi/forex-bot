@@ -619,13 +619,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T20:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T20:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T20:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T20:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T20:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T20:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T20:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T20:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T20:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T20:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T20:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T20:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T20:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T20:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -830,13 +830,14 @@
   "https://www.fxstreet.com/news/swiss-franc-strengthens-on-dovish-feds-rhetoric-us-cpi-looms-202610131856": "2026-10-13T19:29:29.846246+00:00",
   "https://www.fxstreet.com/news/us-dollar-fed-pricing-leg-looks-stretched-societe-generale-202610131857": "2026-10-13T19:29:29.846255+00:00",
   "https://www.fxstreet.com/news/singapore-dollar-priced-in-mas-move-limits-gains-against-us-dollar-ocbc-202610131923": "2026-10-13T20:00:27.778057+00:00",
-  "https://www.fxstreet.com/news/gbp-jpy-price-forecast-bulls-challenge-21000-as-breakout-looms-202610132007": "2026-10-13T20:21:18.906217+00:00"
+  "https://www.fxstreet.com/news/gbp-jpy-price-forecast-bulls-challenge-21000-as-breakout-looms-202610132007": "2026-10-13T20:21:18.906217+00:00",
+  "https://www.fxstreet.com/news/feds-collins-backs-september-hike-sees-oil-and-ai-driving-inflation-202610132016": "2026-10-13T20:31:36.672147+00:00"
  },
  "timers": {
   "crowd": 1791920982.6584318,
-  "headlines": 1791922878.171444,
-  "scan": 1791923305.594625,
-  "follow": 1791923061.766504
+  "headlines": 1791924105.5332792,
+  "scan": 1791924075.1244314,
+  "follow": 1791924014.2794447
  },
  "pushed_times": [],
  "last_checked": {
