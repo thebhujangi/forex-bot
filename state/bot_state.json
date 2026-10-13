@@ -6,7 +6,11 @@
   "done:77426ec4": "2026-10-12T22:04:14.854969+00:00",
   "expired:4960644a": "2026-10-12T23:48:35.059267+00:00",
   "expired:a7be91e3": "2026-10-13T07:46:00.441235+00:00",
-  "expired:153688b1": "2026-10-13T08:48:38.458467+00:00"
+  "expired:153688b1": "2026-10-13T08:48:38.458467+00:00",
+  "filled:741a79fa": "2026-10-13T13:45:58.794844+00:00",
+  "oco:b5d85662": "2026-10-13T13:45:59.639789+00:00",
+  "filled:922bd850": "2026-10-13T13:46:00.463950+00:00",
+  "oco:ad5510bc": "2026-10-13T13:46:01.367406+00:00"
  },
  "offset": 508857068,
  "initial_sl": {},
@@ -466,7 +470,7 @@
     "reason": "Asian range 1.11863-1.12014 (0.24x daily ATR 0.00632). Break above the high at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null
   },
   {
@@ -481,13 +485,13 @@
    "trail_distance": null,
    "tp1": 1.1175,
    "created": "2026-10-13T13:30:00+00:00",
-   "status": "placed",
+   "status": "closed",
    "best": 1.11844,
    "notified_sl": 1.11938,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-13T13:45:57.963913+00:00",
+   "recorded": true,
    "placed": true,
    "signal": {
     "strategy": "london_breakout",
@@ -510,7 +514,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null
+   "outcome": "oco"
   },
   {
    "id": "922bd850",
@@ -552,7 +556,7 @@
     "reason": "Asian range 1.32394-1.32539 (0.23x daily ATR 0.00644). Break above the high at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null
   },
   {
@@ -567,13 +571,13 @@
    "trail_distance": null,
    "tp1": 1.32283,
    "created": "2026-10-13T13:30:00+00:00",
-   "status": "placed",
+   "status": "closed",
    "best": 1.32375,
    "notified_sl": 1.32466,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-13T13:45:57.963913+00:00",
+   "recorded": true,
    "placed": true,
    "signal": {
     "strategy": "london_breakout",
@@ -596,7 +600,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null
+   "outcome": "oco"
   }
  ],
  "last_signal_bar": {
@@ -606,13 +610,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T13:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T13:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T13:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T13:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T13:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T13:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T13:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T13:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T13:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T13:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T13:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T13:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T13:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T13:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -793,10 +797,10 @@
   "https://cointelegraph.com/magazine/is-bitcoin-kidding-itself-about-the-lightning-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T13:39:37.978308+00:00"
  },
  "timers": {
-  "crowd": 1791895707.6230583,
-  "headlines": 1791898776.9388726,
-  "scan": 1791899040.031262,
-  "follow": 1791898847.3187156
+  "crowd": 1791899314.6411762,
+  "headlines": 1791899407.1115417,
+  "scan": 1791899806.2577467,
+  "follow": 1791899775.6114361
  },
  "pushed_times": [],
  "last_checked": {
@@ -808,11 +812,11 @@
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
-  "2da3e87e": 1791898847.4977334,
-  "0bdc313c": 1791898855.4928098,
-  "741a79fa": 1791898863.4449518,
-  "b5d85662": 1791898871.448386,
-  "922bd850": 1791898879.4866805,
-  "ad5510bc": 1791898887.487557
+  "2da3e87e": 1791899775.6125062,
+  "0bdc313c": 1791899775.6131322,
+  "741a79fa": 1791899775.61382,
+  "b5d85662": 1791899159.6409187,
+  "922bd850": 1791899775.6144528,
+  "ad5510bc": 1791899161.3684304
  }
 }
