@@ -294,6 +294,49 @@
    "seen_exits": 0,
    "fill_notified": false,
    "outcome": null
+  },
+  {
+   "id": "153688b1",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "ETHUSD",
+   "side": "buy",
+   "entry": 2507.79,
+   "sl": 2494.83,
+   "cur_sl": 2494.83,
+   "trail_distance": null,
+   "tp1": 2520.74,
+   "created": "2026-10-13T06:45:00+00:00",
+   "status": "new",
+   "best": 2507.79,
+   "notified_sl": 2494.83,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "ETHUSD",
+    "side": "buy",
+    "order_type": "limit",
+    "created": "2026-10-13T06:45:00+00:00",
+    "entry": 2507.79,
+    "sl": 2494.83,
+    "tp1": 2520.74,
+    "tp2": 2540.17,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-13T08:45:00+00:00",
+    "close_by": "2026-10-13T14:45:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 2.6x ATR from EMA20; buy the pullback at 2507.79."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null
   }
  ],
  "last_signal_bar": {
@@ -303,13 +346,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T06:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T06:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T06:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T06:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T06:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T06:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T06:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T06:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T06:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T06:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T06:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T06:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T06:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T06:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/sam-altman-backed-bitcoin-life-insurer-meanwhile-raises-more-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-10T07:21:24.586032+00:00",
@@ -447,19 +490,19 @@
   "https://www.fxstreet.com/news/us-dollar-index-price-forecast-likely-extend-advance-to-near-10300-202610130608": "2026-10-13T06:15:40.175086+00:00"
  },
  "timers": {
-  "crowd": 1791870397.3471906,
-  "headlines": 1791872761.5417314,
-  "scan": 1791873268.7394445,
-  "follow": 1791873207.6170013
+  "crowd": 1791874005.5626092,
+  "headlines": 1791874005.8993726,
+  "scan": 1791874037.1663995,
+  "follow": 1791873818.9808297
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791870397.9397209,
+  "d82f6843": 1791873827.0665123,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
-  "a7be91e3": 1791873207.6178038
+  "a7be91e3": 1791873827.3930523
  }
 }
