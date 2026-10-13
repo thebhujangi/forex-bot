@@ -346,16 +346,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T07:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T07:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T07:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T07:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T07:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T07:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T07:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T07:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T07:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T07:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T07:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T07:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T07:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T07:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/sam-altman-backed-bitcoin-life-insurer-meanwhile-raises-more-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-10T07:21:24.586032+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
   "https://www.coindesk.com/markets/2026/10/10/bitcoin-s-usd19-billion-wake-up-call-one-year-later-has-crypto-learned-anything": "2026-10-11T02:55:03.748885+00:00",
   "https://www.coindesk.com/business/2026/10/05/tokenized-commodities-look-beyond-gold-as-lending-and-oil-open-new-markets": "2026-10-11T02:55:03.748885+00:00",
@@ -488,13 +487,16 @@
   "https://www.coindesk.com/markets/2026/10/13/bitcoin-whale-that-sat-through-the-march-2020-crash-moves-usd378-million": "2026-10-13T05:55:01.994767+00:00",
   "https://www.fxstreet.com/news/eur-usd-price-forecast-holds-gains-above-11150-but-remains-technically-bearish-under-100-day-sma-202610130600": "2026-10-13T06:15:40.175061+00:00",
   "https://www.fxstreet.com/news/us-dollar-index-price-forecast-likely-extend-advance-to-near-10300-202610130608": "2026-10-13T06:15:40.175086+00:00",
-  "https://www.fxstreet.com/news/usd-jpy-price-forecast-bulls-fail-to-break-the-200-day-sma-around-15850-202610130629": "2026-10-13T06:57:07.193167+00:00"
+  "https://www.fxstreet.com/news/usd-jpy-price-forecast-bulls-fail-to-break-the-200-day-sma-around-15850-202610130629": "2026-10-13T06:57:07.193167+00:00",
+  "https://www.fxstreet.com/news/euro-gradual-downside-toward-key-support-against-us-dollar-uob-202610130636": "2026-10-13T07:17:40.846379+00:00",
+  "https://www.fxstreet.com/news/aud-usd-price-forecast-declining-20-day-ema-builds-case-for-more-downside-202610130652": "2026-10-13T07:17:40.846401+00:00",
+  "https://www.fxstreet.com/news/forex-today-us-dollar-retreats-from-17-month-high-as-bond-yields-oil-prices-ease-202610130659": "2026-10-13T07:17:40.846411+00:00"
  },
  "timers": {
   "crowd": 1791874005.5626092,
-  "headlines": 1791875245.9404244,
-  "scan": 1791875643.729666,
-  "follow": 1791875674.3572087
+  "headlines": 1791876468.8557014,
+  "scan": 1791876438.3716278,
+  "follow": 1791876286.3927917
  },
  "pushed_times": [],
  "last_checked": {
@@ -504,7 +506,7 @@
   "d82f6843": 1791873827.0665123,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
-  "a7be91e3": 1791875674.638625,
-  "153688b1": 1791875674.9008415
+  "a7be91e3": 1791876286.393843,
+  "153688b1": 1791876286.3944013
  }
 }
