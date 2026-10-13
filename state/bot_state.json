@@ -617,13 +617,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T18:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T18:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T18:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T18:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T18:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T18:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T18:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T18:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T18:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T18:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T18:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T18:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T18:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T18:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -820,13 +820,14 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-13T18:06:29.498079+00:00",
   "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-struggles-near-two-month-lows-ahead-of-us-cpi-202610131737": "2026-10-13T18:16:55.495981+00:00",
   "https://www.fxstreet.com/news/gold-slides-on-us-yields-surge-ahead-of-cpi-202610131742": "2026-10-13T18:16:55.496008+00:00",
-  "https://www.fxstreet.com/news/forex-today-us-inflation-comes-to-the-fore-202610131757": "2026-10-13T18:16:55.496018+00:00"
+  "https://www.fxstreet.com/news/forex-today-us-inflation-comes-to-the-fore-202610131757": "2026-10-13T18:16:55.496018+00:00",
+  "https://www.fxstreet.com/news/eur-usd-price-forecast-rsi-signals-stretched-selling-pressure-202610131812": "2026-10-13T18:47:29.361720+00:00"
  },
  "timers": {
-  "crowd": 1791913768.5480328,
-  "headlines": 1791916630.8346705,
-  "scan": 1791916815.6125243,
-  "follow": 1791916724.1361969
+  "crowd": 1791917371.3384464,
+  "headlines": 1791917248.551352,
+  "scan": 1791917619.0866718,
+  "follow": 1791917371.6385176
  },
  "pushed_times": [
   1791914790.1582656
@@ -841,7 +842,7 @@
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
   "2da3e87e": 1791901036.4844654,
-  "0bdc313c": 1791916724.1375227,
+  "0bdc313c": 1791917371.6393018,
   "741a79fa": 1791900093.235664,
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
