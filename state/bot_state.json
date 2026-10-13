@@ -260,13 +260,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T03:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T03:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T03:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T03:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T03:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T03:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T03:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T04:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T04:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T04:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T04:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T04:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T04:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T04:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/10/xrp-ledger-patched-decade-old-bug-that-could-create-billions-of-dollars-in-xrp-from-nothing": "2026-10-10T04:26:06.382247+00:00",
@@ -386,13 +386,14 @@
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-and-gold-outlook-btc-reclaims-82k-xau-approaches-4-200-as-october-rate-hike-bets-dim-202610091545": "2026-10-13T03:10:28.550299+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/top-7-weekly-crypto-performers-atom-jup-just-lead-crypto-market-as-altcoins-defy-bitcoin-weakness-202610100015": "2026-10-13T03:10:28.550304+00:00",
   "https://www.fxstreet.com/news/boes-greene-warns-of-second-round-inflation-effects-if-we-act-late-202610130310": "2026-10-13T03:20:45.191718+00:00",
-  "https://www.fxstreet.com/news/australian-dollar-remains-steady-following-rba-september-meeting-minutes-202610130318": "2026-10-13T03:41:35.606017+00:00"
+  "https://www.fxstreet.com/news/australian-dollar-remains-steady-following-rba-september-meeting-minutes-202610130318": "2026-10-13T03:41:35.606017+00:00",
+  "https://www.fxstreet.com/cryptocurrencies/news/ripple-backed-evernorth-goes-live-on-nasdaq-with-473-million-xrp-treasury-202610130346": "2026-10-13T04:02:03.292479+00:00"
  },
  "timers": {
   "crowd": 1791863109.5662572,
-  "headlines": 1791863506.8734202,
-  "scan": 1791863568.8925927,
-  "follow": 1791863476.0117612
+  "headlines": 1791864122.5578446,
+  "scan": 1791864336.676494,
+  "follow": 1791864123.2925236
  },
  "pushed_times": [],
  "last_checked": {
