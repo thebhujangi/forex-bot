@@ -619,13 +619,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T22:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T22:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T22:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T22:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T22:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T22:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T22:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T22:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T22:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T22:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T22:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T22:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T22:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T22:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -840,10 +840,10 @@
   "https://www.fxstreet.com/news/mexican-peso-buckles-as-fed-inflation-fears-overshadow-dovish-williams-202610132217": "2026-10-13T22:25:31.265187+00:00"
  },
  "timers": {
-  "crowd": 1791928226.7588482,
-  "headlines": 1791930952.9524643,
-  "scan": 1791931350.279846,
-  "follow": 1791931289.3013175
+  "crowd": 1791931827.9405682,
+  "headlines": 1791932195.9619694,
+  "scan": 1791932165.3130107,
+  "follow": 1791931920.268481
  },
  "pushed_times": [],
  "last_checked": {
