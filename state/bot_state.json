@@ -6,7 +6,7 @@
   "done:77426ec4": "2026-10-12T22:04:14.854969+00:00",
   "expired:4960644a": "2026-10-12T23:48:35.059267+00:00"
  },
- "offset": 508857061,
+ "offset": 508857062,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -260,13 +260,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T03:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T03:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T03:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T03:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T03:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T03:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T03:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T03:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T03:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T03:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T03:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T03:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T03:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T03:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/10/xrp-ledger-patched-decade-old-bug-that-could-create-billions-of-dollars-in-xrp-from-nothing": "2026-10-10T04:26:06.382247+00:00",
@@ -384,13 +384,14 @@
   "https://www.fxstreet.com/cryptocurrencies/news/polkadot-price-forecast-dot-surges-after-dotusd-stablecoin-launch-202610091320": "2026-10-13T03:10:28.550287+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-13T03:10:28.550294+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-and-gold-outlook-btc-reclaims-82k-xau-approaches-4-200-as-october-rate-hike-bets-dim-202610091545": "2026-10-13T03:10:28.550299+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/top-7-weekly-crypto-performers-atom-jup-just-lead-crypto-market-as-altcoins-defy-bitcoin-weakness-202610100015": "2026-10-13T03:10:28.550304+00:00"
+  "https://www.fxstreet.com/cryptocurrencies/news/top-7-weekly-crypto-performers-atom-jup-just-lead-crypto-market-as-altcoins-defy-bitcoin-weakness-202610100015": "2026-10-13T03:10:28.550304+00:00",
+  "https://www.fxstreet.com/news/boes-greene-warns-of-second-round-inflation-effects-if-we-act-late-202610130310": "2026-10-13T03:20:45.191718+00:00"
  },
  "timers": {
   "crowd": 1791859504.0953107,
-  "headlines": 1791861027.6135564,
-  "scan": 1791861120.1040766,
-  "follow": 1791860966.5294087
+  "headlines": 1791861644.4869144,
+  "scan": 1791861918.660392,
+  "follow": 1791861918.6627214
  },
  "pushed_times": [],
  "last_checked": {
