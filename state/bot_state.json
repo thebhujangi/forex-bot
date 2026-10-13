@@ -260,13 +260,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T05:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T05:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T05:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T05:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T05:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T05:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T05:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T05:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T05:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T05:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T05:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T05:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T05:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T05:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/09/bitcoin-s-volatility-has-plunged-but-extreme-price-swings-are-more-frequent-than-in-2018": "2026-10-10T05:48:15.163909+00:00",
@@ -397,13 +397,14 @@
   "https://www.fxstreet.com/news/india-gold-price-today-gold-rises-according-to-fxstreet-data-202610130435": "2026-10-13T05:23:53.062438+00:00",
   "https://www.fxstreet.com/news/new-zealand-dollar-rebounds-to-near-05600-amid-geopolitical-tensions-and-us-cpi-focus-202610130457": "2026-10-13T05:23:53.062459+00:00",
   "https://www.fxstreet.com/news/swiss-franc-strengthens-as-us-dollar-index-pulls-back-from-18-month-highs-202610130500": "2026-10-13T05:23:53.062469+00:00",
-  "https://www.fxstreet.com/news/indian-rupee-gains-further-on-rbis-fresh-measures-to-lower-us-dollars-demand-202610130508": "2026-10-13T05:23:53.062476+00:00"
+  "https://www.fxstreet.com/news/indian-rupee-gains-further-on-rbis-fresh-measures-to-lower-us-dollars-demand-202610130508": "2026-10-13T05:23:53.062476+00:00",
+  "https://www.coindesk.com/markets/2026/10/13/tokenized-sandisk-bets-saw-more-liquidations-than-xrp-as-asia-s-chip-rout-wipes-out-usd800-million": "2026-10-13T05:34:09.564331+00:00"
  },
  "timers": {
   "crowd": 1791866739.5724015,
-  "headlines": 1791869032.1544154,
-  "scan": 1791869185.8143315,
-  "follow": 1791869094.2783816
+  "headlines": 1791869649.1736298,
+  "scan": 1791869983.7411408,
+  "follow": 1791869740.7166991
  },
  "pushed_times": [],
  "last_checked": {
