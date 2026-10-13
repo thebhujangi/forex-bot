@@ -260,13 +260,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T01:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T01:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T01:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T01:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T01:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T01:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T01:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T01:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T01:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T01:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T01:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T01:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T01:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T01:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -398,10 +398,10 @@
   "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67298-vs-67313-previous-202610130115": "2026-10-13T01:17:12.956304+00:00"
  },
  "timers": {
-  "crowd": 1791852285.6100218,
-  "headlines": 1791855442.308718,
-  "scan": 1791855473.3524463,
-  "follow": 1791855229.249468
+  "crowd": 1791855887.5005658,
+  "headlines": 1791856068.0946329,
+  "scan": 1791856282.630322,
+  "follow": 1791856191.0814598
  },
  "pushed_times": [],
  "last_checked": {
