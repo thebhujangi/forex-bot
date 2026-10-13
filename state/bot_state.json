@@ -260,13 +260,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T02:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T02:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T02:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T02:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T02:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T02:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T02:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T02:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T02:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T02:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T02:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T02:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T02:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T02:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -395,13 +395,18 @@
   "https://www.fxstreet.com/news/gold-tumbles-below-4-200-on-higher-oil-prices-firmer-us-dollar-202610122318": "2026-10-13T00:15:22.187503+00:00",
   "https://www.fxstreet.com/news/aussie-dollar-struggles-at-070-retreats-as-oil-shock-boosts-the-usd-202610122347": "2026-10-13T00:15:22.187524+00:00",
   "https://www.fxstreet.com/news/rba-minutes-case-for-rates-to-act-promptly-to-keep-inflation-expectations-anchored-202610130033": "2026-10-13T01:17:12.956283+00:00",
-  "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67298-vs-67313-previous-202610130115": "2026-10-13T01:17:12.956304+00:00"
+  "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67298-vs-67313-previous-202610130115": "2026-10-13T01:17:12.956304+00:00",
+  "https://www.fxstreet.com/news/canadian-dollar-edges-higher-but-remains-close-to-april-2025-lows-vs-bullish-usd-202610130121": "2026-10-13T02:18:34.333633+00:00",
+  "https://www.fxstreet.com/news/british-pound-gains-on-brc-like-for-like-retail-sales-data-despite-geopolitical-tensions-202610130124": "2026-10-13T02:18:34.333656+00:00",
+  "https://www.fxstreet.com/news/euro-gathers-strength-above-11150-despite-frances-fiscal-concerns-202610130154": "2026-10-13T02:18:34.333662+00:00",
+  "https://www.fxstreet.com/news/united-states-dollar-index-eases-from-18-month-peak-slips-below-10250-202610130156": "2026-10-13T02:18:34.333667+00:00",
+  "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-falls-to-near-6000-amid-higher-oil-prices-us-dollar-202610130206": "2026-10-13T02:18:34.333673+00:00"
  },
  "timers": {
   "crowd": 1791855887.5005658,
-  "headlines": 1791856694.156183,
-  "scan": 1791857082.9359663,
-  "follow": 1791856839.845831
+  "headlines": 1791857913.5096343,
+  "scan": 1791857883.0579038,
+  "follow": 1791857822.203501
  },
  "pushed_times": [],
  "last_checked": {
