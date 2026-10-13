@@ -617,13 +617,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T18:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T18:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T18:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T18:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T18:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T18:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T18:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T18:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T18:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T18:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T18:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T18:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T18:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T18:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -817,13 +817,16 @@
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-targets-84-000-as-strive-adds-3-311-btc-to-treasury-202610131606": "2026-10-13T16:23:58.391706+00:00",
   "https://www.fxstreet.com/news/canadian-dollar-recovers-as-softer-us-dollar-offers-relief-ahead-of-us-cpi-202610131708": "2026-10-13T17:15:04.465417+00:00",
   "https://www.fxstreet.com/news/new-zealand-dollar-recovers-on-weaker-us-dollar-softer-oil-ahead-key-us-cpi-202610131712": "2026-10-13T17:25:27.286230+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-13T18:06:29.498079+00:00"
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-13T18:06:29.498079+00:00",
+  "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-struggles-near-two-month-lows-ahead-of-us-cpi-202610131737": "2026-10-13T18:16:55.495981+00:00",
+  "https://www.fxstreet.com/news/gold-slides-on-us-yields-surge-ahead-of-cpi-202610131742": "2026-10-13T18:16:55.496008+00:00",
+  "https://www.fxstreet.com/news/forex-today-us-inflation-comes-to-the-fore-202610131757": "2026-10-13T18:16:55.496018+00:00"
  },
  "timers": {
   "crowd": 1791913768.5480328,
-  "headlines": 1791914788.9851904,
-  "scan": 1791915188.1338282,
-  "follow": 1791915126.999256
+  "headlines": 1791916027.4117656,
+  "scan": 1791915996.773084,
+  "follow": 1791915752.1424901
  },
  "pushed_times": [
   1791914790.1582656
@@ -838,7 +841,7 @@
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
   "2da3e87e": 1791901036.4844654,
-  "0bdc313c": 1791915127.099432,
+  "0bdc313c": 1791915752.1435595,
   "741a79fa": 1791900093.235664,
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
