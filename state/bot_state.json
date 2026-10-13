@@ -348,13 +348,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T12:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T12:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T12:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T12:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T12:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T12:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T12:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T12:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T12:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T12:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T12:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T12:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T12:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T12:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -529,10 +529,10 @@
   "https://www.fxstreet.com/news/eur-gbp-price-forecast-downtrend-remains-firm-despite-deeply-oversold-rsi-202610131217": "2026-10-13T12:27:19.574575+00:00"
  },
  "timers": {
-  "crowd": 1791892079.9433172,
-  "headlines": 1791894439.108108,
-  "scan": 1791894985.6082926,
-  "follow": 1791894803.0174007
+  "crowd": 1791895707.6230583,
+  "headlines": 1791895676.5340078,
+  "scan": 1791895769.2798421,
+  "follow": 1791895738.6052125
  },
  "pushed_times": [],
  "last_checked": {
