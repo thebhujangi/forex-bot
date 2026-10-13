@@ -348,13 +348,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T11:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T11:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T11:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T11:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T11:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T11:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T11:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T11:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T11:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T11:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T11:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T11:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T11:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T11:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -513,13 +513,14 @@
   "https://www.coindesk.com/markets/2026/10/13/bitcoin-diverges-from-south-korean-stocks-as-ai-concerns-deepen-the-kospi-selloff": "2026-10-13T10:44:11.659574+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-forecast-btc-rebounds-despite-cautious-sentiment-202610130958": "2026-10-13T10:54:31.526963+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/crypto-today-bitcoin-ethereum-xrp-edge-higher-despite-capital-outflows-via-etfs-202610131037": "2026-10-13T10:54:31.526982+00:00",
-  "https://www.coindesk.com/markets/2026/10/13/live-updates-bitcoin-whipsaws-between-usd81-000-and-usd84-000-as-altcoins-slide": "2026-10-13T10:54:31.526990+00:00"
+  "https://www.coindesk.com/markets/2026/10/13/live-updates-bitcoin-whipsaws-between-usd81-000-and-usd84-000-as-altcoins-slide": "2026-10-13T10:54:31.526990+00:00",
+  "https://www.coindesk.com/markets/2026/10/13/bitcoin-ether-slip-and-rebound-as-south-korean-stocks-slide-on-ai-related-concerns": "2026-10-13T11:15:04.931555+00:00"
  },
  "timers": {
   "crowd": 1791888457.5331962,
-  "headlines": 1791888871.1704745,
-  "scan": 1791889320.7912226,
-  "follow": 1791889175.4988952
+  "headlines": 1791890104.3208523,
+  "scan": 1791890183.034043,
+  "follow": 1791890125.170035
  },
  "pushed_times": [],
  "last_checked": {
