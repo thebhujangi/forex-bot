@@ -18,7 +18,7 @@
   "filled:0bdc313c": "2026-10-13T14:17:17.186311+00:00",
   "oco:2da3e87e": "2026-10-13T14:17:17.892511+00:00"
  },
- "offset": 508857069,
+ "offset": 508857070,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -616,13 +616,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T15:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T15:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T15:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T15:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T15:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T15:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T15:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T16:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T16:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T16:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T16:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T16:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T16:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T16:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -812,9 +812,9 @@
  },
  "timers": {
   "crowd": 1791906561.5413706,
-  "headlines": 1791906806.323183,
-  "scan": 1791907142.879369,
-  "follow": 1791906959.798032
+  "headlines": 1791907410.1630702,
+  "scan": 1791907957.2822177,
+  "follow": 1791907896.112926
  },
  "pushed_times": [],
  "last_checked": {
@@ -827,7 +827,7 @@
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
   "2da3e87e": 1791901036.4844654,
-  "0bdc313c": 1791906960.0807412,
+  "0bdc313c": 1791907896.1137857,
   "741a79fa": 1791900093.235664,
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
