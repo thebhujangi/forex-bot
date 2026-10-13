@@ -260,13 +260,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T04:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T04:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T04:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T04:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T04:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T04:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T04:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T04:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T04:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T04:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T04:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T04:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T04:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T04:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/10/xrp-ledger-patched-decade-old-bug-that-could-create-billions-of-dollars-in-xrp-from-nothing": "2026-10-10T04:26:06.382247+00:00",
@@ -391,9 +391,9 @@
  },
  "timers": {
   "crowd": 1791863109.5662572,
-  "headlines": 1791864122.5578446,
-  "scan": 1791864336.676494,
-  "follow": 1791864123.2925236
+  "headlines": 1791864726.375933,
+  "scan": 1791865152.0108497,
+  "follow": 1791865060.3475595
  },
  "pushed_times": [],
  "last_checked": {
