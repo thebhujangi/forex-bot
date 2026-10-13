@@ -3,3 +3,4 @@ id,source,horizon,symbol,side,entry,sl,created,closed_at,placed,result_r,outcome
 06f875d3,x_crypto_pullback,INTRADAY,BTCUSD,sell,82711.45,83050.93,2026-10-12T17:30:00+00:00,2026-10-12T19:30:28.059186+00:00,False,0.0,expired
 77426ec4,x_crypto_pullback,INTRADAY,ETHUSD,sell,2517.36,2527.3,2026-10-12T19:15:00+00:00,2026-10-12T21:45:00+00:00,False,1.749,tp2
 4960644a,x_crypto_pullback,INTRADAY,ETHUSD,sell,2514.61,2525.07,2026-10-12T21:45:00+00:00,2026-10-12T23:48:34.229622+00:00,False,0.0,expired
+05c04ab6,x_crypto_pullback,INTRADAY,BTCUSD,sell,82592.67,82908.46,2026-10-12T23:00:00+00:00,2026-10-13T01:01:56.827264+00:00,False,0.0,expired
