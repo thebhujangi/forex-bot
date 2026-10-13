@@ -106,19 +106,18 @@ def track(sig: Signal, source: Source) -> Tracked:
 
 def format_pair(sigs: list[Signal], source: Source, spec: SymbolSpec, balance: float, risk_pct: float,
                 events: list[Event], tz: str, crowd: str | None = None) -> str:
-    """Two linked orders (buy above / sell below): one message, one cancels the other."""
-    first = format_signal(sigs[0], source, spec, balance, risk_pct, events, tz, crowd)
-    f = spec.fmt
-    lines = ["🔀 <b>TWO ORDERS: place both. When one fills, cancel the other</b> (I'll remind you).", "", first,
-             "", f"<b>Second order: {sigs[1].label} {sigs[1].symbol}</b>",
-             f"Entry: <b>{f(sigs[1].entry)}</b> · Stop loss: <b>{f(sigs[1].sl)}</b>"
-             + (f" · Take profit: {f(sigs[1].tp1)}" if sigs[1].tp1 else "")
-             + (f", then {f(sigs[1].tp2)}" if sigs[1].tp2 else "")]
-    size = position_size(spec, balance, risk_pct, sigs[1].entry, sigs[1].sl)
-    if size["lots"]:
-        lines.append(f"Lot size: <b>{size['lots']:g}</b>")
-    if sigs[0].expires is not None:
-        lines.append(f"Cancel both if neither has filled by {sigs[0].expires.tz_convert(tz):%H:%M} (Malaysia time).")
+    """Two linked pending orders (buy above / sell below) in one message. Only one will trigger."""
+    a, b = sigs
+    lines = [f"🔀 <b>{a.symbol}: place 2 PENDING orders</b>",
+             horizon_line(source), f"Confidence: <b>{html.escape(source.tier)}</b>", "",
+             "Price will break one way. Only one of these orders will trigger, the other just waits.",
+             "<b>Nothing to close yet.</b> When one triggers I'll message you to delete the other one.", "",
+             "<b>Order 1</b>", *order_lines(a, spec, balance, risk_pct), "",
+             "<b>Order 2</b>", *order_lines(b, spec, balance, risk_pct)]
+    if a.expires is not None:
+        lines += ["", f"Delete both if neither has triggered by {a.expires.tz_convert(tz):%H:%M} (Malaysia time). "
+                      "I'll remind you."]
+    lines += footer_lines(a, source, events, tz, crowd)
     return "\n".join(lines)
 
 
@@ -136,9 +135,11 @@ def cancel_sibling(filled: Tracked, others: list[Tracked], spec: SymbolSpec, now
         o.status, o.outcome, o.result_r, o.closed_at = "closed", "oco", 0.0, now.isoformat()
         if loud:
             sig = signal_from_dict(o.signal)
-            alerts.append((f"oco:{o.id}", f"❎ <b>Cancel your other order: {sig.label} {o.symbol}</b> at "
-                                          f"{spec.fmt(sig.entry)}. The {filled.side.upper()} side filled, so this "
-                                          f"one is no longer needed."))
+            alerts.append((f"oco:{o.id}", f"❎ <b>Delete your other pending order: {sig.label} {o.symbol}</b> at "
+                                          f"{spec.fmt(sig.entry)}.\nThe {filled.side.upper()} order triggered, so this "
+                                          f"one is no longer needed. It never triggered, so there's no trade to "
+                                          f"close: in MT5 go to Trade, find it under Orders and delete it. "
+                                          f"Keep the {filled.side.upper()} trade open."))
     return alerts
 
 
@@ -165,23 +166,23 @@ def follow_replay(t: Tracked, bars: pd.DataFrame, cost, spec: SymbolSpec,
             if loud:
                 why = ("price ran to the target without coming back to your entry"
                        if res is not None and res.status == "cancelled" else "price never reached your entry")
-                alerts.append((f"expired:{t.id}", f"⌛ <b>Cancel your pending order: {name}</b> at {f(sig.entry)}.\n"
+                alerts.append((f"expired:{t.id}", f"⌛ <b>Delete your pending order: {name}</b> at {f(sig.entry)}.\n"
                                                   f"The setup is over: {why}. No loss, no trade."))
         return alerts
 
     if not t.fill_notified:
         t.fill_notified = True
         if loud:
-            alerts.append((f"filled:{t.id}", f"▶️ <b>Order filled: {name}</b> at about {f(res.fill_price)}. "
-                                             f"It's a live trade now. Stop loss {f(sig.sl)}."))
+            alerts.append((f"filled:{t.id}", f"▶️ <b>Order triggered: {name}</b> at about {f(res.fill_price)}. "
+                                             f"It's a live trade now. Stop loss {copyable(f(sig.sl))}."))
     real = [e for e in res.exits if e.reason != "data_end"]
     risk = sig.stop_distance
     for e in real[t.seen_exits:]:
         r_now = sig.direction * (e.price - res.fill_price) / risk
         text = {
-            "tp1": f"💰 <b>TP1 hit: {name}</b>. Take half profit at {f(e.price)}, then move your stop to "
-                   f"your entry {f(res.fill_price)} so the rest can't lose.",
-            "tp2": f"🎯 <b>TP2 hit: {name}</b>. Close the rest at {f(e.price)}.",
+            "tp1": f"💰 <b>First target hit: {name}</b>. Close half the lots at {f(e.price)}, then move your stop "
+                   f"to your entry {copyable(f(res.fill_price))} so the rest can't lose.",
+            "tp2": f"🎯 <b>Take profit hit: {name}</b> at {f(e.price)}. If MT5 hasn't closed it already, close the rest.",
             "sl": f"🛑 <b>Stopped out: {name}</b> at {f(e.price)}.",
             "be": f"➖ <b>Back to entry: {name}</b>. The rest closed at breakeven ({f(e.price)}).",
             "time": f"⏰ <b>Close now: {name}</b>. The session is over; close at about {f(e.price)} "
@@ -210,42 +211,69 @@ def follow_replay(t: Tracked, bars: pd.DataFrame, cost, spec: SymbolSpec,
     return alerts
 
 
-def format_signal(sig: Signal, source: Source, spec: SymbolSpec, balance: float, risk_pct: float,
-                  events: list[Event], tz: str, crowd: str | None = None) -> str:
+def copyable(text: str) -> str:
+    """Telegram shows <code> text in a box; one tap copies it."""
+    return f"<code>{html.escape(text)}</code>"
+
+
+ORDER_HINTS = {
+    ("buy", "market"): "buy now at the current price",
+    ("sell", "market"): "sell now at the current price",
+    ("buy", "stop"): "pending: triggers if price RISES to the entry",
+    ("sell", "stop"): "pending: triggers if price FALLS to the entry",
+    ("buy", "limit"): "pending: triggers if price DIPS to the entry",
+    ("sell", "limit"): "pending: triggers if price RISES to the entry",
+}
+
+
+def horizon_line(source: Source) -> str:
+    return "📅 LONG-TERM (days to weeks)" if source.horizon == "LONG-TERM" else "⚡ INTRADAY (minutes to hours)"
+
+
+def order_lines(sig: Signal, spec: SymbolSpec, balance: float, risk_pct: float) -> list[str]:
+    """The numbers to type into MT5, each one tap-to-copy."""
     f = spec.fmt
     icon = "🟢" if sig.side == "buy" else "🔴"
-    horizon = "📅 LONG-TERM (days to weeks)" if source.horizon == "LONG-TERM" else "⚡ INTRADAY (minutes to hours)"
-    size = position_size(spec, balance, risk_pct, sig.entry, sig.sl)
-    if size["lots"]:
-        lot_line = f"Lot size: <b>{size['lots']:g}</b> (lose ${size['risk_usd']:,.2f} = {risk_pct:g}% if the stop is hit)"
-    else:
-        lot_line = (f"Lot size: the smallest size ({spec.volume_min:g}) risks ${size['min_lot_risk_usd']:,.2f} "
-                    f"({size['min_lot_risk_usd'] / balance * 100:.1f}% of your account), above your {risk_pct:g}%. "
-                    f"Use {spec.volume_min:g} only if you accept that, otherwise skip.")
-    lines = [
-        f"{icon} <b>{sig.label} {sig.symbol}</b>",
-        horizon,
-        f"Confidence: <b>{html.escape(source.tier)}</b>",
-        "",
-        f"Entry: <b>{f(sig.entry)}</b>" + (" (buy at the current price)" if sig.order_type == "market" and sig.side == "buy"
-                                            else " (sell at the current price)" if sig.order_type == "market" else ""),
-        f"Stop loss: <b>{f(sig.sl)}</b> ({f(sig.stop_distance)} away)",
-    ]
-    if sig.tp1 is not None:
-        lines.append(f"Take profit: {f(sig.tp1)}" + (f", then {f(sig.tp2)}" if sig.tp2 else ""))
+    lines = [f"{icon} <b>{sig.label} {sig.symbol}</b> ({ORDER_HINTS[(sig.side, sig.order_type)]})",
+             f"Entry: {copyable(f(sig.entry))}",
+             f"Stop loss: {copyable(f(sig.sl))} ({f(sig.stop_distance)} away)"]
+    if sig.tp1 is not None and sig.tp2 is not None:
+        lines += [f"Take profit: {copyable(f(sig.tp2))}",
+                  f"First target: {f(sig.tp1)}. I'll tell you to close half there."]
+    elif sig.tp1 is not None:
+        lines.append(f"Take profit: {copyable(f(sig.tp1))}")
     if sig.trail_distance:
         lines.append(f"No fixed target: I'll tell you when to move the stop to lock in profit "
                      f"(it follows the best price at {f(sig.trail_distance)} distance).")
-    lines += [lot_line, "", f"<b>Why:</b> {html.escape(sig.reason)}"]
+    size = position_size(spec, balance, risk_pct, sig.entry, sig.sl)
+    if size["lots"]:
+        lots = f"{size['lots']:g}"
+        lines.append(f"Lot size: {copyable(lots)} "
+                     f"(lose ${size['risk_usd']:,.2f} = {risk_pct:g}% if the stop is hit)")
+    else:
+        lines.append(f"Lot size: the smallest size ({spec.volume_min:g}) risks ${size['min_lot_risk_usd']:,.2f} "
+                     f"({size['min_lot_risk_usd'] / balance * 100:.1f}% of your account), above your {risk_pct:g}%. "
+                     f"Use {copyable(format(spec.volume_min, 'g'))} only if you accept that, otherwise skip.")
+    return lines
+
+
+def footer_lines(sig: Signal, source: Source, events: list[Event], tz: str, crowd: str | None) -> list[str]:
+    lines = ["", f"<b>Why:</b> {html.escape(sig.reason)}"]
     soon = relevant(events, [sig.symbol], sig.created, sig.created + pd.Timedelta(hours=24))
     if soon:
         lines.append("<b>News next 24h:</b> " + "; ".join(
             f"{e.time.tz_convert(tz):%a %H:%M} {e.currency} {html.escape(e.title)}" for e in soon[:4]))
     if crowd:
         lines.append(f"<b>Crowd:</b> {html.escape(crowd)}")
-    lines += ["", f"<i>{html.escape(source.stats)}</i>",
-              "<i>Demo account. Past results don't guarantee future ones.</i>"]
-    return "\n".join(lines)
+    return lines + ["", f"<i>{html.escape(source.stats)}</i>",
+                    "<i>Demo account. Past results don't guarantee future ones.</i>"]
+
+
+def format_signal(sig: Signal, source: Source, spec: SymbolSpec, balance: float, risk_pct: float,
+                  events: list[Event], tz: str, crowd: str | None = None) -> str:
+    lines = [*order_lines(sig, spec, balance, risk_pct)]
+    lines[1:1] = [horizon_line(source), f"Confidence: <b>{html.escape(source.tier)}</b>", ""]
+    return "\n".join(lines + footer_lines(sig, source, events, tz, crowd))
 
 
 def follow(t: Tracked, highs_lows: pd.DataFrame, price: float, spec: SymbolSpec) -> list[tuple[str, str]]:
@@ -290,7 +318,7 @@ def follow(t: Tracked, highs_lows: pd.DataFrame, price: float, spec: SymbolSpec)
         locked = t.sign * (t.cur_sl - t.entry) / risk if risk else 0
         t.notified_sl = t.cur_sl
         alerts.append((f"trail:{t.id}:{f(t.cur_sl)}",
-            f"🔒 <b>Move your stop: {name}</b>\nNew stop loss: <b>{f(t.cur_sl)}</b>. "
+            f"🔒 <b>Move your stop: {name}</b>\nNew stop loss: {copyable(f(t.cur_sl))}. "
             + (f"That locks in about {locked:.1f}x your risk as profit." if locked > 0
                else "That cuts your possible loss.")))
 
