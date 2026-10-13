@@ -260,13 +260,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T01:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T01:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T01:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T01:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T01:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T01:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T01:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T01:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T01:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T01:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T01:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T01:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T01:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T01:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-10T02:53:18.698490+00:00",
@@ -393,13 +393,15 @@
   "https://www.fxstreet.com/news/the-british-pound-drifts-back-to-its-floor-as-crude-oil-lifts-the-dollar-202610122218": "2026-10-12T23:23:01.240159+00:00",
   "https://www.fxstreet.com/news/euro-collapses-below-112-as-fed-hawkish-rhetoric-lifts-the-us-dollar-202610122222": "2026-10-12T23:23:01.240182+00:00",
   "https://www.fxstreet.com/news/gold-tumbles-below-4-200-on-higher-oil-prices-firmer-us-dollar-202610122318": "2026-10-13T00:15:22.187503+00:00",
-  "https://www.fxstreet.com/news/aussie-dollar-struggles-at-070-retreats-as-oil-shock-boosts-the-usd-202610122347": "2026-10-13T00:15:22.187524+00:00"
+  "https://www.fxstreet.com/news/aussie-dollar-struggles-at-070-retreats-as-oil-shock-boosts-the-usd-202610122347": "2026-10-13T00:15:22.187524+00:00",
+  "https://www.fxstreet.com/news/rba-minutes-case-for-rates-to-act-promptly-to-keep-inflation-expectations-anchored-202610130033": "2026-10-13T01:17:12.956283+00:00",
+  "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67298-vs-67313-previous-202610130115": "2026-10-13T01:17:12.956304+00:00"
  },
  "timers": {
   "crowd": 1791852285.6100218,
-  "headlines": 1791853623.4939454,
-  "scan": 1791853869.3872108,
-  "follow": 1791853624.0412366
+  "headlines": 1791854231.9726622,
+  "scan": 1791854684.9553912,
+  "follow": 1791854593.4927099
  },
  "pushed_times": [],
  "last_checked": {
