@@ -348,13 +348,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T09:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T09:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T09:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T09:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T09:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T09:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T09:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T09:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T09:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T09:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T09:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T09:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T09:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T09:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -496,13 +496,20 @@
   "https://www.fxstreet.com/news/euro-remains-depressed-against-british-pound-as-france-and-oil-weighs-202610130718": "2026-10-13T08:19:37.510957+00:00",
   "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-remains-capped-below-6100-as-bulls-seem-hesitant-202610130720": "2026-10-13T08:19:37.511001+00:00",
   "https://www.fxstreet.com/news/usd-cad-price-forecast-falls-to-near-14250-near-nine-day-ema-support-202610130802": "2026-10-13T08:19:37.511010+00:00",
-  "https://cointelegraph.com/news/uk-court-chinese-law-61k-bitcoin-fraud-victims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T09:11:20.381528+00:00"
+  "https://cointelegraph.com/news/uk-court-chinese-law-61k-bitcoin-fraud-victims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T09:11:20.381528+00:00",
+  "https://www.fxstreet.com/news/euro-trims-losses-amid-a-softer-usd-with-upside-attempts-likely-to-remain-shallow-202610130819": "2026-10-13T09:21:32.681948+00:00",
+  "https://www.fxstreet.com/news/feds-waller-trump-is-a-threat-to-fed-independence-202610130828": "2026-10-13T09:21:32.681973+00:00",
+  "https://www.fxstreet.com/news/british-pound-cable-confined-to-broad-trading-band-uob-202610130832": "2026-10-13T09:21:32.681977+00:00",
+  "https://www.fxstreet.com/news/british-pound-gains-as-boes-greene-favors-proactive-approach-on-hot-uk-inflation-202610130843": "2026-10-13T09:21:32.681980+00:00",
+  "https://www.fxstreet.com/news/australian-dollar-high-rates-support-aussie-against-us-dollar-mufg-202610130859": "2026-10-13T09:21:32.681983+00:00",
+  "https://www.fxstreet.com/news/nzd-usd-price-forecast-recovery-from-ytd-low-seems-capped-05580-holds-the-key-202610130901": "2026-10-13T09:21:32.681986+00:00",
+  "https://www.fxstreet.com/news/euro-strengthens-against-canadian-dollar-as-german-hicp-inflation-accelerates-oil-eases-202610130902": "2026-10-13T09:21:32.681989+00:00"
  },
  "timers": {
   "crowd": 1791881225.8677065,
-  "headlines": 1791882679.7846231,
-  "scan": 1791882893.5737042,
-  "follow": 1791882863.0779393
+  "headlines": 1791883292.0720475,
+  "scan": 1791883688.8538783,
+  "follow": 1791883475.6186206
  },
  "pushed_times": [],
  "last_checked": {
