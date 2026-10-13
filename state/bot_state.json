@@ -16,7 +16,8 @@
   "exit:922bd850:sl": "2026-10-13T14:01:35.836586+00:00",
   "done:922bd850": "2026-10-13T14:01:36.746344+00:00",
   "filled:0bdc313c": "2026-10-13T14:17:17.186311+00:00",
-  "oco:2da3e87e": "2026-10-13T14:17:17.892511+00:00"
+  "oco:2da3e87e": "2026-10-13T14:17:17.892511+00:00",
+  "exit:0bdc313c:tp1": "2026-10-13T16:16:52.190301+00:00"
  },
  "offset": 508857070,
  "initial_sl": {},
@@ -432,7 +433,7 @@
     "trail_distance": null,
     "reason": "Asian range 4171.10-4191.29 (0.27x daily ATR 74.93). Break below the low at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null
   },
@@ -616,13 +617,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T16:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T16:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T16:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T16:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T16:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T16:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T16:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T16:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T16:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T16:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T16:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T16:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T16:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T16:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -808,26 +809,31 @@
   "https://www.fxstreet.com/news/british-pound-upside-momentum-builds-against-euro-societe-generale-202610131459": "2026-10-13T15:22:54.872937+00:00",
   "https://www.fxstreet.com/news/euro-finds-support-from-softer-us-dollar-french-fiscal-risks-linger-202610131509": "2026-10-13T15:22:54.872960+00:00",
   "https://www.fxstreet.com/news/taiwan-dollar-monetary-tightening-and-housing-recovery-dbs-202610131516": "2026-10-13T15:22:54.872966+00:00",
-  "https://cointelegraph.com/markets/bitcoin-keeps-up-pressure-on-84k-as-us-stocks-sidestep-korea-tech-sell-off?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T15:43:19.595202+00:00"
+  "https://cointelegraph.com/markets/bitcoin-keeps-up-pressure-on-84k-as-us-stocks-sidestep-korea-tech-sell-off?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T15:43:19.595202+00:00",
+  "https://cointelegraph.com/news/strive-bitcoin-holdings-32773-btc-warrant-exercises?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T16:13:54.934952+00:00",
+  "https://www.fxstreet.com/news/neither-a-breakout-nor-a-reversal-what-ocbc-commerzbank-and-ing-expect-from-the-us-dollar-202610131532": "2026-10-13T16:23:58.391667+00:00",
+  "https://www.fxstreet.com/news/british-pound-finds-fresh-momentum-as-boe-hawks-set-stage-for-us-cpi-202610131539": "2026-10-13T16:23:58.391688+00:00",
+  "https://www.fxstreet.com/news/dollar-index-slips-from-its-18-month-high-before-us-cpi-202610131604": "2026-10-13T16:23:58.391699+00:00",
+  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-targets-84-000-as-strive-adds-3-311-btc-to-treasury-202610131606": "2026-10-13T16:23:58.391706+00:00"
  },
  "timers": {
   "crowd": 1791906561.5413706,
-  "headlines": 1791907410.1630702,
-  "scan": 1791907957.2822177,
-  "follow": 1791907896.112926
+  "headlines": 1791908637.716603,
+  "scan": 1791908729.511343,
+  "follow": 1791908516.1650167
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791904813.0855825,
+  "d82f6843": 1791908211.6134217,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
   "2da3e87e": 1791901036.4844654,
-  "0bdc313c": 1791907896.1137857,
+  "0bdc313c": 1791908516.166352,
   "741a79fa": 1791900093.235664,
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
