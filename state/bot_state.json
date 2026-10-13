@@ -348,13 +348,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T09:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T09:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T09:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T09:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T09:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T09:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T09:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T09:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T09:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T09:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T09:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T09:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T09:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T09:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -503,20 +503,21 @@
   "https://www.fxstreet.com/news/british-pound-gains-as-boes-greene-favors-proactive-approach-on-hot-uk-inflation-202610130843": "2026-10-13T09:21:32.681980+00:00",
   "https://www.fxstreet.com/news/australian-dollar-high-rates-support-aussie-against-us-dollar-mufg-202610130859": "2026-10-13T09:21:32.681983+00:00",
   "https://www.fxstreet.com/news/nzd-usd-price-forecast-recovery-from-ytd-low-seems-capped-05580-holds-the-key-202610130901": "2026-10-13T09:21:32.681986+00:00",
-  "https://www.fxstreet.com/news/euro-strengthens-against-canadian-dollar-as-german-hicp-inflation-accelerates-oil-eases-202610130902": "2026-10-13T09:21:32.681989+00:00"
+  "https://www.fxstreet.com/news/euro-strengthens-against-canadian-dollar-as-german-hicp-inflation-accelerates-oil-eases-202610130902": "2026-10-13T09:21:32.681989+00:00",
+  "https://www.coindesk.com/policy/2026/10/13/u-k-court-ruling-boosts-government-s-chances-of-keeping-gbp3-8-billion-seized-bitcoin": "2026-10-13T09:31:54.668214+00:00"
  },
  "timers": {
   "crowd": 1791881225.8677065,
-  "headlines": 1791883292.0720475,
-  "scan": 1791883688.8538783,
-  "follow": 1791883475.6186206
+  "headlines": 1791884522.4933448,
+  "scan": 1791884492.1039183,
+  "follow": 1791884431.3188312
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791880710.7791624,
+  "d82f6843": 1791884127.4406393,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
