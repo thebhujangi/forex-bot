@@ -18,7 +18,7 @@
   "filled:0bdc313c": "2026-10-13T14:17:17.186311+00:00",
   "oco:2da3e87e": "2026-10-13T14:17:17.892511+00:00"
  },
- "offset": 508857068,
+ "offset": 508857069,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -616,13 +616,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T15:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T15:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T15:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T15:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T15:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T15:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T15:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T15:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T15:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T15:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T15:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T15:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T15:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T15:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -804,26 +804,29 @@
   "https://www.fxstreet.com/news/indian-rupee-rbi-defense-limits-losses-against-us-dollar-societe-generale-202610131331": "2026-10-13T14:20:52.416912+00:00",
   "https://www.fxstreet.com/news/australian-dollar-edges-higher-as-softer-us-dollar-hawkish-rba-offer-support-202610131336": "2026-10-13T14:20:52.416952+00:00",
   "https://www.fxstreet.com/news/australian-dollar-key-support-at-06935-in-focus-against-us-dollar-uob-202610131404": "2026-10-13T14:20:52.416956+00:00",
-  "https://www.fxstreet.com/news/canadian-dollar-modest-gains-against-us-dollar-scotiabank-202610131423": "2026-10-13T15:12:40.149796+00:00"
+  "https://www.fxstreet.com/news/canadian-dollar-modest-gains-against-us-dollar-scotiabank-202610131423": "2026-10-13T15:12:40.149796+00:00",
+  "https://www.fxstreet.com/news/british-pound-upside-momentum-builds-against-euro-societe-generale-202610131459": "2026-10-13T15:22:54.872937+00:00",
+  "https://www.fxstreet.com/news/euro-finds-support-from-softer-us-dollar-french-fiscal-risks-linger-202610131509": "2026-10-13T15:22:54.872960+00:00",
+  "https://www.fxstreet.com/news/taiwan-dollar-monetary-tightening-and-housing-recovery-dbs-202610131516": "2026-10-13T15:22:54.872966+00:00"
  },
  "timers": {
   "crowd": 1791902937.3884604,
-  "headlines": 1791904354.224068,
-  "scan": 1791904664.3577137,
-  "follow": 1791904482.391902
+  "headlines": 1791904973.9964209,
+  "scan": 1791905498.254554,
+  "follow": 1791905437.2841928
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791901344.0606027,
+  "d82f6843": 1791904813.0855825,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
   "153688b1": 1791881317.7309003,
   "2da3e87e": 1791901036.4844654,
-  "0bdc313c": 1791904483.1375763,
+  "0bdc313c": 1791905437.2848535,
   "741a79fa": 1791900093.235664,
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
