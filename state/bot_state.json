@@ -303,13 +303,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T06:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T06:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T06:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T06:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T06:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T06:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T06:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T06:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T06:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T06:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T06:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T06:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T06:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T06:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/sam-altman-backed-bitcoin-life-insurer-meanwhile-raises-more-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-10T07:21:24.586032+00:00",
@@ -448,9 +448,9 @@
  },
  "timers": {
   "crowd": 1791870397.3471906,
-  "headlines": 1791872139.2732522,
-  "scan": 1791872409.134613,
-  "follow": 1791872256.7345297
+  "headlines": 1791872761.5417314,
+  "scan": 1791873268.7394445,
+  "follow": 1791873207.6170013
  },
  "pushed_times": [],
  "last_checked": {
@@ -460,6 +460,6 @@
   "d82f6843": 1791870397.9397209,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
-  "a7be91e3": 1791872256.7354817
+  "a7be91e3": 1791873207.6178038
  }
 }
