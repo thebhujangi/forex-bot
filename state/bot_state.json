@@ -260,13 +260,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-12T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-12T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-13T03:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-13T03:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-13T03:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-13T03:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-13T03:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-13T03:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-13T03:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-13T03:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-13T03:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-13T03:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-13T03:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-13T03:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-13T03:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-13T03:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/10/xrp-ledger-patched-decade-old-bug-that-could-create-billions-of-dollars-in-xrp-from-nothing": "2026-10-10T04:26:06.382247+00:00",
@@ -385,20 +385,21 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-13T03:10:28.550294+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-and-gold-outlook-btc-reclaims-82k-xau-approaches-4-200-as-october-rate-hike-bets-dim-202610091545": "2026-10-13T03:10:28.550299+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/top-7-weekly-crypto-performers-atom-jup-just-lead-crypto-market-as-altcoins-defy-bitcoin-weakness-202610100015": "2026-10-13T03:10:28.550304+00:00",
-  "https://www.fxstreet.com/news/boes-greene-warns-of-second-round-inflation-effects-if-we-act-late-202610130310": "2026-10-13T03:20:45.191718+00:00"
+  "https://www.fxstreet.com/news/boes-greene-warns-of-second-round-inflation-effects-if-we-act-late-202610130310": "2026-10-13T03:20:45.191718+00:00",
+  "https://www.fxstreet.com/news/australian-dollar-remains-steady-following-rba-september-meeting-minutes-202610130318": "2026-10-13T03:41:35.606017+00:00"
  },
  "timers": {
-  "crowd": 1791859504.0953107,
-  "headlines": 1791862270.7679625,
-  "scan": 1791862730.7325878,
-  "follow": 1791862547.1942337
+  "crowd": 1791863109.5662572,
+  "headlines": 1791863506.8734202,
+  "scan": 1791863568.8925927,
+  "follow": 1791863476.0117612
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791860047.2986763,
+  "d82f6843": 1791863476.2830627,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655
  }
