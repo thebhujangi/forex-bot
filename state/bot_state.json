@@ -1052,13 +1052,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T09:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T09:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T09:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T09:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T09:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T09:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T09:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T09:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T09:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T09:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T09:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T09:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T09:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T09:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1315,20 +1315,27 @@
   "https://www.fxstreet.com/news/british-pound-upside-extension-capped-by-13280-against-us-dollar-uob-202610140814": "2026-10-14T08:36:14.802600+00:00",
   "https://www.fxstreet.com/news/new-zealand-dollar-gains-as-us-dollar-weakens-on-falling-yields-202610140817": "2026-10-14T08:36:14.802622+00:00",
   "https://www.fxstreet.com/news/japanese-yen-extends-range-play-vs-usd-looks-to-us-cpi-report-for-some-impetus-202610140827": "2026-10-14T08:36:14.802630+00:00",
-  "https://www.fxstreet.com/news/us-cpi-data-expected-to-rise-in-september-as-markets-reassess-fed-rate-outlook-202610140830": "2026-10-14T08:36:14.802639+00:00"
+  "https://www.fxstreet.com/news/us-cpi-data-expected-to-rise-in-september-as-markets-reassess-fed-rate-outlook-202610140830": "2026-10-14T08:36:14.802639+00:00",
+  "https://www.fxstreet.com/news/gbp-jpy-price-forecast-testing-range-top-at-21020-amid-broad-pound-strength-202610140838": "2026-10-14T09:37:58.944944+00:00",
+  "https://www.fxstreet.com/news/us-dollar-upside-risks-persist-ing-202610140843": "2026-10-14T09:37:58.944968+00:00",
+  "https://www.fxstreet.com/news/dow-jones-futures-advance-as-us-treasury-yields-oil-prices-ease-202610140848": "2026-10-14T09:37:58.944977+00:00",
+  "https://www.fxstreet.com/news/british-pound-gives-back-some-early-gains-ahead-of-us-cpi-release-202610140857": "2026-10-14T09:37:58.944984+00:00",
+  "https://www.fxstreet.com/news/usd-chf-price-forecast-targets-08350-hurdle-as-usd-bulls-await-us-cpi-report-202610140902": "2026-10-14T09:37:58.944993+00:00",
+  "https://www.fxstreet.com/news/euro-positioning-turns-net-short-bny-202610140907": "2026-10-14T09:37:58.945025+00:00",
+  "https://www.fxstreet.com/news/singapore-dollar-mas-pause-keeps-policy-band-unchanged-dbs-202610140934": "2026-10-14T09:37:58.945033+00:00"
  },
  "timers": {
   "crowd": 1791967953.1460412,
-  "headlines": 1791970054.406636,
-  "scan": 1791970055.1428668,
-  "follow": 1791970085.6041207
+  "headlines": 1791970678.3636122,
+  "scan": 1791970862.1530335,
+  "follow": 1791970709.4698906
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791967292.362469,
+  "d82f6843": 1791970709.6876817,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
