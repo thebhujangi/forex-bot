@@ -44,7 +44,7 @@
   "expired:a5805efa": "2026-10-14T14:47:47.435423+00:00",
   "expired:07e2a578": "2026-10-14T15:19:08.011292+00:00"
  },
- "offset": 508857083,
+ "offset": 508857084,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -1190,13 +1190,13 @@
    "trail_distance": null,
    "tp1": 81702.02,
    "created": "2026-10-14T15:45:00+00:00",
-   "status": "skipped",
+   "status": "closed",
    "best": 82406.49,
    "notified_sl": 83110.97,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-14T17:45:48.471393+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -1219,7 +1219,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -1274,13 +1274,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T17:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T17:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T17:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T17:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T17:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T17:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T17:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T17:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T17:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T17:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T17:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T17:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T17:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T17:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1561,9 +1561,9 @@
  },
  "timers": {
   "crowd": 1791996874.182889,
-  "headlines": 1791999157.351036,
-  "scan": 1791999188.4094567,
-  "follow": 1791998949.2423468
+  "headlines": 1791999769.3343554,
+  "scan": 1792000010.1161823,
+  "follow": 1791999948.4713898
  },
  "pushed_times": [],
  "last_checked": {
@@ -1593,7 +1593,7 @@
   "85357f8c": 1791981485.0579598,
   "a5805efa": 1791989266.6822634,
   "07e2a578": 1791991147.4227965,
-  "fb7874c9": 1791998949.6069376,
-  "b4555323": 1791998949.9239364
+  "fb7874c9": 1791999948.822082,
+  "b4555323": 1791999949.1356606
  }
 }
