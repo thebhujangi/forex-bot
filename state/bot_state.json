@@ -1052,13 +1052,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T11:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T11:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T11:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T11:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T11:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T11:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T11:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T11:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T11:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T11:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T11:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T11:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T11:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T11:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1332,9 +1332,9 @@
  },
  "timers": {
   "crowd": 1791975191.7049174,
-  "headlines": 1791975678.7263255,
-  "scan": 1791975709.7503586,
-  "follow": 1791975467.2688708
+  "headlines": 1791976304.1597047,
+  "scan": 1791976549.7871737,
+  "follow": 1791976427.1894414
  },
  "pushed_times": [],
  "last_checked": {
