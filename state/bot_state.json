@@ -934,13 +934,16 @@
   "https://www.fxstreet.com/news/euro-edges-higher-above-11200-despite-france-fiscal-risks-us-cpi-in-focus-202610140034": "2026-10-14T00:50:18.718422+00:00",
   "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67249-vs-67298-previous-202610140115": "2026-10-14T01:42:07.530704+00:00",
   "https://www.fxstreet.com/news/japanese-yen-softens-as-october-boj-hike-bets-fade-stuck-in-a-range-vs-usd-ahead-of-us-cpi-202610140127": "2026-10-14T01:42:07.530725+00:00",
-  "https://www.fxstreet.com/news/breaking-chinas-cpi-inflation-rises-to-09-yoy-in-september-vs-10-expected-202610140131": "2026-10-14T01:42:07.530733+00:00"
+  "https://www.fxstreet.com/news/breaking-chinas-cpi-inflation-rises-to-09-yoy-in-september-vs-10-expected-202610140131": "2026-10-14T01:42:07.530733+00:00",
+  "https://www.fxstreet.com/news/british-pound-strengthens-above-13250-traders-await-us-cpi-inflation-data-202610140145": "2026-10-14T02:33:50.139649+00:00",
+  "https://www.fxstreet.com/news/australian-dollar-holds-gains-following-chinese-inflation-data-202610140146": "2026-10-14T02:33:50.139678+00:00",
+  "https://www.fxstreet.com/news/new-zealand-dollar-clings-to-gains-near-05620-vs-usd-after-chinas-inflation-data-202610140150": "2026-10-14T02:33:50.139709+00:00"
  },
  "timers": {
   "crowd": 1791942675.313899,
-  "headlines": 1791944604.182032,
-  "scan": 1791945110.1045961,
-  "follow": 1791944940.036197
+  "headlines": 1791945839.0359504,
+  "scan": 1791945869.9899044,
+  "follow": 1791945869.9922025
  },
  "pushed_times": [],
  "last_checked": {
@@ -959,6 +962,6 @@
   "922bd850": 1791900094.936636,
   "ad5510bc": 1791899161.3684304,
   "040ff01b": 1791938986.6918554,
-  "0329160d": 1791944940.3584337
+  "0329160d": 1791945870.3932974
  }
 }
