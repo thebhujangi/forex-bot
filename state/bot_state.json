@@ -25,7 +25,7 @@
   "exit:0329160d:tp1": "2026-10-14T03:00:19.955277+00:00",
   "done:0329160d": "2026-10-14T03:31:02.069927+00:00"
  },
- "offset": 508857073,
+ "offset": 508857075,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -176,7 +176,7 @@
    "tp1": null,
    "created": "2026-10-12T21:00:00+00:00",
    "status": "skipped",
-   "best": 1.11534,
+   "best": 1.115260141656,
    "notified_sl": 1.13272,
    "warned_loss": false,
    "result_r": null,
@@ -773,14 +773,14 @@
    "trail_distance": null,
    "tp1": 83680.65,
    "created": "2026-10-14T03:30:00+00:00",
-   "status": "new",
+   "status": "placed",
    "best": 83365.15,
    "notified_sl": 83049.65,
    "warned_loss": false,
    "result_r": null,
    "closed_at": null,
    "recorded": false,
-   "placed": false,
+   "placed": true,
    "signal": {
     "strategy": "trend_pullback",
     "symbol": "BTCUSD",
@@ -813,13 +813,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T03:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T03:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T03:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T03:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T03:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T03:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T03:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T03:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T03:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T03:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T03:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T03:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T03:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T03:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1047,17 +1047,17 @@
   "https://www.fxstreet.com/news/canadian-dollar-edges-up-against-us-dollar-ahead-of-us-cpi-data-202610140307": "2026-10-14T03:25:15.150943+00:00"
  },
  "timers": {
-  "crowd": 1791946277.8322275,
-  "headlines": 1791948936.3424191,
-  "scan": 1791949090.0651243,
-  "follow": 1791948967.793859
+  "crowd": 1791949894.525073,
+  "headlines": 1791949587.5218847,
+  "scan": 1791949925.4439604,
+  "follow": 1791949925.445678
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791946493.1430364,
+  "d82f6843": 1791949925.7600858,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -1070,7 +1070,7 @@
   "ad5510bc": 1791899161.3684304,
   "040ff01b": 1791938986.6918554,
   "0329160d": 1791948661.421127,
-  "6a411643": 1791948968.11927,
-  "efc38c50": 1791948968.1198308
+  "6a411643": 1791949926.17958,
+  "efc38c50": 1791949926.1802893
  }
 }
