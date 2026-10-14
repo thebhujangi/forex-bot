@@ -994,13 +994,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T07:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T07:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T07:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T07:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T07:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T07:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T07:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T07:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T07:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T07:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T07:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T07:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T07:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T07:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1247,20 +1247,21 @@
   "https://www.fxstreet.com/news/euro-hits-fresh-16-month-lows-against-a-firmer-british-pound-202610140633": "2026-10-14T07:13:50.039962+00:00",
   "https://www.fxstreet.com/news/us-dollar-fed-inflation-focus-into-october-fomc-danske-bank-202610140644": "2026-10-14T07:13:50.039968+00:00",
   "https://www.fxstreet.com/news/forex-today-us-dollar-weakens-ahead-of-us-cpi-inflation-data-202610140648": "2026-10-14T07:13:50.039976+00:00",
-  "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-declines-to-near-5870-in-countdown-to-us-inflation-data-202610140655": "2026-10-14T07:13:50.039983+00:00"
+  "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-declines-to-near-5870-in-countdown-to-us-inflation-data-202610140655": "2026-10-14T07:13:50.039983+00:00",
+  "https://www.fxstreet.com/news/us-dollar-index-price-forecast-dxy-holds-above-10170-pivotal-support-ahead-of-us-cpi-202610140725": "2026-10-14T07:44:57.988375+00:00"
  },
  "timers": {
-  "crowd": 1791960730.9181037,
-  "headlines": 1791963271.6969547,
-  "scan": 1791963609.7961988,
-  "follow": 1791963517.0751915
+  "crowd": 1791964350.7953455,
+  "headlines": 1791963897.2112107,
+  "scan": 1791964412.0458045,
+  "follow": 1791964442.610822
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791960409.9651852,
+  "d82f6843": 1791963835.300259,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -1274,10 +1275,10 @@
   "040ff01b": 1791938986.6918554,
   "0329160d": 1791948661.421127,
   "6a411643": 1791954985.9187062,
-  "efc38c50": 1791963517.4995804,
-  "3634b3c2": 1791963517.5007117,
-  "faac0475": 1791963517.5017922,
-  "91f049aa": 1791963517.8263512,
-  "22d27076": 1791963518.2377367
+  "efc38c50": 1791964443.0062554,
+  "3634b3c2": 1791964443.0068982,
+  "faac0475": 1791964443.0074859,
+  "91f049aa": 1791964443.3196516,
+  "22d27076": 1791964443.6315238
  }
 }
