@@ -624,13 +624,13 @@
    "trail_distance": null,
    "tp1": 2498.16,
    "created": "2026-10-13T23:30:00+00:00",
-   "status": "skipped",
+   "status": "closed",
    "best": 2505.74,
    "notified_sl": 2513.33,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.0990411067193622,
+   "closed_at": "2026-10-14T00:30:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -651,8 +651,51 @@
     "trail_distance": null,
     "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 2.1x ATR from EMA20; sell the pullback at 2505.74."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
+   "outcome": "sl"
+  },
+  {
+   "id": "0329160d",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "buy",
+   "entry": 83298.86,
+   "sl": 83074.08,
+   "cur_sl": 83074.08,
+   "trail_distance": null,
+   "tp1": 83523.65,
+   "created": "2026-10-14T00:45:00+00:00",
+   "status": "new",
+   "best": 83298.86,
+   "notified_sl": 83074.08,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "buy",
+    "order_type": "limit",
+    "created": "2026-10-14T00:45:00+00:00",
+    "entry": 83298.86,
+    "sl": 83074.08,
+    "tp1": 83523.65,
+    "tp2": 83860.84,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-14T02:45:00+00:00",
+    "close_by": "2026-10-14T08:45:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.6x ATR from EMA20; buy the pullback at 83298.86."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
    "outcome": null
   }
  ],
@@ -663,13 +706,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T00:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T00:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T00:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T00:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T00:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T00:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T00:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T00:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T00:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T00:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T00:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T00:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T00:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T00:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -885,13 +928,15 @@
   "https://www.coindesk.com/markets/2026/10/13/strive-to-ipo-second-preferred-share-class-as-it-looks-to-further-build-bitcoin-treasury": "2026-10-13T23:27:40.506205+00:00",
   "https://www.fxstreet.com/news/gold-declines-to-near-4-150-ahead-of-us-cpi-inflation-data-202610132321": "2026-10-13T23:38:04.921474+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-pressured-by-rising-yields-as-equities-draw-strength-from-earnings-expectations-202610132337": "2026-10-14T00:29:42.598016+00:00",
-  "https://www.fxstreet.com/news/australian-dollar-climbs-as-feds-williams-push-the-brakes-on-rates-202610132334": "2026-10-14T00:40:12.685809+00:00"
+  "https://www.fxstreet.com/news/australian-dollar-climbs-as-feds-williams-push-the-brakes-on-rates-202610132334": "2026-10-14T00:40:12.685809+00:00",
+  "https://www.fxstreet.com/cryptocurrencies/news/strategy-mstr-bitcoin-buying-model-faces-scrutiny-as-strc-costs-climb-202610140030": "2026-10-14T00:50:18.718406+00:00",
+  "https://www.fxstreet.com/news/euro-edges-higher-above-11200-despite-france-fiscal-risks-us-cpi-in-focus-202610140034": "2026-10-14T00:50:18.718422+00:00"
  },
  "timers": {
-  "crowd": 1791935433.7952719,
-  "headlines": 1791938412.0756836,
-  "scan": 1791938657.726547,
-  "follow": 1791938657.7283661
+  "crowd": 1791939049.2091908,
+  "headlines": 1791939017.1572323,
+  "scan": 1791939445.6313066,
+  "follow": 1791939293.28831
  },
  "pushed_times": [],
  "last_checked": {
@@ -909,6 +954,7 @@
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
   "ad5510bc": 1791899161.3684304,
-  "040ff01b": 1791938658.1976438
+  "040ff01b": 1791938986.6918554,
+  "0329160d": 1791939293.2889774
  }
 }
