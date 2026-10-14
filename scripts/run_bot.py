@@ -140,10 +140,10 @@ class Bot:
         self.state["tracked"] = [to_dict(t) for t in self.tracked]
         self.state_file.write_text(json.dumps(self.state, indent=1), encoding="utf-8")
 
-    def send_once(self, key: str, text: str):
+    def send_once(self, key: str, text: str, buttons=None):
         if key in self.state["sent"]:
             return
-        self.tg.send(text)
+        self.tg.send(text, buttons=buttons)
         self.state["sent"][key] = pd.Timestamp.now(tz="UTC").isoformat()
         log(f"sent alert {key}")
 
@@ -214,6 +214,14 @@ class Bot:
         targets = [t for t in self.tracked if t.id in ids.split(",") and t.active]
         if not targets:
             self.tg.answer_button(q["id"], "That signal is already finished.")
+            return
+        if action == "closed":
+            for t in targets:
+                price = self.market.price(t.symbol, t.side) if t.fill_notified and self.market_ready() else None
+                t.close(price if price is not None else t.entry, outcome="closed_in_mt5")
+            self.tg.answer_button(q["id"], "Got it")
+            self.tg.send(f"👍 OK, {targets[0].symbol} is finished. No more messages about it.")
+            log(f"signal {ids} closed by you")
             return
         for t in targets:
             t.status = "placed" if action == "placed" else "skipped"
@@ -504,12 +512,14 @@ class Bot:
             created = pd.Timestamp(t.created)
             try:
                 if intraday:
-                    tf = "M15"
-                    n = int((now - created).total_seconds() // 900) + 3
-                    bars = self.market.bars(t.symbol, tf, max(n, 4))
+                    # 5-minute candles: finer than the 15-minute signal candles, so it's clearer
+                    # whether the stop or the target came first.
+                    n = int((now - created).total_seconds() // 300) + 3
+                    bars = self.market.bars(t.symbol, "M5", min(max(n, 4), 1000))
                     bars = bars[bars.index >= created]
                     was_filled = t.fill_notified
-                    alerts = follow_replay(t, bars, self.cost(t.symbol, t.entry), self.specs[t.symbol], now)
+                    alerts = follow_replay(t, bars, self.cost(t.symbol, t.entry), self.specs[t.symbol], now,
+                                           doubt=self.market.doubt(t.symbol, t.entry))
                     if t.fill_notified and not was_filled:
                         alerts += cancel_sibling(t, self.tracked, self.specs[t.symbol], now)
                 else:
@@ -524,7 +534,9 @@ class Bot:
                 continue
             checked[t.id] = time.time()
             for key, text in alerts:
-                self.send_once(key, text)
+                # Anything that may leave a live trade open gets a way to tell me it's over.
+                live = t.active and key.split(":")[0] in ("filled", "maybe", "exit", "loss", "trail")
+                self.send_once(key, text, [[("🏁 It's closed in MT5", f"closed:{t.id}")]] if live else None)
         self.state["last_checked"] = {k: v for k, v in checked.items() if any(t.id == k for t in self.tracked)}
 
     def morning_brief(self):

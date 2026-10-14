@@ -7,7 +7,9 @@ like Elev8's MT5 server, so live signals match the backtests.
 Cloud sources (free):
   * Crypto: Coinbase Exchange public candles (no key).
   * Forex & gold: Twelve Data (free key in TWELVEDATA_API_KEY; 800 calls/day, 8/minute).
-Prices from these differ from Elev8's by a few pips/dollars; levels in signals are approximate.
+Prices from these differ from Elev8's (BTC by ~$30, gold by ~$1-2). scripts/calibrate_feeds.py
+measures the gap against MT5 and saves it to feed_calibration.json; the cloud then shifts the free
+prices onto Elev8's bid and knows how far off they may still be (the "doubt" margin).
 """
 import json
 import time
@@ -16,7 +18,10 @@ import urllib.request
 
 import pandas as pd
 
+from . import PROJECT_ROOT
 from .timeutils import NEW_YORK, ROLLOVER_SHIFT, TIMEFRAME_MINUTES, trading_day
+
+CALIBRATION_FILE = PROJECT_ROOT / "feed_calibration.json"
 
 COINBASE = {"BTCUSD": "BTC-USD", "ETHUSD": "ETH-USD", "XRPUSD": "XRP-USD", "SOLUSD": "SOL-USD",
             "LTCUSD": "LTC-USD", "DOGEUSD": "DOGE-USD", "ADAUSD": "ADA-USD"}
@@ -60,14 +65,48 @@ def daily_from_hourly(h1: pd.DataFrame, now: pd.Timestamp | None = None) -> pd.D
     return d1.set_index("time").drop(columns="hours").rename_axis(None)
 
 
+def load_calibration() -> dict:
+    """{symbol: {low, high, close, doubt}}, all as fractions of the price. Empty if never measured."""
+    try:
+        return json.loads(CALIBRATION_FILE.read_text(encoding="utf-8")).get("symbols", {})
+    except (OSError, ValueError):
+        return {}
+
+
+def to_broker(df: pd.DataFrame, cal: dict | None) -> pd.DataFrame:
+    """Shift free-feed candles onto the broker's bid prices using the measured gaps."""
+    if not cal or df.empty:
+        return df
+    out = df.copy()
+    out["open"] = df.open * (1 + cal["close"])
+    out["close"] = df.close * (1 + cal["close"])
+    out["high"] = (df.high * (1 + cal["high"])).combine(out[["open", "close"]].max(axis=1), max)
+    out["low"] = (df.low * (1 + cal["low"])).combine(out[["open", "close"]].min(axis=1), min)
+    return out
+
+
 class ApiMarket:
     """Free web APIs. Used in the cloud, where MT5 isn't available."""
     has_account = False
 
-    def __init__(self, twelvedata_key: str = ""):
+    def __init__(self, twelvedata_key: str = "", calibration: dict | None = None):
         self.key = twelvedata_key
+        self.calibration = load_calibration() if calibration is None else calibration
         self._cache: dict = {}
         self._last_call = 0.0
+
+    def doubt(self, symbol: str, price: float) -> float:
+        """How far our (shifted) prices may still be from Elev8's, in price units."""
+        cal = self.calibration.get(symbol)
+        return price * cal["doubt"] if cal else 0.0
+
+    def raw_bars(self, symbol: str, tf: str, count: int) -> pd.DataFrame:
+        """Unshifted candles straight from the free source (for calibration)."""
+        if symbol in COINBASE:
+            return only_closed(self._coinbase(symbol, tf, count), tf)
+        if symbol in TWELVE:
+            return only_closed(self._twelve(symbol, tf, count), tf)
+        raise FeedError(f"No free price source for {symbol}")
 
     # ---- Coinbase ----
     def _coinbase(self, symbol: str, tf: str, count: int) -> pd.DataFrame:
@@ -116,13 +155,7 @@ class ApiMarket:
         # Re-fetch only when a new candle has closed since the last fetch.
         if cached is not None and len(cached[1]) >= count and cached[1].index[-1] + 2 * step > now:
             return cached[1].tail(count)
-        if symbol in COINBASE:
-            df = self._coinbase(symbol, tf, count)
-        elif symbol in TWELVE:
-            df = self._twelve(symbol, tf, count)
-        else:
-            raise FeedError(f"No free price source for {symbol}")
-        df = only_closed(df, tf, now)
+        df = to_broker(self.raw_bars(symbol, tf, count), self.calibration.get(symbol))
         self._cache[key] = (now, df)
         return df.tail(count)
 
@@ -148,3 +181,6 @@ class Mt5Market:
 
     def price(self, symbol: str, side: str) -> float | None:
         return self._m.side_price(self.mt5, self.names[symbol], side)
+
+    def doubt(self, symbol: str, price: float) -> float:
+        return 0.0          # these are Elev8's own prices

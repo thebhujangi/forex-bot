@@ -61,7 +61,10 @@ def _try_fill(sig: Signal, O: float, H: float, L: float, sp: float, slip: float)
     return min(sig.entry, O) - slip if L <= sig.entry else None  # sell stop
 
 
-def simulate(sig: Signal, bars: Bars, cost: Costs) -> SimResult:
+def simulate(sig: Signal, bars: Bars, cost: Costs, doubt: float = 0.0) -> SimResult:
+    """doubt: how far our prices may be from the broker's (0 in backtests). The stop counts as hit
+    if price came within `doubt` of it, and a target only counts once price went `doubt` past it,
+    so live follow-ups never report a win that didn't happen at the broker."""
     res = SimResult(sig)
     buy = sig.side == "buy"
     sp, slip = cost.spread, cost.slippage
@@ -99,7 +102,7 @@ def simulate(sig: Signal, bars: Bars, cost: Costs) -> SimResult:
         res.exits.append(Exit(_ts(bars.t[idx]), price, fraction, reason))
 
     # Fill candle: only the stop loss can trigger.
-    if (bars.l[i] <= cur_sl) if buy else (bars.h[i] + sp >= cur_sl):
+    if (bars.l[i] - doubt <= cur_sl) if buy else (bars.h[i] + sp + doubt >= cur_sl):
         close(i, cur_sl - slip if buy else cur_sl + slip, remaining, "sl")
         return res
     i += 1
@@ -110,13 +113,13 @@ def simulate(sig: Signal, bars: Bars, cost: Costs) -> SimResult:
         if close_by is not None and bars.t[i] >= close_by:
             close(i, O if buy else O + sp, remaining, "time")
             return res
-        sl_hit = (L <= cur_sl) if buy else (H + sp >= cur_sl)
+        sl_hit = (L - doubt <= cur_sl) if buy else (H + sp + doubt >= cur_sl)
         if sl_hit:
             price = min(cur_sl, O) - slip if buy else max(cur_sl, O + sp) + slip
             close(i, price, remaining, sl_kind)
             return res
         target = sig.tp2 if tp1_done else sig.tp1
-        if target is not None and ((H >= target) if buy else (L + sp <= target)):
+        if target is not None and ((H - doubt >= target) if buy else (L + sp + doubt <= target)):
             price = max(target, O) if buy else min(target, O + sp)
             fraction = remaining if (tp1_done or sig.tp2 is None) else tp1_fraction
             close(i, price, fraction, "tp2" if tp1_done else "tp1")

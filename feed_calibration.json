@@ -1,0 +1,48 @@
+{
+ "measured": "2026-10-14T03:10+00:00",
+ "note": "fractions of price: Elev8 bid minus free feed",
+ "symbols": {
+  "BTCUSD": {
+   "low": -0.0002921,
+   "high": -6.39e-05,
+   "close": -0.0001377,
+   "doubt": 0.0002432,
+   "bars": 989
+  },
+  "ETHUSD": {
+   "low": -0.0005769,
+   "high": -0.0003821,
+   "close": -0.0004785,
+   "doubt": 0.000335,
+   "bars": 989
+  },
+  "EURUSD": {
+   "low": -7.16e-05,
+   "high": -7.17e-05,
+   "close": -8.04e-05,
+   "doubt": 0.0001253,
+   "bars": 647
+  },
+  "GBPUSD": {
+   "low": -8.32e-05,
+   "high": -7.55e-05,
+   "close": -8.3e-05,
+   "doubt": 0.0001433,
+   "bars": 647
+  },
+  "XAUUSD": {
+   "low": -8.08e-05,
+   "high": 9.4e-06,
+   "close": -4.78e-05,
+   "doubt": 0.0003849,
+   "bars": 614
+  },
+  "XRPUSD": {
+   "low": -0.000812,
+   "high": -0.0007621,
+   "close": -0.0008294,
+   "doubt": 0.0003658,
+   "bars": 557
+  }
+ }
+}

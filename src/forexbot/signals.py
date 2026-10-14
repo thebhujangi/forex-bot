@@ -54,6 +54,7 @@ class Tracked:
     seen_exits: int = 0
     fill_notified: bool = False
     outcome: str | None = None      # how it ended: sl, tp2, be, time, trail, reversed, expired...
+    flags: list = field(default_factory=list)   # one-off prompts already sent (e.g. "maybe triggered")
 
     def close(self, exit_price: float, when: pd.Timestamp | None = None, outcome: str = "stop"):
         risk = abs(self.entry - self.sl)
@@ -143,10 +144,17 @@ def cancel_sibling(filled: Tracked, others: list[Tracked], spec: SymbolSpec, now
     return alerts
 
 
+def shifted(bars: pd.DataFrame, by: float) -> pd.DataFrame:
+    return bars + by if by else bars
+
+
 def follow_replay(t: Tracked, bars: pd.DataFrame, cost, spec: SymbolSpec,
-                  now: pd.Timestamp) -> list[tuple[str, str]]:
+                  now: pd.Timestamp, doubt: float = 0.0) -> list[tuple[str, str]]:
     """Intraday signals: replay the order through the backtest engine on the candles since it
-    was sent, and report anything new (filled, TP1, TP2, stopped, session over, expired)."""
+    was sent, and report anything new (filled, TP1, TP2, stopped, session over, expired).
+
+    doubt = how far our prices may be from the broker's. Bad news is reported if it may have
+    happened (a stop within `doubt` counts as hit); good news only once it surely happened."""
     from .engine import Bars, simulate
     alerts = []
     if not t.active or t.signal is None:
@@ -155,7 +163,17 @@ def follow_replay(t: Tracked, bars: pd.DataFrame, cost, spec: SymbolSpec,
     f = spec.fmt
     name = f"{sig.label} {t.symbol}"
     loud = t.status != "skipped"
-    res = simulate(sig, Bars.from_df(bars), cost) if len(bars) else None
+    res = simulate(sig, Bars.from_df(bars), cost, doubt) if len(bars) else None
+
+    # Not filled on our prices, but it would have on prices `doubt` higher or lower: ask to check MT5.
+    if loud and doubt and res is not None and not res.filled and f"maybe:{t.id}" not in t.flags:
+        if any(simulate(sig, Bars.from_df(shifted(bars, d)), cost).filled for d in (doubt, -doubt)):
+            t.flags.append(f"maybe:{t.id}")
+            alerts.append((f"maybe:{t.id}", f"❔ <b>Check MT5: {name}</b> at {f(sig.entry)} may have just "
+                                            f"triggered. Price came within {f(doubt)} of it, and my free prices "
+                                            f"can be that far from Elev8's. If it's now an open trade in MT5, keep "
+                                            f"its stop loss and take profit as they are: MT5 will close it at one "
+                                            f"of them."))
 
     if res is None or not res.filled:
         expired = (res is not None and res.status in ("expired", "cancelled")) or \
@@ -167,24 +185,44 @@ def follow_replay(t: Tracked, bars: pd.DataFrame, cost, spec: SymbolSpec,
                 why = ("price ran to the target without coming back to your entry"
                        if res is not None and res.status == "cancelled" else "price never reached your entry")
                 alerts.append((f"expired:{t.id}", f"⌛ <b>Delete your pending order: {name}</b> at {f(sig.entry)}.\n"
-                                                  f"The setup is over: {why}. No loss, no trade."))
+                                                  f"The setup is over: {why}. No loss, no trade."
+                                                  + ("\nIf MT5 did trigger it earlier, keep that trade: its stop "
+                                                     "loss and take profit will close it." if f"maybe:{t.id}" in t.flags
+                                                     else "")))
         return alerts
 
     if not t.fill_notified:
         t.fill_notified = True
         if loud:
             alerts.append((f"filled:{t.id}", f"▶️ <b>Order triggered: {name}</b> at about {f(res.fill_price)}. "
-                                             f"It's a live trade now. Stop loss {copyable(f(sig.sl))}."))
+                                             f"It's a live trade now. Stop loss {copyable(f(sig.sl))}.\n"
+                                             f"<i>MT5 is always right: my free prices differ a little from Elev8's. "
+                                             f"If MT5 closes it, tap the button and I'll stop messaging.</i>"))
     real = [e for e in res.exits if e.reason != "data_end"]
     risk = sig.stop_distance
+    by_time = dict(zip(bars.index, zip(bars.low, bars.high)))
+
+    def surely(e) -> bool:
+        """Did our prices really reach this stop, or only come within the doubt margin?"""
+        low, high = by_time.get(e.time, (None, None))
+        if low is None:
+            return True
+        if sig.direction == 1:
+            return low <= e.price + cost.slippage
+        return high + cost.spread >= e.price - cost.slippage
+
     for e in real[t.seen_exits:]:
         r_now = sig.direction * (e.price - res.fill_price) / risk
         text = {
             "tp1": f"💰 <b>First target hit: {name}</b>. Close half the lots at {f(e.price)}, then move your stop "
                    f"to your entry {copyable(f(res.fill_price))} so the rest can't lose.",
             "tp2": f"🎯 <b>Take profit hit: {name}</b> at {f(e.price)}. If MT5 hasn't closed it already, close the rest.",
-            "sl": f"🛑 <b>Stopped out: {name}</b> at {f(e.price)}.",
-            "be": f"➖ <b>Back to entry: {name}</b>. The rest closed at breakeven ({f(e.price)}).",
+            "sl": (f"🛑 <b>Stopped out: {name}</b> at {f(e.price)}." if surely(e) else
+                   f"🛑 <b>Stop probably hit: {name}</b> at {f(e.price)}. Price came within {f(doubt)} of your "
+                   f"stop, and my free prices can be that far from Elev8's. Check MT5: if the trade is gone, it's "
+                   f"finished. If it's still open, keep the stop where it is. I've stopped following this one."),
+            "be": f"➖ <b>Back to entry: {name}</b>. The rest closed at breakeven ({f(e.price)})"
+                  + ("." if surely(e) else ", or nearly did: check MT5. I've stopped following this one."),
             "time": f"⏰ <b>Close now: {name}</b>. The session is over; close at about {f(e.price)} "
                     f"({r_now:+.1f}x risk on what's left).",
         }.get(e.reason, f"{name}: closed at {f(e.price)} ({e.reason}).")

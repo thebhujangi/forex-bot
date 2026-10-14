@@ -151,3 +151,45 @@ def test_new_signals_only_from_latest_candles():
     fresh = new_signals(SRC, bars, "BTCUSD", params, BTC, idx[-1])
     assert len(fresh) == 1 and fresh[0].created == idx[-1] + pd.Timedelta(days=1)
     assert len(all_sigs) >= len(fresh)
+
+
+def test_near_stop_counts_as_hit_and_no_false_target():
+    """Tonight's BTC case: our prices stop $20 short of the stop, then rally to the first target.
+    With the doubt margin the bot must say 'stop probably hit' and never send the target message."""
+    from forexbot.instruments import Costs
+    bars = m15([(80_000, 80_150, 79_990, 80_140),     # buy stop at 80,100 triggers
+                (80_140, 80_150, 79_920, 79_950),     # low 79,920: $20 above the 79,900 stop
+                (79_950, 80_350, 79_940, 80_340)])    # then up through the first target 80,300
+    loose = track(intraday_sig(), INTRA)
+    keys = [k for k, _ in follow_replay(loose, bars, Costs(), BTC, T0 + pd.Timedelta(hours=1))]
+    assert any(k.endswith(":tp1") for k in keys)                       # what used to happen
+    t = track(intraday_sig(), INTRA)
+    alerts = follow_replay(t, bars, Costs(), BTC, T0 + pd.Timedelta(hours=1), doubt=30.0)
+    assert not any(k.endswith(":tp1") for k, _ in alerts)
+    assert any("Stop probably hit" in text for _, text in alerts)
+    assert t.status == "closed" and t.outcome == "sl"
+
+
+def test_target_only_counts_when_clearly_passed():
+    from forexbot.instruments import Costs
+    bars = m15([(80_000, 80_150, 79_990, 80_140), (80_140, 80_310, 80_100, 80_200)])  # 80,310 vs TP1 80,300
+    t = track(intraday_sig(), INTRA)
+    alerts = follow_replay(t, bars, Costs(), BTC, T0 + pd.Timedelta(hours=1), doubt=30.0)
+    assert [k.split(":")[0] for k, _ in alerts] == ["filled"] and t.active
+
+
+def test_near_entry_asks_to_check_mt5():
+    from forexbot.instruments import Costs
+    bars = m15([(80_000, 80_080, 79_990, 80_050)])                     # $20 short of the 80,100 entry
+    t = track(intraday_sig(), INTRA)
+    alerts = follow_replay(t, bars, Costs(), BTC, T0 + pd.Timedelta(minutes=15), doubt=30.0)
+    assert [k.split(":")[0] for k, _ in alerts] == ["maybe"] and not t.fill_notified
+    assert follow_replay(t, bars, Costs(), BTC, T0 + pd.Timedelta(minutes=20), doubt=30.0) == []   # only once
+
+
+def test_free_prices_shifted_onto_broker_bid():
+    from forexbot.feeds import to_broker
+    raw = m15([(100.0, 110.0, 90.0, 105.0)])
+    out = to_broker(raw, {"low": -0.01, "high": 0.0, "close": -0.001, "doubt": 0.002})
+    assert out.low.iloc[0] == pytest.approx(89.1) and out.high.iloc[0] == pytest.approx(110.0)
+    assert out.close.iloc[0] == pytest.approx(104.895) and to_broker(raw, None) is raw
