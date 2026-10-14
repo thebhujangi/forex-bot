@@ -193,3 +193,15 @@ def test_free_prices_shifted_onto_broker_bid():
     out = to_broker(raw, {"low": -0.01, "high": 0.0, "close": -0.001, "doubt": 0.002})
     assert out.low.iloc[0] == pytest.approx(89.1) and out.high.iloc[0] == pytest.approx(110.0)
     assert out.close.iloc[0] == pytest.approx(104.895) and to_broker(raw, None) is raw
+
+
+def test_copy_buttons_for_each_number():
+    from forexbot.signals import copy_buttons, format_pair
+    buy = intraday_sig(oco_group="g1")
+    sell = intraday_sig(side="sell", entry=79_900.0, sl=80_100.0, tp1=79_700.0, tp2=79_500.0, oco_group="g1")
+    rows = copy_buttons(format_pair([buy, sell], INTRA, BTC, 10_000, 1.0, [], "Asia/Kuala_Lumpur"))
+    flat = [b for row in rows for b in row]
+    assert all(len(row) <= 2 for row in rows) and len(flat) == 8
+    assert flat[0] == ("📋 🟢 Entry 80100.00", {"copy": "80100.00"})
+    assert flat[5] == ("📋 🔴 SL 80100.00", {"copy": "80100.00"})
+    assert flat[7] == ("📋 🔴 Lots 0.5", {"copy": "0.5"})

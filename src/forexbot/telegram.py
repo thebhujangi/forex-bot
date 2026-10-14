@@ -123,12 +123,14 @@ class Telegram:
 
     def send(self, text: str, buttons: list[list[tuple[str, str]]] | None = None,
              chat_id: str | None = None) -> dict:
-        """Send an HTML-formatted message. buttons = rows of (label, callback_data)."""
+        """Send an HTML-formatted message. buttons = rows of (label, callback_data), or
+        (label, {"copy": text}) for a button that copies text to the phone's clipboard."""
         params = {"chat_id": chat_id or self.chat_id, "text": text, "parse_mode": "HTML",
                   "disable_web_page_preview": True}
         if buttons:
             params["reply_markup"] = {"inline_keyboard": [
-                [{"text": label, "callback_data": data} for label, data in row] for row in buttons
+                [{"text": label, "copy_text": {"text": data["copy"]}} if isinstance(data, dict)
+                 else {"text": label, "callback_data": data} for label, data in row] for row in buttons
             ]}
         if not params["chat_id"]:
             raise TelegramError("No TELEGRAM_CHAT_ID yet. Run scripts\\telegram_setup.py first.")

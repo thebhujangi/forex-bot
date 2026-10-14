@@ -29,9 +29,9 @@ from forexbot.config import load_config
 from forexbot.feeds import ApiMarket, FeedError, Mt5Market
 from forexbot.instruments import load_costs, load_specs
 from forexbot.news import fetch_events, relevant
-from forexbot.signals import (HISTORY_COLUMNS, Source, cancel_sibling, follow, follow_replay, format_pair,
-                              format_signal, from_dict, history_row, new_signals, reversal_alert, to_dict, track,
-                              weekly_report)
+from forexbot.signals import (HISTORY_COLUMNS, Source, cancel_sibling, copy_buttons, follow, follow_replay,
+                              format_pair, format_signal, from_dict, history_row, new_signals, reversal_alert,
+                              to_dict, track, weekly_report)
 from forexbot.strategies.common import parse_hm
 from forexbot.telegram import Telegram, TelegramError, load_env
 from forexbot.timeutils import NEW_YORK, ROLLOVER_SHIFT, TIMEFRAME_MINUTES, trading_day
@@ -494,7 +494,8 @@ class Bot:
                     text = format_pair(sigs, *args) if len(sigs) == 2 else format_signal(sigs[0], *args)
                     new = [track(s, src) for s in sigs]
                     ids = ",".join(t.id for t in new)
-                    self.tg.send(text, buttons=[[("✅ Placed", f"placed:{ids}"), ("❌ Skipped", f"skip:{ids}")]])
+                    self.tg.send(text, buttons=copy_buttons(text)
+                                 + [[("✅ Placed", f"placed:{ids}"), ("❌ Skipped", f"skip:{ids}")]])
                     self.tracked += new                   # only after Telegram has it
                     log(f"signal sent {ids} {src.name} {sym} {'/'.join(s.side for s in sigs)}")
                 self.state["last_signal_bar"][key] = last_close.isoformat()
@@ -536,7 +537,8 @@ class Bot:
             for key, text in alerts:
                 # Anything that may leave a live trade open gets a way to tell me it's over.
                 live = t.active and key.split(":")[0] in ("filled", "maybe", "exit", "loss", "trail")
-                self.send_once(key, text, [[("🏁 It's closed in MT5", f"closed:{t.id}")]] if live else None)
+                self.send_once(key, text, copy_buttons(text)
+                               + ([[("🏁 It's closed in MT5", f"closed:{t.id}")]] if live else []) or None)
         self.state["last_checked"] = {k: v for k, v in checked.items() if any(t.id == k for t in self.tracked)}
 
     def morning_brief(self):

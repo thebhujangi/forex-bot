@@ -4,6 +4,7 @@ signal until it's finished (stop moves, stopped out, going badly, trend reversed
 Pure logic only: the bot (scripts/run_bot.py) supplies candles and sends the messages.
 """
 import html
+import re
 import uuid
 from dataclasses import asdict, dataclass, field
 
@@ -195,7 +196,7 @@ def follow_replay(t: Tracked, bars: pd.DataFrame, cost, spec: SymbolSpec,
         t.fill_notified = True
         if loud:
             alerts.append((f"filled:{t.id}", f"▶️ <b>Order triggered: {name}</b> at about {f(res.fill_price)}. "
-                                             f"It's a live trade now. Stop loss {copyable(f(sig.sl))}.\n"
+                                             f"It's a live trade now. Stop loss: {copyable(f(sig.sl))}.\n"
                                              f"<i>MT5 is always right: my free prices differ a little from Elev8's. "
                                              f"If MT5 closes it, tap the button and I'll stop messaging.</i>"))
     real = [e for e in res.exits if e.reason != "data_end"]
@@ -250,8 +251,25 @@ def follow_replay(t: Tracked, bars: pd.DataFrame, cost, spec: SymbolSpec,
 
 
 def copyable(text: str) -> str:
-    """Telegram shows <code> text in a box; one tap copies it."""
+    """Telegram shows <code> text in a box; copy_buttons() also turns it into a copy button."""
     return f"<code>{html.escape(text)}</code>"
+
+
+SHORT = {"Entry": "Entry", "Stop loss": "SL", "New stop loss": "New SL", "Take profit": "TP", "Lot size": "Lots"}
+
+
+def copy_buttons(text: str) -> list[list[tuple[str, dict]]]:
+    """One 'copy' button per <code> value in a message, two per row, labelled like
+    '🟢 Entry 4193.54' so a two-order message shows which order each number belongs to."""
+    buttons, icon = [], ""
+    for line in text.splitlines():
+        if line[:1] in ("🟢", "🔴"):
+            icon = line[0] + " "
+        for m in re.finditer(r"(?:([A-Za-z ]+): )?<code>(.*?)</code>", line):
+            value = html.unescape(m.group(2))
+            label = SHORT.get((m.group(1) or "").strip())
+            buttons.append((f"📋 {icon if label else ''}{label + ' ' if label else ''}{value}", {"copy": value}))
+    return [buttons[i:i + 2] for i in range(0, len(buttons), 2)]
 
 
 ORDER_HINTS = {
