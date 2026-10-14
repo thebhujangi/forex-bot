@@ -44,7 +44,8 @@
   "expired:a5805efa": "2026-10-14T14:47:47.435423+00:00",
   "expired:07e2a578": "2026-10-14T15:19:08.011292+00:00",
   "expired:feb308bf": "2026-10-14T20:01:17.114843+00:00",
-  "expired:596badc9": "2026-10-14T20:49:03.634768+00:00"
+  "expired:596badc9": "2026-10-14T20:49:03.634768+00:00",
+  "expired:8642c378": "2026-10-14T22:45:21.937812+00:00"
  },
  "offset": 508857084,
  "initial_sl": {},
@@ -1368,13 +1369,13 @@
    "trail_distance": null,
    "tp1": 2417.31,
    "created": "2026-10-14T20:45:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2431.09,
    "notified_sl": 2444.88,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-14T22:45:21.071881+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -1397,6 +1398,50 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
+   "outcome": "expired",
+   "flags": []
+  },
+  {
+   "id": "6a851756",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "sell",
+   "entry": 81674.18,
+   "sl": 81962.72,
+   "cur_sl": 81962.72,
+   "trail_distance": null,
+   "tp1": 81385.64,
+   "created": "2026-10-14T22:45:00+00:00",
+   "status": "new",
+   "best": 81674.18,
+   "notified_sl": 81962.72,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-14T22:45:00+00:00",
+    "entry": 81674.18,
+    "sl": 81962.72,
+    "tp1": 81385.64,
+    "tp2": 80952.83,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-15T00:45:00+00:00",
+    "close_by": "2026-10-15T06:45:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.6x ATR from EMA20; sell the pullback at 81674.18."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
    "outcome": null,
    "flags": []
   }
@@ -1408,13 +1453,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T22:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T22:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T22:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T22:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T22:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T22:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T22:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T22:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T22:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T22:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T22:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T22:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T22:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T22:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1695,10 +1740,10 @@
   "https://cointelegraph.com/news/eba-circle-usdc-stablecoin-significant-token-mica?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T19:15:01.036369+00:00"
  },
  "timers": {
-  "crowd": 1792015026.1126823,
-  "headlines": 1792017736.6083694,
-  "scan": 1792017828.206072,
-  "follow": 1792017584.2832136
+  "crowd": 1792018649.4565852,
+  "headlines": 1792018348.0000136,
+  "scan": 1792018591.7177863,
+  "follow": 1792018530.700336
  },
  "pushed_times": [],
  "last_checked": {
@@ -1732,6 +1777,7 @@
   "b4555323": 1792001846.3052657,
   "feb308bf": 1792008076.4520078,
   "596badc9": 1792010943.02607,
-  "8642c378": 1792017584.5899322
+  "8642c378": 1792017921.3342118,
+  "6a851756": 1792018530.964806
  }
 }
