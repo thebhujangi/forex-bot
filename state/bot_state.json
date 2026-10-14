@@ -40,7 +40,7 @@
   "done:3634b3c2": "2026-10-14T08:46:35.123980+00:00",
   "filled:87071a07": "2026-10-14T08:46:35.825282+00:00"
  },
- "offset": 508857077,
+ "offset": 508857078,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -1050,13 +1050,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T08:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T08:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T08:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T08:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T08:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T08:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T08:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T09:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T09:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T09:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T09:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T09:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T09:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T09:00:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1316,10 +1316,10 @@
   "https://www.fxstreet.com/news/us-cpi-data-expected-to-rise-in-september-as-markets-reassess-fed-rate-outlook-202610140830": "2026-10-14T08:36:14.802639+00:00"
  },
  "timers": {
-  "crowd": 1791964350.7953455,
-  "headlines": 1791967591.1332529,
-  "scan": 1791967656.8161922,
-  "follow": 1791967591.8989902
+  "crowd": 1791967953.1460412,
+  "headlines": 1791968196.564366,
+  "scan": 1791968490.8827105,
+  "follow": 1791968196.7992716
  },
  "pushed_times": [],
  "last_checked": {
@@ -1345,6 +1345,6 @@
   "faac0475": 1791965693.3611534,
   "91f049aa": 1791967293.4368255,
   "22d27076": 1791965696.0247104,
-  "87071a07": 1791967595.1257644
+  "87071a07": 1791968197.1182241
  }
 }
