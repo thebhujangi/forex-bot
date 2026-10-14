@@ -44,7 +44,7 @@
   "expired:a5805efa": "2026-10-14T14:47:47.435423+00:00",
   "expired:07e2a578": "2026-10-14T15:19:08.011292+00:00"
  },
- "offset": 508857081,
+ "offset": 508857082,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -1190,7 +1190,7 @@
    "trail_distance": null,
    "tp1": 81702.02,
    "created": "2026-10-14T15:45:00+00:00",
-   "status": "new",
+   "status": "skipped",
    "best": 82406.49,
    "notified_sl": 83110.97,
    "warned_loss": false,
@@ -1516,10 +1516,10 @@
   "https://www.coindesk.com/coindesk-indices/2026/10/14/crypto-long-and-short-why-gold-and-bitcoin-belong-in-the-same-portfolio": "2026-10-14T15:08:40.423333+00:00"
  },
  "timers": {
-  "crowd": 1791989654.028035,
-  "headlines": 1791992356.9108737,
-  "scan": 1791992752.4963145,
-  "follow": 1791992691.7278013
+  "crowd": 1791993270.367004,
+  "headlines": 1791993574.7377493,
+  "scan": 1791993575.2908754,
+  "follow": 1791993300.9516761
  },
  "pushed_times": [],
  "last_checked": {
@@ -1548,6 +1548,7 @@
   "87071a07": 1791970086.1375597,
   "85357f8c": 1791981485.0579598,
   "a5805efa": 1791989266.6822634,
-  "07e2a578": 1791991147.4227965
+  "07e2a578": 1791991147.4227965,
+  "fb7874c9": 1791993301.2872982
  }
 }
