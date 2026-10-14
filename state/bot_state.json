@@ -818,13 +818,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T05:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T05:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T05:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T05:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T05:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T05:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T05:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T05:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T05:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T05:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T05:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T05:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T05:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T05:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1058,20 +1058,22 @@
   "https://www.fxstreet.com/news/gbp-usd-price-forecast-hits-one-week-top-as-bulls-eye-range-breakout-above-13300-202610140427": "2026-10-14T05:19:32.796766+00:00",
   "https://www.fxstreet.com/news/india-gold-price-today-gold-steadies-according-to-fxstreet-data-202610140435": "2026-10-14T05:29:51.691401+00:00",
   "https://www.fxstreet.com/news/eur-jpy-price-forecast-gains-ground-below-17750-but-stays-bearish-below-100-day-sma-202610140451": "2026-10-14T05:29:51.691416+00:00",
-  "https://www.coindesk.com/tech/2026/10/14/ripple-adds-stripe-owned-wallets-to-xrp-ledger-as-ai-payments-pass-14-million": "2026-10-14T05:29:51.691421+00:00"
+  "https://www.coindesk.com/tech/2026/10/14/ripple-adds-stripe-owned-wallets-to-xrp-ledger-as-ai-payments-pass-14-million": "2026-10-14T05:29:51.691421+00:00",
+  "https://cointelegraph.com/markets/feds-williams-sees-ai-supply-squeeze-lasting-beyond-2-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T05:40:48.525169+00:00",
+  "https://www.coindesk.com/tech/2026/10/14/coinbase-which-holds-5-of-all-bitcoin-wants-the-quantum-fix-started-now": "2026-10-14T05:50:51.243495+00:00"
  },
  "timers": {
-  "crowd": 1791953510.8734472,
-  "headlines": 1791955790.9849608,
-  "scan": 1791956335.8240063,
-  "follow": 1791956243.7930217
+  "crowd": 1791957111.969881,
+  "headlines": 1791957050.9370885,
+  "scan": 1791957142.4650989,
+  "follow": 1791956898.5649855
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791953419.0650024,
+  "d82f6843": 1791956898.6006725,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -1085,6 +1087,6 @@
   "040ff01b": 1791938986.6918554,
   "0329160d": 1791948661.421127,
   "6a411643": 1791954985.9187062,
-  "efc38c50": 1791956244.1362674
+  "efc38c50": 1791956898.8615627
  }
 }
