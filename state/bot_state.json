@@ -994,13 +994,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T07:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T07:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T07:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T07:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T07:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T07:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T07:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T07:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T07:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T07:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T07:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T07:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T07:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T07:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1251,9 +1251,9 @@
  },
  "timers": {
   "crowd": 1791960730.9181037,
-  "headlines": 1791962029.1848888,
-  "scan": 1791961998.6716628,
-  "follow": 1791961966.7586603
+  "headlines": 1791962651.5288997,
+  "scan": 1791962805.0509477,
+  "follow": 1791962586.0086458
  },
  "pushed_times": [],
  "last_checked": {
@@ -1274,10 +1274,10 @@
   "040ff01b": 1791938986.6918554,
   "0329160d": 1791948661.421127,
   "6a411643": 1791954985.9187062,
-  "efc38c50": 1791961967.2490802,
-  "3634b3c2": 1791961967.2502966,
-  "faac0475": 1791961967.2513916,
-  "91f049aa": 1791961967.6444025,
-  "22d27076": 1791961968.0789127
+  "efc38c50": 1791962586.4468393,
+  "3634b3c2": 1791962586.4473965,
+  "faac0475": 1791962586.447892,
+  "91f049aa": 1791962586.974516,
+  "22d27076": 1791962587.3299184
  }
 }
