@@ -707,13 +707,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T02:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T02:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T02:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T02:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T02:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T02:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T02:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T02:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T02:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T02:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T02:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T02:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T02:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T02:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -937,20 +937,21 @@
   "https://www.fxstreet.com/news/breaking-chinas-cpi-inflation-rises-to-09-yoy-in-september-vs-10-expected-202610140131": "2026-10-14T01:42:07.530733+00:00",
   "https://www.fxstreet.com/news/british-pound-strengthens-above-13250-traders-await-us-cpi-inflation-data-202610140145": "2026-10-14T02:33:50.139649+00:00",
   "https://www.fxstreet.com/news/australian-dollar-holds-gains-following-chinese-inflation-data-202610140146": "2026-10-14T02:33:50.139678+00:00",
-  "https://www.fxstreet.com/news/new-zealand-dollar-clings-to-gains-near-05620-vs-usd-after-chinas-inflation-data-202610140150": "2026-10-14T02:33:50.139709+00:00"
+  "https://www.fxstreet.com/news/new-zealand-dollar-clings-to-gains-near-05620-vs-usd-after-chinas-inflation-data-202610140150": "2026-10-14T02:33:50.139709+00:00",
+  "https://www.fxstreet.com/news/australian-dollar-gains-against-japanese-yen-as-china-cpi-inflation-rises-in-september-202610140224": "2026-10-14T02:54:22.313046+00:00"
  },
  "timers": {
-  "crowd": 1791942675.313899,
-  "headlines": 1791945839.0359504,
-  "scan": 1791945869.9899044,
-  "follow": 1791945869.9922025
+  "crowd": 1791946277.8322275,
+  "headlines": 1791946461.6089904,
+  "scan": 1791946676.6857045,
+  "follow": 1791946492.8897383
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791943065.8173125,
+  "d82f6843": 1791946493.1430364,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -962,6 +963,6 @@
   "922bd850": 1791900094.936636,
   "ad5510bc": 1791899161.3684304,
   "040ff01b": 1791938986.6918554,
-  "0329160d": 1791945870.3932974
+  "0329160d": 1791946493.1434927
  }
 }
