@@ -1362,13 +1362,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T19:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T19:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T19:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T19:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T19:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T19:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T19:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T19:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T19:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T19:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T19:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T19:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T19:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T19:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1645,20 +1645,21 @@
   "https://cointelegraph.com/news/qivalis-authorization-dutch-central-bank-euro-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T13:05:30.258713+00:00",
   "https://www.coindesk.com/business/2026/10/14/former-ftx-europe-chief-targets-u-s-stock-tokenization-with-new-sec-exemption": "2026-10-14T14:17:46.465927+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-dips-yields-surge-as-high-oil-prices-spike-us-cpi-inflation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T14:37:58.789003+00:00",
-  "https://www.coindesk.com/coindesk-indices/2026/10/14/crypto-long-and-short-why-gold-and-bitcoin-belong-in-the-same-portfolio": "2026-10-14T15:08:40.423333+00:00"
+  "https://www.coindesk.com/coindesk-indices/2026/10/14/crypto-long-and-short-why-gold-and-bitcoin-belong-in-the-same-portfolio": "2026-10-14T15:08:40.423333+00:00",
+  "https://cointelegraph.com/news/eba-circle-usdc-stablecoin-significant-token-mica?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T19:15:01.036369+00:00"
  },
  "timers": {
   "crowd": 1792004147.3733687,
-  "headlines": 1792004693.4772785,
-  "scan": 1792004847.0587797,
-  "follow": 1792004631.77515
+  "headlines": 1792005300.397523,
+  "scan": 1792005666.0707898,
+  "follow": 1792005573.5422816
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792001845.9581387,
+  "d82f6843": 1792005269.0853002,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -1683,7 +1684,7 @@
   "07e2a578": 1791991147.4227965,
   "fb7874c9": 1791999948.822082,
   "b4555323": 1792001846.3052657,
-  "feb308bf": 1792004632.1369815,
-  "596badc9": 1792004632.4611363
+  "feb308bf": 1792005573.9452317,
+  "596badc9": 1792005574.3572764
  }
 }
