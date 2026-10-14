@@ -42,7 +42,7 @@
   "exit:87071a07:sl": "2026-10-14T09:28:07.014952+00:00",
   "done:87071a07": "2026-10-14T09:28:07.672564+00:00"
  },
- "offset": 508857080,
+ "offset": 508857081,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -1144,14 +1144,14 @@
    "trail_distance": null,
    "tp1": 82719.43,
    "created": "2026-10-14T13:15:00+00:00",
-   "status": "new",
+   "status": "placed",
    "best": 83199.07,
    "notified_sl": 83678.71,
    "warned_loss": false,
    "result_r": null,
    "closed_at": null,
    "recorded": false,
-   "placed": false,
+   "placed": true,
    "signal": {
     "strategy": "trend_pullback",
     "symbol": "BTCUSD",
@@ -1184,13 +1184,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T13:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T13:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T13:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T13:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T13:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T13:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T13:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T13:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T13:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T13:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T13:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T13:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T13:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T13:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1467,10 +1467,10 @@
   "https://cointelegraph.com/news/qivalis-authorization-dutch-central-bank-euro-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T13:05:30.258713+00:00"
  },
  "timers": {
-  "crowd": 1791982412.6128724,
-  "headlines": 1791985013.3127692,
-  "scan": 1791985486.7887466,
-  "follow": 1791985197.1119645
+  "crowd": 1791986025.2437594,
+  "headlines": 1791986238.882935,
+  "scan": 1791986269.6358838,
+  "follow": 1791986147.115919
  },
  "pushed_times": [],
  "last_checked": {
@@ -1498,7 +1498,7 @@
   "22d27076": 1791965696.0247104,
   "87071a07": 1791970086.1375597,
   "85357f8c": 1791981485.0579598,
-  "a5805efa": 1791985197.4624758,
-  "07e2a578": 1791985197.7591438
+  "a5805efa": 1791986147.429098,
+  "07e2a578": 1791986147.689617
  }
 }
