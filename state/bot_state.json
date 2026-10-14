@@ -707,13 +707,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T01:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T01:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T01:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T01:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T01:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T01:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T01:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T01:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T01:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T01:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T01:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T01:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T01:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T01:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -931,13 +931,16 @@
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-pressured-by-rising-yields-as-equities-draw-strength-from-earnings-expectations-202610132337": "2026-10-14T00:29:42.598016+00:00",
   "https://www.fxstreet.com/news/australian-dollar-climbs-as-feds-williams-push-the-brakes-on-rates-202610132334": "2026-10-14T00:40:12.685809+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/strategy-mstr-bitcoin-buying-model-faces-scrutiny-as-strc-costs-climb-202610140030": "2026-10-14T00:50:18.718406+00:00",
-  "https://www.fxstreet.com/news/euro-edges-higher-above-11200-despite-france-fiscal-risks-us-cpi-in-focus-202610140034": "2026-10-14T00:50:18.718422+00:00"
+  "https://www.fxstreet.com/news/euro-edges-higher-above-11200-despite-france-fiscal-risks-us-cpi-in-focus-202610140034": "2026-10-14T00:50:18.718422+00:00",
+  "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67249-vs-67298-previous-202610140115": "2026-10-14T01:42:07.530704+00:00",
+  "https://www.fxstreet.com/news/japanese-yen-softens-as-october-boj-hike-bets-fade-stuck-in-a-range-vs-usd-ahead-of-us-cpi-202610140127": "2026-10-14T01:42:07.530725+00:00",
+  "https://www.fxstreet.com/news/breaking-chinas-cpi-inflation-rises-to-09-yoy-in-september-vs-10-expected-202610140131": "2026-10-14T01:42:07.530733+00:00"
  },
  "timers": {
-  "crowd": 1791939049.2091908,
-  "headlines": 1791941502.0961611,
-  "scan": 1791941838.7975285,
-  "follow": 1791941777.7672436
+  "crowd": 1791942675.313899,
+  "headlines": 1791942126.8488038,
+  "scan": 1791942644.7625241,
+  "follow": 1791942400.133831
  },
  "pushed_times": [],
  "last_checked": {
@@ -956,6 +959,6 @@
   "922bd850": 1791900094.936636,
   "ad5510bc": 1791899161.3684304,
   "040ff01b": 1791938986.6918554,
-  "0329160d": 1791941777.768143
+  "0329160d": 1791942400.1345608
  }
 }
