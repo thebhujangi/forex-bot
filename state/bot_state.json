@@ -21,7 +21,8 @@
   "exit:0bdc313c:time": "2026-10-13T19:48:00.447364+00:00",
   "done:0bdc313c": "2026-10-13T19:48:01.267028+00:00",
   "filled:040ff01b": "2026-10-14T00:33:57.822155+00:00",
-  "filled:0329160d": "2026-10-14T01:15:40.254659+00:00"
+  "filled:0329160d": "2026-10-14T01:15:40.254659+00:00",
+  "exit:0329160d:tp1": "2026-10-14T03:00:19.955277+00:00"
  },
  "offset": 508857072,
  "initial_sl": {},
@@ -695,7 +696,7 @@
     "trail_distance": null,
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.6x ATR from EMA20; buy the pullback at 83298.86."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null
   }
@@ -707,19 +708,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T02:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T02:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T02:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T02:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T02:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T02:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T02:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T03:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T03:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T03:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T03:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T03:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T03:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T03:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
-  "https://www.coindesk.com/markets/2026/10/10/bitcoin-s-usd19-billion-wake-up-call-one-year-later-has-crypto-learned-anything": "2026-10-11T02:55:03.748885+00:00",
-  "https://www.coindesk.com/business/2026/10/05/tokenized-commodities-look-beyond-gold-as-lending-and-oil-open-new-markets": "2026-10-11T02:55:03.748885+00:00",
-  "https://www.coindesk.com/markets/2026/10/10/one-year-after-10-10-bitcoin-and-ether-liquidity-have-rebuilt-but-other-altcoins-still-face-risks": "2026-10-11T02:55:03.748885+00:00",
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
   "https://cointelegraph.com/magazine/ledger-attack-spreads-to-eu-ai-finds-18-trillion-xrp-bug-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
   "https://cointelegraph.com/news/xrp-ledger-defends-emergency-patch-for-unlimited-xrp-bug?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -942,9 +939,9 @@
  },
  "timers": {
   "crowd": 1791946277.8322275,
-  "headlines": 1791946461.6089904,
-  "scan": 1791946676.6857045,
-  "follow": 1791946492.8897383
+  "headlines": 1791947091.7945397,
+  "scan": 1791947490.2593436,
+  "follow": 1791947429.012717
  },
  "pushed_times": [],
  "last_checked": {
@@ -963,6 +960,6 @@
   "922bd850": 1791900094.936636,
   "ad5510bc": 1791899161.3684304,
   "040ff01b": 1791938986.6918554,
-  "0329160d": 1791946493.1434927
+  "0329160d": 1791947429.0136874
  }
 }
