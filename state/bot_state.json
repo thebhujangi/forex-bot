@@ -1184,13 +1184,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T14:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T14:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T14:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T14:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T14:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T14:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T14:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T14:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T14:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T14:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T14:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T14:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T14:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T14:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1464,13 +1464,14 @@
   "https://www.coindesk.com/policy/2026/10/14/dutch-regulator-approves-qivalis-as-electronic-money-institution-under-mica-rules": "2026-10-14T11:21:55.016964+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/14/here-s-how-analysts-see-u-s-inflation-influencing-bitcoin": "2026-10-14T11:21:55.016985+00:00",
   "https://www.coindesk.com/markets/2026/10/14/u-s-september-cpi-comes-in-hot-sending-bitcoin-sharply-lower": "2026-10-14T12:34:40.778742+00:00",
-  "https://cointelegraph.com/news/qivalis-authorization-dutch-central-bank-euro-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T13:05:30.258713+00:00"
+  "https://cointelegraph.com/news/qivalis-authorization-dutch-central-bank-euro-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T13:05:30.258713+00:00",
+  "https://www.coindesk.com/business/2026/10/14/former-ftx-europe-chief-targets-u-s-stock-tokenization-with-new-sec-exemption": "2026-10-14T14:17:46.465927+00:00"
  },
  "timers": {
   "crowd": 1791986025.2437594,
-  "headlines": 1791986841.1207588,
-  "scan": 1791987054.4765937,
-  "follow": 1791987084.950111
+  "headlines": 1791987465.9679704,
+  "scan": 1791987862.152436,
+  "follow": 1791987709.5809586
  },
  "pushed_times": [],
  "last_checked": {
@@ -1498,7 +1499,7 @@
   "22d27076": 1791965696.0247104,
   "87071a07": 1791970086.1375597,
   "85357f8c": 1791981485.0579598,
-  "a5805efa": 1791987085.2522798,
-  "07e2a578": 1791987085.5556176
+  "a5805efa": 1791987709.8721085,
+  "07e2a578": 1791987710.1531017
  }
 }
