@@ -1234,13 +1234,13 @@
    "trail_distance": null,
    "tp1": 2426.66,
    "created": "2026-10-14T16:15:00+00:00",
-   "status": "skipped",
+   "status": "closed",
    "best": 2451.96,
    "notified_sl": 2477.25,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-14T18:17:25.771357+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -1263,7 +1263,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -1318,13 +1318,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T18:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T18:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T18:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T18:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T18:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T18:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T18:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T18:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T18:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T18:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T18:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T18:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T18:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T18:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1605,16 +1605,16 @@
  },
  "timers": {
   "crowd": 1792000498.2734566,
-  "headlines": 1792001591.934105,
-  "scan": 1792001653.6249692,
-  "follow": 1792001530.0674894
+  "headlines": 1792002215.3121326,
+  "scan": 1792002430.3004668,
+  "follow": 1792002460.9655137
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1791998322.8594458,
+  "d82f6843": 1792001845.9581387,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -1638,7 +1638,7 @@
   "a5805efa": 1791989266.6822634,
   "07e2a578": 1791991147.4227965,
   "fb7874c9": 1791999948.822082,
-  "b4555323": 1792001530.454023,
-  "feb308bf": 1792001530.8190277
+  "b4555323": 1792001846.3052657,
+  "feb308bf": 1792002461.3247626
  }
 }
