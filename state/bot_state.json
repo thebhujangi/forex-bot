@@ -20,7 +20,8 @@
   "exit:0bdc313c:tp1": "2026-10-13T16:16:52.190301+00:00",
   "exit:0bdc313c:time": "2026-10-13T19:48:00.447364+00:00",
   "done:0bdc313c": "2026-10-13T19:48:01.267028+00:00",
-  "filled:040ff01b": "2026-10-14T00:33:57.822155+00:00"
+  "filled:040ff01b": "2026-10-14T00:33:57.822155+00:00",
+  "filled:0329160d": "2026-10-14T01:15:40.254659+00:00"
  },
  "offset": 508857072,
  "initial_sl": {},
@@ -695,7 +696,7 @@
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.6x ATR from EMA20; buy the pullback at 83298.86."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null
   }
  ],
@@ -706,13 +707,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T01:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T01:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T01:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T01:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T01:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T01:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T01:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T01:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T01:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T01:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T01:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T01:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T01:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T01:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-11T02:55:03.748885+00:00",
@@ -934,9 +935,9 @@
  },
  "timers": {
   "crowd": 1791939049.2091908,
-  "headlines": 1791940264.28461,
-  "scan": 1791940233.7155356,
-  "follow": 1791940233.717775
+  "headlines": 1791940875.5573375,
+  "scan": 1791941029.3535483,
+  "follow": 1791940845.0648873
  },
  "pushed_times": [],
  "last_checked": {
@@ -955,6 +956,6 @@
   "922bd850": 1791900094.936636,
   "ad5510bc": 1791899161.3684304,
   "040ff01b": 1791938986.6918554,
-  "0329160d": 1791940233.718505
+  "0329160d": 1791940845.0657835
  }
 }
