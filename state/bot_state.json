@@ -19,9 +19,10 @@
   "oco:2da3e87e": "2026-10-13T14:17:17.892511+00:00",
   "exit:0bdc313c:tp1": "2026-10-13T16:16:52.190301+00:00",
   "exit:0bdc313c:time": "2026-10-13T19:48:00.447364+00:00",
-  "done:0bdc313c": "2026-10-13T19:48:01.267028+00:00"
+  "done:0bdc313c": "2026-10-13T19:48:01.267028+00:00",
+  "filled:040ff01b": "2026-10-14T00:33:57.822155+00:00"
  },
- "offset": 508857071,
+ "offset": 508857072,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -623,7 +624,7 @@
    "trail_distance": null,
    "tp1": 2498.16,
    "created": "2026-10-13T23:30:00+00:00",
-   "status": "new",
+   "status": "skipped",
    "best": 2505.74,
    "notified_sl": 2513.33,
    "warned_loss": false,
@@ -651,7 +652,7 @@
     "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 2.1x ATR from EMA20; sell the pullback at 2505.74."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null
   }
  ],
@@ -883,13 +884,14 @@
   "https://www.fxstreet.com/news/mexican-peso-buckles-as-fed-inflation-fears-overshadow-dovish-williams-202610132217": "2026-10-13T22:25:31.265187+00:00",
   "https://www.coindesk.com/markets/2026/10/13/strive-to-ipo-second-preferred-share-class-as-it-looks-to-further-build-bitcoin-treasury": "2026-10-13T23:27:40.506205+00:00",
   "https://www.fxstreet.com/news/gold-declines-to-near-4-150-ahead-of-us-cpi-inflation-data-202610132321": "2026-10-13T23:38:04.921474+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-pressured-by-rising-yields-as-equities-draw-strength-from-earnings-expectations-202610132337": "2026-10-14T00:29:42.598016+00:00"
+  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-pressured-by-rising-yields-as-equities-draw-strength-from-earnings-expectations-202610132337": "2026-10-14T00:29:42.598016+00:00",
+  "https://www.fxstreet.com/news/australian-dollar-climbs-as-feds-williams-push-the-brakes-on-rates-202610132334": "2026-10-14T00:40:12.685809+00:00"
  },
  "timers": {
   "crowd": 1791935433.7952719,
-  "headlines": 1791937782.2947872,
-  "scan": 1791937813.2499328,
-  "follow": 1791937720.7440727
+  "headlines": 1791938412.0756836,
+  "scan": 1791938657.726547,
+  "follow": 1791938657.7283661
  },
  "pushed_times": [],
  "last_checked": {
@@ -907,6 +909,6 @@
   "b5d85662": 1791899159.6409187,
   "922bd850": 1791900094.936636,
   "ad5510bc": 1791899161.3684304,
-  "040ff01b": 1791937721.0868316
+  "040ff01b": 1791938658.1976438
  }
 }
