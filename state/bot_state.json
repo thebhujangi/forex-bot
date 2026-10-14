@@ -1043,13 +1043,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T08:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T08:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T08:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T08:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T08:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T08:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T08:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T08:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T08:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T08:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T08:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T08:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T08:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T08:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1299,13 +1299,16 @@
   "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-declines-to-near-5870-in-countdown-to-us-inflation-data-202610140655": "2026-10-14T07:13:50.039983+00:00",
   "https://www.fxstreet.com/news/us-dollar-index-price-forecast-dxy-holds-above-10170-pivotal-support-ahead-of-us-cpi-202610140725": "2026-10-14T07:44:57.988375+00:00",
   "https://www.fxstreet.com/news/euro-inflation-data-guides-near-term-commerzbank-202610140731": "2026-10-14T08:15:26.889848+00:00",
-  "https://www.coindesk.com/business/2026/10/14/standard-chartered-unlocks-direct-bitcoin-and-ether-trading-for-affluent-uae-clients": "2026-10-14T08:15:26.889870+00:00"
+  "https://www.coindesk.com/business/2026/10/14/standard-chartered-unlocks-direct-bitcoin-and-ether-trading-for-affluent-uae-clients": "2026-10-14T08:15:26.889870+00:00",
+  "https://www.fxstreet.com/news/euro-holds-mild-gains-above-11200-as-the-us-dollar-drifts-with-us-cpi-on-tap-202610140732": "2026-10-14T08:25:43.922402+00:00",
+  "https://www.fxstreet.com/news/indonesian-rupiah-remains-steady-as-bank-indonesia-interventions-limit-usd-idr-upside-202610140754": "2026-10-14T08:25:43.922426+00:00",
+  "https://www.fxstreet.com/news/aud-usd-price-forecast-extends-recovery-to-near-20-day-ema-202610140801": "2026-10-14T08:25:43.922435+00:00"
  },
  "timers": {
   "crowd": 1791964350.7953455,
-  "headlines": 1791965726.6248312,
-  "scan": 1791966031.4550297,
-  "follow": 1791966000.0428927
+  "headlines": 1791966342.9130387,
+  "scan": 1791966834.8609033,
+  "follow": 1791966650.6900396
  },
  "pushed_times": [],
  "last_checked": {
@@ -1326,11 +1329,11 @@
   "040ff01b": 1791938986.6918554,
   "0329160d": 1791948661.421127,
   "6a411643": 1791954985.9187062,
-  "efc38c50": 1791966000.3983119,
-  "3634b3c2": 1791966000.399183,
+  "efc38c50": 1791966651.0974872,
+  "3634b3c2": 1791966651.0983474,
   "faac0475": 1791965693.3611534,
-  "91f049aa": 1791966000.7447155,
+  "91f049aa": 1791966651.7585423,
   "22d27076": 1791965696.0247104,
-  "87071a07": 1791966000.7458768
+  "87071a07": 1791966651.759685
  }
 }
