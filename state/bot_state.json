@@ -1177,6 +1177,50 @@
    "fill_notified": false,
    "outcome": "expired",
    "flags": []
+  },
+  {
+   "id": "fb7874c9",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "sell",
+   "entry": 82406.49,
+   "sl": 83110.97,
+   "cur_sl": 83110.97,
+   "trail_distance": null,
+   "tp1": 81702.02,
+   "created": "2026-10-14T15:45:00+00:00",
+   "status": "new",
+   "best": 82406.49,
+   "notified_sl": 83110.97,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-14T15:45:00+00:00",
+    "entry": 82406.49,
+    "sl": 83110.97,
+    "tp1": 81702.02,
+    "tp2": 80645.3,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-14T17:45:00+00:00",
+    "close_by": "2026-10-14T23:45:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.8x ATR from EMA20; sell the pullback at 82406.49."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -1186,13 +1230,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T15:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T15:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T15:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T15:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T15:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T15:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T15:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T15:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T15:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T15:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T15:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T15:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T15:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T15:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1473,9 +1517,9 @@
  },
  "timers": {
   "crowd": 1791989654.028035,
-  "headlines": 1791991740.5449882,
-  "scan": 1791991917.0307794,
-  "follow": 1791991771.2108538
+  "headlines": 1791992356.9108737,
+  "scan": 1791992752.4963145,
+  "follow": 1791992691.7278013
  },
  "pushed_times": [],
  "last_checked": {
