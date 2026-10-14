@@ -24,7 +24,7 @@
   "filled:0329160d": "2026-10-14T01:15:40.254659+00:00",
   "exit:0329160d:tp1": "2026-10-14T03:00:19.955277+00:00"
  },
- "offset": 508857072,
+ "offset": 508857073,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -699,6 +699,49 @@
    "seen_exits": 1,
    "fill_notified": true,
    "outcome": null
+  },
+  {
+   "id": "6a411643",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "buy",
+   "entry": 83341.89,
+   "sl": 83053.81,
+   "cur_sl": 83053.81,
+   "trail_distance": null,
+   "tp1": 83629.98,
+   "created": "2026-10-14T03:15:00+00:00",
+   "status": "placed",
+   "best": 83341.89,
+   "notified_sl": 83053.81,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": true,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "buy",
+    "order_type": "limit",
+    "created": "2026-10-14T03:15:00+00:00",
+    "entry": 83341.89,
+    "sl": 83053.81,
+    "tp1": 83629.98,
+    "tp2": 84062.11,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-14T05:15:00+00:00",
+    "close_by": "2026-10-14T11:15:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.6x ATR from EMA20; buy the pullback at 83341.89."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null
   }
  ],
  "last_signal_bar": {
@@ -708,13 +751,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T03:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T03:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T03:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T03:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T03:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T03:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T03:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T03:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T03:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T03:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T03:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T03:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T03:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T03:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -935,13 +978,17 @@
   "https://www.fxstreet.com/news/british-pound-strengthens-above-13250-traders-await-us-cpi-inflation-data-202610140145": "2026-10-14T02:33:50.139649+00:00",
   "https://www.fxstreet.com/news/australian-dollar-holds-gains-following-chinese-inflation-data-202610140146": "2026-10-14T02:33:50.139678+00:00",
   "https://www.fxstreet.com/news/new-zealand-dollar-clings-to-gains-near-05620-vs-usd-after-chinas-inflation-data-202610140150": "2026-10-14T02:33:50.139709+00:00",
-  "https://www.fxstreet.com/news/australian-dollar-gains-against-japanese-yen-as-china-cpi-inflation-rises-in-september-202610140224": "2026-10-14T02:54:22.313046+00:00"
+  "https://www.fxstreet.com/news/australian-dollar-gains-against-japanese-yen-as-china-cpi-inflation-rises-in-september-202610140224": "2026-10-14T02:54:22.313046+00:00",
+  "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-14T03:15:14.444035+00:00",
+  "https://www.fxstreet.com/news/lagarde-speech-were-not-seeing-any-second-round-effects-yet-202610140236": "2026-10-14T03:25:15.150912+00:00",
+  "https://www.fxstreet.com/news/united-states-dollar-index-weakens-to-near-10200-ahead-of-us-cpi-release-202610140243": "2026-10-14T03:25:15.150932+00:00",
+  "https://www.fxstreet.com/news/canadian-dollar-edges-up-against-us-dollar-ahead-of-us-cpi-data-202610140307": "2026-10-14T03:25:15.150943+00:00"
  },
  "timers": {
   "crowd": 1791946277.8322275,
-  "headlines": 1791947091.7945397,
-  "scan": 1791947490.2593436,
-  "follow": 1791947429.012717
+  "headlines": 1791948314.858579,
+  "scan": 1791948284.4889793,
+  "follow": 1791948342.8778446
  },
  "pushed_times": [],
  "last_checked": {
@@ -960,6 +1007,7 @@
   "922bd850": 1791900094.936636,
   "ad5510bc": 1791899161.3684304,
   "040ff01b": 1791938986.6918554,
-  "0329160d": 1791947429.0136874
+  "0329160d": 1791948342.8788567,
+  "6a411643": 1791948342.8791966
  }
 }
