@@ -41,7 +41,8 @@
   "filled:87071a07": "2026-10-14T08:46:35.825282+00:00",
   "exit:87071a07:sl": "2026-10-14T09:28:07.014952+00:00",
   "done:87071a07": "2026-10-14T09:28:07.672564+00:00",
-  "expired:a5805efa": "2026-10-14T14:47:47.435423+00:00"
+  "expired:a5805efa": "2026-10-14T14:47:47.435423+00:00",
+  "expired:07e2a578": "2026-10-14T15:19:08.011292+00:00"
  },
  "offset": 508857081,
  "initial_sl": {},
@@ -1145,13 +1146,13 @@
    "trail_distance": null,
    "tp1": 82719.43,
    "created": "2026-10-14T13:15:00+00:00",
-   "status": "placed",
+   "status": "closed",
    "best": 83199.07,
    "notified_sl": 83678.71,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-14T15:19:07.083856+00:00",
+   "recorded": true,
    "placed": true,
    "signal": {
     "strategy": "trend_pullback",
@@ -1174,7 +1175,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   }
  ],
@@ -1185,13 +1186,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T15:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T15:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T15:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T15:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T15:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T15:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T15:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T15:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T15:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T15:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T15:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T15:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T15:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T15:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1467,13 +1468,14 @@
   "https://www.coindesk.com/markets/2026/10/14/u-s-september-cpi-comes-in-hot-sending-bitcoin-sharply-lower": "2026-10-14T12:34:40.778742+00:00",
   "https://cointelegraph.com/news/qivalis-authorization-dutch-central-bank-euro-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T13:05:30.258713+00:00",
   "https://www.coindesk.com/business/2026/10/14/former-ftx-europe-chief-targets-u-s-stock-tokenization-with-new-sec-exemption": "2026-10-14T14:17:46.465927+00:00",
-  "https://cointelegraph.com/markets/bitcoin-price-dips-yields-surge-as-high-oil-prices-spike-us-cpi-inflation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T14:37:58.789003+00:00"
+  "https://cointelegraph.com/markets/bitcoin-price-dips-yields-surge-as-high-oil-prices-spike-us-cpi-inflation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T14:37:58.789003+00:00",
+  "https://www.coindesk.com/coindesk-indices/2026/10/14/crypto-long-and-short-why-gold-and-bitcoin-belong-in-the-same-portfolio": "2026-10-14T15:08:40.423333+00:00"
  },
  "timers": {
   "crowd": 1791989654.028035,
-  "headlines": 1791989898.965879,
-  "scan": 1791990294.6928244,
-  "follow": 1791990202.5724275
+  "headlines": 1791991123.1827517,
+  "scan": 1791991092.779641,
+  "follow": 1791991147.0838456
  },
  "pushed_times": [],
  "last_checked": {
@@ -1502,6 +1504,6 @@
   "87071a07": 1791970086.1375597,
   "85357f8c": 1791981485.0579598,
   "a5805efa": 1791989266.6822634,
-  "07e2a578": 1791990202.967542
+  "07e2a578": 1791991147.4227965
  }
 }
