@@ -23,7 +23,10 @@
   "filled:040ff01b": "2026-10-14T00:33:57.822155+00:00",
   "filled:0329160d": "2026-10-14T01:15:40.254659+00:00",
   "exit:0329160d:tp1": "2026-10-14T03:00:19.955277+00:00",
-  "done:0329160d": "2026-10-14T03:31:02.069927+00:00"
+  "done:0329160d": "2026-10-14T03:31:02.069927+00:00",
+  "maybe:6a411643": "2026-10-14T05:16:26.717726+00:00",
+  "expired:6a411643": "2026-10-14T05:16:27.608659+00:00",
+  "filled:efc38c50": "2026-10-14T05:16:28.455409+00:00"
  },
  "offset": 508857075,
  "initial_sl": {},
@@ -729,13 +732,13 @@
    "trail_distance": null,
    "tp1": 83629.98,
    "created": "2026-10-14T03:15:00+00:00",
-   "status": "placed",
+   "status": "closed",
    "best": 83341.89,
    "notified_sl": 83053.81,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-14T05:16:25.536845+00:00",
+   "recorded": true,
    "placed": true,
    "signal": {
     "strategy": "trend_pullback",
@@ -758,8 +761,10 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
-   "flags": []
+   "outcome": "expired",
+   "flags": [
+    "maybe:6a411643"
+   ]
   },
   {
    "id": "efc38c50",
@@ -801,7 +806,7 @@
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.6x ATR from EMA20; buy the pullback at 83365.15."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   }
@@ -813,13 +818,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T05:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T05:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T05:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T05:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T05:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T05:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T05:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T05:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T05:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T05:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T05:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T05:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T05:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T05:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1049,13 +1054,14 @@
   "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-remains-above-5900-amid-dovish-fed-remarks-202610140333": "2026-10-14T04:07:23.316774+00:00",
   "https://www.fxstreet.com/news/eur-usd-price-forecast-gains-ground-near-11150-us-cpi-awaited-202610140335": "2026-10-14T04:07:23.316797+00:00",
   "https://www.fxstreet.com/news/gold-draws-support-from-retreating-usd-holds-above-4-150-as-traders-await-us-cpi-report-202610140409": "2026-10-14T04:27:54.337879+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/top-3-price-predictions-bitcoin-ethereum-ripple-btc-eyes-85-000-eth-holds-support-xrp-stabilizes-202610140415": "2026-10-14T04:27:54.337905+00:00"
+  "https://www.fxstreet.com/cryptocurrencies/news/top-3-price-predictions-bitcoin-ethereum-ripple-btc-eyes-85-000-eth-holds-support-xrp-stabilizes-202610140415": "2026-10-14T04:27:54.337905+00:00",
+  "https://www.fxstreet.com/news/gbp-usd-price-forecast-hits-one-week-top-as-bulls-eye-range-breakout-above-13300-202610140427": "2026-10-14T05:19:32.796766+00:00"
  },
  "timers": {
   "crowd": 1791953510.8734472,
-  "headlines": 1791954543.1445467,
-  "scan": 1791954757.6971068,
-  "follow": 1791954635.4111555
+  "headlines": 1791955172.3849268,
+  "scan": 1791955571.8104255,
+  "follow": 1791955295.35985
  },
  "pushed_times": [],
  "last_checked": {
@@ -1075,7 +1081,7 @@
   "ad5510bc": 1791899161.3684304,
   "040ff01b": 1791938986.6918554,
   "0329160d": 1791948661.421127,
-  "6a411643": 1791954635.7481222,
-  "efc38c50": 1791954635.748729
+  "6a411643": 1791954985.9187062,
+  "efc38c50": 1791955295.9435518
  }
 }
