@@ -113,7 +113,7 @@ def test_linked_orders_one_message_and_other_side_cancelled():
     buy = intraday_sig(oco_group="g1")
     sell = intraday_sig(side="sell", entry=79_900.0, sl=80_100.0, tp1=79_700.0, tp2=79_500.0, oco_group="g1")
     text = format_pair([buy, sell], INTRA, BTC, 10_000, 1.0, [], "Asia/Kuala_Lumpur")
-    assert "2 PENDING orders" in text and "BUY STOP" in text and "SELL STOP" in text
+    assert "4 PENDING orders" in text and "2 orders of 0.25 lots" in text and "BUY STOP" in text and "SELL STOP" in text
     assert "Nothing to close yet" in text and text.count("<code>") >= 8   # entry, SL, TP, lots x2
     tb, ts = track(buy, INTRA), track(sell, INTRA)
     tb.status = ts.status = "placed"
@@ -136,7 +136,7 @@ def test_format_mentions_horizon_lot_and_min_lot_warning():
     text = format_signal(sig(), SRC, BTC, 10_000, 1.0, [], "Asia/Kuala_Lumpur")
     assert "LONG-TERM" in text and "BUY NOW" in text
     # $100 risk / $6,000 stop per 1 BTC lot = 0.016 -> 0.01 lots
-    assert "<code>0.01</code>" in text and "<code>80000.00</code>" in text
+    assert "<b>0.01</b>" in text and "<code>80000.00</code>" in text
     tiny = format_signal(sig(sl=60_000.0), SRC, BTC, 1_000, 1.0, [], "Asia/Kuala_Lumpur")
     assert "smallest size" in tiny
 
@@ -202,6 +202,13 @@ def test_copy_buttons_for_each_number():
     rows = copy_buttons(format_pair([buy, sell], INTRA, BTC, 10_000, 1.0, [], "Asia/Kuala_Lumpur"))
     flat = [b for row in rows for b in row]
     assert all(len(row) <= 2 for row in rows) and len(flat) == 8
-    assert flat[0] == ("📋 🟢 Entry 80100.00", {"copy": "80100.00"})
-    assert flat[5] == ("📋 🔴 SL 80100.00", {"copy": "80100.00"})
-    assert flat[7] == ("📋 🔴 Lots 0.5", {"copy": "0.5"})
+    labels = [b[0] for b in flat]
+    assert labels == ["📋 🟢 Entry 80100.00", "📋 🟢 SL 79900.00", "📋 🟢 TP1 80300.00", "📋 🟢 TP2 80500.00",
+                      "📋 🔴 Entry 79900.00", "📋 🔴 SL 80100.00", "📋 🔴 TP1 79700.00", "📋 🔴 TP2 79500.00"]
+    assert flat[2][1] == {"copy": "80300.00"}
+
+
+def test_too_small_to_split_stays_one_order():
+    from forexbot.signals import order_lines
+    lines = " ".join(order_lines(intraday_sig(), BTC, 100, 1.0))     # $1 risk: half is under the minimum lot
+    assert "2 orders" not in lines and "Too few lots to split" in lines

@@ -110,14 +110,15 @@ def format_pair(sigs: list[Signal], source: Source, spec: SymbolSpec, balance: f
                 events: list[Event], tz: str, crowd: str | None = None) -> str:
     """Two linked pending orders (buy above / sell below) in one message. Only one will trigger."""
     a, b = sigs
-    lines = [f"🔀 <b>{a.symbol}: place 2 PENDING orders</b>",
+    n = sum(2 if split_lots(s, spec, balance, risk_pct) else 1 for s in sigs)
+    lines = [f"🔀 <b>{a.symbol}: place {n} PENDING orders</b>",
              horizon_line(source), f"Confidence: <b>{html.escape(source.tier)}</b>", "",
-             "Price will break one way. Only one of these orders will trigger, the other just waits.",
-             "<b>Nothing to close yet.</b> When one triggers I'll message you to delete the other one.", "",
-             "<b>Order 1</b>", *order_lines(a, spec, balance, risk_pct), "",
-             "<b>Order 2</b>", *order_lines(b, spec, balance, risk_pct)]
+             "Price will break one way. Only that side will trigger, the other side just waits.",
+             "<b>Nothing to close yet.</b> When one side triggers I'll message you to delete the other side.", "",
+             f"<b>{a.side.capitalize()} side</b>", *order_lines(a, spec, balance, risk_pct), "",
+             f"<b>{b.side.capitalize()} side</b>", *order_lines(b, spec, balance, risk_pct)]
     if a.expires is not None:
-        lines += ["", f"Delete both if neither has triggered by {a.expires.tz_convert(tz):%H:%M} (Malaysia time). "
+        lines += ["", f"Delete them all if nothing has triggered by {a.expires.tz_convert(tz):%H:%M} (Malaysia time). "
                       "I'll remind you."]
     lines += footer_lines(a, source, events, tz, crowd)
     return "\n".join(lines)
@@ -137,11 +138,12 @@ def cancel_sibling(filled: Tracked, others: list[Tracked], spec: SymbolSpec, now
         o.status, o.outcome, o.result_r, o.closed_at = "closed", "oco", 0.0, now.isoformat()
         if loud:
             sig = signal_from_dict(o.signal)
-            alerts.append((f"oco:{o.id}", f"❎ <b>Delete your other pending order: {sig.label} {o.symbol}</b> at "
-                                          f"{spec.fmt(sig.entry)}.\nThe {filled.side.upper()} order triggered, so this "
-                                          f"one is no longer needed. It never triggered, so there's no trade to "
-                                          f"close: in MT5 go to Trade, find it under Orders and delete it. "
-                                          f"Keep the {filled.side.upper()} trade open."))
+            orders = "orders" if sig.tp2 is not None else "order"
+            alerts.append((f"oco:{o.id}", f"❎ <b>Delete your other pending {orders}: {sig.label} {o.symbol}</b> at "
+                                          f"{spec.fmt(sig.entry)}.\nThe {filled.side.upper()} side triggered, so the "
+                                          f"{sig.side.upper()} side is no longer needed. It never triggered, so "
+                                          f"there's no trade to close: in MT5 go to Trade, find it under Orders and "
+                                          f"delete it. Keep the {filled.side.upper()} trades open."))
     return alerts
 
 
@@ -185,7 +187,8 @@ def follow_replay(t: Tracked, bars: pd.DataFrame, cost, spec: SymbolSpec,
             if loud:
                 why = ("price ran to the target without coming back to your entry"
                        if res is not None and res.status == "cancelled" else "price never reached your entry")
-                alerts.append((f"expired:{t.id}", f"⌛ <b>Delete your pending order: {name}</b> at {f(sig.entry)}.\n"
+                alerts.append((f"expired:{t.id}", f"⌛ <b>Delete your pending {'orders' if sig.tp2 is not None else 'order'}: "
+                                                  f"{name}</b> at {f(sig.entry)}.\n"
                                                   f"The setup is over: {why}. No loss, no trade."
                                                   + ("\nIf MT5 did trigger it earlier, keep that trade: its stop "
                                                      "loss and take profit will close it." if f"maybe:{t.id}" in t.flags
@@ -215,9 +218,11 @@ def follow_replay(t: Tracked, bars: pd.DataFrame, cost, spec: SymbolSpec,
     for e in real[t.seen_exits:]:
         r_now = sig.direction * (e.price - res.fill_price) / risk
         text = {
-            "tp1": f"💰 <b>First target hit: {name}</b>. Close half the lots at {f(e.price)}, then move your stop "
-                   f"to your entry {copyable(f(res.fill_price))} so the rest can't lose.",
-            "tp2": f"🎯 <b>Take profit hit: {name}</b> at {f(e.price)}. If MT5 hasn't closed it already, close the rest.",
+            "tp1": f"💰 <b>First target hit: {name}</b> at {f(e.price)}. Your first-target order should have "
+                   f"closed itself in MT5 (if not, close it now). On the other order, move the stop loss to your "
+                   f"entry so it can't lose.\nNew stop loss: {copyable(f(res.fill_price))}",
+            "tp2": f"🎯 <b>Final target hit: {name}</b> at {f(e.price)}. MT5 should have closed your last order; "
+                   f"if not, close it now.",
             "sl": (f"🛑 <b>Stopped out: {name}</b> at {f(e.price)}." if surely(e) else
                    f"🛑 <b>Stop probably hit: {name}</b> at {f(e.price)}. Price came within {f(doubt)} of your "
                    f"stop, and my free prices can be that far from Elev8's. Check MT5: if the trade is gone, it's "
@@ -255,7 +260,8 @@ def copyable(text: str) -> str:
     return f"<code>{html.escape(text)}</code>"
 
 
-SHORT = {"Entry": "Entry", "Stop loss": "SL", "New stop loss": "New SL", "Take profit": "TP", "Lot size": "Lots"}
+SHORT = {"Entry": "Entry", "Stop loss": "SL", "New stop loss": "New SL", "Take profit": "TP",
+         "First target": "TP1", "Final target": "TP2"}
 
 
 def copy_buttons(text: str) -> list[list[tuple[str, dict]]]:
@@ -286,16 +292,34 @@ def horizon_line(source: Source) -> str:
     return "📅 LONG-TERM (days to weeks)" if source.horizon == "LONG-TERM" else "⚡ INTRADAY (minutes to hours)"
 
 
+def split_lots(sig: Signal, spec: SymbolSpec, balance: float, risk_pct: float) -> float:
+    """Lots for EACH of the two orders of a two-target trade (half the risk each), or 0 if the
+    trade has one target or is too small to split. MT5 allows one take profit per order."""
+    if sig.tp1 is None or sig.tp2 is None:
+        return 0.0
+    return position_size(spec, balance, risk_pct / 2, sig.entry, sig.sl)["lots"]
+
+
 def order_lines(sig: Signal, spec: SymbolSpec, balance: float, risk_pct: float) -> list[str]:
-    """The numbers to type into MT5, each one tap-to-copy."""
+    """The numbers to type into MT5; prices are tap-to-copy."""
     f = spec.fmt
     icon = "🟢" if sig.side == "buy" else "🔴"
     lines = [f"{icon} <b>{sig.label} {sig.symbol}</b> ({ORDER_HINTS[(sig.side, sig.order_type)]})",
              f"Entry: {copyable(f(sig.entry))}",
              f"Stop loss: {copyable(f(sig.sl))} ({f(sig.stop_distance)} away)"]
-    if sig.tp1 is not None and sig.tp2 is not None:
+    half = split_lots(sig, spec, balance, risk_pct)
+    if half:
+        risk = 2 * position_size(spec, balance, risk_pct / 2, sig.entry, sig.sl)["risk_usd"]
+        return lines + [
+            f"First target: {copyable(f(sig.tp1))}",
+            f"Final target: {copyable(f(sig.tp2))}",
+            f"Place it as <b>2 orders of {half:g} lots</b>, both with this entry and stop loss: take profit at "
+            f"the first target on one, at the final target on the other (lose ${risk:,.2f} = {risk_pct:g}% "
+            f"in total if the stop is hit)."]
+    if sig.tp1 is not None and sig.tp2 is not None:      # too few lots to split in two
         lines += [f"Take profit: {copyable(f(sig.tp2))}",
-                  f"First target: {f(sig.tp1)}. I'll tell you to close half there."]
+                  f"First target: {f(sig.tp1)}. Too few lots to split, so it's one order; I'll tell you to "
+                  f"move the stop to your entry there."]
     elif sig.tp1 is not None:
         lines.append(f"Take profit: {copyable(f(sig.tp1))}")
     if sig.trail_distance:
@@ -303,13 +327,12 @@ def order_lines(sig: Signal, spec: SymbolSpec, balance: float, risk_pct: float) 
                      f"(it follows the best price at {f(sig.trail_distance)} distance).")
     size = position_size(spec, balance, risk_pct, sig.entry, sig.sl)
     if size["lots"]:
-        lots = f"{size['lots']:g}"
-        lines.append(f"Lot size: {copyable(lots)} "
+        lines.append(f"Lot size: <b>{size['lots']:g}</b> "
                      f"(lose ${size['risk_usd']:,.2f} = {risk_pct:g}% if the stop is hit)")
     else:
         lines.append(f"Lot size: the smallest size ({spec.volume_min:g}) risks ${size['min_lot_risk_usd']:,.2f} "
                      f"({size['min_lot_risk_usd'] / balance * 100:.1f}% of your account), above your {risk_pct:g}%. "
-                     f"Use {copyable(format(spec.volume_min, 'g'))} only if you accept that, otherwise skip.")
+                     f"Use {spec.volume_min:g} only if you accept that, otherwise skip.")
     return lines
 
 
