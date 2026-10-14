@@ -1052,13 +1052,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-13T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-13T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-14T10:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-14T10:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-14T10:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-14T10:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-14T10:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-14T10:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-14T10:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-14T11:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-14T11:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-14T11:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-14T11:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-14T11:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-14T11:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-14T11:00:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1326,13 +1326,15 @@
   "https://www.fxstreet.com/cryptocurrencies/news/crypto-today-bitcoin-ethereum-xrp-hold-steady-ahead-of-us-cpi-202610140939": "2026-10-14T09:48:18.994699+00:00",
   "https://www.coindesk.com/business/2026/10/14/live-updates-bitcoin-tumbles-from-near-usd84-000-ahead-of-u-s-inflation-data": "2026-10-14T09:48:18.994724+00:00",
   "https://cointelegraph.com/news/standard-chartered-bitcoin-ether-trading-professional-investors-uae?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T10:19:54.720825+00:00",
-  "https://cointelegraph.com/news/bitcoin-less-volatile-larger-gold-bitcoin-standard-author?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T10:40:24.066599+00:00"
+  "https://cointelegraph.com/news/bitcoin-less-volatile-larger-gold-bitcoin-standard-author?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T10:40:24.066599+00:00",
+  "https://cointelegraph.com/markets/cryptoquant-charts-bitcoin-uptober-thesis-valid?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T10:50:38.892988+00:00",
+  "https://www.coindesk.com/markets/2026/10/14/bitcoin-holds-above-usd83-000-ahead-of-u-s-inflation-data-as-altcoins-lag": "2026-10-14T11:01:19.210916+00:00"
  },
  "timers": {
-  "crowd": 1791971573.402162,
-  "headlines": 1791974423.6489854,
-  "scan": 1791974906.4995673,
-  "follow": 1791974845.1759486
+  "crowd": 1791975191.7049174,
+  "headlines": 1791975678.7263255,
+  "scan": 1791975709.7503586,
+  "follow": 1791975467.2688708
  },
  "pushed_times": [],
  "last_checked": {
