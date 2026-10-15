@@ -51,7 +51,9 @@
   "filled:e0a41c46": "2026-10-15T03:03:10.267835+00:00",
   "exit:e0a41c46:tp1": "2026-10-15T03:34:52.070853+00:00",
   "filled:9bb0d160": "2026-10-15T07:42:16.012468+00:00",
-  "filled:317ace89": "2026-10-15T07:47:34.181598+00:00"
+  "filled:317ace89": "2026-10-15T07:47:34.181598+00:00",
+  "expired:f983d48e": "2026-10-15T10:03:17.275569+00:00",
+  "expired:3d2649b9": "2026-10-15T10:03:18.259998+00:00"
  },
  "offset": 508857093,
  "initial_sl": {},
@@ -1551,13 +1553,13 @@
    "trail_distance": null,
    "tp1": 82838.58,
    "created": "2026-10-15T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 81901.16,
    "notified_sl": 80963.74,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-15T10:03:16.286048+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -1580,7 +1582,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -1595,13 +1597,13 @@
    "trail_distance": null,
    "tp1": 79088.91,
    "created": "2026-10-15T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 80026.33,
    "notified_sl": 80963.74,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-15T10:03:16.286048+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -1624,7 +1626,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -1723,13 +1725,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T09:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T09:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T09:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T09:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T09:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T09:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T09:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T10:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T10:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T10:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T10:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T10:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T10:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T10:00:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -2015,13 +2017,14 @@
   "https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide": "2026-10-15T04:32:35.810391+00:00",
   "https://www.coindesk.com/markets/2026/10/15/blackrock-s-larry-fink-names-a-u-s-recession-trigger-and-its-tied-to-ai": "2026-10-15T06:25:12.447033+00:00",
   "https://cointelegraph.com/markets/bitcoin-etf-outflow-btc-below-82k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T07:37:09.042807+00:00",
-  "https://cointelegraph.com/news/babylon-native-bitcoin-collateral-aave-v4-proposal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T09:20:23.867697+00:00"
+  "https://cointelegraph.com/news/babylon-native-bitcoin-collateral-aave-v4-proposal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T09:20:23.867697+00:00",
+  "https://cointelegraph.com/markets/bitcoin-dips-korea-kospi-lowest-close-since-april?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T10:01:44.874104+00:00"
  },
  "timers": {
-  "crowd": 1792054817.2441492,
-  "headlines": 1792057882.3301578,
-  "scan": 1792058190.146271,
-  "follow": 1792057974.6317677
+  "crowd": 1792058417.4947093,
+  "headlines": 1792058504.3517358,
+  "scan": 1792058995.8953311,
+  "follow": 1792058903.8147385
  },
  "pushed_times": [],
  "last_checked": {
@@ -2059,9 +2062,9 @@
   "6a851756": 1792026451.0605984,
   "e0a41c46": 1792039114.5082088,
   "e9f8a77c": 1792038786.7855911,
-  "f983d48e": 1792057975.0458527,
-  "3d2649b9": 1792057975.3993838,
-  "9bb0d160": 1792057975.7904048,
-  "317ace89": 1792057976.1891787
+  "f983d48e": 1792058596.6209793,
+  "3d2649b9": 1792058597.597511,
+  "9bb0d160": 1792058904.1706555,
+  "317ace89": 1792058904.470749
  }
 }
