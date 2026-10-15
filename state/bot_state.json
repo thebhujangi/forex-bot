@@ -75,7 +75,9 @@
   "done:6605e94b": "2026-10-15T15:03:25.224566+00:00",
   "loss:c8673f3f": "2026-10-15T15:08:28.799464+00:00",
   "exit:c8673f3f:sl": "2026-10-15T15:13:52.760510+00:00",
-  "done:c8673f3f": "2026-10-15T15:13:53.684924+00:00"
+  "done:c8673f3f": "2026-10-15T15:13:53.684924+00:00",
+  "expired:25a89559": "2026-10-15T16:02:04.234401+00:00",
+  "expired:12698a27": "2026-10-15T16:02:12.213743+00:00"
  },
  "offset": 508857096,
  "initial_sl": {},
@@ -1839,13 +1841,13 @@
    "trail_distance": null,
    "tp1": 4190.07,
    "created": "2026-10-15T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 4171.28,
    "notified_sl": 4152.48,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-15T16:01:56.240084+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -1868,7 +1870,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -1883,13 +1885,13 @@
    "trail_distance": null,
    "tp1": 4114.89,
    "created": "2026-10-15T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 4133.69,
    "notified_sl": 4152.48,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-15T16:01:56.240084+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -1912,7 +1914,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -2101,16 +2103,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T15:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T15:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T15:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T15:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T15:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T15:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T15:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T16:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T16:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T16:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T16:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T16:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T16:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T16:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/business/2026/10/12/tom-lee-sees-usd2-trillion-wealth-transfer-fueling-crypto-demand-as-bitmine-buys-more-ether": "2026-10-12T15:56:55.005019+00:00",
   "https://www.fxstreet.com/news/british-pound-loses-ground-as-oil-risks-cloud-boes-hawkish-outlook-202610121529": "2026-10-12T16:41:13.800444+00:00",
   "https://www.fxstreet.com/news/dollar-index-hits-an-18-month-high-as-the-energy-ceasefire-fails-202610121554": "2026-10-12T16:41:13.800465+00:00",
   "https://www.fxstreet.com/news/euro-hits-fresh-yearly-low-against-british-pound-as-french-fiscal-concerns-weigh-202610121604": "2026-10-12T16:41:13.800471+00:00",
@@ -2346,10 +2347,10 @@
   "https://cointelegraph.com/markets/bitcoin-price-breaks-under-80k-after-us-ppi-gains-most-in-over-4-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T15:30:23.039315+00:00"
  },
  "timers": {
-  "crowd": 1792076496.3913982,
-  "headlines": 1792079435.0487335,
-  "scan": 1792079995.4280438,
-  "follow": 1792079751.5081701
+  "crowd": 1792080162.6056159,
+  "headlines": 1792080710.0148165,
+  "scan": 1792080831.90137,
+  "follow": 1792080740.7981071
  },
  "pushed_times": [],
  "last_checked": {
@@ -2393,8 +2394,8 @@
   "317ace89": 1792073353.8189244,
   "6401f6eb": 1792073997.2733016,
   "3a0499f7": 1792073999.8618252,
-  "25a89559": 1792079751.6642513,
-  "12698a27": 1792079751.664811,
+  "25a89559": 1792080123.6603012,
+  "12698a27": 1792080131.6308308,
   "6605e94b": 1792076603.9137256,
   "8862d0c7": 1792071829.3042047,
   "c8673f3f": 1792077231.9588907,
