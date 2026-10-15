@@ -2191,17 +2191,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T19:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T19:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T19:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T19:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T19:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T19:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T19:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T19:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T19:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T19:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T19:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T19:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T19:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T19:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/south-korean-won-uptrend-seen-resuming-against-us-dollar-societe-generale-202610121851": "2026-10-12T19:25:21.428957+00:00",
-  "https://www.fxstreet.com/news/gold-tumbles-as-oil-shock-fuels-us-dollar-rally-and-fed-hike-bets-202610121908": "2026-10-12T19:25:21.428974+00:00",
   "https://www.fxstreet.com/news/fx-today-us-dollar-hits-17-month-high-rba-minutes-and-fed-speaking-up-next-202610121934": "2026-10-12T20:17:32.858872+00:00",
   "https://www.fxstreet.com/news/chinese-yuan-building-upside-momentum-toward-66800-against-us-dollar-uob-202610121945": "2026-10-12T20:17:32.858897+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-lee-predicts-largest-ever-crypto-bull-market-as-bitmine-nears-5-supply-goal-202610122028": "2026-10-12T20:38:07.439741+00:00",
@@ -2426,16 +2424,16 @@
  },
  "timers": {
   "crowd": 1792091008.272427,
-  "headlines": 1792091870.578627,
-  "scan": 1792092085.190253,
-  "follow": 1792091839.2545185
+  "headlines": 1792092477.7566314,
+  "scan": 1792092905.744873,
+  "follow": 1792092813.1165326
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792088672.1042726,
+  "d82f6843": 1792092200.0500562,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -2478,7 +2476,7 @@
   "8862d0c7": 1792071829.3042047,
   "c8673f3f": 1792077231.9588907,
   "b9cfc473": 1792073075.6395066,
-  "afb4c1fa": 1792091839.6621091,
-  "e7a23f6b": 1792091840.0296092
+  "afb4c1fa": 1792092813.510123,
+  "e7a23f6b": 1792092813.8527322
  }
 }
