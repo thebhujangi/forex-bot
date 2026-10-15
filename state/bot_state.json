@@ -2427,10 +2427,10 @@
   "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T17:03:01.173042+00:00"
  },
  "timers": {
-  "crowd": 1792083780.2361193,
-  "headlines": 1792086885.2337759,
-  "scan": 1792087299.5914931,
-  "follow": 1792087129.0977163
+  "crowd": 1792087385.6882527,
+  "headlines": 1792087508.5419,
+  "scan": 1792088058.040063,
+  "follow": 1792088058.0419307
  },
  "pushed_times": [],
  "last_checked": {
@@ -2480,7 +2480,7 @@
   "8862d0c7": 1792071829.3042047,
   "c8673f3f": 1792077231.9588907,
   "b9cfc473": 1792073075.6395066,
-  "afb4c1fa": 1792087129.414069,
-  "e7a23f6b": 1792087129.7465248
+  "afb4c1fa": 1792088058.400499,
+  "e7a23f6b": 1792088058.7068295
  }
 }
