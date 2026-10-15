@@ -2202,8 +2202,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-15T20:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/fx-today-us-dollar-hits-17-month-high-rba-minutes-and-fed-speaking-up-next-202610121934": "2026-10-12T20:17:32.858872+00:00",
-  "https://www.fxstreet.com/news/chinese-yuan-building-upside-momentum-toward-66800-against-us-dollar-uob-202610121945": "2026-10-12T20:17:32.858897+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-lee-predicts-largest-ever-crypto-bull-market-as-bitmine-nears-5-supply-goal-202610122028": "2026-10-12T20:38:07.439741+00:00",
   "https://www.fxstreet.com/news/feds-hammack-sees-thriving-economy-backs-further-rate-hikes-202610122150": "2026-10-12T22:21:10.693751+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-shows-bottoming-signs-despite-recent-macro-pressures-202610122233": "2026-10-12T23:02:57.457935+00:00",
@@ -2426,16 +2424,16 @@
  },
  "timers": {
   "crowd": 1792094635.792838,
-  "headlines": 1792094941.0459538,
-  "scan": 1792095338.044419,
-  "follow": 1792095277.0814583
+  "headlines": 1792095571.4454036,
+  "scan": 1792096162.5638356,
+  "follow": 1792095917.1783018
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792092200.0500562,
+  "d82f6843": 1792095610.706856,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
