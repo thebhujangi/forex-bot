@@ -2237,16 +2237,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T22:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T22:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T22:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T22:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T22:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T22:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T22:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T22:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T22:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T22:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T22:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T22:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T22:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T22:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/feds-hammack-sees-thriving-economy-backs-further-rate-hikes-202610122150": "2026-10-12T22:21:10.693751+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-shows-bottoming-signs-despite-recent-macro-pressures-202610122233": "2026-10-12T23:02:57.457935+00:00",
   "https://www.fxstreet.com/news/the-british-pound-drifts-back-to-its-floor-as-crude-oil-lifts-the-dollar-202610122218": "2026-10-12T23:23:01.240159+00:00",
   "https://www.fxstreet.com/news/euro-collapses-below-112-as-fed-hawkish-rhetoric-lifts-the-us-dollar-202610122222": "2026-10-12T23:23:01.240182+00:00",
@@ -2467,9 +2466,9 @@
  },
  "timers": {
   "crowd": 1792101883.1712782,
-  "headlines": 1792102400.704602,
-  "scan": 1792102632.3497663,
-  "follow": 1792102522.6311176
+  "headlines": 1792103003.2725656,
+  "scan": 1792103433.7716415,
+  "follow": 1792103460.6213334
  },
  "pushed_times": [],
  "last_checked": {
@@ -2521,6 +2520,6 @@
   "b9cfc473": 1792073075.6395066,
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
-  "ee746719": 1792102531.0128586
+  "ee746719": 1792103461.0108938
  }
 }
