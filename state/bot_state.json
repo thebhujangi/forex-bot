@@ -2193,13 +2193,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T19:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T19:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T19:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T19:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T19:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T19:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T19:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T20:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T20:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T20:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T20:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T20:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T20:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T20:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/fx-today-us-dollar-hits-17-month-high-rba-minutes-and-fed-speaking-up-next-202610121934": "2026-10-12T20:17:32.858872+00:00",
@@ -2426,9 +2426,9 @@
  },
  "timers": {
   "crowd": 1792091008.272427,
-  "headlines": 1792093696.1296144,
-  "scan": 1792093696.6247952,
-  "follow": 1792093727.096475
+  "headlines": 1792094321.221464,
+  "scan": 1792094497.821214,
+  "follow": 1792094351.8984947
  },
  "pushed_times": [],
  "last_checked": {
