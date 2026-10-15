@@ -2191,13 +2191,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T18:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T18:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T18:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T18:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T18:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T18:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T18:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T18:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T18:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T18:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T18:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T18:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T18:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T18:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/south-korean-won-uptrend-seen-resuming-against-us-dollar-societe-generale-202610121851": "2026-10-12T19:25:21.428957+00:00",
@@ -2426,9 +2426,9 @@
  },
  "timers": {
   "crowd": 1792087385.6882527,
-  "headlines": 1792088764.2864022,
-  "scan": 1792088857.660575,
-  "follow": 1792088671.748789
+  "headlines": 1792089382.2219312,
+  "scan": 1792089656.7992773,
+  "follow": 1792089625.8232462
  },
  "pushed_times": [],
  "last_checked": {
@@ -2478,7 +2478,7 @@
   "8862d0c7": 1792071829.3042047,
   "c8673f3f": 1792077231.9588907,
   "b9cfc473": 1792073075.6395066,
-  "afb4c1fa": 1792088672.5562813,
-  "e7a23f6b": 1792088672.8645835
+  "afb4c1fa": 1792089626.1141903,
+  "e7a23f6b": 1792089626.4264724
  }
 }
