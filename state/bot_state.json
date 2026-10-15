@@ -2187,19 +2187,19 @@
   }
  ],
  "last_signal_bar": {
-  "crypto_trend:BTCUSD": "2026-10-14T21:00:00+00:00",
-  "crypto_trend:ETHUSD": "2026-10-14T21:00:00+00:00",
-  "crypto_trend:XRPUSD": "2026-10-14T21:00:00+00:00",
-  "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
-  "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
-  "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T20:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T20:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T20:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T20:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T20:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T20:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T20:45:00+00:00"
+  "crypto_trend:BTCUSD": "2026-10-15T21:00:00+00:00",
+  "crypto_trend:ETHUSD": "2026-10-15T21:00:00+00:00",
+  "crypto_trend:XRPUSD": "2026-10-15T21:00:00+00:00",
+  "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
+  "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
+  "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-15T21:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T21:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T21:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T21:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T21:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T21:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T21:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/feds-hammack-sees-thriving-economy-backs-further-rate-hikes-202610122150": "2026-10-12T22:21:10.693751+00:00",
@@ -2422,10 +2422,10 @@
   "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T17:03:01.173042+00:00"
  },
  "timers": {
-  "crowd": 1792094635.792838,
-  "headlines": 1792097455.0606873,
-  "scan": 1792097730.0597472,
-  "follow": 1792097486.1993299
+  "crowd": 1792098259.1154249,
+  "headlines": 1792098106.2695706,
+  "scan": 1792098533.306205,
+  "follow": 1792098472.442467
  },
  "pushed_times": [],
  "last_checked": {
