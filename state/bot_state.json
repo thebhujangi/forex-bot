@@ -55,7 +55,9 @@
   "expired:f983d48e": "2026-10-15T10:03:17.275569+00:00",
   "expired:3d2649b9": "2026-10-15T10:03:18.259998+00:00",
   "exit:9bb0d160:tp1": "2026-10-15T12:39:57.063110+00:00",
-  "exit:317ace89:tp1": "2026-10-15T12:39:58.201469+00:00"
+  "exit:317ace89:tp1": "2026-10-15T12:39:58.201469+00:00",
+  "filled:6605e94b": "2026-10-15T13:43:42.183373+00:00",
+  "oco:8862d0c7": "2026-10-15T13:43:42.968259+00:00"
  },
  "offset": 508857093,
  "initial_sl": {},
@@ -1935,7 +1937,7 @@
     "reason": "Asian range 1.11893-1.12154 (0.38x daily ATR 0.00681). Break above the high at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   },
@@ -1951,13 +1953,13 @@
    "trail_distance": null,
    "tp1": 1.11722,
    "created": "2026-10-15T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.11873,
    "notified_sl": 1.12023,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-15T13:43:24.305940+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -1980,7 +1982,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -2079,13 +2081,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T13:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T13:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T13:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T13:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T13:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T13:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T13:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T13:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T13:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T13:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T13:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T13:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T13:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T13:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -2380,16 +2382,16 @@
  },
  "timers": {
   "crowd": 1792069257.6741621,
-  "headlines": 1792070809.9112768,
-  "scan": 1792071131.4095488,
-  "follow": 1792070841.303502
+  "headlines": 1792071426.1893747,
+  "scan": 1792071936.0365725,
+  "follow": 1792071804.3059387
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792067667.4785135,
+  "d82f6843": 1792071194.6315565,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -2422,8 +2424,15 @@
   "e9f8a77c": 1792038786.7855911,
   "f983d48e": 1792058596.6209793,
   "3d2649b9": 1792058597.597511,
-  "9bb0d160": 1792070841.673081,
-  "317ace89": 1792070841.9895887,
-  "6401f6eb": 1792070841.9903843
+  "9bb0d160": 1792071804.7188509,
+  "317ace89": 1792071805.1885478,
+  "6401f6eb": 1792071805.1892192,
+  "3a0499f7": 1792071805.1897638,
+  "25a89559": 1792071805.3243012,
+  "12698a27": 1792071813.298196,
+  "6605e94b": 1792071821.3192563,
+  "8862d0c7": 1792071829.3042047,
+  "c8673f3f": 1792071837.3134441,
+  "b9cfc473": 1792071845.302929
  }
 }
