@@ -2193,13 +2193,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T21:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T21:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T21:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T21:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T21:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T21:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T21:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T21:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T21:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T21:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T21:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/feds-hammack-sees-thriving-economy-backs-further-rate-hikes-202610122150": "2026-10-12T22:21:10.693751+00:00",
@@ -2423,16 +2423,16 @@
  },
  "timers": {
   "crowd": 1792098259.1154249,
-  "headlines": 1792098106.2695706,
-  "scan": 1792098533.306205,
-  "follow": 1792098472.442467
+  "headlines": 1792099324.4349396,
+  "scan": 1792099355.648983,
+  "follow": 1792099386.39175
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792095610.706856,
+  "d82f6843": 1792099078.7431808,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
