@@ -2193,16 +2193,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T20:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T20:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T20:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T20:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T20:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T20:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T20:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T20:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T20:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T20:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T20:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T20:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T20:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T20:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-lee-predicts-largest-ever-crypto-bull-market-as-bitmine-nears-5-supply-goal-202610122028": "2026-10-12T20:38:07.439741+00:00",
   "https://www.fxstreet.com/news/feds-hammack-sees-thriving-economy-backs-further-rate-hikes-202610122150": "2026-10-12T22:21:10.693751+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-shows-bottoming-signs-despite-recent-macro-pressures-202610122233": "2026-10-12T23:02:57.457935+00:00",
   "https://www.fxstreet.com/news/the-british-pound-drifts-back-to-its-floor-as-crude-oil-lifts-the-dollar-202610122218": "2026-10-12T23:23:01.240159+00:00",
@@ -2424,9 +2423,9 @@
  },
  "timers": {
   "crowd": 1792094635.792838,
-  "headlines": 1792095571.4454036,
-  "scan": 1792096162.5638356,
-  "follow": 1792095917.1783018
+  "headlines": 1792096833.8017094,
+  "scan": 1792096925.8967001,
+  "follow": 1792096864.9093268
  },
  "pushed_times": [],
  "last_checked": {
