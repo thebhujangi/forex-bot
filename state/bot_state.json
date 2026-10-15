@@ -2237,13 +2237,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T22:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T22:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T22:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T22:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T22:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T22:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T22:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T22:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T22:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T22:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T22:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T22:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T22:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T22:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-shows-bottoming-signs-despite-recent-macro-pressures-202610122233": "2026-10-12T23:02:57.457935+00:00",
@@ -2466,9 +2466,9 @@
  },
  "timers": {
   "crowd": 1792101883.1712782,
-  "headlines": 1792104218.6882532,
-  "scan": 1792104249.9473429,
-  "follow": 1792104065.8248136
+  "headlines": 1792104831.647617,
+  "scan": 1792105014.6412055,
+  "follow": 1792104983.9328609
  },
  "pushed_times": [],
  "last_checked": {
@@ -2520,6 +2520,6 @@
   "b9cfc473": 1792073075.6395066,
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
-  "ee746719": 1792104066.1703436
+  "ee746719": 1792104984.2438452
  }
 }
