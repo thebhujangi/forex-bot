@@ -2184,6 +2184,50 @@
    "fill_notified": false,
    "outcome": "expired",
    "flags": []
+  },
+  {
+   "id": "ee746719",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "ETHUSD",
+   "side": "buy",
+   "entry": 2441.54,
+   "sl": 2429.34,
+   "cur_sl": 2429.34,
+   "trail_distance": null,
+   "tp1": 2453.73,
+   "created": "2026-10-15T21:30:00+00:00",
+   "status": "new",
+   "best": 2441.54,
+   "notified_sl": 2429.34,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "ETHUSD",
+    "side": "buy",
+    "order_type": "limit",
+    "created": "2026-10-15T21:30:00+00:00",
+    "entry": 2441.54,
+    "sl": 2429.34,
+    "tp1": 2453.73,
+    "tp2": 2472.01,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-15T23:30:00+00:00",
+    "close_by": "2026-10-16T05:30:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.7x ATR from EMA20; buy the pullback at 2441.54."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -2193,13 +2237,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T21:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T21:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T21:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T21:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T21:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T21:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T21:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T21:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T21:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T21:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T21:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T21:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T21:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T21:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/feds-hammack-sees-thriving-economy-backs-further-rate-hikes-202610122150": "2026-10-12T22:21:10.693751+00:00",
@@ -2423,9 +2467,9 @@
  },
  "timers": {
   "crowd": 1792098259.1154249,
-  "headlines": 1792099324.4349396,
-  "scan": 1792099355.648983,
-  "follow": 1792099386.39175
+  "headlines": 1792099944.4853406,
+  "scan": 1792100163.1118288,
+  "follow": 1792100009.830036
  },
  "pushed_times": [],
  "last_checked": {
@@ -2476,6 +2520,7 @@
   "c8673f3f": 1792077231.9588907,
   "b9cfc473": 1792073075.6395066,
   "afb4c1fa": 1792093727.413649,
-  "e7a23f6b": 1792093728.3303614
+  "e7a23f6b": 1792093728.3303614,
+  "ee746719": 1792100010.2777648
  }
 }
