@@ -79,7 +79,7 @@
   "expired:25a89559": "2026-10-15T16:02:04.234401+00:00",
   "expired:12698a27": "2026-10-15T16:02:12.213743+00:00"
  },
- "offset": 508857096,
+ "offset": 508857097,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -2103,17 +2103,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T17:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T17:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T17:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T17:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T17:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T17:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T17:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T17:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T17:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T17:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T17:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T17:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T17:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T17:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/swedish-krona-riksbank-outlook-supports-sek-against-euro-rabobank-202610121649": "2026-10-12T17:22:32.691564+00:00",
-  "https://www.fxstreet.com/news/feds-hammack-calls-for-higher-rates-as-inflation-pressures-broaden-202610121702": "2026-10-12T17:22:32.691583+00:00",
   "https://www.fxstreet.com/news/singapore-dollar-range-bias-holds-near-12835-against-us-dollar-uob-202610121738": "2026-10-12T18:13:27.950046+00:00",
   "https://www.fxstreet.com/news/feds-hammack-sees-higher-neutral-rate-urges-more-policy-restraint-202610121753": "2026-10-12T18:13:27.950067+00:00",
   "https://www.fxstreet.com/news/south-korean-won-uptrend-seen-resuming-against-us-dollar-societe-generale-202610121851": "2026-10-12T19:25:21.428957+00:00",
@@ -2342,16 +2340,16 @@
  },
  "timers": {
   "crowd": 1792083780.2361193,
-  "headlines": 1792084406.193523,
-  "scan": 1792084829.2810001,
-  "follow": 1792084585.333641
+  "headlines": 1792085634.374181,
+  "scan": 1792085665.7202473,
+  "follow": 1792085554.199044
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792081713.577071,
+  "d82f6843": 1792085251.38844,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
