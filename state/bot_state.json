@@ -45,7 +45,8 @@
   "expired:07e2a578": "2026-10-14T15:19:08.011292+00:00",
   "expired:feb308bf": "2026-10-14T20:01:17.114843+00:00",
   "expired:596badc9": "2026-10-14T20:49:03.634768+00:00",
-  "expired:8642c378": "2026-10-14T22:45:21.937812+00:00"
+  "expired:8642c378": "2026-10-14T22:45:21.937812+00:00",
+  "filled:6a851756": "2026-10-15T00:09:50.514124+00:00"
  },
  "offset": 508857084,
  "initial_sl": {},
@@ -1441,7 +1442,7 @@
     "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.6x ATR from EMA20; sell the pullback at 81674.18."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   }
@@ -1453,13 +1454,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T00:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T00:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T00:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T00:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T00:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T00:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T00:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T00:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T00:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T00:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T00:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T00:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T00:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T00:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1741,9 +1742,9 @@
  },
  "timers": {
   "crowd": 1792022277.1341803,
-  "headlines": 1792022673.817916,
-  "scan": 1792022643.0843482,
-  "follow": 1792022674.1726646
+  "headlines": 1792023294.907919,
+  "scan": 1792023442.475492,
+  "follow": 1792023295.378986
  },
  "pushed_times": [],
  "last_checked": {
@@ -1778,6 +1779,6 @@
   "feb308bf": 1792008076.4520078,
   "596badc9": 1792010943.02607,
   "8642c378": 1792017921.3342118,
-  "6a851756": 1792022674.7002056
+  "6a851756": 1792023295.6981094
  }
 }
