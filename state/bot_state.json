@@ -2237,13 +2237,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T22:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T22:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T22:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T22:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T22:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T22:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T22:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T22:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T22:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T22:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T22:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T22:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T22:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T22:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/feds-hammack-sees-thriving-economy-backs-further-rate-hikes-202610122150": "2026-10-12T22:21:10.693751+00:00",
@@ -2466,17 +2466,17 @@
   "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T17:03:01.173042+00:00"
  },
  "timers": {
-  "crowd": 1792098259.1154249,
-  "headlines": 1792101796.7466042,
-  "scan": 1792101766.3811953,
-  "follow": 1792101589.2148285
+  "crowd": 1792101883.1712782,
+  "headlines": 1792102400.704602,
+  "scan": 1792102632.3497663,
+  "follow": 1792102522.6311176
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792099078.7431808,
+  "d82f6843": 1792102530.673822,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -2521,6 +2521,6 @@
   "b9cfc473": 1792073075.6395066,
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
-  "ee746719": 1792101589.5322964
+  "ee746719": 1792102531.0128586
  }
 }
