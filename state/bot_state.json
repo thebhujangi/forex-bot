@@ -1723,13 +1723,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T08:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T08:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T08:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T08:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T08:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T08:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T08:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T09:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T09:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T09:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T09:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T09:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T09:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T09:00:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -2017,10 +2017,10 @@
   "https://cointelegraph.com/markets/bitcoin-etf-outflow-btc-below-82k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T07:37:09.042807+00:00"
  },
  "timers": {
-  "crowd": 1792051211.8354578,
-  "headlines": 1792054161.190371,
-  "scan": 1792054161.8839383,
-  "follow": 1792053909.9313867
+  "crowd": 1792054817.2441492,
+  "headlines": 1792054786.2640502,
+  "scan": 1792054969.4178605,
+  "follow": 1792054876.1746001
  },
  "pushed_times": [],
  "last_checked": {
@@ -2058,9 +2058,9 @@
   "6a851756": 1792026451.0605984,
   "e0a41c46": 1792039114.5082088,
   "e9f8a77c": 1792038786.7855911,
-  "f983d48e": 1792053918.4514558,
-  "3d2649b9": 1792053918.789428,
-  "9bb0d160": 1792053919.1564484,
-  "317ace89": 1792053919.5094824
+  "f983d48e": 1792054876.534727,
+  "3d2649b9": 1792054876.8778412,
+  "9bb0d160": 1792054877.2092419,
+  "317ace89": 1792054877.541839
  }
 }
