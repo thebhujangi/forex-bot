@@ -77,7 +77,9 @@
   "exit:c8673f3f:sl": "2026-10-15T15:13:52.760510+00:00",
   "done:c8673f3f": "2026-10-15T15:13:53.684924+00:00",
   "expired:25a89559": "2026-10-15T16:02:04.234401+00:00",
-  "expired:12698a27": "2026-10-15T16:02:12.213743+00:00"
+  "expired:12698a27": "2026-10-15T16:02:12.213743+00:00",
+  "expired:afb4c1fa": "2026-10-15T19:48:48.015580+00:00",
+  "expired:e7a23f6b": "2026-10-15T19:48:48.945695+00:00"
  },
  "offset": 508857097,
  "initial_sl": {},
@@ -2107,13 +2109,13 @@
    "trail_distance": null,
    "tp1": 82367.45,
    "created": "2026-10-15T17:45:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 81785.67,
    "notified_sl": 81203.9,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-15T19:48:47.096487+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -2136,7 +2138,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -2151,13 +2153,13 @@
    "trail_distance": null,
    "tp1": 2433.66,
    "created": "2026-10-15T17:45:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2410.57,
    "notified_sl": 2387.48,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-15T19:48:47.096487+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -2180,7 +2182,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   }
  ],
@@ -2191,13 +2193,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T19:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T19:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T19:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T19:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T19:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T19:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T19:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T19:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T19:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T19:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T19:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T19:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T19:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T19:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/fx-today-us-dollar-hits-17-month-high-rba-minutes-and-fed-speaking-up-next-202610121934": "2026-10-12T20:17:32.858872+00:00",
@@ -2424,9 +2426,9 @@
  },
  "timers": {
   "crowd": 1792091008.272427,
-  "headlines": 1792092477.7566314,
-  "scan": 1792092905.744873,
-  "follow": 1792092813.1165326
+  "headlines": 1792093696.1296144,
+  "scan": 1792093696.6247952,
+  "follow": 1792093727.096475
  },
  "pushed_times": [],
  "last_checked": {
@@ -2476,7 +2478,7 @@
   "8862d0c7": 1792071829.3042047,
   "c8673f3f": 1792077231.9588907,
   "b9cfc473": 1792073075.6395066,
-  "afb4c1fa": 1792092813.510123,
-  "e7a23f6b": 1792092813.8527322
+  "afb4c1fa": 1792093727.413649,
+  "e7a23f6b": 1792093728.3303614
  }
 }
