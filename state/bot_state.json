@@ -2103,13 +2103,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T16:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T16:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T16:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T16:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T16:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T16:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T16:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T16:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T16:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T16:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T16:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T16:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T16:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T16:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/british-pound-loses-ground-as-oil-risks-cloud-boes-hawkish-outlook-202610121529": "2026-10-12T16:41:13.800444+00:00",
@@ -2348,16 +2348,16 @@
  },
  "timers": {
   "crowd": 1792080162.6056159,
-  "headlines": 1792081319.6270947,
-  "scan": 1792081594.9614558,
-  "follow": 1792081350.9875627
+  "headlines": 1792081920.5303664,
+  "scan": 1792082407.5897865,
+  "follow": 1792082316.3748267
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792078175.2711957,
+  "d82f6843": 1792081713.577071,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
