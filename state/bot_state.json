@@ -2101,13 +2101,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T15:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T15:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T15:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T15:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T15:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T15:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T15:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T15:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T15:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T15:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T15:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T15:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T15:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T15:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/business/2026/10/12/tom-lee-sees-usd2-trillion-wealth-transfer-fueling-crypto-demand-as-bitmine-buys-more-ether": "2026-10-12T15:56:55.005019+00:00",
@@ -2342,20 +2342,21 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm": "2026-10-15T14:28:51.311245+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm": "2026-10-15T14:28:51.311247+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm": "2026-10-15T14:28:51.311250+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-15T14:28:51.311253+00:00"
+  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-15T14:28:51.311253+00:00",
+  "https://cointelegraph.com/markets/bitcoin-price-breaks-under-80k-after-us-ppi-gains-most-in-over-4-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T15:30:23.039315+00:00"
  },
  "timers": {
   "crowd": 1792076496.3913982,
-  "headlines": 1792077576.9460495,
-  "scan": 1792077608.171585,
-  "follow": 1792077538.1954255
+  "headlines": 1792078222.256045,
+  "scan": 1792078401.0821722,
+  "follow": 1792078167.1404731
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792074688.8936844,
+  "d82f6843": 1792078175.2711957,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -2392,8 +2393,8 @@
   "317ace89": 1792073353.8189244,
   "6401f6eb": 1792073997.2733016,
   "3a0499f7": 1792073999.8618252,
-  "25a89559": 1792077538.3518288,
-  "12698a27": 1792077546.3325474,
+  "25a89559": 1792078183.270446,
+  "12698a27": 1792078191.749475,
   "6605e94b": 1792076603.9137256,
   "8862d0c7": 1792071829.3042047,
   "c8673f3f": 1792077231.9588907,
