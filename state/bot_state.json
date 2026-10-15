@@ -1455,13 +1455,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T01:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T01:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T01:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T01:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T01:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T01:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T01:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T01:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T01:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T01:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T01:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T01:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T01:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T01:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -1739,13 +1739,14 @@
   "https://www.coindesk.com/business/2026/10/14/former-ftx-europe-chief-targets-u-s-stock-tokenization-with-new-sec-exemption": "2026-10-14T14:17:46.465927+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-dips-yields-surge-as-high-oil-prices-spike-us-cpi-inflation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T14:37:58.789003+00:00",
   "https://www.coindesk.com/coindesk-indices/2026/10/14/crypto-long-and-short-why-gold-and-bitcoin-belong-in-the-same-portfolio": "2026-10-14T15:08:40.423333+00:00",
-  "https://cointelegraph.com/news/eba-circle-usdc-stablecoin-significant-token-mica?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T19:15:01.036369+00:00"
+  "https://cointelegraph.com/news/eba-circle-usdc-stablecoin-significant-token-mica?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T19:15:01.036369+00:00",
+  "https://cointelegraph.com/news/vaneck-seeks-to-withdraw-application-for-lido-staked-ether-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T01:37:24.181851+00:00"
  },
  "timers": {
   "crowd": 1792025900.8234873,
-  "headlines": 1792027018.293627,
-  "scan": 1792027478.6604035,
-  "follow": 1792027386.6463678
+  "headlines": 1792028243.6569123,
+  "scan": 1792028274.7464888,
+  "follow": 1792028030.8048046
  },
  "pushed_times": [],
  "last_checked": {
