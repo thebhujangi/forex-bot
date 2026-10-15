@@ -50,7 +50,8 @@
   "exit:6a851756:tp1": "2026-10-15T00:52:07.123364+00:00",
   "filled:e0a41c46": "2026-10-15T03:03:10.267835+00:00",
   "exit:e0a41c46:tp1": "2026-10-15T03:34:52.070853+00:00",
-  "filled:9bb0d160": "2026-10-15T07:42:16.012468+00:00"
+  "filled:9bb0d160": "2026-10-15T07:42:16.012468+00:00",
+  "filled:317ace89": "2026-10-15T07:47:34.181598+00:00"
  },
  "offset": 508857093,
  "initial_sl": {},
@@ -1710,7 +1711,7 @@
     "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.9x ATR from EMA20; sell the pullback at 2374.01."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   }
@@ -1722,13 +1723,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T07:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T07:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T07:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T07:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T07:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T07:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T07:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T07:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T07:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T07:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T07:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T07:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T07:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T07:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -2017,16 +2018,16 @@
  },
  "timers": {
   "crowd": 1792047593.413916,
-  "headlines": 1792049828.5204883,
-  "scan": 1792050104.0234191,
-  "follow": 1792050134.4250023
+  "headlines": 1792050451.8450541,
+  "scan": 1792050913.3182924,
+  "follow": 1792050759.4704907
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792047072.9127443,
+  "d82f6843": 1792050452.4475808,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -2057,9 +2058,9 @@
   "6a851756": 1792026451.0605984,
   "e0a41c46": 1792039114.5082088,
   "e9f8a77c": 1792038786.7855911,
-  "f983d48e": 1792050134.7298384,
-  "3d2649b9": 1792050135.0570083,
-  "9bb0d160": 1792050135.3224702,
-  "317ace89": 1792050136.2986476
+  "f983d48e": 1792050759.806162,
+  "3d2649b9": 1792050760.0737581,
+  "9bb0d160": 1792050760.4347477,
+  "317ace89": 1792050760.7028692
  }
 }
