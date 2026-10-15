@@ -2101,13 +2101,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T15:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T15:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T15:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T15:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T15:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T15:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T15:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T15:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T15:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T15:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T15:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T15:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T15:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T15:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/business/2026/10/12/tom-lee-sees-usd2-trillion-wealth-transfer-fueling-crypto-demand-as-bitmine-buys-more-ether": "2026-10-12T15:56:55.005019+00:00",
@@ -2347,9 +2347,9 @@
  },
  "timers": {
   "crowd": 1792076496.3913982,
-  "headlines": 1792078222.256045,
-  "scan": 1792078401.0821722,
-  "follow": 1792078167.1404731
+  "headlines": 1792078830.9881392,
+  "scan": 1792079227.6128201,
+  "follow": 1792079127.8230333
  },
  "pushed_times": [],
  "last_checked": {
@@ -2393,8 +2393,8 @@
   "317ace89": 1792073353.8189244,
   "6401f6eb": 1792073997.2733016,
   "3a0499f7": 1792073999.8618252,
-  "25a89559": 1792078183.270446,
-  "12698a27": 1792078191.749475,
+  "25a89559": 1792079136.0935667,
+  "12698a27": 1792079136.0943325,
   "6605e94b": 1792076603.9137256,
   "8862d0c7": 1792071829.3042047,
   "c8673f3f": 1792077231.9588907,
