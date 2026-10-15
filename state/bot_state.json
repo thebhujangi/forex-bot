@@ -2014,13 +2014,14 @@
   "https://www.coindesk.com/markets/2026/10/15/bitcoin-mining-pool-once-handling-2-3-of-network-shuts-after-hashrate-falls-65": "2026-10-15T04:22:32.797086+00:00",
   "https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide": "2026-10-15T04:32:35.810391+00:00",
   "https://www.coindesk.com/markets/2026/10/15/blackrock-s-larry-fink-names-a-u-s-recession-trigger-and-its-tied-to-ai": "2026-10-15T06:25:12.447033+00:00",
-  "https://cointelegraph.com/markets/bitcoin-etf-outflow-btc-below-82k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T07:37:09.042807+00:00"
+  "https://cointelegraph.com/markets/bitcoin-etf-outflow-btc-below-82k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T07:37:09.042807+00:00",
+  "https://cointelegraph.com/news/babylon-native-bitcoin-collateral-aave-v4-proposal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T09:20:23.867697+00:00"
  },
  "timers": {
   "crowd": 1792054817.2441492,
-  "headlines": 1792055406.7141073,
-  "scan": 1792055819.0939283,
-  "follow": 1792055800.256396
+  "headlines": 1792056023.0660338,
+  "scan": 1792056575.0985878,
+  "follow": 1792056421.430857
  },
  "pushed_times": [],
  "last_checked": {
@@ -2058,9 +2059,9 @@
   "6a851756": 1792026451.0605984,
   "e0a41c46": 1792039114.5082088,
   "e9f8a77c": 1792038786.7855911,
-  "f983d48e": 1792055800.6168172,
-  "3d2649b9": 1792055800.9286635,
-  "9bb0d160": 1792055801.3077946,
-  "317ace89": 1792055801.6311986
+  "f983d48e": 1792056421.7703228,
+  "3d2649b9": 1792056422.0847676,
+  "9bb0d160": 1792056422.4036186,
+  "317ace89": 1792056422.719814
  }
 }
