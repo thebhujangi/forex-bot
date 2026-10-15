@@ -1725,13 +1725,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T10:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T10:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T10:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T10:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T10:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T10:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T10:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T10:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T10:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T10:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T10:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T10:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T10:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T10:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/saylors-teases-strategy-bitcoin-buying-after-ending-september-with-strc-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T14:05:01.886494+00:00",
@@ -2024,16 +2024,16 @@
  },
  "timers": {
   "crowd": 1792058417.4947093,
-  "headlines": 1792060355.8223183,
-  "scan": 1792060601.2818675,
-  "follow": 1792060478.619878
+  "headlines": 1792060961.3475463,
+  "scan": 1792061414.749932,
+  "follow": 1792061414.7515473
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792057342.4394011,
+  "d82f6843": 1792060808.0481257,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -2066,7 +2066,7 @@
   "e9f8a77c": 1792038786.7855911,
   "f983d48e": 1792058596.6209793,
   "3d2649b9": 1792058597.597511,
-  "9bb0d160": 1792060479.0156279,
-  "317ace89": 1792060479.335865
+  "9bb0d160": 1792061415.1049418,
+  "317ace89": 1792061415.4186604
  }
 }
