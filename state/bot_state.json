@@ -2103,16 +2103,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T16:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T16:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T16:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T16:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T16:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T16:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T16:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T17:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T17:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T17:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T17:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T17:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T17:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T17:00:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/bitcoin-miners-ai-financing-costs-debt-funding-gap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T17:01:49.418586+00:00",
   "https://www.fxstreet.com/news/swedish-krona-riksbank-outlook-supports-sek-against-euro-rabobank-202610121649": "2026-10-12T17:22:32.691564+00:00",
   "https://www.fxstreet.com/news/feds-hammack-calls-for-higher-rates-as-inflation-pressures-broaden-202610121702": "2026-10-12T17:22:32.691583+00:00",
   "https://www.fxstreet.com/news/singapore-dollar-range-bias-holds-near-12835-against-us-dollar-uob-202610121738": "2026-10-12T18:13:27.950046+00:00",
@@ -2338,13 +2337,14 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm": "2026-10-15T14:28:51.311247+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm": "2026-10-15T14:28:51.311250+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-15T14:28:51.311253+00:00",
-  "https://cointelegraph.com/markets/bitcoin-price-breaks-under-80k-after-us-ppi-gains-most-in-over-4-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T15:30:23.039315+00:00"
+  "https://cointelegraph.com/markets/bitcoin-price-breaks-under-80k-after-us-ppi-gains-most-in-over-4-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T15:30:23.039315+00:00",
+  "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T17:03:01.173042+00:00"
  },
  "timers": {
-  "crowd": 1792080162.6056159,
-  "headlines": 1792083154.0203602,
-  "scan": 1792083215.723423,
-  "follow": 1792082970.5778866
+  "crowd": 1792083780.2361193,
+  "headlines": 1792083780.443887,
+  "scan": 1792084024.6296632,
+  "follow": 1792083963.7524633
  },
  "pushed_times": [],
  "last_checked": {
