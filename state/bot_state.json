@@ -2103,21 +2103,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T16:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T16:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T16:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T16:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T16:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T16:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T16:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T16:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T16:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T16:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T16:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T16:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T16:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T16:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/british-pound-loses-ground-as-oil-risks-cloud-boes-hawkish-outlook-202610121529": "2026-10-12T16:41:13.800444+00:00",
-  "https://www.fxstreet.com/news/dollar-index-hits-an-18-month-high-as-the-energy-ceasefire-fails-202610121554": "2026-10-12T16:41:13.800465+00:00",
-  "https://www.fxstreet.com/news/euro-hits-fresh-yearly-low-against-british-pound-as-french-fiscal-concerns-weigh-202610121604": "2026-10-12T16:41:13.800471+00:00",
-  "https://www.coindesk.com/policy/2026/10/12/palantir-executive-warns-europe-is-missing-the-boat-on-ai-just-like-it-did-with-the-internet": "2026-10-12T16:41:13.800476+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-and-gold-outlook-btc-slides-as-etf-outflows-weigh-xau-gives-back-recent-gains-202610121621": "2026-10-12T16:41:13.800480+00:00",
-  "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T16:41:13.800486+00:00",
   "https://cointelegraph.com/news/bitcoin-miners-ai-financing-costs-debt-funding-gap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-12T17:01:49.418586+00:00",
   "https://www.fxstreet.com/news/swedish-krona-riksbank-outlook-supports-sek-against-euro-rabobank-202610121649": "2026-10-12T17:22:32.691564+00:00",
   "https://www.fxstreet.com/news/feds-hammack-calls-for-higher-rates-as-inflation-pressures-broaden-202610121702": "2026-10-12T17:22:32.691583+00:00",
@@ -2348,9 +2342,9 @@
  },
  "timers": {
   "crowd": 1792080162.6056159,
-  "headlines": 1792081920.5303664,
-  "scan": 1792082407.5897865,
-  "follow": 1792082316.3748267
+  "headlines": 1792083154.0203602,
+  "scan": 1792083215.723423,
+  "follow": 1792082970.5778866
  },
  "pushed_times": [],
  "last_checked": {
