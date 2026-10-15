@@ -2237,16 +2237,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T22:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T22:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T22:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T22:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T22:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T22:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T22:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T23:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T23:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T23:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T23:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T23:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T23:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T23:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-shows-bottoming-signs-despite-recent-macro-pressures-202610122233": "2026-10-12T23:02:57.457935+00:00",
   "https://www.fxstreet.com/news/the-british-pound-drifts-back-to-its-floor-as-crude-oil-lifts-the-dollar-202610122218": "2026-10-12T23:23:01.240159+00:00",
   "https://www.fxstreet.com/news/euro-collapses-below-112-as-fed-hawkish-rhetoric-lifts-the-us-dollar-202610122222": "2026-10-12T23:23:01.240182+00:00",
   "https://www.fxstreet.com/news/gold-tumbles-below-4-200-on-higher-oil-prices-firmer-us-dollar-202610122318": "2026-10-13T00:15:22.187503+00:00",
@@ -2465,10 +2464,10 @@
   "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T17:03:01.173042+00:00"
  },
  "timers": {
-  "crowd": 1792101883.1712782,
-  "headlines": 1792104831.647617,
-  "scan": 1792105014.6412055,
-  "follow": 1792104983.9328609
+  "crowd": 1792105487.2823048,
+  "headlines": 1792105456.2325459,
+  "scan": 1792105823.3147871,
+  "follow": 1792105609.5844133
  },
  "pushed_times": [],
  "last_checked": {
@@ -2520,6 +2519,6 @@
   "b9cfc473": 1792073075.6395066,
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
-  "ee746719": 1792104984.2438452
+  "ee746719": 1792105609.92851
  }
 }
