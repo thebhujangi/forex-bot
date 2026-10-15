@@ -79,7 +79,8 @@
   "expired:25a89559": "2026-10-15T16:02:04.234401+00:00",
   "expired:12698a27": "2026-10-15T16:02:12.213743+00:00",
   "expired:afb4c1fa": "2026-10-15T19:48:48.015580+00:00",
-  "expired:e7a23f6b": "2026-10-15T19:48:48.945695+00:00"
+  "expired:e7a23f6b": "2026-10-15T19:48:48.945695+00:00",
+  "filled:ee746719": "2026-10-15T23:17:24.027022+00:00"
  },
  "offset": 508857097,
  "initial_sl": {},
@@ -2225,7 +2226,7 @@
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.7x ATR from EMA20; buy the pullback at 2441.54."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   }
@@ -2237,17 +2238,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T23:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T23:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T23:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T23:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T23:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T23:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T23:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T23:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T23:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T23:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T23:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T23:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T23:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T23:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/the-british-pound-drifts-back-to-its-floor-as-crude-oil-lifts-the-dollar-202610122218": "2026-10-12T23:23:01.240159+00:00",
-  "https://www.fxstreet.com/news/euro-collapses-below-112-as-fed-hawkish-rhetoric-lifts-the-us-dollar-202610122222": "2026-10-12T23:23:01.240182+00:00",
   "https://www.fxstreet.com/news/gold-tumbles-below-4-200-on-higher-oil-prices-firmer-us-dollar-202610122318": "2026-10-13T00:15:22.187503+00:00",
   "https://www.fxstreet.com/news/aussie-dollar-struggles-at-070-retreats-as-oil-shock-boosts-the-usd-202610122347": "2026-10-13T00:15:22.187524+00:00",
   "https://www.fxstreet.com/news/rba-minutes-case-for-rates-to-act-promptly-to-keep-inflation-expectations-anchored-202610130033": "2026-10-13T01:17:12.956283+00:00",
@@ -2465,16 +2464,16 @@
  },
  "timers": {
   "crowd": 1792105487.2823048,
-  "headlines": 1792105456.2325459,
-  "scan": 1792105823.3147871,
-  "follow": 1792105609.5844133
+  "headlines": 1792106673.4114997,
+  "scan": 1792106642.8088453,
+  "follow": 1792106549.6836102
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792102530.673822,
+  "d82f6843": 1792105938.294392,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -2519,6 +2518,6 @@
   "b9cfc473": 1792073075.6395066,
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
-  "ee746719": 1792105609.92851
+  "ee746719": 1792106550.068697
  }
 }
