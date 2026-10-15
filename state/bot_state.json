@@ -2191,13 +2191,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-14T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-14T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T18:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T18:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T18:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T18:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T18:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T18:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T18:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-15T19:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-15T19:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-15T19:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-15T19:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-15T19:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-15T19:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-15T19:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/south-korean-won-uptrend-seen-resuming-against-us-dollar-societe-generale-202610121851": "2026-10-12T19:25:21.428957+00:00",
@@ -2425,10 +2425,10 @@
   "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T17:03:01.173042+00:00"
  },
  "timers": {
-  "crowd": 1792087385.6882527,
-  "headlines": 1792090007.3229172,
-  "scan": 1792090464.334014,
-  "follow": 1792090281.2053535
+  "crowd": 1792091008.272427,
+  "headlines": 1792091254.0283852,
+  "scan": 1792091285.1932304,
+  "follow": 1792091222.7386737
  },
  "pushed_times": [],
  "last_checked": {
@@ -2478,7 +2478,7 @@
   "8862d0c7": 1792071829.3042047,
   "c8673f3f": 1792077231.9588907,
   "b9cfc473": 1792073075.6395066,
-  "afb4c1fa": 1792090281.6386206,
-  "e7a23f6b": 1792090281.9177945
+  "afb4c1fa": 1792091223.1356144,
+  "e7a23f6b": 1792091223.4831216
  }
 }
