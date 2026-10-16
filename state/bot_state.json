@@ -2238,13 +2238,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T00:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T00:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T00:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T00:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T00:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T00:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T00:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T00:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T00:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T00:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T00:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T00:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T00:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T00:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/rba-minutes-case-for-rates-to-act-promptly-to-keep-inflation-expectations-anchored-202610130033": "2026-10-13T01:17:12.956283+00:00",
@@ -2462,9 +2462,9 @@
  },
  "timers": {
   "crowd": 1792109143.6279051,
-  "headlines": 1792109757.7044923,
-  "scan": 1792109850.1205137,
-  "follow": 1792109673.9483457
+  "headlines": 1792110359.6503446,
+  "scan": 1792110709.410542,
+  "follow": 1792110604.876124
  },
  "pushed_times": [],
  "last_checked": {
@@ -2516,6 +2516,6 @@
   "b9cfc473": 1792073075.6395066,
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
-  "ee746719": 1792109674.3106804
+  "ee746719": 1792110605.31647
  }
 }
