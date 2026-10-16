@@ -2516,7 +2516,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-16T11:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/daybook-us/2026/10/13/stacks-stx-a-bitcoin-layer-2-token-has-surged-by-50-in-four-weeks": "2026-10-13T11:35:47.939514+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/top-altcoins-price-forecast-ethereum-ripple-hyperliquid-attempt-recovery-as-bearish-risks-persist-202610131115": "2026-10-13T11:56:08.841177+00:00",
   "https://www.coindesk.com/business/2026/10/13/federated-hermes-joins-wall-street-s-tokenization-push-with-plans-for-first-onchain-fund-shares": "2026-10-13T12:06:37.045187+00:00",
   "https://www.fxstreet.com/news/australian-dollar-remains-weak-despite-hawkish-rba-minutes-202610131137": "2026-10-13T12:27:19.574550+00:00",
@@ -2679,16 +2678,16 @@
  },
  "timers": {
   "crowd": 1792148915.260965,
-  "headlines": 1792149996.3122919,
-  "scan": 1792150240.5243154,
-  "follow": 1792150179.1378248
+  "headlines": 1792150596.8803642,
+  "scan": 1792151067.803886,
+  "follow": 1792150811.3256955
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792147403.033427,
+  "d82f6843": 1792150819.4411469,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -2736,9 +2735,9 @@
   "ee746719": 1792114352.6155581,
   "1746c034": 1792144884.5077846,
   "638d199c": 1792144884.85828,
-  "14748b24": 1792150179.4291968,
+  "14748b24": 1792150819.8901756,
   "c7053a23": 1792135673.2610664,
-  "a2dcdee8": 1792150179.4304876,
-  "39db18ba": 1792150179.7024763
+  "a2dcdee8": 1792150819.891336,
+  "39db18ba": 1792150820.3362052
  }
 }
