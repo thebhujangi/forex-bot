@@ -2428,13 +2428,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-16T09:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/euro-trims-losses-amid-a-softer-usd-with-upside-attempts-likely-to-remain-shallow-202610130819": "2026-10-13T09:21:32.681948+00:00",
-  "https://www.fxstreet.com/news/feds-waller-trump-is-a-threat-to-fed-independence-202610130828": "2026-10-13T09:21:32.681973+00:00",
-  "https://www.fxstreet.com/news/british-pound-cable-confined-to-broad-trading-band-uob-202610130832": "2026-10-13T09:21:32.681977+00:00",
-  "https://www.fxstreet.com/news/british-pound-gains-as-boes-greene-favors-proactive-approach-on-hot-uk-inflation-202610130843": "2026-10-13T09:21:32.681980+00:00",
-  "https://www.fxstreet.com/news/australian-dollar-high-rates-support-aussie-against-us-dollar-mufg-202610130859": "2026-10-13T09:21:32.681983+00:00",
-  "https://www.fxstreet.com/news/nzd-usd-price-forecast-recovery-from-ytd-low-seems-capped-05580-holds-the-key-202610130901": "2026-10-13T09:21:32.681986+00:00",
-  "https://www.fxstreet.com/news/euro-strengthens-against-canadian-dollar-as-german-hicp-inflation-accelerates-oil-eases-202610130902": "2026-10-13T09:21:32.681989+00:00",
   "https://www.coindesk.com/policy/2026/10/13/u-k-court-ruling-boosts-government-s-chances-of-keeping-gbp3-8-billion-seized-bitcoin": "2026-10-13T09:31:54.668214+00:00",
   "https://cointelegraph.com/markets/bitcoin-hits-84k-resistance-as-korea-tech-sell-off-sends-kospi-down-74?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T09:52:27.526104+00:00",
   "https://www.fxstreet.com/news/gold-price-forecast-xau-usd-retraces-losses-as-us-yields-and-oil-prices-ease-202610130928": "2026-10-13T10:23:39.253225+00:00",
@@ -2609,9 +2602,9 @@
  },
  "timers": {
   "crowd": 1792141664.2025242,
-  "headlines": 1792141911.919847,
-  "scan": 1792142197.7850542,
-  "follow": 1792142065.416364
+  "headlines": 1792142532.9539468,
+  "scan": 1792142990.4234998,
+  "follow": 1792142990.4258049
  },
  "pushed_times": [],
  "last_checked": {
@@ -2664,9 +2657,9 @@
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
   "ee746719": 1792114352.6155581,
-  "1746c034": 1792142065.8274071,
-  "638d199c": 1792142066.1837664,
-  "14748b24": 1792142066.5478737,
+  "1746c034": 1792142990.7539954,
+  "638d199c": 1792142991.0115252,
+  "14748b24": 1792142991.2825308,
   "c7053a23": 1792135673.2610664
  }
 }
