@@ -2419,13 +2419,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T10:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T10:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T10:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T10:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T10:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T10:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T10:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T10:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T10:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T10:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T10:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T10:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T10:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T10:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/gold-price-forecast-xau-usd-retraces-losses-as-us-yields-and-oil-prices-ease-202610130928": "2026-10-13T10:23:39.253225+00:00",
@@ -2602,9 +2602,9 @@
  },
  "timers": {
   "crowd": 1792145285.1747794,
-  "headlines": 1792145008.035755,
-  "scan": 1792145377.8586857,
-  "follow": 1792145192.7241306
+  "headlines": 1792145633.955371,
+  "scan": 1792146184.386708,
+  "follow": 1792146122.727867
  },
  "pushed_times": [],
  "last_checked": {
@@ -2659,7 +2659,7 @@
   "ee746719": 1792114352.6155581,
   "1746c034": 1792144884.5077846,
   "638d199c": 1792144884.85828,
-  "14748b24": 1792145193.1752055,
+  "14748b24": 1792146123.0756087,
   "c7053a23": 1792135673.2610664
  }
 }
