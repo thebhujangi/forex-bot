@@ -2463,18 +2463,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T10:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T10:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T10:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T10:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T10:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T10:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T10:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T11:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T11:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T11:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T11:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T11:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T11:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T11:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-forecast-btc-rebounds-despite-cautious-sentiment-202610130958": "2026-10-13T10:54:31.526963+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/crypto-today-bitcoin-ethereum-xrp-edge-higher-despite-capital-outflows-via-etfs-202610131037": "2026-10-13T10:54:31.526982+00:00",
-  "https://www.coindesk.com/markets/2026/10/13/live-updates-bitcoin-whipsaws-between-usd81-000-and-usd84-000-as-altcoins-slide": "2026-10-13T10:54:31.526990+00:00",
   "https://www.coindesk.com/markets/2026/10/13/bitcoin-ether-slip-and-rebound-as-south-korean-stocks-slide-on-ai-related-concerns": "2026-10-13T11:15:04.931555+00:00",
   "https://www.fxstreet.com/news/swiss-franc-range-consolidation-persists-against-us-dollar-uob-202610131036": "2026-10-13T11:25:31.991732+00:00",
   "https://www.fxstreet.com/news/gold-struggles-below-4-200-despite-retreat-in-us-dollar-treasury-yields-202610131056": "2026-10-13T11:25:31.991753+00:00",
@@ -2639,13 +2636,14 @@
   "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T09:42:50.243517+00:00",
   "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue": "2026-10-16T09:53:09.713356+00:00",
   "https://www.coindesk.com/business/2026/10/16/scammer-gets-scammed-in-ledger-spy-chip-exploit-loses-almost-usd5-million-in-bitcoin": "2026-10-16T10:24:47.532200+00:00",
-  "https://www.coindesk.com/markets/2026/10/16/altcoins-outpace-bitcoin-as-celestia-jumps-16-warsh-silent-on-interest-rate-plans": "2026-10-16T10:44:55.345311+00:00"
+  "https://www.coindesk.com/markets/2026/10/16/altcoins-outpace-bitcoin-as-celestia-jumps-16-warsh-silent-on-interest-rate-plans": "2026-10-16T10:44:55.345311+00:00",
+  "https://www.coindesk.com/tech/2026/10/16/experts-agree-quantum-computers-could-put-satoshi-s-bitcoin-at-risk-but-not-on-what-s-next": "2026-10-16T10:55:08.401289+00:00"
  },
  "timers": {
   "crowd": 1792145285.1747794,
-  "headlines": 1792147494.7573948,
-  "scan": 1792147796.0836627,
-  "follow": 1792147704.314695
+  "headlines": 1792148107.684011,
+  "scan": 1792148591.8812745,
+  "follow": 1792148622.4022827
  },
  "pushed_times": [],
  "last_checked": {
@@ -2700,8 +2698,8 @@
   "ee746719": 1792114352.6155581,
   "1746c034": 1792144884.5077846,
   "638d199c": 1792144884.85828,
-  "14748b24": 1792147704.6573145,
+  "14748b24": 1792148622.7372787,
   "c7053a23": 1792135673.2610664,
-  "a2dcdee8": 1792147704.6575582
+  "a2dcdee8": 1792148622.7378504
  }
 }
