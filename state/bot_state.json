@@ -2238,17 +2238,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T01:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T01:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T01:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T01:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T01:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T01:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T01:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T01:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T01:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T01:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T01:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T01:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T01:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T01:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/rba-minutes-case-for-rates-to-act-promptly-to-keep-inflation-expectations-anchored-202610130033": "2026-10-13T01:17:12.956283+00:00",
-  "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67298-vs-67313-previous-202610130115": "2026-10-13T01:17:12.956304+00:00",
   "https://www.fxstreet.com/news/canadian-dollar-edges-higher-but-remains-close-to-april-2025-lows-vs-bullish-usd-202610130121": "2026-10-13T02:18:34.333633+00:00",
   "https://www.fxstreet.com/news/british-pound-gains-on-brc-like-for-like-retail-sales-data-despite-geopolitical-tensions-202610130124": "2026-10-13T02:18:34.333656+00:00",
   "https://www.fxstreet.com/news/euro-gathers-strength-above-11150-despite-frances-fiscal-concerns-202610130154": "2026-10-13T02:18:34.333662+00:00",
@@ -2462,9 +2460,9 @@
  },
  "timers": {
   "crowd": 1792112745.7266653,
-  "headlines": 1792112837.3731444,
-  "scan": 1792113080.7810647,
-  "follow": 1792113111.249404
+  "headlines": 1792113455.3466926,
+  "scan": 1792113882.8067486,
+  "follow": 1792113730.1121535
  },
  "pushed_times": [],
  "last_checked": {
@@ -2516,6 +2514,6 @@
   "b9cfc473": 1792073075.6395066,
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
-  "ee746719": 1792113111.5499463
+  "ee746719": 1792113730.4498522
  }
 }
