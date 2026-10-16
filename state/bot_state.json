@@ -2787,13 +2787,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T15:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T15:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T15:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T15:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T15:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T15:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T15:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T15:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T15:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T15:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T15:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T15:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T15:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T15:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/markets/bitcoin-keeps-up-pressure-on-84k-as-us-stocks-sidestep-korea-tech-sell-off?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T15:43:19.595202+00:00",
@@ -2941,9 +2941,9 @@
  },
  "timers": {
   "crowd": 1792163389.5294535,
-  "headlines": 1792164754.4968,
-  "scan": 1792164854.396265,
-  "follow": 1792164785.333269
+  "headlines": 1792165380.8696396,
+  "scan": 1792165647.010977,
+  "follow": 1792165412.4035084
  },
  "pushed_times": [
   1792162913.6976442
@@ -3004,7 +3004,7 @@
   "c7053a23": 1792135673.2610664,
   "a2dcdee8": 1792154912.4588556,
   "39db18ba": 1792157723.1511035,
-  "85d0efa0": 1792164793.5005882,
+  "85d0efa0": 1792165412.5518036,
   "8929e2a7": 1792159001.7026784,
   "cba2ae64": 1792163165.9463806,
   "4395ff29": 1792159621.99487,
