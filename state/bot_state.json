@@ -2419,18 +2419,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T08:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T08:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T08:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T08:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T08:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T08:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T08:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T08:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T08:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T08:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T08:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T08:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T08:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T08:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/euro-remains-depressed-against-british-pound-as-france-and-oil-weighs-202610130718": "2026-10-13T08:19:37.510957+00:00",
-  "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-remains-capped-below-6100-as-bulls-seem-hesitant-202610130720": "2026-10-13T08:19:37.511001+00:00",
-  "https://www.fxstreet.com/news/usd-cad-price-forecast-falls-to-near-14250-near-nine-day-ema-support-202610130802": "2026-10-13T08:19:37.511010+00:00",
   "https://cointelegraph.com/news/uk-court-chinese-law-61k-bitcoin-fraud-victims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T09:11:20.381528+00:00",
   "https://www.fxstreet.com/news/euro-trims-losses-amid-a-softer-usd-with-upside-attempts-likely-to-remain-shallow-202610130819": "2026-10-13T09:21:32.681948+00:00",
   "https://www.fxstreet.com/news/feds-waller-trump-is-a-threat-to-fed-independence-202610130828": "2026-10-13T09:21:32.681973+00:00",
@@ -2608,13 +2605,14 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-16T03:22:17.249814+00:00",
   "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound": "2026-10-16T04:24:04.392430+00:00",
   "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own": "2026-10-16T04:34:14.378649+00:00",
-  "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why": "2026-10-16T05:56:00.350273+00:00"
+  "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why": "2026-10-16T05:56:00.350273+00:00",
+  "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T08:10:22.459771+00:00"
  },
  "timers": {
   "crowd": 1792138048.510494,
-  "headlines": 1792137601.0423284,
-  "scan": 1792138109.50253,
-  "follow": 1792137895.5290527
+  "headlines": 1792138834.211902,
+  "scan": 1792138927.926244,
+  "follow": 1792138865.4654028
  },
  "pushed_times": [],
  "last_checked": {
@@ -2667,9 +2665,9 @@
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
   "ee746719": 1792114352.6155581,
-  "1746c034": 1792137895.8132024,
-  "638d199c": 1792137896.17143,
-  "14748b24": 1792137896.4430456,
+  "1746c034": 1792138865.8686512,
+  "638d199c": 1792138866.345328,
+  "14748b24": 1792138866.7725804,
   "c7053a23": 1792135673.2610664
  }
 }
