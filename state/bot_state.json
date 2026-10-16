@@ -92,7 +92,10 @@
   "filled:21ca5415": "2026-10-16T13:40:37.498366+00:00",
   "oco:c362b8d4": "2026-10-16T13:40:38.052821+00:00",
   "filled:85d0efa0": "2026-10-16T13:56:34.633290+00:00",
-  "oco:8929e2a7": "2026-10-16T13:56:35.428810+00:00"
+  "oco:8929e2a7": "2026-10-16T13:56:35.428810+00:00",
+  "exit:21ca5415:tp1": "2026-10-16T14:02:10.086410+00:00",
+  "filled:cba2ae64": "2026-10-16T14:06:54.890393+00:00",
+  "oco:4395ff29": "2026-10-16T14:06:55.692581+00:00"
  },
  "offset": 508857101,
  "initial_sl": {},
@@ -2636,7 +2639,7 @@
     "reason": "Asian range 1.12397-1.12583 (0.27x daily ATR 0.00687). Break above the high at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   },
@@ -2652,13 +2655,13 @@
    "trail_distance": null,
    "tp1": 1.12263,
    "created": "2026-10-16T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.12376,
    "notified_sl": 1.1249,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-16T14:06:45.885438+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -2681,7 +2684,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -2723,7 +2726,7 @@
     "trail_distance": null,
     "reason": "Asian range 1.33283-1.33434 (0.21x daily ATR 0.00708). Break above the high at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null,
    "flags": []
@@ -2780,13 +2783,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T13:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T13:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T13:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T13:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T13:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T13:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T13:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T14:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T14:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T14:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T14:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T14:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T14:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T14:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/indian-rupee-rbi-defense-limits-losses-against-us-dollar-societe-generale-202610131331": "2026-10-13T14:20:52.416912+00:00",
@@ -2939,10 +2942,10 @@
   "https://www.coindesk.com/daybook-us/2026/10/16/traders-will-soon-be-able-to-bet-on-whether-coinbase-robinhood-and-marathon-will-hit-their-targets": "2026-10-16T11:16:12.613982+00:00"
  },
  "timers": {
-  "crowd": 1792156163.802706,
-  "headlines": 1792158639.9106386,
-  "scan": 1792159178.9754903,
-  "follow": 1792158993.5920827
+  "crowd": 1792159783.2164204,
+  "headlines": 1792159875.5678115,
+  "scan": 1792160014.5968208,
+  "follow": 1792159906.5270567
  },
  "pushed_times": [],
  "last_checked": {
@@ -3001,11 +3004,11 @@
   "c7053a23": 1792135673.2610664,
   "a2dcdee8": 1792154912.4588556,
   "39db18ba": 1792157723.1511035,
-  "85d0efa0": 1792158993.7374063,
+  "85d0efa0": 1792159906.6427772,
   "8929e2a7": 1792159001.7026784,
-  "cba2ae64": 1792159009.6907725,
-  "4395ff29": 1792159017.7054348,
-  "21ca5415": 1792159025.702394,
+  "cba2ae64": 1792159914.6282701,
+  "4395ff29": 1792159621.99487,
+  "21ca5415": 1792159922.6467512,
   "c362b8d4": 1792158038.0540218
  }
 }
