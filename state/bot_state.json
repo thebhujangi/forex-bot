@@ -2880,13 +2880,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T18:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T18:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T18:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T18:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T18:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T18:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T18:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T18:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T18:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T18:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T18:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T18:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T18:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T18:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/eur-usd-price-forecast-rsi-signals-stretched-selling-pressure-202610131812": "2026-10-13T18:47:29.361720+00:00",
@@ -3024,9 +3024,9 @@
  },
  "timers": {
   "crowd": 1792174221.946726,
-  "headlines": 1792175255.75352,
-  "scan": 1792175378.331704,
-  "follow": 1792175094.3963223
+  "headlines": 1792175861.3967202,
+  "scan": 1792176135.8136983,
+  "follow": 1792176074.3801537
  },
  "pushed_times": [],
  "last_checked": {
@@ -3091,7 +3091,7 @@
   "4395ff29": 1792159621.99487,
   "21ca5415": 1792160898.7752278,
   "c362b8d4": 1792158038.0540218,
-  "ef1785bc": 1792175102.885866,
-  "0f9491f8": 1792175103.2687244
+  "ef1785bc": 1792176074.676398,
+  "0f9491f8": 1792176075.0421884
  }
 }
