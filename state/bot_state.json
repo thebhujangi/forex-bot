@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T21:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T21:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T21:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T21:45:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-16T22:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T22:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T22:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T22:00:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/business/2026/10/13/bny-citadel-securities-test-tokenized-u-s-treasuries-to-speed-up-wall-street-financing": "2026-10-13T21:54:33.164171+00:00",
   "https://www.fxstreet.com/news/pound-gains-and-stays-inside-its-range-for-a-third-week-202610132134": "2026-10-13T22:25:31.265158+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-eth-holds-2-500-as-open-interest-drops-to-lowest-level-since-february-202610132216": "2026-10-13T22:25:31.265179+00:00",
   "https://www.fxstreet.com/news/mexican-peso-buckles-as-fed-inflation-fears-overshadow-dovish-williams-202610132217": "2026-10-13T22:25:31.265187+00:00",
@@ -3016,9 +3015,9 @@
  },
  "timers": {
   "crowd": 1792185136.2232394,
-  "headlines": 1792187032.284082,
-  "scan": 1792187466.2015977,
-  "follow": 1792187374.9813473
+  "headlines": 1792188278.6498318,
+  "scan": 1792188309.7918818,
+  "follow": 1792188309.7936172
  },
  "pushed_times": [],
  "last_checked": {
