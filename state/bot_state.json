@@ -2509,16 +2509,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T12:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T12:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T12:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T12:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T12:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T12:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T12:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T13:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T13:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T13:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T13:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T13:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T13:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T13:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/cryptocurrencies/news/ripple-price-forecast-xrp-rebounds-but-muted-etf-demand-low-on-chain-activity-cap-upside-202610131215": "2026-10-13T12:58:23.206417+00:00",
   "https://www.fxstreet.com/news/japanese-yen-weakness-may-deepen-toward-15905-against-us-dollar-uob-202610131241": "2026-10-13T13:19:11.708815+00:00",
   "https://www.fxstreet.com/news/australian-dollar-rba-inflation-focus-shapes-outlook-commerzbank-202610131251": "2026-10-13T13:19:11.708835+00:00",
   "https://www.fxstreet.com/news/euro-lower-year-end-target-at-113-against-us-dollar-ing-202610131304": "2026-10-13T13:19:11.708843+00:00",
@@ -2675,9 +2674,9 @@
  },
  "timers": {
   "crowd": 1792152535.2937424,
-  "headlines": 1792154880.7775626,
-  "scan": 1792155066.6299465,
-  "follow": 1792154911.9855013
+  "headlines": 1792155503.5951095,
+  "scan": 1792155865.352667,
+  "follow": 1792155834.6921196
  },
  "pushed_times": [],
  "last_checked": {
@@ -2735,6 +2734,6 @@
   "14748b24": 1792153357.993116,
   "c7053a23": 1792135673.2610664,
   "a2dcdee8": 1792154912.4588556,
-  "39db18ba": 1792154913.5829363
+  "39db18ba": 1792155834.9624202
  }
 }
