@@ -2419,16 +2419,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T09:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T09:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T09:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T09:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T09:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T09:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T09:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T09:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T09:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T09:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T09:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T09:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T09:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T09:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/policy/2026/10/13/u-k-court-ruling-boosts-government-s-chances-of-keeping-gbp3-8-billion-seized-bitcoin": "2026-10-13T09:31:54.668214+00:00",
   "https://cointelegraph.com/markets/bitcoin-hits-84k-resistance-as-korea-tech-sell-off-sends-kospi-down-74?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T09:52:27.526104+00:00",
   "https://www.fxstreet.com/news/gold-price-forecast-xau-usd-retraces-losses-as-us-yields-and-oil-prices-ease-202610130928": "2026-10-13T10:23:39.253225+00:00",
   "https://www.fxstreet.com/news/euro-declines-as-boj-tightening-bets-eurozone-stagflation-risks-bolster-japanese-yen-202610130932": "2026-10-13T10:23:39.253244+00:00",
@@ -2598,13 +2597,14 @@
   "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound": "2026-10-16T04:24:04.392430+00:00",
   "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own": "2026-10-16T04:34:14.378649+00:00",
   "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why": "2026-10-16T05:56:00.350273+00:00",
-  "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T08:10:22.459771+00:00"
+  "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T08:10:22.459771+00:00",
+  "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T09:42:50.243517+00:00"
  },
  "timers": {
   "crowd": 1792141664.2025242,
-  "headlines": 1792142532.9539468,
-  "scan": 1792142990.4234998,
-  "follow": 1792142990.4258049
+  "headlines": 1792143769.5684102,
+  "scan": 1792143770.2435923,
+  "follow": 1792143615.3781555
  },
  "pushed_times": [],
  "last_checked": {
@@ -2657,9 +2657,9 @@
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
   "ee746719": 1792114352.6155581,
-  "1746c034": 1792142990.7539954,
-  "638d199c": 1792142991.0115252,
-  "14748b24": 1792142991.2825308,
+  "1746c034": 1792143615.8504345,
+  "638d199c": 1792143616.2841167,
+  "14748b24": 1792143616.6902213,
   "c7053a23": 1792135673.2610664
  }
 }
