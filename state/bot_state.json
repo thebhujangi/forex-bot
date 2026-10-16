@@ -2781,6 +2781,50 @@
    "fill_notified": false,
    "outcome": "oco",
    "flags": []
+  },
+  {
+   "id": "ef1785bc",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "sell",
+   "entry": 81666.65,
+   "sl": 82193.69,
+   "cur_sl": 82193.69,
+   "trail_distance": null,
+   "tp1": 81139.62,
+   "created": "2026-10-16T17:15:00+00:00",
+   "status": "new",
+   "best": 81666.65,
+   "notified_sl": 82193.69,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-16T17:15:00+00:00",
+    "entry": 81666.65,
+    "sl": 82193.69,
+    "tp1": 81139.62,
+    "tp2": 80349.07,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-16T19:15:00+00:00",
+    "close_by": "2026-10-17T01:15:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.8x ATR from EMA20; sell the pullback at 81666.65."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -2790,16 +2834,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T17:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T17:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T17:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T17:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T17:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T17:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T17:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T17:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T17:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T17:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T17:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T17:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T17:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T17:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/canadian-dollar-recovers-as-softer-us-dollar-offers-relief-ahead-of-us-cpi-202610131708": "2026-10-13T17:15:04.465417+00:00",
   "https://www.fxstreet.com/news/new-zealand-dollar-recovers-on-weaker-us-dollar-softer-oil-ahead-key-us-cpi-202610131712": "2026-10-13T17:25:27.286230+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-13T18:06:29.498079+00:00",
   "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-struggles-near-two-month-lows-ahead-of-us-cpi-202610131737": "2026-10-13T18:16:55.495981+00:00",
@@ -2938,10 +2981,10 @@
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T15:53:24.653332+00:00"
  },
  "timers": {
-  "crowd": 1792166997.5756133,
-  "headlines": 1792170287.6185977,
-  "scan": 1792170505.4121325,
-  "follow": 1792170440.9158816
+  "crowd": 1792170597.7127573,
+  "headlines": 1792170903.694904,
+  "scan": 1792171292.63232,
+  "follow": 1792171078.439993
  },
  "pushed_times": [],
  "last_checked": {
@@ -3005,6 +3048,7 @@
   "cba2ae64": 1792163165.9463806,
   "4395ff29": 1792159621.99487,
   "21ca5415": 1792160898.7752278,
-  "c362b8d4": 1792158038.0540218
+  "c362b8d4": 1792158038.0540218,
+  "ef1785bc": 1792171078.7730954
  }
 }
