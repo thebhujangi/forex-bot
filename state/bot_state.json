@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T23:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T23:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T23:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T23:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-16T23:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T23:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T23:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T23:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/gold-declines-to-near-4-150-ahead-of-us-cpi-inflation-data-202610132321": "2026-10-13T23:38:04.921474+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-pressured-by-rising-yields-as-equities-draw-strength-from-earnings-expectations-202610132337": "2026-10-14T00:29:42.598016+00:00",
   "https://www.fxstreet.com/news/australian-dollar-climbs-as-feds-williams-push-the-brakes-on-rates-202610132334": "2026-10-14T00:40:12.685809+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/strategy-mstr-bitcoin-buying-model-faces-scrutiny-as-strc-costs-climb-202610140030": "2026-10-14T00:50:18.718406+00:00",
@@ -3011,9 +3010,9 @@
  },
  "timers": {
   "crowd": 1792192338.2314672,
-  "headlines": 1792193847.6720428,
-  "scan": 1792193940.404988,
-  "follow": 1792193664.851063
+  "headlines": 1792194472.73356,
+  "scan": 1792194748.9155343,
+  "follow": 1792194626.2687712
  },
  "pushed_times": [],
  "last_checked": {
