@@ -2883,13 +2883,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T20:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T20:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T20:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T20:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T20:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T20:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T20:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T20:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T20:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T20:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T20:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/chinese-yuan-outlook-stays-mildly-positive-against-us-dollar-uob-202610132033": "2026-10-13T21:23:29.356126+00:00",
@@ -3018,9 +3018,9 @@
  },
  "timers": {
   "crowd": 1792181496.2900395,
-  "headlines": 1792183330.512858,
-  "scan": 1792183452.4588068,
-  "follow": 1792183330.860565
+  "headlines": 1792183948.3818011,
+  "scan": 1792184223.6467125,
+  "follow": 1792184254.1190941
  },
  "pushed_times": [],
  "last_checked": {
