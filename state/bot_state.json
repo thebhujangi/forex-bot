@@ -2240,13 +2240,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T04:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T04:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T04:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T04:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T04:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T04:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T04:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T04:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T04:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T04:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T04:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T04:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T04:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T04:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/13/bitcoin-rebounds-above-usd83-000-as-it-decouples-from-tumbling-korean-stocks-and-nasdaq-futures": "2026-10-13T04:22:33.898410+00:00",
@@ -2450,9 +2450,9 @@
  },
  "timers": {
   "crowd": 1792123576.624505,
-  "headlines": 1792123424.1053731,
-  "scan": 1792123576.827662,
-  "follow": 1792123424.572124
+  "headlines": 1792124025.36079,
+  "scan": 1792124390.317732,
+  "follow": 1792124359.764712
  },
  "pushed_times": [],
  "last_checked": {
