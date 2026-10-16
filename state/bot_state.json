@@ -2240,13 +2240,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T01:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T01:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T01:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T01:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T01:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T01:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T01:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T01:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T01:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T01:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T01:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T01:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T01:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T01:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/canadian-dollar-edges-higher-but-remains-close-to-april-2025-lows-vs-bullish-usd-202610130121": "2026-10-13T02:18:34.333633+00:00",
@@ -2462,9 +2462,9 @@
  },
  "timers": {
   "crowd": 1792112745.7266653,
-  "headlines": 1792114689.338429,
-  "scan": 1792114690.0894892,
-  "follow": 1792114658.8282049
+  "headlines": 1792115308.8269074,
+  "scan": 1792115493.3957217,
+  "follow": 1792115309.3928297
  },
  "pushed_times": [],
  "last_checked": {
