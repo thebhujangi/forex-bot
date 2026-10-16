@@ -2238,17 +2238,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T00:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T00:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T00:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T00:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T00:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T00:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T00:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T00:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T00:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T00:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T00:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T00:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T00:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T00:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/gold-tumbles-below-4-200-on-higher-oil-prices-firmer-us-dollar-202610122318": "2026-10-13T00:15:22.187503+00:00",
-  "https://www.fxstreet.com/news/aussie-dollar-struggles-at-070-retreats-as-oil-shock-boosts-the-usd-202610122347": "2026-10-13T00:15:22.187524+00:00",
   "https://www.fxstreet.com/news/rba-minutes-case-for-rates-to-act-promptly-to-keep-inflation-expectations-anchored-202610130033": "2026-10-13T01:17:12.956283+00:00",
   "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67298-vs-67313-previous-202610130115": "2026-10-13T01:17:12.956304+00:00",
   "https://www.fxstreet.com/news/canadian-dollar-edges-higher-but-remains-close-to-april-2025-lows-vs-bullish-usd-202610130121": "2026-10-13T02:18:34.333633+00:00",
@@ -2463,17 +2461,17 @@
   "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T17:03:01.173042+00:00"
  },
  "timers": {
-  "crowd": 1792105487.2823048,
-  "headlines": 1792108520.871003,
-  "scan": 1792109067.4480026,
-  "follow": 1792109036.5661051
+  "crowd": 1792109143.6279051,
+  "headlines": 1792109757.7044923,
+  "scan": 1792109850.1205137,
+  "follow": 1792109673.9483457
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792105938.294392,
+  "d82f6843": 1792109366.7601252,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -2518,6 +2516,6 @@
   "b9cfc473": 1792073075.6395066,
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
-  "ee746719": 1792109036.9735096
+  "ee746719": 1792109674.3106804
  }
 }
