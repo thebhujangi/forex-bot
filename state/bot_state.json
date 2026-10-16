@@ -2419,13 +2419,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T07:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T07:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T07:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T07:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T07:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T07:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T07:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T07:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T07:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T07:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T07:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T07:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T07:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T07:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/euro-remains-depressed-against-british-pound-as-france-and-oil-weighs-202610130718": "2026-10-13T08:19:37.510957+00:00",
@@ -2612,9 +2612,9 @@
  },
  "timers": {
   "crowd": 1792134433.719486,
-  "headlines": 1792135734.2630413,
-  "scan": 1792135734.9048831,
-  "follow": 1792135671.8810806
+  "headlines": 1792136347.5097702,
+  "scan": 1792136500.4059863,
+  "follow": 1792136285.4821775
  },
  "pushed_times": [],
  "last_checked": {
@@ -2667,9 +2667,9 @@
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
   "ee746719": 1792114352.6155581,
-  "1746c034": 1792135672.2667248,
-  "638d199c": 1792135672.598036,
-  "14748b24": 1792135672.8982856,
+  "1746c034": 1792136285.811573,
+  "638d199c": 1792136286.1465862,
+  "14748b24": 1792136286.5081694,
   "c7053a23": 1792135673.2610664
  }
 }
