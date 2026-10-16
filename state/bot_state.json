@@ -2834,16 +2834,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T17:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T17:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T17:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T17:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T17:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T17:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T17:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T17:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T17:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T17:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T17:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T17:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T17:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T17:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/new-zealand-dollar-recovers-on-weaker-us-dollar-softer-oil-ahead-key-us-cpi-202610131712": "2026-10-13T17:25:27.286230+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-13T18:06:29.498079+00:00",
   "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-struggles-near-two-month-lows-ahead-of-us-cpi-202610131737": "2026-10-13T18:16:55.495981+00:00",
   "https://www.fxstreet.com/news/gold-slides-on-us-yields-surge-ahead-of-cpi-202610131742": "2026-10-13T18:16:55.496008+00:00",
@@ -2982,16 +2981,16 @@
  },
  "timers": {
   "crowd": 1792170597.7127573,
-  "headlines": 1792170903.694904,
-  "scan": 1792171292.63232,
-  "follow": 1792171078.439993
+  "headlines": 1792172139.0271027,
+  "scan": 1792172108.6138825,
+  "follow": 1792172017.007351
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792168283.0521824,
+  "d82f6843": 1792171716.970501,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -3049,6 +3048,6 @@
   "4395ff29": 1792159621.99487,
   "21ca5415": 1792160898.7752278,
   "c362b8d4": 1792158038.0540218,
-  "ef1785bc": 1792171078.7730954
+  "ef1785bc": 1792172017.3156226
  }
 }
