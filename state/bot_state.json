@@ -2416,17 +2416,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T06:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T06:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T06:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T06:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T06:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T06:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T06:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T06:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T06:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T06:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T06:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T06:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T06:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T06:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/eur-usd-price-forecast-holds-gains-above-11150-but-remains-technically-bearish-under-100-day-sma-202610130600": "2026-10-13T06:15:40.175061+00:00",
-  "https://www.fxstreet.com/news/us-dollar-index-price-forecast-likely-extend-advance-to-near-10300-202610130608": "2026-10-13T06:15:40.175086+00:00",
   "https://www.fxstreet.com/news/usd-jpy-price-forecast-bulls-fail-to-break-the-200-day-sma-around-15850-202610130629": "2026-10-13T06:57:07.193167+00:00",
   "https://www.fxstreet.com/news/euro-gradual-downside-toward-key-support-against-us-dollar-uob-202610130636": "2026-10-13T07:17:40.846379+00:00",
   "https://www.fxstreet.com/news/aud-usd-price-forecast-declining-20-day-ema-builds-case-for-more-downside-202610130652": "2026-10-13T07:17:40.846401+00:00",
@@ -2615,9 +2613,9 @@
  },
  "timers": {
   "crowd": 1792130822.0023124,
-  "headlines": 1792130760.8649166,
-  "scan": 1792130852.5761902,
-  "follow": 1792130668.5687351
+  "headlines": 1792131389.905832,
+  "scan": 1792131665.4569833,
+  "follow": 1792131633.7928307
  },
  "pushed_times": [],
  "last_checked": {
@@ -2670,9 +2668,9 @@
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
   "ee746719": 1792114352.6155581,
-  "1746c034": 1792130668.8463724,
-  "638d199c": 1792130669.124789,
-  "14748b24": 1792130669.3872063,
-  "c7053a23": 1792130669.6508403
+  "1746c034": 1792131634.0915399,
+  "638d199c": 1792131634.3787928,
+  "14748b24": 1792131634.6684093,
+  "c7053a23": 1792131634.9598255
  }
 }
