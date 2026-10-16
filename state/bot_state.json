@@ -102,7 +102,8 @@
   "done:cba2ae64": "2026-10-16T15:06:07.430318+00:00",
   "loss:85d0efa0": "2026-10-16T15:59:30.263023+00:00",
   "exit:85d0efa0:sl": "2026-10-16T16:04:52.188625+00:00",
-  "done:85d0efa0": "2026-10-16T16:04:52.838986+00:00"
+  "done:85d0efa0": "2026-10-16T16:04:52.838986+00:00",
+  "filled:ef1785bc": "2026-10-16T17:48:54.698522+00:00"
  },
  "offset": 508857101,
  "initial_sl": {},
@@ -2822,7 +2823,7 @@
     "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.8x ATR from EMA20; sell the pullback at 81666.65."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   }
@@ -2834,13 +2835,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T17:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T17:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T17:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T17:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T17:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T17:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T17:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T17:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T17:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T17:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T17:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T17:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T17:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T17:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-13T18:06:29.498079+00:00",
@@ -2981,9 +2982,9 @@
  },
  "timers": {
   "crowd": 1792170597.7127573,
-  "headlines": 1792172139.0271027,
-  "scan": 1792172108.6138825,
-  "follow": 1792172017.007351
+  "headlines": 1792172755.0500352,
+  "scan": 1792172903.1927872,
+  "follow": 1792172933.6958716
  },
  "pushed_times": [],
  "last_checked": {
@@ -3048,6 +3049,6 @@
   "4395ff29": 1792159621.99487,
   "21ca5415": 1792160898.7752278,
   "c362b8d4": 1792158038.0540218,
-  "ef1785bc": 1792172017.3156226
+  "ef1785bc": 1792172934.0422943
  }
 }
