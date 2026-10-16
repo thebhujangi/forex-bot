@@ -2240,16 +2240,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T03:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T03:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T03:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T03:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T03:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T03:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T03:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T04:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T04:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T04:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T04:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T04:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T04:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T04:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/cryptocurrencies/news/ripple-backed-evernorth-goes-live-on-nasdaq-with-473-million-xrp-treasury-202610130346": "2026-10-13T04:02:03.292479+00:00",
   "https://www.coindesk.com/markets/2026/10/13/bitcoin-rebounds-above-usd83-000-as-it-decouples-from-tumbling-korean-stocks-and-nasdaq-futures": "2026-10-13T04:22:33.898410+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ripple-and-stellar-outlook-rebound-from-key-technical-supports-as-derivatives-turn-mildly-bullish-202610130421": "2026-10-13T04:32:43.335064+00:00",
   "https://www.coindesk.com/tech/2026/10/10/xrp-ledger-patched-decade-old-bug-that-could-create-billions-of-dollars-in-xrp-from-nothing": "2026-10-13T04:43:07.578762+00:00",
@@ -2450,17 +2449,17 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-16T03:22:17.249814+00:00"
  },
  "timers": {
-  "crowd": 1792119955.7639434,
-  "headlines": 1792122800.1922128,
-  "scan": 1792122769.6231368,
-  "follow": 1792122800.8240755
+  "crowd": 1792123576.624505,
+  "headlines": 1792123424.1053731,
+  "scan": 1792123576.827662,
+  "follow": 1792123424.572124
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792119711.6020193,
+  "d82f6843": 1792123125.96051,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
