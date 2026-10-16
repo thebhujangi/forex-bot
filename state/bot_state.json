@@ -84,7 +84,8 @@
   "exit:ee746719:sl": "2026-10-16T01:32:33.259902+00:00",
   "done:ee746719": "2026-10-16T01:32:33.902407+00:00",
   "maybe:14748b24": "2026-10-16T07:22:48.364419+00:00",
-  "filled:39db18ba": "2026-10-16T12:22:39.166414+00:00"
+  "filled:39db18ba": "2026-10-16T12:22:39.166414+00:00",
+  "expired:a2dcdee8": "2026-10-16T12:48:33.204811+00:00"
  },
  "offset": 508857101,
  "initial_sl": {},
@@ -2424,13 +2425,13 @@
    "trail_distance": null,
    "tp1": 2458.96,
    "created": "2026-10-16T10:45:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2448.43,
    "notified_sl": 2437.89,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-16T12:48:31.985514+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -2453,7 +2454,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -2508,13 +2509,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T12:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T12:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T12:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T12:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T12:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T12:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T12:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T12:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T12:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T12:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T12:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T12:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T12:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T12:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/cryptocurrencies/news/ripple-price-forecast-xrp-rebounds-but-muted-etf-demand-low-on-chain-activity-cap-upside-202610131215": "2026-10-13T12:58:23.206417+00:00",
@@ -2674,9 +2675,9 @@
  },
  "timers": {
   "crowd": 1792152535.2937424,
-  "headlines": 1792154277.6966624,
-  "scan": 1792154247.2441263,
-  "follow": 1792154304.5455546
+  "headlines": 1792154880.7775626,
+  "scan": 1792155066.6299465,
+  "follow": 1792154911.9855013
  },
  "pushed_times": [],
  "last_checked": {
@@ -2733,7 +2734,7 @@
   "638d199c": 1792144884.85828,
   "14748b24": 1792153357.993116,
   "c7053a23": 1792135673.2610664,
-  "a2dcdee8": 1792154304.9348762,
-  "39db18ba": 1792154305.210596
+  "a2dcdee8": 1792154912.4588556,
+  "39db18ba": 1792154913.5829363
  }
 }
