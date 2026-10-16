@@ -2240,19 +2240,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T05:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T05:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T05:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T05:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T05:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T05:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T05:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T05:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T05:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T05:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T05:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T05:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T05:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T05:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/india-gold-price-today-gold-rises-according-to-fxstreet-data-202610130435": "2026-10-13T05:23:53.062438+00:00",
-  "https://www.fxstreet.com/news/new-zealand-dollar-rebounds-to-near-05600-amid-geopolitical-tensions-and-us-cpi-focus-202610130457": "2026-10-13T05:23:53.062459+00:00",
-  "https://www.fxstreet.com/news/swiss-franc-strengthens-as-us-dollar-index-pulls-back-from-18-month-highs-202610130500": "2026-10-13T05:23:53.062469+00:00",
-  "https://www.fxstreet.com/news/indian-rupee-gains-further-on-rbis-fresh-measures-to-lower-us-dollars-demand-202610130508": "2026-10-13T05:23:53.062476+00:00",
   "https://www.coindesk.com/markets/2026/10/13/tokenized-sandisk-bets-saw-more-liquidations-than-xrp-as-asia-s-chip-rout-wipes-out-usd800-million": "2026-10-13T05:34:09.564331+00:00",
   "https://www.fxstreet.com/news/british-pound-trades-subduedly-against-japanese-yen-boes-greene-supports-quick-rate-hikes-202610130529": "2026-10-13T05:55:01.994742+00:00",
   "https://www.coindesk.com/markets/2026/10/13/bitcoin-whale-that-sat-through-the-march-2020-crash-moves-usd378-million": "2026-10-13T05:55:01.994767+00:00",
@@ -2445,9 +2441,9 @@
  },
  "timers": {
   "crowd": 1792127205.8937385,
-  "headlines": 1792127113.7920125,
-  "scan": 1792127633.5343711,
-  "follow": 1792127542.0539176
+  "headlines": 1792128347.4720109,
+  "scan": 1792128439.8627896,
+  "follow": 1792128470.4096754
  },
  "pushed_times": [],
  "last_checked": {
