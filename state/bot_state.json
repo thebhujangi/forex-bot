@@ -2245,13 +2245,13 @@
    "trail_distance": null,
    "tp1": 83010.99,
    "created": "2026-10-16T06:00:00+00:00",
-   "status": "skipped",
+   "status": "closed",
    "best": 82499.32,
    "notified_sl": 81987.66,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-16T10:01:24.137259+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -2274,7 +2274,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -2289,13 +2289,13 @@
    "trail_distance": null,
    "tp1": 80964.32,
    "created": "2026-10-16T06:00:00+00:00",
-   "status": "skipped",
+   "status": "closed",
    "best": 81475.99,
    "notified_sl": 81987.66,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-16T10:01:24.137259+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -2318,7 +2318,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -2419,13 +2419,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T09:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T09:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T09:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T09:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T09:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T09:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T09:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T10:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T10:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T10:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T10:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T10:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T10:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T10:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/gold-price-forecast-xau-usd-retraces-losses-as-us-yields-and-oil-prices-ease-202610130928": "2026-10-13T10:23:39.253225+00:00",
@@ -2601,10 +2601,10 @@
   "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue": "2026-10-16T09:53:09.713356+00:00"
  },
  "timers": {
-  "crowd": 1792141664.2025242,
-  "headlines": 1792144389.2818005,
-  "scan": 1792144603.559289,
-  "follow": 1792144572.2330973
+  "crowd": 1792145285.1747794,
+  "headlines": 1792145008.035755,
+  "scan": 1792145377.8586857,
+  "follow": 1792145192.7241306
  },
  "pushed_times": [],
  "last_checked": {
@@ -2657,9 +2657,9 @@
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
   "ee746719": 1792114352.6155581,
-  "1746c034": 1792144572.5291545,
-  "638d199c": 1792144572.8218405,
-  "14748b24": 1792144573.107693,
+  "1746c034": 1792144884.5077846,
+  "638d199c": 1792144884.85828,
+  "14748b24": 1792145193.1752055,
   "c7053a23": 1792135673.2610664
  }
 }
