@@ -2454,6 +2454,50 @@
    "fill_notified": false,
    "outcome": null,
    "flags": []
+  },
+  {
+   "id": "39db18ba",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "buy",
+   "entry": 82091.69,
+   "sl": 81785.86,
+   "cur_sl": 81785.86,
+   "trail_distance": null,
+   "tp1": 82397.52,
+   "created": "2026-10-16T11:15:00+00:00",
+   "status": "new",
+   "best": 82091.69,
+   "notified_sl": 81785.86,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "buy",
+    "order_type": "limit",
+    "created": "2026-10-16T11:15:00+00:00",
+    "entry": 82091.69,
+    "sl": 81785.86,
+    "tp1": 82397.52,
+    "tp2": 82856.26,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-16T13:15:00+00:00",
+    "close_by": "2026-10-16T19:15:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 2.2x ATR from EMA20; buy the pullback at 82091.69."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -2463,16 +2507,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T11:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T11:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T11:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T11:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T11:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T11:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T11:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T11:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T11:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T11:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T11:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T11:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T11:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T11:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/13/bitcoin-ether-slip-and-rebound-as-south-korean-stocks-slide-on-ai-related-concerns": "2026-10-13T11:15:04.931555+00:00",
   "https://www.fxstreet.com/news/swiss-franc-range-consolidation-persists-against-us-dollar-uob-202610131036": "2026-10-13T11:25:31.991732+00:00",
   "https://www.fxstreet.com/news/gold-struggles-below-4-200-despite-retreat-in-us-dollar-treasury-yields-202610131056": "2026-10-13T11:25:31.991753+00:00",
   "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-wobbles-near-6030-us-cpi-takes-centre-stage-202610131059": "2026-10-13T11:25:31.991758+00:00",
@@ -2637,13 +2680,14 @@
   "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue": "2026-10-16T09:53:09.713356+00:00",
   "https://www.coindesk.com/business/2026/10/16/scammer-gets-scammed-in-ledger-spy-chip-exploit-loses-almost-usd5-million-in-bitcoin": "2026-10-16T10:24:47.532200+00:00",
   "https://www.coindesk.com/markets/2026/10/16/altcoins-outpace-bitcoin-as-celestia-jumps-16-warsh-silent-on-interest-rate-plans": "2026-10-16T10:44:55.345311+00:00",
-  "https://www.coindesk.com/tech/2026/10/16/experts-agree-quantum-computers-could-put-satoshi-s-bitcoin-at-risk-but-not-on-what-s-next": "2026-10-16T10:55:08.401289+00:00"
+  "https://www.coindesk.com/tech/2026/10/16/experts-agree-quantum-computers-could-put-satoshi-s-bitcoin-at-risk-but-not-on-what-s-next": "2026-10-16T10:55:08.401289+00:00",
+  "https://www.coindesk.com/daybook-us/2026/10/16/traders-will-soon-be-able-to-bet-on-whether-coinbase-robinhood-and-marathon-will-hit-their-targets": "2026-10-16T11:16:12.613982+00:00"
  },
  "timers": {
-  "crowd": 1792145285.1747794,
-  "headlines": 1792148107.684011,
-  "scan": 1792148591.8812745,
-  "follow": 1792148622.4022827
+  "crowd": 1792148915.260965,
+  "headlines": 1792149371.9300678,
+  "scan": 1792149403.1222699,
+  "follow": 1792149251.7595422
  },
  "pushed_times": [],
  "last_checked": {
@@ -2698,8 +2742,8 @@
   "ee746719": 1792114352.6155581,
   "1746c034": 1792144884.5077846,
   "638d199c": 1792144884.85828,
-  "14748b24": 1792148622.7372787,
+  "14748b24": 1792149252.163087,
   "c7053a23": 1792135673.2610664,
-  "a2dcdee8": 1792148622.7378504
+  "a2dcdee8": 1792149252.1642327
  }
 }
