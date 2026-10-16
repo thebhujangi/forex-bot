@@ -85,7 +85,8 @@
   "done:ee746719": "2026-10-16T01:32:33.902407+00:00",
   "maybe:14748b24": "2026-10-16T07:22:48.364419+00:00",
   "filled:39db18ba": "2026-10-16T12:22:39.166414+00:00",
-  "expired:a2dcdee8": "2026-10-16T12:48:33.204811+00:00"
+  "expired:a2dcdee8": "2026-10-16T12:48:33.204811+00:00",
+  "loss:39db18ba": "2026-10-16T13:14:31.607774+00:00"
  },
  "offset": 508857101,
  "initial_sl": {},
@@ -2472,7 +2473,7 @@
    "status": "new",
    "best": 82091.69,
    "notified_sl": 81785.86,
-   "warned_loss": false,
+   "warned_loss": true,
    "result_r": null,
    "closed_at": null,
    "recorded": false,
@@ -2509,13 +2510,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T13:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T13:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T13:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T13:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T13:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T13:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T13:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T13:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T13:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T13:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T13:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T13:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T13:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T13:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/japanese-yen-weakness-may-deepen-toward-15905-against-us-dollar-uob-202610131241": "2026-10-13T13:19:11.708815+00:00",
@@ -2673,10 +2674,10 @@
   "https://www.coindesk.com/daybook-us/2026/10/16/traders-will-soon-be-able-to-bet-on-whether-coinbase-robinhood-and-marathon-will-hit-their-targets": "2026-10-16T11:16:12.613982+00:00"
  },
  "timers": {
-  "crowd": 1792152535.2937424,
-  "headlines": 1792155503.5951095,
-  "scan": 1792155865.352667,
-  "follow": 1792155834.6921196
+  "crowd": 1792156163.802706,
+  "headlines": 1792156132.4994857,
+  "scan": 1792156686.4337697,
+  "follow": 1792156470.4068334
  },
  "pushed_times": [],
  "last_checked": {
@@ -2734,6 +2735,6 @@
   "14748b24": 1792153357.993116,
   "c7053a23": 1792135673.2610664,
   "a2dcdee8": 1792154912.4588556,
-  "39db18ba": 1792155834.9624202
+  "39db18ba": 1792156470.799258
  }
 }
