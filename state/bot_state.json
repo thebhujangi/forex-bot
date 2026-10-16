@@ -2883,18 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T22:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T22:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T22:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T22:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-16T22:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T22:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T22:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T22:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/pound-gains-and-stays-inside-its-range-for-a-third-week-202610132134": "2026-10-13T22:25:31.265158+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-eth-holds-2-500-as-open-interest-drops-to-lowest-level-since-february-202610132216": "2026-10-13T22:25:31.265179+00:00",
-  "https://www.fxstreet.com/news/mexican-peso-buckles-as-fed-inflation-fears-overshadow-dovish-williams-202610132217": "2026-10-13T22:25:31.265187+00:00",
   "https://www.coindesk.com/markets/2026/10/13/strive-to-ipo-second-preferred-share-class-as-it-looks-to-further-build-bitcoin-treasury": "2026-10-13T23:27:40.506205+00:00",
   "https://www.fxstreet.com/news/gold-declines-to-near-4-150-ahead-of-us-cpi-inflation-data-202610132321": "2026-10-13T23:38:04.921474+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-pressured-by-rising-yields-as-equities-draw-strength-from-earnings-expectations-202610132337": "2026-10-14T00:29:42.598016+00:00",
@@ -3015,9 +3012,9 @@
  },
  "timers": {
   "crowd": 1792188736.6267838,
-  "headlines": 1792189515.732114,
-  "scan": 1792189895.775093,
-  "follow": 1792189865.0593944
+  "headlines": 1792190132.675662,
+  "scan": 1792190714.0319602,
+  "follow": 1792190500.08397
  },
  "pushed_times": [],
  "last_checked": {
