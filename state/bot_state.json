@@ -2507,16 +2507,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T11:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T11:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T11:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T11:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T11:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T11:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T11:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T11:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T11:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T11:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T11:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T11:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T11:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T11:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/cryptocurrencies/news/top-altcoins-price-forecast-ethereum-ripple-hyperliquid-attempt-recovery-as-bearish-risks-persist-202610131115": "2026-10-13T11:56:08.841177+00:00",
   "https://www.coindesk.com/business/2026/10/13/federated-hermes-joins-wall-street-s-tokenization-push-with-plans-for-first-onchain-fund-shares": "2026-10-13T12:06:37.045187+00:00",
   "https://www.fxstreet.com/news/australian-dollar-remains-weak-despite-hawkish-rba-minutes-202610131137": "2026-10-13T12:27:19.574550+00:00",
   "https://www.fxstreet.com/news/british-pound-firmer-ground-with-boe-hike-risk-ing-202610131201": "2026-10-13T12:27:19.574569+00:00",
@@ -2678,9 +2677,9 @@
  },
  "timers": {
   "crowd": 1792148915.260965,
-  "headlines": 1792150596.8803642,
-  "scan": 1792151067.803886,
-  "follow": 1792150811.3256955
+  "headlines": 1792151822.438814,
+  "scan": 1792151853.547109,
+  "follow": 1792151730.2698581
  },
  "pushed_times": [],
  "last_checked": {
@@ -2735,9 +2734,9 @@
   "ee746719": 1792114352.6155581,
   "1746c034": 1792144884.5077846,
   "638d199c": 1792144884.85828,
-  "14748b24": 1792150819.8901756,
+  "14748b24": 1792151730.636434,
   "c7053a23": 1792135673.2610664,
-  "a2dcdee8": 1792150819.891336,
-  "39db18ba": 1792150820.3362052
+  "a2dcdee8": 1792151730.6370018,
+  "39db18ba": 1792151730.9482052
  }
 }
