@@ -82,9 +82,10 @@
   "expired:e7a23f6b": "2026-10-15T19:48:48.945695+00:00",
   "filled:ee746719": "2026-10-15T23:17:24.027022+00:00",
   "exit:ee746719:sl": "2026-10-16T01:32:33.259902+00:00",
-  "done:ee746719": "2026-10-16T01:32:33.902407+00:00"
+  "done:ee746719": "2026-10-16T01:32:33.902407+00:00",
+  "maybe:14748b24": "2026-10-16T07:22:48.364419+00:00"
  },
- "offset": 508857097,
+ "offset": 508857101,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -2244,7 +2245,7 @@
    "trail_distance": null,
    "tp1": 83010.99,
    "created": "2026-10-16T06:00:00+00:00",
-   "status": "new",
+   "status": "skipped",
    "best": 82499.32,
    "notified_sl": 81987.66,
    "warned_loss": false,
@@ -2288,7 +2289,7 @@
    "trail_distance": null,
    "tp1": 80964.32,
    "created": "2026-10-16T06:00:00+00:00",
-   "status": "new",
+   "status": "skipped",
    "best": 81475.99,
    "notified_sl": 81987.66,
    "warned_loss": false,
@@ -2332,7 +2333,7 @@
    "trail_distance": null,
    "tp1": 2477.96,
    "created": "2026-10-16T06:00:00+00:00",
-   "status": "new",
+   "status": "skipped",
    "best": 2457.45,
    "notified_sl": 2436.94,
    "warned_loss": false,
@@ -2360,9 +2361,11 @@
     "reason": "Asian range 2419.60-2454.28 (0.33x daily ATR 105.62). Break above the high at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
-   "flags": []
+   "flags": [
+    "maybe:14748b24"
+   ]
   },
   {
    "id": "c7053a23",
@@ -2376,13 +2379,13 @@
    "trail_distance": null,
    "tp1": 2395.93,
    "created": "2026-10-16T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2416.43,
    "notified_sl": 2436.94,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-16T07:27:51.881082+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -2405,7 +2408,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   }
  ],
@@ -2425,9 +2428,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-16T07:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/euro-gradual-downside-toward-key-support-against-us-dollar-uob-202610130636": "2026-10-13T07:17:40.846379+00:00",
-  "https://www.fxstreet.com/news/aud-usd-price-forecast-declining-20-day-ema-builds-case-for-more-downside-202610130652": "2026-10-13T07:17:40.846401+00:00",
-  "https://www.fxstreet.com/news/forex-today-us-dollar-retreats-from-17-month-high-as-bond-yields-oil-prices-ease-202610130659": "2026-10-13T07:17:40.846411+00:00",
   "https://www.fxstreet.com/news/euro-remains-depressed-against-british-pound-as-france-and-oil-weighs-202610130718": "2026-10-13T08:19:37.510957+00:00",
   "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-remains-capped-below-6100-as-bulls-seem-hesitant-202610130720": "2026-10-13T08:19:37.511001+00:00",
   "https://www.fxstreet.com/news/usd-cad-price-forecast-falls-to-near-14250-near-nine-day-ema-support-202610130802": "2026-10-13T08:19:37.511010+00:00",
@@ -2612,9 +2612,9 @@
  },
  "timers": {
   "crowd": 1792134433.719486,
-  "headlines": 1792134495.8730366,
-  "scan": 1792134923.7511096,
-  "follow": 1792134740.216188
+  "headlines": 1792135734.2630413,
+  "scan": 1792135734.9048831,
+  "follow": 1792135671.8810806
  },
  "pushed_times": [],
  "last_checked": {
@@ -2667,9 +2667,9 @@
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
   "ee746719": 1792114352.6155581,
-  "1746c034": 1792134740.4982016,
-  "638d199c": 1792134740.7719407,
-  "14748b24": 1792134741.067256,
-  "c7053a23": 1792134741.3289993
+  "1746c034": 1792135672.2667248,
+  "638d199c": 1792135672.598036,
+  "14748b24": 1792135672.8982856,
+  "c7053a23": 1792135673.2610664
  }
 }
