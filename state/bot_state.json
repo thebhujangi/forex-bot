@@ -2240,13 +2240,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T03:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T03:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T03:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T03:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T03:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T03:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T03:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T03:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T03:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T03:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T03:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T03:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T03:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T03:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/australian-dollar-remains-steady-following-rba-september-meeting-minutes-202610130318": "2026-10-13T03:41:35.606017+00:00",
@@ -2452,9 +2452,9 @@
  },
  "timers": {
   "crowd": 1792119955.7639434,
-  "headlines": 1792120936.7790725,
-  "scan": 1792121149.912809,
-  "follow": 1792120937.249899
+  "headlines": 1792121566.4878328,
+  "scan": 1792121965.253238,
+  "follow": 1792121873.1243038
  },
  "pushed_times": [],
  "last_checked": {
