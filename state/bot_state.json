@@ -86,7 +86,7 @@
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
- "last_brief": "2026-10-15",
+ "last_brief": "2026-10-16",
  "tracked": [
   {
    "id": "99eade23",
@@ -2238,13 +2238,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-15T23:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-15T23:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-15T23:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-15T23:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-15T23:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-15T23:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-15T23:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T00:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T00:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T00:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T00:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T00:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T00:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T00:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/gold-tumbles-below-4-200-on-higher-oil-prices-firmer-us-dollar-202610122318": "2026-10-13T00:15:22.187503+00:00",
@@ -2464,9 +2464,9 @@
  },
  "timers": {
   "crowd": 1792105487.2823048,
-  "headlines": 1792107903.7542763,
-  "scan": 1792108289.6566007,
-  "follow": 1792108106.6548903
+  "headlines": 1792108520.871003,
+  "scan": 1792109067.4480026,
+  "follow": 1792109036.5661051
  },
  "pushed_times": [],
  "last_checked": {
@@ -2518,6 +2518,6 @@
   "b9cfc473": 1792073075.6395066,
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
-  "ee746719": 1792108107.0043604
+  "ee746719": 1792109036.9735096
  }
 }
