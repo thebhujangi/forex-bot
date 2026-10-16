@@ -2880,16 +2880,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T19:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T19:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T19:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T19:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T19:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T19:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T19:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T19:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T19:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T19:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T19:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T19:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T19:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T19:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/feds-williams-sees-one-final-2026-rate-hike-none-in-2027-202610131821": "2026-10-13T19:08:51.606864+00:00",
   "https://www.fxstreet.com/news/feds-barkin-says-persistent-inflation-warrants-policy-action-202610131831": "2026-10-13T19:29:29.846216+00:00",
   "https://www.fxstreet.com/news/euro-soft-undertone-but-fair-value-higher-against-us-dollar-scotiabank-202610131836": "2026-10-13T19:29:29.846237+00:00",
   "https://www.fxstreet.com/news/swiss-franc-strengthens-on-dovish-feds-rhetoric-us-cpi-looms-202610131856": "2026-10-13T19:29:29.846246+00:00",
@@ -3022,17 +3021,17 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-16T18:27:36.400454+00:00"
  },
  "timers": {
-  "crowd": 1792174221.946726,
-  "headlines": 1792177706.507107,
-  "scan": 1792177768.0713263,
-  "follow": 1792177614.0744956
+  "crowd": 1792177877.760332,
+  "headlines": 1792178336.479146,
+  "scan": 1792178583.0563138,
+  "follow": 1792178551.5938547
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792175102.5380654,
+  "d82f6843": 1792178551.7573335,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -3090,7 +3089,7 @@
   "4395ff29": 1792159621.99487,
   "21ca5415": 1792160898.7752278,
   "c362b8d4": 1792158038.0540218,
-  "ef1785bc": 1792177614.723808,
-  "0f9491f8": 1792177615.0481017
+  "ef1785bc": 1792178552.1349983,
+  "0f9491f8": 1792178552.461209
  }
 }
