@@ -86,7 +86,11 @@
   "maybe:14748b24": "2026-10-16T07:22:48.364419+00:00",
   "filled:39db18ba": "2026-10-16T12:22:39.166414+00:00",
   "expired:a2dcdee8": "2026-10-16T12:48:33.204811+00:00",
-  "loss:39db18ba": "2026-10-16T13:14:31.607774+00:00"
+  "loss:39db18ba": "2026-10-16T13:14:31.607774+00:00",
+  "exit:39db18ba:sl": "2026-10-16T13:35:23.713569+00:00",
+  "done:39db18ba": "2026-10-16T13:35:24.286759+00:00",
+  "filled:21ca5415": "2026-10-16T13:40:37.498366+00:00",
+  "oco:c362b8d4": "2026-10-16T13:40:38.052821+00:00"
  },
  "offset": 508857101,
  "initial_sl": {},
@@ -2470,13 +2474,13 @@
    "trail_distance": null,
    "tp1": 82397.52,
    "created": "2026-10-16T11:15:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 82091.69,
    "notified_sl": 81785.86,
    "warned_loss": true,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.0268422620409843,
+   "closed_at": "2026-10-16T13:30:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -2497,9 +2501,9 @@
     "trail_distance": null,
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 2.2x ATR from EMA20; buy the pullback at 82091.69."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "sl",
    "flags": []
   },
   {
@@ -2718,7 +2722,7 @@
     "reason": "Asian range 1.33283-1.33434 (0.21x daily ATR 0.00708). Break above the high at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   },
@@ -2734,13 +2738,13 @@
    "trail_distance": null,
    "tp1": 1.33165,
    "created": "2026-10-16T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.33262,
    "notified_sl": 1.33358,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-16T13:40:20.912181+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -2763,7 +2767,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   }
  ],
@@ -2774,17 +2778,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T13:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T13:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T13:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T13:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T13:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T13:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T13:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T13:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T13:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T13:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T13:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T13:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T13:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T13:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/us-dollar-supported-but-capped-by-cpi-risks-ocbc-202610131316": "2026-10-13T13:39:37.978286+00:00",
-  "https://cointelegraph.com/magazine/is-bitcoin-kidding-itself-about-the-lightning-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T13:39:37.978308+00:00",
   "https://www.fxstreet.com/news/indian-rupee-rbi-defense-limits-losses-against-us-dollar-societe-generale-202610131331": "2026-10-13T14:20:52.416912+00:00",
   "https://www.fxstreet.com/news/australian-dollar-edges-higher-as-softer-us-dollar-hawkish-rba-offer-support-202610131336": "2026-10-13T14:20:52.416952+00:00",
   "https://www.fxstreet.com/news/australian-dollar-key-support-at-06935-in-focus-against-us-dollar-uob-202610131404": "2026-10-13T14:20:52.416956+00:00",
@@ -2936,16 +2938,16 @@
  },
  "timers": {
   "crowd": 1792156163.802706,
-  "headlines": 1792157397.9914296,
-  "scan": 1792157538.3323157,
-  "follow": 1792157398.2973814
+  "headlines": 1792158020.5937471,
+  "scan": 1792158341.9463077,
+  "follow": 1792158366.5758963
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792154304.6398234,
+  "d82f6843": 1792157722.8131356,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -2996,6 +2998,12 @@
   "14748b24": 1792153357.993116,
   "c7053a23": 1792135673.2610664,
   "a2dcdee8": 1792154912.4588556,
-  "39db18ba": 1792157398.5925038
+  "39db18ba": 1792157723.1511035,
+  "85d0efa0": 1792158374.5193973,
+  "8929e2a7": 1792158374.5201154,
+  "cba2ae64": 1792158382.4920535,
+  "4395ff29": 1792158390.4749837,
+  "21ca5415": 1792158398.4806118,
+  "c362b8d4": 1792158038.0540218
  }
 }
