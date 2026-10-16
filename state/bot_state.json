@@ -2240,20 +2240,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T02:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T02:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T02:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T02:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T02:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T02:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T02:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T03:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T03:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T03:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T03:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T03:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T03:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T03:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/cryptocurrencies/news/has-bitcoin-really-escaped-the-macro-forces-it-was-built-to-fight-202610091254": "2026-10-13T03:10:28.550265+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/polkadot-price-forecast-dot-surges-after-dotusd-stablecoin-launch-202610091320": "2026-10-13T03:10:28.550287+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-13T03:10:28.550294+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-and-gold-outlook-btc-reclaims-82k-xau-approaches-4-200-as-october-rate-hike-bets-dim-202610091545": "2026-10-13T03:10:28.550299+00:00",
-  "https://www.fxstreet.com/cryptocurrencies/news/top-7-weekly-crypto-performers-atom-jup-just-lead-crypto-market-as-altcoins-defy-bitcoin-weakness-202610100015": "2026-10-13T03:10:28.550304+00:00",
   "https://www.fxstreet.com/news/boes-greene-warns-of-second-round-inflation-effects-if-we-act-late-202610130310": "2026-10-13T03:20:45.191718+00:00",
   "https://www.fxstreet.com/news/australian-dollar-remains-steady-following-rba-september-meeting-minutes-202610130318": "2026-10-13T03:41:35.606017+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ripple-backed-evernorth-goes-live-on-nasdaq-with-473-million-xrp-treasury-202610130346": "2026-10-13T04:02:03.292479+00:00",
@@ -2456,17 +2451,17 @@
   "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T17:03:01.173042+00:00"
  },
  "timers": {
-  "crowd": 1792116349.0526507,
-  "headlines": 1792119060.6474347,
-  "scan": 1792119581.9835706,
-  "follow": 1792119398.1467235
+  "crowd": 1792119955.7639434,
+  "headlines": 1792120322.4990962,
+  "scan": 1792120353.7472072,
+  "follow": 1792120323.249039
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792116240.7831,
+  "d82f6843": 1792119711.6020193,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
