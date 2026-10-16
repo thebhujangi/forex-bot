@@ -2783,18 +2783,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T14:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T14:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T14:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T14:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T14:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T14:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T14:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T14:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T14:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T14:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T14:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T14:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T14:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T14:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/indian-rupee-rbi-defense-limits-losses-against-us-dollar-societe-generale-202610131331": "2026-10-13T14:20:52.416912+00:00",
-  "https://www.fxstreet.com/news/australian-dollar-edges-higher-as-softer-us-dollar-hawkish-rba-offer-support-202610131336": "2026-10-13T14:20:52.416952+00:00",
-  "https://www.fxstreet.com/news/australian-dollar-key-support-at-06935-in-focus-against-us-dollar-uob-202610131404": "2026-10-13T14:20:52.416956+00:00",
   "https://www.fxstreet.com/news/canadian-dollar-modest-gains-against-us-dollar-scotiabank-202610131423": "2026-10-13T15:12:40.149796+00:00",
   "https://www.fxstreet.com/news/british-pound-upside-momentum-builds-against-euro-societe-generale-202610131459": "2026-10-13T15:22:54.872937+00:00",
   "https://www.fxstreet.com/news/euro-finds-support-from-softer-us-dollar-french-fiscal-risks-linger-202610131509": "2026-10-13T15:22:54.872960+00:00",
@@ -2943,9 +2940,9 @@
  },
  "timers": {
   "crowd": 1792159783.2164204,
-  "headlines": 1792159875.5678115,
-  "scan": 1792160014.5968208,
-  "follow": 1792159906.5270567
+  "headlines": 1792160475.7087727,
+  "scan": 1792160765.7903633,
+  "follow": 1792160536.7769375
  },
  "pushed_times": [],
  "last_checked": {
@@ -3004,11 +3001,11 @@
   "c7053a23": 1792135673.2610664,
   "a2dcdee8": 1792154912.4588556,
   "39db18ba": 1792157723.1511035,
-  "85d0efa0": 1792159906.6427772,
+  "85d0efa0": 1792160536.8648512,
   "8929e2a7": 1792159001.7026784,
-  "cba2ae64": 1792159914.6282701,
+  "cba2ae64": 1792160544.815785,
   "4395ff29": 1792159621.99487,
-  "21ca5415": 1792159922.6467512,
+  "21ca5415": 1792160552.8087823,
   "c362b8d4": 1792158038.0540218
  }
 }
