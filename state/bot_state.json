@@ -2360,7 +2360,7 @@
     "trail_distance": null,
     "reason": "Asian range 2419.60-2454.28 (0.33x daily ATR 105.62). Break above the high at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null,
    "flags": [
@@ -2507,21 +2507,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T11:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T11:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T11:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T11:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T11:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T11:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T11:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T11:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T11:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T11:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T11:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T11:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T11:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T11:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/swiss-franc-range-consolidation-persists-against-us-dollar-uob-202610131036": "2026-10-13T11:25:31.991732+00:00",
-  "https://www.fxstreet.com/news/gold-struggles-below-4-200-despite-retreat-in-us-dollar-treasury-yields-202610131056": "2026-10-13T11:25:31.991753+00:00",
-  "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-wobbles-near-6030-us-cpi-takes-centre-stage-202610131059": "2026-10-13T11:25:31.991758+00:00",
-  "https://www.fxstreet.com/news/gbp-jpy-price-forecast-looking-for-direction-between-20900-and-21000-202610131103": "2026-10-13T11:25:31.991764+00:00",
-  "https://www.fxstreet.com/news/us-dollar-higher-rate-expectations-support-gains-commerzbank-202610131109": "2026-10-13T11:25:31.991768+00:00",
-  "https://cointelegraph.com/news/ens-dao-ensv2-upgrade-eth-domain-registrations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T11:25:31.991772+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/13/stacks-stx-a-bitcoin-layer-2-token-has-surged-by-50-in-four-weeks": "2026-10-13T11:35:47.939514+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/top-altcoins-price-forecast-ethereum-ripple-hyperliquid-attempt-recovery-as-bearish-risks-persist-202610131115": "2026-10-13T11:56:08.841177+00:00",
   "https://www.coindesk.com/business/2026/10/13/federated-hermes-joins-wall-street-s-tokenization-push-with-plans-for-first-onchain-fund-shares": "2026-10-13T12:06:37.045187+00:00",
@@ -2685,9 +2679,9 @@
  },
  "timers": {
   "crowd": 1792148915.260965,
-  "headlines": 1792149371.9300678,
-  "scan": 1792149403.1222699,
-  "follow": 1792149251.7595422
+  "headlines": 1792149996.3122919,
+  "scan": 1792150240.5243154,
+  "follow": 1792150179.1378248
  },
  "pushed_times": [],
  "last_checked": {
@@ -2742,8 +2736,9 @@
   "ee746719": 1792114352.6155581,
   "1746c034": 1792144884.5077846,
   "638d199c": 1792144884.85828,
-  "14748b24": 1792149252.163087,
+  "14748b24": 1792150179.4291968,
   "c7053a23": 1792135673.2610664,
-  "a2dcdee8": 1792149252.1642327
+  "a2dcdee8": 1792150179.4304876,
+  "39db18ba": 1792150179.7024763
  }
 }
