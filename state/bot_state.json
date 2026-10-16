@@ -100,7 +100,9 @@
   "done:21ca5415": "2026-10-16T14:28:19.902556+00:00",
   "exit:cba2ae64:sl": "2026-10-16T15:06:06.722634+00:00",
   "done:cba2ae64": "2026-10-16T15:06:07.430318+00:00",
-  "loss:85d0efa0": "2026-10-16T15:59:30.263023+00:00"
+  "loss:85d0efa0": "2026-10-16T15:59:30.263023+00:00",
+  "exit:85d0efa0:sl": "2026-10-16T16:04:52.188625+00:00",
+  "done:85d0efa0": "2026-10-16T16:04:52.838986+00:00"
  },
  "offset": 508857101,
  "initial_sl": {},
@@ -2528,13 +2530,13 @@
    "trail_distance": null,
    "tp1": 4199.74,
    "created": "2026-10-16T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 4183.81,
    "notified_sl": 4167.88,
    "warned_loss": true,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.0125549278092105,
+   "closed_at": "2026-10-16T15:55:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -2555,9 +2557,9 @@
     "trail_distance": null,
     "reason": "Asian range 4154.24-4181.52 (0.36x daily ATR 76.50). Break above the high at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "sl",
    "flags": []
   },
   {
@@ -2797,7 +2799,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-16T16:00:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/strive-bitcoin-holdings-32773-btc-warrant-exercises?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T16:13:54.934952+00:00",
   "https://www.fxstreet.com/news/neither-a-breakout-nor-a-reversal-what-ocbc-commerzbank-and-ing-expect-from-the-us-dollar-202610131532": "2026-10-13T16:23:58.391667+00:00",
   "https://www.fxstreet.com/news/british-pound-finds-fresh-momentum-as-boe-hawks-set-stage-for-us-cpi-202610131539": "2026-10-13T16:23:58.391688+00:00",
   "https://www.fxstreet.com/news/dollar-index-slips-from-its-18-month-high-before-us-cpi-202610131604": "2026-10-13T16:23:58.391699+00:00",
@@ -2941,14 +2942,12 @@
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T15:53:24.653332+00:00"
  },
  "timers": {
-  "crowd": 1792163389.5294535,
-  "headlines": 1792166004.1700594,
-  "scan": 1792166509.6816943,
-  "follow": 1792166369.4481778
+  "crowd": 1792166997.5756133,
+  "headlines": 1792167241.8243794,
+  "scan": 1792167273.0941598,
+  "follow": 1792167303.596912
  },
- "pushed_times": [
-  1792162913.6976442
- ],
+ "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
@@ -3005,7 +3004,7 @@
   "c7053a23": 1792135673.2610664,
   "a2dcdee8": 1792154912.4588556,
   "39db18ba": 1792157723.1511035,
-  "85d0efa0": 1792166369.656869,
+  "85d0efa0": 1792166691.5251942,
   "8929e2a7": 1792159001.7026784,
   "cba2ae64": 1792163165.9463806,
   "4395ff29": 1792159621.99487,
