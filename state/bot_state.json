@@ -2419,13 +2419,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T08:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T08:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T08:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T08:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T08:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T08:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T08:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T09:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T09:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T09:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T09:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T09:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T09:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T09:00:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/uk-court-chinese-law-61k-bitcoin-fraud-victims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-13T09:11:20.381528+00:00",
@@ -2610,9 +2610,9 @@
  },
  "timers": {
   "crowd": 1792138048.510494,
-  "headlines": 1792140080.4917715,
-  "scan": 1792140532.1552742,
-  "follow": 1792140470.496226
+  "headlines": 1792141304.6703196,
+  "scan": 1792141335.4039497,
+  "follow": 1792141097.6779494
  },
  "pushed_times": [],
  "last_checked": {
@@ -2665,9 +2665,9 @@
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
   "ee746719": 1792114352.6155581,
-  "1746c034": 1792140470.8373284,
-  "638d199c": 1792140471.0974202,
-  "14748b24": 1792140471.360707,
+  "1746c034": 1792141097.9662688,
+  "638d199c": 1792141098.221289,
+  "14748b24": 1792141098.4937422,
   "c7053a23": 1792135673.2610664
  }
 }
