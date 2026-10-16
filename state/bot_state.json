@@ -103,7 +103,8 @@
   "loss:85d0efa0": "2026-10-16T15:59:30.263023+00:00",
   "exit:85d0efa0:sl": "2026-10-16T16:04:52.188625+00:00",
   "done:85d0efa0": "2026-10-16T16:04:52.838986+00:00",
-  "filled:ef1785bc": "2026-10-16T17:48:54.698522+00:00"
+  "filled:ef1785bc": "2026-10-16T17:48:54.698522+00:00",
+  "exit:ef1785bc:tp1": "2026-10-16T18:04:13.052874+00:00"
  },
  "offset": 508857102,
  "initial_sl": {},
@@ -2822,7 +2823,7 @@
     "trail_distance": null,
     "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.8x ATR from EMA20; sell the pullback at 81666.65."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null,
    "flags": []
@@ -2879,13 +2880,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T18:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T18:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T18:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T18:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T18:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T18:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T18:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T18:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T18:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T18:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T18:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T18:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T18:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T18:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-13T18:06:29.498079+00:00",
@@ -3025,10 +3026,10 @@
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T15:53:24.653332+00:00"
  },
  "timers": {
-  "crowd": 1792170597.7127573,
-  "headlines": 1792173357.7252326,
-  "scan": 1792173724.2077067,
-  "follow": 1792173541.775735
+  "crowd": 1792174221.946726,
+  "headlines": 1792173975.28665,
+  "scan": 1792174558.4277103,
+  "follow": 1792174466.3104196
  },
  "pushed_times": [],
  "last_checked": {
@@ -3093,6 +3094,7 @@
   "4395ff29": 1792159621.99487,
   "21ca5415": 1792160898.7752278,
   "c362b8d4": 1792158038.0540218,
-  "ef1785bc": 1792173542.4758415
+  "ef1785bc": 1792174466.678986,
+  "0f9491f8": 1792174467.0072527
  }
 }
