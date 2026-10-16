@@ -104,7 +104,9 @@
   "exit:85d0efa0:sl": "2026-10-16T16:04:52.188625+00:00",
   "done:85d0efa0": "2026-10-16T16:04:52.838986+00:00",
   "filled:ef1785bc": "2026-10-16T17:48:54.698522+00:00",
-  "exit:ef1785bc:tp1": "2026-10-16T18:04:13.052874+00:00"
+  "exit:ef1785bc:tp1": "2026-10-16T18:04:13.052874+00:00",
+  "exit:ef1785bc:be": "2026-10-16T19:33:16.473955+00:00",
+  "done:ef1785bc": "2026-10-16T19:33:17.040930+00:00"
  },
  "offset": 508857102,
  "initial_sl": {},
@@ -2796,13 +2798,13 @@
    "trail_distance": null,
    "tp1": 81139.62,
    "created": "2026-10-16T17:15:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 81666.65,
    "notified_sl": 82193.69,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.4922428420992655,
+   "closed_at": "2026-10-16T19:25:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -2823,9 +2825,9 @@
     "trail_distance": null,
     "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.8x ATR from EMA20; sell the pullback at 81666.65."
    },
-   "seen_exits": 1,
+   "seen_exits": 2,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "be",
    "flags": []
   },
   {
@@ -2880,13 +2882,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T19:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T19:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T19:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T19:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T19:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T19:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T19:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T19:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T19:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T19:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T19:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T19:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T19:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T19:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/feds-barkin-says-persistent-inflation-warrants-policy-action-202610131831": "2026-10-13T19:29:29.846216+00:00",
@@ -3022,9 +3024,9 @@
  },
  "timers": {
   "crowd": 1792177877.760332,
-  "headlines": 1792178336.479146,
-  "scan": 1792178583.0563138,
-  "follow": 1792178551.5938547
+  "headlines": 1792178958.2889247,
+  "scan": 1792179379.8123333,
+  "follow": 1792179195.49038
  },
  "pushed_times": [],
  "last_checked": {
@@ -3089,7 +3091,7 @@
   "4395ff29": 1792159621.99487,
   "21ca5415": 1792160898.7752278,
   "c362b8d4": 1792158038.0540218,
-  "ef1785bc": 1792178552.1349983,
-  "0f9491f8": 1792178552.461209
+  "ef1785bc": 1792179195.8451579,
+  "0f9491f8": 1792179197.3268278
  }
 }
