@@ -2883,13 +2883,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T20:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T20:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T20:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T20:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T20:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T20:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T20:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T20:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T20:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T20:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T20:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T20:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T20:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T20:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/gbp-jpy-price-forecast-bulls-challenge-21000-as-breakout-looms-202610132007": "2026-10-13T20:21:18.906217+00:00",
@@ -3020,16 +3020,16 @@
  },
  "timers": {
   "crowd": 1792181496.2900395,
-  "headlines": 1792181435.0732124,
-  "scan": 1792181792.5253518,
-  "follow": 1792181731.7425454
+  "headlines": 1792182053.046313,
+  "scan": 1792182640.8880055,
+  "follow": 1792182366.6047318
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792178551.7573335,
+  "d82f6843": 1792182061.8379064,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
