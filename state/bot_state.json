@@ -80,7 +80,9 @@
   "expired:12698a27": "2026-10-15T16:02:12.213743+00:00",
   "expired:afb4c1fa": "2026-10-15T19:48:48.015580+00:00",
   "expired:e7a23f6b": "2026-10-15T19:48:48.945695+00:00",
-  "filled:ee746719": "2026-10-15T23:17:24.027022+00:00"
+  "filled:ee746719": "2026-10-15T23:17:24.027022+00:00",
+  "exit:ee746719:sl": "2026-10-16T01:32:33.259902+00:00",
+  "done:ee746719": "2026-10-16T01:32:33.902407+00:00"
  },
  "offset": 508857097,
  "initial_sl": {},
@@ -2198,13 +2200,13 @@
    "trail_distance": null,
    "tp1": 2453.73,
    "created": "2026-10-15T21:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2441.54,
    "notified_sl": 2429.34,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.0600378688524552,
+   "closed_at": "2026-10-16T01:25:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -2225,9 +2227,9 @@
     "trail_distance": null,
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.7x ATR from EMA20; buy the pullback at 2441.54."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "sl",
    "flags": []
   }
  ],
@@ -2238,13 +2240,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T01:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T01:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T01:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T01:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T01:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T01:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T01:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T01:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T01:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T01:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T01:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T01:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T01:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T01:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/canadian-dollar-edges-higher-but-remains-close-to-april-2025-lows-vs-bullish-usd-202610130121": "2026-10-13T02:18:34.333633+00:00",
@@ -2460,9 +2462,9 @@
  },
  "timers": {
   "crowd": 1792112745.7266653,
-  "headlines": 1792113455.3466926,
-  "scan": 1792113882.8067486,
-  "follow": 1792113730.1121535
+  "headlines": 1792114689.338429,
+  "scan": 1792114690.0894892,
+  "follow": 1792114658.8282049
  },
  "pushed_times": [],
  "last_checked": {
@@ -2514,6 +2516,6 @@
   "b9cfc473": 1792073075.6395066,
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
-  "ee746719": 1792113730.4498522
+  "ee746719": 1792114352.6155581
  }
 }
