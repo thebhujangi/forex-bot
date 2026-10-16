@@ -2416,16 +2416,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T06:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T06:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T06:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T06:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T06:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T06:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T06:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T07:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T07:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T07:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T07:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T07:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T07:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T07:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/usd-jpy-price-forecast-bulls-fail-to-break-the-200-day-sma-around-15850-202610130629": "2026-10-13T06:57:07.193167+00:00",
   "https://www.fxstreet.com/news/euro-gradual-downside-toward-key-support-against-us-dollar-uob-202610130636": "2026-10-13T07:17:40.846379+00:00",
   "https://www.fxstreet.com/news/aud-usd-price-forecast-declining-20-day-ema-builds-case-for-more-downside-202610130652": "2026-10-13T07:17:40.846401+00:00",
   "https://www.fxstreet.com/news/forex-today-us-dollar-retreats-from-17-month-high-as-bond-yields-oil-prices-ease-202610130659": "2026-10-13T07:17:40.846411+00:00",
@@ -2613,16 +2612,16 @@
  },
  "timers": {
   "crowd": 1792130822.0023124,
-  "headlines": 1792133253.5540907,
-  "scan": 1792133284.4919317,
-  "follow": 1792133190.6710198
+  "headlines": 1792133883.6869218,
+  "scan": 1792134089.4657862,
+  "follow": 1792134132.6102302
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792130040.742147,
+  "d82f6843": 1792133513.728857,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -2668,9 +2667,9 @@
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
   "ee746719": 1792114352.6155581,
-  "1746c034": 1792133191.0183852,
-  "638d199c": 1792133191.3838437,
-  "14748b24": 1792133191.7296994,
-  "c7053a23": 1792133192.287829
+  "1746c034": 1792134133.0074048,
+  "638d199c": 1792134133.5796053,
+  "14748b24": 1792134133.9787965,
+  "c7053a23": 1792134134.3359728
  }
 }
