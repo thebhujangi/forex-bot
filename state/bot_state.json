@@ -2787,13 +2787,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T15:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T15:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T15:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T15:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T15:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T15:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T15:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T15:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T15:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T15:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T15:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T15:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T15:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T15:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/canadian-dollar-modest-gains-against-us-dollar-scotiabank-202610131423": "2026-10-13T15:12:40.149796+00:00",
@@ -2944,10 +2944,10 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-16T15:01:52.935345+00:00"
  },
  "timers": {
-  "crowd": 1792159783.2164204,
-  "headlines": 1792162912.2094753,
-  "scan": 1792163197.9164636,
-  "follow": 1792163157.8398561
+  "crowd": 1792163389.5294535,
+  "headlines": 1792163542.6715138,
+  "scan": 1792163999.0896494,
+  "follow": 1792163785.3278036
  },
  "pushed_times": [
   1792162913.6976442
@@ -3008,7 +3008,7 @@
   "c7053a23": 1792135673.2610664,
   "a2dcdee8": 1792154912.4588556,
   "39db18ba": 1792157723.1511035,
-  "85d0efa0": 1792163157.9544046,
+  "85d0efa0": 1792163785.4722383,
   "8929e2a7": 1792159001.7026784,
   "cba2ae64": 1792163165.9463806,
   "4395ff29": 1792159621.99487,
