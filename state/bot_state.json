@@ -2416,13 +2416,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T07:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T07:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T07:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T07:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T07:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T07:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T07:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T07:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T07:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T07:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T07:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T07:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T07:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T07:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/euro-gradual-downside-toward-key-support-against-us-dollar-uob-202610130636": "2026-10-13T07:17:40.846379+00:00",
@@ -2611,10 +2611,10 @@
   "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why": "2026-10-16T05:56:00.350273+00:00"
  },
  "timers": {
-  "crowd": 1792130822.0023124,
-  "headlines": 1792133883.6869218,
-  "scan": 1792134089.4657862,
-  "follow": 1792134132.6102302
+  "crowd": 1792134433.719486,
+  "headlines": 1792134495.8730366,
+  "scan": 1792134923.7511096,
+  "follow": 1792134740.216188
  },
  "pushed_times": [],
  "last_checked": {
@@ -2667,9 +2667,9 @@
   "afb4c1fa": 1792093727.413649,
   "e7a23f6b": 1792093728.3303614,
   "ee746719": 1792114352.6155581,
-  "1746c034": 1792134133.0074048,
-  "638d199c": 1792134133.5796053,
-  "14748b24": 1792134133.9787965,
-  "c7053a23": 1792134134.3359728
+  "1746c034": 1792134740.4982016,
+  "638d199c": 1792134740.7719407,
+  "14748b24": 1792134741.067256,
+  "c7053a23": 1792134741.3289993
  }
 }
