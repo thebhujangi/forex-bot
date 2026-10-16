@@ -2785,13 +2785,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T14:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T14:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T14:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T14:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T14:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T14:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T14:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T14:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T14:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T14:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T14:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T14:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T14:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T14:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/canadian-dollar-modest-gains-against-us-dollar-scotiabank-202610131423": "2026-10-13T15:12:40.149796+00:00",
@@ -2942,9 +2942,9 @@
  },
  "timers": {
   "crowd": 1792159783.2164204,
-  "headlines": 1792161076.3745546,
-  "scan": 1792161617.371326,
-  "follow": 1792161518.0933287
+  "headlines": 1792162310.2396865,
+  "scan": 1792162401.7095647,
+  "follow": 1792162150.228573
  },
  "pushed_times": [],
  "last_checked": {
@@ -3003,9 +3003,9 @@
   "c7053a23": 1792135673.2610664,
   "a2dcdee8": 1792154912.4588556,
   "39db18ba": 1792157723.1511035,
-  "85d0efa0": 1792161518.162348,
+  "85d0efa0": 1792162150.3250046,
   "8929e2a7": 1792159001.7026784,
-  "cba2ae64": 1792161526.1324747,
+  "cba2ae64": 1792162158.2912567,
   "4395ff29": 1792159621.99487,
   "21ca5415": 1792160898.7752278,
   "c362b8d4": 1792158038.0540218
