@@ -2880,13 +2880,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T18:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T18:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T18:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T18:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T18:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T18:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T18:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T19:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T19:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T19:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T19:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T19:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T19:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T19:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/feds-williams-sees-one-final-2026-rate-hike-none-in-2027-202610131821": "2026-10-13T19:08:51.606864+00:00",
@@ -3023,9 +3023,9 @@
  },
  "timers": {
   "crowd": 1792174221.946726,
-  "headlines": 1792176477.8483088,
-  "scan": 1792176934.990258,
-  "follow": 1792176993.721576
+  "headlines": 1792177706.507107,
+  "scan": 1792177768.0713263,
+  "follow": 1792177614.0744956
  },
  "pushed_times": [],
  "last_checked": {
@@ -3090,7 +3090,7 @@
   "4395ff29": 1792159621.99487,
   "21ca5415": 1792160898.7752278,
   "c362b8d4": 1792158038.0540218,
-  "ef1785bc": 1792176994.0345807,
-  "0f9491f8": 1792176994.2999651
+  "ef1785bc": 1792177614.723808,
+  "0f9491f8": 1792177615.0481017
  }
 }
