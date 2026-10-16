@@ -2419,19 +2419,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T10:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T10:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T10:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T10:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T10:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T10:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T10:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T10:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T10:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T10:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T10:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T10:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T10:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T10:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/gold-price-forecast-xau-usd-retraces-losses-as-us-yields-and-oil-prices-ease-202610130928": "2026-10-13T10:23:39.253225+00:00",
-  "https://www.fxstreet.com/news/euro-declines-as-boj-tightening-bets-eurozone-stagflation-risks-bolster-japanese-yen-202610130932": "2026-10-13T10:23:39.253244+00:00",
-  "https://www.fxstreet.com/news/us-dollar-overbought-signals-but-no-clear-catalyst-ing-202610130943": "2026-10-13T10:23:39.253253+00:00",
-  "https://www.fxstreet.com/news/swiss-francs-recovery-stalls-despite-broad-based-us-dollar-weakness-202610131009": "2026-10-13T10:23:39.253259+00:00",
   "https://www.coindesk.com/markets/2026/10/13/bitcoin-diverges-from-south-korean-stocks-as-ai-concerns-deepen-the-kospi-selloff": "2026-10-13T10:44:11.659574+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-forecast-btc-rebounds-despite-cautious-sentiment-202610130958": "2026-10-13T10:54:31.526963+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/crypto-today-bitcoin-ethereum-xrp-edge-higher-despite-capital-outflows-via-etfs-202610131037": "2026-10-13T10:54:31.526982+00:00",
@@ -2598,13 +2594,14 @@
   "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why": "2026-10-16T05:56:00.350273+00:00",
   "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T08:10:22.459771+00:00",
   "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T09:42:50.243517+00:00",
-  "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue": "2026-10-16T09:53:09.713356+00:00"
+  "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue": "2026-10-16T09:53:09.713356+00:00",
+  "https://www.coindesk.com/business/2026/10/16/scammer-gets-scammed-in-ledger-spy-chip-exploit-loses-almost-usd5-million-in-bitcoin": "2026-10-16T10:24:47.532200+00:00"
  },
  "timers": {
   "crowd": 1792145285.1747794,
-  "headlines": 1792145633.955371,
-  "scan": 1792146184.386708,
-  "follow": 1792146122.727867
+  "headlines": 1792146891.4978676,
+  "scan": 1792146983.1888871,
+  "follow": 1792146768.9595056
  },
  "pushed_times": [],
  "last_checked": {
@@ -2659,7 +2656,7 @@
   "ee746719": 1792114352.6155581,
   "1746c034": 1792144884.5077846,
   "638d199c": 1792144884.85828,
-  "14748b24": 1792146123.0756087,
+  "14748b24": 1792146769.2674913,
   "c7053a23": 1792135673.2610664
  }
 }
