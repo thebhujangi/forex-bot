@@ -2790,13 +2790,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T16:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T16:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T16:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T16:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T16:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T16:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T16:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T16:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T16:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T16:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T16:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T16:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T16:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T16:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.fxstreet.com/news/canadian-dollar-recovers-as-softer-us-dollar-offers-relief-ahead-of-us-cpi-202610131708": "2026-10-13T17:15:04.465417+00:00",
@@ -2939,9 +2939,9 @@
  },
  "timers": {
   "crowd": 1792166997.5756133,
-  "headlines": 1792168466.615897,
-  "scan": 1792168926.0055532,
-  "follow": 1792168895.4339416
+  "headlines": 1792169685.1460497,
+  "scan": 1792169685.5634568,
+  "follow": 1792169502.6538248
  },
  "pushed_times": [],
  "last_checked": {
