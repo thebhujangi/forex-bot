@@ -2883,17 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T21:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T21:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T21:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T21:15:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-16T21:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T21:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T21:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T21:30:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/chinese-yuan-outlook-stays-mildly-positive-against-us-dollar-uob-202610132033": "2026-10-13T21:23:29.356126+00:00",
-  "https://www.fxstreet.com/news/taiwan-ai-driven-growth-and-inflation-outlook-dbs-202610132112": "2026-10-13T21:23:29.356143+00:00",
   "https://www.coindesk.com/business/2026/10/13/bny-citadel-securities-test-tokenized-u-s-treasuries-to-speed-up-wall-street-financing": "2026-10-13T21:54:33.164171+00:00",
   "https://www.fxstreet.com/news/pound-gains-and-stays-inside-its-range-for-a-third-week-202610132134": "2026-10-13T22:25:31.265158+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-eth-holds-2-500-as-open-interest-drops-to-lowest-level-since-february-202610132216": "2026-10-13T22:25:31.265179+00:00",
@@ -3018,9 +3016,9 @@
  },
  "timers": {
   "crowd": 1792185136.2232394,
-  "headlines": 1792185799.8010936,
-  "scan": 1792185830.9957192,
-  "follow": 1792185830.998253
+  "headlines": 1792186422.609941,
+  "scan": 1792186698.8971283,
+  "follow": 1792186453.4948885
  },
  "pushed_times": [],
  "last_checked": {
