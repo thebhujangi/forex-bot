@@ -2240,16 +2240,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T04:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T04:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T04:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T04:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T04:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T04:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T04:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T05:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T05:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T05:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T05:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T05:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T05:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T05:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/tech/2026/10/13/once-largest-ethereum-nft-marketplace-blur-is-shutting-down-after-volumes-collapse-99": "2026-10-13T04:53:10.616271+00:00",
   "https://www.fxstreet.com/news/india-gold-price-today-gold-rises-according-to-fxstreet-data-202610130435": "2026-10-13T05:23:53.062438+00:00",
   "https://www.fxstreet.com/news/new-zealand-dollar-rebounds-to-near-05600-amid-geopolitical-tensions-and-us-cpi-focus-202610130457": "2026-10-13T05:23:53.062459+00:00",
   "https://www.fxstreet.com/news/swiss-franc-strengthens-as-us-dollar-index-pulls-back-from-18-month-highs-202610130500": "2026-10-13T05:23:53.062469+00:00",
@@ -2446,16 +2445,16 @@
  },
  "timers": {
   "crowd": 1792123576.624505,
-  "headlines": 1792125874.745772,
-  "scan": 1792126020.4159074,
-  "follow": 1792125959.6716893
+  "headlines": 1792126496.7290745,
+  "scan": 1792126880.6079307,
+  "follow": 1792126588.157275
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792123125.96051,
+  "d82f6843": 1792126596.1881003,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
