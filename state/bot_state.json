@@ -106,7 +106,8 @@
   "filled:ef1785bc": "2026-10-16T17:48:54.698522+00:00",
   "exit:ef1785bc:tp1": "2026-10-16T18:04:13.052874+00:00",
   "exit:ef1785bc:be": "2026-10-16T19:33:16.473955+00:00",
-  "done:ef1785bc": "2026-10-16T19:33:17.040930+00:00"
+  "done:ef1785bc": "2026-10-16T19:33:17.040930+00:00",
+  "expired:0f9491f8": "2026-10-16T20:05:00.687674+00:00"
  },
  "offset": 508857102,
  "initial_sl": {},
@@ -2842,13 +2843,13 @@
    "trail_distance": null,
    "tp1": 2408.89,
    "created": "2026-10-16T18:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2434.27,
    "notified_sl": 2459.65,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-16T20:04:59.760219+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -2871,7 +2872,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   }
  ],
@@ -2882,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-16T20:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-16T20:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-16T20:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-16T20:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-16T20:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-16T20:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-16T20:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-16T20:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-16T20:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-16T20:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-16T20:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-16T20:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-16T20:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-16T20:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/singapore-dollar-priced-in-mas-move-limits-gains-against-us-dollar-ocbc-202610131923": "2026-10-13T20:00:27.778057+00:00",
   "https://www.fxstreet.com/news/gbp-jpy-price-forecast-bulls-challenge-21000-as-breakout-looms-202610132007": "2026-10-13T20:21:18.906217+00:00",
   "https://www.fxstreet.com/news/feds-collins-backs-september-hike-sees-oil-and-ai-driving-inflation-202610132016": "2026-10-13T20:31:36.672147+00:00",
   "https://www.fxstreet.com/news/chinese-yuan-outlook-stays-mildly-positive-against-us-dollar-uob-202610132033": "2026-10-13T21:23:29.356126+00:00",
@@ -3019,10 +3019,10 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-16T18:27:36.400454+00:00"
  },
  "timers": {
-  "crowd": 1792177877.760332,
-  "headlines": 1792180810.2217612,
-  "scan": 1792180987.9315643,
-  "follow": 1792180779.5438669
+  "crowd": 1792181496.2900395,
+  "headlines": 1792181435.0732124,
+  "scan": 1792181792.5253518,
+  "follow": 1792181731.7425454
  },
  "pushed_times": [],
  "last_checked": {
@@ -3088,6 +3088,6 @@
   "21ca5415": 1792160898.7752278,
   "c362b8d4": 1792158038.0540218,
   "ef1785bc": 1792179195.8451579,
-  "0f9491f8": 1792180779.8417451
+  "0f9491f8": 1792181100.1065774
  }
 }
