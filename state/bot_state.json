@@ -2883,19 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T08:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T08:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T08:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T08:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T08:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T08:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T08:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T08:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/british-pound-upside-extension-capped-by-13280-against-us-dollar-uob-202610140814": "2026-10-14T08:36:14.802600+00:00",
-  "https://www.fxstreet.com/news/new-zealand-dollar-gains-as-us-dollar-weakens-on-falling-yields-202610140817": "2026-10-14T08:36:14.802622+00:00",
-  "https://www.fxstreet.com/news/japanese-yen-extends-range-play-vs-usd-looks-to-us-cpi-report-for-some-impetus-202610140827": "2026-10-14T08:36:14.802630+00:00",
-  "https://www.fxstreet.com/news/us-cpi-data-expected-to-rise-in-september-as-markets-reassess-fed-rate-outlook-202610140830": "2026-10-14T08:36:14.802639+00:00",
   "https://www.fxstreet.com/news/gbp-jpy-price-forecast-testing-range-top-at-21020-amid-broad-pound-strength-202610140838": "2026-10-14T09:37:58.944944+00:00",
   "https://www.fxstreet.com/news/us-dollar-upside-risks-persist-ing-202610140843": "2026-10-14T09:37:58.944968+00:00",
   "https://www.fxstreet.com/news/dow-jones-futures-advance-as-us-treasury-yields-oil-prices-ease-202610140848": "2026-10-14T09:37:58.944977+00:00",
@@ -2964,20 +2960,21 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-16T15:01:52.935345+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T15:53:24.653332+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-16T18:27:36.400454+00:00",
-  "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00"
+  "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00",
+  "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00"
  },
  "timers": {
   "crowd": 1792224876.4675202,
-  "headlines": 1792226051.0270905,
-  "scan": 1792226173.0393214,
-  "follow": 1792226051.4349625
+  "headlines": 1792226669.7437756,
+  "scan": 1792226934.0234733,
+  "follow": 1792226991.1140645
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792223280.4655,
+  "d82f6843": 1792226678.4175704,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
