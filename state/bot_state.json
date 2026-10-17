@@ -2883,10 +2883,10 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T02:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T02:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T02:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T02:15:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T02:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T02:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T02:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T02:30:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
@@ -2999,13 +2999,14 @@
   "https://www.coindesk.com/daybook-us/2026/10/16/traders-will-soon-be-able-to-bet-on-whether-coinbase-robinhood-and-marathon-will-hit-their-targets": "2026-10-16T11:16:12.613982+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-16T15:01:52.935345+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T15:53:24.653332+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-16T18:27:36.400454+00:00"
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-16T18:27:36.400454+00:00",
+  "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00"
  },
  "timers": {
   "crowd": 1792203198.046443,
-  "headlines": 1792203166.926336,
-  "scan": 1792203573.2384837,
-  "follow": 1792203359.8549604
+  "headlines": 1792204411.1636178,
+  "scan": 1792204411.8102224,
+  "follow": 1792204288.8966181
  },
  "pushed_times": [],
  "last_checked": {
