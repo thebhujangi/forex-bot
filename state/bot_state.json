@@ -2883,17 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T04:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T04:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T04:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T04:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T04:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T04:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T04:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T04:15:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-remains-above-5900-amid-dovish-fed-remarks-202610140333": "2026-10-14T04:07:23.316774+00:00",
-  "https://www.fxstreet.com/news/eur-usd-price-forecast-gains-ground-near-11150-us-cpi-awaited-202610140335": "2026-10-14T04:07:23.316797+00:00",
   "https://www.fxstreet.com/news/gold-draws-support-from-retreating-usd-holds-above-4-150-as-traders-await-us-cpi-report-202610140409": "2026-10-14T04:27:54.337879+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/top-3-price-predictions-bitcoin-ethereum-ripple-btc-eyes-85-000-eth-holds-support-xrp-stabilizes-202610140415": "2026-10-14T04:27:54.337905+00:00",
   "https://www.fxstreet.com/news/gbp-usd-price-forecast-hits-one-week-top-as-bulls-eye-range-breakout-above-13300-202610140427": "2026-10-14T05:19:32.796766+00:00",
@@ -2994,10 +2992,10 @@
   "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00"
  },
  "timers": {
-  "crowd": 1792206823.8356996,
-  "headlines": 1792210002.5386815,
-  "scan": 1792210033.8503137,
-  "follow": 1792209880.4272184
+  "crowd": 1792210426.8167489,
+  "headlines": 1792210622.6593843,
+  "scan": 1792210867.7477362,
+  "follow": 1792210806.6948724
  },
  "pushed_times": [],
  "last_checked": {
