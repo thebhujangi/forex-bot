@@ -2883,19 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T05:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T05:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T05:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T05:15:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T05:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T05:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T05:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T05:30:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/gbp-usd-price-forecast-hits-one-week-top-as-bulls-eye-range-breakout-above-13300-202610140427": "2026-10-14T05:19:32.796766+00:00",
-  "https://www.fxstreet.com/news/india-gold-price-today-gold-steadies-according-to-fxstreet-data-202610140435": "2026-10-14T05:29:51.691401+00:00",
-  "https://www.fxstreet.com/news/eur-jpy-price-forecast-gains-ground-below-17750-but-stays-bearish-below-100-day-sma-202610140451": "2026-10-14T05:29:51.691416+00:00",
-  "https://www.coindesk.com/tech/2026/10/14/ripple-adds-stripe-owned-wallets-to-xrp-ledger-as-ai-payments-pass-14-million": "2026-10-14T05:29:51.691421+00:00",
   "https://cointelegraph.com/markets/feds-williams-sees-ai-supply-squeeze-lasting-beyond-2-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T05:40:48.525169+00:00",
   "https://www.coindesk.com/tech/2026/10/14/coinbase-which-holds-5-of-all-bitcoin-wants-the-quantum-fix-started-now": "2026-10-14T05:50:51.243495+00:00",
   "https://www.fxstreet.com/news/swiss-franc-strengthens-as-us-dollar-slips-on-dovish-fed-signals-202610140528": "2026-10-14T06:01:29.799688+00:00",
@@ -2991,9 +2987,9 @@
  },
  "timers": {
   "crowd": 1792214044.660075,
-  "headlines": 1792214314.0133255,
-  "scan": 1792214895.4439595,
-  "follow": 1792214834.3008063
+  "headlines": 1792215583.5900986,
+  "scan": 1792215706.369683,
+  "follow": 1792215461.0343504
  },
  "pushed_times": [],
  "last_checked": {
