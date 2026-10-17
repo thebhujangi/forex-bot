@@ -2883,19 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T03:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T03:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T03:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T03:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T03:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T03:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T03:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T03:15:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-14T03:15:14.444035+00:00",
-  "https://www.fxstreet.com/news/lagarde-speech-were-not-seeing-any-second-round-effects-yet-202610140236": "2026-10-14T03:25:15.150912+00:00",
-  "https://www.fxstreet.com/news/united-states-dollar-index-weakens-to-near-10200-ahead-of-us-cpi-release-202610140243": "2026-10-14T03:25:15.150932+00:00",
-  "https://www.fxstreet.com/news/canadian-dollar-edges-up-against-us-dollar-ahead-of-us-cpi-data-202610140307": "2026-10-14T03:25:15.150943+00:00",
   "https://www.coindesk.com/markets/2026/10/14/bitcoin-climbs-toward-usd84-000-after-fed-s-williams-sees-no-rate-hikes-in-2027": "2026-10-14T03:56:57.201363+00:00",
   "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-remains-above-5900-amid-dovish-fed-remarks-202610140333": "2026-10-14T04:07:23.316774+00:00",
   "https://www.fxstreet.com/news/eur-usd-price-forecast-gains-ground-near-11150-us-cpi-awaited-202610140335": "2026-10-14T04:07:23.316797+00:00",
@@ -3000,9 +2996,9 @@
  },
  "timers": {
   "crowd": 1792206823.8356996,
-  "headlines": 1792206245.5209093,
-  "scan": 1792206824.0157309,
-  "follow": 1792206762.9560874
+  "headlines": 1792207518.97378,
+  "scan": 1792207641.7331545,
+  "follow": 1792207396.4384217
  },
  "pushed_times": [],
  "last_checked": {
