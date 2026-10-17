@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T12:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T12:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T12:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T12:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T12:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T12:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T12:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T12:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/14/u-s-september-cpi-comes-in-hot-sending-bitcoin-sharply-lower": "2026-10-14T12:34:40.778742+00:00",
   "https://cointelegraph.com/news/qivalis-authorization-dutch-central-bank-euro-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T13:05:30.258713+00:00",
   "https://www.coindesk.com/business/2026/10/14/former-ftx-europe-chief-targets-u-s-stock-tokenization-with-new-sec-exemption": "2026-10-14T14:17:46.465927+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-dips-yields-surge-as-high-oil-prices-spike-us-cpi-inflation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T14:37:58.789003+00:00",
@@ -2950,9 +2949,9 @@
  },
  "timers": {
   "crowd": 1792239346.916932,
-  "headlines": 1792240260.5495872,
-  "scan": 1792240606.2075043,
-  "follow": 1792240661.494117
+  "headlines": 1792240866.4725552,
+  "scan": 1792241451.7257035,
+  "follow": 1792241299.8047817
  },
  "pushed_times": [],
  "last_checked": {
