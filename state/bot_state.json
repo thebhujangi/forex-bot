@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T03:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T03:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T03:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T03:45:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T04:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T04:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T04:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T04:00:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/14/bitcoin-climbs-toward-usd84-000-after-fed-s-williams-sees-no-rate-hikes-in-2027": "2026-10-14T03:56:57.201363+00:00",
   "https://www.fxstreet.com/news/silver-price-forecast-xag-usd-remains-above-5900-amid-dovish-fed-remarks-202610140333": "2026-10-14T04:07:23.316774+00:00",
   "https://www.fxstreet.com/news/eur-usd-price-forecast-gains-ground-near-11150-us-cpi-awaited-202610140335": "2026-10-14T04:07:23.316797+00:00",
   "https://www.fxstreet.com/news/gold-draws-support-from-retreating-usd-holds-above-4-150-as-traders-await-us-cpi-report-202610140409": "2026-10-14T04:27:54.337879+00:00",
@@ -2996,16 +2995,16 @@
  },
  "timers": {
   "crowd": 1792206823.8356996,
-  "headlines": 1792208753.9727314,
-  "scan": 1792209256.1059222,
-  "follow": 1792209256.1084838
+  "headlines": 1792210002.5386815,
+  "scan": 1792210033.8503137,
+  "follow": 1792209880.4272184
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792206153.9812193,
+  "d82f6843": 1792209566.3220632,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
