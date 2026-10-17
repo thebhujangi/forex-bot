@@ -2892,8 +2892,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/policy/2026/10/14/dutch-regulator-approves-qivalis-as-electronic-money-institution-under-mica-rules": "2026-10-14T11:21:55.016964+00:00",
-  "https://www.coindesk.com/daybook-us/2026/10/14/here-s-how-analysts-see-u-s-inflation-influencing-bitcoin": "2026-10-14T11:21:55.016985+00:00",
   "https://www.coindesk.com/markets/2026/10/14/u-s-september-cpi-comes-in-hot-sending-bitcoin-sharply-lower": "2026-10-14T12:34:40.778742+00:00",
   "https://cointelegraph.com/news/qivalis-authorization-dutch-central-bank-euro-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T13:05:30.258713+00:00",
   "https://www.coindesk.com/business/2026/10/14/former-ftx-europe-chief-targets-u-s-stock-tokenization-with-new-sec-exemption": "2026-10-14T14:17:46.465927+00:00",
@@ -2952,9 +2950,9 @@
  },
  "timers": {
   "crowd": 1792235727.939221,
-  "headlines": 1792235329.8194604,
-  "scan": 1792235831.0152643,
-  "follow": 1792235697.3349912
+  "headlines": 1792236555.8412483,
+  "scan": 1792236587.1058626,
+  "follow": 1792236617.5960586
  },
  "pushed_times": [],
  "last_checked": {
