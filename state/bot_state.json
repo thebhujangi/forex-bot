@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T11:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T11:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T11:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T11:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T11:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T11:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T11:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T11:15:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/14/bitcoin-holds-above-usd83-000-ahead-of-u-s-inflation-data-as-altcoins-lag": "2026-10-14T11:01:19.210916+00:00",
   "https://www.coindesk.com/policy/2026/10/14/dutch-regulator-approves-qivalis-as-electronic-money-institution-under-mica-rules": "2026-10-14T11:21:55.016964+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/14/here-s-how-analysts-see-u-s-inflation-influencing-bitcoin": "2026-10-14T11:21:55.016985+00:00",
   "https://www.coindesk.com/markets/2026/10/14/u-s-september-cpi-comes-in-hot-sending-bitcoin-sharply-lower": "2026-10-14T12:34:40.778742+00:00",
@@ -2952,10 +2951,10 @@
   "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00"
  },
  "timers": {
-  "crowd": 1792232113.621054,
-  "headlines": 1792234707.975426,
-  "scan": 1792235021.3551037,
-  "follow": 1792234738.6662006
+  "crowd": 1792235727.939221,
+  "headlines": 1792235329.8194604,
+  "scan": 1792235831.0152643,
+  "follow": 1792235697.3349912
  },
  "pushed_times": [],
  "last_checked": {
