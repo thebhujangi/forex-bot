@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T10:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T10:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T10:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T10:15:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T10:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T10:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T10:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T10:30:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/standard-chartered-bitcoin-ether-trading-professional-investors-uae?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T10:19:54.720825+00:00",
   "https://cointelegraph.com/news/bitcoin-less-volatile-larger-gold-bitcoin-standard-author?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T10:40:24.066599+00:00",
   "https://cointelegraph.com/markets/cryptoquant-charts-bitcoin-uptober-thesis-valid?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T10:50:38.892988+00:00",
   "https://www.coindesk.com/markets/2026/10/14/bitcoin-holds-above-usd83-000-ahead-of-u-s-inflation-data-as-altcoins-lag": "2026-10-14T11:01:19.210916+00:00",
@@ -2956,9 +2955,9 @@
  },
  "timers": {
   "crowd": 1792232113.621054,
-  "headlines": 1792232212.6703,
-  "scan": 1792232608.189294,
-  "follow": 1792232547.4221091
+  "headlines": 1792232827.7407303,
+  "scan": 1792233420.6308405,
+  "follow": 1792233175.9644394
  },
  "pushed_times": [],
  "last_checked": {
