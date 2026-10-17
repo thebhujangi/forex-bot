@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T05:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T05:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T05:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T05:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T05:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T05:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T05:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T05:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/markets/feds-williams-sees-ai-supply-squeeze-lasting-beyond-2-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T05:40:48.525169+00:00",
   "https://www.coindesk.com/tech/2026/10/14/coinbase-which-holds-5-of-all-bitcoin-wants-the-quantum-fix-started-now": "2026-10-14T05:50:51.243495+00:00",
   "https://www.fxstreet.com/news/swiss-franc-strengthens-as-us-dollar-slips-on-dovish-fed-signals-202610140528": "2026-10-14T06:01:29.799688+00:00",
   "https://www.fxstreet.com/news/new-zealand-dollar-drifts-higher-above-05600-all-eyes-on-us-cpi-inflation-data-202610140550": "2026-10-14T06:22:18.730734+00:00",
@@ -2987,16 +2986,16 @@
  },
  "timers": {
   "crowd": 1792214044.660075,
-  "headlines": 1792215583.5900986,
-  "scan": 1792215706.369683,
-  "follow": 1792215461.0343504
+  "headlines": 1792216196.9774182,
+  "scan": 1792216479.9579973,
+  "follow": 1792216410.9479337
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792212975.3426924,
+  "d82f6843": 1792216419.0430236,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
