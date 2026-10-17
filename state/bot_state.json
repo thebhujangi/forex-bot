@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T14:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T14:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T14:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T14:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T14:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T14:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T14:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T14:15:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/business/2026/10/14/former-ftx-europe-chief-targets-u-s-stock-tokenization-with-new-sec-exemption": "2026-10-14T14:17:46.465927+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-dips-yields-surge-as-high-oil-prices-spike-us-cpi-inflation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T14:37:58.789003+00:00",
   "https://www.coindesk.com/coindesk-indices/2026/10/14/crypto-long-and-short-why-gold-and-bitcoin-belong-in-the-same-portfolio": "2026-10-14T15:08:40.423333+00:00",
   "https://cointelegraph.com/news/eba-circle-usdc-stablecoin-significant-token-mica?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T19:15:01.036369+00:00",
@@ -2947,10 +2946,10 @@
   "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00"
  },
  "timers": {
-  "crowd": 1792242983.1659286,
-  "headlines": 1792245836.8213952,
-  "scan": 1792246294.9970157,
-  "follow": 1792246294.9987435
+  "crowd": 1792246609.1257577,
+  "headlines": 1792247065.198253,
+  "scan": 1792247095.9077768,
+  "follow": 1792246913.2595751
  },
  "pushed_times": [],
  "last_checked": {
