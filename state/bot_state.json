@@ -2883,17 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T00:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T00:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T00:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T00:45:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T01:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T01:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T01:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T01:00:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/cryptocurrencies/news/strategy-mstr-bitcoin-buying-model-faces-scrutiny-as-strc-costs-climb-202610140030": "2026-10-14T00:50:18.718406+00:00",
-  "https://www.fxstreet.com/news/euro-edges-higher-above-11200-despite-france-fiscal-risks-us-cpi-in-focus-202610140034": "2026-10-14T00:50:18.718422+00:00",
   "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67249-vs-67298-previous-202610140115": "2026-10-14T01:42:07.530704+00:00",
   "https://www.fxstreet.com/news/japanese-yen-softens-as-october-boj-hike-bets-fade-stuck-in-a-range-vs-usd-ahead-of-us-cpi-202610140127": "2026-10-14T01:42:07.530725+00:00",
   "https://www.fxstreet.com/news/breaking-chinas-cpi-inflation-rises-to-09-yoy-in-september-vs-10-expected-202610140131": "2026-10-14T01:42:07.530733+00:00",
@@ -3007,17 +3005,17 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-16T18:27:36.400454+00:00"
  },
  "timers": {
-  "crowd": 1792195954.3142862,
-  "headlines": 1792198175.175319,
-  "scan": 1792198754.575267,
-  "follow": 1792198663.1811686
+  "crowd": 1792199575.6876144,
+  "headlines": 1792199456.1392996,
+  "scan": 1792199517.7307868,
+  "follow": 1792199295.5267599
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792195862.1561737,
+  "d82f6843": 1792199303.6354206,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
