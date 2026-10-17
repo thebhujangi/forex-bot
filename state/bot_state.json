@@ -2883,20 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T08:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T08:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T08:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T08:15:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T08:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T08:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T08:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T08:30:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/euro-inflation-data-guides-near-term-commerzbank-202610140731": "2026-10-14T08:15:26.889848+00:00",
-  "https://www.coindesk.com/business/2026/10/14/standard-chartered-unlocks-direct-bitcoin-and-ether-trading-for-affluent-uae-clients": "2026-10-14T08:15:26.889870+00:00",
-  "https://www.fxstreet.com/news/euro-holds-mild-gains-above-11200-as-the-us-dollar-drifts-with-us-cpi-on-tap-202610140732": "2026-10-14T08:25:43.922402+00:00",
-  "https://www.fxstreet.com/news/indonesian-rupiah-remains-steady-as-bank-indonesia-interventions-limit-usd-idr-upside-202610140754": "2026-10-14T08:25:43.922426+00:00",
-  "https://www.fxstreet.com/news/aud-usd-price-forecast-extends-recovery-to-near-20-day-ema-202610140801": "2026-10-14T08:25:43.922435+00:00",
   "https://www.fxstreet.com/news/british-pound-upside-extension-capped-by-13280-against-us-dollar-uob-202610140814": "2026-10-14T08:36:14.802600+00:00",
   "https://www.fxstreet.com/news/new-zealand-dollar-gains-as-us-dollar-weakens-on-falling-yields-202610140817": "2026-10-14T08:36:14.802622+00:00",
   "https://www.fxstreet.com/news/japanese-yen-extends-range-play-vs-usd-looks-to-us-cpi-report-for-some-impetus-202610140827": "2026-10-14T08:36:14.802630+00:00",
@@ -2973,9 +2968,9 @@
  },
  "timers": {
   "crowd": 1792224876.4675202,
-  "headlines": 1792224785.010754,
-  "scan": 1792225371.7764544,
-  "follow": 1792225127.6916044
+  "headlines": 1792226051.0270905,
+  "scan": 1792226173.0393214,
+  "follow": 1792226051.4349625
  },
  "pushed_times": [],
  "last_checked": {
