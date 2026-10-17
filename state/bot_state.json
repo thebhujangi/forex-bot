@@ -2883,10 +2883,10 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T19:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T19:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T19:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T19:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T19:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T19:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T19:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T19:15:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
@@ -2945,17 +2945,17 @@
   "https://www.coindesk.com/business/2026/10/17/goldman-wells-fargo-morgan-stanley-see-tokenization-as-a-growth-play-not-a-threat": "2026-10-17T17:09:54.145288+00:00"
  },
  "timers": {
-  "crowd": 1792261066.9887147,
-  "headlines": 1792263782.9931884,
-  "scan": 1792263998.7107625,
-  "follow": 1792263752.4360113
+  "crowd": 1792264687.2362611,
+  "headlines": 1792264400.3275838,
+  "scan": 1792264779.1285796,
+  "follow": 1792264687.54142
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792260975.586013,
+  "d82f6843": 1792264369.815155,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
