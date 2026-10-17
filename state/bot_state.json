@@ -2877,16 +2877,16 @@
   }
  ],
  "last_signal_bar": {
-  "crypto_trend:BTCUSD": "2026-10-16T21:00:00+00:00",
-  "crypto_trend:ETHUSD": "2026-10-16T21:00:00+00:00",
-  "crypto_trend:XRPUSD": "2026-10-16T21:00:00+00:00",
+  "crypto_trend:BTCUSD": "2026-10-17T21:00:00+00:00",
+  "crypto_trend:ETHUSD": "2026-10-17T21:00:00+00:00",
+  "crypto_trend:XRPUSD": "2026-10-17T21:00:00+00:00",
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T20:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T20:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T20:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T20:45:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T21:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T21:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T21:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T21:00:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
@@ -2945,16 +2945,16 @@
  },
  "timers": {
   "crowd": 1792268312.0750365,
-  "headlines": 1792270012.27824,
-  "scan": 1792270439.1149714,
-  "follow": 1792270317.2668242
+  "headlines": 1792271236.2063153,
+  "scan": 1792271205.646797,
+  "follow": 1792271236.678927
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792267840.2245443,
+  "d82f6843": 1792271244.7958891,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
