@@ -2892,7 +2892,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/australian-dollar-climbs-as-feds-williams-push-the-brakes-on-rates-202610132334": "2026-10-14T00:40:12.685809+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/strategy-mstr-bitcoin-buying-model-faces-scrutiny-as-strc-costs-climb-202610140030": "2026-10-14T00:50:18.718406+00:00",
   "https://www.fxstreet.com/news/euro-edges-higher-above-11200-despite-france-fiscal-risks-us-cpi-in-focus-202610140034": "2026-10-14T00:50:18.718422+00:00",
   "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67249-vs-67298-previous-202610140115": "2026-10-14T01:42:07.530704+00:00",
@@ -3009,9 +3008,9 @@
  },
  "timers": {
   "crowd": 1792195954.3142862,
-  "headlines": 1792197551.3772647,
-  "scan": 1792197949.5182288,
-  "follow": 1792197735.2998273
+  "headlines": 1792198175.175319,
+  "scan": 1792198754.575267,
+  "follow": 1792198663.1811686
  },
  "pushed_times": [],
  "last_checked": {
