@@ -2883,10 +2883,10 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T19:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T19:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T19:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T19:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T19:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T19:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T19:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T19:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
@@ -2945,9 +2945,9 @@
  },
  "timers": {
   "crowd": 1792264687.2362611,
-  "headlines": 1792265011.3428173,
-  "scan": 1792265593.0852933,
-  "follow": 1792265315.8181472
+  "headlines": 1792266275.826582,
+  "scan": 1792266407.4601421,
+  "follow": 1792266276.4775732
  },
  "pushed_times": [],
  "last_checked": {
