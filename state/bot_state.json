@@ -2883,18 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T02:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T02:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T02:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T02:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T02:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T02:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T02:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T02:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/british-pound-strengthens-above-13250-traders-await-us-cpi-inflation-data-202610140145": "2026-10-14T02:33:50.139649+00:00",
-  "https://www.fxstreet.com/news/australian-dollar-holds-gains-following-chinese-inflation-data-202610140146": "2026-10-14T02:33:50.139678+00:00",
-  "https://www.fxstreet.com/news/new-zealand-dollar-clings-to-gains-near-05620-vs-usd-after-chinas-inflation-data-202610140150": "2026-10-14T02:33:50.139709+00:00",
   "https://www.fxstreet.com/news/australian-dollar-gains-against-japanese-yen-as-china-cpi-inflation-rises-in-september-202610140224": "2026-10-14T02:54:22.313046+00:00",
   "https://www.fxstreet.com/cryptocurrencies/news/ethereum-price-forecast-weakening-derivatives-and-us-sentiment-keep-eth-below-2-500-202610100748": "2026-10-14T03:15:14.444035+00:00",
   "https://www.fxstreet.com/news/lagarde-speech-were-not-seeing-any-second-round-effects-yet-202610140236": "2026-10-14T03:25:15.150912+00:00",
@@ -3004,9 +3001,9 @@
  },
  "timers": {
   "crowd": 1792203198.046443,
-  "headlines": 1792204411.1636178,
-  "scan": 1792204411.8102224,
-  "follow": 1792204288.8966181
+  "headlines": 1792205019.3099127,
+  "scan": 1792205209.576721,
+  "follow": 1792205209.5790803
  },
  "pushed_times": [],
  "last_checked": {
