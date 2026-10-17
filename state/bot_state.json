@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T19:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T19:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T19:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T19:15:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T19:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T19:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T19:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T19:30:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/eba-circle-usdc-stablecoin-significant-token-mica?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-14T19:15:01.036369+00:00",
   "https://cointelegraph.com/news/vaneck-seeks-to-withdraw-application-for-lido-staked-ether-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T01:37:24.181851+00:00",
   "https://cointelegraph.com/markets/bitcoin-miners-plunge-up-to-13-in-wall-streets-worst-selloff-since-july?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T03:41:12.762275+00:00",
   "https://www.coindesk.com/markets/2026/10/15/bitcoin-is-back-below-usd81-000-as-fed-rate-uncertainty-weighs": "2026-10-15T04:01:58.739964+00:00",
@@ -2946,9 +2945,9 @@
  },
  "timers": {
   "crowd": 1792264687.2362611,
-  "headlines": 1792264400.3275838,
-  "scan": 1792264779.1285796,
-  "follow": 1792264687.54142
+  "headlines": 1792265011.3428173,
+  "scan": 1792265593.0852933,
+  "follow": 1792265315.8181472
  },
  "pushed_times": [],
  "last_checked": {
