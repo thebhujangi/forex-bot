@@ -2883,18 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T01:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T01:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T01:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T01:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T01:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T01:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T01:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T01:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67249-vs-67298-previous-202610140115": "2026-10-14T01:42:07.530704+00:00",
-  "https://www.fxstreet.com/news/japanese-yen-softens-as-october-boj-hike-bets-fade-stuck-in-a-range-vs-usd-ahead-of-us-cpi-202610140127": "2026-10-14T01:42:07.530725+00:00",
-  "https://www.fxstreet.com/news/breaking-chinas-cpi-inflation-rises-to-09-yoy-in-september-vs-10-expected-202610140131": "2026-10-14T01:42:07.530733+00:00",
   "https://www.fxstreet.com/news/british-pound-strengthens-above-13250-traders-await-us-cpi-inflation-data-202610140145": "2026-10-14T02:33:50.139649+00:00",
   "https://www.fxstreet.com/news/australian-dollar-holds-gains-following-chinese-inflation-data-202610140146": "2026-10-14T02:33:50.139678+00:00",
   "https://www.fxstreet.com/news/new-zealand-dollar-clings-to-gains-near-05620-vs-usd-after-chinas-inflation-data-202610140150": "2026-10-14T02:33:50.139709+00:00",
@@ -3006,9 +3003,9 @@
  },
  "timers": {
   "crowd": 1792199575.6876144,
-  "headlines": 1792200699.878165,
-  "scan": 1792201190.2576606,
-  "follow": 1792201190.2600958
+  "headlines": 1792201935.7525718,
+  "scan": 1792201997.4009151,
+  "follow": 1792201813.5427694
  },
  "pushed_times": [],
  "last_checked": {
