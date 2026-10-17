@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T07:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T07:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T07:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T07:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T07:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T07:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T07:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T07:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.fxstreet.com/news/us-dollar-index-price-forecast-dxy-holds-above-10170-pivotal-support-ahead-of-us-cpi-202610140725": "2026-10-14T07:44:57.988375+00:00",
   "https://www.fxstreet.com/news/euro-inflation-data-guides-near-term-commerzbank-202610140731": "2026-10-14T08:15:26.889848+00:00",
   "https://www.coindesk.com/business/2026/10/14/standard-chartered-unlocks-direct-bitcoin-and-ether-trading-for-affluent-uae-clients": "2026-10-14T08:15:26.889870+00:00",
   "https://www.fxstreet.com/news/euro-holds-mild-gains-above-11200-as-the-us-dollar-drifts-with-us-cpi-on-tap-202610140732": "2026-10-14T08:25:43.922402+00:00",
@@ -2974,16 +2973,16 @@
  },
  "timers": {
   "crowd": 1792221266.0346465,
-  "headlines": 1792222952.8727272,
-  "scan": 1792222953.1836376,
-  "follow": 1792222953.1857843
+  "headlines": 1792223553.9645178,
+  "scan": 1792223767.0389187,
+  "follow": 1792223584.6375692
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792219858.311834,
+  "d82f6843": 1792223280.4655,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
