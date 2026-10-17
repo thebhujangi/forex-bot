@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-17T05:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-17T05:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-17T05:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-17T05:45:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-17T06:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-17T06:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-17T06:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-17T06:00:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/tech/2026/10/14/coinbase-which-holds-5-of-all-bitcoin-wants-the-quantum-fix-started-now": "2026-10-14T05:50:51.243495+00:00",
   "https://www.fxstreet.com/news/swiss-franc-strengthens-as-us-dollar-slips-on-dovish-fed-signals-202610140528": "2026-10-14T06:01:29.799688+00:00",
   "https://www.fxstreet.com/news/new-zealand-dollar-drifts-higher-above-05600-all-eyes-on-us-cpi-inflation-data-202610140550": "2026-10-14T06:22:18.730734+00:00",
   "https://www.fxstreet.com/news/british-pound-gains-as-uk-assures-fiscal-discipline-202610140604": "2026-10-14T06:22:18.730759+00:00",
@@ -2986,9 +2985,9 @@
  },
  "timers": {
   "crowd": 1792214044.660075,
-  "headlines": 1792216196.9774182,
-  "scan": 1792216479.9579973,
-  "follow": 1792216410.9479337
+  "headlines": 1792216811.4492288,
+  "scan": 1792217312.243489,
+  "follow": 1792217036.8896868
  },
  "pushed_times": [],
  "last_checked": {
