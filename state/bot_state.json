@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-18T17:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-18T17:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-18T17:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-18T17:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-18T17:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-18T17:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-18T17:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-18T17:15:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T17:03:01.173042+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-16T03:22:17.249814+00:00",
   "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound": "2026-10-16T04:24:04.392430+00:00",
   "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own": "2026-10-16T04:34:14.378649+00:00",
@@ -2930,20 +2929,21 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm": "2026-10-18T14:39:54.744370+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm": "2026-10-18T14:39:54.744374+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-18T14:39:54.744378+00:00",
-  "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last": "2026-10-18T16:34:09.684302+00:00"
+  "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last": "2026-10-18T16:34:09.684302+00:00",
+  "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T17:15:05.724992+00:00"
  },
  "timers": {
   "crowd": 1792340632.6902957,
-  "headlines": 1792342488.4133644,
-  "scan": 1792342928.4130068,
-  "follow": 1792342733.952388
+  "headlines": 1792343705.1648927,
+  "scan": 1792343736.3047404,
+  "follow": 1792343674.6168013
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792339646.649922,
+  "d82f6843": 1792343062.8346941,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
