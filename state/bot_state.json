@@ -2883,10 +2883,10 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-18T16:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-18T16:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-18T16:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-18T16:15:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-18T16:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-18T16:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-18T16:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-18T16:30:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
@@ -2929,13 +2929,14 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm": "2026-10-18T14:39:54.744366+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm": "2026-10-18T14:39:54.744370+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm": "2026-10-18T14:39:54.744374+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-18T14:39:54.744378+00:00"
+  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-18T14:39:54.744378+00:00",
+  "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last": "2026-10-18T16:34:09.684302+00:00"
  },
  "timers": {
-  "crowd": 1792337007.639935,
-  "headlines": 1792340011.78924,
-  "scan": 1792340477.2277603,
-  "follow": 1792340263.2469823
+  "crowd": 1792340632.6902957,
+  "headlines": 1792341249.320867,
+  "scan": 1792341310.4483247,
+  "follow": 1792341188.5650449
  },
  "pushed_times": [],
  "last_checked": {
