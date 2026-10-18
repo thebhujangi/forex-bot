@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-18T07:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-18T07:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-18T07:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-18T07:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-18T07:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-18T07:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-18T07:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-18T07:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/markets/bitcoin-etf-outflow-btc-below-82k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T07:37:09.042807+00:00",
   "https://cointelegraph.com/news/babylon-native-bitcoin-collateral-aave-v4-proposal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T09:20:23.867697+00:00",
   "https://cointelegraph.com/markets/bitcoin-dips-korea-kospi-lowest-close-since-april?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T10:01:44.874104+00:00",
   "https://www.coindesk.com/business/2026/10/15/live-updates-bitcoin-back-under-usd81-000-as-ai-selloff-worsens": "2026-10-15T10:22:25.221311+00:00",
@@ -2941,9 +2940,9 @@
  },
  "timers": {
   "crowd": 1792308103.630207,
-  "headlines": 1792309015.2292075,
-  "scan": 1792309046.2365882,
-  "follow": 1792308853.9257596
+  "headlines": 1792309630.6582897,
+  "scan": 1792309906.2826533,
+  "follow": 1792309784.168046
  },
  "pushed_times": [],
  "last_checked": {
