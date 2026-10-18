@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-18T10:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-18T10:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-18T10:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-18T10:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-18T10:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-18T10:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-18T10:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-18T10:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/starknet-vote-ethereum-l2-exit-post-quantum-l1?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T10:32:36.640268+00:00",
   "https://www.coindesk.com/markets/2026/10/15/bitcoin-holds-above-usd80-000-as-an-asian-stock-rout-drags-altcoins-lower": "2026-10-15T10:52:53.847689+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/15/bitcoin-copper-stocks-yields-all-fall-gold-rises": "2026-10-15T11:23:47.765047+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260910a.htm": "2026-10-15T14:28:51.311182+00:00",
@@ -2937,9 +2936,9 @@
  },
  "timers": {
   "crowd": 1792318957.0212746,
-  "headlines": 1792319551.6431122,
-  "scan": 1792319521.168508,
-  "follow": 1792319360.7234464
+  "headlines": 1792320164.17724,
+  "scan": 1792320348.3941708,
+  "follow": 1792320287.1190476
  },
  "pushed_times": [],
  "last_checked": {
