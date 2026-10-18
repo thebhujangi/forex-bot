@@ -109,7 +109,7 @@
   "done:ef1785bc": "2026-10-16T19:33:17.040930+00:00",
   "expired:0f9491f8": "2026-10-16T20:05:00.687674+00:00"
  },
- "offset": 508857102,
+ "offset": 508857103,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -2944,10 +2944,10 @@
   "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut": "2026-10-18T01:15:18.051304+00:00"
  },
  "timers": {
-  "crowd": 1792286406.6201136,
-  "headlines": 1792289213.0557642,
-  "scan": 1792289760.3989983,
-  "follow": 1792289608.4734957
+  "crowd": 1792290016.9759905,
+  "headlines": 1792290444.572748,
+  "scan": 1792290566.849368,
+  "follow": 1792290536.3607688
  },
  "pushed_times": [],
  "last_checked": {
