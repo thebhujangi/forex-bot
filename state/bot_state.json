@@ -2892,7 +2892,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/15/bitcoin-holds-above-usd80-000-as-an-asian-stock-rout-drags-altcoins-lower": "2026-10-15T10:52:53.847689+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/15/bitcoin-copper-stocks-yields-all-fall-gold-rises": "2026-10-15T11:23:47.765047+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260910a.htm": "2026-10-15T14:28:51.311182+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-15T14:28:51.311202+00:00",
@@ -2936,9 +2935,9 @@
  },
  "timers": {
   "crowd": 1792318957.0212746,
-  "headlines": 1792320164.17724,
-  "scan": 1792320348.3941708,
-  "follow": 1792320287.1190476
+  "headlines": 1792320791.0072036,
+  "scan": 1792321158.9104588,
+  "follow": 1792320913.8548858
  },
  "pushed_times": [],
  "last_checked": {
