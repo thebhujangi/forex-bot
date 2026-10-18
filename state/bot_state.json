@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-18T04:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-18T04:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-18T04:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-18T04:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-18T04:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-18T04:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-18T04:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-18T04:15:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/15/bitcoin-is-back-below-usd81-000-as-fed-rate-uncertainty-weighs": "2026-10-15T04:01:58.739964+00:00",
   "https://www.coindesk.com/markets/2026/10/15/bitcoin-mining-pool-once-handling-2-3-of-network-shuts-after-hashrate-falls-65": "2026-10-15T04:22:32.797086+00:00",
   "https://www.coindesk.com/markets/2026/10/15/nearly-usd1-billion-in-crypto-bets-liquidated-as-bitcoin-ether-and-xrp-slide": "2026-10-15T04:32:35.810391+00:00",
   "https://www.coindesk.com/markets/2026/10/15/blackrock-s-larry-fink-names-a-u-s-recession-trigger-and-its-tied-to-ai": "2026-10-15T06:25:12.447033+00:00",
@@ -2944,9 +2943,9 @@
  },
  "timers": {
   "crowd": 1792293639.5772212,
-  "headlines": 1792296012.0900986,
-  "scan": 1792296174.8805673,
-  "follow": 1792296144.459641
+  "headlines": 1792296630.7697,
+  "scan": 1792297006.1397982,
+  "follow": 1792296753.3631306
  },
  "pushed_times": [],
  "last_checked": {
