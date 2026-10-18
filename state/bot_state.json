@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-18T10:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-18T10:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-18T10:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-18T10:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-18T10:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-18T10:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-18T10:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-18T10:15:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/markets/bitcoin-dips-korea-kospi-lowest-close-since-april?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T10:01:44.874104+00:00",
   "https://www.coindesk.com/business/2026/10/15/live-updates-bitcoin-back-under-usd81-000-as-ai-selloff-worsens": "2026-10-15T10:22:25.221311+00:00",
   "https://cointelegraph.com/news/starknet-vote-ethereum-l2-exit-post-quantum-l1?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T10:32:36.640268+00:00",
   "https://www.coindesk.com/markets/2026/10/15/bitcoin-holds-above-usd80-000-as-an-asian-stock-rout-drags-altcoins-lower": "2026-10-15T10:52:53.847689+00:00",
@@ -2939,9 +2938,9 @@
  },
  "timers": {
   "crowd": 1792315334.7839503,
-  "headlines": 1792317687.5493593,
-  "scan": 1792317932.2396545,
-  "follow": 1792317810.0883996
+  "headlines": 1792318304.5743854,
+  "scan": 1792318745.4422631,
+  "follow": 1792318745.4445112
  },
  "pushed_times": [],
  "last_checked": {
