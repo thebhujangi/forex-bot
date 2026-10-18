@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-18T01:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-18T01:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-18T01:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-18T01:30:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-18T01:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-18T01:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-18T01:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-18T01:45:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/vaneck-seeks-to-withdraw-application-for-lido-staked-ether-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T01:37:24.181851+00:00",
   "https://cointelegraph.com/markets/bitcoin-miners-plunge-up-to-13-in-wall-streets-worst-selloff-since-july?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T03:41:12.762275+00:00",
   "https://www.coindesk.com/markets/2026/10/15/bitcoin-is-back-below-usd81-000-as-fed-rate-uncertainty-weighs": "2026-10-15T04:01:58.739964+00:00",
   "https://www.coindesk.com/markets/2026/10/15/bitcoin-mining-pool-once-handling-2-3-of-network-shuts-after-hashrate-falls-65": "2026-10-15T04:22:32.797086+00:00",
@@ -2946,9 +2945,9 @@
  },
  "timers": {
   "crowd": 1792286406.6201136,
-  "headlines": 1792287361.2671618,
-  "scan": 1792287361.96253,
-  "follow": 1792287117.4873886
+  "headlines": 1792287989.962779,
+  "scan": 1792288174.3357282,
+  "follow": 1792288051.9382486
  },
  "pushed_times": [],
  "last_checked": {
