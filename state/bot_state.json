@@ -2883,16 +2883,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-15T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-15T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-18T09:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-18T09:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-18T09:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-18T09:15:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-18T09:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-18T09:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-18T09:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-18T09:30:00+00:00",
   "x_fx_ny_range:XAUUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:EURUSD": "2026-10-16T20:45:00+00:00",
   "x_fx_ny_range:GBPUSD": "2026-10-16T20:45:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/babylon-native-bitcoin-collateral-aave-v4-proposal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T09:20:23.867697+00:00",
   "https://cointelegraph.com/markets/bitcoin-dips-korea-kospi-lowest-close-since-april?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T10:01:44.874104+00:00",
   "https://www.coindesk.com/business/2026/10/15/live-updates-bitcoin-back-under-usd81-000-as-ai-selloff-worsens": "2026-10-15T10:22:25.221311+00:00",
   "https://cointelegraph.com/news/starknet-vote-ethereum-l2-exit-post-quantum-l1?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-15T10:32:36.640268+00:00",
@@ -2940,16 +2939,16 @@
  },
  "timers": {
   "crowd": 1792315334.7839503,
-  "headlines": 1792315212.4168477,
-  "scan": 1792315518.024773,
-  "follow": 1792315335.1200457
+  "headlines": 1792315827.7344608,
+  "scan": 1792316295.238913,
+  "follow": 1792316264.720844
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792312254.0355468,
+  "d82f6843": 1792315644.801484,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
