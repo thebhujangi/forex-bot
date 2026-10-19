@@ -122,7 +122,10 @@
   "done:fcfe9abc": "2026-10-19T13:04:32.889410+00:00",
   "exit:c7bc3c7d:sl": "2026-10-19T13:04:33.714101+00:00",
   "done:c7bc3c7d": "2026-10-19T13:04:34.275539+00:00",
-  "expired:45649a04": "2026-10-19T13:04:34.865421+00:00"
+  "expired:45649a04": "2026-10-19T13:04:34.865421+00:00",
+  "filled:c49d1809": "2026-10-19T13:47:37.312231+00:00",
+  "oco:acf2b34c": "2026-10-19T13:47:37.911942+00:00",
+  "exit:c49d1809:tp1": "2026-10-19T13:52:43.460038+00:00"
  },
  "offset": 508857106,
  "initial_sl": {},
@@ -3344,13 +3347,13 @@
    "trail_distance": null,
    "tp1": 4180.62,
    "created": "2026-10-19T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 4172.37,
    "notified_sl": 4164.13,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-19T13:47:28.665908+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -3373,7 +3376,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -3415,8 +3418,8 @@
     "trail_distance": null,
     "reason": "Asian range 4157.91-4170.36 (0.19x daily ATR 67.23). Break below the low at the London open."
    },
-   "seen_exits": 0,
-   "fill_notified": false,
+   "seen_exits": 1,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   },
@@ -3604,13 +3607,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T13:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T13:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T13:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T13:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T13:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T13:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T13:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T13:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T13:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T13:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T13:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T13:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T13:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T13:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-16T15:01:52.935345+00:00",
@@ -3660,9 +3663,9 @@
  },
  "timers": {
   "crowd": 1792415038.497092,
-  "headlines": 1792416883.7708008,
-  "scan": 1792417393.5895104,
-  "follow": 1792417322.8362367
+  "headlines": 1792418116.5219264,
+  "scan": 1792418208.1346562,
+  "follow": 1792417962.8064735
  },
  "pushed_times": [],
  "last_checked": {
@@ -3739,12 +3742,12 @@
   "c7bc3c7d": 1792415073.1621342,
   "b3f471a5": 1792395511.5853179,
   "45649a04": 1792415074.276974,
-  "acf2b34c": 1792417322.9619243,
-  "c49d1809": 1792417330.9511306,
-  "413ed8f1": 1792417338.941438,
-  "61ae0923": 1792417346.9372096,
-  "9c92e529": 1792417354.9387364,
-  "f98b2518": 1792417362.9487436
+  "acf2b34c": 1792417648.7217298,
+  "c49d1809": 1792417962.8661942,
+  "413ed8f1": 1792417970.8527858,
+  "61ae0923": 1792417978.8525782,
+  "9c92e529": 1792417986.850405,
+  "f98b2518": 1792417994.8509898
  },
  "last_report": "2026-W42"
 }
