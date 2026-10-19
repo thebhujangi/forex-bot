@@ -3017,13 +3017,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T03:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T03:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T03:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T03:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T03:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T03:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T03:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T04:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T04:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T04:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T04:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T04:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T04:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T04:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound": "2026-10-16T04:24:04.392430+00:00",
@@ -3069,9 +3069,9 @@
  },
  "timers": {
   "crowd": 1792380454.8750417,
-  "headlines": 1792382035.0982099,
-  "scan": 1792382370.5980165,
-  "follow": 1792382218.0671349
+  "headlines": 1792382650.1851556,
+  "scan": 1792383167.9162152,
+  "follow": 1792383137.2786353
  },
  "pushed_times": [],
  "last_checked": {
@@ -3140,7 +3140,7 @@
   "0f9491f8": 1792181100.1065774,
   "f5005c86": 1792378100.673981,
   "931de712": 1792381597.6598246,
-  "bc89c778": 1792382218.420091
+  "bc89c778": 1792383137.5507965
  },
  "last_report": "2026-W42"
 }
