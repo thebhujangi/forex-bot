@@ -3106,13 +3106,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T05:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T05:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T05:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T05:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T05:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T05:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T05:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T05:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T05:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T05:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T05:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T05:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T05:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T05:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why": "2026-10-16T05:56:00.350273+00:00",
@@ -3156,17 +3156,17 @@
   "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it": "2026-10-19T04:55:19.849022+00:00"
  },
  "timers": {
-  "crowd": 1792384082.4900796,
-  "headlines": 1792386977.0027244,
-  "scan": 1792387222.051764,
-  "follow": 1792386945.6371307
+  "crowd": 1792387697.3780894,
+  "headlines": 1792387604.1763754,
+  "scan": 1792388001.36865,
+  "follow": 1792387908.6299772
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792384407.243261,
+  "d82f6843": 1792387908.7585733,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -3229,8 +3229,8 @@
   "f5005c86": 1792378100.673981,
   "931de712": 1792381597.6598246,
   "bc89c778": 1792385346.0843806,
-  "eb6cb333": 1792386946.1162758,
-  "00e6c98f": 1792386946.5196793
+  "eb6cb333": 1792387909.1646876,
+  "00e6c98f": 1792387909.6585462
  },
  "last_report": "2026-W42"
 }
