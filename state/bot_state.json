@@ -3282,13 +3282,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T06:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T06:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T06:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T06:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T06:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T06:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T06:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T06:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T06:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T06:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T06:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T06:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T06:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T06:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T08:10:22.459771+00:00",
@@ -3332,17 +3332,17 @@
   "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131": "2026-10-19T06:27:53.430518+00:00"
  },
  "timers": {
-  "crowd": 1792387697.3780894,
-  "headlines": 1792391272.8275383,
-  "scan": 1792391242.2702465,
-  "follow": 1792390996.9522452
+  "crowd": 1792391344.3691711,
+  "headlines": 1792391875.388812,
+  "scan": 1792392060.5589693,
+  "follow": 1792391967.845013
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792387908.7585733,
+  "d82f6843": 1792391353.0855315,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -3405,12 +3405,12 @@
   "f5005c86": 1792378100.673981,
   "931de712": 1792381597.6598246,
   "bc89c778": 1792385346.0843806,
-  "eb6cb333": 1792390997.3409855,
-  "00e6c98f": 1792390997.6855435,
-  "fcfe9abc": 1792390997.6862905,
-  "5df066e7": 1792390997.686981,
-  "c7bc3c7d": 1792390997.6876786,
-  "b3f471a5": 1792390997.6883814
+  "eb6cb333": 1792391968.3383937,
+  "00e6c98f": 1792391968.7336,
+  "fcfe9abc": 1792391968.7343073,
+  "5df066e7": 1792391968.7349632,
+  "c7bc3c7d": 1792391968.7356231,
+  "b3f471a5": 1792391968.7362523
  },
  "last_report": "2026-W42"
 }
