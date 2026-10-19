@@ -3616,13 +3616,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T21:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T21:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T21:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T21:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T21:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T21:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T21:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T21:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T21:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T21:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T21:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00",
@@ -3677,9 +3677,9 @@
  },
  "timers": {
   "crowd": 1792444001.4741266,
-  "headlines": 1792444123.7001138,
-  "scan": 1792444307.028931,
-  "follow": 1792444276.5754914
+  "headlines": 1792444726.1776094,
+  "scan": 1792445126.1157973,
+  "follow": 1792444911.5744581
  },
  "pushed_times": [],
  "last_checked": {
