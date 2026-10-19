@@ -3575,13 +3575,13 @@
    "trail_distance": null,
    "tp1": 1.32994,
    "created": "2026-10-19T13:30:00+00:00",
-   "status": "skipped",
+   "status": "closed",
    "best": 1.33121,
    "notified_sl": 1.33248,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.5436422755905034,
+   "closed_at": "2026-10-19T19:30:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -3602,9 +3602,9 @@
     "trail_distance": null,
     "reason": "Asian range 1.33143-1.33353 (0.29x daily ATR 0.00730). Break below the low at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "time",
    "flags": [
     "maybe:f98b2518"
    ]
@@ -3617,13 +3617,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T19:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T19:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T19:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T19:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T19:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T19:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T19:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T19:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T19:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T19:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T19:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T19:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T19:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T19:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00",
@@ -3676,9 +3676,9 @@
  },
  "timers": {
   "crowd": 1792436770.3004136,
-  "headlines": 1792437333.7435374,
-  "scan": 1792437889.8181572,
-  "follow": 1792437675.7480192
+  "headlines": 1792438562.044616,
+  "scan": 1792438656.5591185,
+  "follow": 1792438624.0252357
  },
  "pushed_times": [],
  "last_checked": {
@@ -3760,7 +3760,7 @@
   "413ed8f1": 1792425318.7472012,
   "61ae0923": 1792432935.131009,
   "9c92e529": 1792423381.8090398,
-  "f98b2518": 1792437675.9611564
+  "f98b2518": 1792438624.4462845
  },
  "last_report": "2026-W42"
 }
