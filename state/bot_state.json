@@ -129,9 +129,11 @@
   "exit:c49d1809:be": "2026-10-19T14:03:16.127691+00:00",
   "done:c49d1809": "2026-10-19T14:03:16.793017+00:00",
   "maybe:61ae0923": "2026-10-19T14:24:02.244160+00:00",
-  "maybe:f98b2518": "2026-10-19T14:24:18.188077+00:00"
+  "maybe:f98b2518": "2026-10-19T14:24:18.188077+00:00",
+  "filled:f98b2518": "2026-10-19T15:23:10.556058+00:00",
+  "oco:9c92e529": "2026-10-19T15:23:11.326322+00:00"
  },
- "offset": 508857106,
+ "offset": 508857110,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -3439,7 +3441,7 @@
    "trail_distance": null,
    "tp1": 1.12415,
    "created": "2026-10-19T13:30:00+00:00",
-   "status": "new",
+   "status": "skipped",
    "best": 1.12306,
    "notified_sl": 1.12196,
    "warned_loss": false,
@@ -3483,7 +3485,7 @@
    "trail_distance": null,
    "tp1": 1.11978,
    "created": "2026-10-19T13:30:00+00:00",
-   "status": "new",
+   "status": "skipped",
    "best": 1.12087,
    "notified_sl": 1.12196,
    "warned_loss": false,
@@ -3529,13 +3531,13 @@
    "trail_distance": null,
    "tp1": 1.33502,
    "created": "2026-10-19T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.33375,
    "notified_sl": 1.33248,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-19T15:22:45.671544+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -3558,7 +3560,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -3573,7 +3575,7 @@
    "trail_distance": null,
    "tp1": 1.32994,
    "created": "2026-10-19T13:30:00+00:00",
-   "status": "new",
+   "status": "skipped",
    "best": 1.33121,
    "notified_sl": 1.33248,
    "warned_loss": false,
@@ -3601,7 +3603,7 @@
     "reason": "Asian range 1.33143-1.33353 (0.29x daily ATR 0.00730). Break below the low at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": [
     "maybe:f98b2518"
@@ -3615,13 +3617,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T15:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T15:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T15:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T15:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T15:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T15:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T15:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T15:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T15:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T15:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T15:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T15:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T15:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T15:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T15:53:24.653332+00:00",
@@ -3671,9 +3673,9 @@
  },
  "timers": {
   "crowd": 1792422281.0825746,
-  "headlines": 1792423061.3365579,
-  "scan": 1792423091.7151446,
-  "follow": 1792423062.0947683
+  "headlines": 1792423664.5031796,
+  "scan": 1792423900.2528734,
+  "follow": 1792423695.683473
  },
  "pushed_times": [],
  "last_checked": {
@@ -3752,10 +3754,10 @@
   "45649a04": 1792415074.276974,
   "acf2b34c": 1792417648.7217298,
   "c49d1809": 1792418595.3895395,
-  "413ed8f1": 1792423062.2959485,
-  "61ae0923": 1792423070.2169178,
-  "9c92e529": 1792423078.2162118,
-  "f98b2518": 1792423086.2201495
+  "413ed8f1": 1792423695.8314576,
+  "61ae0923": 1792423703.8348565,
+  "9c92e529": 1792423381.8090398,
+  "f98b2518": 1792423711.8056614
  },
  "last_report": "2026-W42"
 }
