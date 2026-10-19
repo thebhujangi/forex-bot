@@ -117,7 +117,12 @@
   "expired:00e6c98f": "2026-10-19T06:50:04.909672+00:00",
   "filled:c7bc3c7d": "2026-10-19T07:38:30.392367+00:00",
   "oco:b3f471a5": "2026-10-19T07:38:31.223740+00:00",
-  "maybe:45649a04": "2026-10-19T08:14:52.558530+00:00"
+  "maybe:45649a04": "2026-10-19T08:14:52.558530+00:00",
+  "exit:fcfe9abc:sl": "2026-10-19T13:04:32.306197+00:00",
+  "done:fcfe9abc": "2026-10-19T13:04:32.889410+00:00",
+  "exit:c7bc3c7d:sl": "2026-10-19T13:04:33.714101+00:00",
+  "done:c7bc3c7d": "2026-10-19T13:04:34.275539+00:00",
+  "expired:45649a04": "2026-10-19T13:04:34.865421+00:00"
  },
  "offset": 508857106,
  "initial_sl": {},
@@ -3117,13 +3122,13 @@
    "trail_distance": null,
    "tp1": 83529.36,
    "created": "2026-10-19T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 82850.77,
    "notified_sl": 82172.18,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.0244185060198148,
+   "closed_at": "2026-10-19T10:25:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -3144,9 +3149,9 @@
     "trail_distance": null,
     "reason": "Asian range 81569.67-82774.70 (0.48x daily ATR 2535.73). Break above the high at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "sl",
    "flags": []
   },
   {
@@ -3205,13 +3210,13 @@
    "trail_distance": null,
    "tp1": 2466.63,
    "created": "2026-10-19T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2437.79,
    "notified_sl": 2408.96,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.050734443288253,
+   "closed_at": "2026-10-19T11:30:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -3232,9 +3237,9 @@
     "trail_distance": null,
     "reason": "Asian range 2383.32-2434.59 (0.48x daily ATR 106.75). Break above the high at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "sl",
    "flags": []
   },
   {
@@ -3293,13 +3298,13 @@
    "trail_distance": null,
    "tp1": 82705.23,
    "created": "2026-10-19T06:45:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 82476.15,
    "notified_sl": 82247.07,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-19T13:04:23.430609+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -3322,7 +3327,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": [
     "maybe:45649a04"
    ]
@@ -3335,21 +3340,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T08:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T08:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T08:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T08:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T08:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T08:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T08:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T13:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T13:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T13:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T13:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T13:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T13:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T13:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T09:42:50.243517+00:00",
-  "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue": "2026-10-16T09:53:09.713356+00:00",
-  "https://www.coindesk.com/business/2026/10/16/scammer-gets-scammed-in-ledger-spy-chip-exploit-loses-almost-usd5-million-in-bitcoin": "2026-10-16T10:24:47.532200+00:00",
-  "https://www.coindesk.com/markets/2026/10/16/altcoins-outpace-bitcoin-as-celestia-jumps-16-warsh-silent-on-interest-rate-plans": "2026-10-16T10:44:55.345311+00:00",
-  "https://www.coindesk.com/tech/2026/10/16/experts-agree-quantum-computers-could-put-satoshi-s-bitcoin-at-risk-but-not-on-what-s-next": "2026-10-16T10:55:08.401289+00:00",
-  "https://www.coindesk.com/daybook-us/2026/10/16/traders-will-soon-be-able-to-bet-on-whether-coinbase-robinhood-and-marathon-will-hit-their-targets": "2026-10-16T11:16:12.613982+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-16T15:01:52.935345+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T15:53:24.653332+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-16T18:27:36.400454+00:00",
@@ -3382,20 +3381,31 @@
   "https://www.coindesk.com/markets/2026/10/19/bitcoin-korea-s-kospi-and-nasdaq-futures-rally-as-china-gdp-beats-estimates": "2026-10-19T03:43:40.508366+00:00",
   "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it": "2026-10-19T04:55:19.849022+00:00",
   "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131": "2026-10-19T06:27:53.430518+00:00",
-  "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T08:10:12.737891+00:00"
+  "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T08:10:12.737891+00:00",
+  "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
+  "https://www.coindesk.com/markets/2026/10/19/cme-s-bitcoin-cash-uniswap-futures-global-pmis-crypto-week-ahead": "2026-10-19T13:03:59.100514+00:00",
+  "https://www.coindesk.com/tech/2026/10/19/bitcoin-mining-offshoot-nscale-loses-microsoft-ai-deal-as-power-delay-stretches-into-2030s": "2026-10-19T13:03:59.100522+00:00",
+  "https://www.coindesk.com/markets/2026/10/19/jpmorgan-s-jpm-coin-representing-dollar-deposits-is-coming-to-ethereum-bloomberg": "2026-10-19T13:03:59.100528+00:00",
+  "https://cointelegraph.com/markets/stocks-rebound-into-key-tech-earnings-three-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100536+00:00",
+  "https://www.coindesk.com/markets/2026/10/19/bitcoin-extends-bounce-above-usd82-000-as-stocks-rebound-defi-tokens-lead-altcoin-gains": "2026-10-19T13:03:59.100541+00:00",
+  "https://www.coindesk.com/markets/2026/10/19/live-updates-bitcoin-tags-usd83-000-and-slips-back-as-chip-stocks-lead-a-rebound": "2026-10-19T13:03:59.100547+00:00",
+  "https://www.coindesk.com/daybook-us/2026/10/19/strategy-on-verge-of-golden-cross-just-weeks-after-bitcoin-flashed-same-bullish-signal": "2026-10-19T13:03:59.100552+00:00",
+  "https://cointelegraph.com/news/world-liberty-usd1-stablecoin-market-cap-drops-400-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100558+00:00",
+  "https://cointelegraph.com/news/strategy-btc-22-million-buy-strc-buyback-193-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100563+00:00",
+  "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:14:12.937026+00:00"
  },
  "timers": {
-  "crowd": 1792398557.222485,
-  "headlines": 1792398029.5386186,
-  "scan": 1792398588.0499063,
-  "follow": 1792398304.6573358
+  "crowd": 1792415038.497092,
+  "headlines": 1792415652.5981548,
+  "scan": 1792415787.5732293,
+  "follow": 1792415683.316489
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792398312.7374701,
+  "d82f6843": 1792415071.3438823,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -3460,11 +3470,11 @@
   "bc89c778": 1792385346.0843806,
   "eb6cb333": 1792392603.5248997,
   "00e6c98f": 1792392604.3504558,
-  "fcfe9abc": 1792398313.07495,
+  "fcfe9abc": 1792415071.6133087,
   "5df066e7": 1792392274.7074125,
-  "c7bc3c7d": 1792398313.3893209,
+  "c7bc3c7d": 1792415073.1621342,
   "b3f471a5": 1792395511.5853179,
-  "45649a04": 1792398313.3896823
+  "45649a04": 1792415074.276974
  },
  "last_report": "2026-W42"
 }
