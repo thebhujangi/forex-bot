@@ -3017,16 +3017,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T04:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T04:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T04:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T04:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T04:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T04:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T04:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T04:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T04:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T04:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T04:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T04:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T04:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T04:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own": "2026-10-16T04:34:14.378649+00:00",
   "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why": "2026-10-16T05:56:00.350273+00:00",
   "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T08:10:22.459771+00:00",
   "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T09:42:50.243517+00:00",
@@ -3067,17 +3066,17 @@
   "https://www.coindesk.com/markets/2026/10/19/bitcoin-korea-s-kospi-and-nasdaq-futures-rally-as-china-gdp-beats-estimates": "2026-10-19T03:43:40.508366+00:00"
  },
  "timers": {
-  "crowd": 1792380454.8750417,
-  "headlines": 1792383888.2254622,
-  "scan": 1792383980.645263,
-  "follow": 1792383764.9884853
+  "crowd": 1792384082.4900796,
+  "headlines": 1792384498.6499858,
+  "scan": 1792384773.9683638,
+  "follow": 1792384711.7697997
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792380962.2202652,
+  "d82f6843": 1792384407.243261,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -3139,7 +3138,7 @@
   "0f9491f8": 1792181100.1065774,
   "f5005c86": 1792378100.673981,
   "931de712": 1792381597.6598246,
-  "bc89c778": 1792383765.3670332
+  "bc89c778": 1792384712.0920436
  },
  "last_report": "2026-W42"
 }
