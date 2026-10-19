@@ -3615,16 +3615,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T15:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T15:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T15:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T15:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T15:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T15:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T15:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T15:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T15:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T15:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T15:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T15:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T15:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-16T15:01:52.935345+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T15:53:24.653332+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-16T18:27:36.400454+00:00",
   "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00",
@@ -3667,13 +3666,14 @@
   "https://www.coindesk.com/daybook-us/2026/10/19/strategy-on-verge-of-golden-cross-just-weeks-after-bitcoin-flashed-same-bullish-signal": "2026-10-19T13:03:59.100552+00:00",
   "https://cointelegraph.com/news/world-liberty-usd1-stablecoin-market-cap-drops-400-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100558+00:00",
   "https://cointelegraph.com/news/strategy-btc-22-million-buy-strc-buyback-193-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100563+00:00",
-  "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:14:12.937026+00:00"
+  "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:14:12.937026+00:00",
+  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-19T15:17:42.094687+00:00"
  },
  "timers": {
   "crowd": 1792422281.0825746,
-  "headlines": 1792421824.4041803,
-  "scan": 1792422221.9546678,
-  "follow": 1792422098.047853
+  "headlines": 1792423061.3365579,
+  "scan": 1792423091.7151446,
+  "follow": 1792423062.0947683
  },
  "pushed_times": [],
  "last_checked": {
@@ -3752,10 +3752,10 @@
   "45649a04": 1792415074.276974,
   "acf2b34c": 1792417648.7217298,
   "c49d1809": 1792418595.3895395,
-  "413ed8f1": 1792422106.2005775,
-  "61ae0923": 1792422114.178637,
-  "9c92e529": 1792422122.1711133,
-  "f98b2518": 1792422130.195628
+  "413ed8f1": 1792423062.2959485,
+  "61ae0923": 1792423070.2169178,
+  "9c92e529": 1792423078.2162118,
+  "f98b2518": 1792423086.2201495
  },
  "last_report": "2026-W42"
 }
