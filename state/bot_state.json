@@ -3330,13 +3330,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T07:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T07:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T07:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T07:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T07:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T07:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T07:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T07:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T07:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T07:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T07:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T07:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T07:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T07:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T08:10:22.459771+00:00",
@@ -3381,9 +3381,9 @@
  },
  "timers": {
   "crowd": 1792391344.3691711,
-  "headlines": 1792393691.1817803,
-  "scan": 1792393660.5598452,
-  "follow": 1792393598.087903
+  "headlines": 1792394320.2829397,
+  "scan": 1792394474.0070434,
+  "follow": 1792394227.3288455
  },
  "pushed_times": [],
  "last_checked": {
@@ -3455,11 +3455,11 @@
   "bc89c778": 1792385346.0843806,
   "eb6cb333": 1792392603.5248997,
   "00e6c98f": 1792392604.3504558,
-  "fcfe9abc": 1792393598.5098653,
+  "fcfe9abc": 1792394227.8284204,
   "5df066e7": 1792392274.7074125,
-  "c7bc3c7d": 1792393598.8492181,
-  "b3f471a5": 1792393599.2059634,
-  "45649a04": 1792393599.2070732
+  "c7bc3c7d": 1792394228.167943,
+  "b3f471a5": 1792394228.5861208,
+  "45649a04": 1792394228.5871098
  },
  "last_report": "2026-W42"
 }
