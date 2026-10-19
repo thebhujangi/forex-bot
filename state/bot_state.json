@@ -2927,13 +2927,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T01:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T01:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T01:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T01:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T01:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T01:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T01:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T01:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T01:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T01:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T01:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T01:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T01:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T01:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-16T03:22:17.249814+00:00",
@@ -2977,10 +2977,10 @@
   "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T17:15:05.724992+00:00"
  },
  "timers": {
-  "crowd": 1792369565.2761428,
-  "headlines": 1792372721.6816287,
-  "scan": 1792372722.289893,
-  "follow": 1792372478.0051801
+  "crowd": 1792373190.974406,
+  "headlines": 1792373344.346758,
+  "scan": 1792373489.606578,
+  "follow": 1792373428.0676317
  },
  "pushed_times": [],
  "last_checked": {
@@ -3047,7 +3047,7 @@
   "c362b8d4": 1792158038.0540218,
   "ef1785bc": 1792179195.8451579,
   "0f9491f8": 1792181100.1065774,
-  "f5005c86": 1792372478.3759668
+  "f5005c86": 1792373428.3908548
  },
  "last_report": "2026-W42"
 }
