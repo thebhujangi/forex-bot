@@ -1,6 +1,5 @@
 {
  "sent": {
-  "filled:77426ec4": "2026-10-12T19:46:28.008179+00:00",
   "exit:77426ec4:tp1": "2026-10-12T21:47:53.456959+00:00",
   "exit:77426ec4:tp2": "2026-10-12T22:04:14.124376+00:00",
   "done:77426ec4": "2026-10-12T22:04:14.854969+00:00",
@@ -3617,13 +3616,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T19:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T19:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T19:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T19:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T19:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T19:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T19:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T19:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T19:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T19:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T19:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T19:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T19:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T19:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00",
@@ -3676,9 +3675,9 @@
  },
  "timers": {
   "crowd": 1792436770.3004136,
-  "headlines": 1792438562.044616,
-  "scan": 1792438656.5591185,
-  "follow": 1792438624.0252357
+  "headlines": 1792439190.3379443,
+  "scan": 1792439465.6695237,
+  "follow": 1792439252.243231
  },
  "pushed_times": [],
  "last_checked": {
