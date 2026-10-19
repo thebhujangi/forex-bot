@@ -3106,13 +3106,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T05:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T05:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T05:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T05:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T05:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T05:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T05:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T05:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T05:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T05:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T05:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T05:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T05:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T05:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why": "2026-10-16T05:56:00.350273+00:00",
@@ -3157,9 +3157,9 @@
  },
  "timers": {
   "crowd": 1792387697.3780894,
-  "headlines": 1792387604.1763754,
-  "scan": 1792388001.36865,
-  "follow": 1792387908.6299772
+  "headlines": 1792388824.9047492,
+  "scan": 1792388794.4519022,
+  "follow": 1792388848.059105
  },
  "pushed_times": [],
  "last_checked": {
@@ -3229,8 +3229,8 @@
   "f5005c86": 1792378100.673981,
   "931de712": 1792381597.6598246,
   "bc89c778": 1792385346.0843806,
-  "eb6cb333": 1792387909.1646876,
-  "00e6c98f": 1792387909.6585462
+  "eb6cb333": 1792388848.403701,
+  "00e6c98f": 1792388848.7144737
  },
  "last_report": "2026-W42"
 }
