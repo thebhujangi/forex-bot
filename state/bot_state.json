@@ -107,7 +107,8 @@
   "exit:ef1785bc:tp1": "2026-10-16T18:04:13.052874+00:00",
   "exit:ef1785bc:be": "2026-10-16T19:33:16.473955+00:00",
   "done:ef1785bc": "2026-10-16T19:33:17.040930+00:00",
-  "expired:0f9491f8": "2026-10-16T20:05:00.687674+00:00"
+  "expired:0f9491f8": "2026-10-16T20:05:00.687674+00:00",
+  "expired:f5005c86": "2026-10-19T02:48:21.604249+00:00"
  },
  "offset": 508857104,
  "initial_sl": {},
@@ -2887,13 +2888,13 @@
    "trail_distance": null,
    "tp1": 81987.82,
    "created": "2026-10-19T00:45:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 81613.46,
    "notified_sl": 81239.1,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-19T02:48:20.323834+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -2916,7 +2917,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -2962,6 +2963,50 @@
    "fill_notified": false,
    "outcome": null,
    "flags": []
+  },
+  {
+   "id": "bc89c778",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "buy",
+   "entry": 82027.05,
+   "sl": 81665.04,
+   "cur_sl": 81665.04,
+   "trail_distance": null,
+   "tp1": 82389.06,
+   "created": "2026-10-19T02:45:00+00:00",
+   "status": "new",
+   "best": 82027.05,
+   "notified_sl": 81665.04,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "buy",
+    "order_type": "limit",
+    "created": "2026-10-19T02:45:00+00:00",
+    "entry": 82027.05,
+    "sl": 81665.04,
+    "tp1": 82389.06,
+    "tp2": 82932.07,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-19T04:45:00+00:00",
+    "close_by": "2026-10-19T10:45:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.8x ATR from EMA20; buy the pullback at 82027.05."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -2971,13 +3016,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T02:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T02:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T02:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T02:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T02:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T02:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T02:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T02:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T02:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T02:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T02:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T02:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T02:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T02:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-16T03:22:17.249814+00:00",
@@ -3022,9 +3067,9 @@
  },
  "timers": {
   "crowd": 1792376837.349816,
-  "headlines": 1792377080.7742374,
-  "scan": 1792377542.6772666,
-  "follow": 1792377480.5249667
+  "headlines": 1792378316.956539,
+  "scan": 1792378348.2335024,
+  "follow": 1792378100.3238318
  },
  "pushed_times": [],
  "last_checked": {
@@ -3091,8 +3136,9 @@
   "c362b8d4": 1792158038.0540218,
   "ef1785bc": 1792179195.8451579,
   "0f9491f8": 1792181100.1065774,
-  "f5005c86": 1792377481.0804534,
-  "931de712": 1792377481.4490411
+  "f5005c86": 1792378100.673981,
+  "931de712": 1792378101.9383523,
+  "bc89c778": 1792378101.9386852
  },
  "last_report": "2026-W42"
 }
