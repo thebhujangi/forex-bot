@@ -110,7 +110,11 @@
   "expired:0f9491f8": "2026-10-16T20:05:00.687674+00:00",
   "expired:f5005c86": "2026-10-19T02:48:21.604249+00:00",
   "expired:931de712": "2026-10-19T03:46:38.315731+00:00",
-  "expired:bc89c778": "2026-10-19T04:49:06.871294+00:00"
+  "expired:bc89c778": "2026-10-19T04:49:06.871294+00:00",
+  "filled:fcfe9abc": "2026-10-19T06:44:34.103796+00:00",
+  "oco:5df066e7": "2026-10-19T06:44:34.706600+00:00",
+  "expired:eb6cb333": "2026-10-19T06:50:04.086777+00:00",
+  "expired:00e6c98f": "2026-10-19T06:50:04.909672+00:00"
  },
  "offset": 508857106,
  "initial_sl": {},
@@ -3022,13 +3026,13 @@
    "trail_distance": null,
    "tp1": 82535.77,
    "created": "2026-10-19T04:45:00+00:00",
-   "status": "placed",
+   "status": "closed",
    "best": 82277.82,
    "notified_sl": 82019.86,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-19T06:50:03.198831+00:00",
+   "recorded": true,
    "placed": true,
    "signal": {
     "strategy": "trend_pullback",
@@ -3051,7 +3055,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -3066,13 +3070,13 @@
    "trail_distance": null,
    "tp1": 2424.29,
    "created": "2026-10-19T04:45:00+00:00",
-   "status": "placed",
+   "status": "closed",
    "best": 2413.31,
    "notified_sl": 2402.33,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-19T06:50:03.198831+00:00",
+   "recorded": true,
    "placed": true,
    "signal": {
     "strategy": "trend_pullback",
@@ -3095,7 +3099,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -3138,7 +3142,7 @@
     "reason": "Asian range 81569.67-82774.70 (0.48x daily ATR 2535.73). Break above the high at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   },
@@ -3154,13 +3158,13 @@
    "trail_distance": null,
    "tp1": 80815.01,
    "created": "2026-10-19T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 81493.59,
    "notified_sl": 82172.18,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-19T06:44:32.842890+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -3183,7 +3187,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -3273,6 +3277,50 @@
    "fill_notified": false,
    "outcome": null,
    "flags": []
+  },
+  {
+   "id": "45649a04",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "buy",
+   "entry": 82476.15,
+   "sl": 82247.07,
+   "cur_sl": 82247.07,
+   "trail_distance": null,
+   "tp1": 82705.23,
+   "created": "2026-10-19T06:45:00+00:00",
+   "status": "new",
+   "best": 82476.15,
+   "notified_sl": 82247.07,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "buy",
+    "order_type": "limit",
+    "created": "2026-10-19T06:45:00+00:00",
+    "entry": 82476.15,
+    "sl": 82247.07,
+    "tp1": 82705.23,
+    "tp2": 83048.85,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-19T08:45:00+00:00",
+    "close_by": "2026-10-19T14:45:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.6x ATR from EMA20; buy the pullback at 82476.15."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -3282,13 +3330,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T06:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T06:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T06:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T06:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T06:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T06:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T06:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T06:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T06:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T06:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T06:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T06:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T06:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T06:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T08:10:22.459771+00:00",
@@ -3333,9 +3381,9 @@
  },
  "timers": {
   "crowd": 1792391344.3691711,
-  "headlines": 1792391875.388812,
-  "scan": 1792392060.5589693,
-  "follow": 1792391967.845013
+  "headlines": 1792392481.355598,
+  "scan": 1792392848.0437949,
+  "follow": 1792392603.1988268
  },
  "pushed_times": [],
  "last_checked": {
@@ -3405,12 +3453,13 @@
   "f5005c86": 1792378100.673981,
   "931de712": 1792381597.6598246,
   "bc89c778": 1792385346.0843806,
-  "eb6cb333": 1792391968.3383937,
-  "00e6c98f": 1792391968.7336,
-  "fcfe9abc": 1792391968.7343073,
-  "5df066e7": 1792391968.7349632,
-  "c7bc3c7d": 1792391968.7356231,
-  "b3f471a5": 1792391968.7362523
+  "eb6cb333": 1792392603.5248997,
+  "00e6c98f": 1792392604.3504558,
+  "fcfe9abc": 1792392604.9108996,
+  "5df066e7": 1792392274.7074125,
+  "c7bc3c7d": 1792392604.9120402,
+  "b3f471a5": 1792392604.9131691,
+  "45649a04": 1792392604.9142516
  },
  "last_report": "2026-W42"
 }
