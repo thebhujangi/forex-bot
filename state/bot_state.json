@@ -3282,13 +3282,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T06:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T06:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T06:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T06:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T06:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T06:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T06:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T06:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T06:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T06:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T06:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T06:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T06:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T06:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T08:10:22.459771+00:00",
@@ -3328,13 +3328,14 @@
   "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T17:15:05.724992+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-19T03:33:28.471275+00:00",
   "https://www.coindesk.com/markets/2026/10/19/bitcoin-korea-s-kospi-and-nasdaq-futures-rally-as-china-gdp-beats-estimates": "2026-10-19T03:43:40.508366+00:00",
-  "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it": "2026-10-19T04:55:19.849022+00:00"
+  "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it": "2026-10-19T04:55:19.849022+00:00",
+  "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131": "2026-10-19T06:27:53.430518+00:00"
  },
  "timers": {
   "crowd": 1792387697.3780894,
-  "headlines": 1792390037.794428,
-  "scan": 1792390464.9781806,
-  "follow": 1792390373.3017163
+  "headlines": 1792391272.8275383,
+  "scan": 1792391242.2702465,
+  "follow": 1792390996.9522452
  },
  "pushed_times": [],
  "last_checked": {
@@ -3404,12 +3405,12 @@
   "f5005c86": 1792378100.673981,
   "931de712": 1792381597.6598246,
   "bc89c778": 1792385346.0843806,
-  "eb6cb333": 1792390373.5597222,
-  "00e6c98f": 1792390373.8277798,
-  "fcfe9abc": 1792390373.828497,
-  "5df066e7": 1792390373.829174,
-  "c7bc3c7d": 1792390373.8298166,
-  "b3f471a5": 1792390373.830475
+  "eb6cb333": 1792390997.3409855,
+  "00e6c98f": 1792390997.6855435,
+  "fcfe9abc": 1792390997.6862905,
+  "5df066e7": 1792390997.686981,
+  "c7bc3c7d": 1792390997.6876786,
+  "b3f471a5": 1792390997.6883814
  },
  "last_report": "2026-W42"
 }
