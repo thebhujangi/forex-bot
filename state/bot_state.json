@@ -3669,13 +3669,14 @@
   "https://cointelegraph.com/news/strategy-btc-22-million-buy-strc-buyback-193-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100563+00:00",
   "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:14:12.937026+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-19T15:17:42.094687+00:00",
-  "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:09:52.343718+00:00"
+  "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:09:52.343718+00:00",
+  "https://cointelegraph.com/markets/bitcoin-is-rejected-at-83k-as-us-bond-yields-reverse-higher-with-equities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:20:16.646322+00:00"
  },
  "timers": {
   "crowd": 1792425908.8021905,
-  "headlines": 1792426191.6473007,
-  "scan": 1792426535.9699264,
-  "follow": 1792426561.3640563
+  "headlines": 1792426816.2891133,
+  "scan": 1792427380.0804987,
+  "follow": 1792427189.5858524
  },
  "pushed_times": [],
  "last_checked": {
@@ -3755,9 +3756,9 @@
   "acf2b34c": 1792417648.7217298,
   "c49d1809": 1792418595.3895395,
   "413ed8f1": 1792425318.7472012,
-  "61ae0923": 1792426569.1771288,
+  "61ae0923": 1792427189.6954257,
   "9c92e529": 1792423381.8090398,
-  "f98b2518": 1792426577.1733456
+  "f98b2518": 1792427197.618833
  },
  "last_report": "2026-W42"
 }
