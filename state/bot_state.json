@@ -3016,16 +3016,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T03:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T03:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T03:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T03:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T03:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T03:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T03:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T03:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T03:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T03:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T03:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T03:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T03:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T03:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-16T03:22:17.249814+00:00",
   "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound": "2026-10-16T04:24:04.392430+00:00",
   "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own": "2026-10-16T04:34:14.378649+00:00",
   "https://www.coindesk.com/markets/2026/10/16/xrp-has-failed-to-make-holders-rich-like-bitcoin-and-ether-here-s-why": "2026-10-16T05:56:00.350273+00:00",
@@ -3063,13 +3062,14 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm": "2026-10-18T14:39:54.744374+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-18T14:39:54.744378+00:00",
   "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last": "2026-10-18T16:34:09.684302+00:00",
-  "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T17:15:05.724992+00:00"
+  "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T17:15:05.724992+00:00",
+  "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-19T03:33:28.471275+00:00"
  },
  "timers": {
-  "crowd": 1792376837.349816,
-  "headlines": 1792379560.6650467,
-  "scan": 1792379956.5238838,
-  "follow": 1792379986.9826214
+  "crowd": 1792380454.8750417,
+  "headlines": 1792380808.1510262,
+  "scan": 1792380749.3640645,
+  "follow": 1792380627.2512972
  },
  "pushed_times": [],
  "last_checked": {
@@ -3137,8 +3137,8 @@
   "ef1785bc": 1792179195.8451579,
   "0f9491f8": 1792181100.1065774,
   "f5005c86": 1792378100.673981,
-  "931de712": 1792379987.3808293,
-  "bc89c778": 1792379987.7780871
+  "931de712": 1792380627.5218854,
+  "bc89c778": 1792380627.7951024
  },
  "last_report": "2026-W42"
 }
