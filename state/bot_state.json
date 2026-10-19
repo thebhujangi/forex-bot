@@ -114,7 +114,9 @@
   "filled:fcfe9abc": "2026-10-19T06:44:34.103796+00:00",
   "oco:5df066e7": "2026-10-19T06:44:34.706600+00:00",
   "expired:eb6cb333": "2026-10-19T06:50:04.086777+00:00",
-  "expired:00e6c98f": "2026-10-19T06:50:04.909672+00:00"
+  "expired:00e6c98f": "2026-10-19T06:50:04.909672+00:00",
+  "filled:c7bc3c7d": "2026-10-19T07:38:30.392367+00:00",
+  "oco:b3f471a5": "2026-10-19T07:38:31.223740+00:00"
  },
  "offset": 508857106,
  "initial_sl": {},
@@ -3230,7 +3232,7 @@
     "reason": "Asian range 2383.32-2434.59 (0.48x daily ATR 106.75). Break above the high at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   },
@@ -3246,13 +3248,13 @@
    "trail_distance": null,
    "tp1": 2351.29,
    "created": "2026-10-19T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2380.12,
    "notified_sl": 2408.96,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-19T07:38:28.640712+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -3275,7 +3277,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -3330,13 +3332,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-18T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-18T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T07:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T07:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T07:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T07:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T07:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T07:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T07:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T07:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T07:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T07:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T07:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T07:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T07:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T07:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T08:10:22.459771+00:00",
@@ -3381,9 +3383,9 @@
  },
  "timers": {
   "crowd": 1792394955.2706947,
-  "headlines": 1792394924.0145526,
-  "scan": 1792395289.6944296,
-  "follow": 1792395196.6294963
+  "headlines": 1792395542.2133512,
+  "scan": 1792396091.9158318,
+  "follow": 1792396122.561481
  },
  "pushed_times": [],
  "last_checked": {
@@ -3455,11 +3457,11 @@
   "bc89c778": 1792385346.0843806,
   "eb6cb333": 1792392603.5248997,
   "00e6c98f": 1792392604.3504558,
-  "fcfe9abc": 1792395197.0527139,
+  "fcfe9abc": 1792396123.0438964,
   "5df066e7": 1792392274.7074125,
-  "c7bc3c7d": 1792395197.4329429,
-  "b3f471a5": 1792395197.7950292,
-  "45649a04": 1792395197.795761
+  "c7bc3c7d": 1792396123.3860812,
+  "b3f471a5": 1792395511.5853179,
+  "45649a04": 1792396123.3872762
  },
  "last_report": "2026-W42"
 }
