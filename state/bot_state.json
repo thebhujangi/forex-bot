@@ -3344,7 +3344,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-19T08:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/capital-b-78m-h1-loss-bitcoin-impairment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T08:10:22.459771+00:00",
   "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-16T09:42:50.243517+00:00",
   "https://www.coindesk.com/markets/2026/10/16/live-updates-bitcoin-back-above-usd82-000-zec-jumps-11-as-etf-outflows-continue": "2026-10-16T09:53:09.713356+00:00",
   "https://www.coindesk.com/business/2026/10/16/scammer-gets-scammed-in-ledger-spy-chip-exploit-loses-almost-usd5-million-in-bitcoin": "2026-10-16T10:24:47.532200+00:00",
@@ -3386,17 +3385,17 @@
   "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T08:10:12.737891+00:00"
  },
  "timers": {
-  "crowd": 1792394955.2706947,
-  "headlines": 1792397411.571985,
-  "scan": 1792397754.2946262,
-  "follow": 1792397689.919434
+  "crowd": 1792398557.222485,
+  "headlines": 1792398029.5386186,
+  "scan": 1792398588.0499063,
+  "follow": 1792398304.6573358
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792394891.8317702,
+  "d82f6843": 1792398312.7374701,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -3461,11 +3460,11 @@
   "bc89c778": 1792385346.0843806,
   "eb6cb333": 1792392603.5248997,
   "00e6c98f": 1792392604.3504558,
-  "fcfe9abc": 1792397690.7763014,
+  "fcfe9abc": 1792398313.07495,
   "5df066e7": 1792392274.7074125,
-  "c7bc3c7d": 1792397691.5771055,
+  "c7bc3c7d": 1792398313.3893209,
   "b3f471a5": 1792395511.5853179,
-  "45649a04": 1792397691.578342
+  "45649a04": 1792398313.3896823
  },
  "last_report": "2026-W42"
 }
