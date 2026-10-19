@@ -3613,13 +3613,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-19T22:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-19T22:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-19T22:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-19T22:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-19T22:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-19T22:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-19T22:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-19T23:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-19T23:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-19T23:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-19T23:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-19T23:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-19T23:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-19T23:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00",
@@ -3673,10 +3673,10 @@
   "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T21:08:43.944831+00:00"
  },
  "timers": {
-  "crowd": 1792447652.1525612,
-  "headlines": 1792450289.8388186,
-  "scan": 1792450779.736533,
-  "follow": 1792450688.0185237
+  "crowd": 1792451271.9446776,
+  "headlines": 1792451550.754382,
+  "scan": 1792451582.0415342,
+  "follow": 1792451612.6225677
  },
  "pushed_times": [],
  "last_checked": {
