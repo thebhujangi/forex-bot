@@ -3626,7 +3626,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-19T18:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-16T18:27:36.400454+00:00",
   "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00",
   "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00",
   "https://www.coindesk.com/business/2026/10/17/goldman-wells-fargo-morgan-stanley-see-tokenization-as-a-growth-play-not-a-threat": "2026-10-17T17:09:54.145288+00:00",
@@ -3672,13 +3671,14 @@
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:09:52.343718+00:00",
   "https://cointelegraph.com/markets/bitcoin-is-rejected-at-83k-as-us-bond-yields-reverse-higher-with-equities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:20:16.646322+00:00",
   "https://cointelegraph.com/news/strive-buys-335m-in-bitcoin-boosting-holdings-to-36818-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:51:25.164205+00:00",
-  "https://cointelegraph.com/news/metaplanet-super-league-2100-btc-us-bitcoin-treasury-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T17:01:25.386102+00:00"
+  "https://cointelegraph.com/news/metaplanet-super-league-2100-btc-us-bitcoin-treasury-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T17:01:25.386102+00:00",
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-19T18:44:28.510301+00:00"
  },
  "timers": {
   "crowd": 1792433159.5109603,
-  "headlines": 1792434246.6579227,
-  "scan": 1792434648.186347,
-  "follow": 1792434525.4922848
+  "headlines": 1792435467.7758808,
+  "scan": 1792435468.5103562,
+  "follow": 1792435468.5115805
  },
  "pushed_times": [],
  "last_checked": {
@@ -3760,7 +3760,7 @@
   "413ed8f1": 1792425318.7472012,
   "61ae0923": 1792432935.131009,
   "9c92e529": 1792423381.8090398,
-  "f98b2518": 1792434525.5775528
+  "f98b2518": 1792435468.6863146
  },
  "last_report": "2026-W42"
 }
