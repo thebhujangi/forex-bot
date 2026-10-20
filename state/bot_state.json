@@ -142,7 +142,7 @@
   "expired:f1bcd229": "2026-10-20T16:50:04.515062+00:00",
   "expired:8a0ad2d5": "2026-10-20T17:00:27.996343+00:00"
  },
- "offset": 508857110,
+ "offset": 508857111,
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
@@ -4536,10 +4536,10 @@
   "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00"
  },
  "timers": {
-  "crowd": 1792534419.8028097,
-  "headlines": 1792536764.45146,
-  "scan": 1792537235.0340238,
-  "follow": 1792537172.894209
+  "crowd": 1792538023.4140637,
+  "headlines": 1792537992.6636198,
+  "scan": 1792538054.0021884,
+  "follow": 1792537806.992322
  },
  "pushed_times": [],
  "last_checked": {
@@ -4639,8 +4639,8 @@
   "178d364a": 1792503604.1881967,
   "f1bcd229": 1792515003.871908,
   "8a0ad2d5": 1792515627.1936302,
-  "59d8a71f": 1792537173.2923782,
-  "54611bb6": 1792537173.647534
+  "59d8a71f": 1792537807.2958314,
+  "54611bb6": 1792537807.5635676
  },
  "last_report": "2026-W42"
 }
