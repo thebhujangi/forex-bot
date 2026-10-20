@@ -1,6 +1,5 @@
 {
  "sent": {
-  "expired:a7be91e3": "2026-10-13T07:46:00.441235+00:00",
   "expired:153688b1": "2026-10-13T08:48:38.458467+00:00",
   "filled:741a79fa": "2026-10-13T13:45:58.794844+00:00",
   "oco:b5d85662": "2026-10-13T13:45:59.639789+00:00",
@@ -3915,6 +3914,50 @@
    "fill_notified": false,
    "outcome": null,
    "flags": []
+  },
+  {
+   "id": "c411d7ea",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "sell",
+   "entry": 81698.76,
+   "sl": 81940.74,
+   "cur_sl": 81940.74,
+   "trail_distance": null,
+   "tp1": 81456.78,
+   "created": "2026-10-20T07:45:00+00:00",
+   "status": "new",
+   "best": 81698.76,
+   "notified_sl": 81940.74,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-20T07:45:00+00:00",
+    "entry": 81698.76,
+    "sl": 81940.74,
+    "tp1": 81456.78,
+    "tp2": 81093.8,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-20T09:45:00+00:00",
+    "close_by": "2026-10-20T15:45:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.5x ATR from EMA20; sell the pullback at 81698.76."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -3924,13 +3967,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T07:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T07:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T07:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T07:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T07:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T07:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T07:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T07:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T07:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T07:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T07:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T07:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T07:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T07:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00",
@@ -3986,9 +4029,9 @@
  },
  "timers": {
   "crowd": 1792480187.4407022,
-  "headlines": 1792481878.163074,
-  "scan": 1792482280.3305337,
-  "follow": 1792482187.0140896
+  "headlines": 1792483093.6730168,
+  "scan": 1792483039.8969762,
+  "follow": 1792482795.6212468
  },
  "pushed_times": [],
  "last_checked": {
@@ -4073,11 +4116,12 @@
   "f98b2518": 1792438624.4462845,
   "6dfe7499": 1792462609.1578116,
   "f8c5f85c": 1792467655.2363663,
-  "b8477c39": 1792482187.4016964,
-  "0103c101": 1792482187.7650971,
-  "52ae13c6": 1792482188.2505324,
-  "2dde8e74": 1792482188.6054757,
-  "deff858d": 1792482188.6066313
+  "b8477c39": 1792482795.8874004,
+  "0103c101": 1792482796.1448927,
+  "52ae13c6": 1792482796.3995385,
+  "2dde8e74": 1792482796.6597054,
+  "deff858d": 1792482796.660841,
+  "c411d7ea": 1792482796.6619
  },
  "last_report": "2026-W42"
 }
