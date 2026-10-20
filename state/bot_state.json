@@ -3704,13 +3704,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T05:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T05:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T05:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T05:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T05:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T05:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T05:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T05:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T05:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T05:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T05:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T05:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T05:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T05:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00",
@@ -3765,16 +3765,16 @@
  },
  "timers": {
   "crowd": 1792472968.146355,
-  "headlines": 1792473799.9179573,
-  "scan": 1792474166.4570093,
-  "follow": 1792473922.4709616
+  "headlines": 1792474427.9934378,
+  "scan": 1792475009.428251,
+  "follow": 1792474917.7274184
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792470794.7082095,
+  "d82f6843": 1792474305.652786,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
