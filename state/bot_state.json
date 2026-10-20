@@ -3716,10 +3716,10 @@
   "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T21:08:43.944831+00:00"
  },
  "timers": {
-  "crowd": 1792454895.6671886,
-  "headlines": 1792457732.8062866,
-  "scan": 1792458040.7348638,
-  "follow": 1792457916.83158
+  "crowd": 1792458498.4277656,
+  "headlines": 1792458343.4933882,
+  "scan": 1792458857.358083,
+  "follow": 1792458857.360143
  },
  "pushed_times": [],
  "last_checked": {
@@ -3802,7 +3802,7 @@
   "61ae0923": 1792432935.131009,
   "9c92e529": 1792423381.8090398,
   "f98b2518": 1792438624.4462845,
-  "6dfe7499": 1792457917.2704875
+  "6dfe7499": 1792458857.7816713
  },
  "last_report": "2026-W42"
 }
