@@ -4368,19 +4368,19 @@
   }
  ],
  "last_signal_bar": {
-  "crypto_trend:BTCUSD": "2026-10-19T21:00:00+00:00",
-  "crypto_trend:ETHUSD": "2026-10-19T21:00:00+00:00",
-  "crypto_trend:XRPUSD": "2026-10-19T21:00:00+00:00",
-  "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
-  "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
-  "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T20:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T20:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T20:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T20:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T20:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T20:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T20:45:00+00:00"
+  "crypto_trend:BTCUSD": "2026-10-20T21:00:00+00:00",
+  "crypto_trend:ETHUSD": "2026-10-20T21:00:00+00:00",
+  "crypto_trend:XRPUSD": "2026-10-20T21:00:00+00:00",
+  "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
+  "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
+  "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-20T21:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T21:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T21:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T21:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T21:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T21:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T21:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut": "2026-10-18T01:15:18.051304+00:00",
@@ -4449,9 +4449,9 @@
  },
  "timers": {
   "crowd": 1792527194.2937868,
-  "headlines": 1792529350.170011,
-  "scan": 1792529938.2893796,
-  "follow": 1792529838.6614325
+  "headlines": 1792530605.7356455,
+  "scan": 1792530697.711613,
+  "follow": 1792530453.7595565
  },
  "pushed_times": [],
  "last_checked": {
