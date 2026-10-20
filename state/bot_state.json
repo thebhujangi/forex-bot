@@ -3924,13 +3924,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T06:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T06:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T06:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T06:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T06:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T06:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T06:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T07:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T07:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T07:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T07:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T07:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T07:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T07:00:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00",
@@ -3986,9 +3986,9 @@
  },
  "timers": {
   "crowd": 1792476582.8010094,
-  "headlines": 1792478790.5423708,
-  "scan": 1792479035.9445868,
-  "follow": 1792478758.303525
+  "headlines": 1792479412.004653,
+  "scan": 1792479806.4901755,
+  "follow": 1792479713.7483141
  },
  "pushed_times": [],
  "last_checked": {
@@ -4073,11 +4073,11 @@
   "f98b2518": 1792438624.4462845,
   "6dfe7499": 1792462609.1578116,
   "f8c5f85c": 1792467655.2363663,
-  "b8477c39": 1792478758.66117,
-  "0103c101": 1792478759.1128614,
-  "52ae13c6": 1792478759.4532876,
-  "2dde8e74": 1792478759.792385,
-  "deff858d": 1792478759.7935817
+  "b8477c39": 1792479714.0675554,
+  "0103c101": 1792479714.3868535,
+  "52ae13c6": 1792479714.706579,
+  "2dde8e74": 1792479715.0252986,
+  "deff858d": 1792479715.0259538
  },
  "last_report": "2026-W42"
 }
