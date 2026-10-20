@@ -3967,13 +3967,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T07:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T07:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T07:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T07:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T07:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T07:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T07:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T08:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T08:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T08:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T08:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T08:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T08:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T08:00:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00",
@@ -4028,10 +4028,10 @@
   "https://cointelegraph.com/markets/bitcoin-etfs-527m-inflows-biggest-since-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T05:54:45.098089+00:00"
  },
  "timers": {
-  "crowd": 1792480187.4407022,
-  "headlines": 1792483093.6730168,
-  "scan": 1792483039.8969762,
-  "follow": 1792482795.6212468
+  "crowd": 1792483816.1502597,
+  "headlines": 1792483723.6329596,
+  "scan": 1792483846.7522268,
+  "follow": 1792483784.7156687
  },
  "pushed_times": [],
  "last_checked": {
@@ -4116,12 +4116,12 @@
   "f98b2518": 1792438624.4462845,
   "6dfe7499": 1792462609.1578116,
   "f8c5f85c": 1792467655.2363663,
-  "b8477c39": 1792482795.8874004,
-  "0103c101": 1792482796.1448927,
-  "52ae13c6": 1792482796.3995385,
-  "2dde8e74": 1792482796.6597054,
-  "deff858d": 1792482796.660841,
-  "c411d7ea": 1792482796.6619
+  "b8477c39": 1792483785.0002139,
+  "0103c101": 1792483785.2607918,
+  "52ae13c6": 1792483785.5154598,
+  "2dde8e74": 1792483785.7713401,
+  "deff858d": 1792483785.772492,
+  "c411d7ea": 1792483785.7735863
  },
  "last_report": "2026-W42"
 }
