@@ -1,7 +1,5 @@
 {
  "sent": {
-  "exit:0bdc313c:time": "2026-10-13T19:48:00.447364+00:00",
-  "done:0bdc313c": "2026-10-13T19:48:01.267028+00:00",
   "filled:040ff01b": "2026-10-14T00:33:57.822155+00:00",
   "filled:0329160d": "2026-10-14T01:15:40.254659+00:00",
   "exit:0329160d:tp1": "2026-10-14T03:00:19.955277+00:00",
@@ -4376,13 +4374,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T19:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T19:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T19:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T19:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T19:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T19:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T19:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T19:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T19:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T19:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T19:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T19:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T19:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T19:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut": "2026-10-18T01:15:18.051304+00:00",
@@ -4451,9 +4449,9 @@
  },
  "timers": {
   "crowd": 1792523569.0880861,
-  "headlines": 1792525013.752554,
-  "scan": 1792525044.9788678,
-  "follow": 1792524800.2896833
+  "headlines": 1792525639.2801702,
+  "scan": 1792525854.393164,
+  "follow": 1792525762.5219479
  },
  "pushed_times": [],
  "last_checked": {
