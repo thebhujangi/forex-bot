@@ -3603,6 +3603,50 @@
    "flags": [
     "maybe:f98b2518"
    ]
+  },
+  {
+   "id": "6dfe7499",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "sell",
+   "entry": 81906.28,
+   "sl": 82124.28,
+   "cur_sl": 82124.28,
+   "trail_distance": null,
+   "tp1": 81688.29,
+   "created": "2026-10-20T00:15:00+00:00",
+   "status": "new",
+   "best": 81906.28,
+   "notified_sl": 82124.28,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-20T00:15:00+00:00",
+    "entry": 81906.28,
+    "sl": 82124.28,
+    "tp1": 81688.29,
+    "tp2": 81361.3,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-20T02:15:00+00:00",
+    "close_by": "2026-10-20T08:15:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.6x ATR from EMA20; sell the pullback at 81906.28."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -3612,13 +3656,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T00:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T00:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T00:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T00:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T00:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T00:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T00:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T00:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T00:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T00:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T00:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T00:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T00:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T00:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00",
@@ -3672,10 +3716,10 @@
   "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T21:08:43.944831+00:00"
  },
  "timers": {
-  "crowd": 1792451271.9446776,
-  "headlines": 1792454608.0859895,
-  "scan": 1792454793.0052133,
-  "follow": 1792454762.4684472
+  "crowd": 1792454895.6671886,
+  "headlines": 1792455232.579252,
+  "scan": 1792455595.3028944,
+  "follow": 1792455381.4919157
  },
  "pushed_times": [],
  "last_checked": {
@@ -3757,7 +3801,8 @@
   "413ed8f1": 1792425318.7472012,
   "61ae0923": 1792432935.131009,
   "9c92e529": 1792423381.8090398,
-  "f98b2518": 1792438624.4462845
+  "f98b2518": 1792438624.4462845,
+  "6dfe7499": 1792455381.8029044
  },
  "last_report": "2026-W42"
 }
