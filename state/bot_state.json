@@ -129,7 +129,8 @@
   "filled:f8c5f85c": "2026-10-20T01:50:55.859166+00:00",
   "expired:6dfe7499": "2026-10-20T02:16:49.852507+00:00",
   "exit:f8c5f85c:sl": "2026-10-20T03:40:55.936574+00:00",
-  "done:f8c5f85c": "2026-10-20T03:40:56.609749+00:00"
+  "done:f8c5f85c": "2026-10-20T03:40:56.609749+00:00",
+  "expired:deff858d": "2026-10-20T08:15:09.148952+00:00"
  },
  "offset": 508857110,
  "initial_sl": {},
@@ -3883,13 +3884,13 @@
    "trail_distance": null,
    "tp1": 2388.32,
    "created": "2026-10-20T06:15:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2399.52,
    "notified_sl": 2410.72,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-20T08:15:07.362731+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -3912,7 +3913,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -3958,6 +3959,50 @@
    "fill_notified": false,
    "outcome": null,
    "flags": []
+  },
+  {
+   "id": "bda74beb",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "ETHUSD",
+   "side": "sell",
+   "entry": 2393.79,
+   "sl": 2403.85,
+   "cur_sl": 2403.85,
+   "trail_distance": null,
+   "tp1": 2383.73,
+   "created": "2026-10-20T08:15:00+00:00",
+   "status": "new",
+   "best": 2393.79,
+   "notified_sl": 2403.85,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "ETHUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-20T08:15:00+00:00",
+    "entry": 2393.79,
+    "sl": 2403.85,
+    "tp1": 2383.73,
+    "tp2": 2368.64,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-20T10:15:00+00:00",
+    "close_by": "2026-10-20T16:15:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.9x ATR from EMA20; sell the pullback at 2393.79."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -3967,13 +4012,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T08:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T08:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T08:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T08:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T08:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T08:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T08:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T08:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T08:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T08:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T08:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T08:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T08:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T08:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00",
@@ -4025,13 +4070,14 @@
   "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes": "2026-10-19T20:27:32.143715+00:00",
   "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T21:08:43.944831+00:00",
   "https://cointelegraph.com/markets/bitcoin-rally-could-revive-treasury-buying-but-easy-money-days-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T01:47:21.119303+00:00",
-  "https://cointelegraph.com/markets/bitcoin-etfs-527m-inflows-biggest-since-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T05:54:45.098089+00:00"
+  "https://cointelegraph.com/markets/bitcoin-etfs-527m-inflows-biggest-since-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T05:54:45.098089+00:00",
+  "https://cointelegraph.com/news/blackrock-ishares-bitcoin-managed-protection-etf-pbit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T08:19:11.912337+00:00"
  },
  "timers": {
   "crowd": 1792483816.1502597,
-  "headlines": 1792483723.6329596,
-  "scan": 1792483846.7522268,
-  "follow": 1792483784.7156687
+  "headlines": 1792484351.187656,
+  "scan": 1792484658.7775016,
+  "follow": 1792484412.9180062
  },
  "pushed_times": [],
  "last_checked": {
@@ -4116,12 +4162,13 @@
   "f98b2518": 1792438624.4462845,
   "6dfe7499": 1792462609.1578116,
   "f8c5f85c": 1792467655.2363663,
-  "b8477c39": 1792483785.0002139,
-  "0103c101": 1792483785.2607918,
-  "52ae13c6": 1792483785.5154598,
-  "2dde8e74": 1792483785.7713401,
-  "deff858d": 1792483785.772492,
-  "c411d7ea": 1792483785.7735863
+  "b8477c39": 1792484413.2847316,
+  "0103c101": 1792484413.6993542,
+  "52ae13c6": 1792484414.1317613,
+  "2dde8e74": 1792484414.5112138,
+  "deff858d": 1792484108.4012897,
+  "c411d7ea": 1792484414.5116832,
+  "bda74beb": 1792484414.5121377
  },
  "last_report": "2026-W42"
 }
