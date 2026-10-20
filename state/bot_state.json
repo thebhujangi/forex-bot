@@ -127,7 +127,8 @@
   "maybe:f98b2518": "2026-10-19T14:24:18.188077+00:00",
   "filled:f98b2518": "2026-10-19T15:23:10.556058+00:00",
   "oco:9c92e529": "2026-10-19T15:23:11.326322+00:00",
-  "filled:f8c5f85c": "2026-10-20T01:50:55.859166+00:00"
+  "filled:f8c5f85c": "2026-10-20T01:50:55.859166+00:00",
+  "expired:6dfe7499": "2026-10-20T02:16:49.852507+00:00"
  },
  "offset": 508857110,
  "initial_sl": {},
@@ -3617,13 +3618,13 @@
    "trail_distance": null,
    "tp1": 81688.29,
    "created": "2026-10-20T00:15:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 81906.28,
    "notified_sl": 82124.28,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-20T02:16:48.709400+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -3646,7 +3647,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -3701,13 +3702,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T02:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T02:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T02:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T02:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T02:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T02:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T02:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T02:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T02:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T02:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T02:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T02:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T02:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T02:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00",
@@ -3762,10 +3763,10 @@
   "https://cointelegraph.com/markets/bitcoin-rally-could-revive-treasury-buying-but-easy-money-days-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T01:47:21.119303+00:00"
  },
  "timers": {
-  "crowd": 1792458498.4277656,
-  "headlines": 1792462072.2293637,
-  "scan": 1792462041.7737505,
-  "follow": 1792461980.1494207
+  "crowd": 1792462151.8819246,
+  "headlines": 1792462701.8222868,
+  "scan": 1792462855.592427,
+  "follow": 1792462608.7093961
  },
  "pushed_times": [],
  "last_checked": {
@@ -3848,8 +3849,8 @@
   "61ae0923": 1792432935.131009,
   "9c92e529": 1792423381.8090398,
   "f98b2518": 1792438624.4462845,
-  "6dfe7499": 1792461980.4858663,
-  "f8c5f85c": 1792461980.8021324
+  "6dfe7499": 1792462609.1578116,
+  "f8c5f85c": 1792462610.1987565
  },
  "last_report": "2026-W42"
 }
