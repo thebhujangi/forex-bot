@@ -3700,13 +3700,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T01:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T01:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T01:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T01:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T01:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T01:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T01:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T01:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T01:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T01:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T01:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T01:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T01:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T01:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough": "2026-10-17T02:33:31.810174+00:00",
@@ -3761,16 +3761,16 @@
  },
  "timers": {
   "crowd": 1792458498.4277656,
-  "headlines": 1792459605.2304542,
-  "scan": 1792459636.382179,
-  "follow": 1792459481.9287498
+  "headlines": 1792460218.4413972,
+  "scan": 1792460432.4170475,
+  "follow": 1792460432.4183285
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792456969.15701,
+  "d82f6843": 1792460432.607796,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -3846,8 +3846,8 @@
   "61ae0923": 1792432935.131009,
   "9c92e529": 1792423381.8090398,
   "f98b2518": 1792438624.4462845,
-  "6dfe7499": 1792459482.3266654,
-  "f8c5f85c": 1792459482.7075193
+  "6dfe7499": 1792460432.9414096,
+  "f8c5f85c": 1792460433.256351
  },
  "last_report": "2026-W42"
 }
