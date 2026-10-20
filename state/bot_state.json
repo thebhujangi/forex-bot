@@ -4012,13 +4012,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T08:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T08:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T08:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T08:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T08:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T08:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T08:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T08:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T08:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T08:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T08:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T08:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T08:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T08:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00",
@@ -4071,20 +4071,21 @@
   "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T21:08:43.944831+00:00",
   "https://cointelegraph.com/markets/bitcoin-rally-could-revive-treasury-buying-but-easy-money-days-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T01:47:21.119303+00:00",
   "https://cointelegraph.com/markets/bitcoin-etfs-527m-inflows-biggest-since-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T05:54:45.098089+00:00",
-  "https://cointelegraph.com/news/blackrock-ishares-bitcoin-managed-protection-etf-pbit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T08:19:11.912337+00:00"
+  "https://cointelegraph.com/news/blackrock-ishares-bitcoin-managed-protection-etf-pbit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T08:19:11.912337+00:00",
+  "https://www.coindesk.com/business/2026/10/20/bitcoin-etfs-just-saw-their-biggest-day-in-a-month-thanks-entirely-to-blackrock": "2026-10-20T08:29:18.275759+00:00"
  },
  "timers": {
   "crowd": 1792483816.1502597,
-  "headlines": 1792484351.187656,
-  "scan": 1792484658.7775016,
-  "follow": 1792484412.9180062
+  "headlines": 1792484957.7699926,
+  "scan": 1792485478.5417385,
+  "follow": 1792485385.1894991
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792481270.717412,
+  "d82f6843": 1792484772.1024036,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -4162,13 +4163,13 @@
   "f98b2518": 1792438624.4462845,
   "6dfe7499": 1792462609.1578116,
   "f8c5f85c": 1792467655.2363663,
-  "b8477c39": 1792484413.2847316,
-  "0103c101": 1792484413.6993542,
-  "52ae13c6": 1792484414.1317613,
-  "2dde8e74": 1792484414.5112138,
+  "b8477c39": 1792485385.6226692,
+  "0103c101": 1792485385.9621248,
+  "52ae13c6": 1792485386.349121,
+  "2dde8e74": 1792485386.7897258,
   "deff858d": 1792484108.4012897,
-  "c411d7ea": 1792484414.5116832,
-  "bda74beb": 1792484414.5121377
+  "c411d7ea": 1792485386.7904925,
+  "bda74beb": 1792485386.791175
  },
  "last_report": "2026-W42"
 }
