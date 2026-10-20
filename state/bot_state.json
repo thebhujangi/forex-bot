@@ -3704,13 +3704,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T05:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T05:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T05:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T05:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T05:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T05:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T05:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T05:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T05:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T05:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T05:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T05:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T05:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T05:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00",
@@ -3761,13 +3761,14 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-19T18:44:28.510301+00:00",
   "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes": "2026-10-19T20:27:32.143715+00:00",
   "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T21:08:43.944831+00:00",
-  "https://cointelegraph.com/markets/bitcoin-rally-could-revive-treasury-buying-but-easy-money-days-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T01:47:21.119303+00:00"
+  "https://cointelegraph.com/markets/bitcoin-rally-could-revive-treasury-buying-but-easy-money-days-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T01:47:21.119303+00:00",
+  "https://cointelegraph.com/markets/bitcoin-etfs-527m-inflows-biggest-since-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T05:54:45.098089+00:00"
  },
  "timers": {
   "crowd": 1792472968.146355,
-  "headlines": 1792474427.9934378,
-  "scan": 1792475009.428251,
-  "follow": 1792474917.7274184
+  "headlines": 1792475684.2995188,
+  "scan": 1792475776.8117666,
+  "follow": 1792475531.6930778
  },
  "pushed_times": [],
  "last_checked": {
