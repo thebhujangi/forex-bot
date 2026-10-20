@@ -4376,13 +4376,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T17:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T17:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T17:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T17:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T17:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T17:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T17:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T17:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T17:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T17:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T17:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T17:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T17:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T17:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut": "2026-10-18T01:15:18.051304+00:00",
@@ -4446,13 +4446,14 @@
   "https://www.coindesk.com/markets/2026/10/20/live-updates-market-jitters-persist-as-the-ai-selloff-deepens": "2026-10-20T14:18:04.415037+00:00",
   "https://www.coindesk.com/markets/2026/10/20/blackrock-seeks-to-shield-bitcoin-investors-from-losses-after-rival-fund-weathers-50-crash": "2026-10-20T14:49:13.474878+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-spikes-to-833k-as-us-stocks-rise-on-q3-earnings-oil-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T16:32:35.035179+00:00",
-  "https://www.coindesk.com/opinion/2026/10/20/the-coinbase-allegations-expose-bitcoin-s-corporate-governance-gap": "2026-10-20T17:03:32.314398+00:00"
+  "https://www.coindesk.com/opinion/2026/10/20/the-coinbase-allegations-expose-bitcoin-s-corporate-governance-gap": "2026-10-20T17:03:32.314398+00:00",
+  "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00"
  },
  "timers": {
   "crowd": 1792516351.1443703,
-  "headlines": 1792517639.4351351,
-  "scan": 1792517792.9547794,
-  "follow": 1792517578.2729397
+  "headlines": 1792518266.21333,
+  "scan": 1792518597.3424783,
+  "follow": 1792518505.8701978
  },
  "pushed_times": [],
  "last_checked": {
