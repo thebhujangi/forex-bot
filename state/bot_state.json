@@ -3704,13 +3704,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T03:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T03:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T03:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T03:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T03:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T03:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T03:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T04:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T04:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T04:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T04:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T04:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T04:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T04:00:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-17T08:44:30.296915+00:00",
@@ -3764,10 +3764,10 @@
   "https://cointelegraph.com/markets/bitcoin-rally-could-revive-treasury-buying-but-easy-money-days-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T01:47:21.119303+00:00"
  },
  "timers": {
-  "crowd": 1792465756.7581162,
-  "headlines": 1792468242.1277077,
-  "scan": 1792468516.0213337,
-  "follow": 1792468272.815343
+  "crowd": 1792469359.001634,
+  "headlines": 1792468871.3328657,
+  "scan": 1792469328.5769806,
+  "follow": 1792469267.701108
  },
  "pushed_times": [],
  "last_checked": {
