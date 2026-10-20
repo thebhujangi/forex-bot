@@ -1,9 +1,5 @@
 {
  "sent": {
-  "filled:741a79fa": "2026-10-13T13:45:58.794844+00:00",
-  "oco:b5d85662": "2026-10-13T13:45:59.639789+00:00",
-  "filled:922bd850": "2026-10-13T13:46:00.463950+00:00",
-  "oco:ad5510bc": "2026-10-13T13:46:01.367406+00:00",
   "exit:741a79fa:sl": "2026-10-13T14:01:34.142413+00:00",
   "done:741a79fa": "2026-10-13T14:01:34.935160+00:00",
   "exit:922bd850:sl": "2026-10-13T14:01:35.836586+00:00",
@@ -135,7 +131,11 @@
   "expired:0103c101": "2026-10-20T10:03:53.679076+00:00",
   "expired:52ae13c6": "2026-10-20T10:03:54.700857+00:00",
   "expired:2dde8e74": "2026-10-20T10:03:55.664131+00:00",
-  "expired:bda74beb": "2026-10-20T10:19:48.861452+00:00"
+  "expired:bda74beb": "2026-10-20T10:19:48.861452+00:00",
+  "filled:a2717d7c": "2026-10-20T13:39:47.614599+00:00",
+  "oco:87aa760f": "2026-10-20T13:39:48.215314+00:00",
+  "filled:d1a49fdd": "2026-10-20T13:40:03.593581+00:00",
+  "oco:178d364a": "2026-10-20T13:40:04.187020+00:00"
  },
  "offset": 508857110,
  "initial_sl": {},
@@ -4137,7 +4137,7 @@
     "reason": "Asian range 1.12079-1.12283 (0.29x daily ATR 0.00698). Break above the high at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   },
@@ -4153,13 +4153,13 @@
    "trail_distance": null,
    "tp1": 1.11935,
    "created": "2026-10-20T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.12058,
    "notified_sl": 1.12181,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-20T13:39:30.879285+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -4182,7 +4182,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -4225,7 +4225,7 @@
     "reason": "Asian range 1.33404-1.33805 (0.56x daily ATR 0.00721). Break above the high at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   },
@@ -4241,13 +4241,13 @@
    "trail_distance": null,
    "tp1": 1.3316,
    "created": "2026-10-20T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.33382,
    "notified_sl": 1.33604,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-20T13:39:30.879285+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -4270,7 +4270,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   }
  ],
@@ -4281,13 +4281,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-19T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-19T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T13:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T13:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T13:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T13:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T13:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T13:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T13:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T13:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T13:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T13:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T13:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T13:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T13:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T13:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/business/2026/10/17/goldman-wells-fargo-morgan-stanley-see-tokenization-as-a-growth-play-not-a-threat": "2026-10-17T17:09:54.145288+00:00",
@@ -4352,9 +4352,9 @@
  },
  "timers": {
   "crowd": 1792501879.8615768,
-  "headlines": 1792502803.0733218,
-  "scan": 1792503226.1882677,
-  "follow": 1792503256.924404
+  "headlines": 1792504047.6896021,
+  "scan": 1792504108.309208,
+  "follow": 1792503877.7214262
  },
  "pushed_times": [],
  "last_checked": {
@@ -4446,12 +4446,12 @@
   "deff858d": 1792484108.4012897,
   "c411d7ea": 1792489712.585307,
   "bda74beb": 1792491588.2265055,
-  "453412e6": 1792503257.0233138,
-  "d4a19957": 1792503265.030456,
-  "a2717d7c": 1792503273.033536,
-  "87aa760f": 1792503281.0164914,
-  "d1a49fdd": 1792503289.0174017,
-  "178d364a": 1792503297.0324717
+  "453412e6": 1792503877.862931,
+  "d4a19957": 1792503885.781393,
+  "a2717d7c": 1792503893.7638648,
+  "87aa760f": 1792503594.960757,
+  "d1a49fdd": 1792503901.7726183,
+  "178d364a": 1792503604.1881967
  },
  "last_report": "2026-W42"
 }
