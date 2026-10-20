@@ -140,7 +140,9 @@
   "exit:d1a49fdd:be": "2026-10-20T14:59:46.272774+00:00",
   "done:d1a49fdd": "2026-10-20T14:59:46.923611+00:00",
   "expired:f1bcd229": "2026-10-20T16:50:04.515062+00:00",
-  "expired:8a0ad2d5": "2026-10-20T17:00:27.996343+00:00"
+  "expired:8a0ad2d5": "2026-10-20T17:00:27.996343+00:00",
+  "expired:59d8a71f": "2026-10-20T23:15:54.744620+00:00",
+  "expired:54611bb6": "2026-10-20T23:15:56.148900+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -4378,13 +4380,13 @@
    "trail_distance": null,
    "tp1": 82769.9,
    "created": "2026-10-20T21:15:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 82519.84,
    "notified_sl": 82269.78,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-20T23:15:53.577756+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -4407,7 +4409,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -4422,13 +4424,13 @@
    "trail_distance": null,
    "tp1": 2448.08,
    "created": "2026-10-20T21:15:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2436.31,
    "notified_sl": 2424.54,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-20T23:15:53.577756+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -4451,7 +4453,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   }
  ],
@@ -4462,13 +4464,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T23:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T23:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T23:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T23:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T23:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T23:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T23:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-20T23:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-20T23:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-20T23:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-20T23:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-20T23:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-20T23:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-20T23:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut": "2026-10-18T01:15:18.051304+00:00",
@@ -4537,9 +4539,9 @@
  },
  "timers": {
   "crowd": 1792538023.4140637,
-  "headlines": 1792537992.6636198,
-  "scan": 1792538054.0021884,
-  "follow": 1792537806.992322
+  "headlines": 1792538615.9337838,
+  "scan": 1792538830.846594,
+  "follow": 1792538769.577047
  },
  "pushed_times": [],
  "last_checked": {
@@ -4639,8 +4641,8 @@
   "178d364a": 1792503604.1881967,
   "f1bcd229": 1792515003.871908,
   "8a0ad2d5": 1792515627.1936302,
-  "59d8a71f": 1792537807.2958314,
-  "54611bb6": 1792537807.5635676
+  "59d8a71f": 1792538153.9140868,
+  "54611bb6": 1792538155.354641
  },
  "last_report": "2026-W42"
 }
