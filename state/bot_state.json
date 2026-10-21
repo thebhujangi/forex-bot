@@ -4761,13 +4761,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T09:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T09:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T09:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T09:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T09:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T09:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T09:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T09:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T09:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T09:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T09:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T09:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T09:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T09:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook": "2026-10-18T13:06:59.524633+00:00",
@@ -4839,9 +4839,9 @@
  },
  "timers": {
   "crowd": 1792574483.7118435,
-  "headlines": 1792575154.0603812,
-  "scan": 1792575248.1970224,
-  "follow": 1792575154.6856053
+  "headlines": 1792575779.3643398,
+  "scan": 1792576047.339681,
+  "follow": 1792576099.5135279
  },
  "pushed_times": [],
  "last_checked": {
@@ -4944,12 +4944,12 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792575155.1868386,
+  "9da18613": 1792576099.9158611,
   "5b00920b": 1792571653.5815387,
-  "def712c8": 1792575155.5900326,
-  "4a1366a3": 1792575156.0054297,
+  "def712c8": 1792576100.3671317,
+  "4a1366a3": 1792576100.7146506,
   "a0dc53e9": 1792575156.0066848,
-  "6acbc75a": 1792575156.7079816
+  "6acbc75a": 1792576100.715411
  },
  "last_report": "2026-W42"
 }
