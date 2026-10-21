@@ -4681,13 +4681,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T06:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T06:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T06:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T06:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T06:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T06:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T06:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T06:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T06:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T06:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T06:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T06:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T06:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T06:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/tether-backs-aisa-as-strategic-investor-completing-seed-extension-round?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T06:45:29.355134+00:00",
@@ -4756,10 +4756,10 @@
   "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin": "2026-10-21T05:35:25.983064+00:00"
  },
  "timers": {
-  "crowd": 1792559995.256398,
-  "headlines": 1792562821.0730414,
-  "scan": 1792563097.7506182,
-  "follow": 1792563097.7521915
+  "crowd": 1792563604.2179353,
+  "headlines": 1792563450.4367714,
+  "scan": 1792563912.23529,
+  "follow": 1792563726.9790983
  },
  "pushed_times": [],
  "last_checked": {
@@ -4862,10 +4862,10 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792563098.044962,
-  "5b00920b": 1792563098.315064,
-  "def712c8": 1792563098.572499,
-  "4a1366a3": 1792563098.8283188
+  "9da18613": 1792563727.6269712,
+  "5b00920b": 1792563728.0081267,
+  "def712c8": 1792563728.3581336,
+  "4a1366a3": 1792563728.7514648
  },
  "last_report": "2026-W42"
 }
