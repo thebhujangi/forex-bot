@@ -1,12 +1,5 @@
 {
  "sent": {
-  "exit:91f049aa:sl": "2026-10-14T08:41:34.165173+00:00",
-  "done:91f049aa": "2026-10-14T08:41:34.902525+00:00",
-  "exit:efc38c50:be": "2026-10-14T08:46:33.071923+00:00",
-  "done:efc38c50": "2026-10-14T08:46:33.758465+00:00",
-  "exit:3634b3c2:sl": "2026-10-14T08:46:34.445715+00:00",
-  "done:3634b3c2": "2026-10-14T08:46:35.123980+00:00",
-  "filled:87071a07": "2026-10-14T08:46:35.825282+00:00",
   "exit:87071a07:sl": "2026-10-14T09:28:07.014952+00:00",
   "done:87071a07": "2026-10-14T09:28:07.672564+00:00",
   "expired:a5805efa": "2026-10-14T14:47:47.435423+00:00",
@@ -4722,13 +4715,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T08:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T08:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T08:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T08:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T08:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T08:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T08:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T08:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T08:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T08:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T08:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T08:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T08:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T08:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook": "2026-10-18T13:06:59.524633+00:00",
@@ -4794,13 +4787,14 @@
   "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00",
   "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11": "2026-10-21T04:12:47.466884+00:00",
   "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin": "2026-10-21T05:35:25.983064+00:00",
-  "https://cointelegraph.com/markets/ether-etf-outflows-near-1-1-billion-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T08:30:39.857940+00:00"
+  "https://cointelegraph.com/markets/ether-etf-outflows-near-1-1-billion-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T08:30:39.857940+00:00",
+  "https://www.coindesk.com/business/2026/10/21/tether-leads-usd15-million-series-a-for-ai-focused-payment-startup-mural": "2026-10-21T08:51:02.316601+00:00"
  },
  "timers": {
   "crowd": 1792570864.360291,
-  "headlines": 1792572053.9747028,
-  "scan": 1792572023.318568,
-  "follow": 1792571960.9594934
+  "headlines": 1792572661.946846,
+  "scan": 1792572814.6736507,
+  "follow": 1792572600.4324028
  },
  "pushed_times": [],
  "last_checked": {
@@ -4903,11 +4897,11 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792571961.3354487,
+  "9da18613": 1792572600.7370577,
   "5b00920b": 1792571653.5815387,
-  "def712c8": 1792571961.6656017,
-  "4a1366a3": 1792571962.0166533,
-  "a0dc53e9": 1792571962.0177896
+  "def712c8": 1792572601.0260062,
+  "4a1366a3": 1792572601.0269043,
+  "a0dc53e9": 1792572601.0277665
  },
  "last_report": "2026-W42"
 }
