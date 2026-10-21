@@ -5193,13 +5193,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T17:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T17:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T17:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T17:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T17:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T17:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T17:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T17:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T17:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T17:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T17:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T17:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T17:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T17:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-19T03:33:28.471275+00:00",
@@ -5270,13 +5270,14 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm": "2026-10-21T14:53:31.642749+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm": "2026-10-21T14:53:31.642752+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-21T14:53:31.642755+00:00",
-  "https://cointelegraph.com/markets/bitcoin-price-tags-846k-as-us-stocks-head-higher-on-spacex-q3-earnings-beat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T15:34:51.171983+00:00"
+  "https://cointelegraph.com/markets/bitcoin-price-tags-846k-as-us-stocks-head-higher-on-spacex-q3-earnings-beat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T15:34:51.171983+00:00",
+  "https://cointelegraph.com/news/occ-finalizes-stablecoin-rules-genius-act-bessent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T17:29:03.989157+00:00"
  },
  "timers": {
   "crowd": 1792603400.0486238,
-  "headlines": 1792603123.7758622,
-  "scan": 1792603584.2223532,
-  "follow": 1792603492.2237506
+  "headlines": 1792604348.646475,
+  "scan": 1792604379.7492359,
+  "follow": 1792604133.779161
  },
  "pushed_times": [],
  "last_checked": {
@@ -5393,7 +5394,7 @@
   "73f74e8f": 1792590637.4983368,
   "cba0cad3": 1792590015.2894251,
   "1037467a": 1792590642.1777027,
-  "297dc31e": 1792603492.6189346
+  "297dc31e": 1792604134.1218085
  },
  "last_report": "2026-W42"
 }
