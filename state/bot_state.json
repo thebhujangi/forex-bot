@@ -5149,13 +5149,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T16:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T16:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T16:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T16:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T16:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T16:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T16:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T16:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T16:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T16:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T16:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T16:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T16:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T16:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last": "2026-10-18T16:34:09.684302+00:00",
@@ -5231,10 +5231,10 @@
   "https://cointelegraph.com/markets/bitcoin-price-tags-846k-as-us-stocks-head-higher-on-spacex-q3-earnings-beat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T15:34:51.171983+00:00"
  },
  "timers": {
-  "crowd": 1792596175.0569274,
-  "headlines": 1792599410.9778183,
-  "scan": 1792599503.7666588,
-  "follow": 1792599411.593924
+  "crowd": 1792599794.1847365,
+  "headlines": 1792600037.7032564,
+  "scan": 1792600305.4171333,
+  "follow": 1792600361.2108948
  },
  "pushed_times": [],
  "last_checked": {
