@@ -4672,6 +4672,50 @@
    "fill_notified": false,
    "outcome": null,
    "flags": []
+  },
+  {
+   "id": "a0dc53e9",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "buy",
+   "entry": 82725.4,
+   "sl": 82478.14,
+   "cur_sl": 82478.14,
+   "trail_distance": null,
+   "tp1": 82972.66,
+   "created": "2026-10-21T07:30:00+00:00",
+   "status": "new",
+   "best": 82725.4,
+   "notified_sl": 82478.14,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "buy",
+    "order_type": "limit",
+    "created": "2026-10-21T07:30:00+00:00",
+    "entry": 82725.4,
+    "sl": 82478.14,
+    "tp1": 82972.66,
+    "tp2": 83343.56,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-21T09:30:00+00:00",
+    "close_by": "2026-10-21T15:30:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.6x ATR from EMA20; buy the pullback at 82725.40."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -4681,13 +4725,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T07:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T07:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T07:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T07:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T07:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T07:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T07:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T07:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T07:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T07:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T07:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T07:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T07:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T07:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook": "2026-10-18T13:06:59.524633+00:00",
@@ -4755,10 +4799,10 @@
   "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin": "2026-10-21T05:35:25.983064+00:00"
  },
  "timers": {
-  "crowd": 1792563604.2179353,
-  "headlines": 1792567145.449777,
-  "scan": 1792567145.9685206,
-  "follow": 1792566959.7800417
+  "crowd": 1792567250.3192651,
+  "headlines": 1792567775.5825403,
+  "scan": 1792567953.5959377,
+  "follow": 1792567890.528032
  },
  "pushed_times": [],
  "last_checked": {
@@ -4861,10 +4905,11 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792566960.3649077,
-  "5b00920b": 1792566960.7232227,
-  "def712c8": 1792566961.0867283,
-  "4a1366a3": 1792566961.4617002
+  "9da18613": 1792567891.0924833,
+  "5b00920b": 1792567891.4504547,
+  "def712c8": 1792567891.7992687,
+  "4a1366a3": 1792567892.1579075,
+  "a0dc53e9": 1792567892.1584187
  },
  "last_report": "2026-W42"
 }
