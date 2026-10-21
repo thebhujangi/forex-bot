@@ -5149,13 +5149,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T15:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T15:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T15:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T15:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T15:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T15:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T15:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T15:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T15:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T15:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T15:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T15:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T15:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T15:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last": "2026-10-18T16:34:09.684302+00:00",
@@ -5227,13 +5227,14 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm": "2026-10-21T14:53:31.642746+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm": "2026-10-21T14:53:31.642749+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm": "2026-10-21T14:53:31.642752+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-21T14:53:31.642755+00:00"
+  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-21T14:53:31.642755+00:00",
+  "https://cointelegraph.com/markets/bitcoin-price-tags-846k-as-us-stocks-head-higher-on-spacex-q3-earnings-beat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T15:34:51.171983+00:00"
  },
  "timers": {
   "crowd": 1792596175.0569274,
-  "headlines": 1792596267.1407595,
-  "scan": 1792596267.9089186,
-  "follow": 1792596236.6077526
+  "headlines": 1792596890.2410154,
+  "scan": 1792597105.204867,
+  "follow": 1792596859.6795747
  },
  "pushed_times": [],
  "last_checked": {
