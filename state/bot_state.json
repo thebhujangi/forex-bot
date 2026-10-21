@@ -5150,13 +5150,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T14:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T14:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T14:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T14:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T14:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T14:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T14:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T15:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T15:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T15:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T15:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T15:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T15:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T15:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last": "2026-10-18T16:34:09.684302+00:00",
@@ -5232,9 +5232,9 @@
  },
  "timers": {
   "crowd": 1792592569.6558313,
-  "headlines": 1792594410.8629742,
-  "scan": 1792594655.8873882,
-  "follow": 1792594686.4544563
+  "headlines": 1792595030.1428435,
+  "scan": 1792595458.7801814,
+  "follow": 1792595306.334996
  },
  "pushed_times": [],
  "last_checked": {
