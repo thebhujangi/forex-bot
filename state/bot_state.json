@@ -4681,16 +4681,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T06:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T06:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T06:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T06:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T06:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T06:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T06:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T06:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T06:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T06:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T06:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T06:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T06:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T06:45:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/tether-backs-aisa-as-strategic-investor-completing-seed-extension-round?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T06:45:29.355134+00:00",
   "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook": "2026-10-18T13:06:59.524633+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-18T14:39:54.744291+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm": "2026-10-18T14:39:54.744312+00:00",
@@ -4757,9 +4756,9 @@
  },
  "timers": {
   "crowd": 1792563604.2179353,
-  "headlines": 1792564685.2908664,
-  "scan": 1792564717.8478043,
-  "follow": 1792564685.5900292
+  "headlines": 1792565300.7147653,
+  "scan": 1792565515.002312,
+  "follow": 1792565331.4227026
  },
  "pushed_times": [],
  "last_checked": {
@@ -4862,10 +4861,10 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792564686.086889,
-  "5b00920b": 1792564686.4250205,
-  "def712c8": 1792564686.7569203,
-  "4a1366a3": 1792564687.230518
+  "9da18613": 1792565331.7222164,
+  "5b00920b": 1792565332.004907,
+  "def712c8": 1792565332.2815888,
+  "4a1366a3": 1792565332.5396156
  },
  "last_report": "2026-W42"
 }
