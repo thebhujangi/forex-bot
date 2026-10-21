@@ -134,7 +134,9 @@
   "filled:0de38e38": "2026-10-21T01:07:11.000177+00:00",
   "exit:0de38e38:tp1": "2026-10-21T01:55:03.991914+00:00",
   "exit:0de38e38:be": "2026-10-21T02:11:25.399797+00:00",
-  "done:0de38e38": "2026-10-21T02:11:26.236068+00:00"
+  "done:0de38e38": "2026-10-21T02:11:26.236068+00:00",
+  "filled:9da18613": "2026-10-21T08:34:12.273644+00:00",
+  "oco:5b00920b": "2026-10-21T08:34:13.108016+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -4532,7 +4534,7 @@
     "reason": "Asian range 82510.89-83138.45 (0.25x daily ATR 2480.22). Break above the high at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   },
@@ -4548,13 +4550,13 @@
    "trail_distance": null,
    "tp1": 82048.3,
    "created": "2026-10-21T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 82436.49,
    "notified_sl": 82824.67,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-21T08:34:10.479372+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -4577,7 +4579,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -4720,13 +4722,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T08:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T08:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T08:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T08:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T08:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T08:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T08:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T08:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T08:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T08:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T08:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T08:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T08:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T08:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook": "2026-10-18T13:06:59.524633+00:00",
@@ -4791,20 +4793,21 @@
   "https://www.coindesk.com/opinion/2026/10/20/the-coinbase-allegations-expose-bitcoin-s-corporate-governance-gap": "2026-10-20T17:03:32.314398+00:00",
   "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00",
   "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11": "2026-10-21T04:12:47.466884+00:00",
-  "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin": "2026-10-21T05:35:25.983064+00:00"
+  "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin": "2026-10-21T05:35:25.983064+00:00",
+  "https://cointelegraph.com/markets/ether-etf-outflows-near-1-1-billion-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T08:30:39.857940+00:00"
  },
  "timers": {
   "crowd": 1792570864.360291,
-  "headlines": 1792570833.251572,
-  "scan": 1792571201.354137,
-  "follow": 1792571017.1803074
+  "headlines": 1792572053.9747028,
+  "scan": 1792572023.318568,
+  "follow": 1792571960.9594934
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792568226.9656653,
+  "d82f6843": 1792571650.5897167,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -4900,11 +4903,11 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792571017.5055697,
-  "5b00920b": 1792571017.8095996,
-  "def712c8": 1792571018.1134257,
-  "4a1366a3": 1792571018.452025,
-  "a0dc53e9": 1792571018.452669
+  "9da18613": 1792571961.3354487,
+  "5b00920b": 1792571653.5815387,
+  "def712c8": 1792571961.6656017,
+  "4a1366a3": 1792571962.0166533,
+  "a0dc53e9": 1792571962.0177896
  },
  "last_report": "2026-W42"
 }
