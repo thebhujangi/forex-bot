@@ -4510,13 +4510,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T02:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T02:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T02:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T02:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T02:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T02:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T02:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T02:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T02:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T02:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T02:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T02:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T02:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T02:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/tether-backs-aisa-as-strategic-investor-completing-seed-extension-round?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T06:45:29.355134+00:00",
@@ -4584,9 +4584,9 @@
  },
  "timers": {
   "crowd": 1792549142.8624425,
-  "headlines": 1792549173.958948,
-  "scan": 1792549388.8072464,
-  "follow": 1792549296.907166
+  "headlines": 1792549797.2285295,
+  "scan": 1792550191.394198,
+  "follow": 1792550221.930315
  },
  "pushed_times": [],
  "last_checked": {
