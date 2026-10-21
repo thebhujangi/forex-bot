@@ -134,7 +134,10 @@
   "expired:4a1366a3": "2026-10-21T10:03:51.555893+00:00",
   "maybe:6acbc75a": "2026-10-21T10:09:00.372112+00:00",
   "filled:6acbc75a": "2026-10-21T10:19:30.277370+00:00",
-  "exit:6acbc75a:tp1": "2026-10-21T11:23:32.388158+00:00"
+  "exit:6acbc75a:tp1": "2026-10-21T11:23:32.388158+00:00",
+  "exit:9da18613:tp1": "2026-10-21T13:08:32.536300+00:00",
+  "exit:6acbc75a:tp2": "2026-10-21T13:08:33.779725+00:00",
+  "done:6acbc75a": "2026-10-21T13:08:34.628151+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -4531,7 +4534,7 @@
     "trail_distance": null,
     "reason": "Asian range 82510.89-83138.45 (0.25x daily ATR 2480.22). Break above the high at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null,
    "flags": []
@@ -4726,13 +4729,13 @@
    "trail_distance": null,
    "tp1": 2459.74,
    "created": "2026-10-21T09:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2448.31,
    "notified_sl": 2436.88,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 1.7497812773403576,
+   "closed_at": "2026-10-21T13:00:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -4753,9 +4756,9 @@
     "trail_distance": null,
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.7x ATR from EMA20; buy the pullback at 2448.31."
    },
-   "seen_exits": 1,
+   "seen_exits": 2,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "tp2",
    "flags": [
     "maybe:6acbc75a"
    ]
@@ -4768,16 +4771,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T12:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T12:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T12:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T12:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T12:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T12:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T12:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T13:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T13:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T13:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T13:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T13:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T13:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T13:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook": "2026-10-18T13:06:59.524633+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-18T14:39:54.744291+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm": "2026-10-18T14:39:54.744312+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm": "2026-10-18T14:39:54.744318+00:00",
@@ -4850,9 +4852,9 @@
  },
  "timers": {
   "crowd": 1792585331.4680004,
-  "headlines": 1792586956.8387582,
-  "scan": 1792587387.4673283,
-  "follow": 1792587141.2357883
+  "headlines": 1792588206.7563825,
+  "scan": 1792588207.0269902,
+  "follow": 1792588111.2614362
  },
  "pushed_times": [],
  "last_checked": {
@@ -4955,12 +4957,12 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792587141.6012838,
+  "9da18613": 1792588111.6511405,
   "5b00920b": 1792571653.5815387,
   "def712c8": 1792577029.5278902,
   "4a1366a3": 1792577030.7119265,
   "a0dc53e9": 1792575156.0066848,
-  "6acbc75a": 1792587141.9316406
+  "6acbc75a": 1792588112.9069946
  },
  "last_report": "2026-W42"
 }
