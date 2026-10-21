@@ -4508,13 +4508,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T04:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T04:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T04:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T04:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T04:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T04:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T04:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T04:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T04:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T04:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T04:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T04:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T04:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T04:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/tether-backs-aisa-as-strategic-investor-completing-seed-extension-round?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T06:45:29.355134+00:00",
@@ -4578,13 +4578,14 @@
   "https://www.coindesk.com/markets/2026/10/20/blackrock-seeks-to-shield-bitcoin-investors-from-losses-after-rival-fund-weathers-50-crash": "2026-10-20T14:49:13.474878+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-spikes-to-833k-as-us-stocks-rise-on-q3-earnings-oil-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T16:32:35.035179+00:00",
   "https://www.coindesk.com/opinion/2026/10/20/the-coinbase-allegations-expose-bitcoin-s-corporate-governance-gap": "2026-10-20T17:03:32.314398+00:00",
-  "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00"
+  "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00",
+  "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11": "2026-10-21T04:12:47.466884+00:00"
  },
  "timers": {
-  "crowd": 1792552762.3449066,
-  "headlines": 1792555365.8603644,
-  "scan": 1792555822.0509634,
-  "follow": 1792555880.313979
+  "crowd": 1792556392.7706249,
+  "headlines": 1792556576.2907665,
+  "scan": 1792556641.9323297,
+  "follow": 1792556515.2530484
  },
  "pushed_times": [],
  "last_checked": {
