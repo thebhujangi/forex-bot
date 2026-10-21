@@ -5147,13 +5147,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T14:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T14:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T14:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T14:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T14:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T14:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T14:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T14:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T14:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T14:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T14:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T14:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T14:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T14:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-18T14:39:54.744291+00:00",
@@ -5228,17 +5228,17 @@
   "https://cointelegraph.com/magazine/5-alternatives-to-ledger-to-store-your-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T13:41:20.019666+00:00"
  },
  "timers": {
-  "crowd": 1792588944.608931,
-  "headlines": 1792591946.2781687,
-  "scan": 1792592260.643486,
-  "follow": 1792592220.0740166
+  "crowd": 1792592569.6558313,
+  "headlines": 1792592570.0237203,
+  "scan": 1792593029.9063926,
+  "follow": 1792592846.3201983
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792589036.9290905,
+  "d82f6843": 1792592530.5988069,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -5340,10 +5340,10 @@
   "4a1366a3": 1792577030.7119265,
   "a0dc53e9": 1792575156.0066848,
   "6acbc75a": 1792588112.9069946,
-  "a8cb5bcc": 1792592220.5564253,
+  "a8cb5bcc": 1792592846.7413764,
   "f50229ad": 1792591905.5132892,
   "93186b5c": 1792592220.7596343,
-  "d99229f6": 1792592228.6723552,
+  "d99229f6": 1792592846.871896,
   "f883a6f1": 1792590634.1481018,
   "73f74e8f": 1792590637.4983368,
   "cba0cad3": 1792590015.2894251,
