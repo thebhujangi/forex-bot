@@ -133,7 +133,8 @@
   "expired:def712c8": "2026-10-21T10:03:50.386835+00:00",
   "expired:4a1366a3": "2026-10-21T10:03:51.555893+00:00",
   "maybe:6acbc75a": "2026-10-21T10:09:00.372112+00:00",
-  "filled:6acbc75a": "2026-10-21T10:19:30.277370+00:00"
+  "filled:6acbc75a": "2026-10-21T10:19:30.277370+00:00",
+  "exit:6acbc75a:tp1": "2026-10-21T11:23:32.388158+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -4752,7 +4753,7 @@
     "trail_distance": null,
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.7x ATR from EMA20; buy the pullback at 2448.31."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null,
    "flags": [
@@ -4767,13 +4768,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T11:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T11:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T11:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T11:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T11:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T11:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T11:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T11:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T11:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T11:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T11:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T11:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T11:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T11:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook": "2026-10-18T13:06:59.524633+00:00",
@@ -4849,16 +4850,16 @@
  },
  "timers": {
   "crowd": 1792581711.6458125,
-  "headlines": 1792581372.780611,
-  "scan": 1792581711.9855874,
-  "follow": 1792581465.1051955
+  "headlines": 1792581994.932601,
+  "scan": 1792582514.70675,
+  "follow": 1792582422.8984249
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792578603.0813036,
+  "d82f6843": 1792582124.8395965,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -4954,12 +4955,12 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792581465.517633,
+  "9da18613": 1792582423.1924098,
   "5b00920b": 1792571653.5815387,
   "def712c8": 1792577029.5278902,
   "4a1366a3": 1792577030.7119265,
   "a0dc53e9": 1792575156.0066848,
-  "6acbc75a": 1792581466.127864
+  "6acbc75a": 1792582423.4537704
  },
  "last_report": "2026-W42"
 }
