@@ -4505,13 +4505,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T05:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T05:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T05:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T05:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T05:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T05:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T05:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T05:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T05:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T05:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T05:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T05:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T05:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T05:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/tether-backs-aisa-as-strategic-investor-completing-seed-extension-round?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T06:45:29.355134+00:00",
@@ -4576,20 +4576,21 @@
   "https://cointelegraph.com/markets/bitcoin-price-spikes-to-833k-as-us-stocks-rise-on-q3-earnings-oil-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T16:32:35.035179+00:00",
   "https://www.coindesk.com/opinion/2026/10/20/the-coinbase-allegations-expose-bitcoin-s-corporate-governance-gap": "2026-10-20T17:03:32.314398+00:00",
   "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00",
-  "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11": "2026-10-21T04:12:47.466884+00:00"
+  "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11": "2026-10-21T04:12:47.466884+00:00",
+  "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin": "2026-10-21T05:35:25.983064+00:00"
  },
  "timers": {
   "crowd": 1792559995.256398,
-  "headlines": 1792560301.623388,
-  "scan": 1792560691.716736,
-  "follow": 1792560577.7499938
+  "headlines": 1792560925.1196208,
+  "scan": 1792561514.6312482,
+  "follow": 1792561543.5292718
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792557796.112176,
+  "d82f6843": 1792561208.9427922,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
