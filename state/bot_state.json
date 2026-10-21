@@ -4464,13 +4464,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T00:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T00:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T00:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T00:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T00:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T00:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T00:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T00:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T00:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T00:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T00:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T00:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T00:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T00:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut": "2026-10-18T01:15:18.051304+00:00",
@@ -4538,10 +4538,10 @@
   "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00"
  },
  "timers": {
-  "crowd": 1792538023.4140637,
-  "headlines": 1792541090.359289,
-  "scan": 1792541244.0557888,
-  "follow": 1792540998.561174
+  "crowd": 1792541625.4593825,
+  "headlines": 1792541717.4493055,
+  "scan": 1792542084.0739017,
+  "follow": 1792541962.0010436
  },
  "pushed_times": [],
  "last_checked": {
