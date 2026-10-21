@@ -4718,13 +4718,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T09:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T09:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T09:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T09:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T09:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T09:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T09:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T09:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T09:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T09:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T09:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T09:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T09:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T09:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook": "2026-10-18T13:06:59.524633+00:00",
@@ -4794,10 +4794,10 @@
   "https://www.coindesk.com/business/2026/10/21/tether-leads-usd15-million-series-a-for-ai-focused-payment-startup-mural": "2026-10-21T08:51:02.316601+00:00"
  },
  "timers": {
-  "crowd": 1792570864.360291,
-  "headlines": 1792573296.061579,
-  "scan": 1792573664.7920723,
-  "follow": 1792573571.9613478
+  "crowd": 1792574483.7118435,
+  "headlines": 1792573917.6031775,
+  "scan": 1792574425.8848467,
+  "follow": 1792574211.935959
  },
  "pushed_times": [],
  "last_checked": {
@@ -4900,11 +4900,11 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792573572.3328192,
+  "9da18613": 1792574212.2656698,
   "5b00920b": 1792571653.5815387,
-  "def712c8": 1792573572.66284,
-  "4a1366a3": 1792573573.051646,
-  "a0dc53e9": 1792573573.0526638
+  "def712c8": 1792574212.5361648,
+  "4a1366a3": 1792574212.842673,
+  "a0dc53e9": 1792574212.8438404
  },
  "last_report": "2026-W42"
 }
