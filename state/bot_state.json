@@ -4507,16 +4507,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T01:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T01:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T01:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T01:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T01:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T01:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T01:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T01:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T01:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T01:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T01:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T01:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T01:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T01:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut": "2026-10-18T01:15:18.051304+00:00",
   "https://cointelegraph.com/news/tether-backs-aisa-as-strategic-investor-completing-seed-extension-round?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T06:45:29.355134+00:00",
   "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook": "2026-10-18T13:06:59.524633+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-18T14:39:54.744291+00:00",
@@ -4581,10 +4580,10 @@
   "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00"
  },
  "timers": {
-  "crowd": 1792541625.4593825,
-  "headlines": 1792544798.6045604,
-  "scan": 1792545137.7928383,
-  "follow": 1792545137.794168
+  "crowd": 1792545515.0729249,
+  "headlines": 1792546125.6544056,
+  "scan": 1792546156.6321568,
+  "follow": 1792546156.6342018
  },
  "pushed_times": [],
  "last_checked": {
@@ -4686,7 +4685,7 @@
   "8a0ad2d5": 1792515627.1936302,
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
-  "0de38e38": 1792545138.178293
+  "0de38e38": 1792546157.012477
  },
  "last_report": "2026-W42"
 }
