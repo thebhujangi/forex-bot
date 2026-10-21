@@ -1,7 +1,5 @@
 {
  "sent": {
-  "exit:87071a07:sl": "2026-10-14T09:28:07.014952+00:00",
-  "done:87071a07": "2026-10-14T09:28:07.672564+00:00",
   "expired:a5805efa": "2026-10-14T14:47:47.435423+00:00",
   "expired:07e2a578": "2026-10-14T15:19:08.011292+00:00",
   "expired:feb308bf": "2026-10-14T20:01:17.114843+00:00",
@@ -130,7 +128,8 @@
   "done:0de38e38": "2026-10-21T02:11:26.236068+00:00",
   "filled:9da18613": "2026-10-21T08:34:12.273644+00:00",
   "oco:5b00920b": "2026-10-21T08:34:13.108016+00:00",
-  "maybe:def712c8": "2026-10-21T08:55:29.234880+00:00"
+  "maybe:def712c8": "2026-10-21T08:55:29.234880+00:00",
+  "expired:a0dc53e9": "2026-10-21T09:32:36.706811+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -4678,13 +4677,13 @@
    "trail_distance": null,
    "tp1": 82972.66,
    "created": "2026-10-21T07:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 82725.4,
    "notified_sl": 82478.14,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-21T09:32:34.685607+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -4707,6 +4706,50 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
+   "outcome": "expired",
+   "flags": []
+  },
+  {
+   "id": "6acbc75a",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "ETHUSD",
+   "side": "buy",
+   "entry": 2448.31,
+   "sl": 2436.88,
+   "cur_sl": 2436.88,
+   "trail_distance": null,
+   "tp1": 2459.74,
+   "created": "2026-10-21T09:30:00+00:00",
+   "status": "new",
+   "best": 2448.31,
+   "notified_sl": 2436.88,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "ETHUSD",
+    "side": "buy",
+    "order_type": "limit",
+    "created": "2026-10-21T09:30:00+00:00",
+    "entry": 2448.31,
+    "sl": 2436.88,
+    "tp1": 2459.74,
+    "tp2": 2476.88,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-21T11:30:00+00:00",
+    "close_by": "2026-10-21T17:30:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.7x ATR from EMA20; buy the pullback at 2448.31."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
    "outcome": null,
    "flags": []
   }
@@ -4718,13 +4761,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T09:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T09:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T09:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T09:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T09:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T09:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T09:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T09:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T09:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T09:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T09:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T09:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T09:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T09:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/18/bitcoin-s-usd100-000-year-end-hope-divides-analysts-as-inflation-clouds-outlook": "2026-10-18T13:06:59.524633+00:00",
@@ -4791,20 +4834,21 @@
   "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11": "2026-10-21T04:12:47.466884+00:00",
   "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin": "2026-10-21T05:35:25.983064+00:00",
   "https://cointelegraph.com/markets/ether-etf-outflows-near-1-1-billion-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T08:30:39.857940+00:00",
-  "https://www.coindesk.com/business/2026/10/21/tether-leads-usd15-million-series-a-for-ai-focused-payment-startup-mural": "2026-10-21T08:51:02.316601+00:00"
+  "https://www.coindesk.com/business/2026/10/21/tether-leads-usd15-million-series-a-for-ai-focused-payment-startup-mural": "2026-10-21T08:51:02.316601+00:00",
+  "https://www.coindesk.com/markets/2026/10/21/spacex-and-tesla-explore-merger-that-would-unite-more-than-30-000-bitcoin": "2026-10-21T09:32:34.685486+00:00"
  },
  "timers": {
   "crowd": 1792574483.7118435,
-  "headlines": 1792573917.6031775,
-  "scan": 1792574425.8848467,
-  "follow": 1792574211.935959
+  "headlines": 1792575154.0603812,
+  "scan": 1792575248.1970224,
+  "follow": 1792575154.6856053
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792571650.5897167,
+  "d82f6843": 1792575154.785938,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -4900,11 +4944,12 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792574212.2656698,
+  "9da18613": 1792575155.1868386,
   "5b00920b": 1792571653.5815387,
-  "def712c8": 1792574212.5361648,
-  "4a1366a3": 1792574212.842673,
-  "a0dc53e9": 1792574212.8438404
+  "def712c8": 1792575155.5900326,
+  "4a1366a3": 1792575156.0054297,
+  "a0dc53e9": 1792575156.0066848,
+  "6acbc75a": 1792575156.7079816
  },
  "last_report": "2026-W42"
 }
