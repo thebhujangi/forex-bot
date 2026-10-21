@@ -5194,13 +5194,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T19:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T19:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T19:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T19:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T19:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T19:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T19:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T19:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T19:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T19:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T19:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T19:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T19:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T19:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-19T03:33:28.471275+00:00",
@@ -5275,10 +5275,10 @@
   "https://cointelegraph.com/news/occ-finalizes-stablecoin-rules-genius-act-bessent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T17:29:03.989157+00:00"
  },
  "timers": {
-  "crowd": 1792607022.637307,
-  "headlines": 1792609945.4264581,
-  "scan": 1792610068.1831152,
-  "follow": 1792609815.3665671
+  "crowd": 1792610641.2781355,
+  "headlines": 1792610549.82738,
+  "scan": 1792610823.887569,
+  "follow": 1792610763.1296988
  },
  "pushed_times": [],
  "last_checked": {
