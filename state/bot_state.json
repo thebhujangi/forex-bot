@@ -1,6 +1,5 @@
 {
  "sent": {
-  "expired:596badc9": "2026-10-14T20:49:03.634768+00:00",
   "expired:8642c378": "2026-10-14T22:45:21.937812+00:00",
   "filled:6a851756": "2026-10-15T00:09:50.514124+00:00",
   "exit:6a851756:tp1": "2026-10-15T00:52:07.123364+00:00",
@@ -5187,19 +5186,19 @@
   }
  ],
  "last_signal_bar": {
-  "crypto_trend:BTCUSD": "2026-10-20T21:00:00+00:00",
-  "crypto_trend:ETHUSD": "2026-10-20T21:00:00+00:00",
-  "crypto_trend:XRPUSD": "2026-10-20T21:00:00+00:00",
-  "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
-  "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
-  "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T20:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T20:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T20:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T20:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T20:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T20:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T20:45:00+00:00"
+  "crypto_trend:BTCUSD": "2026-10-21T21:00:00+00:00",
+  "crypto_trend:ETHUSD": "2026-10-21T21:00:00+00:00",
+  "crypto_trend:XRPUSD": "2026-10-21T21:00:00+00:00",
+  "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
+  "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
+  "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
+  "x_crypto_breakout:BTCUSD": "2026-10-21T21:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T21:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T21:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T21:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T21:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T21:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T21:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-19T03:33:28.471275+00:00",
@@ -5276,9 +5275,9 @@
  },
  "timers": {
   "crowd": 1792614256.1316226,
-  "headlines": 1792615483.5280335,
-  "scan": 1792615663.099662,
-  "follow": 1792615541.151366
+  "headlines": 1792616102.8136356,
+  "scan": 1792616516.0879736,
+  "follow": 1792616501.5314076
  },
  "pushed_times": [],
  "last_checked": {
