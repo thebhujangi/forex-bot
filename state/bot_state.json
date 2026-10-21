@@ -5140,6 +5140,50 @@
    "fill_notified": true,
    "outcome": "sl",
    "flags": []
+  },
+  {
+   "id": "297dc31e",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "ETHUSD",
+   "side": "buy",
+   "entry": 2487.3,
+   "sl": 2465.07,
+   "cur_sl": 2465.07,
+   "trail_distance": null,
+   "tp1": 2509.53,
+   "created": "2026-10-21T16:45:00+00:00",
+   "status": "new",
+   "best": 2487.3,
+   "notified_sl": 2465.07,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "ETHUSD",
+    "side": "buy",
+    "order_type": "limit",
+    "created": "2026-10-21T16:45:00+00:00",
+    "entry": 2487.3,
+    "sl": 2465.07,
+    "tp1": 2509.53,
+    "tp2": 2542.88,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-21T18:45:00+00:00",
+    "close_by": "2026-10-22T00:45:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.7x ATR from EMA20; buy the pullback at 2487.30."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -5149,16 +5193,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T16:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T16:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T16:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T16:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T16:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T16:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T16:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T16:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T16:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T16:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T16:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T16:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T16:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T16:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last": "2026-10-18T16:34:09.684302+00:00",
   "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T17:15:05.724992+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-19T03:33:28.471275+00:00",
   "https://www.coindesk.com/markets/2026/10/19/bitcoin-korea-s-kospi-and-nasdaq-futures-rally-as-china-gdp-beats-estimates": "2026-10-19T03:43:40.508366+00:00",
@@ -5232,9 +5275,9 @@
  },
  "timers": {
   "crowd": 1792599794.1847365,
-  "headlines": 1792600037.7032564,
-  "scan": 1792600305.4171333,
-  "follow": 1792600361.2108948
+  "headlines": 1792600665.8566422,
+  "scan": 1792601156.565417,
+  "follow": 1792600972.527674
  },
  "pushed_times": [],
  "last_checked": {
