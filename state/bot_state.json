@@ -5193,13 +5193,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T20:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T20:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T20:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T20:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T20:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T20:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T20:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T20:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T20:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T20:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T20:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T20:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T20:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T20:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-19T03:33:28.471275+00:00",
@@ -5271,13 +5271,14 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm": "2026-10-21T14:53:31.642752+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-21T14:53:31.642755+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-tags-846k-as-us-stocks-head-higher-on-spacex-q3-earnings-beat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T15:34:51.171983+00:00",
-  "https://cointelegraph.com/news/occ-finalizes-stablecoin-rules-genius-act-bessent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T17:29:03.989157+00:00"
+  "https://cointelegraph.com/news/occ-finalizes-stablecoin-rules-genius-act-bessent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T17:29:03.989157+00:00",
+  "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T20:34:32.052402+00:00"
  },
  "timers": {
-  "crowd": 1792610641.2781355,
-  "headlines": 1792613641.2175097,
-  "scan": 1792614066.8332174,
-  "follow": 1792613974.8912184
+  "crowd": 1792614256.1316226,
+  "headlines": 1792614871.3346465,
+  "scan": 1792614902.6111932,
+  "follow": 1792614902.6135094
  },
  "pushed_times": [],
  "last_checked": {
