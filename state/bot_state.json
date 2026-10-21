@@ -132,7 +132,8 @@
   "expired:a0dc53e9": "2026-10-21T09:32:36.706811+00:00",
   "expired:def712c8": "2026-10-21T10:03:50.386835+00:00",
   "expired:4a1366a3": "2026-10-21T10:03:51.555893+00:00",
-  "maybe:6acbc75a": "2026-10-21T10:09:00.372112+00:00"
+  "maybe:6acbc75a": "2026-10-21T10:09:00.372112+00:00",
+  "filled:6acbc75a": "2026-10-21T10:19:30.277370+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -4752,7 +4753,7 @@
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.7x ATR from EMA20; buy the pullback at 2448.31."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": [
     "maybe:6acbc75a"
@@ -4843,10 +4844,10 @@
   "https://www.coindesk.com/markets/2026/10/21/spacex-and-tesla-explore-merger-that-would-unite-more-than-30-000-bitcoin": "2026-10-21T09:32:34.685486+00:00"
  },
  "timers": {
-  "crowd": 1792574483.7118435,
-  "headlines": 1792577647.3287754,
-  "scan": 1792577710.3911612,
-  "follow": 1792577648.0407264
+  "crowd": 1792578092.2997925,
+  "headlines": 1792578275.5154376,
+  "scan": 1792578520.786178,
+  "follow": 1792578276.2462435
  },
  "pushed_times": [],
  "last_checked": {
@@ -4949,12 +4950,12 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792577648.6946192,
+  "9da18613": 1792578276.590958,
   "5b00920b": 1792571653.5815387,
   "def712c8": 1792577029.5278902,
   "4a1366a3": 1792577030.7119265,
   "a0dc53e9": 1792575156.0066848,
-  "6acbc75a": 1792577649.0359356
+  "6acbc75a": 1792578276.8965104
  },
  "last_report": "2026-W42"
 }
