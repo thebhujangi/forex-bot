@@ -5192,13 +5192,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T22:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T22:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T22:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T22:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T22:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T22:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T22:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T22:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T22:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T22:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T22:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T22:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T22:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T22:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-19T03:33:28.471275+00:00",
@@ -5274,10 +5274,10 @@
   "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T20:34:32.052402+00:00"
  },
  "timers": {
-  "crowd": 1792617857.097193,
-  "headlines": 1792621080.86272,
-  "scan": 1792621173.0496116,
-  "follow": 1792620928.0086987
+  "crowd": 1792621899.2288656,
+  "headlines": 1792621899.53088,
+  "scan": 1792622168.335966,
+  "follow": 1792621924.8159435
  },
  "pushed_times": [],
  "last_checked": {
