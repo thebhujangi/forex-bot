@@ -141,7 +141,8 @@
   "expired:8a0ad2d5": "2026-10-20T17:00:27.996343+00:00",
   "expired:59d8a71f": "2026-10-20T23:15:54.744620+00:00",
   "expired:54611bb6": "2026-10-20T23:15:56.148900+00:00",
-  "filled:0de38e38": "2026-10-21T01:07:11.000177+00:00"
+  "filled:0de38e38": "2026-10-21T01:07:11.000177+00:00",
+  "exit:0de38e38:tp1": "2026-10-21T01:55:03.991914+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -4494,7 +4495,7 @@
     "trail_distance": null,
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 1.6x ATR from EMA20; buy the pullback at 82821.18."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null,
    "flags": []
@@ -4507,13 +4508,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T01:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T01:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T01:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T01:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T01:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T01:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T01:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T01:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T01:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T01:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T01:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T01:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T01:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T01:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/tether-backs-aisa-as-strategic-investor-completing-seed-extension-round?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T06:45:29.355134+00:00",
@@ -4581,16 +4582,16 @@
  },
  "timers": {
   "crowd": 1792545515.0729249,
-  "headlines": 1792546748.5334344,
-  "scan": 1792546963.5156674,
-  "follow": 1792546779.617103
+  "headlines": 1792547366.1672637,
+  "scan": 1792547765.0123415,
+  "follow": 1792547702.7913768
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792543879.9360986,
+  "d82f6843": 1792547397.5867634,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -4685,7 +4686,7 @@
   "8a0ad2d5": 1792515627.1936302,
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
-  "0de38e38": 1792546780.001324
+  "0de38e38": 1792547703.1564357
  },
  "last_report": "2026-W42"
 }
