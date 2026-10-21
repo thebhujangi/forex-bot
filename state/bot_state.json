@@ -148,7 +148,7 @@
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
- "last_brief": "2026-10-20",
+ "last_brief": "2026-10-21",
  "tracked": [
   {
    "id": "99eade23",
@@ -4464,13 +4464,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-20T23:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-20T23:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-20T23:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-20T23:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-20T23:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-20T23:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-20T23:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T00:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T00:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T00:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T00:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T00:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T00:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T00:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/business/2026/10/17/circle-defends-usdc-economics-as-stablecoin-rivals-court-its-partners-with-bigger-cut": "2026-10-18T01:15:18.051304+00:00",
@@ -4539,9 +4539,9 @@
  },
  "timers": {
   "crowd": 1792538023.4140637,
-  "headlines": 1792540466.6870565,
-  "scan": 1792540436.311981,
-  "follow": 1792540375.4814305
+  "headlines": 1792541090.359289,
+  "scan": 1792541244.0557888,
+  "follow": 1792540998.561174
  },
  "pushed_times": [],
  "last_checked": {
