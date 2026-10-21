@@ -157,7 +157,11 @@
   "done:f50229ad": "2026-10-21T14:11:46.943334+00:00",
   "maybe:d99229f6": "2026-10-21T14:11:55.754295+00:00",
   "filled:d99229f6": "2026-10-21T14:17:09.413041+00:00",
-  "oco:93186b5c": "2026-10-21T14:17:10.134277+00:00"
+  "oco:93186b5c": "2026-10-21T14:17:10.134277+00:00",
+  "exit:a8cb5bcc:tp2": "2026-10-21T14:32:30.343795+00:00",
+  "done:a8cb5bcc": "2026-10-21T14:32:31.163380+00:00",
+  "exit:d99229f6:sl": "2026-10-21T14:32:32.077542+00:00",
+  "done:d99229f6": "2026-10-21T14:32:32.848162+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -4795,13 +4799,13 @@
    "trail_distance": null,
    "tp1": 83610.74,
    "created": "2026-10-21T13:15:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 83330.17,
    "notified_sl": 83049.59,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 1.7499643595409566,
+   "closed_at": "2026-10-21T14:25:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -4822,9 +4826,9 @@
     "trail_distance": null,
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 2.0x ATR from EMA20; buy the pullback at 83330.17."
    },
-   "seen_exits": 1,
+   "seen_exits": 2,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "tp2",
    "flags": []
   },
   {
@@ -4929,13 +4933,13 @@
    "trail_distance": null,
    "tp1": 4111.62,
    "created": "2026-10-21T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 4122.43,
    "notified_sl": 4133.24,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.0185013876041384,
+   "closed_at": "2026-10-21T14:25:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -4956,9 +4960,9 @@
     "trail_distance": null,
     "reason": "Asian range 4124.40-4142.07 (0.27x daily ATR 65.68). Break below the low at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "sl",
    "flags": [
     "maybe:d99229f6"
    ]
@@ -5156,23 +5160,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-21T14:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-18T14:39:54.744291+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm": "2026-10-18T14:39:54.744312+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm": "2026-10-18T14:39:54.744318+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm": "2026-10-18T14:39:54.744323+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm": "2026-10-18T14:39:54.744328+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/orders20260922a.htm": "2026-10-18T14:39:54.744333+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm": "2026-10-18T14:39:54.744337+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm": "2026-10-18T14:39:54.744341+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm": "2026-10-18T14:39:54.744345+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm": "2026-10-18T14:39:54.744349+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm": "2026-10-18T14:39:54.744354+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm": "2026-10-18T14:39:54.744358+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm": "2026-10-18T14:39:54.744362+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm": "2026-10-18T14:39:54.744366+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm": "2026-10-18T14:39:54.744370+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm": "2026-10-18T14:39:54.744374+00:00",
-  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-18T14:39:54.744378+00:00",
   "https://www.coindesk.com/markets/2026/10/18/wall-street-freaked-out-friday-vix-and-bitcoin-say-it-may-not-last": "2026-10-18T16:34:09.684302+00:00",
   "https://cointelegraph.com/news/sweden-riksbank-digital-krona-cbdc-legislation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T17:15:05.724992+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-19T03:33:28.471275+00:00",
@@ -5229,9 +5216,9 @@
  },
  "timers": {
   "crowd": 1792592569.6558313,
-  "headlines": 1792592570.0237203,
-  "scan": 1792593029.9063926,
-  "follow": 1792592846.3201983
+  "headlines": 1792593796.4320707,
+  "scan": 1792593888.8913732,
+  "follow": 1792593765.3316426
  },
  "pushed_times": [],
  "last_checked": {
@@ -5340,10 +5327,10 @@
   "4a1366a3": 1792577030.7119265,
   "a0dc53e9": 1792575156.0066848,
   "6acbc75a": 1792588112.9069946,
-  "a8cb5bcc": 1792592846.7413764,
+  "a8cb5bcc": 1792593149.5629368,
   "f50229ad": 1792591905.5132892,
   "93186b5c": 1792592220.7596343,
-  "d99229f6": 1792592846.871896,
+  "d99229f6": 1792593151.3396575,
   "f883a6f1": 1792590634.1481018,
   "73f74e8f": 1792590637.4983368,
   "cba0cad3": 1792590015.2894251,
