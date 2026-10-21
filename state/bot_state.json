@@ -1,6 +1,5 @@
 {
  "sent": {
-  "done:0329160d": "2026-10-14T03:31:02.069927+00:00",
   "maybe:6a411643": "2026-10-14T05:16:26.717726+00:00",
   "expired:6a411643": "2026-10-14T05:16:27.608659+00:00",
   "filled:efc38c50": "2026-10-14T05:16:28.455409+00:00",
@@ -4509,13 +4508,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T03:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T03:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T03:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T03:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T03:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T03:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T03:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T03:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T03:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T03:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T03:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T03:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T03:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T03:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/tether-backs-aisa-as-strategic-investor-completing-seed-extension-round?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-18T06:45:29.355134+00:00",
@@ -4582,10 +4581,10 @@
   "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00"
  },
  "timers": {
-  "crowd": 1792549142.8624425,
-  "headlines": 1792552264.9384835,
-  "scan": 1792552591.348974,
-  "follow": 1792552418.1121407
+  "crowd": 1792552762.3449066,
+  "headlines": 1792552885.111031,
+  "scan": 1792553436.1804883,
+  "follow": 1792553344.4317708
  },
  "pushed_times": [],
  "last_checked": {
