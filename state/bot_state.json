@@ -151,7 +151,8 @@
   "done:f883a6f1": "2026-10-21T13:50:36.610382+00:00",
   "oco:73f74e8f": "2026-10-21T13:50:37.496800+00:00",
   "exit:1037467a:sl": "2026-10-21T13:50:43.058481+00:00",
-  "done:1037467a": "2026-10-21T13:50:43.832440+00:00"
+  "done:1037467a": "2026-10-21T13:50:43.832440+00:00",
+  "exit:f50229ad:tp1": "2026-10-21T14:01:07.678817+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -4860,7 +4861,7 @@
     "trail_distance": null,
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 2.4x ATR from EMA20; buy the pullback at 2459.87."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null,
    "flags": [
@@ -5139,13 +5140,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T13:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T13:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T13:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T13:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T13:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T13:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T13:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T14:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T14:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T14:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T14:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T14:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T14:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T14:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-18T14:39:54.744291+00:00",
@@ -5221,9 +5222,9 @@
  },
  "timers": {
   "crowd": 1792588944.608931,
-  "headlines": 1792590079.5274112,
-  "scan": 1792590665.4512744,
-  "follow": 1792590624.1376667
+  "headlines": 1792591335.0716572,
+  "scan": 1792591427.7537777,
+  "follow": 1792591266.0322537
  },
  "pushed_times": [],
  "last_checked": {
@@ -5332,10 +5333,10 @@
   "4a1366a3": 1792577030.7119265,
   "a0dc53e9": 1792575156.0066848,
   "6acbc75a": 1792588112.9069946,
-  "a8cb5bcc": 1792590624.72131,
-  "f50229ad": 1792590626.027329,
-  "93186b5c": 1792590626.2002902,
-  "d99229f6": 1792590626.201397,
+  "a8cb5bcc": 1792591266.35559,
+  "f50229ad": 1792591266.750735,
+  "93186b5c": 1792591273.9065907,
+  "d99229f6": 1792591273.9071147,
   "f883a6f1": 1792590634.1481018,
   "73f74e8f": 1792590637.4983368,
   "cba0cad3": 1792590015.2894251,
