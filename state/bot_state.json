@@ -137,7 +137,21 @@
   "exit:6acbc75a:tp1": "2026-10-21T11:23:32.388158+00:00",
   "exit:9da18613:tp1": "2026-10-21T13:08:32.536300+00:00",
   "exit:6acbc75a:tp2": "2026-10-21T13:08:33.779725+00:00",
-  "done:6acbc75a": "2026-10-21T13:08:34.628151+00:00"
+  "done:6acbc75a": "2026-10-21T13:08:34.628151+00:00",
+  "exit:9da18613:be": "2026-10-21T13:39:39.537295+00:00",
+  "done:9da18613": "2026-10-21T13:39:40.971986+00:00",
+  "filled:a8cb5bcc": "2026-10-21T13:39:41.776854+00:00",
+  "maybe:f50229ad": "2026-10-21T13:39:43.154294+00:00",
+  "filled:1037467a": "2026-10-21T13:40:16.228803+00:00",
+  "oco:cba0cad3": "2026-10-21T13:40:17.028282+00:00",
+  "filled:f50229ad": "2026-10-21T13:44:56.259524+00:00",
+  "exit:a8cb5bcc:tp1": "2026-10-21T13:50:25.520240+00:00",
+  "filled:f883a6f1": "2026-10-21T13:50:35.029250+00:00",
+  "exit:f883a6f1:sl": "2026-10-21T13:50:35.807159+00:00",
+  "done:f883a6f1": "2026-10-21T13:50:36.610382+00:00",
+  "oco:73f74e8f": "2026-10-21T13:50:37.496800+00:00",
+  "exit:1037467a:sl": "2026-10-21T13:50:43.058481+00:00",
+  "done:1037467a": "2026-10-21T13:50:43.832440+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -4507,13 +4521,13 @@
    "trail_distance": null,
    "tp1": 83601.04,
    "created": "2026-10-21T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 83212.85,
    "notified_sl": 82824.67,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.4785762146426712,
+   "closed_at": "2026-10-21T13:30:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -4534,9 +4548,9 @@
     "trail_distance": null,
     "reason": "Asian range 82510.89-83138.45 (0.25x daily ATR 2480.22). Break above the high at the London open."
    },
-   "seen_exits": 1,
+   "seen_exits": 2,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "be",
    "flags": []
   },
   {
@@ -4802,8 +4816,8 @@
     "trail_distance": null,
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 2.0x ATR from EMA20; buy the pullback at 83330.17."
    },
-   "seen_exits": 0,
-   "fill_notified": false,
+   "seen_exits": 1,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   },
@@ -4847,9 +4861,11 @@
     "reason": "Uptrend: EMA20 above EMA100 and the slow EMA rising. Price stretched 2.4x ATR from EMA20; buy the pullback at 2459.87."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
-   "flags": []
+   "flags": [
+    "maybe:f50229ad"
+   ]
   },
   {
    "id": "93186b5c",
@@ -4951,13 +4967,13 @@
    "trail_distance": null,
    "tp1": 1.12446,
    "created": "2026-10-21T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.12375,
    "notified_sl": 1.12303,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.0833333333332562,
+   "closed_at": "2026-10-21T13:40:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -4978,9 +4994,9 @@
     "trail_distance": null,
     "reason": "Asian range 1.12253-1.12354 (0.15x daily ATR 0.00695). Break above the high at the London open."
    },
-   "seen_exits": 0,
-   "fill_notified": false,
-   "outcome": null,
+   "seen_exits": 1,
+   "fill_notified": true,
+   "outcome": "sl",
    "flags": []
   },
   {
@@ -4995,13 +5011,13 @@
    "trail_distance": null,
    "tp1": 1.12161,
    "created": "2026-10-21T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.12232,
    "notified_sl": 1.12303,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-21T13:50:24.137681+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -5024,7 +5040,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -5039,13 +5055,13 @@
    "trail_distance": null,
    "tp1": 1.34137,
    "created": "2026-10-21T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.34052,
    "notified_sl": 1.33967,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-21T13:39:38.064584+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -5068,7 +5084,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -5083,13 +5099,13 @@
    "trail_distance": null,
    "tp1": 1.33797,
    "created": "2026-10-21T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.33882,
    "notified_sl": 1.33967,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.0705882352940561,
+   "closed_at": "2026-10-21T13:45:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -5110,9 +5126,9 @@
     "trail_distance": null,
     "reason": "Asian range 1.33904-1.34031 (0.18x daily ATR 0.00717). Break below the low at the London open."
    },
-   "seen_exits": 0,
-   "fill_notified": false,
-   "outcome": null,
+   "seen_exits": 1,
+   "fill_notified": true,
+   "outcome": "sl",
    "flags": []
   }
  ],
@@ -5123,13 +5139,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-20T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-20T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-21T13:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-21T13:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-21T13:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-21T13:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-21T13:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-21T13:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-21T13:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-21T13:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-21T13:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-21T13:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-21T13:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-21T13:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-21T13:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-21T13:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-18T14:39:54.744291+00:00",
@@ -5200,13 +5216,14 @@
   "https://cointelegraph.com/news/drift-exploiter-moves-109m-eth-tornado-cash-2-days?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T10:34:36.665952+00:00",
   "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures": "2026-10-21T10:34:36.665971+00:00",
   "https://cointelegraph.com/markets/bitcoin-top-buyers-halt-btc-price-upside-with-877k-now-key-glassnode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T10:54:57.030609+00:00",
-  "https://www.coindesk.com/daybook-us/2026/10/21/bitcoin-risk-management-grows-more-popular-as-the-just-bet-on-price-era-fades": "2026-10-21T11:16:13.507656+00:00"
+  "https://www.coindesk.com/daybook-us/2026/10/21/bitcoin-risk-management-grows-more-popular-as-the-just-bet-on-price-era-fades": "2026-10-21T11:16:13.507656+00:00",
+  "https://cointelegraph.com/magazine/5-alternatives-to-ledger-to-store-your-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T13:41:20.019666+00:00"
  },
  "timers": {
   "crowd": 1792588944.608931,
-  "headlines": 1792589473.0308547,
-  "scan": 1792589851.2433205,
-  "follow": 1792589657.2940848
+  "headlines": 1792590079.5274112,
+  "scan": 1792590665.4512744,
+  "follow": 1792590624.1376667
  },
  "pushed_times": [],
  "last_checked": {
@@ -5309,20 +5326,20 @@
   "59d8a71f": 1792538153.9140868,
   "54611bb6": 1792538155.354641,
   "0de38e38": 1792548684.6043563,
-  "9da18613": 1792589657.6980994,
+  "9da18613": 1792589978.6329954,
   "5b00920b": 1792571653.5815387,
   "def712c8": 1792577029.5278902,
   "4a1366a3": 1792577030.7119265,
   "a0dc53e9": 1792575156.0066848,
   "6acbc75a": 1792588112.9069946,
-  "a8cb5bcc": 1792589657.699465,
-  "f50229ad": 1792589658.0904589,
-  "93186b5c": 1792589658.224508,
-  "d99229f6": 1792589666.2162201,
-  "f883a6f1": 1792589674.2135367,
-  "73f74e8f": 1792589682.2101154,
-  "cba0cad3": 1792589690.2111404,
-  "1037467a": 1792589698.2065961
+  "a8cb5bcc": 1792590624.72131,
+  "f50229ad": 1792590626.027329,
+  "93186b5c": 1792590626.2002902,
+  "d99229f6": 1792590626.201397,
+  "f883a6f1": 1792590634.1481018,
+  "73f74e8f": 1792590637.4983368,
+  "cba0cad3": 1792590015.2894251,
+  "1037467a": 1792590642.1777027
  },
  "last_report": "2026-W42"
 }
