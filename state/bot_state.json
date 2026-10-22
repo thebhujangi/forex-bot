@@ -155,7 +155,9 @@
   "done:d99229f6": "2026-10-21T14:32:32.848162+00:00",
   "expired:297dc31e": "2026-10-21T18:49:39.803179+00:00",
   "expired:f904cb19": "2026-10-22T04:46:24.250486+00:00",
-  "expired:1f178348": "2026-10-22T05:50:20.338173+00:00"
+  "expired:1f178348": "2026-10-22T05:50:20.338173+00:00",
+  "filled:71a0e84c": "2026-10-22T06:31:47.334460+00:00",
+  "oco:e1559e2d": "2026-10-22T06:31:47.900462+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -5369,13 +5371,13 @@
    "trail_distance": null,
    "tp1": 85529.39,
    "created": "2026-10-22T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 84506.04,
    "notified_sl": 83482.68,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-22T06:31:46.182497+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -5398,7 +5400,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -5441,7 +5443,7 @@
     "reason": "Asian range 82534.12-84431.23 (0.76x daily ATR 2493.36). Break below the low at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": []
   },
@@ -5541,16 +5543,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T06:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T06:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T06:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T06:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T06:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T06:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T06:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T06:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T06:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T06:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T06:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T06:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T06:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T06:30:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131": "2026-10-19T06:27:53.430518+00:00",
   "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T08:10:12.737891+00:00",
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
   "https://www.coindesk.com/markets/2026/10/19/cme-s-bitcoin-cash-uniswap-futures-global-pmis-crypto-week-ahead": "2026-10-19T13:03:59.100514+00:00",
@@ -5621,13 +5622,14 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-22T03:49:22.304423+00:00",
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves": "2026-10-22T03:59:40.661570+00:00",
   "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours": "2026-10-22T04:40:52.328818+00:00",
-  "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally": "2026-10-22T04:50:59.829096+00:00"
+  "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally": "2026-10-22T04:50:59.829096+00:00",
+  "https://www.coindesk.com/markets/2026/10/22/china-seeks-to-seize-61-800-btc-tied-to-usd5-7-billion-fraud-scheme": "2026-10-22T06:33:49.891995+00:00"
  },
  "timers": {
-  "crowd": 1792647203.448956,
-  "headlines": 1792650209.810334,
-  "scan": 1792650424.5878835,
-  "follow": 1792650393.3867297
+  "crowd": 1792650829.4271202,
+  "headlines": 1792650829.6225696,
+  "scan": 1792651225.822585,
+  "follow": 1792651012.304381
  },
  "pushed_times": [],
  "last_checked": {
@@ -5747,12 +5749,12 @@
   "297dc31e": 1792608579.2301147,
   "f904cb19": 1792644383.602424,
   "1f178348": 1792648219.4680586,
-  "5639ead4": 1792650393.7696354,
-  "022e622d": 1792650394.0806801,
-  "e1559e2d": 1792650394.0815027,
-  "71a0e84c": 1792650394.082243,
-  "ba2ac073": 1792650394.0830197,
-  "45faa847": 1792650394.0837379
+  "5639ead4": 1792651012.603066,
+  "022e622d": 1792651012.858599,
+  "e1559e2d": 1792650706.6933362,
+  "71a0e84c": 1792651012.8594263,
+  "ba2ac073": 1792651012.8605232,
+  "45faa847": 1792651012.8616168
  },
  "last_report": "2026-W42"
 }
