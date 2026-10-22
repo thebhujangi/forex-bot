@@ -1,6 +1,5 @@
 {
  "sent": {
-  "exit:e0a41c46:tp1": "2026-10-15T03:34:52.070853+00:00",
   "filled:9bb0d160": "2026-10-15T07:42:16.012468+00:00",
   "filled:317ace89": "2026-10-15T07:47:34.181598+00:00",
   "expired:f983d48e": "2026-10-15T10:03:17.275569+00:00",
@@ -5223,6 +5222,50 @@
    "fill_notified": false,
    "outcome": null,
    "flags": []
+  },
+  {
+   "id": "1f178348",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "sell",
+   "entry": 83492.43,
+   "sl": 83930.86,
+   "cur_sl": 83930.86,
+   "trail_distance": null,
+   "tp1": 83053.99,
+   "created": "2026-10-22T03:45:00+00:00",
+   "status": "new",
+   "best": 83492.43,
+   "notified_sl": 83930.86,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-22T03:45:00+00:00",
+    "entry": 83492.43,
+    "sl": 83930.86,
+    "tp1": 83053.99,
+    "tp2": 82396.33,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-22T05:45:00+00:00",
+    "close_by": "2026-10-22T11:45:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 2.2x ATR from EMA20; sell the pullback at 83492.43."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -5232,16 +5275,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T03:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T03:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T03:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T03:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T03:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T03:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T03:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T03:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T03:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T03:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T03:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T03:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T03:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T03:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-19T03:33:28.471275+00:00",
   "https://www.coindesk.com/markets/2026/10/19/bitcoin-korea-s-kospi-and-nasdaq-futures-rally-as-china-gdp-beats-estimates": "2026-10-19T03:43:40.508366+00:00",
   "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it": "2026-10-19T04:55:19.849022+00:00",
   "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131": "2026-10-19T06:27:53.430518+00:00",
@@ -5315,9 +5357,9 @@
  },
  "timers": {
   "crowd": 1792639971.3974426,
-  "headlines": 1792639712.0640721,
-  "scan": 1792639924.2253194,
-  "follow": 1792639681.0893526
+  "headlines": 1792640334.3549502,
+  "scan": 1792640760.8458421,
+  "follow": 1792640638.874056
  },
  "pushed_times": [],
  "last_checked": {
@@ -5435,7 +5477,7 @@
   "cba0cad3": 1792590015.2894251,
   "1037467a": 1792590642.1777027,
   "297dc31e": 1792608579.2301147,
-  "f904cb19": 1792639681.50564
+  "f904cb19": 1792640639.1671793
  },
  "last_report": "2026-W42"
 }
