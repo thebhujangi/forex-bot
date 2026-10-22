@@ -5677,25 +5677,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T12:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T12:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T12:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T12:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T12:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T12:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T12:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T13:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T13:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T13:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T13:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T13:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T13:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T13:00:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
-  "https://www.coindesk.com/markets/2026/10/19/cme-s-bitcoin-cash-uniswap-futures-global-pmis-crypto-week-ahead": "2026-10-19T13:03:59.100514+00:00",
-  "https://www.coindesk.com/tech/2026/10/19/bitcoin-mining-offshoot-nscale-loses-microsoft-ai-deal-as-power-delay-stretches-into-2030s": "2026-10-19T13:03:59.100522+00:00",
-  "https://www.coindesk.com/markets/2026/10/19/jpmorgan-s-jpm-coin-representing-dollar-deposits-is-coming-to-ethereum-bloomberg": "2026-10-19T13:03:59.100528+00:00",
-  "https://cointelegraph.com/markets/stocks-rebound-into-key-tech-earnings-three-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100536+00:00",
-  "https://www.coindesk.com/markets/2026/10/19/bitcoin-extends-bounce-above-usd82-000-as-stocks-rebound-defi-tokens-lead-altcoin-gains": "2026-10-19T13:03:59.100541+00:00",
-  "https://www.coindesk.com/markets/2026/10/19/live-updates-bitcoin-tags-usd83-000-and-slips-back-as-chip-stocks-lead-a-rebound": "2026-10-19T13:03:59.100547+00:00",
-  "https://www.coindesk.com/daybook-us/2026/10/19/strategy-on-verge-of-golden-cross-just-weeks-after-bitcoin-flashed-same-bullish-signal": "2026-10-19T13:03:59.100552+00:00",
-  "https://cointelegraph.com/news/world-liberty-usd1-stablecoin-market-cap-drops-400-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100558+00:00",
-  "https://cointelegraph.com/news/strategy-btc-22-million-buy-strc-buyback-193-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100563+00:00",
   "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:14:12.937026+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-19T15:17:42.094687+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:09:52.343718+00:00",
@@ -5764,13 +5754,14 @@
   "https://cointelegraph.com/markets/bitcoin-corrects-below-82k-after-tesla-q3-results-kospi-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T10:51:07.112491+00:00",
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines": "2026-10-22T10:51:07.112513+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/22/crypto-traders-seek-shelter-in-bitcoin-as-altcoins-slide-and-etf-flows-wobble": "2026-10-22T11:22:07.049218+00:00",
-  "https://www.coindesk.com/tech/2026/10/22/ethereum-s-four-minute-settlement-plan-could-lower-the-cost-of-moving-crypto": "2026-10-22T12:24:26.551810+00:00"
+  "https://www.coindesk.com/tech/2026/10/22/ethereum-s-four-minute-settlement-plan-could-lower-the-cost-of-moving-crypto": "2026-10-22T12:24:26.551810+00:00",
+  "https://cointelegraph.com/news/bitcoin-etf-flows-follow-price-trends-dwf-labs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T13:05:55.573500+00:00"
  },
  "timers": {
   "crowd": 1792672504.778118,
-  "headlines": 1792673731.0562463,
-  "scan": 1792673823.2835608,
-  "follow": 1792673669.0843391
+  "headlines": 1792674354.9749098,
+  "scan": 1792674631.076322,
+  "follow": 1792674599.59275
  },
  "pushed_times": [],
  "last_checked": {
@@ -5893,12 +5884,12 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792673669.5819507,
+  "71a0e84c": 1792674599.9597921,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792673669.9338455,
+  "45faa847": 1792674600.2778463,
   "24d4daa1": 1792664246.5924242,
-  "6018e6ea": 1792673669.9345636,
-  "0f358a61": 1792673669.9352238
+  "6018e6ea": 1792674600.2788994,
+  "0f358a61": 1792674600.590923
  },
  "last_report": "2026-W42"
 }
