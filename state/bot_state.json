@@ -5941,13 +5941,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T14:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T14:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T14:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T14:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T14:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T14:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T14:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T14:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T14:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T14:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T14:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T14:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T14:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T14:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-19T15:17:42.094687+00:00",
@@ -6022,10 +6022,10 @@
   "https://cointelegraph.com/markets/cryptoquant-rising-bitcoin-hashrate-indirect-bullish-signal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T13:47:00.582418+00:00"
  },
  "timers": {
-  "crowd": 1792676122.8842535,
-  "headlines": 1792679266.8990688,
-  "scan": 1792679511.2360318,
-  "follow": 1792679359.1781676
+  "crowd": 1792679728.2534325,
+  "headlines": 1792679880.4348927,
+  "scan": 1792680323.119892,
+  "follow": 1792680347.4285583
  },
  "pushed_times": [],
  "last_checked": {
@@ -6148,18 +6148,18 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792679367.8551364,
+  "71a0e84c": 1792680347.6932707,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792679368.2421894,
+  "45faa847": 1792680347.958285,
   "24d4daa1": 1792664246.5924242,
   "6018e6ea": 1792675892.680031,
   "0f358a61": 1792677487.4640698,
   "71ce64d2": 1792677169.508623,
-  "cb2fa20e": 1792679375.2939093,
+  "cb2fa20e": 1792680355.422232,
   "9ea0fb19": 1792678108.1857283,
-  "af6fc34a": 1792679383.2923617,
+  "af6fc34a": 1792680363.3688822,
   "ddddd75c": 1792679073.2828667,
-  "db0f6a39": 1792679391.2832582
+  "db0f6a39": 1792680371.3895357
  },
  "last_report": "2026-W42"
 }
