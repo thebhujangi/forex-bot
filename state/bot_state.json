@@ -5677,16 +5677,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T13:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T13:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T13:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T13:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T13:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T13:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T13:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T13:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T13:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T13:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T13:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T13:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T13:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T13:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/markets/bitcoin-seeks-20-month-trend-line-reclaim-before-new-record-highs-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:14:12.937026+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-19T15:17:42.094687+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:09:52.343718+00:00",
   "https://cointelegraph.com/markets/bitcoin-is-rejected-at-83k-as-us-bond-yields-reverse-higher-with-equities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:20:16.646322+00:00",
@@ -5759,9 +5758,9 @@
  },
  "timers": {
   "crowd": 1792672504.778118,
-  "headlines": 1792674354.9749098,
-  "scan": 1792674631.076322,
-  "follow": 1792674599.59275
+  "headlines": 1792674990.1736488,
+  "scan": 1792675485.3846364,
+  "follow": 1792675270.2562206
  },
  "pushed_times": [],
  "last_checked": {
@@ -5884,12 +5883,12 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792674599.9597921,
+  "71a0e84c": 1792675270.629215,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792674600.2778463,
+  "45faa847": 1792675270.985786,
   "24d4daa1": 1792664246.5924242,
-  "6018e6ea": 1792674600.2788994,
-  "0f358a61": 1792674600.590923
+  "6018e6ea": 1792675270.9869907,
+  "0f358a61": 1792675270.988086
  },
  "last_report": "2026-W42"
 }
