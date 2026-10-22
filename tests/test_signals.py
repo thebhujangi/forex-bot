@@ -74,9 +74,23 @@ def test_weekly_report_counts_and_totals():
     ])
     open_t = track(sig(created=pd.Timestamp("2026-10-07 21:00", tz="UTC")), SRC)
     text = weekly_report(hist, [(open_t, -0.4)], now, {"trades": 3, "profit": 120.5, "balance": 10_120.5})
-    assert "1 finished" in text and "BUY BTCUSD: +2.5x" in text and "you placed it" in text
-    assert "crypto_trend: 2 trades · win rate 50% · total +1.5x" in text and "-0.4x risk now" in text
+    assert "This week: 1 trade · 1 won, 0 lost · +2.5x risk ≈ <b>+$250</b>" in text
+    assert "Crypto trend (tested): 2 trades · 1 won, 1 lost · +1.5x risk ≈ <b>+$150</b>" in text
+    assert "Placed:</b> 1 trade · 1 won, 0 lost · +2.5x" in text and "-0.4x risk now" in text
     assert "$+120.50" in text
+
+
+def test_report_handles_mixed_time_formats_and_skips_unfilled_orders():
+    """The bot writes times with and without fractions of a second; that used to crash the report."""
+    rows = [dict(id=str(i), source="x_fx_ny_range", horizon="INTRADAY", symbol="XAUUSD", side="buy", entry=1,
+                 sl=0.9, created="2026-10-20T13:30:00+00:00", placed=False, result_r=r, outcome=o,
+                 closed_at=c) for i, (r, o, c) in enumerate([
+                     (-1.0, "sl", "2026-10-20T13:45:00+00:00"),
+                     (1.5, "tp2", "2026-10-20T15:00:00.228548+00:00"),
+                     (0.0, "expired", "2026-10-20T16:00:01.5+00:00")])]
+    text = weekly_report(pd.DataFrame(rows), [], pd.Timestamp("2026-10-22 12:00", tz="UTC"))
+    assert "⚗️ Gold/FX NY range: 2 trades · 1 won, 1 lost · +0.5x risk ≈ <b>+$50</b>" in text
+    assert "1 pending order(s) never triggered" in text and len(text) < 4000
 
 
 INTRA = Source("x_test", "london_breakout", ["BTCUSD"], "INTRADAY", "EXPERIMENTAL", "stats")

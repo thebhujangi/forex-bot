@@ -21,6 +21,7 @@ ENV_FILE = PROJECT_ROOT / ".env"
 HOST = "api.telegram.org"
 FALLBACK_IPS = ["149.154.167.220", "149.154.166.110"]   # Telegram's Bot API servers
 CONNECT_TIMEOUT = 10
+MAX_TEXT = 4000                 # Telegram's limit is 4096 characters per message
 
 
 class _Connection(http.client.HTTPSConnection):
@@ -134,4 +135,15 @@ class Telegram:
             ]}
         if not params["chat_id"]:
             raise TelegramError("No TELEGRAM_CHAT_ID yet. Run scripts\\telegram_setup.py first.")
+        if len(text) > MAX_TEXT:   # Telegram refuses longer messages: send in parts, buttons on the last
+            parts, cur = [], ""
+            for line in text.split("\n"):
+                if cur and len(cur) + len(line) + 1 > MAX_TEXT:
+                    parts.append(cur)
+                    cur = ""
+                cur = f"{cur}\n{line}" if cur else line[:MAX_TEXT]
+            plain = {k: v for k, v in params.items() if k != "reply_markup"}
+            for part in parts:
+                self.call("sendMessage", **{**plain, "text": part})
+            params["text"] = cur
         return self.call("sendMessage", **params)

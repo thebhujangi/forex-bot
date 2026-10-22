@@ -86,7 +86,7 @@ def latest(path: Path = SENTIMENT_FILE, max_age_hours: float = 3) -> dict[str, d
     if not Path(path).exists():
         return {}
     df = pd.read_csv(path)
-    df["time"] = pd.to_datetime(df["time"], utc=True)
+    df["time"] = pd.to_datetime(df["time"], utc=True, format="ISO8601")
     df = df[df.time >= pd.Timestamp.now(tz="UTC") - pd.Timedelta(hours=max_age_hours)]
     out = {}
     for sym, g in df.groupby("symbol"):

@@ -263,7 +263,9 @@ class Bot:
             account = {"trades": len(closing), "profit": sum(d.profit + d.swap + d.commission for d in closing),
                        "balance": self.mt5.account_info().balance}
         open_sigs = [(t, self.current_r(t)) for t in self.tracked if t.active]
-        return weekly_report(hist, open_sigs, now, account)
+        balance, risk = self.balance(), self.cfg["risk"]["risk_per_trade_pct"]
+        return weekly_report(hist, open_sigs, now, account, per_r=balance * risk / 100,
+                             start_balance=balance, risk_pct=risk)
 
     def weekly_report(self):
         now = pd.Timestamp.now(tz=self.tz)
@@ -272,8 +274,8 @@ class Bot:
         if now.weekday() != 6 or (now.hour, now.minute) < (when.hour, when.minute) \
                 or self.state.get("last_report") == week:
             return
-        self.state["last_report"] = week
         self.tg.send(self.cmd_report())
+        self.state["last_report"] = week      # only once it has really gone out
         log("sent weekly report")
 
     def cmd_signals(self, args=None) -> str:

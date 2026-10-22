@@ -434,49 +434,68 @@ def history_row(t: Tracked) -> dict:
             "placed": t.placed, "result_r": round(t.result_r or 0.0, 3), "outcome": t.outcome}
 
 
+FEED_NAMES = {"crypto_trend": "Crypto trend (tested)", "fx_gold_trend": "Gold/FX trend",
+              "x_crypto_breakout": "⚗️ Crypto breakout", "x_crypto_pullback": "⚗️ Crypto pullback",
+              "x_fx_ny_range": "⚗️ Gold/FX NY range"}
+
+
+def _money(r: float, per_r: float) -> str:
+    return f"{'+' if r >= 0 else '−'}${abs(r) * per_r:,.0f}"
+
+
+def _tally(g: pd.DataFrame, per_r: float) -> str:
+    """'12 trades · 5 won, 7 lost · −1.9x risk ≈ −$190'"""
+    if g.empty:
+        return "no trades"
+    won, lost = int((g.result_r > 0.05).sum()), int((g.result_r < -0.05).sum())
+    total = g.result_r.sum()
+    return (f"{len(g)} trade{'s' if len(g) != 1 else ''} · {won} won, {lost} lost · "
+            f"{total:+.1f}x risk ≈ <b>{_money(total, per_r)}</b>")
+
+
 def weekly_report(history: pd.DataFrame, open_signals: list[tuple[Tracked, float | None]],
-                  now: pd.Timestamp, account_week: dict | None = None) -> str:
-    """Plain-English report card. history = closed signals; open_signals = (signal, current R)."""
+                  now: pd.Timestamp, account_week: dict | None = None, per_r: float = 100.0,
+                  start_balance: float = 10_000, risk_pct: float = 1.0) -> str:
+    """Short report card: would following the signals have made money? Only orders that actually
+    triggered count (pending orders that never filled cost nothing). per_r = dollars per 1x risk."""
     week_ago = now - pd.Timedelta(days=7)
-    lines = [f"📊 <b>Weekly report card</b> ({week_ago:%d %b} to {now:%d %b})", ""]
-
     h = history.copy()
+    if "outcome" not in h:
+        h["outcome"] = ""
+    h["outcome"] = h["outcome"].fillna("")
     if not h.empty:
-        h["closed_at"] = pd.to_datetime(h["closed_at"], utc=True)
-        h["created"] = pd.to_datetime(h["created"], utc=True)
-    week = h[h.closed_at >= week_ago] if not h.empty else h
-    sent = (h.created >= week_ago).sum() if not h.empty else 0
-    sent += sum(1 for t, _ in open_signals if pd.Timestamp(t.created) >= week_ago)
-    lines.append(f"<b>This week:</b> {sent} new signal(s), {len(week)} finished.")
-    for r in week.itertuples() if not week.empty else []:
-        lines.append(f"• {r.side.upper()} {r.symbol}: {r.result_r:+.1f}x risk "
-                     f"({'you placed it' if r.placed else 'you skipped it'})")
-    if open_signals:
-        lines += ["", "<b>Still open:</b>"]
-        for t, cur in open_signals:
-            lines.append(f"• {t.side.upper()} {t.symbol} since {pd.Timestamp(t.created):%d %b}: "
-                         + (f"{cur:+.1f}x risk now" if cur is not None else "price unavailable")
-                         + ("" if t.status == "placed" else " (not placed)"))
+        h["closed_at"] = pd.to_datetime(h["closed_at"], utc=True, format="ISO8601")
+        h["created"] = pd.to_datetime(h["created"], utc=True, format="ISO8601")
+    traded = h[~h.outcome.isin(["expired", "oco"])]
+    never = len(h) - len(traded)
+    week = traded[traded.closed_at >= week_ago] if not traded.empty else traded
+    since = f"{h.created.min():%d %b}" if not h.empty else f"{now:%d %b}"
 
-    if not h.empty:
-        if "outcome" not in h:
-            h["outcome"] = ""
-        traded = h[~h.outcome.isin(["expired", "oco"])]
-        expired = len(h) - len(traded)
-        lines += ["", "<b>Since the start, by feed:</b>"]
-        for src, g in traded.groupby("source"):
-            lines.append(f"• {src}: {len(g)} trades · win rate {(g.result_r > 0).mean() * 100:.0f}% · "
-                         f"total {g.result_r.sum():+.1f}x risk · average {g.result_r.mean():+.2f}x")
-        if expired:
-            lines.append(f"({expired} pending order(s) never filled; they don't count.)")
-        placed = traded[traded.placed.astype(bool)]
-        if len(placed):
-            lines.append(f"The ones you placed ({len(placed)}): total {placed.result_r.sum():+.1f}x risk")
-        lines.append("Backtest expectations: crypto trend about +0.26x per signal; the ⚗️ experimental "
-                     "intraday feeds about -0.04x to -0.16x. Judge after 20+ trades per feed.")
+    lines = [f"📊 <b>Report card</b> ({week_ago:%d %b} to {now:%d %b})", "",
+             f"If you had taken <b>every</b> signal ({risk_pct:g}% risk each on ${start_balance:,.0f}):",
+             f"• This week: {_tally(week, per_r)}",
+             f"• Since {since}: {_tally(traded, per_r)}", "", "<b>By feed, since the start:</b>"]
+    for src, g in sorted(traded.groupby("source"), key=lambda x: -x[1].result_r.sum()):
+        lines.append(f"• {FEED_NAMES.get(src, src)}: {_tally(g, per_r)}")
+    if traded.empty:
+        lines.append("• No trades have triggered yet.")
+    placed = traded[traded.placed.astype(bool)] if not traded.empty else traded
+    lines += ["", f"<b>The ones you marked ✅ Placed:</b> {_tally(placed, per_r)}"]
+    if never:
+        lines.append(f"{never} pending order(s) never triggered: no gain, no loss.")
+
+    live = [(t, cur) for t, cur in open_signals if t.fill_notified or t.horizon == "LONG-TERM"]
+    if live:
+        lines += ["", "<b>Still open:</b>"]
+        for t, cur in live[:8]:
+            lines.append(f"• {t.side.upper()} {t.symbol} since {pd.Timestamp(t.created):%d %b}"
+                         + (f": {cur:+.1f}x risk now" if cur is not None else ""))
     if account_week:
         lines += ["", f"<b>Your MT5 demo this week:</b> {account_week['trades']} closed trade(s), "
                       f"${account_week['profit']:+,.2f} · balance ${account_week['balance']:,.2f}"]
+    lines += ["", "<i>Backtests expected: crypto trend about +0.26x per trade; the ⚗️ experimental feeds "
+                  "-0.04x to -0.16x. Judge a feed after 20+ trades. Results are worked out from free prices "
+                  "matched to Elev8's; your MT5 history is the final word.</i>"]
     return "\n".join(lines)
 
 
