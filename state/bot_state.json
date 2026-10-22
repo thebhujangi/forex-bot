@@ -5591,13 +5591,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T11:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T11:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T11:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T11:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T11:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T11:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T11:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T11:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T11:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T11:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T11:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T11:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T11:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T11:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5676,13 +5676,14 @@
   "https://cointelegraph.com/news/starknet-vote-post-quantum-l1-research-ethereum?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T09:49:27.660276+00:00",
   "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides": "2026-10-22T09:59:40.969092+00:00",
   "https://cointelegraph.com/markets/bitcoin-corrects-below-82k-after-tesla-q3-results-kospi-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T10:51:07.112491+00:00",
-  "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines": "2026-10-22T10:51:07.112513+00:00"
+  "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines": "2026-10-22T10:51:07.112513+00:00",
+  "https://www.coindesk.com/daybook-us/2026/10/22/crypto-traders-seek-shelter-in-bitcoin-as-altcoins-slide-and-etf-flows-wobble": "2026-10-22T11:22:07.049218+00:00"
  },
  "timers": {
   "crowd": 1792665287.1121504,
-  "headlines": 1792666891.1124506,
-  "scan": 1792667348.8668292,
-  "follow": 1792667348.8691123
+  "headlines": 1792668126.2354076,
+  "scan": 1792668157.5555825,
+  "follow": 1792668003.0319033
  },
  "pushed_times": [],
  "last_checked": {
@@ -5805,9 +5806,9 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792667349.1475248,
+  "71a0e84c": 1792668003.5298083,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792667349.4137604,
+  "45faa847": 1792668003.9572382,
   "24d4daa1": 1792664246.5924242
  },
  "last_report": "2026-W42"
