@@ -5679,13 +5679,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T12:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T12:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T12:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T12:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T12:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T12:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T12:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T12:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T12:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T12:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T12:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T12:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T12:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T12:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5769,9 +5769,9 @@
  },
  "timers": {
   "crowd": 1792668901.4512153,
-  "headlines": 1792670617.7231495,
-  "scan": 1792670587.138597,
-  "follow": 1792670555.668007
+  "headlines": 1792671243.3984337,
+  "scan": 1792671387.048904,
+  "follow": 1792671181.7106729
  },
  "pushed_times": [],
  "last_checked": {
@@ -5894,12 +5894,12 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792670556.0456848,
+  "71a0e84c": 1792671182.0485477,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792670556.410879,
+  "45faa847": 1792671182.3532844,
   "24d4daa1": 1792664246.5924242,
-  "6018e6ea": 1792670556.4120524,
-  "0f358a61": 1792670556.4124851
+  "6018e6ea": 1792671182.3543265,
+  "0f358a61": 1792671182.3553221
  },
  "last_report": "2026-W42"
 }
