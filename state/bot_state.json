@@ -5180,6 +5180,50 @@
    "fill_notified": false,
    "outcome": "expired",
    "flags": []
+  },
+  {
+   "id": "f904cb19",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "ETHUSD",
+   "side": "sell",
+   "entry": 2465.84,
+   "sl": 2480.25,
+   "cur_sl": 2480.25,
+   "trail_distance": null,
+   "tp1": 2451.42,
+   "created": "2026-10-22T02:45:00+00:00",
+   "status": "new",
+   "best": 2465.84,
+   "notified_sl": 2480.25,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "ETHUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-22T02:45:00+00:00",
+    "entry": 2465.84,
+    "sl": 2480.25,
+    "tp1": 2451.42,
+    "tp2": 2429.8,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-22T04:45:00+00:00",
+    "close_by": "2026-10-22T10:45:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 3.3x ATR from EMA20; sell the pullback at 2465.84."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -5189,13 +5233,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T02:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T02:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T02:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T02:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T02:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T02:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T02:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T02:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T02:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T02:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T02:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T02:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T02:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T02:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-19T03:33:28.471275+00:00",
@@ -5272,9 +5316,9 @@
  },
  "timers": {
   "crowd": 1792636359.8562224,
-  "headlines": 1792636663.7819896,
-  "scan": 1792636694.4761357,
-  "follow": 1792636481.5242896
+  "headlines": 1792637288.3281806,
+  "scan": 1792637501.6620417,
+  "follow": 1792637440.6011436
  },
  "pushed_times": [],
  "last_checked": {
@@ -5391,7 +5435,8 @@
   "73f74e8f": 1792590637.4983368,
   "cba0cad3": 1792590015.2894251,
   "1037467a": 1792590642.1777027,
-  "297dc31e": 1792608579.2301147
+  "297dc31e": 1792608579.2301147,
+  "f904cb19": 1792637440.8666108
  },
  "last_report": "2026-W42"
 }
