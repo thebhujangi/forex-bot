@@ -5953,7 +5953,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes": "2026-10-19T20:27:32.143715+00:00",
   "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T21:08:43.944831+00:00",
   "https://cointelegraph.com/markets/bitcoin-rally-could-revive-treasury-buying-but-easy-money-days-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T01:47:21.119303+00:00",
   "https://cointelegraph.com/markets/bitcoin-etfs-527m-inflows-biggest-since-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T05:54:45.098089+00:00",
@@ -6023,10 +6022,10 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-22T18:56:27.945178+00:00"
  },
  "timers": {
-  "crowd": 1792697813.7140708,
-  "headlines": 1792700334.8805296,
-  "scan": 1792700610.6238673,
-  "follow": 1792700610.6248362
+  "crowd": 1792701428.6145215,
+  "headlines": 1792700953.3965847,
+  "scan": 1792701410.2410934,
+  "follow": 1792701227.9066596
  },
  "pushed_times": [],
  "last_checked": {
