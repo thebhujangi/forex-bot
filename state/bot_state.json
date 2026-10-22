@@ -5626,6 +5626,50 @@
    "fill_notified": false,
    "outcome": null,
    "flags": []
+  },
+  {
+   "id": "0f358a61",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "BTCUSD",
+   "side": "sell",
+   "entry": 81990.42,
+   "sl": 82259.72,
+   "cur_sl": 82259.72,
+   "trail_distance": null,
+   "tp1": 81721.12,
+   "created": "2026-10-22T12:00:00+00:00",
+   "status": "new",
+   "best": 81990.42,
+   "notified_sl": 82259.72,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "BTCUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-22T12:00:00+00:00",
+    "entry": 81990.42,
+    "sl": 82259.72,
+    "tp1": 81721.12,
+    "tp2": 81317.17,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-22T14:00:00+00:00",
+    "close_by": "2026-10-22T20:00:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.9x ATR from EMA20; sell the pullback at 81990.42."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -5635,13 +5679,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T11:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T11:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T11:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T11:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T11:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T11:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T11:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T12:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T12:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T12:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T12:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T12:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T12:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T12:00:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5725,9 +5769,9 @@
  },
  "timers": {
   "crowd": 1792668901.4512153,
-  "headlines": 1792669376.4171844,
-  "scan": 1792669766.4780345,
-  "follow": 1792669613.7888582
+  "headlines": 1792670617.7231495,
+  "scan": 1792670587.138597,
+  "follow": 1792670555.668007
  },
  "pushed_times": [],
  "last_checked": {
@@ -5850,11 +5894,12 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792669614.1045651,
+  "71a0e84c": 1792670556.0456848,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792669614.3942273,
+  "45faa847": 1792670556.410879,
   "24d4daa1": 1792664246.5924242,
-  "6018e6ea": 1792669614.395415
+  "6018e6ea": 1792670556.4120524,
+  "0f358a61": 1792670556.4124851
  },
  "last_report": "2026-W42"
 }
