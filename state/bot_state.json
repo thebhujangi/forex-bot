@@ -5592,13 +5592,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T08:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T08:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T08:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T08:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T08:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T08:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T08:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T08:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T08:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T08:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T08:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T08:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T08:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T08:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5676,16 +5676,16 @@
  },
  "timers": {
   "crowd": 1792658061.7041554,
-  "headlines": 1792658276.1208599,
-  "scan": 1792658490.168265,
-  "follow": 1792658244.9580963
+  "headlines": 1792658876.677299,
+  "scan": 1792659304.9958797,
+  "follow": 1792659212.8195121
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792655094.1002977,
+  "d82f6843": 1792658608.279636,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -5801,10 +5801,10 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792658245.3162522,
+  "71a0e84c": 1792659213.1230054,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792658245.6198666,
-  "24d4daa1": 1792658245.6204324
+  "45faa847": 1792659213.4215043,
+  "24d4daa1": 1792659213.4226391
  },
  "last_report": "2026-W42"
 }
