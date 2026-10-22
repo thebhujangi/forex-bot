@@ -5591,13 +5591,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T10:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T10:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T10:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T10:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T10:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T10:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T10:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T10:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T10:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T10:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T10:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T10:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T10:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T10:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5677,17 +5677,17 @@
   "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides": "2026-10-22T09:59:40.969092+00:00"
  },
  "timers": {
-  "crowd": 1792661686.5632563,
-  "headlines": 1792664430.8864748,
-  "scan": 1792664953.833693,
-  "follow": 1792664861.4298675
+  "crowd": 1792665287.1121504,
+  "headlines": 1792665654.1492624,
+  "scan": 1792665746.1586049,
+  "follow": 1792665776.6555085
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792662048.4162736,
+  "d82f6843": 1792665470.514067,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -5803,9 +5803,9 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792664861.816829,
+  "71a0e84c": 1792665776.9868002,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792664862.2546332,
+  "45faa847": 1792665777.288574,
   "24d4daa1": 1792664246.5924242
  },
  "last_report": "2026-W42"
