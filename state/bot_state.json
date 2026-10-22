@@ -1,7 +1,5 @@
 {
  "sent": {
-  "exit:c8673f3f:sl": "2026-10-15T15:13:52.760510+00:00",
-  "done:c8673f3f": "2026-10-15T15:13:53.684924+00:00",
   "expired:25a89559": "2026-10-15T16:02:04.234401+00:00",
   "expired:12698a27": "2026-10-15T16:02:12.213743+00:00",
   "expired:afb4c1fa": "2026-10-15T19:48:48.015580+00:00",
@@ -154,7 +152,10 @@
   "filled:db0f6a39": "2026-10-22T14:24:42.016786+00:00",
   "oco:ddddd75c": "2026-10-22T14:24:42.785229+00:00",
   "exit:af6fc34a:sl": "2026-10-22T15:07:13.713782+00:00",
-  "done:af6fc34a": "2026-10-22T15:07:14.486833+00:00"
+  "done:af6fc34a": "2026-10-22T15:07:14.486833+00:00",
+  "exit:45faa847:tp1": "2026-10-22T15:17:16.341165+00:00",
+  "exit:db0f6a39:sl": "2026-10-22T15:17:25.213935+00:00",
+  "done:db0f6a39": "2026-10-22T15:17:25.965891+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -5527,7 +5528,7 @@
     "trail_distance": null,
     "reason": "Asian range 2427.81-2483.67 (0.51x daily ATR 108.83). Break below the low at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null,
    "flags": [
@@ -5900,13 +5901,13 @@
    "trail_distance": null,
    "tp1": 1.33546,
    "created": "2026-10-22T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.33633,
    "notified_sl": 1.3372,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": -1.0689655172413266,
+   "closed_at": "2026-10-22T15:10:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -5927,9 +5928,9 @@
     "trail_distance": null,
     "reason": "Asian range 1.33654-1.33787 (0.19x daily ATR 0.00686). Break below the low at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "sl",
    "flags": []
   }
  ],
@@ -5940,16 +5941,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T15:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T15:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T15:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T15:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T15:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T15:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T15:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T15:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T15:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T15:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T15:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T15:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T15:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-19T15:17:42.094687+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:09:52.343718+00:00",
   "https://cointelegraph.com/markets/bitcoin-is-rejected-at-83k-as-us-bond-yields-reverse-higher-with-equities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:20:16.646322+00:00",
   "https://cointelegraph.com/news/strive-buys-335m-in-bitcoin-boosting-holdings-to-36818-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:51:25.164205+00:00",
@@ -6022,9 +6022,9 @@
  },
  "timers": {
   "crowd": 1792679728.2534325,
-  "headlines": 1792681746.326604,
-  "scan": 1792681932.8631468,
-  "follow": 1792681932.8643055
+  "headlines": 1792682368.6245008,
+  "scan": 1792682771.7064586,
+  "follow": 1792682554.0423813
  },
  "pushed_times": [],
  "last_checked": {
@@ -6147,18 +6147,18 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792681933.4431179,
+  "71a0e84c": 1792682554.4273875,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792681933.843794,
+  "45faa847": 1792682554.8840458,
   "24d4daa1": 1792664246.5924242,
   "6018e6ea": 1792675892.680031,
   "0f358a61": 1792677487.4640698,
   "71ce64d2": 1792677169.508623,
-  "cb2fa20e": 1792681934.0046444,
+  "cb2fa20e": 1792682555.0386686,
   "9ea0fb19": 1792678108.1857283,
   "af6fc34a": 1792681632.4172866,
   "ddddd75c": 1792679073.2828667,
-  "db0f6a39": 1792681941.966356
+  "db0f6a39": 1792682244.4636667
  },
  "last_report": "2026-W42"
 }
