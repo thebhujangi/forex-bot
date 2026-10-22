@@ -5284,7 +5284,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T03:45:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/19/bitcoin-korea-s-kospi-and-nasdaq-futures-rally-as-china-gdp-beats-estimates": "2026-10-19T03:43:40.508366+00:00",
   "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it": "2026-10-19T04:55:19.849022+00:00",
   "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131": "2026-10-19T06:27:53.430518+00:00",
   "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T08:10:12.737891+00:00",
@@ -5353,20 +5352,22 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-21T14:53:31.642755+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-tags-846k-as-us-stocks-head-higher-on-spacex-q3-earnings-beat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T15:34:51.171983+00:00",
   "https://cointelegraph.com/news/occ-finalizes-stablecoin-rules-genius-act-bessent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T17:29:03.989157+00:00",
-  "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T20:34:32.052402+00:00"
+  "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T20:34:32.052402+00:00",
+  "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-22T03:49:22.304423+00:00",
+  "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves": "2026-10-22T03:59:40.661570+00:00"
  },
  "timers": {
   "crowd": 1792639971.3974426,
-  "headlines": 1792640334.3549502,
-  "scan": 1792640760.8458421,
-  "follow": 1792640638.874056
+  "headlines": 1792641580.377263,
+  "scan": 1792641580.661637,
+  "follow": 1792641580.663384
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792637768.2930603,
+  "d82f6843": 1792641275.4408927,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -5477,7 +5478,8 @@
   "cba0cad3": 1792590015.2894251,
   "1037467a": 1792590642.1777027,
   "297dc31e": 1792608579.2301147,
-  "f904cb19": 1792640639.1671793
+  "f904cb19": 1792641580.989268,
+  "1f178348": 1792641581.2837162
  },
  "last_report": "2026-W42"
 }
