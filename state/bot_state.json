@@ -5582,6 +5582,50 @@
    "fill_notified": false,
    "outcome": "expired",
    "flags": []
+  },
+  {
+   "id": "6018e6ea",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "ETHUSD",
+   "side": "sell",
+   "entry": 2411.04,
+   "sl": 2423.62,
+   "cur_sl": 2423.62,
+   "trail_distance": null,
+   "tp1": 2398.46,
+   "created": "2026-10-22T11:30:00+00:00",
+   "status": "new",
+   "best": 2411.04,
+   "notified_sl": 2423.62,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "ETHUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-22T11:30:00+00:00",
+    "entry": 2411.04,
+    "sl": 2423.62,
+    "tp1": 2398.46,
+    "tp2": 2379.58,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-22T13:30:00+00:00",
+    "close_by": "2026-10-22T19:30:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.5x ATR from EMA20; sell the pullback at 2411.04."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -5591,13 +5635,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T11:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T11:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T11:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T11:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T11:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T11:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T11:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T11:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T11:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T11:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T11:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T11:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T11:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T11:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5680,17 +5724,17 @@
   "https://www.coindesk.com/daybook-us/2026/10/22/crypto-traders-seek-shelter-in-bitcoin-as-altcoins-slide-and-etf-flows-wobble": "2026-10-22T11:22:07.049218+00:00"
  },
  "timers": {
-  "crowd": 1792665287.1121504,
-  "headlines": 1792668126.2354076,
-  "scan": 1792668157.5555825,
-  "follow": 1792668003.0319033
+  "crowd": 1792668901.4512153,
+  "headlines": 1792668748.858831,
+  "scan": 1792668962.4686785,
+  "follow": 1792668962.4707665
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792665470.514067,
+  "d82f6843": 1792668962.5551693,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -5806,10 +5850,11 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792668003.5298083,
+  "71a0e84c": 1792668962.853745,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792668003.9572382,
-  "24d4daa1": 1792664246.5924242
+  "45faa847": 1792668963.1297488,
+  "24d4daa1": 1792664246.5924242,
+  "6018e6ea": 1792668963.1308854
  },
  "last_report": "2026-W42"
 }
