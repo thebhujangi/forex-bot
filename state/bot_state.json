@@ -5953,7 +5953,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/solana-treasury-skyai-sells-all-sol-holdings-launches-201m-buyback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T21:08:43.944831+00:00",
   "https://cointelegraph.com/markets/bitcoin-rally-could-revive-treasury-buying-but-easy-money-days-over?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T01:47:21.119303+00:00",
   "https://cointelegraph.com/markets/bitcoin-etfs-527m-inflows-biggest-since-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T05:54:45.098089+00:00",
   "https://cointelegraph.com/news/blackrock-ishares-bitcoin-managed-protection-etf-pbit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T08:19:11.912337+00:00",
@@ -6023,16 +6022,16 @@
  },
  "timers": {
   "crowd": 1792701428.6145215,
-  "headlines": 1792702809.32922,
-  "scan": 1792703037.8972065,
-  "follow": 1792702778.7903318
+  "headlines": 1792703436.4281514,
+  "scan": 1792703803.154021,
+  "follow": 1792703711.7154675
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792699998.582459,
+  "d82f6843": 1792703405.9663174,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
