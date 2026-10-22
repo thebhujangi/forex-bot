@@ -5276,16 +5276,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T04:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T04:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T04:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T04:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T04:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T04:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T04:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T05:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T05:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T05:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T05:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T05:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T05:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T05:00:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it": "2026-10-19T04:55:19.849022+00:00",
   "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131": "2026-10-19T06:27:53.430518+00:00",
   "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T08:10:12.737891+00:00",
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5361,9 +5360,9 @@
  },
  "timers": {
   "crowd": 1792643579.9800982,
-  "headlines": 1792644659.1652675,
-  "scan": 1792644751.7419014,
-  "follow": 1792644690.3390532
+  "headlines": 1792645283.5922308,
+  "scan": 1792645559.869043,
+  "follow": 1792645314.7702749
  },
  "pushed_times": [],
  "last_checked": {
@@ -5482,7 +5481,7 @@
   "1037467a": 1792590642.1777027,
   "297dc31e": 1792608579.2301147,
   "f904cb19": 1792644383.602424,
-  "1f178348": 1792644690.7673597
+  "1f178348": 1792645315.2016125
  },
  "last_report": "2026-W42"
 }
