@@ -1,7 +1,5 @@
 {
  "sent": {
-  "expired:f983d48e": "2026-10-15T10:03:17.275569+00:00",
-  "expired:3d2649b9": "2026-10-15T10:03:18.259998+00:00",
   "exit:9bb0d160:tp1": "2026-10-15T12:39:57.063110+00:00",
   "exit:317ace89:tp1": "2026-10-15T12:39:58.201469+00:00",
   "filled:6605e94b": "2026-10-15T13:43:42.183373+00:00",
@@ -5592,13 +5590,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T10:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T10:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T10:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T10:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T10:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T10:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T10:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T10:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T10:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T10:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T10:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T10:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T10:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T10:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5679,9 +5677,9 @@
  },
  "timers": {
   "crowd": 1792661686.5632563,
-  "headlines": 1792663180.6401951,
-  "scan": 1792663328.5879374,
-  "follow": 1792663297.6306808
+  "headlines": 1792663802.6548312,
+  "scan": 1792664185.5304978,
+  "follow": 1792663924.8688922
  },
  "pushed_times": [],
  "last_checked": {
@@ -5804,10 +5802,10 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792663297.9212775,
+  "71a0e84c": 1792663925.2014687,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792663298.1953607,
-  "24d4daa1": 1792663298.1965456
+  "45faa847": 1792663925.4895382,
+  "24d4daa1": 1792663925.4904935
  },
  "last_report": "2026-W42"
 }
