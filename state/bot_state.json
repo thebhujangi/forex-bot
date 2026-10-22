@@ -158,7 +158,9 @@
   "expired:1f178348": "2026-10-22T05:50:20.338173+00:00",
   "filled:71a0e84c": "2026-10-22T06:31:47.334460+00:00",
   "oco:e1559e2d": "2026-10-22T06:31:47.900462+00:00",
-  "maybe:45faa847": "2026-10-22T06:52:17.561594+00:00"
+  "maybe:45faa847": "2026-10-22T06:52:17.561594+00:00",
+  "filled:45faa847": "2026-10-22T07:18:14.212024+00:00",
+  "oco:ba2ac073": "2026-10-22T07:18:14.872188+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -5460,13 +5462,13 @@
    "trail_distance": null,
    "tp1": 2518.13,
    "created": "2026-10-22T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2486.94,
    "notified_sl": 2455.74,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-22T07:18:12.929498+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -5489,7 +5491,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -5532,7 +5534,7 @@
     "reason": "Asian range 2427.81-2483.67 (0.51x daily ATR 108.83). Break below the low at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": [
     "maybe:45faa847"
@@ -5546,13 +5548,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T07:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T07:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T07:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T07:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T07:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T07:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T07:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T07:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T07:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T07:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T07:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T07:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T07:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T07:15:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T08:10:12.737891+00:00",
@@ -5630,9 +5632,9 @@
  },
  "timers": {
   "crowd": 1792650829.4271202,
-  "headlines": 1792652688.038676,
-  "scan": 1792652841.534689,
-  "follow": 1792652872.1514301
+  "headlines": 1792653315.1618335,
+  "scan": 1792653647.153882,
+  "follow": 1792653492.9294846
  },
  "pushed_times": [],
  "last_checked": {
@@ -5752,12 +5754,12 @@
   "297dc31e": 1792608579.2301147,
   "f904cb19": 1792644383.602424,
   "1f178348": 1792648219.4680586,
-  "5639ead4": 1792652872.5584776,
-  "022e622d": 1792652872.8884964,
+  "5639ead4": 1792653493.2466528,
+  "022e622d": 1792653493.5284193,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792652872.8893323,
-  "ba2ac073": 1792652872.8904696,
-  "45faa847": 1792652872.8910582
+  "71a0e84c": 1792653493.5291414,
+  "ba2ac073": 1792653493.5300953,
+  "45faa847": 1792653493.53088
  },
  "last_report": "2026-W42"
 }
