@@ -153,7 +153,8 @@
   "done:a8cb5bcc": "2026-10-21T14:32:31.163380+00:00",
   "exit:d99229f6:sl": "2026-10-21T14:32:32.077542+00:00",
   "done:d99229f6": "2026-10-21T14:32:32.848162+00:00",
-  "expired:297dc31e": "2026-10-21T18:49:39.803179+00:00"
+  "expired:297dc31e": "2026-10-21T18:49:39.803179+00:00",
+  "expired:f904cb19": "2026-10-22T04:46:24.250486+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -5191,13 +5192,13 @@
    "trail_distance": null,
    "tp1": 2451.42,
    "created": "2026-10-22T02:45:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2465.84,
    "notified_sl": 2480.25,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-22T04:46:23.273883+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "trend_pullback",
@@ -5220,7 +5221,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "expired",
    "flags": []
   },
   {
@@ -5275,13 +5276,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T04:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T04:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T04:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T04:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T04:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T04:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T04:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T04:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T04:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T04:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T04:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T04:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T04:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T04:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it": "2026-10-19T04:55:19.849022+00:00",
@@ -5354,20 +5355,22 @@
   "https://cointelegraph.com/news/occ-finalizes-stablecoin-rules-genius-act-bessent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T17:29:03.989157+00:00",
   "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T20:34:32.052402+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-22T03:49:22.304423+00:00",
-  "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves": "2026-10-22T03:59:40.661570+00:00"
+  "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves": "2026-10-22T03:59:40.661570+00:00",
+  "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours": "2026-10-22T04:40:52.328818+00:00",
+  "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally": "2026-10-22T04:50:59.829096+00:00"
  },
  "timers": {
   "crowd": 1792643579.9800982,
-  "headlines": 1792643403.3441167,
-  "scan": 1792643945.4432912,
-  "follow": 1792643762.5656507
+  "headlines": 1792644659.1652675,
+  "scan": 1792644751.7419014,
+  "follow": 1792644690.3390532
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792641275.4408927,
+  "d82f6843": 1792644690.4412692,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -5478,8 +5481,8 @@
   "cba0cad3": 1792590015.2894251,
   "1037467a": 1792590642.1777027,
   "297dc31e": 1792608579.2301147,
-  "f904cb19": 1792643762.9032054,
-  "1f178348": 1792643763.1581182
+  "f904cb19": 1792644383.602424,
+  "1f178348": 1792644690.7673597
  },
  "last_report": "2026-W42"
 }
