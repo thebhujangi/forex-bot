@@ -10,6 +10,7 @@ from dataclasses import asdict, dataclass, field
 
 import pandas as pd
 
+from . import filters
 from .assistant import position_size
 from .instruments import SymbolSpec
 from .models import Signal
@@ -80,6 +81,7 @@ def new_signals(source: Source, bars: pd.DataFrame, symbol: str, params: dict, s
     if bars.empty:
         return []
     sigs = get_strategy(source.strategy).generate(bars, symbol, params, spec)
+    sigs = filters.apply(sigs, params.get("filter"), symbol, bars)
     last_close = bars.index[-1] + (bars.index[-1] - bars.index[-2] if len(bars) > 1 else pd.Timedelta(0))
     return [s for s in sigs if (after is None or s.created > after) and s.created <= last_close]
 

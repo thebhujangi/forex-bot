@@ -110,6 +110,10 @@ costs:
   LTCUSD: {spread_pct: 0.59,  slippage_pct: 0.20, commission_per_lot: 0}
   DOGEUSD: {spread_pct: 0.78, slippage_pct: 0.26, commission_per_lot: 0}
   ADAUSD: {spread_pct: 1.63,  slippage_pct: 0.54, commission_per_lot: 0}
+  # Indices: spreads measured live on Elev8-Demo2 2026-10-22 at the US open (slippage ~1/4 of spread)
+  SPX500: {spread: 2.0,  slippage: 0.5, commission_per_lot: 0}
+  NAS100: {spread: 3.1,  slippage: 0.8, commission_per_lot: 0}
+  US30:   {spread: 4.1,  slippage: 1.0, commission_per_lot: 0}
 
 data:
   start: 2019-01-01
@@ -250,6 +254,18 @@ strategies:
     # negative in all 6 -> a real but tiny post-news drift. After normal costs best +0.01R; with
     # realistic news-time spreads (3x) all -0.11R or worse. Not tradeable. Rejected.
 
+  dip_buy:
+    timeframe: D1
+    execution_timeframe: H1
+    warmup_days: 400
+    symbols: [SPX500, NAS100, US30]
+    mode: rsi2                 # rsi2 | ibs  (both fixed BEFORE testing, 2026-10-22)
+    trend_sma: 200
+    rsi_below: 10
+    ibs_below: 0.2
+    atr_period: 14
+    sl_atr: 3.0                # safety stop only
+    hold_days: 7               # calendar days (~5 trading days)
   daily_trend:
     timeframe: D1
     execution_timeframe: H1    # wide daily stops: hourly candles are precise enough

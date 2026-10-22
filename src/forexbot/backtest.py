@@ -7,6 +7,7 @@ import pandas as pd
 
 from . import DATA_DIR
 from .data import load_bars
+from . import filters
 from .engine import Bars, run_portfolio, simulate
 from .instruments import load_costs, load_specs
 from .metrics import monte_carlo, prop_challenges, summarize, verdict
@@ -57,6 +58,7 @@ def run_backtest(cfg: dict, strategy: str, symbols: list[str] | None = None,
         df = load_bars(sym, params["timeframe"], data_dir, start=start - warmup, end=end)
         signals = [s for s in module.generate(df, sym, params, specs[sym])
                    if s.created >= start.tz_localize("UTC")]
+        signals = filters.apply(signals, params.get("filter"), sym, df)
         try:
             exec_df = load_bars(sym, exec_tf, data_dir, start=start, end=end)
         except FileNotFoundError:

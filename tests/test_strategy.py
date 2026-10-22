@@ -42,3 +42,20 @@ def test_winter_time_shifts_with_london():
     bars = random_walk("2024-01-08", 15)   # January: London is UTC+0
     signals = london_breakout.generate(bars, "XAUUSD", PARAMS, DEFAULT_SPECS["XAUUSD"])
     assert all(s.created.hour == 7 for s in signals)
+
+
+def test_dip_buy_only_buys_dips_in_an_uptrend_and_never_peeks():
+    from forexbot.strategies import dip_buy
+    idx = pd.date_range("2024-01-01", periods=260, freq="1D", tz="UTC")
+    close = pd.Series(np.linspace(100, 200, 260), index=idx)
+    close.iloc[250:253] = [190.0, 185.0, 181.0]                       # three sharp down days
+    bars = pd.DataFrame({"open": close, "high": close + 1, "low": close - 1, "close": close})
+    params = {"timeframe": "D1", "mode": "rsi2", "trend_sma": 200, "rsi_below": 10, "ibs_below": 0.2,
+              "atr_period": 14, "sl_atr": 3.0, "hold_days": 7}
+    sigs = dip_buy.generate(bars, "SPX500", params, DEFAULT_SPECS["XAUUSD"])
+    assert sigs and all(s.side == "buy" for s in sigs)
+    assert {s.created for s in sigs} <= {idx[i] + pd.Timedelta(days=1) for i in (250, 251, 252)}
+    later = dip_buy.generate(bars.iloc[:252], "SPX500", params, DEFAULT_SPECS["XAUUSD"])
+    assert [s.created for s in later] == [s.created for s in sigs if s.created <= idx[251] + pd.Timedelta(days=1)]
+    falling = bars.iloc[::-1].set_axis(idx)                            # downtrend: never buys
+    assert dip_buy.generate(falling, "SPX500", params, DEFAULT_SPECS["XAUUSD"]) == []
