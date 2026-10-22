@@ -5539,6 +5539,50 @@
    "flags": [
     "maybe:45faa847"
    ]
+  },
+  {
+   "id": "24d4daa1",
+   "source": "x_crypto_pullback",
+   "horizon": "INTRADAY",
+   "symbol": "ETHUSD",
+   "side": "sell",
+   "entry": 2434.02,
+   "sl": 2445.89,
+   "cur_sl": 2445.89,
+   "trail_distance": null,
+   "tp1": 2422.16,
+   "created": "2026-10-22T08:15:00+00:00",
+   "status": "new",
+   "best": 2434.02,
+   "notified_sl": 2445.89,
+   "warned_loss": false,
+   "result_r": null,
+   "closed_at": null,
+   "recorded": false,
+   "placed": false,
+   "signal": {
+    "strategy": "trend_pullback",
+    "symbol": "ETHUSD",
+    "side": "sell",
+    "order_type": "limit",
+    "created": "2026-10-22T08:15:00+00:00",
+    "entry": 2434.02,
+    "sl": 2445.89,
+    "tp1": 2422.16,
+    "tp2": 2404.35,
+    "tp1_close_pct": 50,
+    "move_sl_to_be": true,
+    "expires": "2026-10-22T10:15:00+00:00",
+    "close_by": "2026-10-22T16:15:00+00:00",
+    "oco_group": null,
+    "cancel_if_tp_before_fill": false,
+    "trail_distance": null,
+    "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 2.3x ATR from EMA20; sell the pullback at 2434.02."
+   },
+   "seen_exits": 0,
+   "fill_notified": false,
+   "outcome": null,
+   "flags": []
   }
  ],
  "last_signal_bar": {
@@ -5548,16 +5592,15 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T08:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T08:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T08:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T08:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T08:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T08:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T08:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T08:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T08:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T08:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T08:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T08:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T08:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T08:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T08:10:12.737891+00:00",
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
   "https://www.coindesk.com/markets/2026/10/19/cme-s-bitcoin-cash-uniswap-futures-global-pmis-crypto-week-ahead": "2026-10-19T13:03:59.100514+00:00",
   "https://www.coindesk.com/tech/2026/10/19/bitcoin-mining-offshoot-nscale-loses-microsoft-ai-deal-as-power-delay-stretches-into-2030s": "2026-10-19T13:03:59.100522+00:00",
@@ -5633,9 +5676,9 @@
  },
  "timers": {
   "crowd": 1792654448.650825,
-  "headlines": 1792656424.7419674,
-  "scan": 1792656885.8474321,
-  "follow": 1792656639.6328166
+  "headlines": 1792657661.5491502,
+  "scan": 1792657723.2835982,
+  "follow": 1792657630.2711623
  },
  "pushed_times": [],
  "last_checked": {
@@ -5758,9 +5801,10 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792656640.0051897,
+  "71a0e84c": 1792657630.6897144,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792656640.3621476
+  "45faa847": 1792657631.0044353,
+  "24d4daa1": 1792657631.0055356
  },
  "last_report": "2026-W42"
 }
