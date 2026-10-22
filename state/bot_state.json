@@ -5546,13 +5546,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T06:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T06:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T06:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T06:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T06:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T06:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T06:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T07:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T07:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T07:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T07:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T07:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T07:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T07:00:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T08:10:12.737891+00:00",
@@ -5630,9 +5630,9 @@
  },
  "timers": {
   "crowd": 1792650829.4271202,
-  "headlines": 1792652059.5110006,
-  "scan": 1792652028.9860096,
-  "follow": 1792651936.2638042
+  "headlines": 1792652688.038676,
+  "scan": 1792652841.534689,
+  "follow": 1792652872.1514301
  },
  "pushed_times": [],
  "last_checked": {
@@ -5752,12 +5752,12 @@
   "297dc31e": 1792608579.2301147,
   "f904cb19": 1792644383.602424,
   "1f178348": 1792648219.4680586,
-  "5639ead4": 1792651936.5984583,
-  "022e622d": 1792651936.9076214,
+  "5639ead4": 1792652872.5584776,
+  "022e622d": 1792652872.8884964,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792651936.90806,
-  "ba2ac073": 1792651936.9085574,
-  "45faa847": 1792651936.9090667
+  "71a0e84c": 1792652872.8893323,
+  "ba2ac073": 1792652872.8904696,
+  "45faa847": 1792652872.8910582
  },
  "last_report": "2026-W42"
 }
