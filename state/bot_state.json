@@ -5592,13 +5592,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T08:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T08:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T08:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T08:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T08:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T08:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T08:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T09:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T09:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T09:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T09:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T09:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T09:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T09:00:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5672,13 +5672,14 @@
   "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours": "2026-10-22T04:40:52.328818+00:00",
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally": "2026-10-22T04:50:59.829096+00:00",
   "https://www.coindesk.com/markets/2026/10/22/china-seeks-to-seize-61-800-btc-tied-to-usd5-7-billion-fraud-scheme": "2026-10-22T06:33:49.891995+00:00",
-  "https://cointelegraph.com/markets/bitcoin-etfs-528-million-btc-tops-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T07:46:24.337207+00:00"
+  "https://cointelegraph.com/markets/bitcoin-etfs-528-million-btc-tops-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T07:46:24.337207+00:00",
+  "https://www.coindesk.com/markets/2026/10/22/asian-stocks-tumble-bitcoin-retreats-as-china-enters-bear-market": "2026-10-22T08:58:14.214815+00:00"
  },
  "timers": {
   "crowd": 1792658061.7041554,
-  "headlines": 1792658876.677299,
-  "scan": 1792659304.9958797,
-  "follow": 1792659212.8195121
+  "headlines": 1792660096.0895605,
+  "scan": 1792660096.5019114,
+  "follow": 1792660152.6939075
  },
  "pushed_times": [],
  "last_checked": {
@@ -5801,10 +5802,10 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792659213.1230054,
+  "71a0e84c": 1792660152.9635098,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792659213.4215043,
-  "24d4daa1": 1792659213.4226391
+  "45faa847": 1792660153.219304,
+  "24d4daa1": 1792660153.2201068
  },
  "last_report": "2026-W42"
 }
