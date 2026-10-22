@@ -5275,13 +5275,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T03:45:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T03:45:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T03:45:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T03:45:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T03:45:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T03:45:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T03:45:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T04:00:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T04:00:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T04:00:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T04:00:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T04:00:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T04:00:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T04:00:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it": "2026-10-19T04:55:19.849022+00:00",
@@ -5358,9 +5358,9 @@
  },
  "timers": {
   "crowd": 1792639971.3974426,
-  "headlines": 1792641580.377263,
-  "scan": 1792641580.661637,
-  "follow": 1792641580.663384
+  "headlines": 1792642187.58875,
+  "scan": 1792642341.3935964,
+  "follow": 1792642188.2333214
  },
  "pushed_times": [],
  "last_checked": {
@@ -5478,8 +5478,8 @@
   "cba0cad3": 1792590015.2894251,
   "1037467a": 1792590642.1777027,
   "297dc31e": 1792608579.2301147,
-  "f904cb19": 1792641580.989268,
-  "1f178348": 1792641581.2837162
+  "f904cb19": 1792642188.5805633,
+  "1f178348": 1792642188.8824284
  },
  "last_report": "2026-W42"
 }
