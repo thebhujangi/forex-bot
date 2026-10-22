@@ -5592,13 +5592,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T09:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T09:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T09:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T09:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T09:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T09:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T09:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T09:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T09:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T09:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T09:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T09:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T09:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T09:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5676,10 +5676,10 @@
   "https://www.coindesk.com/markets/2026/10/22/asian-stocks-tumble-bitcoin-retreats-as-china-enters-bear-market": "2026-10-22T08:58:14.214815+00:00"
  },
  "timers": {
-  "crowd": 1792658061.7041554,
-  "headlines": 1792660718.873474,
-  "scan": 1792660902.9228227,
-  "follow": 1792660780.3420846
+  "crowd": 1792661686.5632563,
+  "headlines": 1792661320.1322656,
+  "scan": 1792661718.029684,
+  "follow": 1792661718.0317588
  },
  "pushed_times": [],
  "last_checked": {
@@ -5802,10 +5802,10 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792660780.6747253,
+  "71a0e84c": 1792661718.4326084,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792660781.035394,
-  "24d4daa1": 1792660781.0359514
+  "45faa847": 1792661718.7827249,
+  "24d4daa1": 1792661718.7838542
  },
  "last_report": "2026-W42"
 }
