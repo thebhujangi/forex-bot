@@ -5592,13 +5592,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T08:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T08:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T08:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T08:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T08:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T08:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T08:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T08:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T08:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T08:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T08:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T08:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T08:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T08:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5675,10 +5675,10 @@
   "https://cointelegraph.com/markets/bitcoin-etfs-528-million-btc-tops-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T07:46:24.337207+00:00"
  },
  "timers": {
-  "crowd": 1792654448.650825,
-  "headlines": 1792657661.5491502,
-  "scan": 1792657723.2835982,
-  "follow": 1792657630.2711623
+  "crowd": 1792658061.7041554,
+  "headlines": 1792658276.1208599,
+  "scan": 1792658490.168265,
+  "follow": 1792658244.9580963
  },
  "pushed_times": [],
  "last_checked": {
@@ -5801,10 +5801,10 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792657630.6897144,
+  "71a0e84c": 1792658245.3162522,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792657631.0044353,
-  "24d4daa1": 1792657631.0055356
+  "45faa847": 1792658245.6198666,
+  "24d4daa1": 1792658245.6204324
  },
  "last_report": "2026-W42"
 }
