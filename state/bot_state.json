@@ -1,7 +1,5 @@
 {
  "sent": {
-  "filled:9bb0d160": "2026-10-15T07:42:16.012468+00:00",
-  "filled:317ace89": "2026-10-15T07:47:34.181598+00:00",
   "expired:f983d48e": "2026-10-15T10:03:17.275569+00:00",
   "expired:3d2649b9": "2026-10-15T10:03:18.259998+00:00",
   "exit:9bb0d160:tp1": "2026-10-15T12:39:57.063110+00:00",
@@ -5548,13 +5546,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T07:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T07:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T07:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T07:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T07:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T07:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T07:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T07:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T07:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T07:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T07:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T07:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T07:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T07:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T08:10:12.737891+00:00",
@@ -5628,20 +5626,21 @@
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves": "2026-10-22T03:59:40.661570+00:00",
   "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours": "2026-10-22T04:40:52.328818+00:00",
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally": "2026-10-22T04:50:59.829096+00:00",
-  "https://www.coindesk.com/markets/2026/10/22/china-seeks-to-seize-61-800-btc-tied-to-usd5-7-billion-fraud-scheme": "2026-10-22T06:33:49.891995+00:00"
+  "https://www.coindesk.com/markets/2026/10/22/china-seeks-to-seize-61-800-btc-tied-to-usd5-7-billion-fraud-scheme": "2026-10-22T06:33:49.891995+00:00",
+  "https://cointelegraph.com/markets/bitcoin-etfs-528-million-btc-tops-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T07:46:24.337207+00:00"
  },
  "timers": {
   "crowd": 1792654448.650825,
-  "headlines": 1792653936.071267,
-  "scan": 1792654448.8753572,
-  "follow": 1792654448.8767745
+  "headlines": 1792655183.8554547,
+  "scan": 1792655276.2255158,
+  "follow": 1792655085.9826384
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792651630.9427125,
+  "d82f6843": 1792655094.1002977,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
@@ -5754,12 +5753,12 @@
   "297dc31e": 1792608579.2301147,
   "f904cb19": 1792644383.602424,
   "1f178348": 1792648219.4680586,
-  "5639ead4": 1792654449.1804821,
-  "022e622d": 1792654449.4613187,
+  "5639ead4": 1792655094.4658568,
+  "022e622d": 1792655094.8489752,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792654449.4619937,
+  "71a0e84c": 1792655094.8498082,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792654449.462575
+  "45faa847": 1792655094.850585
  },
  "last_report": "2026-W42"
 }
