@@ -153,7 +153,10 @@
   "done:af6fc34a": "2026-10-22T15:07:14.486833+00:00",
   "exit:45faa847:tp1": "2026-10-22T15:17:16.341165+00:00",
   "exit:db0f6a39:sl": "2026-10-22T15:17:25.213935+00:00",
-  "done:db0f6a39": "2026-10-22T15:17:25.965891+00:00"
+  "done:db0f6a39": "2026-10-22T15:17:25.965891+00:00",
+  "exit:45faa847:tp2": "2026-10-22T16:55:51.285984+00:00",
+  "done:45faa847": "2026-10-22T16:55:52.105895+00:00",
+  "exit:cb2fa20e:tp1": "2026-10-22T16:55:53.090712+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -5499,13 +5502,13 @@
    "trail_distance": null,
    "tp1": 2393.35,
    "created": "2026-10-22T06:00:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 2424.54,
    "notified_sl": 2455.74,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 1.4763666025641073,
+   "closed_at": "2026-10-22T16:50:00+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -5526,9 +5529,9 @@
     "trail_distance": null,
     "reason": "Asian range 2427.81-2483.67 (0.51x daily ATR 108.83). Break below the low at the London open."
    },
-   "seen_exits": 1,
+   "seen_exits": 2,
    "fill_notified": true,
-   "outcome": null,
+   "outcome": "tp2",
    "flags": [
     "maybe:45faa847"
    ]
@@ -5748,7 +5751,7 @@
     "trail_distance": null,
     "reason": "Asian range 4057.80-4091.92 (0.52x daily ATR 65.29). Break below the low at the London open."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null,
    "flags": []
@@ -5948,7 +5951,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/strive-buys-335m-in-bitcoin-boosting-holdings-to-36818-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:51:25.164205+00:00",
   "https://cointelegraph.com/news/metaplanet-super-league-2100-btc-us-bitcoin-treasury-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T17:01:25.386102+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-19T18:44:28.510301+00:00",
   "https://www.coindesk.com/policy/2026/10/19/tether-senator-s-investigation-misses-positive-work-that-s-led-to-lower-iran-volumes": "2026-10-19T20:27:32.143715+00:00",
@@ -6020,9 +6022,9 @@
  },
  "timers": {
   "crowd": 1792686939.7722175,
-  "headlines": 1792687309.0815747,
-  "scan": 1792687647.838077,
-  "follow": 1792687524.419224
+  "headlines": 1792687934.6160345,
+  "scan": 1792688459.626463,
+  "follow": 1792688459.627808
  },
  "pushed_times": [],
  "last_checked": {
@@ -6145,14 +6147,14 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792687524.7719257,
+  "71a0e84c": 1792688459.9895034,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792687525.1024573,
+  "45faa847": 1792688150.3787863,
   "24d4daa1": 1792664246.5924242,
   "6018e6ea": 1792675892.680031,
   "0f358a61": 1792677487.4640698,
   "71ce64d2": 1792677169.508623,
-  "cb2fa20e": 1792687525.224262,
+  "cb2fa20e": 1792688460.119235,
   "9ea0fb19": 1792678108.1857283,
   "af6fc34a": 1792681632.4172866,
   "ddddd75c": 1792679073.2828667,
