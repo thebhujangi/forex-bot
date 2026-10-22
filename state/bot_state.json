@@ -5938,9 +5938,9 @@
   }
  ],
  "last_signal_bar": {
-  "crypto_trend:BTCUSD": "2026-10-21T21:00:00+00:00",
-  "crypto_trend:ETHUSD": "2026-10-21T21:00:00+00:00",
-  "crypto_trend:XRPUSD": "2026-10-21T21:00:00+00:00",
+  "crypto_trend:BTCUSD": "2026-10-22T21:00:00+00:00",
+  "crypto_trend:ETHUSD": "2026-10-22T21:00:00+00:00",
+  "crypto_trend:XRPUSD": "2026-10-22T21:00:00+00:00",
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
@@ -6023,9 +6023,9 @@
  },
  "timers": {
   "crowd": 1792701428.6145215,
-  "headlines": 1792702186.0581374,
-  "scan": 1792702216.784237,
-  "follow": 1792702155.6622818
+  "headlines": 1792702809.32922,
+  "scan": 1792703037.8972065,
+  "follow": 1792702778.7903318
  },
  "pushed_times": [],
  "last_checked": {
