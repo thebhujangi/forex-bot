@@ -1,10 +1,5 @@
 {
  "sent": {
-  "exit:9bb0d160:time": "2026-10-15T14:09:12.703204+00:00",
-  "done:9bb0d160": "2026-10-15T14:09:13.457155+00:00",
-  "exit:317ace89:time": "2026-10-15T14:09:14.587608+00:00",
-  "done:317ace89": "2026-10-15T14:09:15.349386+00:00",
-  "filled:3a0499f7": "2026-10-15T14:14:28.907487+00:00",
   "filled:6401f6eb": "2026-10-15T14:19:58.026199+00:00",
   "exit:6401f6eb:sl": "2026-10-15T14:19:58.769595+00:00",
   "done:6401f6eb": "2026-10-15T14:19:59.517823+00:00",
@@ -161,7 +156,9 @@
   "oco:71ce64d2": "2026-10-22T13:52:59.126635+00:00",
   "exit:0f358a61:tp2": "2026-10-22T13:58:08.359837+00:00",
   "done:0f358a61": "2026-10-22T13:58:09.164922+00:00",
-  "maybe:af6fc34a": "2026-10-22T14:03:31.822427+00:00"
+  "maybe:af6fc34a": "2026-10-22T14:03:31.822427+00:00",
+  "filled:af6fc34a": "2026-10-22T14:08:36.365025+00:00",
+  "oco:9ea0fb19": "2026-10-22T14:08:37.112815+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -5773,13 +5770,13 @@
    "trail_distance": null,
    "tp1": 1.122,
    "created": "2026-10-22T13:30:00+00:00",
-   "status": "new",
+   "status": "closed",
    "best": 1.12107,
    "notified_sl": 1.12014,
    "warned_loss": false,
-   "result_r": null,
-   "closed_at": null,
-   "recorded": false,
+   "result_r": 0.0,
+   "closed_at": "2026-10-22T14:08:19.111304+00:00",
+   "recorded": true,
    "placed": false,
    "signal": {
     "strategy": "london_breakout",
@@ -5802,7 +5799,7 @@
    },
    "seen_exits": 0,
    "fill_notified": false,
-   "outcome": null,
+   "outcome": "oco",
    "flags": []
   },
   {
@@ -5845,7 +5842,7 @@
     "reason": "Asian range 1.11940-1.12088 (0.23x daily ATR 0.00642). Break below the low at the London open."
    },
    "seen_exits": 0,
-   "fill_notified": false,
+   "fill_notified": true,
    "outcome": null,
    "flags": [
     "maybe:af6fc34a"
@@ -5947,13 +5944,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T14:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T14:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T14:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T14:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T14:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T14:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T14:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T14:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T14:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T14:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T14:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T14:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T14:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T14:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-19T15:17:42.094687+00:00",
@@ -6029,9 +6026,9 @@
  },
  "timers": {
   "crowd": 1792676122.8842535,
-  "headlines": 1792677424.3657222,
-  "scan": 1792677857.633047,
-  "follow": 1792677794.1409254
+  "headlines": 1792678639.0606797,
+  "scan": 1792678700.3516705,
+  "follow": 1792678725.7554026
  },
  "pushed_times": [],
  "last_checked": {
@@ -6154,18 +6151,18 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792677794.5279524,
+  "71a0e84c": 1792678726.0437422,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792677794.8804858,
+  "45faa847": 1792678726.3167105,
   "24d4daa1": 1792664246.5924242,
   "6018e6ea": 1792675892.680031,
   "0f358a61": 1792677487.4640698,
   "71ce64d2": 1792677169.508623,
-  "cb2fa20e": 1792677795.039281,
-  "9ea0fb19": 1792677803.0120316,
-  "af6fc34a": 1792677811.0077496,
-  "ddddd75c": 1792677819.0144358,
-  "db0f6a39": 1792677827.0164611
+  "cb2fa20e": 1792678726.4120882,
+  "9ea0fb19": 1792678108.1857283,
+  "af6fc34a": 1792678734.4725008,
+  "ddddd75c": 1792678742.396866,
+  "db0f6a39": 1792678750.3734834
  },
  "last_report": "2026-W42"
 }
