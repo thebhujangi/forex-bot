@@ -5635,13 +5635,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T11:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T11:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T11:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T11:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T11:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T11:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T11:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T11:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T11:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T11:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T11:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T11:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T11:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T11:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5725,9 +5725,9 @@
  },
  "timers": {
   "crowd": 1792668901.4512153,
-  "headlines": 1792668748.858831,
-  "scan": 1792668962.4686785,
-  "follow": 1792668962.4707665
+  "headlines": 1792669376.4171844,
+  "scan": 1792669766.4780345,
+  "follow": 1792669613.7888582
  },
  "pushed_times": [],
  "last_checked": {
@@ -5850,11 +5850,11 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792668962.853745,
+  "71a0e84c": 1792669614.1045651,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792668963.1297488,
+  "45faa847": 1792669614.3942273,
   "24d4daa1": 1792664246.5924242,
-  "6018e6ea": 1792668963.1308854
+  "6018e6ea": 1792669614.395415
  },
  "last_report": "2026-W42"
 }
