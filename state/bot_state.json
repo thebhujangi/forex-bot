@@ -1,7 +1,5 @@
 {
  "sent": {
-  "filled:6605e94b": "2026-10-15T13:43:42.183373+00:00",
-  "oco:8862d0c7": "2026-10-15T13:43:42.968259+00:00",
   "maybe:c8673f3f": "2026-10-15T13:59:21.580358+00:00",
   "filled:c8673f3f": "2026-10-15T14:04:28.387717+00:00",
   "oco:b9cfc473": "2026-10-15T14:04:29.134079+00:00",
@@ -159,7 +157,8 @@
   "expired:022e622d": "2026-10-22T07:50:02.323702+00:00",
   "expired:24d4daa1": "2026-10-22T10:17:27.277731+00:00",
   "expired:6018e6ea": "2026-10-22T13:31:33.358812+00:00",
-  "filled:0f358a61": "2026-10-22T13:36:56.643175+00:00"
+  "filled:0f358a61": "2026-10-22T13:36:56.643175+00:00",
+  "exit:0f358a61:tp1": "2026-10-22T13:42:20.803814+00:00"
  },
  "offset": 508857111,
  "initial_sl": {},
@@ -5666,7 +5665,7 @@
     "trail_distance": null,
     "reason": "Downtrend: EMA20 below EMA100 and the slow EMA falling. Price stretched 1.9x ATR from EMA20; sell the pullback at 81990.42."
    },
-   "seen_exits": 0,
+   "seen_exits": 1,
    "fill_notified": true,
    "outcome": null,
    "flags": []
@@ -5943,13 +5942,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T13:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T13:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T13:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T13:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T13:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T13:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T13:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T13:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T13:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T13:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T13:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T13:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T13:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T13:45:00+00:00"
  },
  "seen_headlines": {
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-19T15:17:42.094687+00:00",
@@ -6020,13 +6019,14 @@
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines": "2026-10-22T10:51:07.112513+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/22/crypto-traders-seek-shelter-in-bitcoin-as-altcoins-slide-and-etf-flows-wobble": "2026-10-22T11:22:07.049218+00:00",
   "https://www.coindesk.com/tech/2026/10/22/ethereum-s-four-minute-settlement-plan-could-lower-the-cost-of-moving-crypto": "2026-10-22T12:24:26.551810+00:00",
-  "https://cointelegraph.com/news/bitcoin-etf-flows-follow-price-trends-dwf-labs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T13:05:55.573500+00:00"
+  "https://cointelegraph.com/news/bitcoin-etf-flows-follow-price-trends-dwf-labs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T13:05:55.573500+00:00",
+  "https://cointelegraph.com/markets/cryptoquant-rising-bitcoin-hashrate-indirect-bullish-signal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T13:47:00.582418+00:00"
  },
  "timers": {
   "crowd": 1792676122.8842535,
-  "headlines": 1792676214.6920414,
-  "scan": 1792676287.268896,
-  "follow": 1792676215.3306534
+  "headlines": 1792676819.962936,
+  "scan": 1792677105.4360826,
+  "follow": 1792676851.0688243
  },
  "pushed_times": [],
  "last_checked": {
@@ -6149,18 +6149,18 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792676215.667315,
+  "71a0e84c": 1792676851.4592638,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792676215.979279,
+  "45faa847": 1792676851.7736974,
   "24d4daa1": 1792664246.5924242,
   "6018e6ea": 1792675892.680031,
-  "0f358a61": 1792676215.9798994,
-  "71ce64d2": 1792676216.8880002,
-  "cb2fa20e": 1792676224.8537214,
-  "9ea0fb19": 1792676232.7805855,
-  "af6fc34a": 1792676240.7351003,
-  "ddddd75c": 1792676248.730093,
-  "db0f6a39": 1792676256.7626657
+  "0f358a61": 1792676851.774104,
+  "71ce64d2": 1792676851.911005,
+  "cb2fa20e": 1792676859.9238164,
+  "9ea0fb19": 1792676867.9025517,
+  "af6fc34a": 1792676875.9050026,
+  "ddddd75c": 1792676883.9076674,
+  "db0f6a39": 1792676891.9051304
  },
  "last_report": "2026-W42"
 }
