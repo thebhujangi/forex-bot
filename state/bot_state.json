@@ -5275,13 +5275,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T04:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T04:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T04:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T04:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T04:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T04:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T04:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T04:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T04:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T04:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T04:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T04:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T04:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T04:30:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/tech/2026/10/19/xrp-ledger-is-set-to-fix-its-lending-code-before-anyone-can-use-it": "2026-10-19T04:55:19.849022+00:00",
@@ -5357,10 +5357,10 @@
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves": "2026-10-22T03:59:40.661570+00:00"
  },
  "timers": {
-  "crowd": 1792639971.3974426,
-  "headlines": 1792642801.1386635,
-  "scan": 1792643138.2925174,
-  "follow": 1792643138.2939095
+  "crowd": 1792643579.9800982,
+  "headlines": 1792643403.3441167,
+  "scan": 1792643945.4432912,
+  "follow": 1792643762.5656507
  },
  "pushed_times": [],
  "last_checked": {
@@ -5478,8 +5478,8 @@
   "cba0cad3": 1792590015.2894251,
   "1037467a": 1792590642.1777027,
   "297dc31e": 1792608579.2301147,
-  "f904cb19": 1792643138.6881459,
-  "1f178348": 1792643139.0009503
+  "f904cb19": 1792643762.9032054,
+  "1f178348": 1792643763.1581182
  },
  "last_report": "2026-W42"
 }
