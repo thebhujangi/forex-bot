@@ -5276,13 +5276,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T05:00:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T05:00:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T05:00:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T05:00:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T05:00:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T05:00:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T05:00:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T05:15:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T05:15:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T05:15:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T05:15:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T05:15:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T05:15:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T05:15:00+00:00"
  },
  "seen_headlines": {
   "https://www.coindesk.com/markets/2026/10/19/bitcoin-whale-moves-usd34-million-in-btc-it-got-in-2013-when-coins-traded-at-usd131": "2026-10-19T06:27:53.430518+00:00",
@@ -5360,9 +5360,9 @@
  },
  "timers": {
   "crowd": 1792643579.9800982,
-  "headlines": 1792645283.5922308,
-  "scan": 1792645559.869043,
-  "follow": 1792645314.7702749
+  "headlines": 1792645909.2655976,
+  "scan": 1792646359.3353353,
+  "follow": 1792646298.29626
  },
  "pushed_times": [],
  "last_checked": {
@@ -5481,7 +5481,7 @@
   "1037467a": 1792590642.1777027,
   "297dc31e": 1792608579.2301147,
   "f904cb19": 1792644383.602424,
-  "1f178348": 1792645315.2016125
+  "1f178348": 1792646298.561028
  },
  "last_report": "2026-W42"
 }
