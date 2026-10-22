@@ -93,6 +93,22 @@ def test_report_handles_mixed_time_formats_and_skips_unfilled_orders():
     assert "1 pending order(s) never triggered" in text and len(text) < 4000
 
 
+def test_report_scores_tested_feeds_against_the_monthly_target():
+    rows = [dict(id=str(i), source=src, horizon="LONG-TERM", symbol="BTCUSD", side="buy", entry=1, sl=0.9,
+                 created=c, closed_at=c, placed=False, result_r=r, outcome="trail")
+            for i, (src, r, c) in enumerate([
+                ("crypto_trend", 3.0, "2026-08-10T21:00:00+00:00"),      # +3% in August: target met
+                ("crypto_trend", -1.0, "2026-10-05T21:00:00+00:00"),     # -1% in October
+                ("x_crypto_pullback", 5.0, "2026-10-06T21:00:00+00:00")])]  # switched-off feed: ignored
+    text = weekly_report(pd.DataFrame(rows), [], pd.Timestamp("2026-10-22 12:00", tz="UTC"),
+                         target_pct=2.0, tested_pct=0.3, tested={"crypto_trend"})
+    assert "Monthly target: 2%" in text
+    assert "✅ Aug 2026: +3.0% (1 trade)" in text and "⬜ Sep 2026: +0.0% (0 trades)" in text
+    assert "🔻 Oct 2026: -1.0% (1 trade)" in text
+    assert "Average: <b>+0.67% a month</b> over 3 month(s); below target." in text
+    assert "well above what's been proven" in text
+
+
 INTRA = Source("x_test", "london_breakout", ["BTCUSD"], "INTRADAY", "EXPERIMENTAL", "stats")
 
 

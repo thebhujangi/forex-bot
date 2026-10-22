@@ -44,48 +44,32 @@ bot:
   check_seconds: 30
 
 # Signal feeds the bot sends. Only strategies that survived testing belong here.
-# (No INTRADAY feed yet: every intraday setup tested so far loses after costs.)
+# (No INTRADAY feed: every intraday setup tested so far loses after costs.)
 signals:
   - name: crypto_trend
     strategy: daily_trend
     symbols: [BTCUSD, ETHUSD, XRPUSD]
     horizon: LONG-TERM
     tier: "Promising: passed the unseen 2024-26 test on BTC/ETH/XRP (5 other coins failed it)"
-    stats: "Tested 2019-2026: wins about 1 trade in 3, but winners average several times the losers. Unseen 2024-26: +0.26x risk per trade on these 3 coins. Forward results will tell."
+    stats: "Tested on Elev8 prices 2019-2026: 90 trades, wins about 4 in 10, averages +0.35x risk per trade (about +0.3% a month at 1% risk). Unseen 2024-26 still positive."
     # 2026-10-08: SOL/BNB/LTC/DOGE/ADA with the same settings: +0.48R in-sample 2018-23 but
     # -0.13R (PF 0.80, 48 trades) on unseen 2024-26 -> NOT added (failed the pre-set group rule).
     # Across all 8 coins, 2024-26 was only ~+0.04R, so the BTC/ETH/XRP edge is fragile.
-  - name: fx_gold_trend
-    strategy: daily_trend
-    symbols: [XAUUSD, EURUSD, GBPUSD]
-    horizon: LONG-TERM
-    tier: "Experimental: small edge only"
-    stats: "20-year test: about +0.1x risk per trade (roughly 1-2% a year). Treat as practice."
+    # 2026-10-22 re-test (scripts/research.py, Elev8 MT5 data): BTC/ETH +0.41R in-sample,
+    # +0.26R unseen. 3 coins: 0.32%/month at 1% risk, worst fall 10%.
 
-  # ---- ⚗️ EXPERIMENTAL intraday feeds (user asked for several signals a day, on demo) ----
-  # None of these passed testing. They're the least-bad intraday setups from the backtests and
-  # are here to be forward-tested on demo; the weekly report scores them separately.
-  - name: x_crypto_breakout
-    strategy: london_breakout
-    symbols: [BTCUSD, ETHUSD]
-    horizon: INTRADAY
-    tier: "⚗️ EXPERIMENTAL, unproven (2019-23 test: about -0.04x risk per trade)"
-    stats: "Breakout of the quiet overnight range when London opens. Demo only. Testing says this slightly loses on average."
-  - name: x_crypto_pullback
-    strategy: trend_pullback
-    symbols: [BTCUSD, ETHUSD]
-    horizon: INTRADAY
-    tier: "⚗️ EXPERIMENTAL, unproven (2019-23 test: about -0.13x risk per trade)"
-    stats: "Buy the dip in an uptrend / sell the bounce in a downtrend on the 15-minute chart. Demo only. Testing says this loses on average."
-    params: {timeframe: M15, max_hold_bars: 32, expiry_bars: 8, cooldown_bars: 8}
-  - name: x_fx_ny_range
-    strategy: london_breakout
-    symbols: [XAUUSD, EURUSD, GBPUSD]
-    horizon: INTRADAY
-    tier: "⚗️ EXPERIMENTAL, unproven (2019-23 test: about -0.16x risk per trade)"
-    stats: "Breakout of the 8:00-9:30am New York range (8pm-9:30pm Malaysia), around US data time. Demo only. Testing says this loses on average."
-    params: {timeframe: M15, session_tz: America/New_York, range_start: "08:00", range_end: "09:30",
-             entry_deadline: "12:00", close_time: "15:30", min_range_atr: 0.1, max_range_atr: 0.8}
+  # SWITCHED OFF 2026-10-22 (user: "tested winning signals" only). Kept here as a record.
+  # fx_gold_trend (daily_trend on XAUUSD/EURUSD/GBPUSD): EUR/GBP -0.41R on unseen 2024-26;
+  #   gold +0.13R but only 17 trades in 5 years: too few to call.
+  # x_crypto_breakout (london_breakout BTC/ETH): -0.04R in-sample, -$326 live.
+  # x_crypto_pullback (trend_pullback M15 BTC/ETH): -0.13R over 3,663 trades 2019-26.
+  # x_fx_ny_range (london_breakout NY 08:00-09:30 XAU/EUR/GBP): -0.16R in-sample, -$392 live.
+
+# Monthly growth target shown in the report card (actual vs target). A target, not a forecast:
+# no tested strategy reaches 2% a month at sensible risk (see crypto_trend notes above).
+targets:
+  monthly_return_pct: 2.0
+  tested_monthly_pct: 0.3      # what the 2019-26 test of the live feeds averages at 1% risk
 
 # If auto-detection picks the wrong broker symbol, map it here, e.g. XAUUSD: XAUUSD.std
 symbol_map: {}

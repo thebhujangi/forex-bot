@@ -264,8 +264,10 @@ class Bot:
                        "balance": self.mt5.account_info().balance}
         open_sigs = [(t, self.current_r(t)) for t in self.tracked if t.active]
         balance, risk = self.balance(), self.cfg["risk"]["risk_per_trade_pct"]
+        targets = self.cfg.get("targets") or {}
         return weekly_report(hist, open_sigs, now, account, per_r=balance * risk / 100,
-                             start_balance=balance, risk_pct=risk)
+                             start_balance=balance, risk_pct=risk, target_pct=targets.get("monthly_return_pct"),
+                             tested_pct=targets.get("tested_monthly_pct"), tested={s.name for s in self.sources})
 
     def weekly_report(self):
         now = pd.Timestamp.now(tz=self.tz)

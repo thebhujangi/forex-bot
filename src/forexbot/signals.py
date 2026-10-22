@@ -455,11 +455,38 @@ def _tally(g: pd.DataFrame, per_r: float) -> str:
             f"{total:+.1f}x risk ≈ <b>{_money(total, per_r)}</b>")
 
 
+def target_lines(traded: pd.DataFrame, now: pd.Timestamp, target_pct: float, tested_pct: float | None,
+                 risk_pct: float, tested: set[str]) -> list[str]:
+    """Monthly return of the TESTED feeds (simple sum: each trade = result x risk %) vs the target."""
+    t = traded[traded.source.isin(tested)] if not traded.empty else traded
+    lines = [f"🎯 <b>Monthly target: {target_pct:g}%</b> (tested signals only, {risk_pct:g}% risk each)"]
+    if t.empty:
+        lines.append("• No tested-signal trades have finished yet.")
+    else:
+        months = (t.result_r * risk_pct).groupby(t.closed_at.dt.tz_convert(None).dt.to_period("M")).agg(["sum", "size"])
+        first = months.index.min()
+        span = pd.period_range(first, now.tz_convert(None).to_period("M"), freq="M")
+        months = months.reindex(span, fill_value=0)
+        for p, row in months.tail(6).iterrows():
+            mark = "✅" if row["sum"] >= target_pct else "⬜" if row["sum"] >= 0 else "🔻"
+            lines.append(f"{mark} {p.strftime('%b %Y')}: {row['sum']:+.1f}% ({int(row['size'])} trade{'s' if row['size'] != 1 else ''})")
+        avg = months["sum"].mean()
+        lines.append(f"Average: <b>{avg:+.2f}% a month</b> over {len(months)} month(s); "
+                     f"{'on' if avg >= target_pct else 'below'} target.")
+    if tested_pct is not None:
+        lines.append(f"<i>Testing (2019-26) says expect about {tested_pct:+.1f}% a month at {risk_pct:g}% risk, so "
+                     f"the {target_pct:g}% target is {'within' if tested_pct >= target_pct else 'well above'} "
+                     f"what's been proven. Judge it over 6+ months.</i>")
+    return lines + [""]
+
+
 def weekly_report(history: pd.DataFrame, open_signals: list[tuple[Tracked, float | None]],
                   now: pd.Timestamp, account_week: dict | None = None, per_r: float = 100.0,
-                  start_balance: float = 10_000, risk_pct: float = 1.0) -> str:
+                  start_balance: float = 10_000, risk_pct: float = 1.0, target_pct: float | None = None,
+                  tested_pct: float | None = None, tested: set[str] | None = None) -> str:
     """Short report card: would following the signals have made money? Only orders that actually
-    triggered count (pending orders that never filled cost nothing). per_r = dollars per 1x risk."""
+    triggered count (pending orders that never filled cost nothing). per_r = dollars per 1x risk.
+    With target_pct: a monthly scoreboard of the tested feeds (names in `tested`) vs the target."""
     week_ago = now - pd.Timedelta(days=7)
     h = history.copy()
     if "outcome" not in h:
@@ -473,8 +500,11 @@ def weekly_report(history: pd.DataFrame, open_signals: list[tuple[Tracked, float
     week = traded[traded.closed_at >= week_ago] if not traded.empty else traded
     since = f"{h.created.min():%d %b}" if not h.empty else f"{now:%d %b}"
 
-    lines = [f"📊 <b>Report card</b> ({week_ago:%d %b} to {now:%d %b})", "",
-             f"If you had taken <b>every</b> signal ({risk_pct:g}% risk each on ${start_balance:,.0f}):",
+    lines = [f"📊 <b>Report card</b> ({week_ago:%d %b} to {now:%d %b})", ""]
+    if target_pct is not None:
+        lines += target_lines(traded, now, target_pct, tested_pct, risk_pct, tested or set())
+    lines += [f"If you had taken <b>every</b> signal, including feeds now switched off "
+              f"({risk_pct:g}% risk each on ${start_balance:,.0f}):",
              f"• This week: {_tally(week, per_r)}",
              f"• Since {since}: {_tally(traded, per_r)}", "", "<b>By feed, since the start:</b>"]
     for src, g in sorted(traded.groupby("source"), key=lambda x: -x[1].result_r.sum()):
@@ -495,9 +525,9 @@ def weekly_report(history: pd.DataFrame, open_signals: list[tuple[Tracked, float
     if account_week:
         lines += ["", f"<b>Your MT5 demo this week:</b> {account_week['trades']} closed trade(s), "
                       f"${account_week['profit']:+,.2f} · balance ${account_week['balance']:,.2f}"]
-    lines += ["", "<i>Backtests expected: crypto trend about +0.26x per trade; the ⚗️ experimental feeds "
-                  "-0.04x to -0.16x. Judge a feed after 20+ trades. Results are worked out from free prices "
-                  "matched to Elev8's; your MT5 history is the final word.</i>"]
+    lines += ["", "<i>Only the crypto trend feed is live now (tested: about +0.35x risk per trade); the "
+                  "⚗️ feeds were switched off on 22 Oct after failing testing. Results are worked out from free "
+                  "prices matched to Elev8's; your MT5 history is the final word.</i>"]
     return "\n".join(lines)
 
 
