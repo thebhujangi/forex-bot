@@ -5948,7 +5948,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:09:52.343718+00:00",
   "https://cointelegraph.com/markets/bitcoin-is-rejected-at-83k-as-us-bond-yields-reverse-higher-with-equities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:20:16.646322+00:00",
   "https://cointelegraph.com/news/strive-buys-335m-in-bitcoin-boosting-holdings-to-36818-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T16:51:25.164205+00:00",
   "https://cointelegraph.com/news/metaplanet-super-league-2100-btc-us-bitcoin-treasury-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T17:01:25.386102+00:00",
@@ -6021,9 +6020,9 @@
  },
  "timers": {
   "crowd": 1792683331.5037608,
-  "headlines": 1792684843.4691458,
-  "scan": 1792685210.718391,
-  "follow": 1792685027.0022066
+  "headlines": 1792685451.353454,
+  "scan": 1792686032.4575212,
+  "follow": 1792685941.093705
  },
  "pushed_times": [],
  "last_checked": {
@@ -6146,14 +6145,14 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792685027.3424697,
+  "71a0e84c": 1792685941.4848163,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792685027.6792681,
+  "45faa847": 1792685941.8055642,
   "24d4daa1": 1792664246.5924242,
   "6018e6ea": 1792675892.680031,
   "0f358a61": 1792677487.4640698,
   "71ce64d2": 1792677169.508623,
-  "cb2fa20e": 1792685027.8360164,
+  "cb2fa20e": 1792685941.9745247,
   "9ea0fb19": 1792678108.1857283,
   "af6fc34a": 1792681632.4172866,
   "ddddd75c": 1792679073.2828667,
