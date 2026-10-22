@@ -5679,13 +5679,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T12:15:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T12:15:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T12:15:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T12:15:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T12:15:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T12:15:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T12:15:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T12:30:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T12:30:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T12:30:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T12:30:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T12:30:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T12:30:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T12:30:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5765,13 +5765,14 @@
   "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides": "2026-10-22T09:59:40.969092+00:00",
   "https://cointelegraph.com/markets/bitcoin-corrects-below-82k-after-tesla-q3-results-kospi-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T10:51:07.112491+00:00",
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines": "2026-10-22T10:51:07.112513+00:00",
-  "https://www.coindesk.com/daybook-us/2026/10/22/crypto-traders-seek-shelter-in-bitcoin-as-altcoins-slide-and-etf-flows-wobble": "2026-10-22T11:22:07.049218+00:00"
+  "https://www.coindesk.com/daybook-us/2026/10/22/crypto-traders-seek-shelter-in-bitcoin-as-altcoins-slide-and-etf-flows-wobble": "2026-10-22T11:22:07.049218+00:00",
+  "https://www.coindesk.com/tech/2026/10/22/ethereum-s-four-minute-settlement-plan-could-lower-the-cost-of-moving-crypto": "2026-10-22T12:24:26.551810+00:00"
  },
  "timers": {
   "crowd": 1792668901.4512153,
-  "headlines": 1792671243.3984337,
-  "scan": 1792671387.048904,
-  "follow": 1792671181.7106729
+  "headlines": 1792671866.1619453,
+  "scan": 1792672231.8817945,
+  "follow": 1792672109.7246516
  },
  "pushed_times": [],
  "last_checked": {
@@ -5894,12 +5895,12 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792671182.0485477,
+  "71a0e84c": 1792672110.003407,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792671182.3532844,
+  "45faa847": 1792672110.307102,
   "24d4daa1": 1792664246.5924242,
-  "6018e6ea": 1792671182.3543265,
-  "0f358a61": 1792671182.3553221
+  "6018e6ea": 1792672110.3081014,
+  "0f358a61": 1792672110.3090749
  },
  "last_report": "2026-W42"
 }
