@@ -5677,13 +5677,13 @@
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
-  "x_crypto_breakout:BTCUSD": "2026-10-22T12:30:00+00:00",
-  "x_crypto_breakout:ETHUSD": "2026-10-22T12:30:00+00:00",
-  "x_crypto_pullback:BTCUSD": "2026-10-22T12:30:00+00:00",
-  "x_crypto_pullback:ETHUSD": "2026-10-22T12:30:00+00:00",
-  "x_fx_ny_range:XAUUSD": "2026-10-22T12:30:00+00:00",
-  "x_fx_ny_range:EURUSD": "2026-10-22T12:30:00+00:00",
-  "x_fx_ny_range:GBPUSD": "2026-10-22T12:30:00+00:00"
+  "x_crypto_breakout:BTCUSD": "2026-10-22T12:45:00+00:00",
+  "x_crypto_breakout:ETHUSD": "2026-10-22T12:45:00+00:00",
+  "x_crypto_pullback:BTCUSD": "2026-10-22T12:45:00+00:00",
+  "x_crypto_pullback:ETHUSD": "2026-10-22T12:45:00+00:00",
+  "x_fx_ny_range:XAUUSD": "2026-10-22T12:45:00+00:00",
+  "x_fx_ny_range:EURUSD": "2026-10-22T12:45:00+00:00",
+  "x_fx_ny_range:GBPUSD": "2026-10-22T12:45:00+00:00"
  },
  "seen_headlines": {
   "https://cointelegraph.com/news/jpmorgan-jpm-coin-ethereum-institutional-clients?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-19T13:03:59.100494+00:00",
@@ -5768,9 +5768,9 @@
  },
  "timers": {
   "crowd": 1792672504.778118,
-  "headlines": 1792672473.772005,
-  "scan": 1792673053.5859122,
-  "follow": 1792673053.5872722
+  "headlines": 1792673731.0562463,
+  "scan": 1792673823.2835608,
+  "follow": 1792673669.0843391
  },
  "pushed_times": [],
  "last_checked": {
@@ -5893,12 +5893,12 @@
   "5639ead4": 1792655400.623644,
   "022e622d": 1792655401.6458175,
   "e1559e2d": 1792650706.6933362,
-  "71a0e84c": 1792673053.8857355,
+  "71a0e84c": 1792673669.5819507,
   "ba2ac073": 1792653493.5300953,
-  "45faa847": 1792673054.175453,
+  "45faa847": 1792673669.9338455,
   "24d4daa1": 1792664246.5924242,
-  "6018e6ea": 1792673054.1766264,
-  "0f358a61": 1792673054.1776736
+  "6018e6ea": 1792673669.9345636,
+  "0f358a61": 1792673669.9352238
  },
  "last_report": "2026-W42"
 }
