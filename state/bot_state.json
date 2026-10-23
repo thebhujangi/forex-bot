@@ -1,6 +1,5 @@
 {
  "sent": {
-  "expired:a2dcdee8": "2026-10-16T12:48:33.204811+00:00",
   "loss:39db18ba": "2026-10-16T13:14:31.607774+00:00",
   "exit:39db18ba:sl": "2026-10-16T13:35:23.713569+00:00",
   "done:39db18ba": "2026-10-16T13:35:24.286759+00:00",
@@ -5948,8 +5947,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/drift-exploiter-eth-tornado-cash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T12:45:54.206051+00:00",
-  "https://www.coindesk.com/business/2026/10/19/microsoft-alphabet-and-goldman-sachs-join-objections-to-okx-ice-tokenized-stock-trading": "2026-10-20T12:45:54.206071+00:00",
   "https://cointelegraph.com/news/finma-approves-switzerlands-first-bitcoin-etf-retail?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T13:16:27.026143+00:00",
   "https://www.coindesk.com/markets/2026/10/20/live-updates-market-jitters-persist-as-the-ai-selloff-deepens": "2026-10-20T14:18:04.415037+00:00",
   "https://www.coindesk.com/markets/2026/10/20/blackrock-seeks-to-shield-bitcoin-investors-from-losses-after-rival-fund-weathers-50-crash": "2026-10-20T14:49:13.474878+00:00",
@@ -6022,9 +6019,9 @@
  },
  "timers": {
   "crowd": 1792759311.1602647,
-  "headlines": 1792759311.5649078,
-  "scan": 1792759556.7190814,
-  "follow": 1792759312.13721
+  "headlines": 1792759939.236446,
+  "scan": 1792760368.8886938,
+  "follow": 1792760246.1968007
  },
  "pushed_times": [],
  "last_checked": {
