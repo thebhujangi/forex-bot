@@ -1,6 +1,5 @@
 {
  "sent": {
-  "maybe:14748b24": "2026-10-16T07:22:48.364419+00:00",
   "filled:39db18ba": "2026-10-16T12:22:39.166414+00:00",
   "expired:a2dcdee8": "2026-10-16T12:48:33.204811+00:00",
   "loss:39db18ba": "2026-10-16T13:14:31.607774+00:00",
@@ -6019,13 +6018,14 @@
   "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100": "2026-10-23T03:23:41.274839+00:00",
   "https://cointelegraph.com/news/bitcoin-core-changes-security-policy-as-ai-makes-bugs-easier-to-find?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T04:45:25.041102+00:00",
   "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts": "2026-10-23T05:06:26.969580+00:00",
-  "https://cointelegraph.com/news/ethereum-delays-glamsterdam-testnet-fork-gas-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T05:16:56.573865+00:00"
+  "https://cointelegraph.com/news/ethereum-delays-glamsterdam-testnet-fork-gas-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T05:16:56.573865+00:00",
+  "https://cointelegraph.com/markets/bitcoin-etfs-erase-october-gains-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T07:21:11.308053+00:00"
  },
  "timers": {
   "crowd": 1792737623.847582,
-  "headlines": 1792738838.4807599,
-  "scan": 1792739387.364716,
-  "follow": 1792739143.6130164
+  "headlines": 1792740070.7514744,
+  "scan": 1792740193.6324806,
+  "follow": 1792740071.3087099
  },
  "pushed_times": [],
  "last_checked": {
