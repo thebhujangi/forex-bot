@@ -5935,7 +5935,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/20/blackrock-seeks-to-shield-bitcoin-investors-from-losses-after-rival-fund-weathers-50-crash": "2026-10-20T14:49:13.474878+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-spikes-to-833k-as-us-stocks-rise-on-q3-earnings-oil-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T16:32:35.035179+00:00",
   "https://www.coindesk.com/opinion/2026/10/20/the-coinbase-allegations-expose-bitcoin-s-corporate-governance-gap": "2026-10-20T17:03:32.314398+00:00",
   "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00",
@@ -6007,9 +6006,9 @@
  },
  "timers": {
   "crowd": 1792766559.7422945,
-  "headlines": 1792766774.3327456,
-  "scan": 1792766836.3620982,
-  "follow": 1792766775.2594502
+  "headlines": 1792767391.796105,
+  "scan": 1792767636.3411264,
+  "follow": 1792767392.4749286
  },
  "pushed_times": [],
  "last_checked": {
