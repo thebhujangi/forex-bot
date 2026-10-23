@@ -5930,7 +5930,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/markets/bitcoin-price-spikes-to-833k-as-us-stocks-rise-on-q3-earnings-oil-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T16:32:35.035179+00:00",
   "https://www.coindesk.com/opinion/2026/10/20/the-coinbase-allegations-expose-bitcoin-s-corporate-governance-gap": "2026-10-20T17:03:32.314398+00:00",
   "https://cointelegraph.com/news/strive-closes-630m-sats-ipo-leaves-bitcoin-allocation-unspecified?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T17:44:26.873583+00:00",
   "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11": "2026-10-21T04:12:47.466884+00:00",
@@ -6001,10 +6000,10 @@
   "https://cointelegraph.com/markets/bitcoin-seeks-support-above-81k-as-brent-crude-oil-hits-highest-level-since-march?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T15:58:47.553185+00:00"
  },
  "timers": {
-  "crowd": 1792770172.1854463,
-  "headlines": 1792772988.9343271,
-  "scan": 1792773294.5250251,
-  "follow": 1792773294.5260856
+  "crowd": 1792773789.1101987,
+  "headlines": 1792773605.4894943,
+  "scan": 1792774094.4177523,
+  "follow": 1792773911.5498044
  },
  "pushed_times": [],
  "last_checked": {
