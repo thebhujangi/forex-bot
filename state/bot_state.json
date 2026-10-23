@@ -1,7 +1,5 @@
 {
  "sent": {
-  "exit:ef1785bc:be": "2026-10-16T19:33:16.473955+00:00",
-  "done:ef1785bc": "2026-10-16T19:33:17.040930+00:00",
   "expired:0f9491f8": "2026-10-16T20:05:00.687674+00:00",
   "expired:f5005c86": "2026-10-19T02:48:21.604249+00:00",
   "expired:931de712": "2026-10-19T03:46:38.315731+00:00",
@@ -5997,10 +5995,10 @@
   "https://cointelegraph.com/news/us-senator-probe-bo-hines-trump-crypto-adviser-tether-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T17:52:10.014501+00:00"
  },
  "timers": {
-  "crowd": 1792781017.0277262,
-  "headlines": 1792783537.290569,
-  "scan": 1792783813.1951566,
-  "follow": 1792783568.5564544
+  "crowd": 1792784623.9638472,
+  "headlines": 1792784165.0843623,
+  "scan": 1792784624.3808434,
+  "follow": 1792784501.9253032
  },
  "pushed_times": [],
  "last_checked": {
