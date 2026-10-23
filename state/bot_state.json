@@ -1,6 +1,5 @@
 {
  "sent": {
-  "loss:39db18ba": "2026-10-16T13:14:31.607774+00:00",
   "exit:39db18ba:sl": "2026-10-16T13:35:23.713569+00:00",
   "done:39db18ba": "2026-10-16T13:35:24.286759+00:00",
   "filled:21ca5415": "2026-10-16T13:40:37.498366+00:00",
@@ -5947,7 +5946,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/finma-approves-switzerlands-first-bitcoin-etf-retail?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T13:16:27.026143+00:00",
   "https://www.coindesk.com/markets/2026/10/20/live-updates-market-jitters-persist-as-the-ai-selloff-deepens": "2026-10-20T14:18:04.415037+00:00",
   "https://www.coindesk.com/markets/2026/10/20/blackrock-seeks-to-shield-bitcoin-investors-from-losses-after-rival-fund-weathers-50-crash": "2026-10-20T14:49:13.474878+00:00",
   "https://cointelegraph.com/markets/bitcoin-price-spikes-to-833k-as-us-stocks-rise-on-q3-earnings-oil-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T16:32:35.035179+00:00",
@@ -6019,16 +6017,16 @@
  },
  "timers": {
   "crowd": 1792759311.1602647,
-  "headlines": 1792761183.7478118,
-  "scan": 1792761184.3047776,
-  "follow": 1792761184.30551
+  "headlines": 1792761785.3763046,
+  "scan": 1792761998.8950377,
+  "follow": 1792761816.2391798
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792758084.3076777,
+  "d82f6843": 1792761510.417601,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
