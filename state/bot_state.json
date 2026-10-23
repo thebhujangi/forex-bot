@@ -1,10 +1,5 @@
 {
  "sent": {
-  "filled:85d0efa0": "2026-10-16T13:56:34.633290+00:00",
-  "oco:8929e2a7": "2026-10-16T13:56:35.428810+00:00",
-  "exit:21ca5415:tp1": "2026-10-16T14:02:10.086410+00:00",
-  "filled:cba2ae64": "2026-10-16T14:06:54.890393+00:00",
-  "oco:4395ff29": "2026-10-16T14:06:55.692581+00:00",
   "exit:21ca5415:tp2": "2026-10-16T14:28:19.348690+00:00",
   "done:21ca5415": "2026-10-16T14:28:19.902556+00:00",
   "exit:cba2ae64:sl": "2026-10-16T15:06:06.722634+00:00",
@@ -6009,13 +6004,14 @@
   "https://www.coindesk.com/markets/2026/10/23/bitcoin-steadies-near-usd81-700-as-altcoins-rebound-pepe-climbs-13": "2026-10-23T10:58:35.258752+00:00",
   "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs": "2026-10-23T11:19:12.864250+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/23/bitcoin-s-volatility-is-well-above-euro-dollar-gyrations-though-it-has-calmed-to-rival-nvidia-s": "2026-10-23T11:29:33.821903+00:00",
-  "https://cointelegraph.com/markets/bitcoin-consolidates-after-3-loss-as-ai-fears-stoke-fresh-stock-market-weakness?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T12:31:33.070209+00:00"
+  "https://cointelegraph.com/markets/bitcoin-consolidates-after-3-loss-as-ai-fears-stoke-fresh-stock-market-weakness?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T12:31:33.070209+00:00",
+  "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports": "2026-10-23T14:04:48.402454+00:00"
  },
  "timers": {
   "crowd": 1792762935.1776555,
-  "headlines": 1792763026.531136,
-  "scan": 1792763604.3698425,
-  "follow": 1792763361.2067318
+  "headlines": 1792764288.0460632,
+  "scan": 1792764409.9493163,
+  "follow": 1792764288.4034307
  },
  "pushed_times": [],
  "last_checked": {
