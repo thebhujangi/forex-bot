@@ -6019,13 +6019,14 @@
   "https://cointelegraph.com/news/switzerland-approves-first-spot-bitcoin-etf-for-retail-investors?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T01:09:00.110781+00:00",
   "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100": "2026-10-23T03:23:41.274839+00:00",
   "https://cointelegraph.com/news/bitcoin-core-changes-security-policy-as-ai-makes-bugs-easier-to-find?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T04:45:25.041102+00:00",
-  "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts": "2026-10-23T05:06:26.969580+00:00"
+  "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts": "2026-10-23T05:06:26.969580+00:00",
+  "https://cointelegraph.com/news/ethereum-delays-glamsterdam-testnet-fork-gas-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T05:16:56.573865+00:00"
  },
  "timers": {
   "crowd": 1792730373.997046,
-  "headlines": 1792731986.704059,
-  "scan": 1792732108.541448,
-  "follow": 1792731986.9708922
+  "headlines": 1792732616.2830627,
+  "scan": 1792732920.9339087,
+  "follow": 1792732920.9350889
  },
  "pushed_times": [],
  "last_checked": {
