@@ -1,8 +1,5 @@
 {
  "sent": {
-  "loss:85d0efa0": "2026-10-16T15:59:30.263023+00:00",
-  "exit:85d0efa0:sl": "2026-10-16T16:04:52.188625+00:00",
-  "done:85d0efa0": "2026-10-16T16:04:52.838986+00:00",
   "filled:ef1785bc": "2026-10-16T17:48:54.698522+00:00",
   "exit:ef1785bc:tp1": "2026-10-16T18:04:13.052874+00:00",
   "exit:ef1785bc:be": "2026-10-16T19:33:16.473955+00:00",
@@ -6000,13 +5997,14 @@
   "https://www.coindesk.com/daybook-us/2026/10/23/bitcoin-s-volatility-is-well-above-euro-dollar-gyrations-though-it-has-calmed-to-rival-nvidia-s": "2026-10-23T11:29:33.821903+00:00",
   "https://cointelegraph.com/markets/bitcoin-consolidates-after-3-loss-as-ai-fears-stoke-fresh-stock-market-weakness?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T12:31:33.070209+00:00",
   "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports": "2026-10-23T14:04:48.402454+00:00",
-  "https://www.coindesk.com/tech/2026/10/23/bitcoin-will-now-stop-hiding-bugs-an-ai-can-find-in-one-prompt": "2026-10-23T14:15:13.974823+00:00"
+  "https://www.coindesk.com/tech/2026/10/23/bitcoin-will-now-stop-hiding-bugs-an-ai-can-find-in-one-prompt": "2026-10-23T14:15:13.974823+00:00",
+  "https://cointelegraph.com/markets/bitcoin-seeks-support-above-81k-as-brent-crude-oil-hits-highest-level-since-march?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T15:58:47.553185+00:00"
  },
  "timers": {
   "crowd": 1792770172.1854463,
-  "headlines": 1792770506.6804087,
-  "scan": 1792770871.8226137,
-  "follow": 1792770810.9734585
+  "headlines": 1792771126.748716,
+  "scan": 1792771676.2507105,
+  "follow": 1792771432.3549454
  },
  "pushed_times": [],
  "last_checked": {
