@@ -6005,20 +6005,21 @@
   "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs": "2026-10-23T11:19:12.864250+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/23/bitcoin-s-volatility-is-well-above-euro-dollar-gyrations-though-it-has-calmed-to-rival-nvidia-s": "2026-10-23T11:29:33.821903+00:00",
   "https://cointelegraph.com/markets/bitcoin-consolidates-after-3-loss-as-ai-fears-stoke-fresh-stock-market-weakness?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T12:31:33.070209+00:00",
-  "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports": "2026-10-23T14:04:48.402454+00:00"
+  "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports": "2026-10-23T14:04:48.402454+00:00",
+  "https://www.coindesk.com/tech/2026/10/23/bitcoin-will-now-stop-hiding-bugs-an-ai-can-find-in-one-prompt": "2026-10-23T14:15:13.974823+00:00"
  },
  "timers": {
   "crowd": 1792762935.1776555,
-  "headlines": 1792764288.0460632,
-  "scan": 1792764409.9493163,
-  "follow": 1792764288.4034307
+  "headlines": 1792764913.5882757,
+  "scan": 1792765226.684077,
+  "follow": 1792765226.6851137
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792761510.417601,
+  "d82f6843": 1792764922.0294106,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
