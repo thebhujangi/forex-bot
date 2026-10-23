@@ -5949,7 +5949,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/20/jpmorgan-sees-10-annual-bitcoin-returns-topping-stocks-bonds-and-gold-over-next-decade": "2026-10-20T11:13:39.695852+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/20/equity-weakness-could-damp-demand-for-bitcoin-after-biggest-etf-inflows-in-a-month": "2026-10-20T11:24:04.940453+00:00",
   "https://cointelegraph.com/news/drift-exploiter-eth-tornado-cash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T12:45:54.206051+00:00",
   "https://www.coindesk.com/business/2026/10/19/microsoft-alphabet-and-goldman-sachs-join-objections-to-okx-ice-tokenized-stock-trading": "2026-10-20T12:45:54.206071+00:00",
@@ -6018,20 +6017,21 @@
   "https://cointelegraph.com/news/hsbc-launches-redcoin-hong-kong-dollar-stablecoin-payme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T08:54:06.196065+00:00",
   "https://www.coindesk.com/business/2026/10/23/sweden-s-central-bank-revives-e-krona-debate-as-stablecoins-and-digital-euro-loom": "2026-10-23T09:04:33.242709+00:00",
   "https://www.coindesk.com/markets/2026/10/23/bitcoin-approaches-midterms-as-july-low-challenges-historical-cycle-pattern": "2026-10-23T10:58:35.258732+00:00",
-  "https://www.coindesk.com/markets/2026/10/23/bitcoin-steadies-near-usd81-700-as-altcoins-rebound-pepe-climbs-13": "2026-10-23T10:58:35.258752+00:00"
+  "https://www.coindesk.com/markets/2026/10/23/bitcoin-steadies-near-usd81-700-as-altcoins-rebound-pepe-climbs-13": "2026-10-23T10:58:35.258752+00:00",
+  "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs": "2026-10-23T11:19:12.864250+00:00"
  },
  "timers": {
   "crowd": 1792752065.455167,
-  "headlines": 1792753732.2422137,
-  "scan": 1792753914.9229283,
-  "follow": 1792753732.6335459
+  "headlines": 1792754352.572886,
+  "scan": 1792754725.3532264,
+  "follow": 1792754656.5865066
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792751267.2498255,
+  "d82f6843": 1792754664.6181436,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
