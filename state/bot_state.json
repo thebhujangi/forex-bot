@@ -5949,7 +5949,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/business/2026/10/20/bitcoin-etfs-just-saw-their-biggest-day-in-a-month-thanks-entirely-to-blackrock": "2026-10-20T08:29:18.275759+00:00",
   "https://cointelegraph.com/markets/jpmorgan-bitcoin-outperform-stocks-gold-annual-returns?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T09:00:11.184118+00:00",
   "https://www.coindesk.com/markets/2026/10/20/bitcoin-drops-to-usd81-400-as-asian-chip-stocks-tumble-options-traders-seek-downside-protection": "2026-10-20T10:32:24.794502+00:00",
   "https://cointelegraph.com/markets/xrp-30-day-exchange-inflows-pass-6b-tokens-as-whales-move-to-the-sidelines?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T10:42:49.164251+00:00",
@@ -6021,17 +6020,17 @@
   "https://cointelegraph.com/markets/bitcoin-etfs-erase-october-gains-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T07:21:11.308053+00:00"
  },
  "timers": {
-  "crowd": 1792741230.17641,
-  "headlines": 1792743782.1657503,
-  "scan": 1792744239.066561,
-  "follow": 1792744117.3510556
+  "crowd": 1792744838.8045475,
+  "headlines": 1792745021.6644208,
+  "scan": 1792745052.6052513,
+  "follow": 1792745052.6063774
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792741009.6724112,
+  "d82f6843": 1792744442.793639,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
