@@ -5949,7 +5949,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/blackrock-ishares-bitcoin-managed-protection-etf-pbit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T08:19:11.912337+00:00",
   "https://www.coindesk.com/business/2026/10/20/bitcoin-etfs-just-saw-their-biggest-day-in-a-month-thanks-entirely-to-blackrock": "2026-10-20T08:29:18.275759+00:00",
   "https://cointelegraph.com/markets/jpmorgan-bitcoin-outperform-stocks-gold-annual-returns?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T09:00:11.184118+00:00",
   "https://www.coindesk.com/markets/2026/10/20/bitcoin-drops-to-usd81-400-as-asian-chip-stocks-tumble-options-traders-seek-downside-protection": "2026-10-20T10:32:24.794502+00:00",
@@ -6023,9 +6022,9 @@
  },
  "timers": {
   "crowd": 1792741230.17641,
-  "headlines": 1792743157.1311946,
-  "scan": 1792743431.9700816,
-  "follow": 1792743188.0934694
+  "headlines": 1792743782.1657503,
+  "scan": 1792744239.066561,
+  "follow": 1792744117.3510556
  },
  "pushed_times": [],
  "last_checked": {
