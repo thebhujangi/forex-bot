@@ -5949,7 +5949,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/20/bitcoin-drops-to-usd81-400-as-asian-chip-stocks-tumble-options-traders-seek-downside-protection": "2026-10-20T10:32:24.794502+00:00",
   "https://cointelegraph.com/markets/xrp-30-day-exchange-inflows-pass-6b-tokens-as-whales-move-to-the-sidelines?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-20T10:42:49.164251+00:00",
   "https://www.coindesk.com/markets/2026/10/20/jpmorgan-sees-10-annual-bitcoin-returns-topping-stocks-bonds-and-gold-over-next-decade": "2026-10-20T11:13:39.695852+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/20/equity-weakness-could-damp-demand-for-bitcoin-after-biggest-etf-inflows-in-a-month": "2026-10-20T11:24:04.940453+00:00",
@@ -6021,10 +6020,10 @@
   "https://www.coindesk.com/business/2026/10/23/sweden-s-central-bank-revives-e-krona-debate-as-stablecoins-and-digital-euro-loom": "2026-10-23T09:04:33.242709+00:00"
  },
  "timers": {
-  "crowd": 1792748443.4682984,
-  "headlines": 1792751258.8955452,
-  "scan": 1792751510.3548522,
-  "follow": 1792751259.2216363
+  "crowd": 1792752065.455167,
+  "headlines": 1792751880.8522127,
+  "scan": 1792752311.107462,
+  "follow": 1792752188.5255756
  },
  "pushed_times": [],
  "last_checked": {
