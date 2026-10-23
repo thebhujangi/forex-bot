@@ -1,7 +1,5 @@
 {
  "sent": {
-  "filled:21ca5415": "2026-10-16T13:40:37.498366+00:00",
-  "oco:c362b8d4": "2026-10-16T13:40:38.052821+00:00",
   "filled:85d0efa0": "2026-10-16T13:56:34.633290+00:00",
   "oco:8929e2a7": "2026-10-16T13:56:35.428810+00:00",
   "exit:21ca5415:tp1": "2026-10-16T14:02:10.086410+00:00",
@@ -6014,10 +6012,10 @@
   "https://cointelegraph.com/markets/bitcoin-consolidates-after-3-loss-as-ai-fears-stoke-fresh-stock-market-weakness?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T12:31:33.070209+00:00"
  },
  "timers": {
-  "crowd": 1792759311.1602647,
-  "headlines": 1792762396.6098583,
-  "scan": 1792762793.779842,
-  "follow": 1792762732.7380824
+  "crowd": 1792762935.1776555,
+  "headlines": 1792763026.531136,
+  "scan": 1792763604.3698425,
+  "follow": 1792763361.2067318
  },
  "pushed_times": [],
  "last_checked": {
