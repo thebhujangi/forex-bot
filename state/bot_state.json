@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/21/spacex-and-tesla-explore-merger-that-would-unite-more-than-30-000-bitcoin": "2026-10-21T09:32:34.685486+00:00",
   "https://cointelegraph.com/news/drift-exploiter-moves-109m-eth-tornado-cash-2-days?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T10:34:36.665952+00:00",
   "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures": "2026-10-21T10:34:36.665971+00:00",
   "https://cointelegraph.com/markets/bitcoin-top-buyers-halt-btc-price-upside-with-877k-now-key-glassnode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T10:54:57.030609+00:00",
@@ -5991,10 +5990,10 @@
   "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet": "2026-10-24T04:53:35.903432+00:00"
  },
  "timers": {
-  "crowd": 1792831678.8070498,
-  "headlines": 1792834312.9232416,
-  "scan": 1792834680.4981053,
-  "follow": 1792834496.9942
+  "crowd": 1792835301.0902433,
+  "headlines": 1792834936.0887392,
+  "scan": 1792835483.7324023,
+  "follow": 1792835422.7854156
  },
  "pushed_times": [],
  "last_checked": {
