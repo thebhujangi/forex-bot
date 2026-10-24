@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/daybook-us/2026/10/21/bitcoin-risk-management-grows-more-popular-as-the-just-bet-on-price-era-fades": "2026-10-21T11:16:13.507656+00:00",
   "https://cointelegraph.com/magazine/5-alternatives-to-ledger-to-store-your-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T13:41:20.019666+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-21T14:53:31.642687+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm": "2026-10-21T14:53:31.642709+00:00",
@@ -5988,9 +5987,9 @@
  },
  "timers": {
   "crowd": 1792838927.696299,
-  "headlines": 1792839880.764647,
-  "scan": 1792840316.1856923,
-  "follow": 1792840064.2434843
+  "headlines": 1792841110.0682595,
+  "scan": 1792841110.6635413,
+  "follow": 1792840988.1357534
  },
  "pushed_times": [],
  "last_checked": {
