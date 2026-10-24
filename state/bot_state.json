@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/markets/bitcoin-price-tags-846k-as-us-stocks-head-higher-on-spacex-q3-earnings-beat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T15:34:51.171983+00:00",
   "https://cointelegraph.com/news/occ-finalizes-stablecoin-rules-genius-act-bessent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T17:29:03.989157+00:00",
   "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T20:34:32.052402+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-22T03:49:22.304423+00:00",
@@ -5987,17 +5986,17 @@
   "https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations": "2026-10-24T15:12:48.085809+00:00"
  },
  "timers": {
-  "crowd": 1792853410.1536613,
-  "headlines": 1792856013.352101,
-  "scan": 1792856439.9966705,
-  "follow": 1792856196.44423
+  "crowd": 1792857030.9459574,
+  "headlines": 1792857252.0691378,
+  "scan": 1792857252.5579557,
+  "follow": 1792857122.4066565
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792853725.0066724,
+  "d82f6843": 1792857130.4419878,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
