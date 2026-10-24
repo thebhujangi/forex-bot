@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/business/2026/10/21/tether-leads-usd15-million-series-a-for-ai-focused-payment-startup-mural": "2026-10-21T08:51:02.316601+00:00",
   "https://www.coindesk.com/markets/2026/10/21/spacex-and-tesla-explore-merger-that-would-unite-more-than-30-000-bitcoin": "2026-10-21T09:32:34.685486+00:00",
   "https://cointelegraph.com/news/drift-exploiter-moves-109m-eth-tornado-cash-2-days?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T10:34:36.665952+00:00",
   "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures": "2026-10-21T10:34:36.665971+00:00",
@@ -5993,9 +5992,9 @@
  },
  "timers": {
   "crowd": 1792831678.8070498,
-  "headlines": 1792831830.8794885,
-  "scan": 1792832257.430004,
-  "follow": 1792832013.7150505
+  "headlines": 1792833070.6442873,
+  "scan": 1792833071.1012642,
+  "follow": 1792832948.263962
  },
  "pushed_times": [],
  "last_checked": {
