@@ -5925,8 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/drift-exploiter-moves-109m-eth-tornado-cash-2-days?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T10:34:36.665952+00:00",
-  "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures": "2026-10-21T10:34:36.665971+00:00",
   "https://cointelegraph.com/markets/bitcoin-top-buyers-halt-btc-price-upside-with-877k-now-key-glassnode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T10:54:57.030609+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/21/bitcoin-risk-management-grows-more-popular-as-the-just-bet-on-price-era-fades": "2026-10-21T11:16:13.507656+00:00",
   "https://cointelegraph.com/magazine/5-alternatives-to-ledger-to-store-your-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T13:41:20.019666+00:00",
@@ -5991,9 +5989,9 @@
  },
  "timers": {
   "crowd": 1792835301.0902433,
-  "headlines": 1792837407.7651644,
-  "scan": 1792837897.725315,
-  "follow": 1792837897.7263002
+  "headlines": 1792838640.5000744,
+  "scan": 1792838702.2836626,
+  "follow": 1792838518.61645
  },
  "pushed_times": [],
  "last_checked": {
