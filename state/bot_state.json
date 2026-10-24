@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/21/bitcoin-hovers-around-usd83-000-as-ai-earnings-revive-tech-zec-jumps-11": "2026-10-21T04:12:47.466884+00:00",
   "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin": "2026-10-21T05:35:25.983064+00:00",
   "https://cointelegraph.com/markets/ether-etf-outflows-near-1-1-billion-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T08:30:39.857940+00:00",
   "https://www.coindesk.com/business/2026/10/21/tether-leads-usd15-million-series-a-for-ai-focused-payment-startup-mural": "2026-10-21T08:51:02.316601+00:00",
@@ -5995,9 +5994,9 @@
  },
  "timers": {
   "crowd": 1792813574.6227176,
-  "headlines": 1792815131.413942,
-  "scan": 1792815315.5186102,
-  "follow": 1792815254.2604818
+  "headlines": 1792815756.3391435,
+  "scan": 1792816124.473521,
+  "follow": 1792815879.8433278
  },
  "pushed_times": [],
  "last_checked": {
