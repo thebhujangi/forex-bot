@@ -5910,9 +5910,9 @@
   }
  ],
  "last_signal_bar": {
-  "crypto_trend:BTCUSD": "2026-10-23T21:00:00+00:00",
-  "crypto_trend:ETHUSD": "2026-10-23T21:00:00+00:00",
-  "crypto_trend:XRPUSD": "2026-10-23T21:00:00+00:00",
+  "crypto_trend:BTCUSD": "2026-10-24T21:00:00+00:00",
+  "crypto_trend:ETHUSD": "2026-10-24T21:00:00+00:00",
+  "crypto_trend:XRPUSD": "2026-10-24T21:00:00+00:00",
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
@@ -5986,10 +5986,10 @@
   "https://www.coindesk.com/business/2026/10/24/bitcoin-s-wealthy-holders-turning-to-loans-and-yield-as-investment-habits-mature-xapo-ceo": "2026-10-24T17:57:50.800247+00:00"
  },
  "timers": {
-  "crowd": 1792871513.5748374,
-  "headlines": 1792874619.9559224,
-  "scan": 1792874987.1277933,
-  "follow": 1792874803.7396007
+  "crowd": 1792875125.5594773,
+  "headlines": 1792875248.7406542,
+  "scan": 1792875758.2147925,
+  "follow": 1792875758.2159555
  },
  "pushed_times": [],
  "last_checked": {
