@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/tether-backs-bolivian-fintech-bringing-usdt-payments-to-food-delivery-and-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T20:34:32.052402+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-22T03:49:22.304423+00:00",
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves": "2026-10-22T03:59:40.661570+00:00",
   "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours": "2026-10-22T04:40:52.328818+00:00",
@@ -5988,9 +5987,9 @@
  },
  "timers": {
   "crowd": 1792871513.5748374,
-  "headlines": 1792873993.6019194,
-  "scan": 1792874176.2213726,
-  "follow": 1792874176.222628
+  "headlines": 1792874619.9559224,
+  "scan": 1792874987.1277933,
+  "follow": 1792874803.7396007
  },
  "pushed_times": [],
  "last_checked": {
