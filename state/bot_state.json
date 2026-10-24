@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/magazine/5-alternatives-to-ledger-to-store-your-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T13:41:20.019666+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-21T14:53:31.642687+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm": "2026-10-21T14:53:31.642709+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm": "2026-10-21T14:53:31.642713+00:00",
@@ -5986,10 +5985,10 @@
   "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet": "2026-10-24T04:53:35.903432+00:00"
  },
  "timers": {
-  "crowd": 1792846152.993312,
-  "headlines": 1792849158.978983,
-  "scan": 1792849189.9138672,
-  "follow": 1792849067.0007458
+  "crowd": 1792849781.2488635,
+  "headlines": 1792849781.4144294,
+  "scan": 1792849994.5710664,
+  "follow": 1792849994.5723035
  },
  "pushed_times": [],
  "last_checked": {
