@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/21/ripple-brings-wall-street-into-24-7-stock-bets-but-hsbc-warns-markets-are-still-thin": "2026-10-21T05:35:25.983064+00:00",
   "https://cointelegraph.com/markets/ether-etf-outflows-near-1-1-billion-october?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-21T08:30:39.857940+00:00",
   "https://www.coindesk.com/business/2026/10/21/tether-leads-usd15-million-series-a-for-ai-focused-payment-startup-mural": "2026-10-21T08:51:02.316601+00:00",
   "https://www.coindesk.com/markets/2026/10/21/spacex-and-tesla-explore-merger-that-would-unite-more-than-30-000-bitcoin": "2026-10-21T09:32:34.685486+00:00",
@@ -5994,10 +5993,10 @@
   "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet": "2026-10-24T04:53:35.903432+00:00"
  },
  "timers": {
-  "crowd": 1792817190.144544,
-  "headlines": 1792820098.375763,
-  "scan": 1792820159.8201182,
-  "follow": 1792819915.4714499
+  "crowd": 1792820807.637211,
+  "headlines": 1792820715.2867458,
+  "scan": 1792820960.9287,
+  "follow": 1792820838.5750384
  },
  "pushed_times": [],
  "last_checked": {
