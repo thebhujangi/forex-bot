@@ -28,6 +28,7 @@ order type, full reasoning) and watches open trades for risk alerts. You place t
 | 2 | Live signal scanner + Telegram messages | ⏳ only once a strategy passes |
 | 2 | Trade monitor (volatility / news / breakeven alerts) | ⏳ |
 | 3 | 24/7 hosting on a Windows VPS | ⏳ |
+| – | Nasdaq futures signal (NY open, MNQ) | moved to its own bot: `..\Nasdaq Bot` (2026-10-25) |
 
 ## Folder layout
 
