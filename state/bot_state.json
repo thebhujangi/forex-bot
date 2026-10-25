@@ -5975,10 +5975,10 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-25T04:07:24.125655+00:00"
  },
  "timers": {
-  "crowd": 1792925815.228186,
-  "headlines": 1792928545.3118951,
-  "scan": 1792929039.9489467,
-  "follow": 1792928910.3355634
+  "crowd": 1792929416.1326637,
+  "headlines": 1792929784.5108368,
+  "scan": 1792929846.1925647,
+  "follow": 1792929846.1935983
  },
  "pushed_times": [],
  "last_checked": {
@@ -6114,5 +6114,5 @@
   "ddddd75c": 1792679073.2828667,
   "db0f6a39": 1792682244.4636667
  },
- "last_report": "2026-W42"
+ "last_report": "2026-W43"
 }
