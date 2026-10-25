@@ -8,11 +8,12 @@ Every strategy module exposes:
 `generate` must only use candles that had closed by each signal's `created` time.
 The same function is used for backtests and for live signals, so what you test is what you get.
 """
-from . import (daily_trend, dip_buy, fvg_retest, london_breakout, news_candle, range_fade, sweep_reversal,
-               trend_pullback)
+from . import (daily_trend, dip_buy, fvg_retest, london_breakout, news_candle, range_fade, session_momentum,
+               sweep_reversal, trend_pullback)
 
 STRATEGIES = {m.NAME: m for m in (london_breakout, trend_pullback, sweep_reversal, daily_trend,
-                                   range_fade, fvg_retest, news_candle, dip_buy)}
+                                   range_fade, fvg_retest, news_candle, dip_buy,
+                                   session_momentum)}
 
 
 def get_strategy(name: str):

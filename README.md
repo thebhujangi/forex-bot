@@ -28,6 +28,8 @@ order type, full reasoning) and watches open trades for risk alerts. You place t
 | 2 | Live signal scanner + Telegram messages | ⏳ only once a strategy passes |
 | 2 | Trade monitor (volatility / news / breakeven alerts) | ⏳ |
 | 3 | 24/7 hosting on a Windows VPS | ⏳ |
+| 1 | **Nasdaq "session momentum" (NY open, MNQ futures)** | ✅ **promising with futures costs**: +0.16R 2019–23, +0.14R 2024–26 (PF 1.15). Break-even on Elev8's CFD spread |
+| 2 | Nasdaq futures signals from the PC (`nasdaq_open`) | ✅ built 2026-10-25, paper-trade first. Elev8 NAS100 prices until IBKR is connected |
 
 ## Folder layout
 
@@ -87,6 +89,30 @@ bot's memory (`state/`) back to the repo after each shift. Secrets go in the rep
 `TWELVEDATA_API_KEY`, `MYFXBOOK_EMAIL`, `MYFXBOOK_PASSWORD`. Once it's live, the PC runs only the
 MT5 trade monitor: `Start Bot.bat` → `run_bot.py --monitor-only`. Never run the full bot on the
 PC and in the cloud at the same time (both would read your Telegram commands).
+
+## Nasdaq futures feed (runs on the PC)
+
+Every weekday at **09:35 New York** (21:35 Malaysia time in US summer time, 22:35 in winter) the PC bot
+looks at the first 5-minute Nasdaq candle. Closed above its 12 EMA → BUY, below → SELL, one
+trade a day on **MNQ** (Micro Nasdaq futures at Interactive Brokers). Stop 1× the 5-minute ATR,
+trailing stop 3× ATR, anything still open is closed at **12:00 New York** (midnight / 1am Malaysia).
+Strategy: `src/forexbot/strategies/session_momentum.py`; messages and follow-ups: `src/forexbot/futures.py`.
+
+Why futures: the raw edge is about +0.2R per trade before costs. Elev8's NAS100 spread (~3 pts)
+eats almost all of it; MNQ costs ~1.2 pts all-in (1-tick spread + slippage + $0.62 per side).
+
+Why the PC: it needs exact prices and has to reach you within seconds. Entering 5 minutes late
+halved the edge in the 2019–23 test, so the bot skips a signal more than 5 minutes old.
+`Start Bot.bat` (`--monitor-only`) runs this feed alongside the MT5 trade monitor, so **the PC
+must be on and MT5 open around the New York open**. The cloud copy skips feeds marked `runs_on: pc`.
+
+Prices (`futures_prices` in config.yaml):
+- `mt5` (now): Elev8's NAS100 CFD. It moves point for point with the futures but sits at a different
+  level, so messages give the stop and trailing stop as **distances in points from your fill**.
+- `ibkr` (once your account is approved): the real MNQ from IB Gateway/TWS on this PC, read-only.
+  Run `scripts\check_ibkr.py` first; if IBKR is down the bot warns you and falls back to `mt5`.
+
+Results of these signals go to `data/pc_signal_history.csv` (not yet in the weekly report card).
 
 ## Telegram assistant
 

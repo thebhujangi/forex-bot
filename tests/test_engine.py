@@ -152,3 +152,14 @@ def test_daily_loss_limit_blocks_new_trades():
     assert len(trades) == 4
     assert skipped["daily_loss_limit"] == 1
     assert trades.pnl.sum() / 10_000 > -0.04
+
+
+def test_late_market_fill_past_the_stop_closes_at_the_fill_not_the_stop():
+    # Signal said buy at 2010 with stop 2000, but by the time the order fills price has
+    # already fallen to 1995: the broker closes it at once at ~1995, never at the better 2000
+    # (which used to book a fake +0.5R profit).
+    bars = make_bars([(1995, 1997, 1990, 1992)])
+    sig = buy_stop(order_type="market", tp1=None, tp2=None)
+    r = simulate(sig, bars, NO_COST)
+    assert r.exit_reason == "sl" and r.exits[0].price == 1995
+    assert r.r_multiple == pytest.approx(0)

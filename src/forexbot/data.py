@@ -6,6 +6,12 @@ import pandas as pd
 from . import DATA_DIR
 
 
+def data_source(cfg: dict, symbol: str) -> str:
+    """Whose candles to use for a symbol. MNQ futures have no history of their own here, so
+    config `data_alias` points them at Elev8's NAS100 (same index, moves point for point)."""
+    return (cfg.get("data_alias") or {}).get(symbol, symbol)
+
+
 def bars_path(symbol: str, timeframe: str, data_dir: Path = DATA_DIR) -> Path:
     return Path(data_dir) / f"{symbol}_{timeframe}.csv.gz"
 

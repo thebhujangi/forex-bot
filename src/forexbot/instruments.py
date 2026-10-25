@@ -43,6 +43,8 @@ DEFAULT_SPECS = {
     "GBPUSD": SymbolSpec("GBPUSD", "GBPUSD", 5, 100_000, "GBP", "USD"),
     "AUDUSD": SymbolSpec("AUDUSD", "AUDUSD", 5, 100_000, "AUD", "USD"),
     "USDJPY": SymbolSpec("USDJPY", "USDJPY", 3, 100_000, "USD", "JPY"),
+    # Micro Nasdaq-100 futures (CME): $2 per index point, whole contracts only.
+    "MNQ": SymbolSpec("MNQ", "MNQ", 2, 2, "USD", "USD", volume_min=1, volume_step=1, volume_max=50),
 }
 
 SPECS_FILE = "symbols.json"

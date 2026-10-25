@@ -101,9 +101,11 @@ def simulate(sig: Signal, bars: Bars, cost: Costs, doubt: float = 0.0) -> SimRes
     def close(idx: int, price: float, fraction: float, reason: str):
         res.exits.append(Exit(_ts(bars.t[idx]), price, fraction, reason))
 
-    # Fill candle: only the stop loss can trigger.
+    # Fill candle: only the stop loss can trigger. A late market fill can already be past the
+    # stop: the broker then closes at once at the fill price, never at the better stop price.
     if (bars.l[i] - doubt <= cur_sl) if buy else (bars.h[i] + sp + doubt >= cur_sl):
-        close(i, cur_sl - slip if buy else cur_sl + slip, remaining, "sl")
+        price = min(cur_sl, fill - sp) - slip if buy else max(cur_sl, fill + sp) + slip
+        close(i, price, remaining, "sl")
         return res
     i += 1
 

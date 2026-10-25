@@ -5,8 +5,9 @@ Three ways to run it:
                    your MT5 trades (no stop loss, breakeven, daily loss...). Commands in Telegram.
   --cloud          In the cloud (GitHub Actions): same signals/news/commands, prices from free web
                    APIs. Can't see your MT5 account.
-  --monitor-only   On your PC while the cloud copy runs: ONLY watches your MT5 trades and sends
-                   warnings. Doesn't read commands or send signals, so the two never clash.
+  --monitor-only   On your PC while the cloud copy runs: watches your MT5 trades and sends warnings,
+                   plus the PC-only feeds (Nasdaq futures, `runs_on: pc`). Doesn't read commands,
+                   so the two never clash.
   --minutes N      Stop after N minutes (the cloud runs it in 15-minute shifts).
 
 Usage: double-click "Start Bot.bat", or  .venv\\Scripts\\python scripts\\run_bot.py [options]
@@ -18,6 +19,7 @@ import sys
 import time
 import traceback
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 
@@ -26,13 +28,15 @@ from forexbot import headlines as hl
 from forexbot import myfxbook as fxb
 from forexbot.assistant import MonitorContext, check_positions, position_size
 from forexbot.config import load_config
+from forexbot.data import data_source
 from forexbot.feeds import ApiMarket, FeedError, Mt5Market
+from forexbot.futures import LATE_MINUTES, format_futures_signal, fresh, futures_followup
 from forexbot.instruments import load_costs, load_specs
 from forexbot.news import fetch_events, relevant
 from forexbot.signals import (HISTORY_COLUMNS, Source, cancel_sibling, copy_buttons, follow, follow_replay,
                               format_pair, format_signal, from_dict, history_row, new_signals, reversal_alert,
                               to_dict, track, weekly_report)
-from forexbot.strategies.common import parse_hm
+from forexbot.strategies.common import local_to_utc, parse_hm
 from forexbot.telegram import Telegram, TelegramError, load_env
 from forexbot.timeutils import NEW_YORK, ROLLOVER_SHIFT, TIMEFRAME_MINUTES, trading_day
 
@@ -45,7 +49,7 @@ I send signals and warnings. I never place or close trades myself.
 
 <b>Signals</b> (sent automatically, you don't need to ask)
 📅 LONG-TERM: tested trend signals, a few a month.
-⚡ INTRADAY ⚗️ EXPERIMENTAL: several a day, unproven (testing says they lose slightly).
+⚡ INTRADAY Nasdaq futures (MNQ): one a day at the New York open, sent from your PC.
 Tap ✅ Placed or ❌ Skipped. I then tell you when it fills, when to take profit or move
 your stop, when it's stopped out, when to close, and if it's going badly.
 
@@ -100,8 +104,13 @@ class Bot:
         self.specs = load_specs()
         self.costs = {}
         self.mt5 = None
+        self.ibkr = None                          # IBKR futures prices (PC, once connected)
         self.names: dict[str, str] = {}
-        self.sources = [Source(**s) for s in cfg.get("signals", [])]
+        sources = [Source(**s) for s in cfg.get("signals", [])]
+        # Cloud feeds run in the cloud (or the full PC bot); PC feeds only where MT5/IBKR is.
+        self.sources = [] if monitor_only else [s for s in sources if s.runs_on != "pc"]
+        self.pc_sources = [] if cloud else [s for s in sources if s.runs_on == "pc"]
+        self.history_file = DATA_DIR / "pc_signal_history.csv" if monitor_only else HISTORY_FILE
         self.state = self._load_state()
         self.tracked = [from_dict(d) for d in self.state.get("tracked", [])]
         self.headlines: list = []
@@ -111,8 +120,8 @@ class Bot:
     @property
     def all_symbols(self) -> list[str]:
         syms = list(self.bc["watch_symbols"])
-        for s in self.sources:
-            syms += [x for x in s.symbols if x not in syms]
+        for s in self.sources + self.pc_sources:
+            syms += [data_source(self.cfg, x) for x in s.symbols if data_source(self.cfg, x) not in syms]
         return syms
 
     def due(self, name: str, seconds: float) -> bool:
@@ -245,9 +254,9 @@ class Bot:
         done = [t for t in self.tracked if t.status == "closed" and not t.recorded]
         if not done:
             return
-        new = not HISTORY_FILE.exists()
+        new = not self.history_file.exists()
         pd.DataFrame([history_row(t) for t in done], columns=HISTORY_COLUMNS).to_csv(
-            HISTORY_FILE, mode="a", header=new, index=False)
+            self.history_file, mode="a", header=new, index=False)
         for t in done:
             t.recorded = True
 
@@ -558,12 +567,120 @@ class Bot:
                        f"a stop loss, stop for the day at -{self.cfg['risk']['daily_loss_limit_pct']:g}%.")
         log("sent morning brief")
 
+    # ---------- PC feeds (futures: exact prices, sent within seconds) ----------
+    def pc_signal_time(self, src: Source, now: pd.Timestamp) -> pd.Timestamp | None:
+        """Today's signal moment for a session feed (close of the session's first candle), UTC."""
+        p = {**self.cfg["strategies"][src.strategy], **src.params}
+        tz = ZoneInfo(p.get("session_tz", "America/New_York"))
+        local = now.tz_convert(tz)
+        if local.weekday() >= 5:
+            return None
+        return (local_to_utc(local.date(), parse_hm(p["open_time"]), tz)
+                + pd.Timedelta(minutes=TIMEFRAME_MINUTES[p["timeframe"]]))
+
+    def pc_waiting(self, now: pd.Timestamp) -> list[tuple[Source, pd.Timestamp]]:
+        """Feeds whose signal moment is now (or a minute away) and not yet handled today."""
+        out = []
+        for src in self.pc_sources:
+            at = self.pc_signal_time(src, now)
+            if (at is not None and at - pd.Timedelta(minutes=1) <= now < at + pd.Timedelta(minutes=LATE_MINUTES)
+                    and f"pc:{src.name}:{at.date()}" not in self.state["sent"]):
+                out.append((src, at))
+        return out
+
+    def futures_feed(self, want: str | None = None):
+        """Where futures prices come from: (name, market, symbol it uses, label), or None.
+        config futures_prices.source: "ibkr" = the real futures from IB Gateway/TWS on this PC,
+        "mt5" = Elev8's NAS100 CFD (same moves, different price level)."""
+        fc = self.cfg.get("futures_prices") or {}
+        if (want or fc.get("source", "mt5")) == "ibkr":
+            try:
+                if self.ibkr is None or not self.ibkr.connected:
+                    from forexbot.ibkr import IbkrMarket
+                    self.ibkr = IbkrMarket(port=fc.get("ibkr_port", 4002))
+                self.state["sent"].pop("ibkr_down", None)
+                return "ibkr", self.ibkr, (lambda s: s), "IBKR live futures"
+            except Exception as e:
+                self.ibkr = None
+                log(f"IBKR not available: {e}")
+                self.send_once("ibkr_down", "🔌 <b>Can't reach IBKR on your PC.</b> Open IB Gateway (or TWS) and "
+                                            "log in; I'll reconnect automatically. Until then Nasdaq signals use "
+                                            "Elev8's NAS100 prices.")
+                if want == "ibkr":
+                    return None                   # a trade priced on IBKR can't be followed on CFD prices
+        if not self.market_ready():
+            return None
+        return "mt5", self.market, (lambda s: data_source(self.cfg, s)), "Elev8 NAS100 (MT5)"
+
+    def scan_pc_feeds(self, now: pd.Timestamp | None = None):
+        now = now or pd.Timestamp.now(tz="UTC")
+        for src, at in self.pc_waiting(now):
+            feed = self.futures_feed() if now >= at else None
+            if feed is None:
+                continue
+            name, market, price_symbol, label = feed
+            params = {**self.cfg["strategies"][src.strategy], **src.params}
+            tf = pd.Timedelta(minutes=TIMEFRAME_MINUTES[params["timeframe"]])
+            sigs = []
+            for sym in src.symbols:
+                try:
+                    bars = market.bars(price_symbol(sym), params["timeframe"], params.get("lookback_bars", 600))
+                except FeedError as e:
+                    log(f"prices unavailable for {sym}: {e}")
+                    return
+                if not len(bars) or bars.index[-1] + tf < at:
+                    return                        # the first candle isn't in yet: next loop
+                sigs += [s for s in new_signals(src, bars, sym, params, self.specs[sym], at - tf)
+                         if s.created == at and fresh(s, now)]
+            self.state["sent"][f"pc:{src.name}:{at.date()}"] = now.isoformat()
+            for sig in sigs:
+                text = format_futures_signal(sig, src, self.specs[sig.symbol],
+                                             src.account_usd or self.cfg["account"]["starting_balance"],
+                                             self.cfg["risk"]["risk_per_trade_pct"], self.tz,
+                                             reference=label, levels=name == "ibkr")
+                self.tg.send(text, buttons=copy_buttons(text))
+                t = track(sig, src)
+                t.flags.append(f"feed:{name}")    # follow it on the same prices it was sent on
+                self.tracked.append(t)
+                log(f"signal sent {src.name} {sig.symbol} {sig.side} ({label})")
+            if not sigs:
+                log(f"{src.name}: no signal today")
+
+    def follow_pc_feeds(self, now: pd.Timestamp | None = None):
+        names = {s.name for s in self.pc_sources}
+        active = [t for t in self.tracked if t.active and t.source in names]
+        if not active or not self.due("pc_follow", 55):
+            return
+        now = now or pd.Timestamp.now(tz="UTC")
+        for t in active:
+            want = next((f.split(":", 1)[1] for f in t.flags if f.startswith("feed:")), "mt5")
+            feed = self.futures_feed(want)
+            if feed is None:
+                continue
+            _, market, price_symbol, _ = feed
+            created = pd.Timestamp(t.created)
+            n = int((now - created).total_seconds() // 300) + 3
+            try:
+                bars = market.bars(price_symbol(t.symbol), "M5", min(max(n, 4), 1000))
+            except FeedError as e:
+                log(f"follow-up skipped for {t.symbol}: {e}")
+                continue
+            for key, text in futures_followup(t, bars[bars.index >= created], self.cost(t.symbol, t.entry), now):
+                self.send_once(key, text)
+
     # ---------- main loop ----------
     def step(self, wait: int):
+        if self.pc_waiting(pd.Timestamp.now(tz="UTC")):
+            wait = min(wait, 2)                   # signal due: check every 2 seconds
         if self.monitor_only:
+            self.scan_pc_feeds()                  # first: nothing may delay a signal
             self.monitor()
+            self.follow_pc_feeds()
+            self.save_history()
             time.sleep(wait)
             return
+        if not self.cloud:
+            self.scan_pc_feeds()
         self.handle_updates(wait=wait)
         self.record_crowd()
         self.check_headlines()
@@ -571,6 +688,7 @@ class Bot:
         self.follow_signals()
         if not self.cloud:
             self.monitor()
+            self.follow_pc_feeds()
         self.morning_brief()
         self.weekly_report()
         self.save_history()
