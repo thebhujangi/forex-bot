@@ -5925,8 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/markets/bitcoin-corrects-below-82k-after-tesla-q3-results-kospi-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T10:51:07.112491+00:00",
-  "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines": "2026-10-22T10:51:07.112513+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/22/crypto-traders-seek-shelter-in-bitcoin-as-altcoins-slide-and-etf-flows-wobble": "2026-10-22T11:22:07.049218+00:00",
   "https://www.coindesk.com/tech/2026/10/22/ethereum-s-four-minute-settlement-plan-could-lower-the-cost-of-moving-crypto": "2026-10-22T12:24:26.551810+00:00",
   "https://cointelegraph.com/news/bitcoin-etf-flows-follow-price-trends-dwf-labs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T13:05:55.573500+00:00",
@@ -5979,9 +5977,9 @@
  },
  "timers": {
   "crowd": 1792925815.228186,
-  "headlines": 1792925409.6813607,
-  "scan": 1792925815.5181415,
-  "follow": 1792925815.5187962
+  "headlines": 1792926030.5400817,
+  "scan": 1792926612.2986302,
+  "follow": 1792926428.8705719
  },
  "pushed_times": [],
  "last_checked": {
