@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/22/asian-stocks-tumble-bitcoin-retreats-as-china-enters-bear-market": "2026-10-22T08:58:14.214815+00:00",
   "https://cointelegraph.com/news/starknet-vote-post-quantum-l1-research-ethereum?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T09:49:27.660276+00:00",
   "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides": "2026-10-22T09:59:40.969092+00:00",
   "https://cointelegraph.com/markets/bitcoin-corrects-below-82k-after-tesla-q3-results-kospi-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T10:51:07.112491+00:00",
@@ -5982,16 +5981,16 @@
  },
  "timers": {
   "crowd": 1792918567.8628833,
-  "headlines": 1792918001.2118213,
-  "scan": 1792918550.3390198,
-  "follow": 1792918367.3741627
+  "headlines": 1792919244.1100464,
+  "scan": 1792919366.6097229,
+  "follow": 1792919305.6604557
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792915278.4067793,
+  "d82f6843": 1792918695.1752617,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
