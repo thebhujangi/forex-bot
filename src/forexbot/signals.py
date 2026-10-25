@@ -28,8 +28,6 @@ class Source:
     tier: str               # e.g. "Proven", "Experimental"
     stats: str              # one plain-English line about the backtest
     params: dict = field(default_factory=dict)
-    runs_on: str = "cloud"  # "pc": needs the PC's exact prices and split-second timing (futures feed)
-    account_usd: float | None = None   # futures: account size the contracts are sized for
 
 
 @dataclass
@@ -264,7 +262,7 @@ def copyable(text: str) -> str:
     return f"<code>{html.escape(text)}</code>"
 
 
-SHORT = {"Entry": "Entry", "Stop loss": "SL", "New stop loss": "New SL", "Take profit": "TP", "Trailing stop": "Trail",
+SHORT = {"Entry": "Entry", "Stop loss": "SL", "New stop loss": "New SL", "Take profit": "TP",
          "First target": "TP1", "Final target": "TP2"}
 
 
@@ -438,7 +436,7 @@ def history_row(t: Tracked) -> dict:
             "placed": t.placed, "result_r": round(t.result_r or 0.0, 3), "outcome": t.outcome}
 
 
-FEED_NAMES = {"crypto_trend": "Crypto trend (tested)", "nasdaq_open": "Nasdaq futures (PC)", "fx_gold_trend": "Gold/FX trend",
+FEED_NAMES = {"crypto_trend": "Crypto trend (tested)", "fx_gold_trend": "Gold/FX trend",
               "x_crypto_breakout": "⚗️ Crypto breakout", "x_crypto_pullback": "⚗️ Crypto pullback",
               "x_fx_ny_range": "⚗️ Gold/FX NY range"}
 

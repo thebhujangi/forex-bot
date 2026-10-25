@@ -13,7 +13,6 @@ dependencies = [
     "numpy",
     "pyyaml",
     "plotly",
-    "ib_async",                                # Interactive Brokers prices (read-only)
 ]
 
 [project.optional-dependencies]

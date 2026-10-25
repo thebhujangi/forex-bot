@@ -6,7 +6,7 @@ from pathlib import Path
 import pandas as pd
 
 from . import DATA_DIR
-from .data import data_source, load_bars
+from .data import load_bars
 from . import filters
 from .engine import Bars, run_portfolio, simulate
 from .instruments import load_costs, load_specs
@@ -55,13 +55,12 @@ def run_backtest(cfg: dict, strategy: str, symbols: list[str] | None = None,
     for sym in symbols:
         # Load warm-up history before the start so indicators like EMAs and ATR are ready.
         warmup = pd.Timedelta(days=params.get("warmup_days", 60))
-        src = data_source(cfg, sym)
-        df = load_bars(src, params["timeframe"], data_dir, start=start - warmup, end=end)
+        df = load_bars(sym, params["timeframe"], data_dir, start=start - warmup, end=end)
         signals = [s for s in module.generate(df, sym, params, specs[sym])
                    if s.created >= start.tz_localize("UTC")]
         signals = filters.apply(signals, params.get("filter"), sym, df)
         try:
-            exec_df = load_bars(src, exec_tf, data_dir, start=start, end=end)
+            exec_df = load_bars(sym, exec_tf, data_dir, start=start, end=end)
         except FileNotFoundError:
             exec_df = df
         bars = Bars.from_df(exec_df)

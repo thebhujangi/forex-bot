@@ -58,23 +58,6 @@ signals:
     # 2026-10-22 re-test (scripts/research.py, Elev8 MT5 data): BTC/ETH +0.41R in-sample,
     # +0.26R unseen. 3 coins: 0.32%/month at 1% risk, worst fall 10%.
 
-  # Nasdaq futures (MNQ at Interactive Brokers). Runs on the PC: it needs exact prices and must
-  # reach you within seconds of 09:35 New York (entering 5 minutes late halved the edge).
-  # Prices: Elev8 NAS100 via MT5 until IBKR is connected; messages give stop distances in points.
-  - name: nasdaq_open
-    strategy: session_momentum
-    symbols: [MNQ]
-    horizon: INTRADAY
-    runs_on: pc
-    account_usd: 50000           # contracts sized for this account (a typical futures prop account)
-    tier: "Promising: positive in 2019-23 and 2024-26 after futures costs. Paper-trade first"
-    stats: "Tested on Nasdaq 2019-2026 with futures costs: 2,000 trades, wins about 1 in 4 (small losses, bigger wins), averages about +0.15x risk per trade, about +2.3% a month at 1% risk. Worst fall 38%, losing runs of up to 20 days."
-    # 2026-10-25 (from a @quant_labde video). Settings fixed BEFORE the paper-trading period:
-    # stop 1x ATR, trailing 3x ATR, out by 12:00 New York. Sweep at $50k, MNQ costs: every
-    # trail of 2-5x ATR positive in both halves; 1/3 at 12:00: +0.16R 2019-23, +0.14R 2024-26
-    # (PF 1.15). No unseen data left: 2024-26 was looked at while choosing. Paper-trading is
-    # the real test. On Elev8's own CFD spread (3.9 pts) the same rules are break-even.
-
   # SWITCHED OFF 2026-10-22 (user: "tested winning signals" only). Kept here as a record.
   # fx_gold_trend (daily_trend on XAUUSD/EURUSD/GBPUSD): EUR/GBP -0.41R on unseen 2024-26;
   #   gold +0.13R but only 17 trades in 5 years: too few to call.
@@ -115,22 +98,6 @@ costs:
   SPX500: {spread: 2.0,  slippage: 0.5, commission_per_lot: 0}
   NAS100: {spread: 3.1,  slippage: 0.8, commission_per_lot: 0}
   US30:   {spread: 4.1,  slippage: 1.0, commission_per_lot: 0}
-  # Micro Nasdaq futures at Interactive Brokers (2026-10-25): 1 tick spread (0.25 pt), ~1 tick
-  # slippage on market orders/stops, commission $0.25 + CME fee $0.35 + reg ~$0.02 per side.
-  MNQ:    {spread: 0.25, slippage: 0.25, commission_per_lot: 1.24}
-
-# Prices for the futures feeds (PC only).
-#   mt5  = Elev8's NAS100 CFD through MT5: same moves as the futures, different price level,
-#          so signals give stop distances in points (works now)
-#   ibkr = the real MNQ futures from IB Gateway or TWS running on this PC (read-only connection).
-#          Switch to this once your IBKR account is approved and scripts/check_ibkr.py works.
-futures_prices:
-  source: mt5
-  ibkr_port: 4002              # IB Gateway paper 4002 (live 4001); TWS paper 7497 (live 7496)
-
-# Symbols with no price history of their own use another symbol's candles.
-data_alias:
-  MNQ: NAS100                  # Elev8's Nasdaq CFD: same index, moves point for point
 
 data:
   start: 2019-01-01
@@ -156,18 +123,6 @@ verdict:
   max_drawdown_pct: 15
 
 strategies:
-  session_momentum:
-    timeframe: M5
-    warmup_days: 10
-    symbols: [MNQ]
-    session_tz: America/New_York
-    open_time: "09:30"         # start of the first 5-min candle; signal at its close (09:35)
-    close_time: "12:00"        # anything still open is closed at market (New York time; midnight-1am Malaysia)
-    ema: 12
-    atr_period: 14             # ATR of 5-min candles
-    sl_atr: 1.0
-    trail_atr: 3.0
-    entry_delay_min: 0         # minutes between the signal and your entry (robustness tests)
   london_breakout:
     timeframe: M15
     symbols: [XAUUSD, GBPUSD, EURUSD]
