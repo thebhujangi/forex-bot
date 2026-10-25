@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/bitcoin-mining-difficulty-hashrate-recovery-ai-shift?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T17:02:43.224738+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-22T18:56:27.945178+00:00",
   "https://www.coindesk.com/policy/2026/10/22/senate-s-top-democratic-investigator-looking-into-tether-payments-to-bo-hines-firm": "2026-10-22T22:54:42.953724+00:00",
   "https://cointelegraph.com/news/switzerland-approves-first-spot-bitcoin-etf-for-retail-investors?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T01:09:00.110781+00:00",
@@ -5970,13 +5969,14 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-25T04:07:24.125655+00:00",
   "https://cointelegraph.com/news/ecb-official-sees-digital-euro-tool-to-protect-eu-sovereignty?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-25T15:19:01.314739+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm": "2026-10-25T15:50:31.549418+00:00",
-  "https://cointelegraph.com/markets/bitcoin-circles-815k-etf-cost-basis-as-trump-iran-comments-send-stocks-lower?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-25T16:42:22.442258+00:00"
+  "https://cointelegraph.com/markets/bitcoin-circles-815k-etf-cost-basis-as-trump-iran-comments-send-stocks-lower?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-25T16:42:22.442258+00:00",
+  "https://cointelegraph.com/news/bitcoin-mining-difficulty-hashrate-recovery-ai-shift?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-25T17:13:30.098574+00:00"
  },
  "timers": {
   "crowd": 1792947472.6194906,
-  "headlines": 1792947168.4342,
-  "scan": 1792947594.390444,
-  "follow": 1792947533.6142175
+  "headlines": 1792948409.6176112,
+  "scan": 1792948410.0986435,
+  "follow": 1792948164.0149913
  },
  "pushed_times": [],
  "last_checked": {
