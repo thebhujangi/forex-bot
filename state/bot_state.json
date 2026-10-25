@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/22/china-seeks-to-seize-61-800-btc-tied-to-usd5-7-billion-fraud-scheme": "2026-10-22T06:33:49.891995+00:00",
   "https://cointelegraph.com/markets/bitcoin-etfs-528-million-btc-tops-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T07:46:24.337207+00:00",
   "https://www.coindesk.com/markets/2026/10/22/asian-stocks-tumble-bitcoin-retreats-as-china-enters-bear-market": "2026-10-22T08:58:14.214815+00:00",
   "https://cointelegraph.com/news/starknet-vote-post-quantum-l1-research-ethereum?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T09:49:27.660276+00:00",
@@ -5984,9 +5983,9 @@
  },
  "timers": {
   "crowd": 1792907728.9391344,
-  "headlines": 1792909932.176075,
-  "scan": 1792910483.2531772,
-  "follow": 1792910299.166536
+  "headlines": 1792911164.847571,
+  "scan": 1792911287.4180992,
+  "follow": 1792911226.4478393
  },
  "pushed_times": [],
  "last_checked": {
