@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-22T03:49:22.304423+00:00",
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves": "2026-10-22T03:59:40.661570+00:00",
   "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours": "2026-10-22T04:40:52.328818+00:00",
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally": "2026-10-22T04:50:59.829096+00:00",
@@ -5986,10 +5985,10 @@
   "https://www.coindesk.com/business/2026/10/24/bitcoin-s-wealthy-holders-turning-to-loans-and-yield-as-investment-habits-mature-xapo-ceo": "2026-10-24T17:57:50.800247+00:00"
  },
  "timers": {
-  "crowd": 1792896852.889883,
-  "headlines": 1792899997.7900963,
-  "scan": 1792899998.5218189,
-  "follow": 1792899753.7683773
+  "crowd": 1792900464.5998895,
+  "headlines": 1792900617.904832,
+  "scan": 1792900801.825704,
+  "follow": 1792900679.6111042
  },
  "pushed_times": [],
  "last_checked": {
