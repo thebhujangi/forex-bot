@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours": "2026-10-22T04:40:52.328818+00:00",
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally": "2026-10-22T04:50:59.829096+00:00",
   "https://www.coindesk.com/markets/2026/10/22/china-seeks-to-seize-61-800-btc-tied-to-usd5-7-billion-fraud-scheme": "2026-10-22T06:33:49.891995+00:00",
   "https://cointelegraph.com/markets/bitcoin-etfs-528-million-btc-tops-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T07:46:24.337207+00:00",
@@ -5986,9 +5985,9 @@
  },
  "timers": {
   "crowd": 1792900464.5998895,
-  "headlines": 1792903098.820502,
-  "scan": 1792903221.1161356,
-  "follow": 1792903160.243193
+  "headlines": 1792903727.927392,
+  "scan": 1792904035.1773925,
+  "follow": 1792903789.8946831
  },
  "pushed_times": [],
  "last_checked": {
