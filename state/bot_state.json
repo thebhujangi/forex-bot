@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves": "2026-10-22T03:59:40.661570+00:00",
   "https://www.coindesk.com/tech/2026/10/22/xrp-ledger-bug-fix-moved-to-november-after-validator-support-dipped-for-two-hours": "2026-10-22T04:40:52.328818+00:00",
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally": "2026-10-22T04:50:59.829096+00:00",
   "https://www.coindesk.com/markets/2026/10/22/china-seeks-to-seize-61-800-btc-tied-to-usd5-7-billion-fraud-scheme": "2026-10-22T06:33:49.891995+00:00",
@@ -5982,20 +5981,21 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm": "2026-10-24T15:12:48.085790+00:00",
   "https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations": "2026-10-24T15:12:48.085809+00:00",
   "https://www.coindesk.com/business/2026/10/24/strategy-strive-face-balancing-act-between-bitcoin-buying-and-preferred-stock-dividends": "2026-10-24T16:04:27.362584+00:00",
-  "https://www.coindesk.com/business/2026/10/24/bitcoin-s-wealthy-holders-turning-to-loans-and-yield-as-investment-habits-mature-xapo-ceo": "2026-10-24T17:57:50.800247+00:00"
+  "https://www.coindesk.com/business/2026/10/24/bitcoin-s-wealthy-holders-turning-to-loans-and-yield-as-investment-habits-mature-xapo-ceo": "2026-10-24T17:57:50.800247+00:00",
+  "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm": "2026-10-25T04:07:24.125655+00:00"
  },
  "timers": {
   "crowd": 1792900464.5998895,
-  "headlines": 1792900617.904832,
-  "scan": 1792900801.825704,
-  "follow": 1792900679.6111042
+  "headlines": 1792901243.5833323,
+  "scan": 1792901611.3801825,
+  "follow": 1792901611.3811069
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792898213.0625103,
+  "d82f6843": 1792901619.5078704,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
