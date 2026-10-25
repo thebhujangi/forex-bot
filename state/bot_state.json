@@ -5925,7 +5925,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides": "2026-10-22T09:59:40.969092+00:00",
   "https://cointelegraph.com/markets/bitcoin-corrects-below-82k-after-tesla-q3-results-kospi-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-22T10:51:07.112491+00:00",
   "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines": "2026-10-22T10:51:07.112513+00:00",
   "https://www.coindesk.com/daybook-us/2026/10/22/crypto-traders-seek-shelter-in-bitcoin-as-altcoins-slide-and-etf-flows-wobble": "2026-10-22T11:22:07.049218+00:00",
@@ -5980,9 +5979,9 @@
  },
  "timers": {
   "crowd": 1792922195.7995048,
-  "headlines": 1792922318.1101263,
-  "scan": 1792922593.0415978,
-  "follow": 1792922410.064201
+  "headlines": 1792922934.163769,
+  "scan": 1792923391.4971392,
+  "follow": 1792923330.588649
  },
  "pushed_times": [],
  "last_checked": {
