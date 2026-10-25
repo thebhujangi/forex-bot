@@ -5910,9 +5910,9 @@
   }
  ],
  "last_signal_bar": {
-  "crypto_trend:BTCUSD": "2026-10-24T21:00:00+00:00",
-  "crypto_trend:ETHUSD": "2026-10-24T21:00:00+00:00",
-  "crypto_trend:XRPUSD": "2026-10-24T21:00:00+00:00",
+  "crypto_trend:BTCUSD": "2026-10-25T21:00:00+00:00",
+  "crypto_trend:ETHUSD": "2026-10-25T21:00:00+00:00",
+  "crypto_trend:XRPUSD": "2026-10-25T21:00:00+00:00",
   "fx_gold_trend:XAUUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:EURUSD": "2026-10-21T21:00:00+00:00",
   "fx_gold_trend:GBPUSD": "2026-10-21T21:00:00+00:00",
@@ -5973,10 +5973,10 @@
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm": "2026-10-25T19:07:04.137247+00:00"
  },
  "timers": {
-  "crowd": 1792958301.7147157,
-  "headlines": 1792960846.2455208,
-  "scan": 1792961333.7192292,
-  "follow": 1792961211.1381671
+  "crowd": 1792961903.4913533,
+  "headlines": 1792962102.9119296,
+  "scan": 1792962103.1808481,
+  "follow": 1792962162.496171
  },
  "pushed_times": [],
  "last_checked": {
