@@ -5964,13 +5964,14 @@
   "https://cointelegraph.com/news/ethereum-delays-glamsterdam-testnet-fork-gas-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T05:27:44.373454+00:00",
   "https://www.coindesk.com/markets/2026/10/26/over-11-million-btc-can-t-be-linked-to-any-known-owner-even-after-wall-street-buying": "2026-10-26T07:21:42.500025+00:00",
   "https://cointelegraph.com/markets/bitcoin-etfs-erase-october-gains-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T07:31:55.707401+00:00",
-  "https://cointelegraph.com/markets/bitcoin-etfs-rebound-weekly-inflow-301-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T08:33:59.819708+00:00"
+  "https://cointelegraph.com/markets/bitcoin-etfs-rebound-weekly-inflow-301-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T08:33:59.819708+00:00",
+  "https://cointelegraph.com/news/hsbc-launches-redcoin-hong-kong-dollar-stablecoin-payme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T09:04:28.837294+00:00"
  },
  "timers": {
-  "crowd": 1793001717.0713332,
-  "headlines": 1793004867.133982,
-  "scan": 1793004836.6359923,
-  "follow": 1793004623.2519155
+  "crowd": 1793005345.419053,
+  "headlines": 1793005468.391433,
+  "scan": 1793005683.3584888,
+  "follow": 1793005560.765789
  },
  "pushed_times": [],
  "last_checked": {
