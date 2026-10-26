@@ -1,10 +1,5 @@
 {
  "sent": {
-  "exit:fcfe9abc:sl": "2026-10-19T13:04:32.306197+00:00",
-  "done:fcfe9abc": "2026-10-19T13:04:32.889410+00:00",
-  "exit:c7bc3c7d:sl": "2026-10-19T13:04:33.714101+00:00",
-  "done:c7bc3c7d": "2026-10-19T13:04:34.275539+00:00",
-  "expired:45649a04": "2026-10-19T13:04:34.865421+00:00",
   "filled:c49d1809": "2026-10-19T13:47:37.312231+00:00",
   "oco:acf2b34c": "2026-10-19T13:47:37.911942+00:00",
   "exit:c49d1809:tp1": "2026-10-19T13:52:43.460038+00:00",
@@ -5974,10 +5969,10 @@
   "https://cointelegraph.com/markets/bitcoin-consolidates-after-3-loss-as-ai-fears-stoke-fresh-stock-market-weakness?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T12:52:07.868062+00:00"
  },
  "timers": {
-  "crowd": 1793016233.7976606,
-  "headlines": 1793019127.5700667,
-  "scan": 1793019403.7319143,
-  "follow": 1793019281.1223915
+  "crowd": 1793019840.6778915,
+  "headlines": 1793019749.0853982,
+  "scan": 1793020205.6813028,
+  "follow": 1793020205.682238
  },
  "pushed_times": [],
  "last_checked": {
