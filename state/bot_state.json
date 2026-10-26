@@ -5958,20 +5958,21 @@
   "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports": "2026-10-26T14:24:38.901175+00:00",
   "https://www.coindesk.com/tech/2026/10/23/bitcoin-will-now-stop-hiding-bugs-an-ai-can-find-in-one-prompt": "2026-10-26T14:35:01.590449+00:00",
   "https://www.coindesk.com/business/2026/10/26/tom-lee-s-bitmine-favors-share-buybacks-to-ether-purchases-as-crypto-declines": "2026-10-26T16:08:57.120483+00:00",
-  "https://cointelegraph.com/markets/bitcoin-seeks-support-above-81k-as-brent-crude-oil-hits-highest-level-since-march?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T16:19:21.412740+00:00"
+  "https://cointelegraph.com/markets/bitcoin-seeks-support-above-81k-as-brent-crude-oil-hits-highest-level-since-march?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T16:19:21.412740+00:00",
+  "https://cointelegraph.com/news/us-senator-probe-bo-hines-trump-crypto-adviser-tether-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T18:12:10.582529+00:00"
  },
  "timers": {
   "crowd": 1793037909.7812676,
-  "headlines": 1793037726.7386866,
-  "scan": 1793038001.1757507,
-  "follow": 1793037940.3292303
+  "headlines": 1793038329.5667486,
+  "scan": 1793038818.8069012,
+  "follow": 1793038574.930783
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1793034861.4055603,
+  "d82f6843": 1793038268.5858846,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
