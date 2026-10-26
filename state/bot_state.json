@@ -5964,20 +5964,21 @@
   "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments": "2026-10-26T05:17:22.376681+00:00",
   "https://cointelegraph.com/news/ethereum-delays-glamsterdam-testnet-fork-gas-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T05:27:44.373454+00:00",
   "https://www.coindesk.com/markets/2026/10/26/over-11-million-btc-can-t-be-linked-to-any-known-owner-even-after-wall-street-buying": "2026-10-26T07:21:42.500025+00:00",
-  "https://cointelegraph.com/markets/bitcoin-etfs-erase-october-gains-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T07:31:55.707401+00:00"
+  "https://cointelegraph.com/markets/bitcoin-etfs-erase-october-gains-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T07:31:55.707401+00:00",
+  "https://cointelegraph.com/markets/bitcoin-etfs-rebound-weekly-inflow-301-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T08:33:59.819708+00:00"
  },
  "timers": {
   "crowd": 1793001717.0713332,
-  "headlines": 1793003012.84641,
-  "scan": 1793003257.98142,
-  "follow": 1793003074.800225
+  "headlines": 1793003639.2877433,
+  "scan": 1793004076.428768,
+  "follow": 1793004007.083446
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1793000603.6667984,
+  "d82f6843": 1793004015.1984584,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
