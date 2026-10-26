@@ -5969,13 +5969,14 @@
   "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting": "2026-10-26T04:45:56.381092+00:00",
   "https://cointelegraph.com/news/bitcoin-core-changes-security-policy-as-ai-makes-bugs-easier-to-find?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T04:56:15.749029+00:00",
   "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts": "2026-10-26T05:17:22.376652+00:00",
-  "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments": "2026-10-26T05:17:22.376681+00:00"
+  "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments": "2026-10-26T05:17:22.376681+00:00",
+  "https://cointelegraph.com/news/ethereum-delays-glamsterdam-testnet-fork-gas-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T05:27:44.373454+00:00"
  },
  "timers": {
   "crowd": 1792990849.3345797,
-  "headlines": 1792991841.7575839,
-  "scan": 1792991964.6184525,
-  "follow": 1792991903.5159242
+  "headlines": 1792992463.8267794,
+  "scan": 1792992769.293973,
+  "follow": 1792992525.349813
  },
  "pushed_times": [],
  "last_checked": {
