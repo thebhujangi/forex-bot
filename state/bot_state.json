@@ -1,6 +1,5 @@
 {
  "sent": {
-  "expired:bc89c778": "2026-10-19T04:49:06.871294+00:00",
   "filled:fcfe9abc": "2026-10-19T06:44:34.103796+00:00",
   "oco:5df066e7": "2026-10-19T06:44:34.706600+00:00",
   "expired:eb6cb333": "2026-10-19T06:50:04.086777+00:00",
@@ -5923,7 +5922,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/bitcoin-core-changes-security-policy-as-ai-makes-bugs-easier-to-find?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T04:45:25.041102+00:00",
   "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts": "2026-10-23T05:06:26.969580+00:00",
   "https://cointelegraph.com/news/ethereum-delays-glamsterdam-testnet-fork-gas-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T05:16:56.573865+00:00",
   "https://cointelegraph.com/markets/bitcoin-etfs-erase-october-gains-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T07:21:11.308053+00:00",
@@ -5969,20 +5967,21 @@
   "https://cointelegraph.com/magazine/ai-agents-help-rescue-eths-glamsterdam-fork-steal-my-bitcoin-site-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-25T22:55:10.252942+00:00",
   "https://www.coindesk.com/policy/2026/10/22/senate-s-top-democratic-investigator-looking-into-tether-payments-to-bo-hines-firm": "2026-10-25T23:05:28.950459+00:00",
   "https://cointelegraph.com/news/switzerland-approves-first-spot-bitcoin-etf-for-retail-investors?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T01:19:44.549948+00:00",
-  "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100": "2026-10-26T03:34:10.333199+00:00"
+  "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100": "2026-10-26T03:34:10.333199+00:00",
+  "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting": "2026-10-26T04:45:56.381092+00:00"
  },
  "timers": {
   "crowd": 1792987230.7306454,
-  "headlines": 1792989337.6494992,
-  "scan": 1792989552.7067158,
-  "follow": 1792989429.9366078
+  "headlines": 1792989955.542993,
+  "scan": 1792990353.0880425,
+  "follow": 1792990353.0889852
  },
  "pushed_times": [],
  "last_checked": {
   "99eade23": 1791831869.2407897,
   "06f875d3": 1791833428.4642572,
   "77426ec4": 1791842653.3892844,
-  "d82f6843": 1792986957.9131184,
+  "d82f6843": 1792990361.191454,
   "4960644a": 1791848914.2305858,
   "05c04ab6": 1791853316.8314655,
   "a7be91e3": 1791877559.7547379,
