@@ -5968,13 +5968,14 @@
   "https://www.coindesk.com/policy/2026/10/22/senate-s-top-democratic-investigator-looking-into-tether-payments-to-bo-hines-firm": "2026-10-25T23:05:28.950459+00:00",
   "https://cointelegraph.com/news/switzerland-approves-first-spot-bitcoin-etf-for-retail-investors?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T01:19:44.549948+00:00",
   "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100": "2026-10-26T03:34:10.333199+00:00",
-  "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting": "2026-10-26T04:45:56.381092+00:00"
+  "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting": "2026-10-26T04:45:56.381092+00:00",
+  "https://cointelegraph.com/news/bitcoin-core-changes-security-policy-as-ai-makes-bugs-easier-to-find?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T04:56:15.749029+00:00"
  },
  "timers": {
-  "crowd": 1792987230.7306454,
-  "headlines": 1792989955.542993,
-  "scan": 1792990353.0880425,
-  "follow": 1792990353.0889852
+  "crowd": 1792990849.3345797,
+  "headlines": 1792990575.3869429,
+  "scan": 1792991153.3237193,
+  "follow": 1792990971.0708609
  },
  "pushed_times": [],
  "last_checked": {
