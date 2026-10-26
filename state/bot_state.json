@@ -5901,7 +5901,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://cointelegraph.com/news/us-senator-probe-bo-hines-trump-crypto-adviser-tether-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-23T17:52:10.014501+00:00",
   "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet": "2026-10-24T04:53:35.903432+00:00",
   "https://www.coindesk.com/": "2026-10-24T14:10:24.963666+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-24T15:12:48.085674+00:00",
@@ -5962,10 +5961,10 @@
   "https://cointelegraph.com/markets/bitcoin-seeks-support-above-81k-as-brent-crude-oil-hits-highest-level-since-march?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T16:19:21.412740+00:00"
  },
  "timers": {
-  "crowd": 1793034289.7059255,
-  "headlines": 1793037107.7208765,
-  "scan": 1793037200.1126802,
-  "follow": 1793037015.9383228
+  "crowd": 1793037909.7812676,
+  "headlines": 1793037726.7386866,
+  "scan": 1793038001.1757507,
+  "follow": 1793037940.3292303
  },
  "pushed_times": [],
  "last_checked": {
