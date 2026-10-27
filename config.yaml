@@ -41,7 +41,8 @@ bot:
   headline_max_per_hour: 4     # pushed "big news" headlines (free RSS feeds)
   headline_quiet_start: "00:30"  # no headline pings overnight (official Fed releases excepted)
   headline_quiet_end: "07:00"
-  check_seconds: 30
+  check_seconds: 30           # cloud copy: how often it looks (free price APIs are rate-limited)
+  live_check_seconds: 2        # PC with MT5: looks at Elev8's prices every 2 seconds
 
 # Signal feeds the bot sends. Only strategies that survived testing belong here.
 # (No INTRADAY feed: every intraday setup tested so far loses after costs.)

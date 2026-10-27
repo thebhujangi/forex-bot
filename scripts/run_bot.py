@@ -107,6 +107,11 @@ class Bot:
         self.headlines: list = []
         self.fxb = fxb.Myfxbook()
         self.market = ApiMarket(load_env().get("TWELVEDATA_API_KEY", "")) if cloud else None
+        # On a PC with MT5 the prices are Elev8's own and free to read, so watch them every few
+        # seconds. The cloud copy pays for each price request, so it looks less often.
+        self.every = ({"loop": self.bc["check_seconds"], "scan": 60, "follow": 300, "intraday": 240, "longterm": 3300}
+                      if cloud else {"loop": self.bc.get("live_check_seconds", 2), "scan": 2, "follow": 2,
+                                     "intraday": 0, "longterm": 0})
 
     @property
     def all_symbols(self) -> list[str]:
@@ -450,8 +455,9 @@ class Bot:
 
     # ---------- signals ----------
     def scan_signals(self):
-        """Once a minute: for every feed, look at newly closed candles only."""
-        if not self.sources or not self.due("scan", 60) or not self.market_ready():
+        """Every few seconds (once a minute in the cloud): for every feed, look at newly closed
+        candles only, so a signal goes out within seconds of its candle closing."""
+        if not self.sources or not self.due("scan", self.every["scan"]) or not self.market_ready():
             return
         now = pd.Timestamp.now(tz="UTC")
         events = []
@@ -505,14 +511,15 @@ class Bot:
                 self.state["last_signal_bar"][key] = last_close.isoformat()
 
     def follow_signals(self):
-        """Update open signals: intraday every 5 min, long-term hourly."""
-        if not self.due("follow", 300) or not self.market_ready():
+        """Update open signals: every few seconds on a PC with MT5 (cloud: intraday every 5 min,
+        long-term hourly)."""
+        if not self.due("follow", self.every["follow"]) or not self.market_ready():
             return
         now = pd.Timestamp.now(tz="UTC")
         checked = self.state.setdefault("last_checked", {})
         for t in [t for t in self.tracked if t.active]:
             intraday = t.horizon == "INTRADAY"
-            if time.time() - checked.get(t.id, 0) < (240 if intraday else 3300):
+            if time.time() - checked.get(t.id, 0) < self.every["intraday" if intraday else "longterm"]:
                 continue
             created = pd.Timestamp(t.created)
             try:
@@ -587,7 +594,7 @@ class Bot:
                 log(f"start-up message not sent ({e}); carrying on")
         stop_at = time.time() + minutes * 60 if minutes else None
         while stop_at is None or time.time() < stop_at:
-            wait = self.bc["check_seconds"]
+            wait = self.every["loop"]
             if stop_at:
                 wait = int(max(1, min(wait, stop_at - time.time())))
             try:
@@ -628,7 +635,7 @@ def main():
     lock = single_instance("monitor" if args.monitor_only else "bot")
     if lock is None:
         log("Another copy of the bot is already running, so this one is closing.")
-        return 0
+        return 3            # Start Bot.bat stops its restart loop on this code
     try:
         Bot(load_config(), cloud=args.cloud, monitor_only=args.monitor_only).run(args.minutes)
     except KeyboardInterrupt:

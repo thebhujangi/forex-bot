@@ -23,7 +23,7 @@ order type, full reasoning) and watches open trades for risk alerts. You place t
 | 1 | US news reaction (8:30 New York data candle) | ❌ tiny real drift before costs (+0.09R best), negative with news-time spreads |
 | 1 | 20-year daily history (Dukascopy 2004–2023) | ✅ 5 of 8 symbols, checked against Elev8 (NZD/CAD/CHF pending: server rate-limits) |
 | 2 | Telegram bot connected (@bhujangifxbot) | ✅ token in .env, chat id found, test message sent |
-| 2 | Trading assistant: trade monitor, news warnings, /size /news /status | ✅ running — double-click `Start Bot.bat` |
+| 2 | Trading assistant: trade monitor, news warnings, /size /news /status | ✅ running 24/7 on the Lenovo (`Start Bot.bat`) |
 | 1 | Next | ⏳ see "What the results say" |
 | 2 | Live signal scanner + Telegram messages | ⏳ only once a strategy passes |
 | 2 | Trade monitor (volatility / news / breakeven alerts) | ⏳ |
@@ -79,15 +79,22 @@ Run the tests:
 .venv\Scripts\python -m pytest
 ```
 
-## Running 24/7 in the cloud (GitHub Actions)
+## Running 24/7 on the Lenovo (since 2026-10-27)
+
+The full bot runs on the Lenovo laptop in `C:\Bots\Forex Bot`: `Start Bot.bat` (started at logon)
+runs `scripts/run_bot.py` with Elev8's own MT5 prices, checking every 2 seconds, and restarts it if
+it ever stops. Its memory lives in `state-live\` there. To deploy a change: push to GitHub, then run
+`Update Bot.bat` on the Lenovo. See `CLAUDE.md` for the details.
+
+## Cloud fallback (GitHub Actions, switched off)
 
 `.github/workflows/bot.yml` runs `scripts/run_bot.py --cloud --minutes 13` every 15 minutes on
 GitHub's servers, with prices from Coinbase (crypto) and Twelve Data (forex/gold), and saves the
 bot's memory (`state/`) back to the repo after each shift. Secrets go in the repo's
 **Settings → Secrets and variables → Actions**: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`,
-`TWELVEDATA_API_KEY`, `MYFXBOOK_EMAIL`, `MYFXBOOK_PASSWORD`. Once it's live, the PC runs only the
-MT5 trade monitor: `Start Bot.bat` → `run_bot.py --monitor-only`. Never run the full bot on the
-PC and in the cloud at the same time (both would read your Telegram commands).
+`TWELVEDATA_API_KEY`, `MYFXBOOK_EMAIL`, `MYFXBOOK_PASSWORD`. It's disabled while the Lenovo hosts
+the bot. Never run two copies at once (both would read your Telegram commands and send everything
+twice).
 
 ## Telegram assistant
 
