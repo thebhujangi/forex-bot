@@ -1,6 +1,5 @@
 {
  "sent": {
-  "expired:deff858d": "2026-10-20T08:15:09.148952+00:00",
   "expired:c411d7ea": "2026-10-20T09:48:33.460818+00:00",
   "expired:b8477c39": "2026-10-20T10:03:52.568795+00:00",
   "expired:0103c101": "2026-10-20T10:03:53.679076+00:00",
@@ -5962,10 +5961,10 @@
   "https://cointelegraph.com/markets/bitcoin-etf-rebound-110-million-btc-dip-below-80k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-27T07:50:27.719865+00:00"
  },
  "timers": {
-  "crowd": 1793084872.6964402,
-  "headlines": 1793088042.0949037,
-  "scan": 1793088103.8665383,
-  "follow": 1793087980.6840162
+  "crowd": 1793088479.8479362,
+  "headlines": 1793088662.5968802,
+  "scan": 1793088906.273084,
+  "follow": 1793088906.2743306
  },
  "pushed_times": [],
  "last_checked": {
