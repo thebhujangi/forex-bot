@@ -5897,7 +5897,6 @@
   "x_fx_ny_range:GBPUSD": "2026-10-22T15:15:00+00:00"
  },
  "seen_headlines": {
-  "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet": "2026-10-24T04:53:35.903432+00:00",
   "https://www.coindesk.com/": "2026-10-24T14:10:24.963666+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm": "2026-10-24T15:12:48.085674+00:00",
   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm": "2026-10-24T15:12:48.085699+00:00",
@@ -5960,10 +5959,10 @@
   "https://www.coindesk.com/markets/2026/10/27/ripple-gets-a-final-go-ahead-to-launch-its-own-u-s-national-trust-bank": "2026-10-27T04:33:25.381292+00:00"
  },
  "timers": {
-  "crowd": 1793074019.7223256,
-  "headlines": 1793076231.2399435,
-  "scan": 1793076810.9921222,
-  "follow": 1793076810.993451
+  "crowd": 1793077636.8753746,
+  "headlines": 1793077497.2482333,
+  "scan": 1793077619.4407527,
+  "follow": 1793077436.3396456
  },
  "pushed_times": [],
  "last_checked": {
