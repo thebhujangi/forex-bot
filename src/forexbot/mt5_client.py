@@ -9,7 +9,7 @@ from datetime import datetime, timedelta, timezone
 import pandas as pd
 
 from .instruments import SymbolSpec
-from .timeutils import ny_plus_7_offset_now, server_to_utc
+from .timeutils import eu_dst_offset_now, ny_plus_7_offset_now, server_to_utc
 
 ALIASES = {"XAUUSD": ["GOLD"]}
 
@@ -95,8 +95,14 @@ def detect_server_time(mt5, broker_symbol: str) -> tuple[str | None, str]:
     offset = round(diff / 3600)
     if abs(diff - offset * 3600) > 600:
         return None, "market looks closed (last tick is old), can't detect the server clock"
-    if offset == ny_plus_7_offset_now():
-        return "ny_plus_7", f"server is UTC{offset:+d} now -> GMT+2 winter / GMT+3 summer"
+    eu, ny = eu_dst_offset_now(), ny_plus_7_offset_now()
+    if offset == eu and eu != ny:
+        return "eu_dst", f"server is UTC{offset:+d} now -> GMT+2/+3 changing on the EU dates"
+    if offset == ny and eu != ny:
+        return "ny_plus_7", f"server is UTC{offset:+d} now -> GMT+2/+3 changing on the US dates"
+    if offset == ny:
+        return "ny_plus_7", (f"server is UTC{offset:+d} now -> GMT+2/+3 (US and EU clocks agree today; "
+                             f"re-check in the week between the EU and US clock changes)")
     return str(offset), f"server is a fixed UTC{offset:+d}"
 
 

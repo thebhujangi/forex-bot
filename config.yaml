@@ -17,9 +17,11 @@ broker:
   name: Elev8
   # How MT5 server times map to real time:
   #   auto       — detect from MT5 while the market is open
-  #   ny_plus_7  — GMT+2 in winter / GMT+3 in summer (most brokers)
+  #   eu_dst     — GMT+2 in winter / GMT+3 in summer, clocks change on the EU dates (Elev8)
+  #   ny_plus_7  — GMT+2 in winter / GMT+3 in summer, clocks change on the US dates
   #   2, 3, ...  — fixed offset from UTC in hours
-  server_time: ny_plus_7       # confirmed 2026-10-07: Elev8-Demo2 = UTC+3 in summer
+  server_time: eu_dst          # Elev8-Demo2: UTC+3 summer / UTC+2 winter on the EU dates (week of 26 Oct 2026
+                               # opened Sunday 23:00 server = UTC+2 while New York was still on summer time)
 
 mt5:
   # The bot opens MT5 itself from here if it isn't running (e.g. after a restart).

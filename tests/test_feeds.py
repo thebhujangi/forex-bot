@@ -18,3 +18,11 @@ def test_only_closed_drops_forming_candle():
     idx = pd.date_range("2026-10-07 10:00", periods=3, freq="15min", tz="UTC")
     df = pd.DataFrame({"open": 1, "high": 1, "low": 1, "close": 1}, index=idx, dtype=float)
     assert len(only_closed(df, "M15", pd.Timestamp("2026-10-07 10:40", tz="UTC"))) == 2
+
+
+def test_elev8_server_clock_changes_on_the_eu_dates():
+    from forexbot.timeutils import server_to_utc
+    idx = pd.DatetimeIndex(["2026-10-19 00:00", "2026-10-25 23:00", "2026-11-02 00:00"])
+    utc = server_to_utc(idx, "eu_dst")
+    # week of 19 Oct: summer (UTC+3); week of 26 Oct opens Sunday 21:00 UTC; after 1 Nov still UTC+2
+    assert list(utc.strftime("%Y-%m-%d %H:%M")) == ["2026-10-18 21:00", "2026-10-25 21:00", "2026-11-01 22:00"]
