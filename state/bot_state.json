@@ -112,7 +112,7 @@
  "initial_sl": {},
  "day": "2026-10-12",
  "day_start_equity": 10000.0,
- "last_brief": "2026-10-26",
+ "last_brief": "2026-10-27",
  "tracked": [
   {
    "id": "99eade23",
@@ -5962,10 +5962,10 @@
   "https://cointelegraph.com/news/us-senator-probe-bo-hines-trump-crypto-adviser-tether-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound": "2026-10-26T18:12:10.582529+00:00"
  },
  "timers": {
-  "crowd": 1793055983.0741558,
-  "headlines": 1793058804.3908026,
-  "scan": 1793059018.4262133,
-  "follow": 1793058765.8307436
+  "crowd": 1793059583.423911,
+  "headlines": 1793059429.2806416,
+  "scan": 1793059829.6319547,
+  "follow": 1793059706.7005513
  },
  "pushed_times": [],
  "last_checked": {
