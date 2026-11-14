@@ -222,7 +222,10 @@ class Bot:
             return
         if action == "closed":
             for t in targets:
-                price = self.market.price(t.symbol, t.side) if t.fill_notified and self.market_ready() else None
+                # Long-term signals are market orders (live from the start); intraday ones only
+                # once their pending order has triggered. Unfilled orders close at 0.
+                live = t.fill_notified or t.horizon == "LONG-TERM"
+                price = self.market.price(t.symbol, t.side) if live and self.market_ready() else None
                 t.close(price if price is not None else t.entry, outcome="closed_in_mt5")
             self.tg.answer_button(q["id"], "Got it")
             self.tg.send(f"👍 OK, {targets[0].symbol} is finished. No more messages about it.")
