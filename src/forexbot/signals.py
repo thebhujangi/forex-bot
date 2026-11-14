@@ -393,9 +393,10 @@ def follow(t: Tracked, highs_lows: pd.DataFrame, price: float, spec: SymbolSpec)
     if t.status == "skipped":
         return alerts              # follow quietly
 
-    # Stop moved enough to tell you (at least a quarter of the trailing distance).
+    # Stop moved enough to tell you (at least a quarter of the trailing distance). Sent whether or
+    # not you tapped Placed: only an explicit Skip silences a signal.
     step = 0.25 * (t.trail_distance or risk)
-    if t.status == "placed" and t.sign * (t.cur_sl - t.notified_sl) >= step:
+    if t.sign * (t.cur_sl - t.notified_sl) >= step:
         locked = t.sign * (t.cur_sl - t.entry) / risk if risk else 0
         t.notified_sl = t.cur_sl
         alerts.append((f"trail:{t.id}:{f(t.cur_sl)}",

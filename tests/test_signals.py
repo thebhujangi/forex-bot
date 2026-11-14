@@ -22,10 +22,11 @@ def hl(high, low):
     return pd.DataFrame({"high": [high], "low": [low]}, index=[T0 + pd.Timedelta(hours=1)])
 
 
-def test_trailing_stop_message_only_when_placed_and_moved_enough():
-    t = track(sig(), SRC)
-    assert follow(t, hl(92_000, 80_000), 91_000, BTC) == []      # not placed yet: no stop-move nag
-    t.status = "placed"
+def test_trailing_stop_message_unless_skipped_and_only_when_moved_enough():
+    skipped = track(sig(), SRC)
+    skipped.status = "skipped"
+    assert follow(skipped, hl(92_000, 80_000), 91_000, BTC) == []   # you said Skipped: quiet
+    t = track(sig(), SRC)                                             # no button tapped: still told
     alerts = follow(t, hl(92_000, 80_000), 91_000, BTC)
     assert t.cur_sl == 82_000 and [k.split(":")[0] for k, _ in alerts] == ["trail"]
     assert follow(t, hl(93_000, 90_000), 92_500, BTC) == []      # +1000 < 2500 step: stay quiet

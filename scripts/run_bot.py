@@ -498,6 +498,12 @@ class Bot:
                                 alert = reversal_alert(t, sig, self.specs[sym])
                                 if alert:
                                     self.send_once(*alert)
+                    # One trade per coin per feed, as in the backtest: a repeat signal in the same
+                    # direction while the first is still open is not part of the tested plan.
+                    if any(t.active and t.source == src.name and t.symbol == sym and t.side == sigs[0].side
+                           for t in self.tracked):
+                        log(f"repeat {sigs[0].side} {sym} {src.name} not sent: one is already open")
+                        continue
                     crowd = fxb.latest().get(sym)
                     crowd = fxb.describe(crowd) if crowd else None
                     args = (src, self.specs[sym], self.balance(), self.cfg["risk"]["risk_per_trade_pct"], events, self.tz, crowd)
