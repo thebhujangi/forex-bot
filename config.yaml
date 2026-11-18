@@ -241,6 +241,19 @@ strategies:
     # negative in all 6 -> a real but tiny post-news drift. After normal costs best +0.01R; with
     # realistic news-time spreads (3x) all -0.11R or worse. Not tradeable. Rejected.
 
+  intraday_momentum:
+    timeframe: M5
+    execution_timeframe: M5
+    warmup_days: 30
+    symbols: [SPX500, NAS100, US30]
+    mode: rest_of_day          # rest_of_day | first_half_hour (both fixed BEFORE testing, 2026-11-18)
+    min_move_atr: 0.0          # trade every day; >0 = only when the day's move is this big vs daily ATR
+    atr_period: 14
+    sl_atr: 0.5                # safety stop; the trade normally ends at 16:00 New York
+    # RESULT 2026-11-18 (Elev8 M5, SPX500/NAS100/US30): FAILED. rest_of_day -0.06R (t -9.9) 2019-23,
+    # -0.06R 2024-26; first_half_hour -0.10R / -0.04R; big-moves-only -0.07R / -0.08R. Even with ZERO
+    # costs ~0R (t +0.3 and -3.0): the published effect isn't in these CFD prices. Spread = 12-35% of
+    # the typical 15:30-16:00 move. Not used.
   dip_buy:
     timeframe: D1
     execution_timeframe: H1
