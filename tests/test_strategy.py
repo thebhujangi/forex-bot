@@ -59,3 +59,13 @@ def test_dip_buy_only_buys_dips_in_an_uptrend_and_never_peeks():
     assert [s.created for s in later] == [s.created for s in sigs if s.created <= idx[251] + pd.Timedelta(days=1)]
     falling = bars.iloc[::-1].set_axis(idx)                            # downtrend: never buys
     assert dip_buy.generate(falling, "SPX500", params, DEFAULT_SPECS["XAUUSD"]) == []
+
+
+def test_market_briefing_flags_a_market_near_its_signal_level():
+    from forexbot.analysis import market_line
+    idx = pd.date_range("2025-01-01", periods=160, freq="1D", tz="UTC")
+    close = pd.Series(np.linspace(100, 150, 160), index=idx)
+    d1 = pd.DataFrame({"open": close, "high": close + 1, "low": close - 1, "close": close})
+    line = market_line("BTCUSD", d1, DEFAULT_SPECS["XAUUSD"])
+    assert "uptrend" in line and "near a buy signal" in line                 # steady climb: right under its high
+    assert "signal" not in market_line("EURUSD", d1, DEFAULT_SPECS["XAUUSD"], watched=False)

@@ -24,6 +24,7 @@ import pandas as pd
 from forexbot import DATA_DIR, STATE_DIR
 from forexbot import headlines as hl
 from forexbot import myfxbook as fxb
+from forexbot.analysis import briefing, market_line
 from forexbot.assistant import MonitorContext, check_positions, position_size
 from forexbot.config import load_config
 from forexbot.feeds import ApiMarket, FeedError, Mt5Market
@@ -45,12 +46,13 @@ HELP = """<b>Forex Bot assistant</b>
 I send signals and warnings. I never place or close trades myself.
 
 <b>Signals</b> (sent automatically, you don't need to ask)
-📅 LONG-TERM: tested trend signals, a few a month.
-⚡ INTRADAY ⚗️ EXPERIMENTAL: several a day, unproven (testing says they lose slightly).
-Tap ✅ Placed or ❌ Skipped. I then tell you when it fills, when to take profit or move
-your stop, when it's stopped out, when to close, and if it's going badly.
+📅 LONG-TERM: tested trend signals (only strategies that passed testing on Elev8 prices).
+I watch your MT5 account: trades you open are linked to my signals automatically, and you get a
+✅ message the moment you close one. I tell you when to move your stop, when it's hit, and if a
+trend reverses.
 
 <b>Commands</b>
+/markets: each market's trend, how jumpy it is, and how close it is to a signal
 /signals: signals I'm following right now
 /report: report card (also sent every Sunday 8pm)
 /headlines: latest news about your markets
@@ -206,7 +208,7 @@ class Bot:
             cmd = cmd.split("@")[0].lower()
             try:
                 reply = {"/size": self.cmd_size, "/news": self.cmd_news, "/status": self.cmd_status,
-                         "/signals": self.cmd_signals, "/crowd": self.cmd_crowd, "/report": self.cmd_report,
+                         "/signals": self.cmd_signals, "/markets": self.cmd_markets, "/crowd": self.cmd_crowd, "/report": self.cmd_report,
                          "/headlines": self.cmd_headlines,
                          "/help": lambda a: HELP, "/start": lambda a: HELP}.get(cmd, lambda a: None)(args)
             except Exception as e:
@@ -647,11 +649,32 @@ class Bot:
         t = parse_hm(self.bc["morning_brief"])
         if (now.hour, now.minute) < (t.hour, t.minute):
             return
-        self.state["last_brief"] = str(now.date())
         self.tg.send(f"☀️ <b>Good morning. {now:%A %d %b}</b>\n\n" + self.cmd_news()
                      + f"\n\nRules: risk {self.cfg['risk']['risk_per_trade_pct']:g}% per trade, always set "
                        f"a stop loss, stop for the day at -{self.cfg['risk']['daily_loss_limit_pct']:g}%.")
+        self.state["last_brief"] = str(now.date())  # only once it has really gone out
         log("sent morning brief")
+        try:                                        # the market briefing follows; it waits in the outbox
+            self.queue(f"markets:{now.date()}", self.cmd_markets())   # if Telegram hiccups
+        except Exception as e:
+            log(f"market briefing skipped: {e}")
+
+    def cmd_markets(self, args=None) -> str:
+        """Each market's trend, how jumpy it is, and how near the tested trend rule is to a signal."""
+        if not self.market_ready():
+            return "Prices unavailable right now."
+        watched = {s for src in self.sources for s in src.symbols}
+        p = self.cfg["strategies"]["daily_trend"]
+        lines = []
+        for sym in [s for s in self.all_symbols if s in self.specs]:
+            try:
+                line = market_line(sym, self.market.bars(sym, "D1", 160), self.specs[sym], p["entry_days"],
+                                   p["atr_period"], watched=sym in watched)
+            except FeedError:
+                line = None
+            if line:
+                lines.append(line)
+        return briefing(lines) if lines else "Prices unavailable right now."
 
     # ---------- main loop ----------
     def guarded(self, name: str, job, *args) -> bool:
