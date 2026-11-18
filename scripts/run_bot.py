@@ -425,6 +425,22 @@ class Bot:
                   for p in positions] or ["No open trades."]
         return "\n".join(lines)
 
+    # ---------- messages that must not be lost ----------
+    def queue(self, key: str, text: str):
+        """Hold a message in the bot's memory until Telegram has really delivered it (flush_outbox).
+        For news that happens once (a trade closing), where a Telegram outage would otherwise lose it."""
+        box = self.state.setdefault("outbox", [])
+        if key not in self.state["sent"] and all(o["key"] != key for o in box):
+            box.append({"key": key, "text": text})
+
+    def flush_outbox(self):
+        box = self.state.setdefault("outbox", [])
+        while box:
+            self.tg.send(box[0]["text"])               # raises if Telegram is down: retried next pass
+            self.state["sent"][box[0]["key"]] = pd.Timestamp.now(tz="UTC").isoformat()
+            log(f"sent {box[0]['key']}")
+            box.pop(0)
+
     # ---------- your MT5 trades (PC only) ----------
     def sync_mt5_trades(self, m, positions, now: pd.Timestamp):
         """Link each MT5 trade to the signal it came from and report the moment one closes, so
@@ -443,7 +459,7 @@ class Bot:
             if t is not None and t.status == "new":
                 t.status, t.placed = "placed", True
             if not first:
-                self.send_once(f"link:{tk}", link_message(p.symbol, p.side, p.lots, p.open_price, t,
+                self.queue(f"link:{tk}", link_message(p.symbol, p.side, p.lots, p.open_price, t,
                                                           self.specs[p.symbol].fmt))
             log(f"MT5 trade {tk} {p.side} {p.symbol} linked to {t.id if t else 'no signal'}")
 
@@ -461,7 +477,7 @@ class Bot:
             others = [k for k, v in links.items() if t is not None and v["signal"] == t.id]
             if t is not None and t.active and not others:
                 t.close(h["close_price"], h["closed"], outcome="closed_in_mt5")
-            self.send_once(f"mt5closed:{tk}", closed_message(h, t, len(others), self.specs[h["symbol"]].fmt))
+            self.queue(f"mt5closed:{tk}", closed_message(h, t, len(others), self.specs[h["symbol"]].fmt))
             log(f"MT5 trade {tk} closed, {h['profit']:+.2f} USD")
 
         if first:
@@ -480,8 +496,8 @@ class Bot:
                                    f"closed {self.specs[h['symbol']].fmt(h['close_price'])}, "
                                    f"{'+' if h['profit'] >= 0 else '−'}${abs(h['profit']):,.2f}")
             if settled:
-                self.tg.send("🔄 <b>Synced with your MT5 history.</b> You'd already closed these, so I've "
-                             "stopped following them:\n" + "\n".join(settled))
+                self.queue(f"mt5sync:{now:%Y%m%d%H%M}", "🔄 <b>Synced with your MT5 history.</b> You'd already "
+                           "closed these, so I've stopped following them:\n" + "\n".join(settled))
             self.state["mt5_links_ready"] = True
             log(f"MT5 sync ready: {len(links)} open trade(s) linked, {len(settled)} closed signal(s) settled")
 
@@ -665,7 +681,8 @@ class Bot:
             time.sleep(wait)                     # Telegram didn't wait for us: keep the pace
         for name, job in (("crowd", self.record_crowd), ("headlines", self.check_headlines),
                           ("signals", self.scan_signals), ("follow-ups", self.follow_signals),
-                          ("mt5", None if self.cloud else self.monitor), ("brief", self.morning_brief),
+                          ("mt5", None if self.cloud else self.monitor), ("outbox", self.flush_outbox),
+                          ("brief", self.morning_brief),
                           ("report", self.weekly_report), ("history", self.save_history)):
             if job is not None:
                 self.guarded(name, job)
