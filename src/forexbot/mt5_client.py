@@ -115,7 +115,11 @@ def canonical_symbol(broker_symbol: str, known: list[str]) -> str | None:
     return None
 
 
-def open_positions(mt5, known: list[str]) -> list:
+def _server_ts(seconds: int, server_time) -> pd.Timestamp:
+    return server_to_utc(pd.DatetimeIndex([pd.to_datetime(int(seconds), unit="s")]), server_time)[0]
+
+
+def open_positions(mt5, known: list[str], server_time=None) -> list:
     """Open trades on the account, read-only, as assistant.Position objects."""
     from .assistant import Position
     out = []
@@ -127,8 +131,37 @@ def open_positions(mt5, known: list[str]) -> list:
             ticket=p.ticket, symbol=sym, side="buy" if p.type == mt5.POSITION_TYPE_BUY else "sell",
             lots=p.volume, open_price=p.price_open, sl=p.sl, tp=p.tp, price=p.price_current,
             profit=p.profit + p.swap,
+            opened=_server_ts(p.time, server_time) if server_time is not None else None,
         ))
     return out
+
+
+def position_history(mt5, known: list[str], server_time, since: datetime) -> dict[int, dict]:
+    """Every trade opened since `since`, from the account history, keyed by position ticket:
+    symbol, side, lots, open/close price and time (UTC), profit in USD (incl. swap, commission,
+    fees) and whether it has fully closed. Read-only."""
+    deals = mt5.history_deals_get(since - timedelta(days=1), datetime.now() + timedelta(days=1)) or ()
+    out: dict[int, dict] = {}
+    for d in sorted(deals, key=lambda d: d.time_msc):
+        if not d.position_id or d.type not in (mt5.DEAL_TYPE_BUY, mt5.DEAL_TYPE_SELL):
+            continue
+        sym = canonical_symbol(d.symbol, known)
+        if sym is None:
+            continue
+        h = out.setdefault(d.position_id, {"ticket": d.position_id, "symbol": sym, "side": None, "lots": 0.0,
+                                           "open_price": None, "opened": None, "close_price": None,
+                                           "closed": None, "closed_lots": 0.0, "profit": 0.0})
+        h["profit"] += d.profit + d.swap + d.commission + getattr(d, "fee", 0.0)
+        when = _server_ts(d.time, server_time)
+        if d.entry == mt5.DEAL_ENTRY_IN:
+            h["side"] = "buy" if d.type == mt5.DEAL_TYPE_BUY else "sell"
+            h["open_price"], h["opened"], h["lots"] = d.price, when, h["lots"] + d.volume
+        elif d.entry in (mt5.DEAL_ENTRY_OUT, mt5.DEAL_ENTRY_OUT_BY):
+            h["close_price"], h["closed"], h["closed_lots"] = d.price, when, h["closed_lots"] + d.volume
+    for h in out.values():
+        h["fully_closed"] = h["side"] is not None and h["closed_lots"] >= h["lots"] - 1e-9
+    return {k: v for k, v in out.items() if v["side"] and v["opened"] is not None
+            and v["opened"] >= pd.Timestamp(since).tz_convert("UTC") - pd.Timedelta(days=1)}
 
 
 def candle_spike(mt5, broker_symbol: str, lookback: int = 24) -> float | None:

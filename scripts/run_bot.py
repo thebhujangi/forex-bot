@@ -33,6 +33,7 @@ from forexbot.signals import (HISTORY_COLUMNS, Source, cancel_sibling, copy_butt
                               format_pair, format_signal, from_dict, history_row, new_signals, reversal_alert,
                               to_dict, track, weekly_report)
 from forexbot.strategies.common import parse_hm
+from forexbot.trades import closed_message, link_message, match_signal
 from forexbot.telegram import Telegram, TelegramError, load_env
 from forexbot.timeutils import NEW_YORK, ROLLOVER_SHIFT, TIMEFRAME_MINUTES, trading_day
 
@@ -424,6 +425,65 @@ class Bot:
         return "\n".join(lines)
 
     # ---------- your MT5 trades (PC only) ----------
+    def sync_mt5_trades(self, m, positions, now: pd.Timestamp):
+        """Link each MT5 trade to the signal it came from and report the moment one closes, so
+        signals you closed yourself stop getting stop updates. The first run links silently and
+        settles signals whose trades you'd already closed, from the account history."""
+        links = self.state.setdefault("mt5_links", {})      # ticket -> {signal, symbol, side, lots, price}
+        first = not self.state.get("mt5_links_ready")
+        open_now = {str(p.ticket): p for p in positions}
+        by_id = {t.id: t for t in self.tracked}
+        for tk, p in open_now.items():
+            if tk in links:
+                continue
+            t = match_signal(p.symbol, p.side, p.opened, p.open_price, self.tracked)
+            links[tk] = {"signal": t.id if t else None, "symbol": p.symbol, "side": p.side, "lots": p.lots,
+                         "price": p.open_price}
+            if t is not None and t.status == "new":
+                t.status, t.placed = "placed", True
+            if not first:
+                self.send_once(f"link:{tk}", link_message(p.symbol, p.side, p.lots, p.open_price, t,
+                                                          self.specs[p.symbol].fmt))
+            log(f"MT5 trade {tk} {p.side} {p.symbol} linked to {t.id if t else 'no signal'}")
+
+        gone = [tk for tk in links if tk not in open_now]
+        if gone or first:
+            oldest = min([pd.Timestamp(t.created) for t in self.tracked if t.active] + [now - pd.Timedelta(days=2)])
+            history = m.position_history(self.mt5, list(self.specs), self.cfg["broker"]["server_time"],
+                                         oldest.to_pydatetime())
+        for tk in gone:
+            h = history.get(int(tk))
+            if h is None or not h["fully_closed"]:
+                continue                                 # history not there yet: try again shortly
+            link = links.pop(tk)
+            t = by_id.get(link["signal"])
+            others = [k for k, v in links.items() if t is not None and v["signal"] == t.id]
+            if t is not None and t.active and not others:
+                t.close(h["close_price"], h["closed"], outcome="closed_in_mt5")
+            self.send_once(f"mt5closed:{tk}", closed_message(h, t, len(others), self.specs[h["symbol"]].fmt))
+            log(f"MT5 trade {tk} closed, {h['profit']:+.2f} USD")
+
+        if first:
+            # Signals you'd already closed before this existed: match them to closed trades.
+            settled = []
+            for h in sorted(history.values(), key=lambda h: h["opened"]):
+                if not h["fully_closed"] or str(h["ticket"]) in links or h["closed"] is None:
+                    continue
+                still_open = {v["signal"] for v in links.values()}
+                t = match_signal(h["symbol"], h["side"], h["opened"], h["open_price"],
+                                 [x for x in self.tracked if x.id not in still_open])
+                if t is not None:
+                    t.placed = True
+                    t.close(h["close_price"], h["closed"], outcome="closed_in_mt5")
+                    settled.append(f"• {h['side'].upper()} {h['symbol']} from {pd.Timestamp(t.created):%d %b}: "
+                                   f"closed {self.specs[h['symbol']].fmt(h['close_price'])}, "
+                                   f"{'+' if h['profit'] >= 0 else '−'}${abs(h['profit']):,.2f}")
+            if settled:
+                self.tg.send("🔄 <b>Synced with your MT5 history.</b> You'd already closed these, so I've "
+                             "stopped following them:\n" + "\n".join(settled))
+            self.state["mt5_links_ready"] = True
+            log(f"MT5 sync ready: {len(links)} open trade(s) linked, {len(settled)} closed signal(s) settled")
+
     def monitor(self):
         if not self.ensure_mt5():
             return
@@ -433,7 +493,9 @@ class Bot:
         day = str(trading_day(now))
         if self.state["day"] != day:
             self.state["day"], self.state["day_start_equity"] = day, acc.equity
-        positions = [p for p in m.open_positions(self.mt5, list(self.specs)) if p.symbol in self.specs]
+        positions = [p for p in m.open_positions(self.mt5, list(self.specs), self.cfg["broker"]["server_time"])
+                     if p.symbol in self.specs]
+        self.sync_mt5_trades(m, positions, now)
         init = self.state["initial_sl"]
         for p in positions:
             if p.sl and str(p.ticket) not in init:

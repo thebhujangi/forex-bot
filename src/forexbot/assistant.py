@@ -23,6 +23,7 @@ class Position:
     tp: float               # 0 = none
     price: float            # current closing price for this side
     profit: float           # USD, floating
+    opened: pd.Timestamp | None = None   # UTC, when the trade was opened
 
     @property
     def sign(self) -> int:
