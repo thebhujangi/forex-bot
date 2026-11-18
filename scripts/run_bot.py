@@ -106,6 +106,7 @@ class Bot:
         self.state = self._load_state()
         self.tracked = [from_dict(d) for d in self.state.get("tracked", [])]
         self.headlines: list = []
+        self._errors: dict = {}             # job -> (last error text, when it was logged)
         self.fxb = fxb.Myfxbook()
         self.market = ApiMarket(load_env().get("TWELVEDATA_API_KEY", "")) if cloud else None
         # On a PC with MT5 the prices are Elev8's own and free to read, so watch them every few
@@ -637,21 +638,37 @@ class Bot:
         log("sent morning brief")
 
     # ---------- main loop ----------
+    def guarded(self, name: str, job, *args) -> bool:
+        """Run one job; a failure (e.g. Telegram down) is logged and the other jobs still run,
+        so a Telegram outage can't stop the bot watching prices and your MT5 trades. Messages
+        that couldn't be sent are retried on a later pass (they're only marked sent on success).
+        The same error is logged at most every 10 minutes."""
+        try:
+            job(*args)
+            return True
+        except KeyboardInterrupt:
+            raise
+        except Exception as e:
+            text = f"{e}" if isinstance(e, TelegramError) else traceback.format_exc()
+            last = self._errors.get(name)
+            if last is None or last[0] != text or time.time() - last[1] > 600:
+                self._errors[name] = (text, time.time())
+                log(f"{name}: telegram error: {text}" if isinstance(e, TelegramError) else f"{name}: error:\n{text}")
+            return False
+
     def step(self, wait: int):
         if self.monitor_only:
-            self.monitor()
+            self.guarded("monitor", self.monitor)
             time.sleep(wait)
             return
-        self.handle_updates(wait=wait)
-        self.record_crowd()
-        self.check_headlines()
-        self.scan_signals()
-        self.follow_signals()
-        if not self.cloud:
-            self.monitor()
-        self.morning_brief()
-        self.weekly_report()
-        self.save_history()
+        if not self.guarded("commands", self.handle_updates, wait):
+            time.sleep(wait)                     # Telegram didn't wait for us: keep the pace
+        for name, job in (("crowd", self.record_crowd), ("headlines", self.check_headlines),
+                          ("signals", self.scan_signals), ("follow-ups", self.follow_signals),
+                          ("mt5", None if self.cloud else self.monitor), ("brief", self.morning_brief),
+                          ("report", self.weekly_report), ("history", self.save_history)):
+            if job is not None:
+                self.guarded(name, job)
 
     def run(self, minutes: float | None = None):
         mode = "cloud" if self.cloud else "PC (trade monitor only)" if self.monitor_only else "PC"
