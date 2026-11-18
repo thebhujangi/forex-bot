@@ -6,6 +6,11 @@ from pathlib import Path
 
 from . import DATA_DIR
 
+# US dollars per 1 unit of each currency (Elev8 closes, 17 Nov 2026). Only used to size lots on
+# symbols priced in another currency; results in R don't depend on it. Refresh now and then.
+USD_PER = {"EUR": 1.0963, "GBP": 1.314, "AUD": 0.6715, "NZD": 0.549, "CAD": 0.6979, "CHF": 1.1862,
+           "JPY": 0.00628}
+
 
 @dataclass
 class SymbolSpec:
@@ -25,7 +30,9 @@ class SymbolSpec:
             return self.contract_size * lots
         if self.currency_base == "USD":
             return self.contract_size * lots / price
-        raise ValueError(f"{self.symbol}: only USD-quoted or USD-based symbols are supported")
+        if self.currency_profit in USD_PER:          # crosses (EURJPY) and non-US indices (UK100)
+            return self.contract_size * lots * USD_PER[self.currency_profit]
+        raise ValueError(f"{self.symbol}: no USD rate for {self.currency_profit}")
 
     def round_lots(self, lots: float) -> float:
         """Round down to the broker's lot step. Returns 0 if below the minimum lot."""

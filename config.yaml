@@ -97,6 +97,28 @@ costs:
   LTCUSD: {spread_pct: 0.59,  slippage_pct: 0.20, commission_per_lot: 0}
   DOGEUSD: {spread_pct: 0.78, slippage_pct: 0.26, commission_per_lot: 0}
   ADAUSD: {spread_pct: 1.63,  slippage_pct: 0.54, commission_per_lot: 0}
+  # 2026-11-19: % of price, measured on Elev8-Demo2 at night Malaysia time (wider than daytime: cautious)
+  XAGUSD:  {spread_pct: 0.0933, slippage_pct: 0.0311, commission_per_lot: 0}
+  XBRUSD:  {spread_pct: 0.1396, slippage_pct: 0.0465, commission_per_lot: 0}
+  XTIUSD:  {spread_pct: 0.1422, slippage_pct: 0.0474, commission_per_lot: 0}
+  AUDCAD:  {spread_pct: 0.0291, slippage_pct: 0.0097, commission_per_lot: 0}
+  AUDCHF:  {spread_pct: 0.0265, slippage_pct: 0.0088, commission_per_lot: 0}
+  AUDJPY:  {spread_pct: 0.0299, slippage_pct: 0.01, commission_per_lot: 0}
+  AUDNZD:  {spread_pct: 0.0204, slippage_pct: 0.0068, commission_per_lot: 0}
+  CHFJPY:  {spread_pct: 0.0154, slippage_pct: 0.0051, commission_per_lot: 0}
+  EURAUD:  {spread_pct: 0.0269, slippage_pct: 0.009, commission_per_lot: 0}
+  EURCAD:  {spread_pct: 0.014, slippage_pct: 0.0047, commission_per_lot: 0}
+  EURCHF:  {spread_pct: 0.0205, slippage_pct: 0.0068, commission_per_lot: 0}
+  EURGBP:  {spread_pct: 0.024, slippage_pct: 0.008, commission_per_lot: 0}
+  EURJPY:  {spread_pct: 0.016, slippage_pct: 0.0053, commission_per_lot: 0}
+  EURNZD:  {spread_pct: 0.017, slippage_pct: 0.0057, commission_per_lot: 0}
+  GBPCHF:  {spread_pct: 0.0243, slippage_pct: 0.0081, commission_per_lot: 0}
+  AUS200:  {spread_pct: 0.0423, slippage_pct: 0.0141, commission_per_lot: 0}
+  ESP35:   {spread_pct: 0.0335, slippage_pct: 0.0112, commission_per_lot: 0}
+  EUSTX50: {spread_pct: 0.0616, slippage_pct: 0.0205, commission_per_lot: 0}
+  FRA40:   {spread_pct: 0.065, slippage_pct: 0.0217, commission_per_lot: 0}
+  JPN225:  {spread_pct: 0.0734, slippage_pct: 0.0245, commission_per_lot: 0}
+  UK100:   {spread_pct: 0.036, slippage_pct: 0.012, commission_per_lot: 0}
   # Indices: spreads measured live on Elev8-Demo2 2026-10-22 at the US open (slippage ~1/4 of spread)
   SPX500: {spread: 2.0,  slippage: 0.5, commission_per_lot: 0}
   NAS100: {spread: 3.1,  slippage: 0.8, commission_per_lot: 0}
