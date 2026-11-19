@@ -60,6 +60,16 @@ signals:
     # Across all 8 coins, 2024-26 was only ~+0.04R, so the BTC/ETH/XRP edge is fragile.
     # 2026-10-22 re-test (scripts/research.py, Elev8 MT5 data): BTC/ETH +0.41R in-sample,
     # +0.26R unseen. 3 coins: 0.32%/month at 1% risk, worst fall 10%.
+  - name: commodity_trend
+    strategy: daily_trend
+    symbols: [XAUUSD, XAGUSD, XBRUSD, XTIUSD]
+    horizon: LONG-TERM
+    tier: "Promising (demo): profitable 2019-23 and on unseen 2024-26, even at double costs; not yet statistically proven"
+    stats: "Tested on Elev8 prices 2019-2026: about 11 trades a year across gold, silver, Brent and WTI oil; +0.28x risk per trade 2019-23 and +0.65x on unseen 2024-26. Silver alone was slightly negative."
+    # Added 2026-11-19 at the user's request after scripts/research_trend.py (55-day): 63 trades
+    # +0.28R in-sample, 23 trades +0.65R unseen, +0.36R at 2x costs; group t = 1.8 (< the strict 3.0
+    # bar), so labelled promising. Per market (all years): XAU +0.42R, XBR +0.62R, XTI +0.47R, XAG -0.05R.
+    # Silver kept: the group was the unit tested (dropping it after seeing results = overfitting).
 
   # SWITCHED OFF 2026-10-22 (user: "tested winning signals" only). Kept here as a record.
   # fx_gold_trend (daily_trend on XAUUSD/EURUSD/GBPUSD): EUR/GBP -0.41R on unseen 2024-26;
@@ -81,7 +91,7 @@ grok:
 # no tested strategy reaches 2% a month at sensible risk (see crypto_trend notes above).
 targets:
   monthly_return_pct: 2.0
-  tested_monthly_pct: 0.3      # what the 2019-26 test of the live feeds averages at 1% risk
+  tested_monthly_pct: 0.6      # 2019-26 tests of the live feeds at 1% risk: crypto ~12 tr/yr x +0.35R + metals & oil ~11 tr/yr x +0.3R
 
 # If auto-detection picks the wrong broker symbol, map it here, e.g. XAUUSD: XAUUSD.std
 symbol_map: {}

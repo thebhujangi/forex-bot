@@ -437,7 +437,8 @@ def history_row(t: Tracked) -> dict:
             "placed": t.placed, "result_r": round(t.result_r or 0.0, 3), "outcome": t.outcome}
 
 
-FEED_NAMES = {"crypto_trend": "Crypto trend (tested)", "fx_gold_trend": "Gold/FX trend",
+FEED_NAMES = {"crypto_trend": "Crypto trend (tested)", "commodity_trend": "Metals & oil trend (promising)",
+              "fx_gold_trend": "Gold/FX trend",
               "x_crypto_breakout": "⚗️ Crypto breakout", "x_crypto_pullback": "⚗️ Crypto pullback",
               "x_fx_ny_range": "⚗️ Gold/FX NY range"}
 
@@ -526,9 +527,9 @@ def weekly_report(history: pd.DataFrame, open_signals: list[tuple[Tracked, float
     if account_week:
         lines += ["", f"<b>Your MT5 demo this week:</b> {account_week['trades']} closed trade(s), "
                       f"${account_week['profit']:+,.2f} · balance ${account_week['balance']:,.2f}"]
-    lines += ["", "<i>Only the crypto trend feed is live now (tested: about +0.35x risk per trade); the "
-                  "⚗️ feeds were switched off on 22 Oct after failing testing. Results are worked out from free "
-                  "prices matched to Elev8's; your MT5 history is the final word.</i>"]
+    lines += ["", "<i>Live feeds: crypto trend (tested, about +0.35x risk per trade) and, since 19 Nov, metals & "
+                  "oil trend (promising). The ⚗️ feeds were switched off on 22 Oct after failing testing. Your MT5 "
+                  "history is the final word on real results.</i>"]
     return "\n".join(lines)
 
 
