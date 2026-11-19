@@ -68,6 +68,15 @@ signals:
   # x_crypto_pullback (trend_pullback M15 BTC/ETH): -0.13R over 3,663 trades 2019-26.
   # x_fx_ny_range (london_breakout NY 08:00-09:30 XAU/EUR/GBP): -0.16R in-sample, -$392 live.
 
+# Grok experiment (started 2026-11-19, user's request): once a day Grok gives an up/down/none call for
+# the next 24 h per market. PAPER ONLY: logged in state/grok_calls.csv and scored vs a coin flip and the
+# plain trend direction (/grok, report card). Never a signal. Needs XAI_API_KEY in .env. ~US$0.01/day.
+grok:
+  enabled: true
+  model: grok-4.7
+  symbols: [BTCUSD, ETHUSD, XRPUSD, XAUUSD]
+  time: "08:10"                # local time, after the morning message
+
 # Monthly growth target shown in the report card (actual vs target). A target, not a forecast:
 # no tested strategy reaches 2% a month at sensible risk (see crypto_trend notes above).
 targets:

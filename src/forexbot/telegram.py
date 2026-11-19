@@ -38,7 +38,7 @@ class _Connection(http.client.HTTPSConnection):
 
 
 SECRET_KEYS = ("TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID", "TWELVEDATA_API_KEY", "MYFXBOOK_EMAIL",
-               "MYFXBOOK_PASSWORD", "FRED_API_KEY")
+               "MYFXBOOK_PASSWORD", "FRED_API_KEY", "XAI_API_KEY")
 
 
 def load_env(path: Path = ENV_FILE) -> dict:

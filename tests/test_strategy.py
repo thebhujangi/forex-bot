@@ -67,5 +67,5 @@ def test_market_briefing_flags_a_market_near_its_signal_level():
     close = pd.Series(np.linspace(100, 150, 160), index=idx)
     d1 = pd.DataFrame({"open": close, "high": close + 1, "low": close - 1, "close": close})
     line = market_line("BTCUSD", d1, DEFAULT_SPECS["XAUUSD"])
-    assert "uptrend" in line and "near a buy signal" in line                 # steady climb: right under its high
-    assert "signal" not in market_line("EURUSD", d1, DEFAULT_SPECS["XAUUSD"], watched=False)
+    assert "uptrend" in line and "close to a signal" in line                 # steady climb: right under its high
+    assert line.index("BUY if a day closes above") < line.index("SELL")      # nearest level listed first

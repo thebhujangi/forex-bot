@@ -24,7 +24,8 @@ import pandas as pd
 from forexbot import DATA_DIR, STATE_DIR
 from forexbot import headlines as hl
 from forexbot import myfxbook as fxb
-from forexbot.analysis import briefing, market_line
+from forexbot import grok
+from forexbot.analysis import briefing, levels, market_line
 from forexbot.assistant import MonitorContext, check_positions, position_size
 from forexbot.config import load_config
 from forexbot.feeds import ApiMarket, FeedError, Mt5Market
@@ -40,6 +41,7 @@ from forexbot.timeutils import NEW_YORK, ROLLOVER_SHIFT, TIMEFRAME_MINUTES, trad
 
 sys.stdout.reconfigure(encoding="utf-8")
 HISTORY_FILE = STATE_DIR / "signal_history.csv"
+GROK_FILE = STATE_DIR / "grok_calls.csv"           # paper-only Grok experiment
 LOG_FILE = DATA_DIR / "bot.log"
 
 HELP = """<b>Forex Bot assistant</b>
@@ -52,7 +54,8 @@ I watch your MT5 account: trades you open are linked to my signals automatically
 trend reverses.
 
 <b>Commands</b>
-/markets: each market's trend, how jumpy it is, and how close it is to a signal
+/markets: the price each market needs to reach for its next signal
+/grok: Grok AI's daily calls and how often they're right (experiment, never traded)
 /signals: signals I'm following right now
 /report: report card (also sent every Sunday 8pm)
 /headlines: latest news about your markets
@@ -208,7 +211,7 @@ class Bot:
             cmd = cmd.split("@")[0].lower()
             try:
                 reply = {"/size": self.cmd_size, "/news": self.cmd_news, "/status": self.cmd_status,
-                         "/signals": self.cmd_signals, "/markets": self.cmd_markets, "/crowd": self.cmd_crowd, "/report": self.cmd_report,
+                         "/signals": self.cmd_signals, "/markets": self.cmd_markets, "/grok": self.cmd_grok, "/crowd": self.cmd_crowd, "/report": self.cmd_report,
                          "/headlines": self.cmd_headlines,
                          "/help": lambda a: HELP, "/start": lambda a: HELP}.get(cmd, lambda a: None)(args)
             except Exception as e:
@@ -277,9 +280,77 @@ class Bot:
         open_sigs = [(t, self.current_r(t)) for t in self.tracked if t.active]
         balance, risk = self.balance(), self.cfg["risk"]["risk_per_trade_pct"]
         targets = self.cfg.get("targets") or {}
-        return weekly_report(hist, open_sigs, now, account, per_r=balance * risk / 100,
+        text = weekly_report(hist, open_sigs, now, account, per_r=balance * risk / 100,
                              start_balance=balance, risk_pct=risk, target_pct=targets.get("monthly_return_pct"),
                              tested_pct=targets.get("tested_monthly_pct"), tested={s.name for s in self.sources})
+        if (self.cfg.get("grok") or {}).get("enabled") and GROK_FILE.exists():
+            text += "\n\n" + "\n".join(grok.report_lines(grok.load(GROK_FILE)))
+        return text
+
+    # ---------- Grok experiment (paper only) ----------
+    def grok_daily(self):
+        """Once a day: ask Grok for a 24-hour call per market and log it. Hourly: score old calls.
+        Never sent as signals, never traded: see forexbot/grok.py."""
+        g = self.cfg.get("grok") or {}
+        if self.cloud or not g.get("enabled") or not self.market_ready():
+            return
+        df = grok.load(GROK_FILE)
+        if self.due("grok_score", 3600) and df["price_24h"].isna().any():
+            save_needed = df["price_24h"].notna().sum()
+            df = grok.score(df, self.price_at)
+            if df["price_24h"].notna().sum() != save_needed:
+                grok.save(df, GROK_FILE)
+        key = load_env().get("XAI_API_KEY")
+        now_local, now = pd.Timestamp.now(tz=self.tz), pd.Timestamp.now(tz="UTC")
+        at = parse_hm(g.get("time", "08:10"))
+        if self.state.get("last_grok") == str(now_local.date()) or (now_local.hour, now_local.minute) < (at.hour, at.minute):
+            return
+        if not key:
+            if not self.state.get("grok_no_key_logged"):
+                log("Grok experiment waiting: add XAI_API_KEY to .env")
+                self.state["grok_no_key_logged"] = True
+            return
+        syms = [s for s in g.get("symbols", []) if s in self.specs and (s in CRYPTO or fx_market_open(now))]
+        facts, trends = [], {}
+        for s in syms:
+            d1 = self.market.bars(s, "D1", 160)
+            price = self.market.price(s, "buy") or float(d1["close"].iloc[-1])
+            facts.append(grok.market_facts(s, d1, price))
+            lv = levels(d1)
+            trends[s] = lv["trend"] if lv else "sideways"
+        try:
+            events = [f"{e.time.tz_convert('UTC'):%a %H:%M} UTC {e.currency} {e.title}"
+                      for e in relevant(fetch_events(), syms, now, now + pd.Timedelta(hours=24))]
+        except Exception:
+            events = []
+        prompt = grok.build_prompt(facts, [h.title for h in self.headlines], events, now)
+        calls, model = grok.ask(key, g.get("model", "grok-4.7"), prompt)
+        by_sym = {f["symbol"]: f["price_now"] for f in facts}
+        rows = [dict(time=now, symbol=c["symbol"], price=by_sym.get(c["symbol"]), call=c["call"],
+                     confidence=c["confidence"], reason=c["reason"], model=model, trend=trends.get(c["symbol"]),
+                     price_24h=None, move_pct=None, correct=None, trend_correct=None)
+                for c in calls if c["symbol"] in by_sym]
+        df = pd.concat([df, pd.DataFrame(rows)], ignore_index=True) if len(df) else pd.DataFrame(rows)
+        grok.save(df, GROK_FILE)
+        self.state["last_grok"] = str(now_local.date())
+        log(f"Grok ({model}) made {len(rows)} paper calls: " + ", ".join(f"{r['symbol']} {r['call']}" for r in rows))
+
+    def price_at(self, symbol: str, when: pd.Timestamp) -> float | None:
+        """Close of the first hourly candle ending at or after `when` (for scoring Grok's calls)."""
+        bars = self.market.bars(symbol, "H1", 400)
+        later = bars[bars.index + pd.Timedelta(hours=1) >= when]
+        return float(later["close"].iloc[0]) if len(later) else None
+
+    def cmd_grok(self, args=None) -> str:
+        df = grok.load(GROK_FILE)
+        if df.empty:
+            return ("🧪 Grok experiment: no calls yet. It asks Grok once a day (paper only, never traded); "
+                    "it needs XAI_API_KEY in .env.")
+        last = df[df["time"] == df["time"].max()]
+        lines = [f"🧪 <b>Grok's latest calls</b> ({last['time'].iloc[0].tz_convert(self.tz):%a %d %b %H:%M}, "
+                 f"paper only, <b>not signals</b>):"]
+        lines += [f"• {r.symbol}: {r.call.upper()} ({r.confidence}%) {html.escape(str(r.reason))}" for r in last.itertuples()]
+        return "\n".join(lines + [""] + grok.report_lines(df))
 
     def weekly_report(self):
         now = pd.Timestamp.now(tz=self.tz)
@@ -660,16 +731,16 @@ class Bot:
             log(f"market briefing skipped: {e}")
 
     def cmd_markets(self, args=None) -> str:
-        """Each market's trend, how jumpy it is, and how near the tested trend rule is to a signal."""
+        """For each market the bot trades: trend and the price that would trigger its next signal."""
         if not self.market_ready():
             return "Prices unavailable right now."
-        watched = {s for src in self.sources for s in src.symbols}
-        p = self.cfg["strategies"]["daily_trend"]
+        traded = [s for src in self.sources if src.strategy == "daily_trend" for s in src.symbols]
         lines = []
-        for sym in [s for s in self.all_symbols if s in self.specs]:
+        for sym in dict.fromkeys(s for s in traded if s in self.specs):
+            src = next(x for x in self.sources if sym in x.symbols)
+            days = {**self.cfg["strategies"]["daily_trend"], **src.params}["entry_days"]
             try:
-                line = market_line(sym, self.market.bars(sym, "D1", 160), self.specs[sym], p["entry_days"],
-                                   p["atr_period"], watched=sym in watched)
+                line = market_line(sym, self.market.bars(sym, "D1", 160), self.specs[sym], days)
             except FeedError:
                 line = None
             if line:
@@ -705,7 +776,7 @@ class Bot:
         for name, job in (("crowd", self.record_crowd), ("headlines", self.check_headlines),
                           ("signals", self.scan_signals), ("follow-ups", self.follow_signals),
                           ("mt5", None if self.cloud else self.monitor), ("outbox", self.flush_outbox),
-                          ("brief", self.morning_brief),
+                          ("brief", self.morning_brief), ("grok", self.grok_daily),
                           ("report", self.weekly_report), ("history", self.save_history)):
             if job is not None:
                 self.guarded(name, job)

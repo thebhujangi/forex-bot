@@ -243,3 +243,18 @@ def test_too_small_to_split_stays_one_order():
     from forexbot.signals import order_lines
     lines = " ".join(order_lines(intraday_sig(), BTC, 100, 1.0))     # $1 risk: half is under the minimum lot
     assert "2 orders" not in lines and "Too few lots to split" in lines
+
+
+def test_grok_calls_are_scored_after_24h_against_coin_flip_and_trend():
+    from forexbot import grok
+    t0 = pd.Timestamp.now(tz="UTC") - pd.Timedelta(hours=30)
+    df = pd.DataFrame([dict(time=t0, symbol="BTCUSD", price=100.0, call=c, confidence=60, reason="x", model="m",
+                            trend=tr, price_24h=None, move_pct=None, correct=None, trend_correct=None)
+                       for c, tr in [("up", "up"), ("down", "up"), ("none", "down")]])
+    df = grok.score(df, lambda sym, when: 105.0)                     # price rose 5% in 24h
+    assert list(df["correct"]) == [True, False, None] and list(df["trend_correct"]) == [True, True, False]
+    text = "\n".join(grok.report_lines(df))
+    assert "3 calls scored, Grok gave a view on 2: right 1 (50%)" in text and "coin flip" in text
+    assert "Simply following the trend was right 67%" in text
+    fresh = df.copy(); fresh["time"] = pd.Timestamp.now(tz="UTC"); fresh["price_24h"] = None
+    assert grok.score(fresh, lambda s, w: 1.0)["price_24h"].isna().all()      # not 24h old yet: left alone
