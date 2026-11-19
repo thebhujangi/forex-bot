@@ -38,6 +38,8 @@ def generate(bars: pd.DataFrame, symbol: str, params: dict, spec: SymbolSpec) ->
     if params.get("trend_ema"):
         ema = c.ewm(span=params["trend_ema"], adjust=False).mean()
         long_ok, short_ok = c > ema, c < ema
+    if params.get("sides") == "long":           # e.g. company shares, which drift up over time
+        short_ok = pd.Series(False, index=bars.index)
 
     above = c > upper
     below = c < lower

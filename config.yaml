@@ -70,6 +70,18 @@ signals:
     # +0.28R in-sample, 23 trades +0.65R unseen, +0.36R at 2x costs; group t = 1.8 (< the strict 3.0
     # bar), so labelled promising. Per market (all years): XAU +0.42R, XBR +0.62R, XTI +0.47R, XAG -0.05R.
     # Silver kept: the group was the unit tested (dropping it after seeing results = overfitting).
+    # Random-day control (2026-11-20, same stops, same number of trades, random entry days and
+    # directions, 20 tries): random matched the breakout only 5% (2019-23) / 15% (2024-26) of the
+    # time -> the breakout timing is real here. Crypto: 60% / 10% (partly just the 2019-23 bull run).
+
+  # NOT ADDED 2026-11-20: every other Elev8 market (scripts/research_all.py, 66 markets that are
+  # fully tradeable with history and low costs; 29 shares are close-only on Elev8, most coins and
+  # the extra forex crosses have only one year of history, the exotics are close-only).
+  #   US shares (57) buy-only "passed" (20/55/100-day: +0.26/+0.22/+0.25R, t 5.0/3.7/3.8), BUT buying
+  #   the same shares on RANDOM days with the same stops made +0.30R: the result is just US shares
+  #   (today's survivors) rising 2019-26, not a signal. Shares outside the US (9): 20-day buy-only
+  #   +0.27/+0.23R, random +0.30/+0.44R -> same. Both directions lost. Other coins (LTC/BCH/AAVE):
+  #   -0.2 to -0.4R. Natural gas: -0.5 to -0.8R on unseen 2024-26.
 
   # SWITCHED OFF 2026-10-22 (user: "tested winning signals" only). Kept here as a record.
   # fx_gold_trend (daily_trend on XAUUSD/EURUSD/GBPUSD): EUR/GBP -0.41R on unseen 2024-26;
