@@ -270,8 +270,11 @@ class Bot:
         self.save_history()
         hist = pd.read_csv(HISTORY_FILE) if HISTORY_FILE.exists() else pd.DataFrame(columns=HISTORY_COLUMNS)
         now = pd.Timestamp.now(tz="UTC")
-        account = None
+        account = positions = None
         if self.ensure_mt5():
+            from forexbot import mt5_client as m
+            positions = [f"• {p.side.upper()} {p.symbol} {p.lots:g} lots @ {self.specs[p.symbol].fmt(p.open_price)} · "
+                         f"${p.profit:+,.2f}" for p in m.open_positions(self.mt5, list(self.specs))]
             deals = self.mt5.history_deals_get((now - pd.Timedelta(days=7)).to_pydatetime(),
                                                (now + pd.Timedelta(days=1)).to_pydatetime()) or ()
             closing = [d for d in deals if d.entry == self.mt5.DEAL_ENTRY_OUT]
@@ -282,7 +285,7 @@ class Bot:
         targets = self.cfg.get("targets") or {}
         text = weekly_report(hist, open_sigs, now, account, per_r=balance * risk / 100,
                              start_balance=balance, risk_pct=risk, target_pct=targets.get("monthly_return_pct"),
-                             tested_pct=targets.get("tested_monthly_pct"), tested={s.name for s in self.sources if not s.experimental})
+                             tested_pct=targets.get("tested_monthly_pct"), tested={s.name for s in self.sources if not s.experimental}, positions=positions)
         if (self.cfg.get("grok") or {}).get("enabled") and GROK_FILE.exists():
             text += "\n\n" + "\n".join(grok.report_lines(grok.load(GROK_FILE)))
         return text

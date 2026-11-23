@@ -3,7 +3,7 @@ import pytest
 
 from forexbot.instruments import SymbolSpec
 from forexbot.models import Signal
-from forexbot.signals import (Source, follow, follow_replay, format_signal, new_signals, reversal_alert, track,
+from forexbot.signals import (HISTORY_COLUMNS, Source, follow, follow_replay, format_signal, new_signals, reversal_alert, track,
                               weekly_report)
 
 BTC = SymbolSpec("BTCUSD", "BTCUSD", 2, 1, "BTC", "USD")
@@ -79,6 +79,17 @@ def test_weekly_report_counts_and_totals():
     assert "Crypto trend (tested): 2 trades · 1 won, 1 lost · +1.5x risk ≈ <b>+$150</b>" in text
     assert "Placed:</b> 1 trade · 1 won, 0 lost · +2.5x" in text and "-0.4x risk now" in text
     assert "$+120.50" in text
+
+
+def test_report_lists_real_mt5_positions_not_skipped_signals():
+    now = pd.Timestamp("2026-11-23 03:00", tz="UTC")
+    skipped = track(sig(created=pd.Timestamp("2026-10-12 21:00", tz="UTC")), SRC)
+    skipped.status = "skipped"
+    empty = pd.DataFrame(columns=HISTORY_COLUMNS)
+    text = weekly_report(empty, [(skipped, 0.3)], now, positions=["• SELL XTIUSD 0.01 lots @ 83.86 · $-2.50"])
+    assert "Open in your MT5 now:</b>\n• SELL XTIUSD 0.01 lots @ 83.86" in text
+    assert "0.3x risk now" not in text and "12 Oct" not in text              # skipped: not listed as open
+    assert "• No open trades." in weekly_report(empty, [], now, positions=[])
 
 
 def test_report_handles_mixed_time_formats_and_skips_unfilled_orders():

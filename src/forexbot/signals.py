@@ -486,10 +486,12 @@ def target_lines(traded: pd.DataFrame, now: pd.Timestamp, target_pct: float, tes
 def weekly_report(history: pd.DataFrame, open_signals: list[tuple[Tracked, float | None]],
                   now: pd.Timestamp, account_week: dict | None = None, per_r: float = 100.0,
                   start_balance: float = 10_000, risk_pct: float = 1.0, target_pct: float | None = None,
-                  tested_pct: float | None = None, tested: set[str] | None = None) -> str:
+                  tested_pct: float | None = None, tested: set[str] | None = None,
+                  positions: list[str] | None = None) -> str:
     """Short report card: would following the signals have made money? Only orders that actually
     triggered count (pending orders that never filled cost nothing). per_r = dollars per 1x risk.
-    With target_pct: a monthly scoreboard of the tested feeds (names in `tested`) vs the target."""
+    With target_pct: a monthly scoreboard of the tested feeds (names in `tested`) vs the target.
+    positions: one line per trade really open in MT5 (None = MT5 not readable here)."""
     week_ago = now - pd.Timedelta(days=7)
     h = history.copy()
     if "outcome" not in h:
@@ -519,12 +521,21 @@ def weekly_report(history: pd.DataFrame, open_signals: list[tuple[Tracked, float
     if never:
         lines.append(f"{never} pending order(s) never triggered: no gain, no loss.")
 
+    # Only what you really hold: MT5's own list. Skipped signals are still scored above, never listed here.
     live = [(t, cur) for t, cur in open_signals if t.fill_notified or t.horizon == "LONG-TERM"]
-    if live:
-        lines += ["", "<b>Still open:</b>"]
-        for t, cur in live[:8]:
-            lines.append(f"• {t.side.upper()} {t.symbol} since {pd.Timestamp(t.created):%d %b}"
-                         + (f": {cur:+.1f}x risk now" if cur is not None else ""))
+    if positions is not None:
+        lines += ["", "<b>Open in your MT5 now:</b>"] + (positions or ["• No open trades."])
+    else:
+        mine = [(t, cur) for t, cur in live if t.status == "placed"]
+        if mine:
+            lines += ["", "<b>Marked ✅ Placed and still open:</b>"]
+            lines += [f"• {t.side.upper()} {t.symbol} since {pd.Timestamp(t.created):%d %b}"
+                      + (f": {cur:+.1f}x risk now" if cur is not None else "") for t, cur in mine[:8]]
+    waiting = [(t, cur) for t, cur in live if t.status == "new"]
+    if waiting:
+        lines += ["", "<b>Signals sent, not placed (no answer yet):</b>"]
+        lines += [f"• {t.side.upper()} {t.symbol} sent {pd.Timestamp(t.created):%d %b}"
+                  + (f": {cur:+.1f}x risk now" if cur is not None else "") for t, cur in waiting[:8]]
     if account_week:
         lines += ["", f"<b>Your MT5 demo this week:</b> {account_week['trades']} closed trade(s), "
                       f"${account_week['profit']:+,.2f} · balance ${account_week['balance']:,.2f}"]
