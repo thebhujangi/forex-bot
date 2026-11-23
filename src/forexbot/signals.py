@@ -221,9 +221,11 @@ def follow_replay(t: Tracked, bars: pd.DataFrame, cost, spec: SymbolSpec,
     for e in real[t.seen_exits:]:
         r_now = sig.direction * (e.price - res.fill_price) / risk
         text = {
-            "tp1": f"💰 <b>First target hit: {name}</b> at {f(e.price)}. Your first-target order should have "
-                   f"closed itself in MT5 (if not, close it now). On the other order, move the stop loss to your "
-                   f"entry so it can't lose.\nNew stop loss: {copyable(f(res.fill_price))}",
+            "tp1": (f"🎯 <b>Target hit: {name}</b> at {f(e.price)}. MT5 should have closed the trade; if not, "
+                    f"close it now." if sig.tp2 is None else
+                    f"💰 <b>First target hit: {name}</b> at {f(e.price)}. Your first-target order should have "
+                    f"closed itself in MT5 (if not, close it now). On the other order, move the stop loss to your "
+                    f"entry so it can't lose.\nNew stop loss: {copyable(f(res.fill_price))}"),
             "tp2": f"🎯 <b>Final target hit: {name}</b> at {f(e.price)}. MT5 should have closed your last order; "
                    f"if not, close it now.",
             "sl": (f"🛑 <b>Stopped out: {name}</b> at {f(e.price)}." if surely(e) else
@@ -441,7 +443,7 @@ def history_row(t: Tracked) -> dict:
 FEED_NAMES = {"crypto_trend": "Crypto trend (tested)", "commodity_trend": "Metals & oil trend (promising)",
               "fx_gold_trend": "⚗️ Gold/FX trend",
               "x_crypto_breakout": "⚗️ Crypto breakout", "x_crypto_pullback": "⚗️ Crypto pullback",
-              "x_fx_ny_range": "⚗️ Gold/FX NY range"}
+              "x_fx_ny_range": "⚗️ Gold/FX NY range", "x_grok": "⚗️ Grok AI trades"}
 
 
 def _money(r: float, per_r: float) -> str:

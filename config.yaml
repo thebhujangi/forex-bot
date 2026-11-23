@@ -131,6 +131,26 @@ grok:
   symbols: [BTCUSD, ETHUSD, XRPUSD, XAUUSD]
   time: "08:10"                # local time, after the morning message
 
+# ⚗️ Grok AI trade signals (2026-11-23, user's request: real trades, no cap on how many). Every hour
+# Grok sees the live Elev8 candles and proposes exact trades; the bot's guard rules
+# (forexbot/grok_trades.py) decide what is sent. UNTESTED: judged live on demo. 1% risk like the others.
+grok_trades:
+  enabled: true
+  model: grok-4.7
+  every_minutes: 60
+  symbols: [BTCUSD, ETHUSD, XRPUSD, XAUUSD, XAGUSD, XBRUSD, XTIUSD, EURUSD, GBPUSD]
+  price_in_per_m: 2.0          # US$ per million tokens (xAI /v1/language-models, grok-4.7, 2026-11-23)
+  price_out_per_m: 6.0
+  daily_budget_usd: 1.0        # no more calls that day once spent (expected ~US$0.50/day)
+  pause_after_trades: 10       # pause once 10+ finished trades average below -0.2x risk...
+  pause_below_r: -0.2
+  pause_loss_r: 5              # ...or the Grok trades have lost 5x risk (~5% of the account) in total
+  rules: {with_trend_only: true, min_reward_risk: 1.5, min_stop_atr: 0.5, max_stop_atr: 3.0,
+          min_stop_spreads: 10, min_confidence: 60, news_minutes: 30, max_valid_minutes: 240,
+          max_hold_hours: 24, max_entry_atr: 1.5}
+  tier: "⚗️ EXPERIMENTAL: Grok AI's own trade, untested (no honest backtest exists for an AI model)"
+  stats: "Grok reads the live 1-hour and 15-minute candles every hour. The bot only sends trades with the daily trend, a target at least 1.5x the stop and no big news due. Demo only."
+
 # Monthly growth target shown in the report card (actual vs target). A target, not a forecast:
 # no tested strategy reaches 2% a month at sensible risk (see crypto_trend notes above).
 targets:

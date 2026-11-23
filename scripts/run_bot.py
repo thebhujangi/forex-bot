@@ -25,6 +25,7 @@ from forexbot import DATA_DIR, STATE_DIR
 from forexbot import headlines as hl
 from forexbot import myfxbook as fxb
 from forexbot import grok
+from forexbot import grok_trades as gt
 from forexbot.analysis import briefing, levels, market_line
 from forexbot.assistant import MonitorContext, check_positions, position_size
 from forexbot.config import load_config
@@ -52,10 +53,13 @@ I send signals and warnings. I never place or close trades myself.
 I watch your MT5 account: trades you open are linked to my signals automatically, and you get a
 ✅ message the moment you close one. I tell you when to move your stop, when it's hit, and if a
 trend reverses.
+⚗️ EXPERIMENTAL: intraday feeds that failed testing, and Grok AI trades (Grok looks at your
+markets every hour; the bot only sends trades that pass its safety rules). Demo practice only.
 
 <b>Commands</b>
 /markets: the price each market needs to reach for its next signal
-/grok: Grok AI's daily calls and how often they're right (experiment, never traded)
+/grok: how Grok's trades are doing vs what Grok costs, plus its daily calls
+/grok off, /grok on: stop or restart Grok's trade signals
 /signals: signals I'm following right now
 /report: report card (also sent every Sunday 8pm)
 /headlines: latest news about your markets
@@ -108,6 +112,11 @@ class Bot:
         self.mt5 = None
         self.names: dict[str, str] = {}
         self.sources = [Source(**s) for s in cfg.get("signals", [])]
+        gt_cfg = cfg.get("grok_trades") or {}
+        # Grok's trades are made by grok_trades(), not by a strategy, so this feed isn't in self.sources.
+        self.grok_src = Source(name="x_grok", strategy="grok", symbols=gt_cfg.get("symbols", []), horizon="INTRADAY",
+                               tier=gt_cfg.get("tier", "⚗️ EXPERIMENTAL"), stats=gt_cfg.get("stats", ""),
+                               experimental=True)
         self.state = self._load_state()
         self.tracked = [from_dict(d) for d in self.state.get("tracked", [])]
         self.headlines: list = []
@@ -286,6 +295,8 @@ class Bot:
         text = weekly_report(hist, open_sigs, now, account, per_r=balance * risk / 100,
                              start_balance=balance, risk_pct=risk, target_pct=targets.get("monthly_return_pct"),
                              tested_pct=targets.get("tested_monthly_pct"), tested={s.name for s in self.sources if not s.experimental}, positions=positions)
+        if self.grok_trade_lines(hist):
+            text += "\n\n" + "\n".join(self.grok_trade_lines(hist))
         if (self.cfg.get("grok") or {}).get("enabled") and GROK_FILE.exists():
             text += "\n\n" + "\n".join(grok.report_lines(grok.load(GROK_FILE)))
         return text
@@ -338,6 +349,92 @@ class Bot:
         self.state["last_grok"] = str(now_local.date())
         log(f"Grok ({model}) made {len(rows)} paper calls: " + ", ".join(f"{r['symbol']} {r['call']}" for r in rows))
 
+    def grok_trades(self):
+        """Every hour, just after the hourly candle closes: Grok proposes trades on the live Elev8
+        candles, the guard rules in forexbot/grok_trades.py filter them, the rest go out as ⚗️ Grok
+        signals and are followed like any other. Pauses itself when the results are clearly losing,
+        and stops for the day at the spending limit."""
+        g = self.cfg.get("grok_trades") or {}
+        if self.cloud or not g.get("enabled") or self.state.get("grok_paused") or not self.market_ready():
+            return
+        now = pd.Timestamp.now(tz="UTC")
+        slot = now.floor(f"{g.get('every_minutes', 60)}min")
+        if self.state.get("grok_trades_slot") == slot.isoformat() or now - slot < pd.Timedelta(minutes=1):
+            return
+        self.state["grok_trades_slot"] = slot.isoformat()
+        hist = pd.read_csv(HISTORY_FILE) if HISTORY_FILE.exists() else pd.DataFrame(columns=HISTORY_COLUMNS)
+        why = gt.breaker(hist, self.state.get("grok_since"), g.get("pause_after_trades", 10),
+                         g.get("pause_below_r", -0.2), g.get("pause_loss_r", 5))
+        if why:
+            self.state["grok_paused"] = True
+            self.queue(f"grok_paused:{now:%Y%m%d%H}",
+                       f"⏸️ <b>Grok trade signals paused.</b> {why}, so it's losing you money. Trades already "
+                       f"sent are still followed. Send <code>/grok on</code> to start it again.")
+            log(f"Grok trades paused: {why}")
+            return
+        key = load_env().get("XAI_API_KEY")
+        spend = self.state.setdefault("grok_spend", {})
+        day = str(now.tz_convert(self.tz).date())
+        if not key or spend.get(day, 0) >= g.get("daily_budget_usd", 1.0):
+            return
+        busy = {t.symbol for t in self.tracked if t.active and t.source == self.grok_src.name}
+        snaps = {}
+        for s in [s for s in g.get("symbols", []) if s in self.specs and s not in busy]:
+            if s not in CRYPTO and not fx_market_open(now):
+                continue
+            try:
+                d1, h1, m15 = (self.market.bars(s, tf, n) for tf, n in (("D1", 160), ("H1", 40), ("M15", 20)))
+            except FeedError as e:
+                log(f"Grok trades: no prices for {s}: {e}")
+                continue
+            bid, ask = self.market.price(s, "buy"), self.market.price(s, "sell")
+            lv = levels(d1)
+            if bid and ask and lv and len(h1) >= 20:
+                snaps[s] = gt.snapshot(s, self.specs[s], h1, m15, d1, bid, ask, lv["trend"])
+        if not snaps:
+            return
+        try:
+            events = fetch_events()
+        except Exception:
+            events = []
+        soon = [f"{e.time.tz_convert('UTC'):%a %H:%M} UTC {e.currency} {e.title}"
+                for e in relevant(events, list(snaps), now, now + pd.Timedelta(hours=12))]
+        props, usage = gt.ask(key, g.get("model", "grok-4.7"), gt.build_prompt(list(snaps.values()), soon, now))
+        cost = gt.cost_usd(usage, g.get("price_in_per_m", 2.0), g.get("price_out_per_m", 6.0))
+        spend[day] = spend.get(day, 0) + cost
+        self.state["grok_spend"] = {d: v for d, v in spend.items() if d >= str((now - pd.Timedelta(days=60)).date())}
+        self.state["grok_spend_total"] = self.state.get("grok_spend_total", 0) + cost
+        sent, held = [], []
+        for p in props:
+            snap = snaps.get(p["symbol"])
+            if snap is None:
+                continue
+            sig, reason = gt.to_signal(p, snap, self.specs[p["symbol"]], events, now, g.get("rules"))
+            if sig is None:
+                if reason != "no trade":
+                    held.append(f"{p['symbol']} {p['action']} ({reason})")
+                continue
+            self.send_signals(self.grok_src, sig.symbol, [sig], events)
+            sent.append(f"{sig.symbol} {sig.side}")
+        log(f"Grok trades: looked at {len(snaps)} markets, sent {', '.join(sent) or 'none'}"
+            + (f"; held back {'; '.join(held)}" if held else "")
+            + f"; cost ${cost:.3f} (today ${spend[day]:.2f}, tokens {usage.get('prompt_tokens')}/{usage.get('completion_tokens')})")
+
+    def grok_trade_lines(self, hist: pd.DataFrame) -> list[str]:
+        """Does Grok pay for itself? Its trades' result in dollars vs what the calls cost."""
+        g = self.cfg.get("grok_trades") or {}
+        if not g.get("enabled"):
+            return []
+        done = gt.closed_trades(hist)
+        per_r = self.balance() * self.cfg["risk"]["risk_per_trade_pct"] / 100
+        won = per_r * float(done["result_r"].sum()) if len(done) else 0.0
+        spent = self.state.get("grok_spend_total", 0.0)
+        status = "⏸️ paused (send /grok on)" if self.state.get("grok_paused") else "▶️ on, every hour"
+        return ["⚗️ <b>Grok AI trades</b> (" + status + ")",
+                f"• {len(done)} finished: {float(done['result_r'].sum()) if len(done) else 0:+.1f}x risk ≈ ${won:+,.0f}; "
+                f"Grok's cost so far ${spent:,.2f} → net <b>${won - spent:+,.2f}</b>",
+                "<i>Untested: judge after 50+ trades. It pauses itself if it's clearly losing.</i>"]
+
     def price_at(self, symbol: str, when: pd.Timestamp) -> float | None:
         """Close of the first hourly candle ending at or after `when` (for scoring Grok's calls)."""
         bars = self.market.bars(symbol, "H1", 400)
@@ -345,13 +442,23 @@ class Bot:
         return float(later["close"].iloc[0]) if len(later) else None
 
     def cmd_grok(self, args=None) -> str:
+        """/grok: Grok's trades and daily calls. /grok on | off: start or stop Grok's trade signals."""
+        if args and args[0].lower() in ("on", "off"):
+            on = args[0].lower() == "on"
+            self.state["grok_paused"] = not on
+            if on:      # the pause rule counts from here, so a restart gets a fair new run
+                self.state["grok_since"] = pd.Timestamp.now(tz="UTC").isoformat()
+            log(f"Grok trades switched {'on' if on else 'off'} by you")
+            return ("▶️ Grok trade signals are on: Grok looks at your markets every hour." if on else
+                    "⏸️ Grok trade signals are off. Trades already sent are still followed. /grok on restarts them.")
+        hist = pd.read_csv(HISTORY_FILE) if HISTORY_FILE.exists() else pd.DataFrame(columns=HISTORY_COLUMNS)
+        lines = self.grok_trade_lines(hist)
         df = grok.load(GROK_FILE)
         if df.empty:
-            return ("🧪 Grok experiment: no calls yet. It asks Grok once a day (paper only, never traded); "
-                    "it needs XAI_API_KEY in .env.")
+            return "\n".join(lines) or "🧪 Grok: nothing yet (it needs XAI_API_KEY in .env)."
         last = df[df["time"] == df["time"].max()]
-        lines = [f"🧪 <b>Grok's latest calls</b> ({last['time'].iloc[0].tz_convert(self.tz):%a %d %b %H:%M}, "
-                 f"paper only, <b>not signals</b>):"]
+        lines += ["", f"🧪 <b>Grok's latest daily calls</b> ({last['time'].iloc[0].tz_convert(self.tz):%a %d %b %H:%M}, "
+                      f"paper only):"]
         lines += [f"• {r.symbol}: {r.call.upper()} ({r.confidence}%) {html.escape(str(r.reason))}" for r in last.itertuples()]
         return "\n".join(lines + [""] + grok.report_lines(df))
 
@@ -662,17 +769,21 @@ class Bot:
                            for t in self.tracked):
                         log(f"repeat {sigs[0].side} {sym} {src.name} not sent: one is already open")
                         continue
-                    crowd = fxb.latest().get(sym)
-                    crowd = fxb.describe(crowd) if crowd else None
-                    args = (src, self.specs[sym], self.balance(), self.cfg["risk"]["risk_per_trade_pct"], events, self.tz, crowd)
-                    text = format_pair(sigs, *args) if len(sigs) == 2 else format_signal(sigs[0], *args)
-                    new = [track(s, src) for s in sigs]
-                    ids = ",".join(t.id for t in new)
-                    self.tg.send(text, buttons=copy_buttons(text)
-                                 + [[("✅ Placed", f"placed:{ids}"), ("❌ Skipped", f"skip:{ids}")]])
-                    self.tracked += new                   # only after Telegram has it
-                    log(f"signal sent {ids} {src.name} {sym} {'/'.join(s.side for s in sigs)}")
+                    self.send_signals(src, sym, sigs, events)
                 self.state["last_signal_bar"][key] = last_close.isoformat()
+
+    def send_signals(self, src: Source, sym: str, sigs: list, events: list):
+        """One message (a linked buy/sell pair counts as one) with Placed/Skipped buttons, then follow it."""
+        crowd = fxb.latest().get(sym)
+        crowd = fxb.describe(crowd) if crowd else None
+        args = (src, self.specs[sym], self.balance(), self.cfg["risk"]["risk_per_trade_pct"], events, self.tz, crowd)
+        text = format_pair(sigs, *args) if len(sigs) == 2 else format_signal(sigs[0], *args)
+        new = [track(s, src) for s in sigs]
+        ids = ",".join(t.id for t in new)
+        self.tg.send(text, buttons=copy_buttons(text)
+                     + [[("✅ Placed", f"placed:{ids}"), ("❌ Skipped", f"skip:{ids}")]])
+        self.tracked += new                   # only after Telegram has it
+        log(f"signal sent {ids} {src.name} {sym} {'/'.join(s.side for s in sigs)}")
 
     def follow_signals(self):
         """Update open signals: every few seconds on a PC with MT5 (cloud: intraday every 5 min,
@@ -779,7 +890,7 @@ class Bot:
         for name, job in (("crowd", self.record_crowd), ("headlines", self.check_headlines),
                           ("signals", self.scan_signals), ("follow-ups", self.follow_signals),
                           ("mt5", None if self.cloud else self.monitor), ("outbox", self.flush_outbox),
-                          ("brief", self.morning_brief), ("grok", self.grok_daily),
+                          ("brief", self.morning_brief), ("grok", self.grok_daily), ("grok-trades", self.grok_trades),
                           ("report", self.weekly_report), ("history", self.save_history)):
             if job is not None:
                 self.guarded(name, job)
