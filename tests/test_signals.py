@@ -258,3 +258,29 @@ def test_grok_calls_are_scored_after_24h_against_coin_flip_and_trend():
     assert "Simply following the trend was right 67%" in text
     fresh = df.copy(); fresh["time"] = pd.Timestamp.now(tz="UTC"); fresh["price_24h"] = None
     assert grok.score(fresh, lambda s, w: 1.0)["price_24h"].isna().all()      # not 24h old yet: left alone
+
+
+def test_every_configured_feed_loads_and_experimental_ones_are_marked():
+    import yaml
+    from forexbot import PROJECT_ROOT
+    with open(PROJECT_ROOT / "config.yaml", encoding="utf-8") as f:
+        cfg = yaml.safe_load(f)
+    feeds = [Source(**s) for s in cfg["signals"]]
+    assert all(f.strategy in cfg["strategies"] for f in feeds)
+    assert {f.name for f in feeds if f.experimental} == {"fx_gold_trend", "x_crypto_breakout",
+                                                        "x_crypto_pullback", "x_fx_ny_range"}
+    assert all("⚗️" in f.tier for f in feeds if f.experimental)
+    gold = [f.name for f in feeds if f.strategy == "daily_trend" and "XAUUSD" in f.symbols]
+    assert gold == ["commodity_trend"]                               # no duplicate gold trend signals
+
+
+def test_grok_calls_read_back_from_csv_can_be_scored(tmp_path):
+    from forexbot import grok
+    t0 = pd.Timestamp.now(tz="UTC") - pd.Timedelta(hours=30)
+    df = pd.DataFrame([dict(time=t0, symbol="BTCUSD", price=100.0, call="up", confidence=60, reason="x",
+                            model="m", trend="up", price_24h=None, move_pct=None, correct=None, trend_correct=None)])
+    grok.save(df, tmp_path / "calls.csv")                            # empty result columns come back as float
+    df = grok.score(grok.load(tmp_path / "calls.csv"), lambda sym, when: 105.0)
+    assert list(df["correct"]) == [True] and list(df["trend_correct"]) == [True]
+    grok.save(df, tmp_path / "calls.csv")
+    assert "right 1 (100%)" in "\n".join(grok.report_lines(grok.load(tmp_path / "calls.csv")))

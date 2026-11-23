@@ -28,6 +28,7 @@ class Source:
     tier: str               # e.g. "Proven", "Experimental"
     stats: str              # one plain-English line about the backtest
     params: dict = field(default_factory=dict)
+    experimental: bool = False  # ⚗️ failed testing: sent for demo practice, kept out of the target scoreboard
 
 
 @dataclass
@@ -438,7 +439,7 @@ def history_row(t: Tracked) -> dict:
 
 
 FEED_NAMES = {"crypto_trend": "Crypto trend (tested)", "commodity_trend": "Metals & oil trend (promising)",
-              "fx_gold_trend": "Gold/FX trend",
+              "fx_gold_trend": "⚗️ Gold/FX trend",
               "x_crypto_breakout": "⚗️ Crypto breakout", "x_crypto_pullback": "⚗️ Crypto pullback",
               "x_fx_ny_range": "⚗️ Gold/FX NY range"}
 
@@ -528,7 +529,8 @@ def weekly_report(history: pd.DataFrame, open_signals: list[tuple[Tracked, float
         lines += ["", f"<b>Your MT5 demo this week:</b> {account_week['trades']} closed trade(s), "
                       f"${account_week['profit']:+,.2f} · balance ${account_week['balance']:,.2f}"]
     lines += ["", "<i>Live feeds: crypto trend (tested, about +0.35x risk per trade) and, since 19 Nov, metals & "
-                  "oil trend (promising). The ⚗️ feeds were switched off on 22 Oct after failing testing. Your MT5 "
+                  "oil trend (promising). The ⚗️ feeds failed testing: off from 22 Oct, back on 23 Nov for demo "
+                  "practice only, and not counted in the monthly target. Your MT5 "
                   "history is the final word on real results.</i>"]
     return "\n".join(lines)
 

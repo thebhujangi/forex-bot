@@ -46,8 +46,8 @@ bot:
   check_seconds: 30           # cloud copy: how often it looks (free price APIs are rate-limited)
   live_check_seconds: 2        # PC with MT5: looks at Elev8's prices every 2 seconds
 
-# Signal feeds the bot sends. Only strategies that survived testing belong here.
-# (No INTRADAY feed: every intraday setup tested so far loses after costs.)
+# Signal feeds the bot sends. Tested/promising feeds first; the ⚗️ experimental ones (failed
+# testing, demo practice only, experimental: true) are at the end.
 signals:
   - name: crypto_trend
     strategy: daily_trend
@@ -83,12 +83,44 @@ signals:
   #   +0.27/+0.23R, random +0.30/+0.44R -> same. Both directions lost. Other coins (LTC/BCH/AAVE):
   #   -0.2 to -0.4R. Natural gas: -0.5 to -0.8R on unseen 2024-26.
 
-  # SWITCHED OFF 2026-10-22 (user: "tested winning signals" only). Kept here as a record.
-  # fx_gold_trend (daily_trend on XAUUSD/EURUSD/GBPUSD): EUR/GBP -0.41R on unseen 2024-26;
-  #   gold +0.13R but only 17 trades in 5 years: too few to call.
-  # x_crypto_breakout (london_breakout BTC/ETH): -0.04R in-sample, -$326 live.
-  # x_crypto_pullback (trend_pullback M15 BTC/ETH): -0.13R over 3,663 trades 2019-26.
-  # x_fx_ny_range (london_breakout NY 08:00-09:30 XAU/EUR/GBP): -0.16R in-sample, -$392 live.
+  # ---- ⚗️ EXPERIMENTAL feeds: off 2026-10-22 (user: "tested winning signals" only), back on
+  # 2026-11-23 at the user's request for demo practice. None passed testing:
+  # fx_gold_trend: EUR/GBP -0.41R on unseen 2024-26. Gold dropped from it: commodity_trend already
+  #   sends the same daily_trend signal on XAUUSD, so it would arrive twice.
+  # x_crypto_breakout (BTC/ETH): -0.04R in-sample, -$326 live (Oct).
+  # x_crypto_pullback (M15 BTC/ETH): -0.13R over 3,663 trades 2019-26.
+  # x_fx_ny_range (XAU/EUR/GBP): -0.16R in-sample, -$392 live (Oct).
+  - name: fx_gold_trend
+    strategy: daily_trend
+    symbols: [EURUSD, GBPUSD]
+    horizon: LONG-TERM
+    tier: "⚗️ EXPERIMENTAL, failed testing (unseen 2024-26: about -0.4x risk per trade)"
+    stats: "Daily trend breakout on EUR/USD and GBP/USD. Demo only. Testing says this loses on average."
+    experimental: true
+  - name: x_crypto_breakout
+    strategy: london_breakout
+    symbols: [BTCUSD, ETHUSD]
+    horizon: INTRADAY
+    tier: "⚗️ EXPERIMENTAL, unproven (2019-23 test: about -0.04x risk per trade)"
+    stats: "Breakout of the quiet overnight range when London opens. Demo only. Testing says this slightly loses on average."
+    experimental: true
+  - name: x_crypto_pullback
+    strategy: trend_pullback
+    symbols: [BTCUSD, ETHUSD]
+    horizon: INTRADAY
+    tier: "⚗️ EXPERIMENTAL, unproven (2019-26 test: about -0.13x risk per trade)"
+    stats: "Buy the dip in an uptrend / sell the bounce in a downtrend on the 15-minute chart. Demo only. Testing says this loses on average."
+    params: {timeframe: M15, max_hold_bars: 32, expiry_bars: 8, cooldown_bars: 8}
+    experimental: true
+  - name: x_fx_ny_range
+    strategy: london_breakout
+    symbols: [XAUUSD, EURUSD, GBPUSD]
+    horizon: INTRADAY
+    tier: "⚗️ EXPERIMENTAL, unproven (2019-23 test: about -0.16x risk per trade)"
+    stats: "Breakout of the 8:00-9:30am New York range (8pm-9:30pm Malaysia), around US data time. Demo only. Testing says this loses on average."
+    params: {timeframe: M15, session_tz: America/New_York, range_start: "08:00", range_end: "09:30",
+             entry_deadline: "12:00", close_time: "15:30", min_range_atr: 0.1, max_range_atr: 0.8}
+    experimental: true
 
 # Grok experiment (started 2026-11-19, user's request): once a day Grok gives an up/down/none call for
 # the next 24 h per market. PAPER ONLY: logged in state/grok_calls.csv and scored vs a coin flip and the

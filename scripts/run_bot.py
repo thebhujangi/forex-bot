@@ -282,7 +282,7 @@ class Bot:
         targets = self.cfg.get("targets") or {}
         text = weekly_report(hist, open_sigs, now, account, per_r=balance * risk / 100,
                              start_balance=balance, risk_pct=risk, target_pct=targets.get("monthly_return_pct"),
-                             tested_pct=targets.get("tested_monthly_pct"), tested={s.name for s in self.sources})
+                             tested_pct=targets.get("tested_monthly_pct"), tested={s.name for s in self.sources if not s.experimental})
         if (self.cfg.get("grok") or {}).get("enabled") and GROK_FILE.exists():
             text += "\n\n" + "\n".join(grok.report_lines(grok.load(GROK_FILE)))
         return text
