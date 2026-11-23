@@ -87,6 +87,8 @@ def save(df: pd.DataFrame, path: Path):
 def score(df: pd.DataFrame, price_at) -> pd.DataFrame:
     """Fill in the result of calls that are 24+ hours old. price_at(symbol, time) -> price or None."""
     now = pd.Timestamp.now(tz="UTC")
+    # read back from the CSV, an all-empty column is float: it can't take True/False
+    df[["correct", "trend_correct"]] = df[["correct", "trend_correct"]].astype(object)
     for i, row in df[df["price_24h"].isna()].iterrows():
         due = pd.Timestamp(row["time"]) + pd.Timedelta(hours=24)
         if now < due:
