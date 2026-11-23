@@ -141,7 +141,8 @@ grok_trades:
   symbols: [BTCUSD, ETHUSD, XRPUSD, XAUUSD, XAGUSD, XBRUSD, XTIUSD, EURUSD, GBPUSD]
   price_in_per_m: 2.0          # US$ per million tokens (xAI /v1/language-models, grok-4.7, 2026-11-23)
   price_out_per_m: 6.0
-  daily_budget_usd: 1.0        # no more calls that day once spent (expected ~US$0.50/day)
+  daily_budget_usd: 1.5        # no more calls that day once spent. First live call 2026-11-23: US$0.048
+                               # (10.5k tokens in + reasoning), so hourly ~US$1.15/day, ~US$35/month
   pause_after_trades: 10       # pause once 10+ finished trades average below -0.2x risk...
   pause_below_r: -0.2
   pause_loss_r: 5              # ...or the Grok trades have lost 5x risk (~5% of the account) in total

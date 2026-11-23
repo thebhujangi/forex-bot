@@ -17,6 +17,7 @@ import json
 import sys
 import time
 import traceback
+import urllib.error
 from datetime import datetime
 
 import pandas as pd
@@ -399,7 +400,13 @@ class Bot:
             events = []
         soon = [f"{e.time.tz_convert('UTC'):%a %H:%M} UTC {e.currency} {e.title}"
                 for e in relevant(events, list(snaps), now, now + pd.Timedelta(hours=12))]
-        props, usage = gt.ask(key, g.get("model", "grok-4.7"), gt.build_prompt(list(snaps.values()), soon, now))
+        try:
+            props, usage = gt.ask(key, g.get("model", "grok-4.7"), gt.build_prompt(list(snaps.values()), soon, now))
+        except urllib.error.HTTPError as e:      # e.g. the xAI credit has run out: say so once a day
+            self.send_once(f"grok_api:{day}", f"⚠️ <b>Grok trade signals can't reach Grok</b> (xAI said: {e.code} "
+                                              f"{html.escape(str(e.reason))}). If your credit has run out, top it up at "
+                                              f"console.x.ai; I'll keep trying every hour.")
+            raise
         cost = gt.cost_usd(usage, g.get("price_in_per_m", 2.0), g.get("price_out_per_m", 6.0))
         spend[day] = spend.get(day, 0) + cost
         self.state["grok_spend"] = {d: v for d, v in spend.items() if d >= str((now - pd.Timedelta(days=60)).date())}
