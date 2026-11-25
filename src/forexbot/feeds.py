@@ -143,7 +143,7 @@ class ApiMarket:
         df.index = pd.DatetimeIndex(pd.to_datetime(df.pop("datetime"), utc=True)).as_unit("ns")
         return df[["open", "high", "low", "close"]].astype(float).sort_index()
 
-    def bars(self, symbol: str, tf: str, count: int) -> pd.DataFrame:
+    def bars(self, symbol: str, tf: str, count: int, confirmed: bool = False) -> pd.DataFrame:
         """Closed candles. Daily candles are built from hourly ones (Elev8 day boundaries)."""
         if tf == "D1":
             h1 = self.bars(symbol, "H1", min(count * 24 + 48, 5000))
@@ -176,8 +176,8 @@ class Mt5Market:
         from . import mt5_client
         self.mt5, self.names, self.server_time, self._m = mt5, names, server_time, mt5_client
 
-    def bars(self, symbol: str, tf: str, count: int) -> pd.DataFrame:
-        return self._m.recent_bars(self.mt5, self.names[symbol], tf, count, self.server_time)
+    def bars(self, symbol: str, tf: str, count: int, confirmed: bool = False) -> pd.DataFrame:
+        return self._m.recent_bars(self.mt5, self.names[symbol], tf, count, self.server_time, confirmed)
 
     def price(self, symbol: str, side: str) -> float | None:
         return self._m.side_price(self.mt5, self.names[symbol], side)

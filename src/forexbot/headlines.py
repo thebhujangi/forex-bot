@@ -18,12 +18,21 @@ FEEDS = {
     "CoinDesk": "https://www.coindesk.com/arc/outboundfeeds/rss/",
     "Cointelegraph": "https://cointelegraph.com/rss",
     "Federal Reserve": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "OilPrice": "https://oilprice.com/rss/main",
+    "CNBC": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+    "MarketWatch": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
 }
+GENERAL = {"OilPrice", "CNBC", "MarketWatch"}   # general news: pushed only with a clear usual effect
 ALWAYS_BIG = {"Federal Reserve"}       # official Fed releases always matter
 
 USD_WORDS = r"fed|fomc|powell|cpi|inflation|non-?farm|payrolls|nfp|treasur|dollar|usd|tariff|recession"
 MARKET_WORDS = {
-    "XAUUSD": r"gold|xau|bullion|precious metal",
+    "XAUUSD": r"\bgold\b|xau|bullion|precious metal",
+    "XAGUSD": r"\bsilver\b|xag|precious metal",
+    "XBRUSD": r"\boil\b|crude|brent|opec|strait of hormuz",
+    "XTIUSD": r"\boil\b|crude|\bwti\b|opec|strait of hormuz",
+    "SPX500": r"s&p|wall street|stock market|us stocks|stock futures",
+    "NAS100": r"nasdaq|tech stocks|wall street|stock futures",
     "EURUSD": r"eur\b|euro|ecb|lagarde|eurozone",
     "GBPUSD": r"gbp|pound|sterling|boe\b|bank of england|bailey",
     "BTCUSD": r"bitcoin|btc",
@@ -61,7 +70,11 @@ def classify(source: str, title: str, watched: list[str]) -> tuple[list[str], bo
     markets = [s for s in watched if s in MARKET_WORDS and re.search(MARKET_WORDS[s], t)]
     if not markets and (source in ALWAYS_BIG or re.search(USD_WORDS, t)):
         markets = ["USD"]          # US news moves gold, the USD pairs and crypto alike
-    big = source in ALWAYS_BIG or bool(re.search(BIG_WORDS, t))
+    from .news_effects import headline_effects
+    effects = headline_effects(title)[0]
+    if not markets and effects:    # war, tariffs, a ceasefire: moves many markets without naming one
+        markets = ["USD"]
+    big = source in ALWAYS_BIG or (bool(re.search(BIG_WORDS, t)) and (source not in GENERAL or bool(effects)))
     return markets, big and bool(markets)
 
 

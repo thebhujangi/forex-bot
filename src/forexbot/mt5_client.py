@@ -174,8 +174,12 @@ def candle_spike(mt5, broker_symbol: str, lookback: int = 24) -> float | None:
     return float(rng[-2] / normal) if normal > 0 else None
 
 
-def recent_bars(mt5, broker_symbol: str, timeframe: str, count: int, server_time: str) -> pd.DataFrame:
-    """The latest `count` candles in UTC, dropping the one still forming."""
+def recent_bars(mt5, broker_symbol: str, timeframe: str, count: int, server_time: str,
+                confirmed: bool = False) -> pd.DataFrame:
+    """The latest `count` candles in UTC, dropping the one still forming.
+    confirmed=True also drops the newest closed candle until MT5 has started the NEXT one. MT5 can hand
+    out an old copy of a candle (e.g. after a connection hiccup) whose close is hours out of date; by
+    the clock it looks finished. On 23 Nov 2026 that sent a wrong oil signal."""
     rates = mt5.copy_rates_from_pos(broker_symbol, getattr(mt5, f"TIMEFRAME_{timeframe}"), 0, count)
     if rates is None or not len(rates):
         return pd.DataFrame(columns=["open", "high", "low", "close"])
@@ -185,7 +189,15 @@ def recent_bars(mt5, broker_symbol: str, timeframe: str, count: int, server_time
     df = df[df.index.notna()]
     step = pd.Timedelta(minutes={"M1": 1, "M5": 5, "M15": 15, "M30": 30, "H1": 60, "H4": 240,
                                  "D1": 1440}[timeframe])
-    return df[df.index + step <= pd.Timestamp.now(tz="UTC")]
+    closed = df[df.index + step <= pd.Timestamp.now(tz="UTC")]
+    return confirm(closed, df.index) if confirmed else closed
+
+
+def confirm(closed: pd.DataFrame, all_times: pd.DatetimeIndex) -> pd.DataFrame:
+    """Drop the last closed candle if no newer candle exists yet (its close may still change)."""
+    if len(closed) and len(all_times) and all_times[-1] <= closed.index[-1]:
+        return closed.iloc[:-1]
+    return closed
 
 
 def side_price(mt5, broker_symbol: str, side: str) -> float | None:

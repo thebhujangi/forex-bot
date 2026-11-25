@@ -32,10 +32,12 @@ from forexbot.assistant import MonitorContext, check_positions, position_size
 from forexbot.config import load_config
 from forexbot.feeds import ApiMarket, FeedError, Mt5Market
 from forexbot.instruments import load_costs, load_specs
+from forexbot import news_effects as fxn
 from forexbot.news import fetch_events, relevant
 from forexbot.signals import (HISTORY_COLUMNS, Source, cancel_sibling, copy_buttons, follow, follow_replay,
                               format_pair, format_signal, from_dict, history_row, new_signals, reversal_alert,
                               to_dict, track, weekly_report)
+from forexbot.strategies import chart_patterns as cp
 from forexbot.strategies.common import parse_hm
 from forexbot.trades import closed_message, link_message, match_signal
 from forexbot.telegram import Telegram, TelegramError, load_env
@@ -44,6 +46,7 @@ from forexbot.timeutils import NEW_YORK, ROLLOVER_SHIFT, TIMEFRAME_MINUTES, trad
 sys.stdout.reconfigure(encoding="utf-8")
 HISTORY_FILE = STATE_DIR / "signal_history.csv"
 GROK_FILE = STATE_DIR / "grok_calls.csv"           # paper-only Grok experiment
+LEAN_FILE = STATE_DIR / "news_lean.csv"            # headline lean at each signal, to test later
 LOG_FILE = DATA_DIR / "bot.log"
 
 HELP = """<b>Forex Bot assistant</b>
@@ -54,11 +57,13 @@ I send signals and warnings. I never place or close trades myself.
 I watch your MT5 account: trades you open are linked to my signals automatically, and you get a
 ✅ message the moment you close one. I tell you when to move your stop, when it's hit, and if a
 trend reverses.
-⚗️ EXPERIMENTAL: intraday feeds that failed testing, and Grok AI trades (Grok looks at your
+⚗️ EXPERIMENTAL: feeds that failed testing (intraday, chart patterns) and Grok AI trades (Grok looks at your
 markets every hour; the bot only sends trades that pass its safety rules). Demo practice only.
 
 <b>Commands</b>
 /markets: the price each market needs to reach for its next signal
+/patterns: chart patterns on your markets now, with how each did in testing
+/patterns off, /patterns on: stop or restart chart-pattern signals
 /grok: how Grok's trades are doing vs what Grok costs, plus its daily calls
 /grok off, /grok on: stop or restart Grok's trade signals
 /signals: signals I'm following right now
@@ -87,6 +92,9 @@ def last_close_time(tf: str, now: pd.Timestamp) -> pd.Timestamp:
         if ny < roll:
             roll -= pd.Timedelta(days=1)
         return roll.tz_convert("UTC")
+    if tf == "H4":                      # 4-hour candles follow the Elev8 server clock, not UTC
+        loc = now.tz_convert("Europe/Athens").tz_localize(None).floor("4h")
+        return loc.tz_localize("Europe/Athens", ambiguous=True, nonexistent="shift_forward").tz_convert("UTC")
     return now.floor(f"{TIMEFRAME_MINUTES[tf]}min")
 
 
@@ -222,7 +230,7 @@ class Bot:
             try:
                 reply = {"/size": self.cmd_size, "/news": self.cmd_news, "/status": self.cmd_status,
                          "/signals": self.cmd_signals, "/markets": self.cmd_markets, "/grok": self.cmd_grok, "/crowd": self.cmd_crowd, "/report": self.cmd_report,
-                         "/headlines": self.cmd_headlines,
+                         "/headlines": self.cmd_headlines, "/patterns": self.cmd_patterns,
                          "/help": lambda a: HELP, "/start": lambda a: HELP}.get(cmd, lambda a: None)(args)
             except Exception as e:
                 reply = f"Sorry, that didn't work: {html.escape(str(e))}"
@@ -398,10 +406,12 @@ class Bot:
             events = fetch_events()
         except Exception:
             events = []
+        recent = [h.title for h in self.headlines if h.time >= now - pd.Timedelta(hours=6)]
         soon = [f"{e.time.tz_convert('UTC'):%a %H:%M} UTC {e.currency} {e.title}"
                 for e in relevant(events, list(snaps), now, now + pd.Timedelta(hours=12))]
         try:
-            props, usage = gt.ask(key, g.get("model", "grok-4.7"), gt.build_prompt(list(snaps.values()), soon, now))
+            props, usage = gt.ask(key, g.get("model", "grok-4.7"),
+                                  gt.build_prompt(list(snaps.values()), soon, now, recent))
         except urllib.error.HTTPError as e:      # e.g. the xAI credit has run out: say so once a day
             self.send_once(f"grok_api:{day}", f"⚠️ <b>Grok trade signals can't reach Grok</b> (xAI said: {e.code} "
                                               f"{html.escape(str(e.reason))}). If your credit has run out, top it up at "
@@ -506,6 +516,7 @@ class Bot:
         tags = ", ".join("all USD markets" if x == "USD" else x for x in h.markets)
         return (f"{'🚨' if h.big else '📰'} <b>{html.escape(h.title)}</b>\n"
                 f"{html.escape(h.source)} · {h.time.tz_convert(self.tz):%a %H:%M} · affects {tags}\n"
+                + (f"<i>{html.escape(fxn.effect_line(h.title))}</i>\n" if fxn.effect_line(h.title) else "") +
                 f"<a href=\"{html.escape(h.link)}\">Read more</a>")
 
     def cmd_headlines(self, args=None) -> str:
@@ -594,8 +605,15 @@ class Bot:
                       tuple(self.bc["news_impacts"]))
         if not ev:
             return "📰 No big scheduled news for your markets in the next 24 hours."
-        rows = [f"• <b>{e.time.tz_convert(self.tz):%a %H:%M}</b> {e.currency} {html.escape(e.title)}"
-                + (f" (forecast {html.escape(e.forecast)})" if e.forecast else "") for e in ev]
+        rows, explained = [], set()
+        for e in ev:
+            rows.append(f"• <b>{e.time.tz_convert(self.tz):%a %H:%M}</b> {e.currency} {html.escape(e.title)}"
+                        + (f" (forecast {html.escape(e.forecast)})" if e.forecast else ""))
+            name = fxn.release_of(e.title) if e.currency in ("USD", "All") else None
+            if name and name not in explained:
+                explained.add(name)
+                sizes = [x for x in (fxn.impact_text(s, e) for s in ("XAUUSD", "XTIUSD", "BTCUSD", "SPX500")) if x]
+                rows += [f"   <i>{fxn.RELEASE_NOTES[name]}</i>"] + [f"   <i>{x}.</i>" for x in sizes[:3]]
         return "📰 <b>Big news, next 24 hours</b> (Malaysia time)\n" + "\n".join(rows) + \
                "\n\nAvoid opening intraday trades in the 15 minutes before these."
 
@@ -737,10 +755,13 @@ class Bot:
             events = fetch_events()
         except Exception:
             pass
+        self.recheck_candles(events)
         for src in self.sources:
             params = {**self.cfg["strategies"][src.strategy], **src.params}
             tf = params["timeframe"]
             expected = last_close_time(tf, now)
+            slow = tf in ("H4", "D1")
+            paused = self.feed_paused(src)
             for sym in src.symbols:
                 key = f"{src.name}:{sym}"
                 seen = self.state["last_signal_bar"].get(key)
@@ -750,16 +771,26 @@ class Bot:
                     continue                      # forex/gold closed for the weekend
                 try:
                     # Intraday strategies need ~2 weeks of candles for their daily-range filter.
-                    bars = self.market.bars(sym, tf, 150 if tf == "D1" else params.get("lookback_bars", 2000))
+                    count = params.get("lookback_bars", 150 if tf == "D1" else 2000)
+                    bars = self.market.bars(sym, tf, count, confirmed=True)
                 except FeedError as e:
                     log(f"prices unavailable for {sym} {tf}: {e}")
                     continue
                 if len(bars) < 60:
                     continue
                 last_close = bars.index[-1] + pd.Timedelta(minutes=TIMEFRAME_MINUTES[tf])
+                if seen and last_close <= pd.Timestamp(seen):
+                    continue                      # the new candle isn't confirmed yet: look again shortly
                 after = pd.Timestamp(seen) if seen else bars.index[-1]   # first run: latest candle only
+                if not seen and src.strategy == "chart_patterns":
+                    self.state["last_signal_bar"][key] = last_close.isoformat()
+                    continue                      # a new pattern feed starts with the next candle, not an old one
                 fresh = [s for s in new_signals(src, bars, sym, params, self.specs[sym], after)
                          if tf == "D1" or now - s.created <= pd.Timedelta(minutes=max(TIMEFRAME_MINUTES[tf], 30))]
+                if slow:
+                    self.note_candle(src, sym, params, bars, fresh)
+                if paused:
+                    fresh = []
                 groups: dict = {}
                 for s in fresh:                       # linked buy/sell pairs go out as one message
                     groups.setdefault(s.oco_group or id(s), []).append(s)
@@ -776,21 +807,177 @@ class Bot:
                            for t in self.tracked):
                         log(f"repeat {sigs[0].side} {sym} {src.name} not sent: one is already open")
                         continue
+                    if src.news_hold_minutes:
+                        w = pd.Timedelta(minutes=src.news_hold_minutes)
+                        near = relevant(events, [sym], now - w, now + w)
+                        if near:
+                            log(f"{src.name} {sym} {sigs[0].side} held back: {near[0].title} within {src.news_hold_minutes} min")
+                            continue
                     self.send_signals(src, sym, sigs, events)
                 self.state["last_signal_bar"][key] = last_close.isoformat()
+
+    def note_candle(self, src: Source, sym: str, params: dict, bars: pd.DataFrame, fresh: list):
+        """Write down which candle a slow feed decided on, so it can be checked again later (and so a
+        missing signal can always be explained from the log)."""
+        t, c = bars.index[-1], float(bars["close"].iloc[-1])
+        sides = "/".join(s.side for s in fresh) or "none"
+        self.state.setdefault("decided", {})[f"{src.name}:{sym}"] = {
+            "t": t.isoformat(), "close": c, "at": pd.Timestamp.now(tz="UTC").isoformat(), "checks": 0}
+        if src.strategy == "daily_trend":
+            n = params["entry_days"]
+            hi, lo = bars["high"].iloc[-n - 1:-1].max(), bars["low"].iloc[-n - 1:-1].min()
+            log(f"daily check {src.name} {sym} {t + pd.Timedelta(days=1):%d %b}: close {c:g}, {n}-day low {lo:g} high {hi:g} -> {sides}")
+        elif fresh:
+            log(f"pattern check {src.name} {sym} {t:%d %b %H:%M}: {sides}")
+
+    def recheck_candles(self, events: list):
+        """10 and 60 minutes after a daily/4-hour decision, read that candle again. If the broker's final
+        close is different, decide again: send a signal that was missed, withdraw one that was wrong."""
+        now = pd.Timestamp.now(tz="UTC")
+        srcs = {s.name: s for s in self.sources}
+        for key, d in list(self.state.get("decided", {}).items()):
+            due = [10, 60]
+            if d["checks"] >= len(due) or now - pd.Timestamp(d["at"]) < pd.Timedelta(minutes=due[d["checks"]]):
+                continue
+            name, sym = key.split(":")
+            src = srcs.get(name)
+            if src is None or sym not in self.specs:
+                del self.state["decided"][key]
+                continue
+            params = {**self.cfg["strategies"][src.strategy], **src.params}
+            tf = params["timeframe"]
+            try:
+                bars = self.market.bars(sym, tf, params.get("lookback_bars", 150 if tf == "D1" else 2000), confirmed=True)
+            except FeedError:
+                continue
+            t = pd.Timestamp(d["t"])
+            d["checks"] += 1
+            if t not in bars.index:
+                continue
+            c = float(bars["close"].loc[t])
+            if abs(c / d["close"] - 1) < 1e-5:
+                continue
+            log(f"candle corrected {key} {t:%d %b %H:%M}: close was {d['close']:g}, is {c:g}; deciding again")
+            d["close"] = c
+            end = t + pd.Timedelta(minutes=TIMEFRAME_MINUTES[tf])
+            right = [s for s in new_signals(src, bars.loc[:t], sym, params, self.specs[sym], t) if s.created == end]
+            sent = [x for x in self.tracked if x.source == name and x.symbol == sym and pd.Timestamp(x.created) == end]
+            for x in sent:
+                if x.active and not any(s.side == x.side for s in right):
+                    self.queue(f"wrong:{x.id}", f"⚠️ <b>Correction: ignore my {x.side.upper()} {x.symbol} signal</b> "
+                               f"(entry {self.specs[sym].fmt(x.entry)}).\nElev8's final candle closed at "
+                               f"{self.specs[sym].fmt(c)}, so the rule wasn't met. If you placed it, it isn't a tested trade.")
+                    log(f"signal {x.id} withdrawn")
+            for s in right:
+                busy = any(x.active and x.source == name and x.symbol == sym and x.side == s.side for x in self.tracked)
+                if not busy and not self.feed_paused(src):
+                    self.send_signals(src, sym, [s], events)
+
+    def feed_paused(self, src: Source) -> bool:
+        """Chart-pattern feeds pause themselves once their live results are clearly losing."""
+        if src.name in self.state.get("paused_feeds", []):
+            return True
+        if not src.pause_after or not self.due(f"pause:{src.name}", 600):
+            return False
+        hist = pd.read_csv(HISTORY_FILE) if HISTORY_FILE.exists() else pd.DataFrame(columns=HISTORY_COLUMNS)
+        done = gt.closed_trades(hist, self.state.get("feed_since", {}).get(src.name), src.name)
+        if len(done) < src.pause_after or done["result_r"].mean() >= src.pause_below_r:
+            return False
+        self.state.setdefault("paused_feeds", []).append(src.name)
+        self.queue(f"paused:{src.name}:{len(done)}", f"⏸️ <b>{src.name} paused.</b> {len(done)} finished trades average "
+                   f"{done['result_r'].mean():+.2f}x risk, so it's losing. Open ones are still followed. "
+                   f"<code>/patterns on</code> restarts it.")
+        log(f"{src.name} paused after {len(done)} trades")
+        return True
+
+    def cmd_patterns(self, args=None) -> str:
+        """/patterns: patterns completed lately on every market (information). on | off: the signals."""
+        feeds = [s for s in self.sources if s.strategy == "chart_patterns"]
+        if args and args[0].lower() in ("on", "off"):
+            on, paused = args[0].lower() == "on", set(self.state.get("paused_feeds", []))
+            names = {s.name for s in feeds}
+            self.state["paused_feeds"] = sorted(paused - names if on else paused | names)
+            if on:
+                self.state.setdefault("feed_since", {}).update({n: pd.Timestamp.now(tz="UTC").isoformat() for n in names})
+            log(f"pattern signals switched {'on' if on else 'off'} by you")
+            return "▶️ Chart-pattern signals are on." if on else "⏸️ Chart-pattern signals are off."
+        if not feeds or not self.market_ready():
+            return "Chart patterns need MT5 prices, which aren't available right now."
+        stats, rows = cp.stats(), []
+        for sym in feeds[0].symbols:
+            for tf, look, lately in (("D1", 500, 3), ("H4", 1000, 6)):
+                try:
+                    bars = self.market.bars(sym, tf, look, confirmed=True)
+                except FeedError:
+                    continue
+                if len(bars) < 100:
+                    continue
+                f = cp.find(bars)
+                f = f[(f.i >= len(bars) - lately) & f.name.isin(cp.CLASSIC + cp.PRICE_ACTION + cp.HARMONIC)]
+                for r in f.to_dict("records"):
+                    st = stats.get(f"{r['name']}:{tf}", {})
+                    label = cp.LABELS[r["name"]][0 if r["side"] == "buy" else 1]
+                    mark = "🟢" if r["side"] == "buy" else "🔴"
+                    tested = f" · tested {st['avg']:+.2f}x risk over {st['n']} trades" if st else ""
+                    rows.append(f"{mark} {fxn.NAMES.get(sym, sym)} {tf}: {label}{tested}")
+        head = "📐 <b>Chart patterns completed lately</b> (information, not signals)\n"
+        if not rows:
+            return head + "None on the daily or 4-hour charts."
+        return head + "\n".join(rows[:30]) + ("\n\n<i>x risk = average result per trade 2019-2026 after costs. Below 0 "
+                                                "lost money. None of the 127 pattern tests passed.</i>")
+
+    def news_reaction(self):
+        """15 minutes after a big release: how far your markets moved, against what is typical."""
+        if self.cloud or not self.due("news_reaction", 30) or not self.market_ready():
+            return
+        now = pd.Timestamp.now(tz="UTC")
+        try:
+            events = fetch_events()
+        except Exception:
+            return
+        m = pd.Timedelta(minutes=1)
+        past = [e for e in relevant(events, self.all_symbols, now - 25 * m, now - 16 * m, tuple(self.bc["news_impacts"]))]
+        for when in sorted({e.time for e in past}):
+            key = f"reaction:{when:%Y%m%d%H%M}"
+            group = [e for e in past if e.time == when]
+            if key in self.state["sent"]:
+                continue
+            moves = {}
+            for s in self.all_symbols:
+                if s not in self.specs or not relevant(group, [s], when, when + m, tuple(self.bc["news_impacts"])):
+                    continue
+                try:
+                    b = self.market.bars(s, "M5", 12)
+                except FeedError:
+                    continue
+                b = b[(b.index >= when) & (b.index < when + 15 * m)]
+                if len(b) == 3:
+                    moves[s] = (float(b["close"].iloc[-1]) / float(b["open"].iloc[0]) - 1) * 100
+            if moves:
+                titles = " / ".join(dict.fromkeys(f"{e.currency} {html.escape(e.title)}" for e in group))
+                note = next((fxn.RELEASE_NOTES[r] for r in (fxn.release_of(e.title) for e in group) if r), "")
+                self.send_once(key, f"📰 <b>15 minutes after: {titles}</b>\n" + "\n".join(fxn.reaction_lines(group, moves))
+                               + (f"\n\n{note}" if note else "")
+                               + "\n<i>Information, not a signal. In testing, trading this first move either way lost money.</i>")
 
     def send_signals(self, src: Source, sym: str, sigs: list, events: list):
         """One message (a linked buy/sell pair counts as one) with Placed/Skipped buttons, then follow it."""
         crowd = fxb.latest().get(sym)
         crowd = fxb.describe(crowd) if crowd else None
         args = (src, self.specs[sym], self.balance(), self.cfg["risk"]["risk_per_trade_pct"], events, self.tz, crowd)
-        text = format_pair(sigs, *args) if len(sigs) == 2 else format_signal(sigs[0], *args)
+        now = pd.Timestamp.now(tz="UTC")
+        net, items = fxn.lean(sym, self.headlines, now)
+        head = fxn.lean_text(sym, sigs[0].side, self.headlines, now) if len(sigs) == 1 and items else None
+        text = format_pair(sigs, *args) if len(sigs) == 2 else format_signal(sigs[0], *args, headlines=head)
         new = [track(s, src) for s in sigs]
         ids = ",".join(t.id for t in new)
         self.tg.send(text, buttons=copy_buttons(text)
                      + [[("✅ Placed", f"placed:{ids}"), ("❌ Skipped", f"skip:{ids}")]])
         self.tracked += new                   # only after Telegram has it
         log(f"signal sent {ids} {src.name} {sym} {'/'.join(s.side for s in sigs)}")
+        pd.DataFrame([{"id": t.id, "source": src.name, "symbol": sym, "side": t.side, "sent": now.isoformat(),
+                       "lean": net, "headlines": len(items), "why": s.reason[:80]} for t, s in zip(new, sigs)]).to_csv(
+            LEAN_FILE, mode="a", header=not LEAN_FILE.exists(), index=False)
 
     def follow_signals(self):
         """Update open signals: every few seconds on a PC with MT5 (cloud: intraday every 5 min,
@@ -808,8 +995,11 @@ class Bot:
                 if intraday:
                     # 5-minute candles: finer than the 15-minute signal candles, so it's clearer
                     # whether the stop or the target came first.
-                    n = int((now - created).total_seconds() // 300) + 3
-                    bars = self.market.bars(t.symbol, "M5", min(max(n, 4), 1000))
+                    slow = t.signal and t.signal.get("close_by") and \
+                        pd.Timestamp(t.signal["close_by"]) - created > pd.Timedelta(days=3)
+                    step, tf, most = (3600, "H1", 5000) if slow else (300, "M5", 1000)
+                    n = int((now - created).total_seconds() // step) + 3
+                    bars = self.market.bars(t.symbol, tf, min(max(n, 4), most))
                     bars = bars[bars.index >= created]
                     was_filled = t.fill_notified
                     alerts = follow_replay(t, bars, self.cost(t.symbol, t.entry), self.specs[t.symbol], now,
@@ -896,6 +1086,7 @@ class Bot:
             time.sleep(wait)                     # Telegram didn't wait for us: keep the pace
         for name, job in (("crowd", self.record_crowd), ("headlines", self.check_headlines),
                           ("signals", self.scan_signals), ("follow-ups", self.follow_signals),
+                          ("news-reaction", self.news_reaction),
                           ("mt5", None if self.cloud else self.monitor), ("outbox", self.flush_outbox),
                           ("brief", self.morning_brief), ("grok", self.grok_daily), ("grok-trades", self.grok_trades),
                           ("report", self.weekly_report), ("history", self.save_history)):

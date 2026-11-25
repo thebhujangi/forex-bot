@@ -279,7 +279,7 @@ def test_every_configured_feed_loads_and_experimental_ones_are_marked():
     feeds = [Source(**s) for s in cfg["signals"]]
     assert all(f.strategy in cfg["strategies"] for f in feeds)
     assert {f.name for f in feeds if f.experimental} == {"fx_gold_trend", "x_crypto_breakout",
-                                                        "x_crypto_pullback", "x_fx_ny_range"}
+                                                        "x_crypto_pullback", "x_fx_ny_range", "x_patterns_h4", "x_patterns_d1"}
     assert all("⚗️" in f.tier for f in feeds if f.experimental)
     gold = [f.name for f in feeds if f.strategy == "daily_trend" and "XAUUSD" in f.symbols]
     assert gold == ["commodity_trend"]                               # no duplicate gold trend signals

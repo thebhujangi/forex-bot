@@ -72,9 +72,10 @@ signals:
     # Silver kept: the group was the unit tested (dropping it after seeing results = overfitting).
     # Random-day control (2026-11-20, same stops, same number of trades, random entry days and
     # directions, 20 tries): random matched the breakout only 5% (2019-23) / 15% (2024-26) of the
-    # time -> the breakout timing is real here. Crypto: 60% / 10% (partly just the 2019-23 bull run).
+    # time -> better than random, but few trades and the check was made after the results. Crypto: 60% / 10%
+    # (no better than random in 2019-23).
 
-  # NOT ADDED 2026-11-20: every other Elev8 market (scripts/research_all.py, 66 markets that are
+  # NOT ADDED 2026-11-20: every other Elev8 market (scripts/research_all.py, 70 markets that are
   # fully tradeable with history and low costs; 29 shares are close-only on Elev8, most coins and
   # the extra forex crosses have only one year of history, the exotics are close-only).
   #   US shares (57) buy-only "passed" (20/55/100-day: +0.26/+0.22/+0.25R, t 5.0/3.7/3.8), BUT buying
@@ -121,6 +122,33 @@ signals:
     params: {timeframe: M15, session_tz: America/New_York, range_start: "08:00", range_end: "09:30",
              entry_deadline: "12:00", close_time: "15:30", min_range_atr: 0.1, max_range_atr: 0.8}
     experimental: true
+
+  # ---- Chart patterns (2026-11-26, user's request; scripts/research_patterns.py). 43 patterns x 3
+  # charts x 11 markets, 274,377 trades: NONE of 127 tests passed (0 PASS, 0 PROMISING; luck alone gives
+  # 0.5). Hourly patterns average -0.20R, 4-hour -0.10R, daily -0.05R after costs; ~0 before costs.
+  # The five below are the only ones positive in 2019-23 AND 2024-26 AND at double costs AND better
+  # than 95% of random copies, but that list was made AFTER seeing the results and every t is < 2, so
+  # expect less than these numbers, possibly nothing. Live demo results are the real test.
+  - name: x_patterns_h4
+    strategy: chart_patterns
+    symbols: [BTCUSD, ETHUSD, XRPUSD, XAUUSD, XAGUSD, XBRUSD, XTIUSD, SPX500, NAS100, EURUSD, GBPUSD]
+    horizon: INTRADAY
+    tier: "⚗️ EXPERIMENTAL: best of the tested chart patterns, but it failed the pass mark"
+    stats: "4-hour butterfly, pennant and three soldiers/crows: 780 test trades 2019-26, wins about 1 in 3, +0.15x risk on average. Picked after seeing the results, so expect less. Demo only."
+    params: {timeframe: H4, patterns: [butterfly, pennant, three_soldiers], lookback_bars: 1000}
+    experimental: true
+    news_hold_minutes: 30
+    pause_after: 20
+  - name: x_patterns_d1
+    strategy: chart_patterns
+    symbols: [BTCUSD, ETHUSD, XRPUSD, XAUUSD, XAGUSD, XBRUSD, XTIUSD, SPX500, NAS100, EURUSD, GBPUSD]
+    horizon: INTRADAY
+    tier: "⚗️ EXPERIMENTAL: best of the tested chart patterns, but it failed the pass mark"
+    stats: "Daily triangles (ascending/descending) and marubozu candles: 312 test trades 2019-26, wins about half, +0.17x risk on average. Picked after seeing the results, so expect less. Demo only."
+    params: {timeframe: D1, patterns: [asc_triangle, marubozu], lookback_bars: 500}
+    experimental: true
+    news_hold_minutes: 30
+    pause_after: 20
 
 # Grok experiment (started 2026-11-19, user's request): once a day Grok gives an up/down/none call for
 # the next 24 h per market. PAPER ONLY: logged in state/grok_calls.csv and scored vs a coin flip and the
@@ -346,6 +374,13 @@ strategies:
     # RESULT 2026-10-08 in-sample: "follow" +0.01 to +0.09R before costs in all 6 variants, "fade"
     # negative in all 6 -> a real but tiny post-news drift. After normal costs best +0.01R; with
     # realistic news-time spreads (3x) all -0.11R or worse. Not tradeable. Rejected.
+
+  chart_patterns:                # forexbot/strategies/chart_patterns.py; results next to the x_patterns feeds
+    timeframe: H4
+    execution_timeframe: H1
+    warmup_days: 300
+    symbols: [BTCUSD, XAUUSD, SPX500]
+    pivot_atr: 1.5
 
   intraday_momentum:
     timeframe: M5

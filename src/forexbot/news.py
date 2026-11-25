@@ -4,6 +4,7 @@ The feed is refreshed about once an hour by Forex Factory, so it's cached for an
 please don't poll it more often.
 """
 import json
+import re
 import time
 import urllib.request
 from dataclasses import dataclass
@@ -24,7 +25,13 @@ SYMBOL_CURRENCIES = {
     "USDCAD": {"USD", "CAD"}, "USDCHF": {"USD", "CHF"},
     # Crypto reacts mostly to US news (inflation, Fed rates, jobs).
     "BTCUSD": {"USD"}, "ETHUSD": {"USD"}, "XRPUSD": {"USD"}, "SOLUSD": {"USD"},
+    # Until 2026-11-26 these were missing, so silver, oil and index signals had no news warnings.
+    "XAGUSD": {"USD"}, "XBRUSD": {"USD"}, "XTIUSD": {"USD"}, "SPX500": {"USD"}, "NAS100": {"USD"},
 }
+
+# Oil news counts for oil whatever impact or currency the calendar gives it.
+OIL = {"XBRUSD", "XTIUSD"}
+OIL_TITLES = re.compile(r"crude oil inventories|opec", re.I)
 
 
 @dataclass
@@ -74,4 +81,6 @@ def fetch_events(cache: Path = CACHE, max_age: int = CACHE_SECONDS) -> list[Even
 def relevant(events: list[Event], symbols, start: pd.Timestamp, end: pd.Timestamp,
              impacts=("High",)) -> list[Event]:
     currencies = set().union(*(SYMBOL_CURRENCIES.get(s, set()) for s in symbols))
-    return [e for e in events if e.currency in currencies and e.impact in impacts and start <= e.time < end]
+    oil = any(s in OIL for s in symbols)
+    return [e for e in events if start <= e.time < end and (
+        (e.currency in currencies and e.impact in impacts) or (oil and OIL_TITLES.search(e.title)))]

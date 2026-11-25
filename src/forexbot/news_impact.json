@@ -1,0 +1,577 @@
+{
+ "BTCUSD": {
+  "CPI": {
+   "n": 100,
+   "move15_pct": 0.483,
+   "move60_pct": 0.567,
+   "times_normal": 3.0,
+   "continue_pct": 50
+  },
+  "Non-Farm Payrolls": {
+   "n": 96,
+   "move15_pct": 0.341,
+   "move60_pct": 0.456,
+   "times_normal": 2.1,
+   "continue_pct": 46
+  },
+  "PPI": {
+   "n": 100,
+   "move15_pct": 0.184,
+   "move60_pct": 0.318,
+   "times_normal": 1.1,
+   "continue_pct": 51
+  },
+  "Retail Sales": {
+   "n": 101,
+   "move15_pct": 0.215,
+   "move60_pct": 0.302,
+   "times_normal": 1.3,
+   "continue_pct": 43
+  },
+  "GDP": {
+   "n": 100,
+   "move15_pct": 0.212,
+   "move60_pct": 0.361,
+   "times_normal": 1.3,
+   "continue_pct": 52
+  },
+  "Core PCE": {
+   "n": 93,
+   "move15_pct": 0.234,
+   "move60_pct": 0.31,
+   "times_normal": 1.4,
+   "continue_pct": 35
+  },
+  "FOMC rate decision": {
+   "n": 62,
+   "move15_pct": 0.347,
+   "move60_pct": 0.712,
+   "times_normal": 2.3,
+   "continue_pct": 60
+  }
+ },
+ "ETHUSD": {
+  "CPI": {
+   "n": 100,
+   "move15_pct": 0.602,
+   "move60_pct": 0.763,
+   "times_normal": 2.9,
+   "continue_pct": 48
+  },
+  "Non-Farm Payrolls": {
+   "n": 96,
+   "move15_pct": 0.399,
+   "move60_pct": 0.511,
+   "times_normal": 1.9,
+   "continue_pct": 46
+  },
+  "PPI": {
+   "n": 100,
+   "move15_pct": 0.292,
+   "move60_pct": 0.388,
+   "times_normal": 1.4,
+   "continue_pct": 44
+  },
+  "Retail Sales": {
+   "n": 101,
+   "move15_pct": 0.207,
+   "move60_pct": 0.403,
+   "times_normal": 1.0,
+   "continue_pct": 41
+  },
+  "GDP": {
+   "n": 100,
+   "move15_pct": 0.287,
+   "move60_pct": 0.445,
+   "times_normal": 1.4,
+   "continue_pct": 53
+  },
+  "Core PCE": {
+   "n": 93,
+   "move15_pct": 0.321,
+   "move60_pct": 0.435,
+   "times_normal": 1.5,
+   "continue_pct": 48
+  },
+  "FOMC rate decision": {
+   "n": 62,
+   "move15_pct": 0.535,
+   "move60_pct": 0.763,
+   "times_normal": 2.8,
+   "continue_pct": 60
+  }
+ },
+ "XRPUSD": {
+  "CPI": {
+   "n": 76,
+   "move15_pct": 0.925,
+   "move60_pct": 1.138,
+   "times_normal": 4.2,
+   "continue_pct": 46
+  },
+  "Non-Farm Payrolls": {
+   "n": 73,
+   "move15_pct": 0.447,
+   "move60_pct": 0.498,
+   "times_normal": 2.0,
+   "continue_pct": 51
+  },
+  "PPI": {
+   "n": 76,
+   "move15_pct": 0.295,
+   "move60_pct": 0.547,
+   "times_normal": 1.3,
+   "continue_pct": 57
+  },
+  "Retail Sales": {
+   "n": 80,
+   "move15_pct": 0.285,
+   "move60_pct": 0.481,
+   "times_normal": 1.3,
+   "continue_pct": 55
+  },
+  "GDP": {
+   "n": 79,
+   "move15_pct": 0.312,
+   "move60_pct": 0.437,
+   "times_normal": 1.4,
+   "continue_pct": 47
+  },
+  "Core PCE": {
+   "n": 73,
+   "move15_pct": 0.388,
+   "move60_pct": 0.621,
+   "times_normal": 1.7,
+   "continue_pct": 52
+  },
+  "FOMC rate decision": {
+   "n": 49,
+   "move15_pct": 0.596,
+   "move60_pct": 0.956,
+   "times_normal": 2.6,
+   "continue_pct": 61
+  }
+ },
+ "XAUUSD": {
+  "CPI": {
+   "n": 99,
+   "move15_pct": 0.25,
+   "move60_pct": 0.261,
+   "times_normal": 2.5,
+   "continue_pct": 56
+  },
+  "Non-Farm Payrolls": {
+   "n": 93,
+   "move15_pct": 0.323,
+   "move60_pct": 0.359,
+   "times_normal": 3.3,
+   "continue_pct": 54
+  },
+  "PPI": {
+   "n": 100,
+   "move15_pct": 0.121,
+   "move60_pct": 0.193,
+   "times_normal": 1.2,
+   "continue_pct": 47
+  },
+  "Retail Sales": {
+   "n": 101,
+   "move15_pct": 0.14,
+   "move60_pct": 0.181,
+   "times_normal": 1.4,
+   "continue_pct": 53
+  },
+  "GDP": {
+   "n": 100,
+   "move15_pct": 0.155,
+   "move60_pct": 0.238,
+   "times_normal": 1.6,
+   "continue_pct": 58
+  },
+  "Core PCE": {
+   "n": 92,
+   "move15_pct": 0.114,
+   "move60_pct": 0.182,
+   "times_normal": 1.1,
+   "continue_pct": 50
+  },
+  "FOMC rate decision": {
+   "n": 62,
+   "move15_pct": 0.221,
+   "move60_pct": 0.5,
+   "times_normal": 5.3,
+   "continue_pct": 61
+  }
+ },
+ "XAGUSD": {
+  "CPI": {
+   "n": 99,
+   "move15_pct": 0.41,
+   "move60_pct": 0.518,
+   "times_normal": 2.1,
+   "continue_pct": 52
+  },
+  "Non-Farm Payrolls": {
+   "n": 93,
+   "move15_pct": 0.624,
+   "move60_pct": 0.672,
+   "times_normal": 3.3,
+   "continue_pct": 47
+  },
+  "PPI": {
+   "n": 100,
+   "move15_pct": 0.271,
+   "move60_pct": 0.4,
+   "times_normal": 1.4,
+   "continue_pct": 46
+  },
+  "Retail Sales": {
+   "n": 101,
+   "move15_pct": 0.266,
+   "move60_pct": 0.317,
+   "times_normal": 1.3,
+   "continue_pct": 50
+  },
+  "GDP": {
+   "n": 100,
+   "move15_pct": 0.234,
+   "move60_pct": 0.418,
+   "times_normal": 1.2,
+   "continue_pct": 53
+  },
+  "Core PCE": {
+   "n": 92,
+   "move15_pct": 0.255,
+   "move60_pct": 0.371,
+   "times_normal": 1.3,
+   "continue_pct": 47
+  },
+  "FOMC rate decision": {
+   "n": 62,
+   "move15_pct": 0.419,
+   "move60_pct": 0.884,
+   "times_normal": 5.3,
+   "continue_pct": 60
+  }
+ },
+ "XBRUSD": {
+  "CPI": {
+   "n": 99,
+   "move15_pct": 0.252,
+   "move60_pct": 0.417,
+   "times_normal": 1.8,
+   "continue_pct": 53
+  },
+  "Non-Farm Payrolls": {
+   "n": 93,
+   "move15_pct": 0.224,
+   "move60_pct": 0.463,
+   "times_normal": 1.6,
+   "continue_pct": 51
+  },
+  "PPI": {
+   "n": 100,
+   "move15_pct": 0.136,
+   "move60_pct": 0.313,
+   "times_normal": 1.0,
+   "continue_pct": 54
+  },
+  "Retail Sales": {
+   "n": 101,
+   "move15_pct": 0.134,
+   "move60_pct": 0.271,
+   "times_normal": 1.0,
+   "continue_pct": 50
+  },
+  "GDP": {
+   "n": 100,
+   "move15_pct": 0.169,
+   "move60_pct": 0.376,
+   "times_normal": 1.2,
+   "continue_pct": 51
+  },
+  "Core PCE": {
+   "n": 92,
+   "move15_pct": 0.153,
+   "move60_pct": 0.329,
+   "times_normal": 1.1,
+   "continue_pct": 48
+  },
+  "FOMC rate decision": {
+   "n": 62,
+   "move15_pct": 0.238,
+   "move60_pct": 0.318,
+   "times_normal": 1.8,
+   "continue_pct": 48
+  },
+  "EIA crude oil stocks": {
+   "n": 408,
+   "move15_pct": 0.317,
+   "move60_pct": 0.472,
+   "times_normal": 1.7,
+   "continue_pct": 51
+  }
+ },
+ "XTIUSD": {
+  "CPI": {
+   "n": 99,
+   "move15_pct": 0.271,
+   "move60_pct": 0.472,
+   "times_normal": 1.7,
+   "continue_pct": 54
+  },
+  "Non-Farm Payrolls": {
+   "n": 93,
+   "move15_pct": 0.263,
+   "move60_pct": 0.53,
+   "times_normal": 1.7,
+   "continue_pct": 47
+  },
+  "PPI": {
+   "n": 100,
+   "move15_pct": 0.154,
+   "move60_pct": 0.381,
+   "times_normal": 0.9,
+   "continue_pct": 56
+  },
+  "Retail Sales": {
+   "n": 101,
+   "move15_pct": 0.159,
+   "move60_pct": 0.342,
+   "times_normal": 1.0,
+   "continue_pct": 51
+  },
+  "GDP": {
+   "n": 100,
+   "move15_pct": 0.204,
+   "move60_pct": 0.403,
+   "times_normal": 1.3,
+   "continue_pct": 52
+  },
+  "Core PCE": {
+   "n": 92,
+   "move15_pct": 0.19,
+   "move60_pct": 0.403,
+   "times_normal": 1.2,
+   "continue_pct": 41
+  },
+  "FOMC rate decision": {
+   "n": 62,
+   "move15_pct": 0.239,
+   "move60_pct": 0.291,
+   "times_normal": 1.6,
+   "continue_pct": 44
+  },
+  "EIA crude oil stocks": {
+   "n": 408,
+   "move15_pct": 0.32,
+   "move60_pct": 0.554,
+   "times_normal": 1.5,
+   "continue_pct": 51
+  }
+ },
+ "SPX500": {
+  "CPI": {
+   "n": 99,
+   "move15_pct": 0.227,
+   "move60_pct": 0.182,
+   "times_normal": 3.9,
+   "continue_pct": 41
+  },
+  "Non-Farm Payrolls": {
+   "n": 95,
+   "move15_pct": 0.222,
+   "move60_pct": 0.231,
+   "times_normal": 3.8,
+   "continue_pct": 47
+  },
+  "PPI": {
+   "n": 99,
+   "move15_pct": 0.085,
+   "move60_pct": 0.131,
+   "times_normal": 1.4,
+   "continue_pct": 48
+  },
+  "Retail Sales": {
+   "n": 100,
+   "move15_pct": 0.098,
+   "move60_pct": 0.135,
+   "times_normal": 1.6,
+   "continue_pct": 50
+  },
+  "GDP": {
+   "n": 100,
+   "move15_pct": 0.086,
+   "move60_pct": 0.115,
+   "times_normal": 1.4,
+   "continue_pct": 46
+  },
+  "Core PCE": {
+   "n": 92,
+   "move15_pct": 0.101,
+   "move60_pct": 0.119,
+   "times_normal": 1.7,
+   "continue_pct": 47
+  },
+  "FOMC rate decision": {
+   "n": 62,
+   "move15_pct": 0.196,
+   "move60_pct": 0.342,
+   "times_normal": 3.2,
+   "continue_pct": 55
+  }
+ },
+ "NAS100": {
+  "CPI": {
+   "n": 99,
+   "move15_pct": 0.259,
+   "move60_pct": 0.285,
+   "times_normal": 3.3,
+   "continue_pct": 44
+  },
+  "Non-Farm Payrolls": {
+   "n": 95,
+   "move15_pct": 0.274,
+   "move60_pct": 0.282,
+   "times_normal": 3.5,
+   "continue_pct": 46
+  },
+  "PPI": {
+   "n": 98,
+   "move15_pct": 0.125,
+   "move60_pct": 0.197,
+   "times_normal": 1.6,
+   "continue_pct": 40
+  },
+  "Retail Sales": {
+   "n": 100,
+   "move15_pct": 0.12,
+   "move60_pct": 0.192,
+   "times_normal": 1.5,
+   "continue_pct": 49
+  },
+  "GDP": {
+   "n": 100,
+   "move15_pct": 0.116,
+   "move60_pct": 0.166,
+   "times_normal": 1.4,
+   "continue_pct": 52
+  },
+  "Core PCE": {
+   "n": 92,
+   "move15_pct": 0.144,
+   "move60_pct": 0.172,
+   "times_normal": 1.8,
+   "continue_pct": 48
+  },
+  "FOMC rate decision": {
+   "n": 62,
+   "move15_pct": 0.26,
+   "move60_pct": 0.439,
+   "times_normal": 3.3,
+   "continue_pct": 48
+  }
+ },
+ "EURUSD": {
+  "CPI": {
+   "n": 100,
+   "move15_pct": 0.115,
+   "move60_pct": 0.177,
+   "times_normal": 3.0,
+   "continue_pct": 50
+  },
+  "Non-Farm Payrolls": {
+   "n": 96,
+   "move15_pct": 0.162,
+   "move60_pct": 0.184,
+   "times_normal": 4.2,
+   "continue_pct": 44
+  },
+  "PPI": {
+   "n": 100,
+   "move15_pct": 0.066,
+   "move60_pct": 0.093,
+   "times_normal": 1.7,
+   "continue_pct": 41
+  },
+  "Retail Sales": {
+   "n": 101,
+   "move15_pct": 0.063,
+   "move60_pct": 0.101,
+   "times_normal": 1.6,
+   "continue_pct": 50
+  },
+  "GDP": {
+   "n": 100,
+   "move15_pct": 0.067,
+   "move60_pct": 0.105,
+   "times_normal": 1.7,
+   "continue_pct": 56
+  },
+  "Core PCE": {
+   "n": 93,
+   "move15_pct": 0.058,
+   "move60_pct": 0.102,
+   "times_normal": 1.5,
+   "continue_pct": 47
+  },
+  "FOMC rate decision": {
+   "n": 62,
+   "move15_pct": 0.127,
+   "move60_pct": 0.238,
+   "times_normal": 6.8,
+   "continue_pct": 55
+  }
+ },
+ "GBPUSD": {
+  "CPI": {
+   "n": 100,
+   "move15_pct": 0.11,
+   "move60_pct": 0.17,
+   "times_normal": 2.4,
+   "continue_pct": 56
+  },
+  "Non-Farm Payrolls": {
+   "n": 96,
+   "move15_pct": 0.163,
+   "move60_pct": 0.184,
+   "times_normal": 3.6,
+   "continue_pct": 48
+  },
+  "PPI": {
+   "n": 100,
+   "move15_pct": 0.065,
+   "move60_pct": 0.125,
+   "times_normal": 1.4,
+   "continue_pct": 49
+  },
+  "Retail Sales": {
+   "n": 101,
+   "move15_pct": 0.067,
+   "move60_pct": 0.097,
+   "times_normal": 1.4,
+   "continue_pct": 50
+  },
+  "GDP": {
+   "n": 100,
+   "move15_pct": 0.076,
+   "move60_pct": 0.114,
+   "times_normal": 1.7,
+   "continue_pct": 55
+  },
+  "Core PCE": {
+   "n": 93,
+   "move15_pct": 0.064,
+   "move60_pct": 0.109,
+   "times_normal": 1.4,
+   "continue_pct": 46
+  },
+  "FOMC rate decision": {
+   "n": 62,
+   "move15_pct": 0.122,
+   "move60_pct": 0.245,
+   "times_normal": 5.5,
+   "continue_pct": 52
+  }
+ }
+}

@@ -15,6 +15,7 @@ from .assistant import position_size
 from .instruments import SymbolSpec
 from .models import Signal
 from .news import Event, relevant
+from .news_effects import impact_text
 from .strategies import get_strategy
 
 
@@ -29,6 +30,9 @@ class Source:
     stats: str              # one plain-English line about the backtest
     params: dict = field(default_factory=dict)
     experimental: bool = False  # ⚗️ failed testing: sent for demo practice, kept out of the target scoreboard
+    news_hold_minutes: int = 0  # >0: no new signal this close to high-impact news for the market
+    pause_after: int = 0        # >0: pause the feed after this many finished trades if they average...
+    pause_below_r: float = -0.2 # ...below this (x risk)
 
 
 @dataclass
@@ -294,6 +298,8 @@ ORDER_HINTS = {
 
 
 def horizon_line(source: Source) -> str:
+    if source.horizon == "INTRADAY" and source.params.get("timeframe") in ("H4", "D1"):
+        return "🗓️ SWING (days; closed at the target, the stop or the time limit)"
     return "📅 LONG-TERM (days to weeks)" if source.horizon == "LONG-TERM" else "⚡ INTRADAY (minutes to hours)"
 
 
@@ -341,12 +347,18 @@ def order_lines(sig: Signal, spec: SymbolSpec, balance: float, risk_pct: float) 
     return lines
 
 
-def footer_lines(sig: Signal, source: Source, events: list[Event], tz: str, crowd: str | None) -> list[str]:
+def footer_lines(sig: Signal, source: Source, events: list[Event], tz: str, crowd: str | None,
+                 headlines: str | None = None) -> list[str]:
     lines = ["", f"<b>Why:</b> {html.escape(sig.reason)}"]
     soon = relevant(events, [sig.symbol], sig.created, sig.created + pd.Timedelta(hours=24))
     if soon:
         lines.append("<b>News next 24h:</b> " + "; ".join(
             f"{e.time.tz_convert(tz):%a %H:%M} {e.currency} {html.escape(e.title)}" for e in soon[:4]))
+        size = next((x for x in (impact_text(sig.symbol, e) for e in soon) if x), None)
+        if size:
+            lines.append(f"<i>{html.escape(size)}; the direction is close to a coin flip.</i>")
+    if headlines:
+        lines.append(f"<b>Headlines:</b> {html.escape(headlines)}. <i>(Rough guide, not part of the rule.)</i>")
     if crowd:
         lines.append(f"<b>Crowd:</b> {html.escape(crowd)}")
     return lines + ["", f"<i>{html.escape(source.stats)}</i>",
@@ -354,10 +366,10 @@ def footer_lines(sig: Signal, source: Source, events: list[Event], tz: str, crow
 
 
 def format_signal(sig: Signal, source: Source, spec: SymbolSpec, balance: float, risk_pct: float,
-                  events: list[Event], tz: str, crowd: str | None = None) -> str:
+                  events: list[Event], tz: str, crowd: str | None = None, headlines: str | None = None) -> str:
     lines = [*order_lines(sig, spec, balance, risk_pct)]
     lines[1:1] = [horizon_line(source), f"Confidence: <b>{html.escape(source.tier)}</b>", ""]
-    return "\n".join(lines + footer_lines(sig, source, events, tz, crowd))
+    return "\n".join(lines + footer_lines(sig, source, events, tz, crowd, headlines))
 
 
 def follow(t: Tracked, highs_lows: pd.DataFrame, price: float, spec: SymbolSpec) -> list[tuple[str, str]]:
@@ -443,7 +455,8 @@ def history_row(t: Tracked) -> dict:
 FEED_NAMES = {"crypto_trend": "Crypto trend (tested)", "commodity_trend": "Metals & oil trend (promising)",
               "fx_gold_trend": "⚗️ Gold/FX trend",
               "x_crypto_breakout": "⚗️ Crypto breakout", "x_crypto_pullback": "⚗️ Crypto pullback",
-              "x_fx_ny_range": "⚗️ Gold/FX NY range", "x_grok": "⚗️ Grok AI trades"}
+              "x_fx_ny_range": "⚗️ Gold/FX NY range", "x_grok": "⚗️ Grok AI trades",
+              "x_patterns_h4": "⚗️ Chart patterns (4-hour)", "x_patterns_d1": "⚗️ Chart patterns (daily)"}
 
 
 def _money(r: float, per_r: float) -> str:
