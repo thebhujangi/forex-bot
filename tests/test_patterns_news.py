@@ -178,3 +178,25 @@ def test_a_losing_pattern_feed_pauses_itself(monkeypatch, tmp_path):
     bot.state["timers"] = {}
     pd.DataFrame([row] * 20).to_csv(hist, index=False)
     assert bot.feed_paused(src) is True and "paused" in bot.state["outbox"][0]["text"]
+
+
+def test_network_hiccups_are_one_line_and_real_bugs_keep_their_traceback(monkeypatch):
+    import run_bot as rb
+    lines = []
+    monkeypatch.setattr(rb, "log", lines.append)
+    bot = rb.Bot.__new__(rb.Bot)
+    bot._errors = {}
+
+    def slow():
+        raise TimeoutError("The read operation timed out")
+
+    def bug():
+        raise TypeError("Invalid value")
+    assert bot.guarded("grok-trades", slow) is False and bot.guarded("x", bug) is False
+    assert lines[0] == "grok-trades: network hiccup (TimeoutError: The read operation timed out); will try again"
+    assert "Traceback" in lines[1]
+
+    def missing():
+        raise FileNotFoundError("state.json")
+    bot.guarded("y", missing)
+    assert "Traceback" in lines[2]                                   # not hidden as a network hiccup

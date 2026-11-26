@@ -13,7 +13,9 @@ Usage: double-click "Start Bot.bat", or  .venv\\Scripts\\python scripts\\run_bot
 """
 import argparse
 import html
+import http.client
 import json
+import ssl
 import sys
 import time
 import traceback
@@ -106,6 +108,7 @@ def fx_market_open(now: pd.Timestamp) -> bool:
 
 
 CRYPTO = {"BTCUSD", "ETHUSD", "XRPUSD", "SOLUSD", "BNBUSD", "LTCUSD", "DOGEUSD", "ADAUSD"}
+NETWORK_ERRORS = (TimeoutError, ConnectionError, urllib.error.URLError, ssl.SSLError, http.client.HTTPException)
 
 
 class Bot:
@@ -1070,11 +1073,15 @@ class Bot:
         except KeyboardInterrupt:
             raise
         except Exception as e:
-            text = f"{e}" if isinstance(e, TelegramError) else traceback.format_exc()
+            # A website or the internet being slow is normal and fixes itself: one short line, no traceback.
+            net = isinstance(e, NETWORK_ERRORS) and not isinstance(e, urllib.error.HTTPError)
+            text = f"{e}" if isinstance(e, TelegramError) else (
+                f"{type(e).__name__}: {e}" if net else traceback.format_exc())
             last = self._errors.get(name)
             if last is None or last[0] != text or time.time() - last[1] > 600:
                 self._errors[name] = (text, time.time())
-                log(f"{name}: telegram error: {text}" if isinstance(e, TelegramError) else f"{name}: error:\n{text}")
+                log(f"{name}: telegram error: {text}" if isinstance(e, TelegramError) else
+                    f"{name}: network hiccup ({text}); will try again" if net else f"{name}: error:\n{text}")
             return False
 
     def step(self, wait: int):

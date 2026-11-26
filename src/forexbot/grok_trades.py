@@ -80,7 +80,7 @@ def build_prompt(snaps: list[dict], events: list[str], now: pd.Timestamp, headli
             + "\n\nGive one entry per market symbol listed above.")
 
 
-def ask(api_key: str, model: str, prompt: str, timeout: int = 120) -> tuple[list[dict], dict]:
+def ask(api_key: str, model: str, prompt: str, timeout: int = 240) -> tuple[list[dict], dict]:
     """Grok's proposals and the token usage of the call."""
     body = {"model": model, "temperature": 0,
             "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": prompt}],
