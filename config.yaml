@@ -29,7 +29,8 @@ mt5:
 
 symbols: [XAUUSD, EURUSD, GBPUSD, USDJPY]
 
-# Telegram trading assistant (scripts/run_bot.py). Reads MT5, never places trades.
+# Telegram trading assistant (scripts/run_bot.py). Places a trade in MT5 only when you tap
+# "Place trade" on its signal (any account MT5 is logged into); otherwise it only reads.
 bot:
   timezone: Asia/Kuala_Lumpur  # times in messages
   watch_symbols: [XAUUSD, EURUSD, GBPUSD]

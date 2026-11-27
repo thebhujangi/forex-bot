@@ -56,7 +56,8 @@ class Tracked:
     result_r: float | None = None   # final result in multiples of the planned risk
     closed_at: str | None = None
     recorded: bool = False          # written to the permanent history file
-    placed: bool = False            # you tapped "Placed"
+    placed: bool = False            # you placed it (yourself, or by tapping "Place trade")
+    auto: bool = False              # the bot placed it in MT5 for you, so it also manages it there
     signal: dict | None = None      # full signal (intraday ones are replayed through the engine)
     seen_exits: int = 0
     fill_notified: bool = False
@@ -532,7 +533,7 @@ def weekly_report(history: pd.DataFrame, open_signals: list[tuple[Tracked, float
     if traded.empty:
         lines.append("• No trades have triggered yet.")
     placed = traded[traded.placed.astype(bool)] if not traded.empty else traded
-    lines += ["", f"<b>The ones you marked ✅ Placed:</b> {_tally(placed, per_r)}"]
+    lines += ["", f"<b>The ones you placed:</b> {_tally(placed, per_r)}"]
     if never:
         lines.append(f"{never} pending order(s) never triggered: no gain, no loss.")
 
@@ -543,7 +544,7 @@ def weekly_report(history: pd.DataFrame, open_signals: list[tuple[Tracked, float
     else:
         mine = [(t, cur) for t, cur in live if t.status == "placed"]
         if mine:
-            lines += ["", "<b>Marked ✅ Placed and still open:</b>"]
+            lines += ["", "<b>Placed and still open:</b>"]
             lines += [f"• {t.side.upper()} {t.symbol} since {pd.Timestamp(t.created):%d %b}"
                       + (f": {cur:+.1f}x risk now" if cur is not None else "") for t, cur in mine[:8]]
     waiting = [(t, cur) for t, cur in live if t.status == "new"]

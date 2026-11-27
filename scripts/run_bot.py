@@ -1,4 +1,5 @@
-"""Telegram trading assistant. Never places trades; only reads prices/your account and messages you.
+"""Telegram trading assistant. Places a trade only when you tap "Place trade" on a signal; otherwise it
+only reads prices/your account and messages you.
 
 Three ways to run it:
   (default)        On your PC with MT5: signals, follow-ups, news, headlines, crowd, AND it watches
@@ -28,6 +29,7 @@ from forexbot import DATA_DIR, STATE_DIR
 from forexbot import headlines as hl
 from forexbot import myfxbook as fxb
 from forexbot import grok
+from forexbot import executor as ex
 from forexbot import grok_trades as gt
 from forexbot.analysis import briefing, levels, market_line
 from forexbot.assistant import MonitorContext, check_positions, position_size
@@ -35,9 +37,11 @@ from forexbot.config import load_config
 from forexbot.feeds import ApiMarket, FeedError, Mt5Market
 from forexbot.instruments import load_costs, load_specs
 from forexbot import news_effects as fxn
+from forexbot.models import Signal
 from forexbot.news import fetch_events, relevant
 from forexbot.signals import (HISTORY_COLUMNS, Source, cancel_sibling, copy_buttons, follow, follow_replay,
                               format_pair, format_signal, from_dict, history_row, new_signals, reversal_alert,
+                              signal_from_dict,
                               to_dict, track, weekly_report)
 from forexbot.strategies import chart_patterns as cp
 from forexbot.strategies.common import parse_hm
@@ -52,7 +56,9 @@ LEAN_FILE = STATE_DIR / "news_lean.csv"            # headline lean at each signa
 LOG_FILE = DATA_DIR / "bot.log"
 
 HELP = """<b>Forex Bot assistant</b>
-I send signals and warnings. I never place or close trades myself.
+I send signals and warnings. Tap ✅ <b>Place trade</b> under a signal and I put it into MT5 for you
+(entry, stop loss, take profit, lot size), then move its stop, delete unused orders and close it on
+time as the plan says. Tap ❌ <b>Skip trade</b> and nothing is placed. I never trade without your tap.
 
 <b>Signals</b> (sent automatically, you don't need to ask)
 📅 LONG-TERM: tested trend signals (only strategies that passed testing on Elev8 prices).
@@ -259,7 +265,11 @@ class Bot:
             self.tg.send(f"👍 OK, {targets[0].symbol} is finished. No more messages about it.")
             log(f"signal {ids} closed by you")
             return
-        for t in targets:
+        if action == "place":
+            self.tg.answer_button(q["id"], "Placing it in MT5...")
+            self.tg.send(self.execute(targets))
+            return
+        for t in targets:                    # "placed" = buttons on messages from before 27 Nov
             t.status = "placed" if action == "placed" else "skipped"
             t.placed = t.status == "placed"
         self.tg.answer_button(q["id"], "Got it")
@@ -271,6 +281,72 @@ class Bot:
         else:
             self.tg.send(f"OK, skipped {t.symbol}{both}. I'll still score it in the weekly report.")
         log(f"signal {ids} {t.status}")
+
+    # ---------- placing and managing trades in MT5 (only after you tap "Place trade") ----------
+    def execute(self, targets: list) -> str:
+        if not self.ensure_mt5():
+            return "❌ <b>Not placed:</b> I can't reach MT5 right now. Place it yourself, or tap again in a minute."
+        why = ex.ready(self.mt5)
+        if why:
+            return f"❌ <b>Not placed:</b> {html.escape(why)}. Fix that and tap ✅ Place trade again."
+        balance, risk = self.balance(), self.cfg["risk"]["risk_per_trade_pct"]
+        lines = []
+        for t in targets:
+            spec, f = self.specs[t.symbol], self.specs[t.symbol].fmt
+            pos, orders = ex.ours(self.mt5, t.id)
+            if t.auto or pos or orders:
+                lines.append(f"• {t.symbol} {t.side.upper()}: already placed, nothing new sent.")
+                continue
+            if t.signal:
+                sig = signal_from_dict(t.signal)
+            else:                            # long-term trend signals are market orders with no target
+                sig = Signal(strategy=t.source, symbol=t.symbol, side=t.side, order_type="market",
+                             created=pd.Timestamp(t.created), entry=t.entry, sl=t.sl, tp1=t.tp1,
+                             trail_distance=t.trail_distance)
+            res = ex.place(self.mt5, self.names[t.symbol], sig, spec, t.id, balance, risk, sl=t.cur_sl)
+            if any(r.ok for r in res):
+                t.auto, t.placed, t.status = True, True, "placed"
+            lines += [("✅ " if r.ok else "❌ ") + html.escape(r.text) for r in res]
+            log(f"signal {t.id} place trade: " + "; ".join(r.text for r in res))
+        ok = any(x.startswith("✅") for x in lines)
+        head = (f"🤖 <b>Placed in MT5: {targets[0].symbol}</b>" if ok else f"⚠️ <b>Not placed: {targets[0].symbol}</b>")
+        tail = ("\nI'll move the stop, delete unused orders and close on time for you, and tell you each time."
+                if ok else "\nNothing was left half-placed. You can still place it yourself.")
+        return head + "\n" + "\n".join(lines) + tail
+
+    def manage(self, t, key: str, text: str) -> str:
+        """Do in MT5 what a follow-up message asks, for trades the bot placed. Returns the message to send."""
+        kind = key.split(":")[0]
+        target = t
+        if kind in ("oco", "reverse"):       # these keys carry the id of the trade to act on
+            target = next((x for x in self.tracked if x.id == key.split(":")[1]), None)
+        if target is None or not target.auto or not self.ensure_mt5():
+            return text
+        f, digits = self.specs[target.symbol].fmt, self.specs[target.symbol].digits
+        name = f"{target.side.upper()} {target.symbol}"
+        try:
+            if kind == "trail":
+                bad = ex.move_stop(self.mt5, target.id, target.cur_sl, digits)
+                done = f"🤖 <b>Stop moved in MT5: {name}</b> to {f(target.cur_sl)}."
+            elif kind in ("oco", "expired"):
+                n, bad = ex.delete_pending(self.mt5, target.id)
+                done = f"🤖 <b>Deleted {n} unused pending order(s) in MT5: {name}</b>. Nothing to do."
+            elif kind == "exit" and key.endswith(":tp1") and (target.signal or {}).get("tp2") is not None:
+                bad = ex.breakeven(self.mt5, target.id, digits)
+                done = f"🤖 <b>First target hit: {name}</b>. I moved the stop on the rest to its entry, so it can't lose."
+            elif (kind == "exit" and key.endswith(":time")) or kind == "reverse":
+                n, bad = ex.close_all(self.mt5, target.id)
+                why = "the time limit is up" if kind == "exit" else "the trend reversed"
+                done = f"🤖 <b>Closed in MT5: {name}</b> ({why}). You'll get the result in a moment."
+            else:
+                return text
+        except Exception as e:                 # never lose the instruction because MT5 hiccuped
+            bad, done = [str(e)], ""
+        if bad:
+            log(f"manage {key}: " + "; ".join(bad))
+            return f"⚠️ <b>I couldn't do this in MT5</b> ({html.escape('; '.join(bad))}). Please do it yourself:\n\n{text}"
+        log(f"manage {key}: done")
+        return done
 
     def current_r(self, t) -> float | None:
         price = self.market.price(t.symbol, t.side) if self.market_ready() else None
@@ -664,12 +740,14 @@ class Bot:
         for tk, p in open_now.items():
             if tk in links:
                 continue
-            t = match_signal(p.symbol, p.side, p.opened, p.open_price, self.tracked)
+            mine = p.comment.startswith("fxbot ")       # placed by the bot: its comment names the signal
+            t = (next((x for x in self.tracked if x.id == p.comment.split()[1]), None) if mine else
+                 match_signal(p.symbol, p.side, p.opened, p.open_price, self.tracked))
             links[tk] = {"signal": t.id if t else None, "symbol": p.symbol, "side": p.side, "lots": p.lots,
                          "price": p.open_price}
             if t is not None and t.status == "new":
                 t.status, t.placed = "placed", True
-            if not first:
+            if not first and not mine:
                 self.queue(f"link:{tk}", link_message(p.symbol, p.side, p.lots, p.open_price, t,
                                                           self.specs[p.symbol].fmt))
             log(f"MT5 trade {tk} {p.side} {p.symbol} linked to {t.id if t else 'no signal'}")
@@ -802,8 +880,8 @@ class Bot:
                         if src.horizon == "LONG-TERM":   # an opposite trend signal ends the old trade
                             for t in self.tracked:
                                 alert = reversal_alert(t, sig, self.specs[sym])
-                                if alert:
-                                    self.send_once(*alert)
+                                if alert and alert[0] not in self.state["sent"]:
+                                    self.send_once(alert[0], self.manage(t, *alert))
                     # One trade per coin per feed, as in the backtest: a repeat signal in the same
                     # direction while the first is still open is not part of the tested plan.
                     if any(t.active and t.source == src.name and t.symbol == sym and t.side == sigs[0].side
@@ -975,7 +1053,7 @@ class Bot:
         new = [track(s, src) for s in sigs]
         ids = ",".join(t.id for t in new)
         self.tg.send(text, buttons=copy_buttons(text)
-                     + [[("✅ Placed", f"placed:{ids}"), ("❌ Skipped", f"skip:{ids}")]])
+                     + [[("✅ Place trade", f"place:{ids}"), ("❌ Skip trade", f"skip:{ids}")]])
         self.tracked += new                   # only after Telegram has it
         log(f"signal sent {ids} {src.name} {sym} {'/'.join(s.side for s in sigs)}")
         pd.DataFrame([{"id": t.id, "source": src.name, "symbol": sym, "side": t.side, "sent": now.isoformat(),
@@ -1021,6 +1099,8 @@ class Bot:
                 continue
             checked[t.id] = time.time()
             for key, text in alerts:
+                if key not in self.state["sent"]:
+                    text = self.manage(t, key, text)
                 # Anything that may leave a live trade open gets a way to tell me it's over.
                 live = t.active and key.split(":")[0] in ("filled", "maybe", "exit", "loss", "trail")
                 self.send_once(key, text, copy_buttons(text)

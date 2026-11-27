@@ -77,7 +77,7 @@ def test_weekly_report_counts_and_totals():
     text = weekly_report(hist, [(open_t, -0.4)], now, {"trades": 3, "profit": 120.5, "balance": 10_120.5})
     assert "This week: 1 trade · 1 won, 0 lost · +2.5x risk ≈ <b>+$250</b>" in text
     assert "Crypto trend (tested): 2 trades · 1 won, 1 lost · +1.5x risk ≈ <b>+$150</b>" in text
-    assert "Placed:</b> 1 trade · 1 won, 0 lost · +2.5x" in text and "-0.4x risk now" in text
+    assert "placed:</b> 1 trade · 1 won, 0 lost · +2.5x" in text and "-0.4x risk now" in text
     assert "$+120.50" in text
 
 

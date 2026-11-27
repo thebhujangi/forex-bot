@@ -1,7 +1,7 @@
-"""Read-only connection to the MetaTrader 5 terminal that is open on this PC.
+"""Connection to the MetaTrader 5 terminal that is open on this PC: prices, symbols and your account.
 
-The bot never sends orders and never needs your password: it attaches to the MT5 window
-you are already logged into, and only reads prices and symbol information.
+It never needs your password: it attaches to the MT5 window you are already logged into. Orders are
+only ever sent by forexbot/executor.py, for signals you tapped "Place trade" on.
 """
 import time
 from datetime import datetime, timedelta, timezone
@@ -120,7 +120,7 @@ def _server_ts(seconds: int, server_time) -> pd.Timestamp:
 
 
 def open_positions(mt5, known: list[str], server_time=None) -> list:
-    """Open trades on the account, read-only, as assistant.Position objects."""
+    """Open trades on the account as assistant.Position objects."""
     from .assistant import Position
     out = []
     for p in mt5.positions_get() or ():
@@ -132,6 +132,7 @@ def open_positions(mt5, known: list[str], server_time=None) -> list:
             lots=p.volume, open_price=p.price_open, sl=p.sl, tp=p.tp, price=p.price_current,
             profit=p.profit + p.swap,
             opened=_server_ts(p.time, server_time) if server_time is not None else None,
+            comment=getattr(p, "comment", "") or "",
         ))
     return out
 

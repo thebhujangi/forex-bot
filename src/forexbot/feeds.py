@@ -169,7 +169,7 @@ class ApiMarket:
 
 
 class Mt5Market:
-    """Elev8 prices and your account, from the MT5 terminal on this PC (read-only)."""
+    """Elev8 prices and your account, from the MT5 terminal on this PC."""
     has_account = True
 
     def __init__(self, mt5, names: dict[str, str], server_time: str):

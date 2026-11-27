@@ -24,6 +24,7 @@ class Position:
     price: float            # current closing price for this side
     profit: float           # USD, floating
     opened: pd.Timestamp | None = None   # UTC, when the trade was opened
+    comment: str = ""                    # "fxbot <signal id>" when the bot placed it for you
 
     @property
     def sign(self) -> int:

@@ -1,7 +1,7 @@
 # Forex Bot: gold & forex signal bot
 
 A personal signal bot for **XAUUSD, EURUSD, GBPUSD and USDJPY** on MT5 (broker: Elev8).
-It never places trades itself. Eventually it sends each setup to Telegram (entry, SL, TP,
+It only places a trade when you tap ✅ Place trade under a signal in Telegram. Eventually it sends each setup to Telegram (entry, SL, TP,
 order type, full reasoning) and watches open trades for risk alerts. You place the trades.
 
 **Plan:** backtest → demo signals (4–8 weeks) → prop firm challenge.
@@ -44,7 +44,7 @@ Forex Bot/
 │  ├─ metrics.py            ← stats, Monte Carlo stress test, prop challenge simulation
 │  ├─ report.py             ← HTML report
 │  ├─ backtest.py           ← ties it together
-│  ├─ mt5_client.py         ← read-only MT5 connection (never sends orders)
+│  ├─ mt5_client.py         ← MT5 connection: prices and your account (orders only via executor.py)
 │  └─ strategies/           ← one file per strategy
 ├─ tests/                   ← proofs that the engine behaves correctly
 ├─ data/                    ← downloaded candles (not shared)
@@ -99,7 +99,7 @@ twice).
 ## Telegram assistant
 
 Double-click **`Start Bot.bat`** (MT5 must be open and logged in). Keep the window open; close it
-to stop. The bot reads MT5 only — it never places, changes or closes trades.
+to stop. Tap ✅ Place trade under a signal and the bot enters it in MT5 (entry, stop, target, lots) and then manages it (moves the stop, deletes unused orders, closes on time). ❌ Skip trade places nothing. It needs MT5's Algo Trading button on, and it works on whatever account MT5 is logged into, demo or live.
 
 **Signals** come from the feeds under `signals:` in `config.yaml`:
 
